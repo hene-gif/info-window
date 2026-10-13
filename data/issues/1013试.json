@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "1013试",
+  "date": "2026-10-13",
+  "slot": "试",
+  "title": "10月13日 · 试",
+  "items": [
+    {
+      "id": "1013试-1",
+      "section": "关注",
+      "block": "AI 模型和产品动态",
+      "title": "Meta 发布第一款前沿模型 Muse Wonder",
+      "time": "2026-10-12",
+      "summary": "Meta 发布第一款前沿模型 Muse Wonder，主打智能体、长期记忆和写代码。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "about.fb.com",
+          "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/"
+        }
+      ]
+    },
+    {
+      "id": "1013试-2",
+      "section": "关注",
+      "block": "人机恋和 AI 陪伴赛道",
+      "title": "肯塔基州公开起诉 Character.AI 的完整诉状",
+      "time": "2026-10-12",
+      "summary": "肯塔基州公开起诉 Character.AI 的完整诉状。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "theverge.com",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009463/character-ai-chats-encouraging-self-harm-detailed-in-unredacted-kentucky-lawsuit"
+        }
+      ]
+    },
+    {
+      "id": "1013试-3",
+      "section": "关注",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "Mallow 无屏幕语音故事音箱 10/14 出货",
+      "time": "2026-10-14",
+      "summary": "Mallow 无屏幕语音故事音箱 10/14 出货。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "aixtoy.com",
+          "url": "https://aixtoy.com/blog/ai-toy-news/21858.html"
+        }
+      ]
+    },
+    {
+      "id": "1013试-4",
+      "section": "大事",
+      "title": "台湾检方羁押无人机厂商两名高管，涉嫌使用中国芯片",
+      "time": "2026-10-13",
+      "summary": "台湾检方羁押无人机厂商两名高管，涉嫌使用中国芯片。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "taipeitimes.com",
+          "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/13/2003865871"
+        }
+      ]
+    },
+    {
+      "id": "1013试-5",
+      "section": "破茧",
+      "title": "俄罗斯称年底柴油出口可恢复到每月 300-350 万吨",
+      "time": "2026-10-13",
+      "summary": "俄罗斯称年底柴油出口可恢复到每月 300-350 万吨。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "straitstimes.com",
+          "url": "https://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-oct-13-2026"
+        }
+      ]
+    }
+  ]
+}

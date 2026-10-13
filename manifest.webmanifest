@@ -1,0 +1,28 @@
+{
+  "name": "讯息窗",
+  "short_name": "讯息窗",
+  "description": "个人新闻摘要",
+  "lang": "zh-Hans",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#efe6d6",
+  "theme_color": "#efe6d6",
+  "categories": ["news"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
