@@ -1,6 +1,6 @@
 const SECTIONS = ['我关注的', '国际重大影响'];
 const FOCUS = '我关注的';
-const BLOCKS = ['AI 模型和产品动态', '人机恋和 AI 陪伴赛道', '语音交互和 AI 硬件玩具'];
+const BLOCKS = ['AI 模型和产品动态', '人机恋和 AI 陪伴赛道', '语音交互和 AI 硬件玩具', '全球股市'];
 const SLOT_LABEL = { 早: '早间', 午: '午间', 晚: '晚间', 试: '试刊' };
 const LS_KEY = 'info-window:favorites';
 const MENU_LIMIT = 21;
@@ -242,7 +242,7 @@ function renderTabs() {
   blocks.hidden = state.section !== FOCUS;
   if (blocks.hidden) return;
   const focus = items.filter((item) => item.section === FOCUS);
-  blocks.innerHTML = [['all', '全部子块'], ...BLOCKS.map((block) => [block, block])]
+  blocks.innerHTML = [['all', '全部子块'], ...presentBlocks(focus).map((block) => [block, block])]
     .map(([id, label]) => {
       const on = state.block === id;
       const list = id === 'all' ? focus : focus.filter((item) => item.block === id);
@@ -530,12 +530,25 @@ function sectionHtml(section, items, issue, options) {
   return `<section class="sec${state.section === 'all' ? '' : ' is-solo'}">${head}${body}</section>`;
 }
 
+function presentBlocks(items) {
+  const names = [];
+  const seen = new Set();
+  for (const name of BLOCKS) {
+    names.push(name);
+    seen.add(name);
+  }
+  for (const item of items) {
+    const name = typeof item.block === 'string' ? item.block.trim() : '';
+    if (!name || seen.has(name)) continue;
+    seen.add(name);
+    names.push(name);
+  }
+  return names;
+}
+
 function blocksHtml(items, issue, options) {
-  const known = new Set(BLOCKS);
-  const groups = BLOCKS.map((block) => [block, items.filter((item) => item.block === block)]);
-  const rest = items.filter((item) => !known.has(item.block));
-  if (rest.length) groups.push([rest[0].block || '其他', rest]);
-  return groups
+  return presentBlocks(items)
+    .map((block) => [block, items.filter((item) => item.block === block)])
     .filter(([, list]) => list.length)
     .map(([block, list]) => `<h3 class="blk-head">${esc(block)}<span class="n">${list.length}</span></h3>${rowsHtml(list, issue, options)}`)
     .join('');
