@@ -814,17 +814,20 @@ function registerServiceWorker() {
 
 function watchForUpdates() {
   // 第一次安装时页面还没有被接管，不必重载。
-  if (navigator.serviceWorker?.controller) {
+  const reloadsOnTakeover = Boolean(navigator.serviceWorker?.controller);
+  if (reloadsOnTakeover) {
     navigator.serviceWorker.addEventListener('controllerchange', () => window.location.reload(), { once: true });
   }
   // 主屏幕上的应用多半是从后台切回来，并不重新打开。
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible') checkForUpdates().catch(() => {});
+    if (document.visibilityState === 'visible') checkForUpdates(reloadsOnTakeover).catch(() => {});
   });
 }
 
-async function checkForUpdates() {
-  navigator.serviceWorker?.getRegistration().then((registration) => registration?.update()).catch(() => {});
+async function checkForUpdates(reloadsOnTakeover) {
+  const registration = await navigator.serviceWorker?.getRegistration().catch(() => undefined);
+  await registration?.update().catch(() => {});
+  if (reloadsOnTakeover && (registration?.installing || registration?.waiting)) return;
   if (!state.ready && !state.fatal) return;
   const index = await fetchJson('data/index.json');
   if (JSON.stringify(index) !== JSON.stringify(state.index)) window.location.reload();
