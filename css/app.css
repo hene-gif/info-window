@@ -840,7 +840,7 @@ main {
 .row.is-open .row-inner {
   opacity: 1;
   transform: none;
-  transition: opacity 260ms ease 60ms, transform 300ms var(--ease);
+  transition: opacity 220ms var(--ease), transform 300ms var(--ease);
 }
 
 .crumb {
