@@ -9,10 +9,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "icons"
 
-BG = (42, 33, 28)
-PAPER = (244, 239, 230)
-INK = (28, 23, 18)
-RED = (156, 47, 36)
+BG = (14, 14, 17)
+PANE = (255, 255, 255)
+ACCENT = (240, 70, 26)
 
 
 def sd_round_rect(px, py, x, y, w, h, r):
@@ -23,17 +22,16 @@ def sd_round_rect(px, py, x, y, w, h, r):
 
 
 def scene(px, py):
-    if sd_round_rect(px, py, 116, 96, 280, 320, 26) > 0:
-        return BG
-    color = INK if py < 152 else PAPER
-    if sd_round_rect(px, py, 276, 296, 96, 96, 12) <= 0:
-        color = RED
-    if 248 <= px <= 264 and 164 <= py <= 384:
-        color = INK
-    if 140 <= px <= 372 and 268 <= py <= 284:
-        color = INK
-    if math.hypot(px - 356, py - 124) <= 7:
-        color = RED
+    color = BG
+    panes = (
+        (128, 128, PANE),
+        (272, 128, ACCENT),
+        (128, 272, PANE),
+        (272, 272, PANE),
+    )
+    for x, y, pane in panes:
+        if sd_round_rect(px, py, x, y, 112, 112, 24) <= 0:
+            color = pane
     return color
 
 

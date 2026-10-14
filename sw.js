@@ -1,5 +1,5 @@
 /* 讯息窗 service worker。路径相对本文件，因此在 /info-window/ 下同样生效。 */
-const CACHE = 'info-window-1';
+const CACHE = 'info-window-3';
 
 const PRECACHE = [
   './index.html',
