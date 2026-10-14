@@ -154,6 +154,25 @@
           "url": "https://www.arabnews.com/energy/oil-prices-rise-as-iran-deploys-new-tactics-to-target-ships-transiting-hormuz-3006260"
         }
       ]
+    },
+    {
+      "id": "1014晚-9",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Google Play 开放「个人 App」：AI Studio 做的安卓应用可直接装进自己手机",
+      "time": "2026-10-14T02:20:00+08:00",
+      "summary": "Google 10月13日宣布，用 Google AI Studio 让 AI 做出来的安卓 App，不用注册开发者账号，就能通过 Google Play 无线安装到自己手机上私人使用。",
+      "relevance": "不写代码的人也能给自己做小 App，讯息窗以后也可以走这条路。",
+      "sources": [
+        {
+          "label": "x.com",
+          "url": "https://x.com/ssamat/status/2110073098380644709"
+        },
+        {
+          "label": "x.com",
+          "url": "https://x.com/dotey/status/2110106922322120937"
+        }
+      ]
     }
   ]
 }
