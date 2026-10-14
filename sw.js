@@ -1,7 +1,12 @@
 /* 讯息窗 service worker。路径相对本文件，因此在 /info-window/ 下同样生效。 */
-const CACHE = 'info-window-3';
 
-const PRECACHE = [
+// 发布时 scripts/stamp_sw.py 把 'dev' 换成页面文件的摘要。页面代码一变，这个文件就跟着变，已经装好的应用会自己换新。
+const VERSION = 'dev';
+const PREFIX = 'info-window-';
+const CACHE = `${PREFIX}${VERSION}`;
+
+const SHELL = [
+  './',
   './index.html',
   './css/app.css',
   './js/app.js',
@@ -12,23 +17,18 @@ const PRECACHE = [
   './icons/apple-touch-icon.png',
   './data/index.json',
   './data/favorites.json',
-  './data/issues/1013试.json',
 ];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches
-      .open(CACHE)
-      .then((cache) => cache.addAll(PRECACHE.map((path) => new URL(path, self.location).href)))
-      .then(() => self.skipWaiting())
-  );
+  event.waitUntil(precache().then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key))))
+      // github.io 这个域名下还有同一账号的其他站点，只删本应用的旧缓存。
+      .then((keys) => Promise.all(keys.filter((key) => key.startsWith(PREFIX) && key !== CACHE).map((key) => caches.delete(key))))
       .then(() => self.clients.claim())
   );
 });
@@ -36,43 +36,70 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const request = event.request;
   if (request.method !== 'GET') return;
+  if (!request.url.startsWith(self.registration.scope)) return;
+  if (new URL(request.url).pathname.endsWith('/sw.js')) return;
 
-  const url = new URL(request.url);
-  if (url.origin !== self.location.origin) return;
-  if (url.pathname.endsWith('/sw.js')) return;
-
-  event.respondWith(networkFirst(request));
+  event.respondWith(networkFirst(event));
 });
 
-async function networkFirst(request) {
+// 期次清单读自目录。取不到的文件只是跳过：整批失败会让安装失败，旧版本就一直换不掉。
+async function precache() {
   const cache = await caches.open(CACHE);
+  await Promise.all(SHELL.map((path) => store(cache, path)));
+  const index = await cache.match(new URL('./data/index.json', self.location).href);
+  const issues = index ? await index.json().then((data) => data.issues).catch(() => null) : null;
+  if (!Array.isArray(issues)) return;
+  await Promise.all(
+    issues
+      .filter((meta) => typeof meta?.id === 'string')
+      .map((meta) => store(cache, `./data/issues/${encodeURIComponent(meta.id)}.json`))
+  );
+}
+
+function store(cache, path) {
+  return cache.add(new Request(new URL(path, self.location).href, { cache: 'no-cache' })).catch(() => {});
+}
+
+async function networkFirst(event) {
+  const request = event.request;
+  const navigate = request.mode === 'navigate';
+  let response = null;
   try {
-    const fresh = await fetch(request.url, {
+    response = await fetch(request.url, {
       cache: 'no-cache',
       credentials: 'same-origin',
-      redirect: 'follow',
+      // 跟随重定向后的响应不能用来回答页面跳转，交给浏览器自己去跟。
+      redirect: navigate ? 'manual' : 'follow',
     });
-    if (fresh && fresh.ok && !fresh.redirected) {
-      try {
-        await cache.put(request, fresh.clone());
-      } catch {
-        /* 跳过无法写入的响应，仍然把本次结果交给页面。 */
-      }
-    }
-    return fresh;
-  } catch (error) {
-    const cached = await caches.match(request);
-    if (cached) return cached;
-
-    const url = new URL(request.url);
-    if (request.mode === 'navigate' || url.pathname.endsWith('/')) {
-      const home = await caches.match(new URL('./index.html', self.location).href);
-      if (home) return home;
-    }
-
-    return new Response('离线，且没有这份缓存。', {
-      status: 503,
-      headers: { 'Content-Type': 'text/plain; charset=utf-8' },
-    });
+  } catch {
+    /* 离线或网络出错，下面改用缓存。 */
   }
+
+  if (response && response.status < 500) {
+    if (response.ok && response.type === 'basic' && !response.redirected) {
+      const copy = response.clone();
+      event.waitUntil(caches.open(CACHE).then((cache) => cache.put(request, copy)).catch(() => {}));
+    }
+    return response;
+  }
+
+  return (await fromCache(request, navigate)) || response || offline();
+}
+
+async function fromCache(request, navigate) {
+  const cache = await caches.open(CACHE);
+  const hit = await cache.match(request, { ignoreVary: true });
+  if (hit || !navigate) return hit;
+  for (const path of ['./', './index.html']) {
+    const page = await cache.match(new URL(path, self.location).href, { ignoreVary: true });
+    if (page) return page;
+  }
+  return undefined;
+}
+
+function offline() {
+  return new Response('离线，且没有这份缓存。', {
+    status: 503,
+    headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+  });
 }
