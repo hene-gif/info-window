@@ -15,7 +15,8 @@ FAVORITES_PATH = ROOT / "data" / "favorites.json"
 ISSUES_DIR = ROOT / "data" / "issues"
 
 SECTIONS = ("我关注的", "国际重大影响")
-BLOCKS = ("AI 模型和产品动态", "人机恋和 AI 陪伴赛道", "语音交互和 AI 硬件玩具")
+# Common 我关注的 sub-block names. New non-empty names are also accepted.
+BLOCKS = ("AI 模型和产品动态", "人机恋和 AI 陪伴赛道", "语音交互和 AI 硬件玩具", "全球股市")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ITEM_ID_RE = re.compile(r"^.+-[1-9]\d*$")
 
@@ -180,8 +181,8 @@ def main() -> int:
                 fail(f"{item_where}.section 必须是 {' / '.join(SECTIONS)}")
             block = item.get("block", None)
             if section == "我关注的":
-                if block not in BLOCKS:
-                    fail(f"{item_where}.block 必须是我关注的三个子块之一")
+                if not nonempty(block if isinstance(block, str) else "", f"{item_where}.block"):
+                    pass
             elif "block" in item and block is not None:
                 fail(f"{item_where} 不是我关注的，不应填写 block")
             if not nonempty(item.get("title"), f"{item_where}.title"):
