@@ -17,6 +17,7 @@ const SHELL = [
   './icons/apple-touch-icon.png',
   './data/index.json',
   './data/favorites.json',
+  './data/columns/index.json',
 ];
 
 self.addEventListener('install', (event) => {
@@ -48,11 +49,20 @@ async function precache() {
   await Promise.all(SHELL.map((path) => store(cache, path)));
   const index = await cache.match(new URL('./data/index.json', self.location).href);
   const issues = index ? await index.json().then((data) => data.issues).catch(() => null) : null;
-  if (!Array.isArray(issues)) return;
+  if (Array.isArray(issues)) {
+    await Promise.all(
+      issues
+        .filter((meta) => typeof meta?.id === 'string')
+        .map((meta) => store(cache, `./data/issues/${encodeURIComponent(meta.id)}.json`))
+    );
+  }
+  const columnsIndex = await cache.match(new URL('./data/columns/index.json', self.location).href);
+  const columns = columnsIndex ? await columnsIndex.json().then((data) => data.columns).catch(() => null) : null;
+  if (!Array.isArray(columns)) return;
   await Promise.all(
-    issues
+    columns
       .filter((meta) => typeof meta?.id === 'string')
-      .map((meta) => store(cache, `./data/issues/${encodeURIComponent(meta.id)}.json`))
+      .map((meta) => store(cache, `./data/columns/${encodeURIComponent(meta.id)}.json`))
   );
 }
 

@@ -20,6 +20,8 @@ const state = {
   fatal: '',
   index: { issues: [] },
   issues: new Map(),
+  columnsIndex: { columns: [] },
+  columns: new Map(),
   fileFavorites: [],
   route: parseRoute(),
   section: 'all',
@@ -33,6 +35,11 @@ const state = {
 
 if (state.route.name === 'search') state.query = state.route.query;
 else state.back = location.hash || '#/';
+if (state.route.item) {
+  state.open.add(state.route.item);
+  state.section = 'all';
+  state.block = 'all';
+}
 
 const $ = (id) => document.getElementById(id);
 const bar = $('bar');
@@ -84,6 +91,11 @@ window.addEventListener('hashchange', () => {
     state.back = location.hash || '#/';
     if (document.activeElement === field) field.blur();
   }
+  if (state.route.item) {
+    state.open.add(state.route.item);
+    state.section = 'all';
+    state.block = 'all';
+  }
   render({ resetScroll: true });
   if (state.restoreScroll != null && state.route.name !== 'search') window.scrollTo(0, state.restoreScroll);
   state.restoreScroll = null;
@@ -113,7 +125,13 @@ async function boot() {
     } catch {
       state.fileFavorites = [];
     }
-    await loadIssues();
+    try {
+      const columns = await fetchJson('data/columns/index.json');
+      state.columnsIndex = columns && Array.isArray(columns.columns) ? columns : { columns: [] };
+    } catch {
+      state.columnsIndex = { columns: [] };
+    }
+    await Promise.all([loadIssues(), loadColumns()]);
     state.ready = true;
   } catch {
     state.fatal = '这份目录没有打开。可以稍后再试。';
@@ -130,6 +148,7 @@ function parseRoute() {
     name: parts[0] || 'home',
     id: parts[1] || '',
     query: url.searchParams.get('q') || '',
+    item: url.searchParams.get('item') || '',
   };
 }
 
@@ -152,6 +171,19 @@ async function loadIssues() {
   );
 }
 
+async function loadColumns() {
+  await Promise.all(
+    (state.columnsIndex.columns || []).map(async (meta) => {
+      try {
+        const column = await fetchJson(`data/columns/${encodeURIComponent(meta.id)}.json`);
+        state.columns.set(meta.id, column);
+      } catch {
+        state.columns.set(meta.id, { ...meta, body: [], related: [], sources: [], error: true });
+      }
+    })
+  );
+}
+
 function render(options = {}) {
   closeMenu();
   renderBar();
@@ -167,13 +199,24 @@ function render(options = {}) {
   const view = pageView();
   document.title = view.title;
   main.innerHTML = view.html;
-  if (options.resetScroll) window.scrollTo(0, 0);
+  if (options.resetScroll) {
+    if (state.route.item) scrollToRow(state.route.item);
+    else window.scrollTo(0, 0);
+  }
 }
 
 function pageView() {
   const { name, id } = state.route;
   if (name === 'search') return { html: searchPage(), title: '检索 · 讯息窗' };
   if (name === 'favorites') return { html: favoritesPage(), title: '收藏 · 讯息窗' };
+  if (name === 'columns') return { html: columnsPage(), title: '专栏 · 讯息窗' };
+  if (name === 'column') {
+    const column = state.columns.get(id);
+    return {
+      html: columnPage(id),
+      title: column ? `${column.title || column.id} · 讯息窗` : '专栏 · 讯息窗',
+    };
+  }
   if (name === 'dates') return { html: datesPage(), title: '往期 · 讯息窗' };
   if (name === 'date') return { html: dayPage(id), title: `${formatLongDate(id)} · 讯息窗` };
   const issueId = currentIssueId();
@@ -198,7 +241,8 @@ function renderBar() {
   picker.hidden = !state.ready;
   $('picker-label').textContent = pickerLabel();
   document.querySelectorAll('[data-tool]').forEach((tool) => {
-    const on = tool.dataset.tool === name;
+    const key = tool.dataset.tool;
+    const on = key === name || (key === 'columns' && name === 'column');
     tool.classList.toggle('is-on', on);
     if (on) tool.setAttribute('aria-current', 'page');
     else tool.removeAttribute('aria-current');
@@ -208,7 +252,7 @@ function renderBar() {
   badge.hidden = total === 0;
   badge.textContent = String(total);
   $('jump').hidden = name !== 'dates';
-  $('tabs').hidden = name === 'dates';
+  $('tabs').hidden = name === 'dates' || isColumnRoute(name);
   renderTabs();
 }
 
@@ -216,7 +260,7 @@ function renderTabs() {
   const tabs = $('tabs');
   const blocks = $('blocks');
   const name = state.route.name;
-  if (!state.ready || name === 'dates') {
+  if (!state.ready || name === 'dates' || isColumnRoute(name)) {
     tabs.innerHTML = '';
     blocks.hidden = true;
     return;
@@ -234,9 +278,10 @@ function renderTabs() {
     const id = button.getAttribute('data-section');
     const on = state.section === id;
     const list = id === 'all' ? items : items.filter((item) => item.section === id);
+    const extra = id === 'all' ? extraAllCount() : 0;
     button.classList.toggle('is-on', on);
     button.setAttribute('aria-pressed', String(on));
-    button.querySelector('.tab-n').textContent = counted ? String(list.length) : '';
+    button.querySelector('.tab-n').textContent = counted ? String(list.length + extra) : '';
   });
   moveInk(tabs);
   blocks.hidden = state.section !== FOCUS;
@@ -277,11 +322,24 @@ function contextItems() {
   return state.issues.get(currentIssueId())?.items || [];
 }
 
+function extraAllCount() {
+  const { name } = state.route;
+  if (name === 'favorites') return favoriteEntries(false).foundColumns.length;
+  if (name === 'search' && state.query.trim()) return searchColumnHits().length;
+  return 0;
+}
+
+function isColumnRoute(name = state.route.name) {
+  return name === 'columns' || name === 'column';
+}
+
 function pickerLabel() {
   const { name, id } = state.route;
   if (name === 'favorites') return '收藏';
   if (name === 'dates') return '往期';
   if (name === 'search') return '检索';
+  if (name === 'columns') return '专栏';
+  if (name === 'column') return state.columns.get(id)?.title || '没有这篇专栏';
   if (name === 'date') return `${shortDate(id)} ${weekText(id)}`.trim();
   const meta = state.index.issues.find((item) => item.id === currentIssueId());
   if (meta) return issueLabel(meta);
@@ -383,7 +441,24 @@ function menuHtml() {
       return head + rows;
     })
     .join('');
-  return `<div class="menu-scroll">${body || '<p class="menu-day">还没有期次</p>'}</div><a class="menu-foot" href="#/dates">全部往期${ICON.next}</a>`;
+  return `<div class="menu-scroll">${columnsMenuHtml()}${body || '<p class="menu-day">还没有期次</p>'}</div><a class="menu-foot" href="#/dates">全部往期${ICON.next}</a>`;
+}
+
+function columnsMenuHtml() {
+  const cols = state.columnsIndex.columns || [];
+  const currentId = state.route.name === 'column' ? state.route.id : '';
+  const allOn = state.route.name === 'columns';
+  const latestId = cols[0]?.id;
+  const rows = cols
+    .slice(0, 6)
+    .map((meta) => {
+      const on = meta.id === currentId;
+      const latest = meta.id === latestId ? '<span class="menu-latest">最新</span>' : '';
+      return `<a class="menu-item${on ? ' is-on' : ''}" href="${columnHref(meta.id)}"${on ? ' aria-current="page"' : ''}>${ICON.tick}<span class="menu-title">${esc(meta.title)}</span>${latest}</a>`;
+    })
+    .join('');
+  const whole = `<a href="#/columns"${allOn ? ' aria-current="page"' : ''}>全部 ${cols.length} 篇</a>`;
+  return `<p class="menu-day"><span>专栏</span>${whole}</p>${rows || '<p class="menu-empty">还没有专栏</p>'}<p class="menu-day"><span>期次</span></p>`;
 }
 
 function issuePage(id) {
@@ -391,6 +466,116 @@ function issuePage(id) {
   if (!issue) return '<p class="empty">没有这一期。<a href="#/dates">看看往期</a></p>';
   const position = state.index.issues.findIndex((meta) => meta.id === id);
   return `<h1 class="sr-only">${esc(issue.title || issue.id)}</h1>${issueBody(issue)}${pagerHtml(position)}`;
+}
+
+function columnsPage() {
+  const cols = state.columnsIndex.columns || [];
+  if (!cols.length) return '<h1 class="sr-only">专栏</h1><p class="empty">还没有专栏。</p>';
+  const body = cols
+    .map((meta) => {
+      const column = state.columns.get(meta.id);
+      if (!column) return '';
+      if (column.error) return `<p class="empty">这篇专栏没有打开。</p>`;
+      return columnRowHtml(column);
+    })
+    .join('');
+  return `<h1 class="sr-only">专栏</h1><p class="result-count">${cols.length} 篇</p><div class="rows">${body}</div>`;
+}
+
+function columnPage(id) {
+  const column = state.columns.get(id);
+  if (!column) return '<p class="empty">没有这篇专栏。<a href="#/columns">看看专栏</a></p>';
+  if (column.error) return '<p class="empty">这篇专栏没有打开。</p>';
+  const saved = mergedFavoriteIds().includes(id);
+  const position = (state.columnsIndex.columns || []).findIndex((meta) => meta.id === id);
+  return `${columnArticleHtml(column, saved)}${columnPagerHtml(position)}`;
+}
+
+function columnArticleHtml(column, saved) {
+  const id = text(column.id);
+  return `<article class="col"><p class="col-kicker">专栏</p><h1 class="col-title">${esc(column.title)}</h1><p class="col-byline"><time datetime="${esc(column.date)}">${esc(formatLongDate(column.date))}</time><span class="m-id">${esc(id)}</span></p><p class="col-lede">${esc(text(column.summary))}</p>${columnBodyHtml(column)}${relatedHtml(column.related)}${columnSourcesHtml(column.sources)}${actionsHtml(id, saved, {})}</article>`;
+}
+
+function columnBodyHtml(column, query = '') {
+  const show = (value) => (query ? highlight(value, query) : esc(value));
+  return (Array.isArray(column.body) ? column.body : [])
+    .map((block) => {
+      const paras = text(block.text)
+        .split(/\n\n+/u)
+        .map((para) => para.trim())
+        .filter(Boolean)
+        .map((para) => `<p>${show(para)}</p>`)
+        .join('');
+      if (block.type === 'section') {
+        const opinion = block.label === '观点';
+        return `<section class="col-sec${opinion ? ' is-view' : ''}"><h2>${show(text(block.label))}</h2>${paras}</section>`;
+      }
+      return `<div class="col-copy">${paras}</div>`;
+    })
+    .join('');
+}
+
+function relatedHtml(ids) {
+  const list = Array.isArray(ids) ? ids.filter((id) => typeof id === 'string' && id.trim()) : [];
+  if (!list.length) return '';
+  const rows = list
+    .map((id) => {
+      const found = findItem(id);
+      if (!found) return `<p class="missing">找不到条目 ${esc(id)}</p>`;
+      return `<a class="rel" href="${itemHref(found.issue.id, id)}"><span class="rel-copy"><span class="rel-meta"><span class="rel-id">${esc(id)}</span><span class="rel-issue">${esc(issueLabel(found.issue))}</span></span><span class="rel-title">${esc(text(found.item.title))}</span></span>${ICON.next}</a>`;
+    })
+    .join('');
+  return `<section class="col-related"><h2>相关</h2>${rows}</section>`;
+}
+
+function columnSourcesHtml(sources) {
+  const list = (Array.isArray(sources) ? sources : []).filter((source) => source && /^https?:\/\//i.test(source.url || ''));
+  if (!list.length) return '';
+  return `<section class="col-sources"><h2>来源</h2>${list
+    .map((source) => {
+      const when = source.date ? shortDate(source.date) : '';
+      const meta = [text(source.outlet), when].filter(Boolean).join(' · ');
+      return `<a class="cite" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer"><span class="cite-copy"><span class="cite-meta">${esc(meta)}</span><span class="cite-title">${esc(text(source.title))}</span></span>${ICON.out}</a>`;
+    })
+    .join('')}</section>`;
+}
+
+function columnPagerHtml(position) {
+  if (position < 0) return '';
+  const cols = state.columnsIndex.columns || [];
+  const newer = cols[position - 1];
+  const older = cols[position + 1];
+  if (!newer && !older) return '';
+  const newerLink = newer
+    ? `<a class="newer" href="${columnHref(newer.id)}">${ICON.prev}<span>较新</span>${esc(newer.title)}</a>`
+    : '';
+  const olderLink = older
+    ? `<a class="older" href="${columnHref(older.id)}"><span>较旧</span>${esc(older.title)}${ICON.next}</a>`
+    : '';
+  return `<nav class="pager" aria-label="相邻专栏">${newerLink}${olderLink}</nav>`;
+}
+
+function columnRowHtml(column, options = {}) {
+  const query = options.query || '';
+  const show = (value) => (query ? highlight(value, query) : esc(value));
+  const id = text(column.id);
+  const title = text(column.title);
+  const summary = text(column.summary);
+  const open = state.open.has(id);
+  const saved = mergedFavoriteIds().includes(id);
+  const bodyId = `body-${id}`;
+  const meta = [
+    `<span class="m-id">${show(id)}</span>`,
+    column.date ? `<time datetime="${esc(column.date)}">${esc(shortDate(column.date))}</time>` : '',
+    options.favorite ? `<span class="m-tag">${esc(favOrigin(id))}</span>` : '',
+    saved && !options.favorite ? ICON.fav : '',
+  ].join('');
+  const body = [
+    summary ? `<p class="summary">${show(summary)}</p>` : '',
+    `<p class="srcs"><a href="${columnHref(id)}">阅读全文${ICON.next}</a></p>`,
+    actionsHtml(id, saved, options),
+  ].join('');
+  return `<article class="row${open ? ' is-open' : ''}" data-row="${esc(id)}"><button type="button" class="row-head" aria-expanded="${open}" aria-controls="${esc(bodyId)}"><span class="row-title">${show(title)}</span><span class="row-meta">${meta}</span></button><div class="row-body" id="${esc(bodyId)}"><div class="row-clip"><div class="row-inner">${body}</div></div></div></article>`;
 }
 
 function issueBody(issue, options = {}) {
@@ -459,32 +644,48 @@ function searchHits(filtered) {
   return hits;
 }
 
+function searchColumnHits() {
+  const query = state.query.trim();
+  if (!query) return [];
+  return (state.columnsIndex.columns || [])
+    .map((meta) => state.columns.get(meta.id))
+    .filter((column) => column && !column.error && matchesColumn(column, query));
+}
+
 function searchResultsHtml() {
-  if (!state.query.trim()) return '<p class="empty">在全部期次里找标题、摘要、相关说明、来源和编号。</p>';
+  if (!state.query.trim()) return '<p class="empty">在全部期次和专栏里找标题、摘要、相关说明、来源和编号。</p>';
   const hits = searchHits(true);
-  if (!hits.length) return '<p class="empty">没有匹配的条目。</p>';
-  const total = hits.reduce((sum, hit) => sum + hit.items.length, 0);
+  const columns = searchColumnHits();
+  if (!hits.length && !columns.length) return '<p class="empty">没有匹配的条目。</p>';
+  const total = hits.reduce((sum, hit) => sum + hit.items.length, 0) + columns.length;
+  const colBody = columns.length
+    ? `<h2 class="grp-head"><a href="#/columns">专栏</a><span class="n">${columns.length}</span></h2><div class="rows">${columns.map((column) => columnRowHtml(column, { query: state.query })).join('')}</div>`
+    : '';
   const body = hits
     .map((hit) => groupHtml(hit.issue, hit.items, { query: state.query, crumb: true }))
     .join('');
-  return `<p class="result-count">${total} 条结果</p>${body}`;
+  return `<p class="result-count">${total} 条结果</p>${colBody}${body}`;
 }
 
 function favoritesPage() {
   if (!mergedFavoriteIds().length) {
     return '<h1 class="sr-only">收藏</h1><p class="empty">还没有收藏。展开一条，点「收藏」，这句话会复制出来，并记在这台设备上。仓库里的收藏清单也会合在这里。</p>';
   }
-  const { found, missing } = favoriteEntries(true);
+  const { found, foundColumns, missing } = favoriteEntries(true);
   const groups = new Map();
   for (const entry of found) {
     if (!groups.has(entry.issue.id)) groups.set(entry.issue.id, { issue: entry.issue, items: [] });
     groups.get(entry.issue.id).items.push(entry.item);
   }
-  const body = found.length
+  const colBody = foundColumns.length
+    ? `<h2 class="grp-head"><a href="#/columns">专栏</a><span class="n">${foundColumns.length}</span></h2><div class="rows">${foundColumns.map((column) => columnRowHtml(column, { favorite: true })).join('')}</div>`
+    : '';
+  const itemBody = found.length
     ? [...groups.values()]
       .map((group) => groupHtml(group.issue, group.items, { favorite: true, crumb: true }))
       .join('')
-    : '<p class="empty">没有符合筛选的收藏。</p>';
+    : '';
+  const body = colBody || itemBody ? `${colBody}${itemBody}` : '<p class="empty">没有符合筛选的收藏。</p>';
   const lost = missing.map((id) => `<p class="missing">找不到条目 ${esc(id)}</p>`).join('');
   return `<h1 class="sr-only">收藏</h1>${body}${lost}`;
 }
@@ -619,6 +820,28 @@ function applyFilter(items) {
   });
 }
 
+function matchesColumn(column, query) {
+  const haystack = [
+    column.id,
+    column.title,
+    column.summary,
+    column.date,
+    ...(Array.isArray(column.body) ? column.body.flatMap((block) => [block.label, block.text]) : []),
+    ...(Array.isArray(column.related) ? column.related : []),
+    ...(Array.isArray(column.sources)
+      ? column.sources.flatMap((source) => [source.title, source.outlet, source.url, source.date])
+      : []),
+  ]
+    .filter(Boolean)
+    .join('\n')
+    .toLowerCase();
+  return query
+    .trim()
+    .split(/\s+/u)
+    .filter(Boolean)
+    .every((token) => haystack.includes(token.toLowerCase()));
+}
+
 function matches(item, issue, query) {
   const haystack = [
     item.id,
@@ -648,6 +871,13 @@ function favoriteEntries(filtered) {
   const wanted = new Set(mergedFavoriteIds());
   const known = new Set();
   const found = [];
+  const foundColumns = [];
+  for (const meta of state.columnsIndex.columns || []) {
+    const column = state.columns.get(meta.id);
+    if (!column || column.error) continue;
+    known.add(column.id);
+    if (wanted.has(column.id) && (!filtered || state.section === 'all')) foundColumns.push(column);
+  }
   for (const meta of state.index.issues) {
     const issue = state.issues.get(meta.id);
     if (!issue || issue.error) continue;
@@ -658,7 +888,7 @@ function favoriteEntries(filtered) {
     }
   }
   const missing = state.section === 'all' ? mergedFavoriteIds().filter((id) => !known.has(id)) : [];
-  return { found, missing };
+  return { found, foundColumns, missing };
 }
 
 function mergedFavoriteIds() {
@@ -751,13 +981,14 @@ function revealRow(row) {
 }
 
 function markSaved(id) {
-  const row = main.querySelector(`.row[data-row="${CSS.escape(id)}"]`);
-  if (row) {
-    const button = row.querySelector('[data-save]');
+  main.querySelectorAll(`[data-save="${CSS.escape(id)}"]`).forEach((button) => {
     button.classList.add('is-saved');
     button.setAttribute('aria-pressed', 'true');
+  });
+  const row = main.querySelector(`.row[data-row="${CSS.escape(id)}"]`);
+  if (row) {
     const meta = row.querySelector('.row-meta');
-    if (!meta.querySelector('.m-fav') && !meta.querySelector('.m-tag')) meta.insertAdjacentHTML('beforeend', ICON.fav);
+    if (meta && !meta.querySelector('.m-fav') && !meta.querySelector('.m-tag')) meta.insertAdjacentHTML('beforeend', ICON.fav);
   }
   renderBar();
 }
@@ -851,10 +1082,44 @@ async function checkForUpdates(reloadsOnTakeover) {
   if (!state.ready && !state.fatal) return;
   const index = await fetchJson('data/index.json');
   if (JSON.stringify(index) !== JSON.stringify(state.index)) window.location.reload();
+  try {
+    const columns = await fetchJson('data/columns/index.json');
+    if (JSON.stringify(columns) !== JSON.stringify(state.columnsIndex)) window.location.reload();
+  } catch {
+    /* 专栏目录读不到时，仍以已经打开的页面为准。 */
+  }
 }
 
 function issueHref(id) {
   return `#/issue/${encodeURIComponent(id)}`;
+}
+
+function itemHref(issueId, itemId) {
+  return `${issueHref(issueId)}?item=${encodeURIComponent(itemId)}`;
+}
+
+function columnHref(id) {
+  return `#/column/${encodeURIComponent(id)}`;
+}
+
+function findItem(itemId) {
+  for (const meta of state.index.issues) {
+    const issue = state.issues.get(meta.id);
+    if (!issue || issue.error) continue;
+    const item = (issue.items || []).find((entry) => entry.id === itemId);
+    if (item) return { item, issue };
+  }
+  return null;
+}
+
+function scrollToRow(id) {
+  const row = main.querySelector(`[data-row="${CSS.escape(id)}"]`);
+  if (!row) {
+    window.scrollTo(0, 0);
+    return;
+  }
+  const top = row.getBoundingClientRect().top + window.scrollY - bar.getBoundingClientRect().height - 8;
+  window.scrollTo({ top: Math.max(0, top), behavior: reduceMotion.matches ? 'auto' : 'smooth' });
 }
 
 function issueLabel(meta) {
