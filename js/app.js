@@ -96,6 +96,7 @@ window.addEventListener('resize', closeMenu);
 boot();
 
 async function boot() {
+  watchForUpdates();
   tickClock();
   setInterval(tickClock, 30000);
   updateNet();
@@ -809,6 +810,24 @@ function registerServiceWorker() {
   const script = new URL('sw.js', document.baseURI);
   const scope = new URL('./', document.baseURI);
   navigator.serviceWorker.register(script, { scope: scope.href, updateViaCache: 'none' }).catch(() => {});
+}
+
+function watchForUpdates() {
+  // 第一次安装时页面还没有被接管，不必重载。
+  if (navigator.serviceWorker?.controller) {
+    navigator.serviceWorker.addEventListener('controllerchange', () => window.location.reload(), { once: true });
+  }
+  // 主屏幕上的应用多半是从后台切回来，并不重新打开。
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') checkForUpdates().catch(() => {});
+  });
+}
+
+async function checkForUpdates() {
+  navigator.serviceWorker?.getRegistration().then((registration) => registration?.update()).catch(() => {});
+  if (!state.ready && !state.fatal) return;
+  const index = await fetchJson('data/index.json');
+  if (JSON.stringify(index) !== JSON.stringify(state.index)) window.location.reload();
 }
 
 function issueHref(id) {
