@@ -36,6 +36,9 @@ jobs:
           cp index.html manifest.webmanifest sw.js _site/
           cp -a css js icons data _site/
 
+      - name: Stamp the service worker
+        run: python3 scripts/stamp_sw.py _site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
