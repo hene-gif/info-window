@@ -826,8 +826,15 @@ function watchForUpdates() {
 
 async function checkForUpdates(reloadsOnTakeover) {
   const registration = await navigator.serviceWorker?.getRegistration().catch(() => undefined);
+  const previous = registration?.active || null;
   await registration?.update().catch(() => {});
-  if (reloadsOnTakeover && (registration?.installing || registration?.waiting)) return;
+  // 页面代码已经会换新 worker 并重载一次，目录检查让给那一次。
+  if (
+    reloadsOnTakeover &&
+    (registration?.installing || registration?.waiting || (registration?.active && registration.active !== previous))
+  ) {
+    return;
+  }
   if (!state.ready && !state.fatal) return;
   const index = await fetchJson('data/index.json');
   if (JSON.stringify(index) !== JSON.stringify(state.index)) window.location.reload();
