@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "id": "1014中",
+  "date": "2026-10-14",
+  "slot": "中",
+  "title": "10月14日 · 中",
+  "items": [
+    {
+      "id": "1014中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "谷歌发布前沿模型 Gemini 4 Argon，全面开放",
+      "time": "2026-10-14T00:00:00+08:00",
+      "summary": "谷歌推出 Gemini 4 Argon，主打复杂编程、科研和智能体任务，API 支持 100 万 token 的输入输出上限。开发者和企业即日起可通过 API 使用，Gemini 应用里的 Pro 和 Ultra 订阅用户也能用。推广价每百万输入 2 美元、输出 10 美元，11 月 30 日后涨到 4 美元和 20 美元。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "blog.google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+        }
+      ]
+    },
+    {
+      "id": "1014中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 员工在高管会议室装窃听器，被开除并被捕",
+      "time": "2026-10-14T04:40:24+08:00",
+      "summary": "OpenAI 说发现一名员工在高管会议室偷装录音设备，已开除并移交 FBI，该员工已被捕。公司称用自家模型追查到这个设备，目前没有发现模型权重、源代码或客户数据被窃。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "nbcnews.com",
+          "url": "https://www.nbcnews.com/tech/tech-news/openai-employee-arrested-hidden-listening-device-company-says-rcna603262"
+        }
+      ]
+    },
+    {
+      "id": "1014中-3",
+      "section": "我关注的",
+      "block": "人机恋和 AI 陪伴赛道",
+      "title": "Character.AI 申请破产保护，迪士尼出价 2000 万美元",
+      "time": "2026-10-13T23:16:06+08:00",
+      "summary": "AI 陪伴应用 Character.AI 在美国申请第 11 章破产，准备在法院监督下出售公司，原因是开发成本高，加上诉讼和监管压力。迪士尼作为首个竞购方，出价 2000 万美元取得部分资产和知识产权的非独家授权。应用和付费订阅暂时照常，出售预计 11 月底或 12 月初完成；如果没有合适买家，平台会关闭。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/13/character-ai-chapter-11-disney-bid.html"
+        }
+      ]
+    },
+    {
+      "id": "1014中-4",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "Meta 推出第一款纯音频眼镜 Ray-Ban Meta Audio",
+      "time": "2026-10-13T19:00:00+08:00",
+      "summary": "Meta 发布 Ray-Ban Meta Audio，这款眼镜没有摄像头，靠开放式耳边音频和语音控制使用 Meta AI，续航最长约 12 小时。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "meta.com",
+          "url": "https://www.meta.com/blog/ray-ban-meta-audio-our-first-audio-glasses-are-here/"
+        },
+        {
+          "label": "theverge.com",
+          "url": "https://www.theverge.com/tech/1009128/ray-ban-meta-audio-glasses-review-smart-glasses-headphones-wearables"
+        }
+      ]
+    },
+    {
+      "id": "1014中-5",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "Fish Audio 发布语音模型 Drama 3，能用大白话指挥语气",
+      "time": "2026-10-13T21:15:00+08:00",
+      "summary": "Fish Audio 推出文字转语音模型 Drama 3，可以用普通语言描述想要的说法，逐字控制，还能在一句话中途切换情绪，支持 83 种语言，通过应用和 API 提供。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/fish-audio-launches-drama-3-direct-ai-voices-in-plain-language-control-every-word-and-shift-emotion-mid-sentence-302906620.html"
+        }
+      ]
+    },
+    {
+      "id": "1014中-6",
+      "section": "国际重大影响",
+      "title": "胡塞武装袭击沙特阿美设施，布伦特油价升到每桶约 107 美元",
+      "time": "2026-10-14T10:04:00+08:00",
+      "summary": "沙特说胡塞武装的攻击让达兰一栋阿美建筑起了小火，无人受伤；沙特领导的联军随后轰炸也门胡塞的能源码头和燃料储备。中东供应担忧推高油价，布伦特原油周三亚洲时段升到每桶约 107 美元。",
+      "relevance": "油价也是你关注的全球市场指标。",
+      "sources": [
+        {
+          "label": "aljazeera.com",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east"
+        },
+        {
+          "label": "economictimes.indiatimes.com",
+          "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-14-crude-oil-gains-to-107-as-houthis-attack-saudi-aramco-building-in-new-attacks-what-are-experts-saying/articleshow/134930013.cms"
+        }
+      ]
+    },
+    {
+      "id": "1014中-7",
+      "section": "国际重大影响",
+      "title": "长鑫存储新 DRAM 技术引发全球存储芯片股大跌",
+      "time": "2026-10-13T20:41:56+08:00",
+      "summary": "中国长鑫存储（CXMT）公布 4F² DRAM 技术进展，并计划年底推出服务器内存，市场担心存储芯片价格被压低。周二三星电子跌 7.39%，SK 海力士跌 10.09%，美光跌约 3.6%。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/13/cxmt-memory-chip-stock-rout.html"
+        }
+      ]
+    },
+    {
+      "id": "1014中-8",
+      "section": "国际重大影响",
+      "title": "美股周二基本持平，欧股小跌；黄金回落，美债收益率 5.24%",
+      "time": "2026-10-14T04:54:21+08:00",
+      "summary": "财报季开局，标普 500 跌 0.02% 收 7805.45，道指跌 0.35% 收 51670.10，纳指跌 0.15% 收 27204.38；强生跌约 6%，美光跌 3.62%。黄金跌 0.21% 至每盎司 4181.80 美元，10 年期美债收益率 5.24%。欧洲斯托克 600 指数跌 0.10%，科技和奢侈品股走弱。美国 9 月 CPI 将在台北时间今晚公布。",
+      "relevance": "属于你关注的全球股市。应用里暂时还没有「全球股市」子块，先放在这一栏。",
+      "sources": [
+        {
+          "label": "fool.com",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/10/13/stock-market-today-oct-13-markets-edge-lower-as-earnings-season-kicks-off/"
+        },
+        {
+          "label": "sharecast.com",
+          "url": "https://www.sharecast.com/news/market-report-europe-close/europe-close-stocks-end-lower-as-tech-names-fall--23836068.html"
+        }
+      ]
+    },
+    {
+      "id": "1014中-9",
+      "section": "国际重大影响",
+      "title": "亚股周三反弹：韩股涨逾 1.7%，日股、台股走高",
+      "time": "2026-10-14",
+      "summary": "前一天芯片股带头重挫后，周三亚股回升。早盘韩国 KOSPI 涨 1.73%，台股加权指数涨 0.52%，日经 225 指数午间涨约 0.6% 至 68193 点，三星和 SK 海力士涨逾 2%。港股恒指低开 0.26% 后转涨，上证指数低开 0.27% 至 3790 点。台股周二跌 1.95%，收 48341.31 点。",
+      "relevance": "属于你关注的全球股市。应用里暂时还没有「全球股市」子块，先放在这一栏。",
+      "sources": [
+        {
+          "label": "news.rthk.hk",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1873873-20261014.htm"
+        },
+        {
+          "label": "cnbctv18.com",
+          "url": "https://www.cnbctv18.com/market/asian-stocks-rebound-msci-asia-pacific-kospi-taiex-nikkei-topix-gift-nifty-us-fed-rates-oil-prices-share-price-20011288.htm"
+        },
+        {
+          "label": "taiwannews.com.tw",
+          "url": "https://www.taiwannews.com.tw/news/6457627"
+        }
+      ]
+    },
+    {
+      "id": "1014中-10",
+      "section": "国际重大影响",
+      "title": "俄罗斯导弹击中基辅热电厂，泽连斯基批评盟友没有预警",
+      "time": "2026-10-14T10:47:37+08:00",
+      "summary": "俄罗斯弹道导弹周二晚击中基辅第四热电厂。泽连斯基说乌克兰又一次没有收到西方伙伴的预警。此前特朗普宣称俄乌已同意暂停打击能源设施。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "euronews.com",
+          "url": "https://www.euronews.com/2026/10/14/russian-missile-hits-kyiv-power-plant-with-no-early-warning-from-allies-zelensky-says"
+        }
+      ]
+    },
+    {
+      "id": "1014中-11",
+      "section": "国际重大影响",
+      "title": "美国财政部对美国银行罚款逾 12 亿美元",
+      "time": "2026-10-14T04:09:06+08:00",
+      "summary": "美国财政部以违反反洗钱和制裁法规为由，对美国银行处以超过 12 亿美元罚款，称其未妥善申报涉及中国洗钱网络等高风险的可疑交易。财政部称这是创纪录的执法行动。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/13/bank-of-america-treasury-money-laundering.html"
+        },
+        {
+          "label": "home.treasury.gov",
+          "url": "https://home.treasury.gov/news/press-releases/sb0657/"
+        }
+      ]
+    }
+  ]
+}
