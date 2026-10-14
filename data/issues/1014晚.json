@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "id": "1014晚",
+  "date": "2026-10-14",
+  "slot": "晚",
+  "title": "10月14日 · 晚",
+  "items": [
+    {
+      "id": "1014晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 洽购网络安全公司 Trail of Bits",
+      "time": "2026-10-14T13:12:00+08:00",
+      "summary": "据 The Information 报道，OpenAI 正与纽约网络安全公司 Trail of Bits 进行早期收购洽谈，交易规模未披露，谈判仍可能破裂。Trail of Bits 擅长发现并修补开源软件漏洞，今年 6 月已与 OpenAI 合作「Patch the Planet」项目，用 Codex 等模型给 Python 等开源项目找漏洞、打补丁。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "digitaltoday.co.kr",
+          "url": "https://www.digitaltoday.co.kr/en/view/114554/openai-pursues-acquisition-of-trail-of-bits-security-firm-that-fixes-open-source-vulnerabilities"
+        }
+      ]
+    },
+    {
+      "id": "1014晚-2",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股周三收盘分化：台股涨 0.59%，韩股六连跌，沪指跌近 0.9%",
+      "time": "2026-10-14T17:50:00+08:00",
+      "summary": "台股加权指数收涨 0.59% 至 48625.83 点，终结四连跌，但外资连续第六日净卖超；台积电平盘收 2490 元，周四将开季报会。韩国 KOSPI 收跌 0.44% 至 6008.81 点，六连跌；日经 225 尾盘回吐，收跌 0.05% 至 67744.29 点，盘中曾冲高，ASML 季报公布后东京电子等设备股走弱。恒指跌 0.1% 收 24314 点；上证综指跌 0.88% 收 3767.23 点，深成指跌 1.97%。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "news.rthk.hk",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1873929-20261014.htm"
+        },
+        {
+          "label": "taipeiclosingbell.com",
+          "url": "https://taipeiclosingbell.com/taiex-snaps-four-day-slide-tsmc-earnings-foreign-selling-sixth-session/"
+        },
+        {
+          "label": "asiae.co.kr",
+          "url": "https://www.asiae.co.kr/en/article/2026101416041050215"
+        },
+        {
+          "label": "en.infomaxai.com",
+          "url": "https://en.infomaxai.com/news/articleView.html?idxno=143321"
+        }
+      ]
+    },
+    {
+      "id": "1014晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "油价上涨：布伦特约 106 美元，伊朗加强对霍尔木兹过往船只攻击",
+      "time": "2026-10-14",
+      "summary": "周三亚洲时段，布伦特原油期货涨约 0.3% 至每桶 106.03 美元，美国西德州原油涨至 94.42 美元。英国海事贸易行动中心称，霍尔木兹海峡有集装箱船和油轮遭不明投射物击中；伊朗官员对路透表示，约十天前起改用新战术打击其认定违规船只，意在推高油价并影响美国期中选举。胡塞武装袭击沙特阿美达兰行政建筑也加剧供应担忧。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "arabnews.com",
+          "url": "https://www.arabnews.com/energy/oil-prices-rise-as-iran-deploys-new-tactics-to-target-ships-transiting-hormuz-3006260"
+        }
+      ]
+    },
+    {
+      "id": "1014晚-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "贝莱德把美股降到中性，上调短期美债",
+      "time": "2026-10-13",
+      "summary": "全球最大资产管理机构贝莱德旗下投资研究院把美股观点从超配降到中性，并上调短期美债至超配、长期美债至中性。研究院称此举是为管理 AI 基建扩张带来的短期波动，同时仍看好 AI 和科技；并认为市场对美联储继续加息的定价偏高。美国 9 月 CPI 预定台北时间今晚稍后公布。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "etf.net",
+          "url": "https://etf.net/news/blackrock-s-research-arm-upgrades-short-term-treasuries-and-cuts-u-s-stocks-to-neutral-2026-10-12"
+        },
+        {
+          "label": "blackrock.com",
+          "url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
+        }
+      ]
+    },
+    {
+      "id": "1014晚-5",
+      "section": "国际重大影响",
+      "title": "俄军大规模空袭致乌约 60 万人断电，泽连斯基指责 Starlink 限速",
+      "time": "2026-10-14",
+      "summary": "泽连斯基说，俄军导弹和无人机夜间打击基辅、哈尔科夫等地关键能源设施后，乌克兰至少约 60 万人停电；官方称袭击已造成至少数人死亡。这是特朗普宣称「能源停火」后连续打击。乌方顾问还称 SpaceX 的 Starlink 终端被设置移动时速上限约 160 公里，未事先通知，已影响前线任务；SpaceX 尚未置评。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "bbc.com",
+          "url": "https://www.bbc.com/news/articles/cm2d6e62p49do"
+        },
+        {
+          "label": "aljazeera.com",
+          "url": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv"
+        }
+      ]
+    },
+    {
+      "id": "1014晚-6",
+      "section": "国际重大影响",
+      "title": "伊朗官员称对霍尔木兹航运改用新战术，目标是推高油价影响美选",
+      "time": "2026-10-14",
+      "summary": "两名伊朗高级官员对路透说，最高层已决定改变对霍尔木兹海峡「违规」船只的攻击方式与节奏，约十天前起袭击增多，并可能把行动范围扩到阿曼湾等地，意图挫败美国压低油价的努力、影响 11 月期中选举。美方官员称，伊朗革命卫队在雷达受损后开始用小艇观察员指引目标。过去约 48 小时海峡附近至少发生五起商船遇袭相关事件。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "arabnews.com",
+          "url": "https://www.arabnews.com/energy/oil-prices-rise-as-iran-deploys-new-tactics-to-target-ships-transiting-hormuz-3006260"
+        }
+      ]
+    }
+  ]
+}
