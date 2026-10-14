@@ -14,7 +14,7 @@ INDEX_PATH = ROOT / "data" / "index.json"
 FAVORITES_PATH = ROOT / "data" / "favorites.json"
 ISSUES_DIR = ROOT / "data" / "issues"
 
-SECTIONS = ("关注", "大事", "破茧")
+SECTIONS = ("我关注的", "国际重大影响")
 BLOCKS = ("AI 模型和产品动态", "人机恋和 AI 陪伴赛道", "语音交互和 AI 硬件玩具")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ITEM_ID_RE = re.compile(r"^.+-[1-9]\d*$")
@@ -179,11 +179,11 @@ def main() -> int:
             if section not in SECTIONS:
                 fail(f"{item_where}.section 必须是 {' / '.join(SECTIONS)}")
             block = item.get("block", None)
-            if section == "关注":
+            if section == "我关注的":
                 if block not in BLOCKS:
-                    fail(f"{item_where}.block 必须是关注的三个子块之一")
+                    fail(f"{item_where}.block 必须是我关注的三个子块之一")
             elif "block" in item and block is not None:
-                fail(f"{item_where} 不是关注，不应填写 block")
+                fail(f"{item_where} 不是我关注的，不应填写 block")
             if not nonempty(item.get("title"), f"{item_where}.title"):
                 pass
             if not isinstance(item.get("summary"), str) or not item.get("summary").strip():

@@ -1,4 +1,5 @@
-const SECTIONS = ['关注', '大事', '破茧'];
+const SECTIONS = ['我关注的', '国际重大影响'];
+const FOCUS = '我关注的';
 const BLOCKS = ['AI 模型和产品动态', '人机恋和 AI 陪伴赛道', '语音交互和 AI 硬件玩具'];
 const SLOT_LABEL = { 早: '早间', 午: '午间', 晚: '晚间', 试: '试刊' };
 const LS_KEY = 'info-window:favorites';
@@ -38,6 +39,7 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('online', updateNet);
 window.addEventListener('offline', updateNet);
+window.addEventListener('scroll', syncHeader, { passive: true });
 
 boot();
 
@@ -149,6 +151,21 @@ function render(options = {}) {
     }
   }
   if (options.resetScroll) window.scrollTo(0, 0);
+  revealCurrentIssue();
+  syncHeader();
+}
+
+function revealCurrentIssue() {
+  const current = document.querySelector('.issue-pill.is-on');
+  if (!current || !current.parentElement) return;
+  const scroller = current.parentElement;
+  const left = current.offsetLeft - (scroller.clientWidth - current.offsetWidth) / 2;
+  scroller.scrollLeft = Math.max(0, left);
+}
+
+function syncHeader() {
+  const top = document.querySelector('.top');
+  if (top) top.classList.toggle('is-stuck', window.scrollY > 2);
 }
 
 function renderTabs() {
@@ -181,15 +198,14 @@ function issuePage(id) {
   const issue = state.issues.get(id);
   if (!issue) return '<p class="empty">没有这一期。</p>';
   const index = state.index.issues.findIndex((item) => item.id === id);
-  return `${mastHtml(issue, issue.items || [])}${filtersHtml()}${issueBody(issue)}${neighborHtml(index)}`;
+  return `${mastHtml(issue, issue.items || [])}${switcherHtml(id)}${filtersHtml()}${issueBody(issue)}${neighborHtml(index)}`;
 }
 
 function dayPage(date) {
   const issues = state.index.issues.filter((item) => item.date === date);
   if (!issues.length) {
-    return `<header class="mast"><p class="mast-kicker">${esc(formatLongDate(date))}</p><h1 class="section-title">这一天没有期次</h1></header><p class="empty"><a href="#/dates">回到日期</a></p>`;
+    return `<header class="page-head"><p class="kicker">按日期</p><h1>这一天没有期次</h1></header><p class="empty"><a href="#/dates">回到日期</a></p>`;
   }
-  const parts = parseDate(date);
   const bodies = issues
     .map((meta) => {
       const issue = state.issues.get(meta.id);
@@ -197,7 +213,7 @@ function dayPage(date) {
       return `<div class="issue-head"><a class="issue-link" href="${issueHref(issue.id)}">${esc(slotLabel(issue.slot))} · ${esc(issue.title || issue.id)}</a></div>${issueBody(issue)}`;
     })
     .join('');
-  return `<header class="mast"><p class="mast-kicker">${esc(formatLongDate(date))}${weekLabel(date)}</p><h1 class="mast-row"><span class="day-num">${parts ? parts.day : ''}</span></h1><p class="mast-count">${issues.length} 期</p></header>${filtersHtml()}${bodies}`;
+  return `<header class="page-head"><p class="kicker">${issues.length} 期 · ${esc(weekText(date))}</p><h1>${esc(formatLongDate(date))}</h1></header>${filtersHtml()}${bodies}`;
 }
 
 function datesPage() {
@@ -221,17 +237,17 @@ function datesPage() {
           const slotText = slots
             .map((meta) => `${slotLabel(meta.slot)} · ${meta.itemCount} 则`)
             .join('、');
-          return `<a class="date-row" href="#/date/${encodeURIComponent(date)}"><span><span class="date-num">${parts ? parts.day : ''}</span><span class="date-side">${weekLabel(date)}</span></span><span class="date-slots"><strong>${esc(slotText)}</strong></span></a>`;
+          return `<a class="date-row" href="#/date/${encodeURIComponent(date)}"><span><span class="date-num">${parts ? parts.day : ''}</span><span class="date-side">${esc(weekText(date))}</span></span><span class="date-slots"><strong>${esc(slotText)}</strong></span></a>`;
         })
         .join('');
-      return `<h2 class="month-label">${esc(label)}</h2>${rows}`;
+      return `<section class="month"><h2 class="month-label">${esc(label)}</h2><div class="date-list">${rows}</div></section>`;
     })
     .join('');
-  return `<header class="mast"><p class="mast-kicker">按日期</p><h1 class="section-title">往期</h1></header><form class="date-jump"><label>跳到日期 <input type="date" id="jump-date"></label></form>${months || '<p class="empty">还没有期次。</p>'}`;
+  return `<header class="page-head"><p class="kicker">按日期</p><h1>往期</h1></header><form class="date-jump"><label for="jump-date">跳到日期</label><input type="date" id="jump-date"></form>${months || '<p class="empty">还没有期次。</p>'}`;
 }
 
 function searchPage() {
-  return `<form class="search" role="search"><label class="sr-only" for="q">检索全部期次</label><input id="q" type="search" enterkeyhint="search" autocomplete="off" placeholder="搜索标题、摘要、备注、来源" value="${esc(state.query)}"></form>${filtersHtml()}<div id="results">${searchResultsHtml()}</div>`;
+  return `<header class="page-head"><p class="kicker">全部期次</p><h1>检索</h1></header><form class="search" role="search"><label class="sr-only" for="q">检索全部期次</label><div class="search-field"><svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M15.5 15.5 20 20"/></svg><input id="q" type="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="搜索标题、摘要、备注、来源" value="${esc(state.query)}"></div></form>${filtersHtml()}<div id="results">${searchResultsHtml()}</div>`;
 }
 
 function searchResultsHtml() {
@@ -249,7 +265,7 @@ function searchResultsHtml() {
   const body = hits
     .map(
       (hit) =>
-        `<div class="issue-head"><a class="issue-link" href="${issueHref(hit.issue.id)}">${esc(hit.issue.title || hit.issue.id)}</a></div>${groupedHtml(hit.items, hit.issue, state.query)}`
+        `<div class="issue-head"><a class="issue-link" href="${issueHref(hit.issue.id)}">${esc(hit.issue.title || hit.issue.id)}</a></div>${sectionsHtml(hit.items, hit.issue, { query: state.query })}`
     )
     .join('');
   return `<p class="result-count">${total} 则</p>${body}`;
@@ -257,7 +273,7 @@ function searchResultsHtml() {
 
 function favoritesPage() {
   if (!mergedFavoriteIds().length) {
-    return '<header class="mast"><p class="mast-kicker">收藏</p><h1 class="section-title">还没有收藏</h1></header><p class="empty">点条目上的「收藏」，会复制口令，并记在这台设备上。仓库里的 data/favorites.json 会和本机记录合在一起。</p>';
+    return '<header class="page-head"><p class="kicker">收藏</p><h1>还没有收藏</h1></header><p class="empty">点条目上的「收藏」，这句话会复制出来，并记在这台设备上。仓库里的收藏清单会和这台设备上的记录合在一起。</p>';
   }
   const { found, missing } = favoriteEntries();
   const groups = new Map();
@@ -276,23 +292,31 @@ function favoritesPage() {
   const lost = missing
     .map((id) => `<p class="missing">找不到条目 ${esc(id)}</p>`)
     .join('');
-  return `<header class="mast"><p class="mast-kicker">收藏</p><h1 class="section-title">${found.length} 则</h1></header>${filtersHtml()}${body}${lost}`;
+  return `<header class="page-head"><p class="kicker">收藏</p><h1>${found.length} 则</h1></header>${filtersHtml()}${body}${lost}`;
+}
+
+function switcherHtml(currentId) {
+  const pills = state.index.issues
+    .map((meta) => {
+      const on = meta.id === currentId;
+      const parts = parseDate(meta.date);
+      const dateText = parts ? `${parts.month}月${parts.day}日` : meta.date;
+      return `<a class="issue-pill${on ? ' is-on' : ''}" href="${issueHref(meta.id)}"${on ? ' aria-current="true"' : ''}><span class="issue-pill-date">${esc(dateText)}</span><span class="issue-pill-slot">${esc(slotLabel(meta.slot))}</span></a>`;
+    })
+    .join('');
+  return `<nav class="switcher" aria-label="切换期次">${pills}<a class="issue-pill issue-pill-all" href="#/dates">全部日期</a></nav>`;
 }
 
 function mastHtml(issue, items) {
-  const parts = parseDate(issue.date);
   const visible = applyFilter(items).length;
   const total = items.length;
   const count = state.section === 'all' ? `${total} 则` : `显示 ${visible} / ${total} 则`;
-  const week = weekLabel(issue.date);
-  return `<header class="mast"><p class="mast-kicker">${esc(formatLongDate(issue.date))}${week}</p><h1 class="mast-row"><span class="day-num">${parts ? parts.day : ''}</span><span class="slot-v">${esc(slotLabel(issue.slot))}</span></h1><p class="mast-count">${esc(count)}</p></header>`;
+  return `<header class="mast"><p class="kicker">${esc(dateKicker(issue.date))}</p><div class="mast-row"><h1>${esc(slotLabel(issue.slot))}</h1><p class="mast-count">${esc(count)}</p></div></header>`;
 }
 
 function issueBody(issue) {
   if (issue.error) return '<p class="empty">这一期没有打开。</p>';
-  const items = applyFilter(issue.items || []);
-  if (!items.length) return '<p class="empty">这一期没有符合筛选的条目。</p>';
-  return groupedHtml(items, issue, '');
+  return sectionsHtml(applyFilter(issue.items || []), issue, { showEmpty: true });
 }
 
 function neighborHtml(index) {
@@ -301,9 +325,11 @@ function neighborHtml(index) {
   const newer = issues[index - 1];
   const older = issues[index + 1];
   if (!newer && !older) return '';
-  const link = (meta, label) =>
-    meta ? `<a href="${issueHref(meta.id)}">${label} · ${esc(meta.title || meta.id)}</a>` : '<span></span>';
-  return `<nav class="issue-nav">${link(newer, '较新')}${link(older, '较旧')}</nav>`;
+  const link = (meta, label, extraClass) => {
+    if (!meta) return '<span></span>';
+    return `<a class="nav-card ${extraClass}" href="${issueHref(meta.id)}"><span class="nav-kicker">${label}</span><span class="nav-title">${esc(meta.title || meta.id)}</span></a>`;
+  };
+  return `<nav class="issue-nav" aria-label="相邻期次">${link(newer, '较新', '')}${link(older, '较旧', 'is-end')}</nav>`;
 }
 
 function filtersHtml() {
@@ -315,33 +341,52 @@ function filtersHtml() {
     )
     .join('');
   let blocks = '';
-  if (state.section === '关注') {
+  if (state.section === FOCUS) {
     const blockChips = [['all', '全部子块'], ...BLOCKS.map((block) => [block, block])]
       .map(
         ([id, label]) =>
-          `<button type="button" class="chip chip-sub${state.block === id ? ' is-on' : ''}" data-block="${esc(id)}" aria-pressed="${state.block === id}">${esc(label)}</button>`
+          `<button type="button" class="chip${state.block === id ? ' is-on' : ''}" data-block="${esc(id)}" aria-pressed="${state.block === id}">${esc(label)}</button>`
       )
       .join('');
-    blocks = `<div class="chips chips-sub" role="group" aria-label="关注子块">${blockChips}</div>`;
+    blocks = `<div class="chips chips-sub" role="group" aria-label="我关注的子块">${blockChips}</div>`;
   }
   return `<div class="filters"><div class="chips" role="group" aria-label="栏目">${sectionChips}</div>${blocks}</div>`;
 }
 
-function groupedHtml(items, issue, query) {
-  const groups = groupItems(items);
-  return groups
-    .map((group) => {
-      const blocks = group.blocks
-        .map((block) => {
-          const heading = block.title ? `<p class="block-title">${esc(block.title)}</p>` : '';
-          const cards = block.items.map((item) => cardHtml(item, issue, { query })).join('');
-          return `<div class="block">${heading}${cards}</div>`;
-        })
-        .join('');
-      const seal = SECTIONS.includes(group.title) ? group.title.slice(0, 1) : '·';
-      return `<section class="section"><h2 class="section-title"><span class="seal" data-s="${esc(group.title)}">${esc(seal)}</span>${esc(group.title)}</h2>${blocks}</section>`;
-    })
+function sectionsHtml(items, issue, options = {}) {
+  const query = options.query || '';
+  const visibleSections = options.showEmpty
+    ? (state.section === 'all' ? SECTIONS : SECTIONS.filter((section) => section === state.section))
+    : SECTIONS.filter((section) => items.some((item) => item.section === section));
+  return visibleSections
+    .map((section) => renderSection(section, items.filter((item) => item.section === section), issue, query))
     .join('');
+}
+
+function renderSection(section, items, issue, query) {
+  const count = items.length ? `<span class="section-count">${items.length}</span>` : '';
+  const body = items.length
+    ? (section === FOCUS ? focusBlocksHtml(items, issue, query) : `<div class="block">${items.map((item) => cardHtml(item, issue, { query })).join('')}</div>`)
+    : '<p class="section-empty">这段时间没有</p>';
+  return `<section class="section" data-section="${esc(section)}"><header class="section-head"><h2 class="section-title">${esc(section)}</h2>${count}</header>${body}</section>`;
+}
+
+function focusBlocksHtml(items, issue, query) {
+  const known = new Set(BLOCKS);
+  const parts = [];
+  for (const block of BLOCKS) {
+    const list = items.filter((item) => item.block === block);
+    if (!list.length) continue;
+    parts.push(blockHtml(block, list, issue, query));
+  }
+  const rest = items.filter((item) => !known.has(item.block));
+  if (rest.length) parts.push(blockHtml(rest[0].block || '其他', rest, issue, query));
+  return parts.join('');
+}
+
+function blockHtml(title, items, issue, query) {
+  const cards = items.map((item) => cardHtml(item, issue, { query })).join('');
+  return `<div class="block"><p class="block-title">${esc(title)}</p>${cards}</div>`;
 }
 
 function cardHtml(item, issue, options = {}) {
@@ -359,17 +404,19 @@ function cardHtml(item, issue, options = {}) {
   const relevanceHtml = relevance
     ? `<p class="relevance"><span>相关</span>${query ? highlight(relevance, query) : esc(relevance)}</p>`
     : '';
-  const origin = options.favorite ? `<p class="origin">${esc(favOrigin(item.id))}</p>` : '';
+  const sectionChip = options.favorite && item.section
+    ? `<span class="section-chip">${esc(item.section)}</span>`
+    : '';
+  const origin = options.favorite ? `<span class="origin-chip">${esc(favOrigin(item.id))}</span>` : '';
   const forget = options.favorite && readLocalFavorites().includes(item.id)
     ? `<button type="button" class="text-btn" data-forget="${esc(item.id)}">移出本机</button>`
     : '';
   return `<article class="card" data-section="${esc(item.section || '')}" id="${esc(item.id)}">
-    <p class="card-meta"><span>${esc(item.id)}</span><time datetime="${esc(item.time || '')}">${esc(formatTime(item.time))}</time></p>
+    <p class="card-meta"><span class="id-chip">${esc(item.id)}</span>${sectionChip}${origin}<time class="time-chip" datetime="${esc(item.time || '')}">${esc(formatTime(item.time))}</time></p>
     <h3 class="item-title">${query ? highlight(title, query) : esc(title)}</h3>
     ${summaryHtml}
     ${relevanceHtml}
     ${sourcesHtml(item.sources)}
-    ${origin}
     <div class="actions">
       <button type="button" data-copy="${esc(talk)}">${esc(talk)}</button>
       <button type="button" data-copy="${esc(keep)}" data-save="${esc(item.id)}" aria-pressed="${saved}" class="${saved ? 'is-saved' : ''}">${esc(keep)}</button>
@@ -392,36 +439,10 @@ function sourcesHtml(sources) {
   return `<p class="sources"><span>来源</span>${anchors}</p>`;
 }
 
-function groupItems(items) {
-  const groups = [];
-  const used = new Set();
-  for (const section of SECTIONS) {
-    const inSection = items.filter((item) => item.section === section);
-    inSection.forEach((item) => used.add(item));
-    if (!inSection.length) continue;
-    if (section === '关注') {
-      const blocks = [];
-      const known = new Set(BLOCKS);
-      for (const block of BLOCKS) {
-        const list = inSection.filter((item) => item.block === block);
-        if (list.length) blocks.push({ title: block, items: list });
-      }
-      const rest = inSection.filter((item) => !known.has(item.block));
-      if (rest.length) blocks.push({ title: rest[0].block || '其他', items: rest });
-      groups.push({ title: section, blocks });
-    } else {
-      groups.push({ title: section, blocks: [{ title: '', items: inSection }] });
-    }
-  }
-  const rest = items.filter((item) => !used.has(item));
-  if (rest.length) groups.push({ title: '其他', blocks: [{ title: '', items: rest }] });
-  return groups;
-}
-
 function applyFilter(items) {
   return items.filter((item) => {
     if (state.section !== 'all' && item.section !== state.section) return false;
-    if (state.section === '关注' && state.block !== 'all' && item.block !== state.block) return false;
+    if (state.section === FOCUS && state.block !== 'all' && item.block !== state.block) return false;
     return true;
   });
 }
@@ -515,7 +536,7 @@ async function onClick(event) {
   const sectionButton = event.target.closest('button[data-section]');
   if (sectionButton) {
     state.section = sectionButton.getAttribute('data-section');
-    if (state.section !== '关注') state.block = 'all';
+    if (state.section !== FOCUS) state.block = 'all';
     render();
     return;
   }
@@ -600,8 +621,7 @@ function tickClock() {
     hourCycle: 'h23',
   }).formatToParts(new Date());
   const pick = (type) => parts.find((part) => part.type === type)?.value || '';
-  const label = `${pick('hour')}:${pick('minute')}`;
-  node.textContent = label;
+  node.textContent = `${pick('hour')}:${pick('minute')}`;
 }
 
 function updateNet() {
@@ -642,9 +662,15 @@ function weekday(value) {
   return '日一二三四五六'[day];
 }
 
-function weekLabel(value) {
+function weekText(value) {
   const day = weekday(value);
-  return day ? ` 周${day}` : '';
+  return day ? `周${day}` : '';
+}
+
+function dateKicker(value) {
+  const week = weekText(value);
+  const date = formatLongDate(value);
+  return week ? `${date} · ${week}` : date;
 }
 
 function formatTime(value) {
