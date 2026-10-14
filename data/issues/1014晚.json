@@ -9,9 +9,24 @@
       "id": "1014晚-1",
       "section": "我关注的",
       "block": "AI 模型和产品动态",
+      "title": "OpenAI 将停用 GPT-4o 等 API 模型，建议改用 gpt-6-luna",
+      "time": "2026-10-14",
+      "summary": "OpenAI 在 10 月 14 日通知开发者：GPT-4o、GPT-4o mini、GPT-4.1、GPT-4.1 mini 将于 2027 年 1 月 14 日从 API 下线，建议改用 gpt-6-luna；基于这些底座的微调模型同步下线。官方弃用页面同时列出更多旧模型的关停时间表。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "developers.openai.com",
+          "url": "https://developers.openai.com/api/docs/deprecations"
+        }
+      ]
+    },
+    {
+      "id": "1014晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
       "title": "OpenAI 洽购网络安全公司 Trail of Bits",
       "time": "2026-10-14T13:12:00+08:00",
-      "summary": "据 The Information 报道，OpenAI 正与纽约网络安全公司 Trail of Bits 进行早期收购洽谈，交易规模未披露，谈判仍可能破裂。Trail of Bits 擅长发现并修补开源软件漏洞，今年 6 月已与 OpenAI 合作「Patch the Planet」项目，用 Codex 等模型给 Python 等开源项目找漏洞、打补丁。",
+      "summary": "据 The Information 报道，OpenAI 正与纽约网络安全公司 Trail of Bits 进行早期收购洽谈，金额未披露，谈判仍可能破裂。该公司擅长发现并修补开源软件漏洞，今年 6 月已与 OpenAI 合作 Patch the Planet，用 Codex 等模型给 Python 等项目找漏洞、打补丁。",
       "relevance": "",
       "sources": [
         {
@@ -21,12 +36,31 @@
       ]
     },
     {
-      "id": "1014晚-2",
+      "id": "1014晚-3",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "Kakao 将在 KakaoTalk 内嵌 AI 助手 Kanana Space，支持语音指令",
+      "time": "2026-10-13",
+      "summary": "Kakao 在年度大会上公布 Kanana Space：在 KakaoTalk 里两指滑动即可叫出角色 Ryan，用语音或文字汇总未读消息、代发回复、管日程、搜网页，不必另开应用。10 月 13 日起接受预约，12 月小范围内测；之后计划扩展到点单、预订、转账，首个合作方是 Coupang Eats。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "asiae.co.kr",
+          "url": "https://www.asiae.co.kr/en/article/2026101313233820471"
+        },
+        {
+          "label": "en.infomaxai.com",
+          "url": "https://en.infomaxai.com/news/articleView.html?idxno=143025"
+        }
+      ]
+    },
+    {
+      "id": "1014晚-4",
       "section": "我关注的",
       "block": "全球股市",
       "title": "亚股周三收盘分化：台股涨 0.59%，韩股六连跌，沪指跌近 0.9%",
       "time": "2026-10-14T17:50:00+08:00",
-      "summary": "台股加权指数收涨 0.59% 至 48625.83 点，终结四连跌，但外资连续第六日净卖超；台积电平盘收 2490 元，周四将开季报会。韩国 KOSPI 收跌 0.44% 至 6008.81 点，六连跌；日经 225 尾盘回吐，收跌 0.05% 至 67744.29 点，盘中曾冲高，ASML 季报公布后东京电子等设备股走弱。恒指跌 0.1% 收 24314 点；上证综指跌 0.88% 收 3767.23 点，深成指跌 1.97%。",
+      "summary": "台股加权指数收涨 0.59% 至 48625.83 点，终结四连跌，外资仍连续第六日净卖超；台积电平盘收 2490 元，周四开季报会。韩国 KOSPI 收跌 0.44% 至 6008.81 点，六连跌；日经 225 尾盘回吐，收跌约 0.05% 至 67744.29 点，ASML 季报后东京电子等设备股走弱。恒指跌 0.1% 收 24314 点；上证综指跌 0.88% 收 3767.23 点，深成指跌 1.97%。",
       "relevance": "",
       "sources": [
         {
@@ -42,20 +76,24 @@
           "url": "https://www.asiae.co.kr/en/article/2026101416041050215"
         },
         {
-          "label": "en.infomaxai.com",
-          "url": "https://en.infomaxai.com/news/articleView.html?idxno=143321"
+          "label": "jen.jiji.com",
+          "url": "https://jen.jiji.com/jc/eng?g=mkt&k=2026101400776"
         }
       ]
     },
     {
-      "id": "1014晚-3",
+      "id": "1014晚-5",
       "section": "我关注的",
       "block": "全球股市",
-      "title": "油价上涨：布伦特约 106 美元，伊朗加强对霍尔木兹过往船只攻击",
+      "title": "布伦特一度逾 107 美元，欧洲天然气近四年高点",
       "time": "2026-10-14",
-      "summary": "周三亚洲时段，布伦特原油期货涨约 0.3% 至每桶 106.03 美元，美国西德州原油涨至 94.42 美元。英国海事贸易行动中心称，霍尔木兹海峡有集装箱船和油轮遭不明投射物击中；伊朗官员对路透表示，约十天前起改用新战术打击其认定违规船只，意在推高油价并影响美国期中选举。胡塞武装袭击沙特阿美达兰行政建筑也加剧供应担忧。",
+      "summary": "霍尔木兹海峡船只遇袭和沙特阿美遇袭消息推动油价上涨：布伦特原油期货早盘一度涨约 1%、突破每桶 107 美元，美国西德州原油约 94.64 美元。欧洲基准荷兰 TTF 天然气期货周三上午站上每兆瓦时约 86 欧元，接近四年高点。欧股早盘偏强，斯托克 600 涨约 0.2%。美国 9 月 CPI 预定台北时间今晚稍后公布。",
       "relevance": "",
       "sources": [
+        {
+          "label": "euronews.com",
+          "url": "https://www.euronews.com/2026/10/14/oil-prices-rise-after-reported-attacks-on-ships-in-strait-of-hormuz"
+        },
         {
           "label": "arabnews.com",
           "url": "https://www.arabnews.com/energy/oil-prices-rise-as-iran-deploys-new-tactics-to-target-ships-transiting-hormuz-3006260"
@@ -63,12 +101,12 @@
       ]
     },
     {
-      "id": "1014晚-4",
+      "id": "1014晚-6",
       "section": "我关注的",
       "block": "全球股市",
       "title": "贝莱德把美股降到中性，上调短期美债",
       "time": "2026-10-13",
-      "summary": "全球最大资产管理机构贝莱德旗下投资研究院把美股观点从超配降到中性，并上调短期美债至超配、长期美债至中性。研究院称此举是为管理 AI 基建扩张带来的短期波动，同时仍看好 AI 和科技；并认为市场对美联储继续加息的定价偏高。美国 9 月 CPI 预定台北时间今晚稍后公布。",
+      "summary": "全球最大资产管理机构贝莱德旗下投资研究院把美股观点从超配降到中性，并上调短期美债至超配、长期美债至中性。研究院称此举是为管理 AI 基建扩张带来的短期波动，同时仍看好 AI 和科技；并认为市场对美联储继续加息的定价偏高。",
       "relevance": "",
       "sources": [
         {
@@ -82,11 +120,11 @@
       ]
     },
     {
-      "id": "1014晚-5",
+      "id": "1014晚-7",
       "section": "国际重大影响",
       "title": "俄军大规模空袭致乌约 60 万人断电，泽连斯基指责 Starlink 限速",
       "time": "2026-10-14",
-      "summary": "泽连斯基说，俄军导弹和无人机夜间打击基辅、哈尔科夫等地关键能源设施后，乌克兰至少约 60 万人停电；官方称袭击已造成至少数人死亡。这是特朗普宣称「能源停火」后连续打击。乌方顾问还称 SpaceX 的 Starlink 终端被设置移动时速上限约 160 公里，未事先通知，已影响前线任务；SpaceX 尚未置评。",
+      "summary": "泽连斯基说，俄军导弹和无人机夜间打击基辅、哈尔科夫等地关键能源设施后，乌克兰至少约 60 万人停电；官方称袭击已造成至少数人死亡。这是特朗普宣称「能源停火」后的连续打击。乌方顾问还称 SpaceX 的 Starlink 终端被设置移动时速上限约 160 公里，未事先通知，已影响前线任务；SpaceX 尚未置评。",
       "relevance": "",
       "sources": [
         {
@@ -100,13 +138,17 @@
       ]
     },
     {
-      "id": "1014晚-6",
+      "id": "1014晚-8",
       "section": "国际重大影响",
       "title": "伊朗官员称对霍尔木兹航运改用新战术，目标是推高油价影响美选",
       "time": "2026-10-14",
-      "summary": "两名伊朗高级官员对路透说，最高层已决定改变对霍尔木兹海峡「违规」船只的攻击方式与节奏，约十天前起袭击增多，并可能把行动范围扩到阿曼湾等地，意图挫败美国压低油价的努力、影响 11 月期中选举。美方官员称，伊朗革命卫队在雷达受损后开始用小艇观察员指引目标。过去约 48 小时海峡附近至少发生五起商船遇袭相关事件。",
+      "summary": "两名伊朗高级官员对路透说，最高层已决定改变对霍尔木兹海峡「违规」船只的攻击方式与节奏，约十天前起袭击增多，并可能把行动范围扩到阿曼湾等地，意图挫败美国压低油价的努力、影响 11 月期中选举。美方官员称，革命卫队在雷达受损后开始用小艇观察员指引目标。过去约 48 小时海峡附近至少发生五起商船遇袭相关事件。",
       "relevance": "",
       "sources": [
+        {
+          "label": "straitstimes.com",
+          "url": "https://www.straitstimes.com/world/middle-east/iran-shifting-tactics-to-step-up-attacks-on-shipping-before-us-vote-officials-say"
+        },
         {
           "label": "arabnews.com",
           "url": "https://www.arabnews.com/energy/oil-prices-rise-as-iran-deploys-new-tactics-to-target-ships-transiting-hormuz-3006260"
