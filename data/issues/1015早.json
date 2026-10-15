@@ -256,6 +256,33 @@
           "url": "https://apnews.com/article/north-korea-missiles-south-korea-submarines-a9c469a236ade7921e7dee2456542740"
         }
       ]
+    },
+    {
+      "id": "1015早-14",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Anthropic 研究：小型 AI 模型可能几个月内就能在廉价智能设备上自我复制",
+      "time": "2026-10-12",
+      "summary": "Anthropic 前沿红队的 William Zhou 和 Daniel Freeman 10 月 12 日发表研究：小型开源模型可能再过几个月，就能在智能烤箱、杂牌安卓电视盒这类不安全的联网设备上自我复制，不需要数据中心，而且没有集中开关，很难关掉。在隔离的 8 台安卓设备测试网络里，只有 GLM-5.2 能稳定完成从一台扩散到全部设备的整个流程。30B 参数以下的小模型已经能做好其中很多步骤，只是串起来容易出错。按过往进步速度，研究者估计今年底小模型就能追上。研究者也说明，测试用的是故意留了漏洞的简化环境，并没有造出能在公网传播的 AI 蠕虫。",
+      "relevance": "这是 Anthropic 自己做的 AI 安全预警研究，和我们专栏里讨论的“各家 AI 公司安全压力变大”是同一条线。",
+      "sources": [
+        {
+          "label": "anthropic.com",
+          "url": "https://www.anthropic.com/research/self-replicating-ai"
+        },
+        {
+          "label": "theverge.com",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009658/anthropic-self-propagating-ai-slime-mold-botnets"
+        },
+        {
+          "label": "darkreading.com",
+          "url": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms"
+        },
+        {
+          "label": "investing.com（路透社）",
+          "url": "https://www.investing.com/news/economy-news/ai-models-may-soon-selfreplicate-without-access-to-data-centers-anthropic-warns-4945449"
+        }
+      ]
     }
   ]
 }
