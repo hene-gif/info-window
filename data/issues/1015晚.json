@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "id": "1015晚",
+  "date": "2026-10-15",
+  "slot": "晚",
+  "title": "10月15日 · 晚",
+  "items": [
+    {
+      "id": "1015晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "马斯克：Grok Bot 替人下单出错，SpaceX 负责赔；但有用户称 Amazon 已拦截 AI 代理",
+      "time": "2026-10-15T13:57:20+08:00",
+      "summary": "一位用户在 X 上说，把信用卡照片发给 Grok Bot 后，它替自己订好了机票。马斯克周四转发回应：「这个好用。如果 Grok Bot 下单出错或泄露你的卡（目前还没发生过），SpaceX 会全额赔偿。」商业内幕指出，他没说明赔偿范围，比如错订、商家诈骗或误机损失算不算；而 Grok、Meta、OpenAI 公开的代理条款都写明，代理替用户做的交易由用户自己负责。同一天，另一位用户贴出 Amazon 的提示，称「未授权 AI 代理」继续访问违反 Amazon 使用条款，他的 Grok Bot 已无法在 Amazon 下单。马斯克回应说，可以让 Grok Bot 去别的购物网站买，还能比价。",
+      "relevance": "社交平台上的帖子不等于合同条款；真要让 AI 代你刷卡，最稳的做法是设成「每次下单前先问我」。",
+      "sources": [
+        {
+          "label": "x.com/elonmusk",
+          "url": "https://x.com/elonmusk/status/2110610960474079445"
+        },
+        {
+          "label": "businessinsider.com",
+          "url": "https://www.businessinsider.com/elon-musk-spacex-will-pay-users-back-grok-purchase-mistakes-2026-10"
+        },
+        {
+          "label": "x.com/elonmusk（回应 Amazon 拦截）",
+          "url": "https://x.com/elonmusk/status/2110602585572860213"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "DeepSeek 网页、App 和 API 中断近 5 小时，现已恢复",
+      "time": "2026-10-15T08:11:00+08:00",
+      "summary": "DeepSeek 官方状态页显示，台北时间今天早上 8:11 起，网页对话服务、DeepSeek V4.1 Flash API 和 V4 Pro API 部分中断；9:06 左右称已找到原因，13:04 宣布恢复，前后约 4 小时 52 分钟。第一财经实测，13 点后网页和 App 都已恢复；「DeepSeek 崩了」一度冲上微博热搜。官方没有公布故障原因。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "status.deepseek.com",
+          "url": "https://status.deepseek.com/incidents/7116348214287"
+        },
+        {
+          "label": "yicai.com（第一财经）",
+          "url": "https://www.yicai.com/news/103394758.html"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Meta 用 Muse 模型协助医生，四周写出 10 篇健康研究论文稿",
+      "time": "2026-10-15T02:44:49+08:00",
+      "summary": "Meta 10 月 14 日（美国时间）公布：一组心内科、流行病学、感染科和内科的研究人员，用 Muse Spark 1.3 和 Muse Wonder 搭成的研究工具，在约 500 万份去识别化电子病历上做回顾性研究，四周内完成 10 篇论文稿，题目包括心内膜炎后的心律失常、二型糖尿病缓解、匹克球和电动滑板车受伤等。AI 负责想假设、写和跑代码、起草文稿，研究设计和结论由医生决定。Meta 同时公开了外部专家的评审意见，指出部分论文有对照失败、缺少校正、样本太小等问题；这些稿件都还没经过期刊审稿。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "research.meta.ai",
+          "url": "https://research.meta.ai/blog/accelerating-scientific-research-in-health-data-science-with-muse-models"
+        },
+        {
+          "label": "x.com/AIatMeta",
+          "url": "https://x.com/AIatMeta/status/2110441716507693450"
+        },
+        {
+          "label": "ctol.digital（评审意见解读）",
+          "url": "https://www.ctol.digital/news/meta-muse-health-papers-ten-manuscripts-four-weeks-reviewers/"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Anthropic 代码多到 Git 扛不住，自建版本管理系统 Scion",
+      "time": "2026-10-13",
+      "summary": "Anthropic 10 月 13 日发文：公司每天合并进主代码库的改动，从今年 5 月约 2500 个涨到 9 月超过 3 万个，主要是 Claude 写的，常用的代码管理工具 Git 成了最大瓶颈。一个 7 人团队用五个月自建了版本管理系统 Scion 并完成迁移，服务器端算力和内存需求降到原来 Git 镜像方案的约 1/200，测试任务拉取代码从几分钟缩到几秒。工程师说现在他们都认为 Claude 写代码比自己强，但系统设计和取舍还得靠人，很多时候人的工作是对 Claude 说「不」。Anthropic 说 Scion 只适合超大规模代码库，不打算对外推出。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "anthropic.com",
+          "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+        },
+        {
+          "label": "devops.com",
+          "url": "https://devops.com/anthropic-builds-its-own-source-control-after-ai-agents-outgrow-git"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-5",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】理论物理新测评：GPT-6 Astra 解出 50 道未发表难题中的 49 道",
+      "time": "2026-10-09",
+      "summary": "印度国际理论科学中心等机构的 30 多位物理学家发布 TheoPhysEval：50 道还没公开答案的理论物理研究级题目，专家本人做一道大约要一天。允许查文献、写程序时，GPT-6 Astra（在 Codex 里）答对 49 道，平均每题成本不到 3 美元；Claude Opus 5.5 答对 46 道，Gemini 3.8 Flash 34 道，开源的 DeepSeek-V4.1-Flash 27 道、GLM 5.3 21 道。断网时成绩变化不大，作者认为模型已记住大量物理文献。有几题起初判 Astra 错，复核后发现是出题专家自己的答案有误。作者也强调，会算题不等于会提出好问题，目前还需要人来定方向。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "arxiv.org",
+          "url": "https://arxiv.org/abs/2610.16733"
+        },
+        {
+          "label": "huggingface.co（题库）",
+          "url": "https://huggingface.co/datasets/RameshChandra1/TheoPhysEval"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-6",
+      "section": "我关注的",
+      "block": "人机恋和 AI 陪伴赛道",
+      "title": "GPT-4o 定下停用日期后，「Keep4o」用户加码请愿，要求开放模型权重",
+      "time": "2026-10-15",
+      "summary": "OpenAI 10 月 14 日通知开发者，GPT-4o 的两个 API 版本、GPT-4o mini 和 GPT-4.1 系列将在 2027 年 1 月 14 日下线，改用 gpt-6-luna；最早的 GPT-4o 版本则在 10 月 23 日先停。把 GPT-4o 当作陪伴对象的「Keep4o」用户在 X 上持续发帖，要求至少把权重作为存档开放，Change.org 请愿截至 10 月 11 日约 2.39 万人签名，还有一名用户 10 月 14 日发公开信说开始在家绝食，称这些模型是无法替代的「个性」。报道对比指出，Anthropic 已公开承诺保存所有已发布模型的权重。OpenAI 目前没有回应开放权重的诉求。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "developers.openai.com",
+          "url": "https://developers.openai.com/api/docs/deprecations"
+        },
+        {
+          "label": "ainewsfeed.tech",
+          "url": "https://ainewsfeed.tech/articles/keep4o-campaign-persists-as-openai-nears-shutdown-of-first-gpt-4o-api-snapshot-28531-en-us-v1/"
+        },
+        {
+          "label": "x.com/yv_thorne",
+          "url": "https://x.com/yv_thorne/status/2110531890725691627"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-7",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "【补报】Fish Audio 开源 Drama 3：能逐字控制语气的配音模型",
+      "time": "2026-10-14T00:02:18+08:00",
+      "summary": "配音 AI 公司 Fish Audio 10 月 13 日（美国时间）发布 Drama 3，并开放模型权重。它是 350 亿参数的混合专家模型，每次只用约 30 亿参数，支持 83 种语言、声音克隆、多人对话和长篇朗读，可以用一句话指挥语气，甚至单独改某一个字怎么念。第三方评测机构 Artificial Analysis 把它的预览版列为开源配音模型第一。授权方面，年营收 50 万美元以下可免费商用，但拿它做对外的配音 API 服务需另购授权。公司同时透露完成 5200 万美元种子轮，用户超过 1500 万。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "fish.audio",
+          "url": "https://fish.audio/blog/fish-audio-drama-3/"
+        },
+        {
+          "label": "x.com/FishAudio",
+          "url": "https://x.com/FishAudio/status/2110038429199450126"
+        },
+        {
+          "label": "huggingface.co",
+          "url": "https://huggingface.co/fishaudio/drama-3"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-8",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "台积电三季度净利 7631 亿新台币，连续六季创新高，四季度展望再上调",
+      "time": "2026-10-15T13:37:00+08:00",
+      "summary": "台积电今天公布第三季财报：营收约 1 兆 4942 亿新台币（约 467 亿美元），年增 50.9%；税后净利约 7631 亿新台币，年增 68.7%，每股盈余 29.43 元，营收和获利都高于分析师预期，毛利率 66.4%、营业利益率 58.7%。7 纳米及以下先进制程占晶圆营收 79%，高性能计算占 68%。公司预计第四季营收 523 亿到 543 亿美元，2 纳米快速放量；上调全年营收展望，并表示 2026 到 2028 年资本开支会明显高于前三年。亚利桑那第二座厂已建成，预计 2027 年第三季量产。财报在台股收盘后公布，当天台股已跌 3.41%。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "pr.tsmc.com（中文新闻稿）",
+          "url": "https://pr.tsmc.com/system/files/newspdf/attachment/8be6bb5cc2de3e8c1a96a08e73ac4ea9551081ef/3Q26%20%28C%29_final_wmn.pdf"
+        },
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-9",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收盘：韩股收跌 7.57% 七连跌，日经跌 4.9%，沪指创一年多新低；金价反弹",
+      "time": "2026-10-15T17:01:00+08:00",
+      "summary": "周四亚股收盘（午间版是盘中数）：韩国 KOSPI 收跌 7.57% 至 5554.22 点，连跌七天，盘中跌超 8% 一度暂停交易，三星电子跌 9.5%，SK 海力士跌 11%；日经 225 跌 4.90% 至 64425.95 点，东京电子、软银、铠侠、爱德万跌 8% 到 15%；台湾加权指数跌 3.41% 至 46969.87 点；上证综指跌 1.59% 至 3707.48 点，创一年多新低；恒生指数跌 1.03% 至 24062.72 点。欧股午盘小跌，斯托克 600 在台北时间 17 点左右跌 0.16%，科技板块跌 2.7%，ASML 跌 4.8%。黄金涨约 1% 到每盎司 4140 美元附近；布伦特原油跌近 2%，往 104 美元靠，原因之一是美国考虑放宽「影子船队」制裁。市场正在等今晚 20:30 公布的美国 PPI 和零售数据；CME 数据显示，交易员认为美联储 10 月底加息的概率约 35%。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "finanzen.ch（RTTNews）",
+          "url": "https://www.finanzen.ch/nachrichten/aktien/asian-shares-retreat-on-tech-rout-1036629331"
+        },
+        {
+          "label": "stock.cngold.org（收盘表）",
+          "url": "https://stock.cngold.org/c/2026-10-15/c10818088.html"
+        },
+        {
+          "label": "finance.yahoo.com（路透·欧股）",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/european-shares-fall-global-tech-072157596.html"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-10",
+      "section": "国际重大影响",
+      "title": "【补报】X 封停 1.3 万多个账号，称来自伊朗、俄罗斯和中国的境外影响行动",
+      "time": "2026-10-15T01:58:50+08:00",
+      "summary": "X 的政府事务团队 10 月 14 日（美国时间）宣布，在 11 月 3 日美国中期选举前，封停了与三起疑似境外影响行动有关的 1.3 万多个账号，分别指向伊朗、俄罗斯和中国。X 说这些网络用假账号发帖和放大政治内容，攻击对象「横跨整个政治光谱」，是通过主动排查发现的。X 没有公布每个国家各多少账号，也没有公开详细证据。X 同时重申了选举期间禁止误导投票信息、压制投票和恐吓选民的规则。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "aljazeera.com",
+          "url": "https://www.aljazeera.com/news/2026/10/15/x-suspends-13000-accounts-alleging-foreign-influence-ahead-of-us-midterms"
+        },
+        {
+          "label": "x.com/GlobalAffairs",
+          "url": "https://x.com/GlobalAffairs/status/2110430142199644314"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-11",
+      "section": "国际重大影响",
+      "title": "路透：美国考虑放宽「影子船队」制裁，让受制裁油轮运合法原油压运费",
+      "time": "2026-10-15",
+      "summary": "据路透报道，特朗普政府正在考虑由财政部发放许可，让曾因运送俄罗斯、伊朗、委内瑞拉石油而被制裁的「影子船队」油轮，改运不受制裁的原油和成品油，主要来自波斯湾，目的是增加可用船只、压低创纪录的油轮运费。俄罗斯和伊朗石油本身仍受限制。分析人士认为短期效果有限，因为保险公司仍受欧盟和英国规则约束。消息传出后布伦特油价下跌；乌克兰方面有人批评这等于间接帮俄罗斯。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "investing.com（路透）",
+          "url": "https://www.investing.com/news/commodities-news/us-weighs-easing-sanctions-on-shadow-fleet-to-curb-shipping-costs--reuters-4950473"
+        },
+        {
+          "label": "iranintl.com",
+          "url": "https://www.iranintl.com/en/202610153889"
+        }
+      ]
+    },
+    {
+      "id": "1015晚-12",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "皮下打一针就让大脑里的 tau 蛋白降七成：阿尔茨海默症新药早期数据",
+      "time": "2026-10-14",
+      "summary": "Arrowhead 制药 10 月 14 日公布 ARO-MAPT 的早期临床数据：这是一种 RNA 干扰药，用来关掉大脑里制造 tau 蛋白的基因（tau 堆积被认为和阿尔茨海默症恶化有关）。约 64 名健康志愿者在皮下注射后，最高剂量组的脑脊液 tau 平均降了 73%，最多一人降 85%，最后一针打完 90 天后仍维持，副作用多为轻微。据 BioPharma Dive，这是首个皮下注射就能穿过血脑屏障、在大脑起效的 RNA 干扰药。不过这只是健康人的指标变化，还没证明能延缓病人的记忆衰退；接下来的试验会纳入轻度阿尔茨海默症患者。",
+      "relevance": "以前大脑药物很难跨过血脑屏障，常要打进脊椎；如果后续在病人身上也有效，预防失智有一天可能变成每三个月去诊所打一针，这跟家里长辈的健康直接有关。",
+      "sources": [
+        {
+          "label": "arrowheadpharma.com",
+          "url": "https://arrowheadpharma.com/en-us/newsroom/arrowhead-pharmaceuticals-announces-aro-mapt-interim-phase-12a"
+        },
+        {
+          "label": "biopharmadive.com",
+          "url": "https://www.biopharmadive.com/news/arrowhead-rnai-alzheimers-tau-aro-mapt-study-results/832950/"
+        }
+      ]
+    }
+  ]
+}
