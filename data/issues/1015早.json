@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "id": "1015早",
+  "date": "2026-10-15",
+  "slot": "早",
+  "title": "10月15日 · 早",
+  "items": [
+    {
+      "id": "1015早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "蚂蚁开源 Ling-3.1-flash：5600 亿参数，主打把粗略想法做成可用原型",
+      "time": "2026-10-14T23:19:49+08:00",
+      "summary": "蚂蚁集团的百灵大模型团队把 Ling-3.1-flash 开源，权重已上 Hugging Face。它总参数约 5600 亿、每次只调动约 250 亿，支持最长 100 万 token 上下文，官方说擅长智能体、搜索、办公和写代码，能把一段粗略需求直接变成网页、手机界面或可交互原型。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "x.com/AntLingAGI",
+          "url": "https://x.com/AntLingAGI/status/2110390124743970952"
+        },
+        {
+          "label": "huggingface.co",
+          "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash"
+        }
+      ]
+    },
+    {
+      "id": "1015早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Meta 推出 Muse Wonder 系列前沿模型（补报）",
+      "time": "2026-10-13T01:00:00+08:00",
+      "summary": "Meta 发布 Muse Wonder 和更强的 Muse Wonder Full，称是自家最强模型，主打个人和工作类智能体任务，支持文字、图片、视频、音频输入和 100 万 token 上下文。Muse Wonder 走 API，每百万 token 输入 4 美元、输出 20 美元；Full 版只给 Muse Code 的高价订阅用户。发布当天 Meta 股价涨约 4%，官方研究博客今早又发了技术细节。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/12/meta-muse-wonder-ai-model-agent.html"
+        },
+        {
+          "label": "dev.meta.ai",
+          "url": "https://dev.meta.ai/resources/blog/build-with-muse-wonder"
+        },
+        {
+          "label": "x.com/AIatMeta",
+          "url": "https://x.com/AIatMeta/status/2110517571149807685"
+        }
+      ]
+    },
+    {
+      "id": "1015早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "彭博：苹果 AI 将于 12 月随 iOS 27.3 登陆中国大陆",
+      "time": "2026-10-15T04:24:00+08:00",
+      "summary": "据彭博报道，苹果计划在 12 月的 iOS 27.3 中把 Apple Intelligence 带到中国大陆，结束两年的监管延迟。首批只有修图、通知摘要等基础功能，新版 Siri AI、Image Playground 和新版 Genmoji 不上线，写作工具也会受限。国内部分由阿里通义模型和百度协助合规与本地化。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "macrumors.com",
+          "url": "https://www.macrumors.com/2026/10/14/apple-intelligence-china-ios-27-3/"
+        },
+        {
+          "label": "9to5mac.com",
+          "url": "https://9to5mac.com/2026/10/14/apple-intelligence-reportedly-coming-to-china-in-december-but-without-siri-ai/"
+        }
+      ]
+    },
+    {
+      "id": "1015早-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "美国八个州同时起诉 OpenAI，指 ChatGPT 伤害青少年",
+      "time": "2026-10-14",
+      "summary": "爱荷华、堪萨斯、亚利桑那等八个州的总检察长各自在州法院起诉 OpenAI，指控 ChatGPT 刻意讨好用户、强化妄想，甚至协助策划暴力，违反消费者保护法。各州要求罚款赔偿，并要求 OpenAI 在能确保安全对齐之前不得开发能自我改进的模型。这是迄今针对 AI 公司规模最大的州级联合行动，正值 OpenAI 准备上市。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "investing.com（路透）",
+          "url": "https://www.investing.com/news/stock-market-news/eight-us-states-sue-openai-claiming-chatgpt-harms-children-4949879"
+        }
+      ]
+    },
+    {
+      "id": "1015早-5",
+      "section": "我关注的",
+      "block": "人机恋和 AI 陪伴赛道",
+      "title": "40 个州要求 Character.AI 破产出售时保护孩子的聊天记录",
+      "time": "2026-10-14",
+      "summary": "Character.AI 破产案首次开庭，40 个州的总检察长要求法官确保任何买家都要保护用户聊天记录、加强安全措施。纽约州总检察长说，这家公司收集了孩子们最私密的心声，不能被卖给出价最高者。公司方面说，目前还没有人出价买用户数据或聊天业务；迪士尼的 2000 万美元授权交易不涉及这些数据。公司破产前每月亏损 800 万到 900 万美元。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "investing.com（路透）",
+          "url": "https://www.investing.com/news/stock-market-news/us-states-seek-childrens-data-protections-in-characterai-bankruptcy-4950121"
+        }
+      ]
+    },
+    {
+      "id": "1015早-6",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "xAI 发布 Grok Voice 3.0，登顶语音对话模型榜单",
+      "time": "2026-10-15T01:04:57+08:00",
+      "summary": "马斯克旗下 SpaceXAI 推出语音对话模型 Grok Voice 3.0，第三方机构 Artificial Analysis 的语音对语音榜单上以 86.9 分排第一，超过 OpenAI 和谷歌的同类模型，响应不到一秒，API 价格不变，每分钟 0.08 美元。官方说它每天在特斯拉车里处理数百万次对话，Starlink 客服每天用它接 2 万通电话，约七成不需要真人。马斯克转发称它是「世界上最好的对话语音模型」。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "x.com/SpaceXSI",
+          "url": "https://x.com/SpaceXSI/status/2110416580899168305"
+        },
+        {
+          "label": "x.ai",
+          "url": "https://x.ai/news/grok-voice-3"
+        },
+        {
+          "label": "x.com/ArtificialAnlys",
+          "url": "https://x.com/ArtificialAnlys/status/2110421964095713743"
+        },
+        {
+          "label": "x.com/elonmusk",
+          "url": "https://x.com/elonmusk/status/2110483960312799675"
+        }
+      ]
+    },
+    {
+      "id": "1015早-7",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "苹果发布 299 美元智能屏 HomeView，押注 AI 版 Siri 管家",
+      "time": "2026-10-13",
+      "summary": "苹果推出一批智能家居新品，主角是 7 英寸智能屏 HomeView，售价 299 美元，下个月出货，有挂墙版和桌面版。它搭载 AI 版 Siri，能听指令、控制家电，还能认出不同家庭成员给出个性化信息。同时更新了音箱和电视盒子，并和 LG、施耐德合作推出智能锁、门铃、摄像头和温控器。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "axios.com",
+          "url": "https://www.axios.com/2026/10/14/apple-ai-hardware-smart-display-homeview"
+        }
+      ]
+    },
+    {
+      "id": "1015早-8",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美国 9 月 CPI 超预期，纳指跌 1.9%，标普创 7 月来最大跌幅",
+      "time": "2026-10-15T04:00:00+08:00",
+      "summary": "美国 9 月消费者物价同比涨 3.7%，比 8 月的 3.4% 更高，汽油单月大涨 9.1%；核心通胀 2.6%，略高于预期。市场押注美联储 10 月 28 日再加息的概率明显上升。周三收盘道指跌 0.09% 至 51621.48 点，标普 500 跌 1.11% 至 7718.94 点，纳指跌 1.88% 至 26692.87 点；费城半导体指数跌约 4.3%，甲骨文跌近 9%，CoreWeave 跌约 15%，美国银行因 12 亿美元罚款拖累业绩跌逾 5%。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "apnews.com",
+          "url": "https://apnews.com/article/stock-markets-earnings-bonds-artificial-intelligence-704d3190f0fba2908df07c85f26346ec"
+        },
+        {
+          "label": "sharecast.com",
+          "url": "https://www.sharecast.com/news/market-report-us-close/wall-street-nyse-new-york-markets-stocks-earnings-bank-of-america-morgan-stanley-blackrock-cpi--23854708.html"
+        },
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html"
+        }
+      ]
+    },
+    {
+      "id": "1015早-9",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "欧股靠 ASML 小涨：斯托克 600 涨 0.4%，富时 100 涨 0.7%",
+      "time": "2026-10-14T23:30:00+08:00",
+      "summary": "ASML 再次上调业绩指引，带动欧洲芯片股反弹，奢侈品股也回升。斯托克 600 收涨约 0.43% 至 637.75 点，医疗板块涨 2.3% 领涨；伦敦富时 100 涨 0.70% 至 10724.86 点，法国 CAC 40 涨 0.58%，德国 DAX 微涨约 0.14%，意大利 FTSE MIB 跌 0.61%。美国通胀偏热也让市场担心欧洲央行年底前加息。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "borsaitaliana.it",
+          "url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/finance/dettaglio/europe-shares-end-mostly-higher-as-chip-stocks-rebound-nRC_14102026_1819_641206817.html?lang=en"
+        },
+        {
+          "label": "marketscreener.com（路透）",
+          "url": "https://www.marketscreener.com/news/european-shares-edge-up-after-solid-asml-results-healthcare-gains-ce785dd2d188f623"
+        }
+      ]
+    },
+    {
+      "id": "1015早-10",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "黄金跌 1.7%、白银跌逾 6%，美油升至三周高位，10 年期美债收在约 5.19%",
+      "time": "2026-10-15T04:04:00+08:00",
+      "summary": "通胀数据推高美元，贵金属重挫：12 月黄金期货收跌 1.66% 至每盎司 4107.90 美元，白银跌约 6.3%。原油因霍尔木兹和沙特设施遇袭继续走高，美国西德州原油收涨 1.01% 至 95.09 美元、三周新高，布伦特收涨 0.35% 至 106.06 美元。10 年期美债收益率盘中一度冲上 5.32%，之后科技股抛售引来避险买盘，收在约 5.19%，比前一天略低。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "edgeconsultancykw.com",
+          "url": "https://edgeconsultancykw.com/commodities-wrap-14-october-2026/"
+        },
+        {
+          "label": "wsj.com",
+          "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-10-14-2026"
+        }
+      ]
+    },
+    {
+      "id": "1015早-11",
+      "section": "国际重大影响",
+      "title": "乌克兰 Starlink 限速部分恢复，马斯克称军用 Starshield 由美国政府决定",
+      "time": "2026-10-15T03:00:10+08:00",
+      "summary": "接昨晚的限速风波：乌克兰前国防部长费多罗夫说，Starlink 在时速 160 公里以内的连接正在恢复，攻击和拦截无人机可以重新起飞，并希望彻底取消军用版 Starshield 的限速。马斯克回复说，Starshield 归美国政府所有和控制，限速由美军、最终由总统决定；民用 Starlink 归 SpaceX 管，只能用于民用或防御。泽连斯基此前警告限速「会死人」，并说感觉被特朗普背叛。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "x.com/elonmusk",
+          "url": "https://x.com/elonmusk/status/2110445577184133456"
+        },
+        {
+          "label": "x.com/FedorovMykhailo",
+          "url": "https://x.com/FedorovMykhailo/status/2110432031968542721"
+        },
+        {
+          "label": "thehill.com",
+          "url": "https://thehill.com/policy/international/6148494-zelensky-trump-musk-starlink-limitations/"
+        }
+      ]
+    },
+    {
+      "id": "1015早-12",
+      "section": "国际重大影响",
+      "title": "霍尔木兹遇袭船只创开战以来新高，联合国警告化肥断供恐引发粮荒",
+      "time": "2026-10-14",
+      "summary": "据安全公司和国际海事组织数据，10 月 11 日以来霍尔木兹海峡及附近至少 10 艘船遇袭，是美以与伊朗开战以来最密集的一段，已有两名船员失踪、一艘集装箱船沉没。联合国副秘书长莫雷拉·达席尔瓦呼吁美伊几周内批准经阿曼协调中心放行化肥船的方案，否则亚洲和非洲可能错过播种季，粮价大涨。开战前全球约三分之一的尿素经这里运输。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "straitstimes.com",
+          "url": "https://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-oct-15-2026"
+        },
+        {
+          "label": "aljazeera.com",
+          "url": "https://www.aljazeera.com/news/2026/10/14/un-official-warns-of-looming-food-crisis-as-hormuz-fertiliser-plan-stalls"
+        }
+      ]
+    },
+    {
+      "id": "1015早-13",
+      "section": "国际重大影响",
+      "title": "朝鲜试射两款潜射战略巡航导弹",
+      "time": "2026-10-15T06:39:00+08:00",
+      "summary": "朝中社周四说，朝鲜周三在东部海域试射了两款潜艇发射的战略巡航导弹，称是检验水下作战系统的战备状态、展示核威慑的可靠性，但没说是从真潜艇还是试验平台发射。这是继周一从平壤附近试射战术弹道导弹之后，朝鲜本周第二次导弹试射。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "koreatimes.co.kr（韩联社）",
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261015/n-korea-tests-2-types-of-submarine-launched-strategic-cruise-missiles-kcna"
+        },
+        {
+          "label": "apnews.com",
+          "url": "https://apnews.com/article/north-korea-missiles-south-korea-submarines-a9c469a236ade7921e7dee2456542740"
+        }
+      ]
+    }
+  ]
+}
