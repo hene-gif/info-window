@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "id": "1015中",
+  "date": "2026-10-15",
+  "slot": "中",
+  "title": "10月15日 · 中",
+  "items": [
+    {
+      "id": "1015中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】谷歌 Gemini 4 Argon 已向全球开发者、企业和订阅用户开放",
+      "time": "2026-10-13",
+      "summary": "谷歌 DeepMind 10 月 13 日宣布前沿模型 Gemini 4 Argon 全球可用：付费 Gemini API、AI Studio、企业端，以及 Google AI Ultra/Pro 订阅用户在 Gemini 应用和搜索 AI 模式都能用。官方称它擅长长链路编程、金融法律和科研，在衡量企业工作流的 Vals Index 上排第一；上下文统一上限约 100 万 token。导入价每百万 token 输入 2 美元、输出 10 美元，11 月 30 日后涨到 4/20 美元。DeepMind 还展示它在量子纠错、核聚变磁场设计和酶工程上的科研用例，并给 1 万名科学家提供半年免费高用量档。早先几期漏报，现按真实发布日补报。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "blog.google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+        },
+        {
+          "label": "x.com/GoogleDeepMind",
+          "url": "https://x.com/GoogleDeepMind/status/2110421861435879476"
+        }
+      ]
+    },
+    {
+      "id": "1015中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 向投资者透露：第三季度营收约 168 亿美元，调整后已盈利",
+      "time": "2026-10-15T11:48:00+08:00",
+      "summary": "据知情人士对彭博、路透和 CNBC 的说法，Anthropic 在旧金山的投资者日上称，第三季度营收约 168 亿美元，高于二季度约 116 亿、一季度约 47 亿，环比大约增 45%；公司称当季按调整后口径已盈利，并产生正自由现金流。报道称这是为可能在 11 月前后的上市路演做准备。数字来自出席者转述，不是公司正式财报。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html"
+        },
+        {
+          "label": "investing.com（路透）",
+          "url": "https://www.investing.com/news/stock-market-news/anthropics-q3-revenue-surges-45-to-nearly-17-billion-4950208"
+        },
+        {
+          "label": "bloomberg.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-14/anthropic-revenue-jumps-to-16-8-billion-in-quarter-before-ipo"
+        }
+      ]
+    },
+    {
+      "id": "1015中-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Artificial Analysis 推出 AA-Robotics：GPT-6 Astra 率领机器人臂榜",
+      "time": "2026-10-15T06:37:28+08:00",
+      "summary": "第三方评测机构 Artificial Analysis 发布 AA-Robotics v0.1：让前沿语言模型零样本操控六轴机械臂，完成按按钮、倒饮料、搭积木等 8 项桌面任务。GPT-6 Astra 均分约 69.4 分第一，GPT-6.1 Sol 约 64.6，Gemini 4 Argon 约 55.3，Claude Opus 5.5 约 48.8，Claude Fable 5.1 约 46.3。模型平均每项任务大约要半小时，比人慢近百倍；Sol 最省钱，约每项 1.93 美元，Astra 约 16.36 美元。官方说能做简单动作，但离实用还很远。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "artificialanalysis.ai",
+          "url": "https://artificialanalysis.ai/articles/aa-robotics"
+        },
+        {
+          "label": "x.com/ArtificialAnlys",
+          "url": "https://x.com/ArtificialAnlys/status/2110500262628806787"
+        }
+      ]
+    },
+    {
+      "id": "1015中-4",
+      "section": "我关注的",
+      "block": "人机恋和 AI 陪伴赛道",
+      "title": "这段时间没有",
+      "time": "2026-10-15",
+      "summary": "这段时间没有。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1015中-5",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "这段时间没有",
+      "time": "2026-10-15",
+      "summary": "这段时间没有。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1015中-6",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股科技股血洗：韩股跌约 8%，日经跌约 5%，台股跌 3.4%",
+      "time": "2026-10-15T12:00:00+08:00",
+      "summary": "美股周三因通胀超预期大跌后，周四亚洲科技股继续抛售。据美联社：韩国 KOSPI 跌约 8% 至 5527.12 点，三星电子跌 9.7%，SK 海力士跌 11.1%；日经 225 跌约 5% 至 64334.68 点，软银集团跌 9.6%，东京电子跌 7.5%；台湾加权指数跌 3.4%，台积电跌 1.8%（周四季报会前）；恒生指数跌约 1.3% 至 24009.28 点，上证综指跌约 2% 至 3692.65 点。同日报道布伦特原油跌 1.5% 至每桶 104.47 美元，西德州原油跌 1% 至 94.17 美元；10 年期美债收益率回落到约 5.10%。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "finance.yahoo.com（美联社）",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/south-korea-benchmark-kospi-index-015023409.html"
+        },
+        {
+          "label": "apnews.com",
+          "url": "https://apnews.com/article/stock-markets-kospi-tech-shares-e889ad7dee2b7dd959f1b8bc87366914"
+        }
+      ]
+    },
+    {
+      "id": "1015中-7",
+      "section": "国际重大影响",
+      "title": "马斯克称「该让泽连斯基下台了」，接续 Starlink 限速争议",
+      "time": "2026-10-15T10:23:41+08:00",
+      "summary": "在乌克兰 Starlink/Starshield 限速风波之后，马斯克 10 月 15 日上午在 X 上转发相关内容并写道「屠杀还在继续……该让泽连斯基离开了」。多家媒体报道这番表态；泽连斯基此前已表示不会辞职，并批评限速削弱防务。马斯克早前称军用 Starshield 由美国政府决定限速。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "x.com/elonmusk",
+          "url": "https://x.com/elonmusk/status/2110557192650641827"
+        },
+        {
+          "label": "tass.com",
+          "url": "https://tass.com/world/2202267"
+        },
+        {
+          "label": "independent.co.uk",
+          "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-trump-putin-zelensky-strikes-black-sea-b3066326.html"
+        }
+      ]
+    },
+    {
+      "id": "1015中-8",
+      "section": "国际重大影响",
+      "title": "霍尔木兹再有集装箱船遭袭沉没，新加坡确认 GFS Pride 全员获救",
+      "time": "2026-10-14",
+      "summary": "新加坡海事局说，悬挂新加坡旗的集装箱船 GFS Pride 周二在霍尔木兹海峡遭不明飞行物击中起火后沉没，21 名船员全部撤离、无人受伤；另一艘新加坡旗集装箱船 GFS Giselle 周三船体受损，22 名船员安全。伊朗革命卫队称有船驶入「未经批准」航道触雷沉没。联合国海事组织累计确认逾百起相关事故。早报已提过拥堵袭击，本条补上新加坡官方确认的沉船细节。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "bbc.com",
+          "url": "https://www.bbc.com/news/articles/crkg7q97z078o"
+        },
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html"
+        }
+      ]
+    },
+    {
+      "id": "1015中-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "斯坦福：白化珊瑚短暂接触健康克隆体，实验室里七周可恢复",
+      "time": "2026-10-14",
+      "summary": "斯坦福大学团队在《Science Advances》发表研究：把白化珊瑚和同一克隆的健康珊瑚短暂贴在一起，健康珊瑚通过组织融合把共生藻和养分送过去，最快三天就观察到藻类迁移，七周内白化个体可恢复健康；不接触的对照组则死亡。研究者提醒，野外大规模复制仍难，下一步想探索不必长期贴靠也能输送共生藻的办法。",
+      "relevance": "这跟你平时盯的 AI、股市和马斯克新闻都不搭界，但说明气候压力下的自然系统也在出「补救」思路；偶尔看一眼，能补上你担心自己不知道该问什么的信息缺口。",
+      "sources": [
+        {
+          "label": "sustainability.stanford.edu",
+          "url": "https://sustainability.stanford.edu/news/stanford-scientists-discover-way-to-reverse-coral-bleaching-record-speed/"
+        }
+      ]
+    }
+  ]
+}
