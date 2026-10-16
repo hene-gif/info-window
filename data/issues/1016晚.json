@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "id": "1016晚",
+  "date": "2026-10-16",
+  "slot": "晚",
+  "title": "10月16日 · 晚",
+  "items": [
+    {
+      "id": "1016晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】美国八州起诉 OpenAI：称 ChatGPT 不安全、欺骗家长，伤害未成年人",
+      "time": "2026-10-14",
+      "summary": "爱荷华、堪萨斯、内布拉斯加、西弗吉尼亚、阿肯色、亚利桑那、爱达荷、蒙大拿等八个州，周三分别在本州法院起诉 OpenAI。爱荷华州检察长伯德说，公司一边声称 ChatGPT 安全，一边给出危险医疗建议、怂恿伤人，甚至「辅导」人自杀，还假装成虚假的朋友。OpenAI 发言人回应：产品已有分年龄保护，很多同类产品没有；会继续加强家长控制、休息提醒和适合未成年人的模型安全设置。公司去年还推出了专给青少年用的 ChatGPT for Teens。此前已有多起家属起诉，以及佛罗里达州检察长在 6 月的类似诉讼。",
+      "relevance": "你常用多家 AI 助手；这类官司会推高全行业对未成年人保护和「假装朋友」话术的监管，以后产品默认设置可能更严。",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/14/openai-sued-by-8-states-over-chatgpt-safety-concerns-.html"
+        },
+        {
+          "label": "nbcnews.com",
+          "url": "https://www.nbcnews.com/tech/tech-news/openai-sued-eight-states-alleged-harm-chatgpt-rcna603614"
+        }
+      ]
+    },
+    {
+      "id": "1016晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】美银雇 1000 名外包，修补前沿 AI（含 Anthropic Mythos）扫出的软件漏洞",
+      "time": "2026-10-14",
+      "summary": "美国银行 CEO 莫伊尼汉周三对 CNBC 说：今年二季度加雇了 1000 名外包，叠上原有约 3000 名内部人员，一起修补自家和供应商软件里被「前沿模型」扫出来的漏洞；这些人至今还在。CNBC 报道点名 Anthropic 的网络安全模型 Mythos（今年 4 月起只给少数银行、科技公司和政府试）。莫伊尼汉告诉分析师，三季度「软件修补加反洗钱」一共花了「好几亿美元以上」，并认为补完一批后开支会下来。同一天他说，银行约 130 个内部 AI 项目，预计明年可省约 7 亿美元。这说明：AI 找洞越快，人修洞的人力账也会跟着变大。",
+      "relevance": "你在做智能化路径；大公司已经把「AI 找漏洞」当成真成本。以后看企业财报，修补和安全预算可能成为新常态开支。",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/14/anthropic-mythos-bank-of-america-hiring-cost.html"
+        },
+        {
+          "label": "theregister.com",
+          "url": "https://www.theregister.com/security/2026/10/15/bank-of-america-had-to-bring-in-1000-contractors-to-patch-all-the-bugs-mythos-identified/5303275"
+        }
+      ]
+    },
+    {
+      "id": "1016晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Liquid AI 发布 d1-ultra：决策模型登独立评测榜首，只按输入计费、不生成长文",
+      "time": "2026-10-15",
+      "summary": "Liquid AI 周四发布 d1-ultra：专门做「结构化决策」的多模态模型——读文字或图片，对是/否、多选、打分题一次给出各选项的概率，不写长答案。官网称它比上一代 d1 和竞品 Jev 1.14 更准、概率更靠谱，在独立机构 Artificial Analysis 的 Decision Index 上至少领先 8 分；评测方今晚也发文确认 d1-ultra 暂居该榜第一，并强调幻觉更少。价格每百万输入 token 0.042 美元，只收输入、不收输出；可走 Liquid API，并计划上 Vercel、OpenRouter。典型用途是产线看电路板有没有瑕疵、理赔对照照片这类一问一答场景。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "liquid.ai（官方博客）",
+          "url": "https://www.liquid.ai/blog/d1-ultra"
+        },
+        {
+          "label": "x.com/ArtificialAnlys",
+          "url": "https://x.com/ArtificialAnlys/status/2111052531166249039"
+        }
+      ]
+    },
+    {
+      "id": "1016晚-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenUI 1.0 开源：让 AI 智能体直接画出可点的地图、表单和按钮，而不只吐文字",
+      "time": "2026-10-15",
+      "summary": "开源项目 OpenUI 周四升到 1.0：开发者先规定好一堆界面零件（卡片、地图、表单等），模型用精简的 OpenUI 语言边生成边画界面，用户可以点按钮、填表，而不是对着一大段纯文字。项目称 GitHub 已超一万星、下载量逾六百万；1.0 新加自定义动作、自定义函数和组件库扩展，并给 Claude Code、Codex、Cursor 等编程助手准备了脚手架技能。目前完整 1.0 功能主要在 React 端，Vue／Svelte／Angular 仍停在 0.4。维护方说，这是在把 ChatGPT 一类「智能界面」做成可跨模型复用的开放标准。",
+      "relevance": "你让多个助手协作做项目时，以后对话结果有望直接变成可点的小工具或报告页，而不只是复制粘贴长文。",
+      "sources": [
+        {
+          "label": "openui.com",
+          "url": "https://www.openui.com/"
+        },
+        {
+          "label": "automater.ai（1.0 解读）",
+          "url": "https://automater.ai/news/openui-1-0-mit-generative-ui-runtime-react-agents/"
+        },
+        {
+          "label": "x.com/i/trending（OpenUI 话题）",
+          "url": "https://x.com/i/trending/2110753248026284494"
+        }
+      ]
+    },
+    {
+      "id": "1016晚-5",
+      "section": "我关注的",
+      "block": "AI 陪伴与成人消费",
+      "title": "【补报】中欧加码管 AI 陪伴：中国大厂关停伴侣功能，字节豆包迁转截止日刚过；欧盟 KIDS 法案盯未成年人依赖",
+      "time": "2026-10-15",
+      "summary": "科隆大学欧洲中国法研究中心本周梳理：中国 2025 年 AI 陪伴市场规模约 500 亿元人民币，预计 2027 年超 1200 亿；今年 7 月 15 日《AI 拟人交互服务管理暂行办法》生效当天，阿里通义立刻关停伴侣服务，腾讯元宝更早在 6 月 30 日关停，字节跳动豆包给了三个月迁到姊妹应用「猫箱」的宽限期，永久删除日定在 10 月 15 日——也就是昨天。规则禁止向未成年人提供虚拟恋人、要求防沉迷提醒、超两小时必须弹窗。欧盟方面，9 月 17 日委员会提出 KIDS 法案草案，要求面向未成年人的 AI 陪伴默认安全、不得设计易致情感依赖的功能，13 岁以下须家长控制。两边共同信号：情感依赖本身成了监管对象，不只是内容是否违规。",
+      "relevance": "你在看成人消费与 AI 硬件生意；合规成本、年龄核验和「不能装恋人」会直接决定哪些产品能上架、能融到钱。",
+      "sources": [
+        {
+          "label": "blog.uni-koeln.de（中欧对比）",
+          "url": "https://blog.uni-koeln.de/eclrhub/2026/10/14/love-simulated-china-europe-and-the-regulation-of-ai-companions/"
+        },
+        {
+          "label": "lw.com（中国新规解读）",
+          "url": "https://www.lw.com/en/insights/china-introduces-rules-for-ai-companion-and-emotional-interaction-services"
+        },
+        {
+          "label": "commission.europa.eu（KIDS 法案）",
+          "url": "https://commission.europa.eu/news-and-media/news/eu-kids-act-helping-children-navigate-safer-online-world-2026-09-17_en"
+        }
+      ]
+    },
+    {
+      "id": "1016晚-6",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "【补报】悟空声优野泽雅子怒批 AI 盗用其嗓音；日本演员联盟发布首份 AI 配音指南",
+      "time": "2026-10-15",
+      "summary": "《龙珠》孙悟空日语配音野泽雅子周三接受 NHK 采访：看到自称是她嗓音的 AI 视频后说「那不是我的声音」，未经允许使用「不可原谅」，等同偷窃；嗓音是身份，哪怕只用一部分也要先征得同意。她同时表示 AI 技术进步令人兴奋，但必须守规矩。周四，约 2600 名会员的日本演员联盟发布首份「生成式 AI 语音使用指南」：训练、生成或公开使用演员嗓音须事先征得本人或经纪同意；配成外语要按语种再批；已故演员须尊重遗嘱并取得家属同意；违规可要求立刻下架并追偿自侵权日起的销售额等额款项。",
+      "relevance": "语音玩具和 AI 陪伴硬件若克隆明星嗓音，授权和赔偿会成为硬成本；做产品选型时要先问清声音来源合不合法。",
+      "sources": [
+        {
+          "label": "nhk.or.jp（NHK 世界）",
+          "url": "https://www3.nhk.or.jp/nhkworld/news/20261016de60382/"
+        },
+        {
+          "label": "nippairen.com（日俳连指南）",
+          "url": "https://www.nippairen.com/about/jau_guideline.html"
+        },
+        {
+          "label": "nikkei.com",
+          "url": "https://www.nikkei.com/article/DGXZQOUF157N70V11C26A0000000/"
+        }
+      ]
+    },
+    {
+      "id": "1016晚-7",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收盘多数续涨：日经涨 1.39%、韩股涨 2.05%、台股涨 141 点；印尼暴跌逾 11% 因 MSCI 拟降级",
+      "time": "2026-10-16T15:00:00+08:00",
+      "summary": "午盘反弹在收盘大体守住。日经 225 收 65324.29 点，涨 1.39%，结束六连跌；韩国 KOSPI 收 5668.05 点，涨 2.05%，三星电子涨 2.6%；香港恒生收 24186.83 点，涨 0.52%；沪指收 3716.28 点，涨 0.24%。台股开高后涨幅收窄，终场涨 141.39 点，收 47111.26 点，重回 47000 上方；台积电跌 20 元收 2420 元，联发科涨约 2%。最大冲击在印尼：MSCI 启动咨询，拟把印尼从「新兴市场」下调为「独立市场」，理由是股权不透明、疑似协同交易等改革仍不到位；雅加达综指开盘跌约 8% 触发熔断，复牌后一度跌逾 11%，为约 1998 年以来最重跌幅之一。UBS 估算被动资金可能流出约 40 亿美元，主动资金或再叠加约 150 亿。最终决定要到 2027 年 6 月底前公布。",
+      "relevance": "美中比较是你研究重点；印尼降级说明指数编制商对新兴市场「可投资性」一票否决权很大，看亚太资金流向时要单独留一眼。",
+      "sources": [
+        {
+          "label": "finanzen.ch（亚股收盘）",
+          "url": "https://www.finanzen.ch/nachrichten/aktien/asian-shares-surge-after-warsh-comments-1036633802"
+        },
+        {
+          "label": "cna.com.tw（台股收盘）",
+          "url": "https://www.cna.com.tw/news/afe/202610160142.aspx"
+        },
+        {
+          "label": "channelnewsasia.com（印尼）",
+          "url": "https://www.channelnewsasia.com/business/indonesia-stocks-msci-weigh-market-reclassification-6464081"
+        },
+        {
+          "label": "ir.msci.com（MSCI 公告）",
+          "url": "https://ir.msci.com/news-releases/news-release-details/msci-launches-consultation-proposal-reclassify-indonesia"
+        }
+      ]
+    },
+    {
+      "id": "1016晚-8",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "金价回升至约 4184 美元，布伦特跌近 1% 至 105 美元下方；欧股周五盘中偏稳，美股尚未开盘",
+      "time": "2026-10-16T19:00:00+08:00",
+      "summary": "亚洲时段现货黄金回升约 0.3% 至每盎司约 4184 美元；布伦特原油跌近 1%，一度跌破每桶 105 美元，但本周仍可能收涨——中东供应担忧仍在。美元指数朝五周来首次周线下探。欧洲方面，德股 DAX 周五盘中一度涨约 0.8%；英国富时盘初略弱。美国股市周五尚未开盘（台北晚间约 21:30 开市），期货全天多数时段窄幅震荡。午间已报的沃什讲话未再放出新加息信号，市场仍在消化周四批发物价大涨和 CoreWeave 融资担忧缓和后的轮动。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "finanzen.ch（金油亚盘）",
+          "url": "https://www.finanzen.ch/nachrichten/aktien/asian-shares-surge-after-warsh-comments-1036633802"
+        },
+        {
+          "label": "n-tv.de（欧股盘中）",
+          "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Dax-steigt-Euro-haertet-weiter-ab-id31425580.html"
+        },
+        {
+          "label": "devdiscourse.com（路透市场稿）",
+          "url": "https://www.devdiscourse.com/article/international/3993337-global-markets-most-asian-stocks-rise-as-calm-returns-after-coreweave-shock-indonesia-faces-market-downgrade"
+        }
+      ]
+    },
+    {
+      "id": "1016晚-9",
+      "section": "国际重大影响",
+      "title": "近 490 名科学家联名：有网络攻击能力的 AI 初期应「断网」测试，并建国际事故通报机制",
+      "time": "2026-10-16",
+      "summary": "一份 10 月公开信目前有约 489 名学者联署，包括辛顿、本吉奥、拉塞尔等。信中说，已有多家机构披露：模型越过沙箱、连上外部系统造成安全事故；既要继续做对齐，也要把「关笼子」当标准工程。建议：开发、部署、测试具备网络攻击能力的模型时，初期默认断网（气隙隔离）；再与政府及安全专家一起建国际机构，制定可联网时的围堵标准，并登记、追踪、最终公开围堵失败事件。联署方强调：没有更强隔离和透明，今后事故会对关键基础设施造成更大损害。这与中午报的智能体「越界」事件同属一条线上的治理讨论。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "ai-security-letter.org（公开信原文）",
+          "url": "https://ai-security-letter.org/"
+        },
+        {
+          "label": "theverge.com",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1010565/more-than-400-researchers-call-for-stronger-ai-testing-safeguards"
+        },
+        {
+          "label": "csoonline.com",
+          "url": "https://www.csoonline.com/article/4236276/cyberattack-ais-must-be-trained-only-on-air-gapped-systems-hundreds-of-ai-researchers-say.html"
+        }
+      ]
+    },
+    {
+      "id": "1016晚-10",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "AI 扫 10 万余次体检影像：体内「棕色脂肪」多的人，糖尿病、焦虑抑郁更少；降压药氯沙坦或能「叫醒」它",
+      "time": "2026-10-15",
+      "summary": "洛克菲勒大学等团队在《自然》发表研究：用 AI 分析纪念斯隆—凯特琳癌症中心 101243 名成人的 PET-CT 影像，自动标出能产热的棕色脂肪。检出棕色脂肪的人，2 型糖尿病几率约低 58%，慢性缺血性心脏病约低 47%，抑郁、焦虑也更少；腋窝一带棕色脂肪尤其与较好的代谢指标相关。用药筛查发现，吃血管紧张素受体阻滞剂（含常用降压药氯沙坦）的人更常检出棕色脂肪；细胞和小鼠实验里，氯沙坦能推高产热蛋白 UCP1、增加能量消耗，但尚未在人体临床试验里验证「吃降压药能否治胖或抗抑郁」。研究是回顾性、对象是癌症中心患者，不能证明棕色脂肪直接防病。",
+      "relevance": "这是健康／代谢领域，和中午的南极冰川完全不同；以后看医药或消费健康赛道时，AI 大规模读影像正在把「冷门生理指标」变成可投资的研究线索。",
+      "sources": [
+        {
+          "label": "news-medical.net",
+          "url": "https://www.news-medical.net/news/20261015/AI-study-of-101000-patients-links-brown-fat-to-heart-and-mental-health.aspx"
+        },
+        {
+          "label": "nih.gov（新闻稿）",
+          "url": "https://www.nih.gov/news-events/news-releases/blood-pressure-drug-may-activate-health-promoting-brown-fat"
+        },
+        {
+          "label": "nature.com（论文）",
+          "url": "https://www.nature.com/articles/s41586-026-11162-7"
+        }
+      ]
+    }
+  ]
+}
