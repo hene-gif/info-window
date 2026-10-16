@@ -1,0 +1,324 @@
+{
+  "version": 1,
+  "id": "1016早",
+  "date": "2026-10-16",
+  "slot": "早",
+  "title": "10月16日 · 早",
+  "items": [
+    {
+      "id": "1016早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Meta 开放 Muse Spark Open 权重：8160 亿参数，两台顶配 Mac Studio 就能在家跑",
+      "time": "2026-10-16T01:08:04+08:00",
+      "summary": "Meta 周四发布 Muse Spark Open，也就是主力模型 Muse Spark 的开放权重版，称是「迄今最强的美国开放权重模型」。它总参数 8160 亿、每次只调动约 420 亿，支持 100 万 token 上下文，能看文字、图片、视频和听音频，主打写代码和长时间的智能体任务。权重可在 Hugging Face 免费下载，按 Muse 模型许可可以商用；Groq、Together、OpenRouter 等平台也同步上线了 API。Meta 和苹果合作了几个月做适配：用两台 512GB 内存的 M5 Ultra Mac Studio（或四台 256GB 的）连起来就能本地运行，苹果实测四台机器每秒能生成 36 个以上 token，比一般人阅读速度快。",
+      "relevance": "你电脑上用 Ollama 跑的是 9B 小模型；这个大约是它的 90 倍大，普通电脑跑不动，但说明「在家跑接近前沿水平的模型」的门槛正在快速往下掉。",
+      "sources": [
+        {
+          "label": "research.meta.ai",
+          "url": "https://research.meta.ai/blog/muse-spark-open"
+        },
+        {
+          "label": "x.com/AIatMeta",
+          "url": "https://x.com/AIatMeta/status/2110779754274292212"
+        },
+        {
+          "label": "machinelearning.apple.com（苹果实测）",
+          "url": "https://machinelearning.apple.com/research/mlx-distributed-inference"
+        }
+      ]
+    },
+    {
+      "id": "1016早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "马斯克：SpaceX 和英伟达合造的太空算力电脑「Star Mind」明年量产",
+      "time": "2026-10-16T01:48:38+08:00",
+      "summary": "英伟达 CEO 黄仁勋在 BG2 播客上说，英伟达已把马斯克的 AI 业务从「企业客户」改列为「云服务商」一类，意思是规模已和大型云厂商同级，两家工程师还在一起设计放到太空用的服务器。马斯克周四转发回应：「老朋友是最好的朋友」，并说 SpaceX 和英伟达合作的 Star Mind 电脑「比几乎所有人预期的都好」，明年进入量产。对「2027 年底要做到 10 吉瓦算力」的说法，他补了一句「可能不止 10 吉瓦」。按今年 8 月公布的计划，第一代 Starmind AI 卫星用英伟达特制的 Vera Rubin NVL72 系统，靠太阳能供电、向太空散热，2027 年第四季开始发射，2028 年形成规模；这一切还取决于星舰能否按计划运作。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "x.com/elonmusk",
+          "url": "https://x.com/elonmusk/status/2110789964430786745"
+        },
+        {
+          "label": "x.com/elonmusk（10 吉瓦）",
+          "url": "https://x.com/elonmusk/status/2110877572011844019"
+        },
+        {
+          "label": "lightreading.com（8 月计划背景）",
+          "url": "https://www.lightreading.com/satellite/with-nvidia-on-board-spacex-orbital-data-centers-to-hit-significant-scale-in-2028"
+        }
+      ]
+    },
+    {
+      "id": "1016早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "英国金融时报：Anthropic 营收有 5%–7% 来自「蒸馏」，三季度已大幅削减；另给外部评测团队「员工级」权限",
+      "time": "2026-10-15",
+      "summary": "据金融时报援引四位知情人士（The Information 也报道了同样数字），Anthropic 在周三的投资者日上透露，「蒸馏」带来的收入占公司营收 5% 到 7%，第三季度已经把这部分「大幅」削减。蒸馏指别的公司大量调用 Claude、拿它的回答去训练自家模型。开发者 Simon Willison 按二季度约 115 亿美元营收估算，这相当于其他公司花了超过 5 亿美元来蒸馏 Claude。同一天，Anthropic 宣布已让第三方评测机构 METR 的团队以近似员工的权限进入公司，评估它的安全做法，并说还在和多家机构洽谈。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "x.com/simonw（引述金融时报）",
+          "url": "https://x.com/simonw/status/2110721515130089787"
+        },
+        {
+          "label": "x.com/dotey（宝玉中文解读）",
+          "url": "https://x.com/dotey/status/2110733274448306267"
+        },
+        {
+          "label": "x.com/AnthropicAI（METR 评测）",
+          "url": "https://x.com/AnthropicAI/status/2110784662071398807"
+        }
+      ]
+    },
+    {
+      "id": "1016早-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI、Anthropic 各出 500 万美元，支持西蒙斯基金会 1500 万美元「AI 与数学」计划",
+      "time": "2026-10-15T22:35:29+08:00",
+      "summary": "西蒙斯基金会启动一项 1500 万美元的计划，帮数学家应对 AI 时代：OpenAI 和 Anthropic 各出 500 万美元，OpenAI 另外提供模型和算力。钱由基金会公开征集、统一发放，用来办研讨会和培训，帮数学家检验、读懂 AI 生成的证明，并制定使用 AI 的规范。OpenAI 当天还推出「Rosalind 学术计划」，让符合条件的美国大学实验室获得资助，免费使用它的生物学模型 GPT-Rosalind。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "simonsfoundation.org",
+          "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/"
+        },
+        {
+          "label": "x.com/OpenAI",
+          "url": "https://x.com/OpenAI/status/2110741355739963884"
+        },
+        {
+          "label": "x.com/AnthropicAI",
+          "url": "https://x.com/AnthropicAI/status/2110846112152105136"
+        },
+        {
+          "label": "x.com/OpenAI（Rosalind 学术计划）",
+          "url": "https://x.com/OpenAI/status/2110841898076418336"
+        }
+      ]
+    },
+    {
+      "id": "1016早-5",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "微软自研 2.8 万亿参数底座模型 MAI-Base-2 完成预训练，称强于所有开放权重模型",
+      "time": "2026-10-15",
+      "summary": "微软 AI 部门（由苏莱曼领导）周四公布：新底座模型 MAI-Base-2 已完成预训练，总参数 2.8 万亿、每次调动 800 亿，今年 8 到 9 月用 1.6 万块英伟达 GB200 训练了 38 天，喂了约 50 万亿 token，原生支持看图。微软称它在自家留出的测试题上胜过所有测过的开放权重模型，训练效率是 DeepSeek-V4-Pro 底座的 4 到 12 倍，并强调训练数据全是自有数据、没有蒸馏别家模型。模型还在做后续训练，之后会通过微软 Foundry 平台把权重授权给可信合作伙伴；下一代 MAI-Base-3 已在准备。这些成绩都是微软自测，还没有第三方评测。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "microsoft.ai",
+          "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/"
+        }
+      ]
+    },
+    {
+      "id": "1016早-6",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "阶跃星辰开放 Step 5 Preview 权重；快手可灵 4.0 全面上线",
+      "time": "2026-10-15T21:00:01+08:00",
+      "summary": "上海的阶跃星辰周四把 Step 5 Preview 的权重放上 Hugging Face 和魔搭：总参数 6000 亿、每次调动 270 亿，支持 100 万 token 上下文，能看文字和图片，主打长时间运行的智能体任务，兑现了上个月的开源承诺，英伟达和多家推理平台当天就接入。同一天，快手的视频生成模型可灵 4.0 向所有用户开放，能生成 3 到 30 秒、最高 4K 的视频，最多可设 10 个关键帧、用 15 张参考图；10-bit HDR 和面向企业的 API 还标着「即将推出」。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "x.com/StepFun_ai",
+          "url": "https://x.com/StepFun_ai/status/2110717330657616092"
+        },
+        {
+          "label": "huggingface.co",
+          "url": "https://huggingface.co/stepfun-ai/Step-5-Preview"
+        },
+        {
+          "label": "x.com/Kling_ai",
+          "url": "https://x.com/Kling_ai/status/2110747526840361191"
+        },
+        {
+          "label": "kling.ai（4.0 使用指南）",
+          "url": "https://kling.ai/quickstart/kling-4-model-user-guide"
+        }
+      ]
+    },
+    {
+      "id": "1016早-7",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "谷歌编程工具 Antigravity 向付费 AI Pro 用户开放 Gemini 4 Argon",
+      "time": "2026-10-16T06:52:53+08:00",
+      "summary": "谷歌的 AI 编程工具 Antigravity 今天开始向正式付费的 Google AI Pro 订阅用户开放 Gemini 4 Argon，官方说需求非常大，所以分批扩容才走到这一步。Argon 有单独的每周额度，不占原来 Gemini 3.8 Flash 的额度；试用期的 Pro、免费用户和 Google AI Plus 用户暂时用不了。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "x.com/antigravity",
+          "url": "https://x.com/antigravity/status/2110866531932316011"
+        },
+        {
+          "label": "x.com/dotey（宝玉中文解读）",
+          "url": "https://x.com/dotey/status/2110877554945175677"
+        }
+      ]
+    },
+    {
+      "id": "1016早-8",
+      "section": "我关注的",
+      "block": "人机恋和 AI 陪伴赛道",
+      "title": "Anthropic 总裁 Daniela Amodei：AI 恋人是「糟糕的 AI 用法」，Claude 不能当你的伴侣",
+      "time": "2026-10-15T20:55:13+08:00",
+      "summary": "据商业内幕报道，Anthropic 总裁 Daniela Amodei 在和赫芬顿（Arianna Huffington）的预录访谈中说，用 AI 做虚拟恋人「是糟糕的 AI 用法，大家不该这么做」，这会让人和人之间更疏远。她说：「Claude 永远不能当你的上司、你的心理咨询师或你的伴侣」，这些是会变得更重要的人际关系。访谈将在周五的 Think Health 大会播出。报道提到，Character.AI 本周已申请破产保护；Anthropic 上周更新使用政策，11 月 12 日起禁止 Claude 和未成年人进行角色扮演。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "businessinsider.com",
+          "url": "https://www.businessinsider.com/anthropic-president-amodei-ai-romantic-partners-terrible-use-2026-10"
+        }
+      ]
+    },
+    {
+      "id": "1016早-9",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "ChatGPT 语音升级到 GPT-Live-1.1：新增日语、韩语等六种语言的新声音，等待时少说「正在查」",
+      "time": "2026-10-16T02:19:54+08:00",
+      "summary": "OpenAI 周四开始向所有用户推送 GPT-Live-1.1，用在 ChatGPT、Codex 和 dots 的语音功能里：法语、德语、印地语、墨西哥西班牙语、韩语和日语都有了新声音，口音更自然；查资料或调用工具时，不再反复说「正在查……」，等待提示更多样。Plus 及以上用户默认用 GPT-Live-1.1，其他用户用轻量版 GPT-Live-1.1 Quip；开发者 API 「即将推出」。这次的新声音名单里没有中文。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "x.com/OpenAI",
+          "url": "https://x.com/OpenAI/status/2110797830361436604"
+        },
+        {
+          "label": "help.openai.com（更新说明）",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "1016早-10",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周四收涨：道指涨 1.08%，资金撤出科技股；批发物价年涨 6.3%，创 2022 年来最大",
+      "time": "2026-10-16T04:00:00+08:00",
+      "summary": "美股周四收盘：道指涨 556.80 点（1.08%）至 52178.28 点，标普 500 涨 0.33% 至 7744.11 点，纳指只涨 0.08% 至 26713.03 点，资金从科技股转向医疗等板块。美国 9 月生产者物价指数（PPI）月增 1.3%、年增 6.3%，是 2022 年以来最大涨幅，远高于预期，主要被能源推高，扣除食品和能源也年增 5.0%。9 月零售销售增 0.8%，高于预期，但扣掉汽车和加油站只增 0.25%，显示油价高让消费者在别处省钱。期货显示交易员认为美联储 10 月 27–28 日加息的概率约 29% 到 34%。今天要看美联储主席沃什在曼谷 IMF 会议上的讲话。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "wsj.com",
+          "url": "https://www.wsj.com/finance/stocks/stocks-gain-as-treasury-yields-give-back-some-recent-gains-abd77be3"
+        },
+        {
+          "label": "cnbc.com（PPI 和零售）",
+          "url": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html"
+        },
+        {
+          "label": "kitco.com",
+          "url": "https://www.kitco.com/news/article/2026-10-15/gold-approaches-4170-silver-gains-3-bond-rally-lifts-precious-metals-kitco"
+        }
+      ]
+    },
+    {
+      "id": "1016早-11",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "欧股收涨，金价涨 1.5%，美债 10 年期收益率单日大跌约 10 个基点；美油涨 3%",
+      "time": "2026-10-15",
+      "summary": "欧股周四收高：斯托克 600 涨 0.38% 至 640.16 点，创 9 月 22 日以来新高；英国富时 100 涨 1.08%，法国 CAC 40 涨 0.78%，德国 DAX 涨 0.33%；爱立信财报好于预期，大涨 6.8%。美国 10 年期国债收益率跌约 10 个基点到 5.09% 左右，是 2025 年 8 月以来最大单日跌幅，Kitco 分析认为 AI 相关公司的债券和股票走弱，让资金涌向国债。12 月黄金期货收涨 1.51% 至每盎司 4170.10 美元，白银涨约 3%。美国原油（WTI）涨 3.03% 至 97.97 美元，因美国原油库存意外减少 860 万桶；布伦特原油小跌 0.13% 至 105.92 美元，受美国考虑放宽「影子船队」制裁、国际能源署再释放 2000 多万桶柴油储备的消息压制。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "marketwatch.com",
+          "url": "https://www.marketwatch.com/data-news/european-stocks-extend-positive-streak-for-second-session-11ba368a-1387c250f0b2"
+        },
+        {
+          "label": "edgeconsultancykw.com（商品收盘）",
+          "url": "https://edgeconsultancykw.com/commodities-wrap-15-october-2026/"
+        },
+        {
+          "label": "devdiscourse.com（路透·欧股）",
+          "url": "https://www.devdiscourse.com/article/international/3993207-european-shares-hit-more-than-two-week-high-as-sturdy-earnings-lift-sentiment"
+        }
+      ]
+    },
+    {
+      "id": "1016早-12",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股周五开盘反弹：韩股高开 1.8%，日经高开近 500 点",
+      "time": "2026-10-16T08:00:00+08:00",
+      "summary": "经过周四的科技股暴跌，今天亚股开盘回稳：韩国 KOSPI 开在 5653.99 点，涨 99.77 点（1.80%），结束七连跌后的第一天先反弹，KOSDAQ 高开 1.49%；日经 225 开在 64925.29 点，涨 499.34 点。台股 9:00、A 股 9:30 才开盘，收盘情况在午间版补上。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "asiae.co.kr（KOSPI 开盘）",
+          "url": "https://www.asiae.co.kr/en/article/2026101609081156066"
+        },
+        {
+          "label": "jiji.com（日经开盘）",
+          "url": "https://sp.m.jiji.com/article/show/3890326"
+        }
+      ]
+    },
+    {
+      "id": "1016早-13",
+      "section": "国际重大影响",
+      "title": "胡塞武装导弹袭击也门政府所在的亚丁总统府，至少 5 死 16 伤",
+      "time": "2026-10-15",
+      "summary": "也门胡塞武装周四向亚丁的马希克总统府发射导弹，这里是沙特支持、国际承认的也门政府所在地。也门卫生部长说至少 5 人死亡、16 人受伤，其中包括总理的两名保镖，总理和其他官员安全。胡塞方面称打的是沙特在亚丁的军事指挥部。半岛电视台记者说，胡塞直接打政府总部是第一次，外界担心也门内战全面升级、把更多地区国家卷进来。双方也在争夺塔伊兹，那里关系到红海出口曼德海峡的控制权。沙特领导的联军说，过去 11 天利雅得国际机场至少遭胡塞袭击 20 次。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "aljazeera.com",
+          "url": "https://www.aljazeera.com/news/2026/10/15/houthis-target-yemens-presidential-palace-in-aden-with-missiles"
+        },
+        {
+          "label": "bbc.com",
+          "url": "https://www.bbc.com/news/articles/cm62y6lp73zdo"
+        }
+      ]
+    },
+    {
+      "id": "1016早-14",
+      "section": "国际重大影响",
+      "title": "美国制裁伊拉克和古巴的银行，打击伊朗「影子银行」网络",
+      "time": "2026-10-15",
+      "summary": "美国财政部周四宣布新一轮「经济孤立行动」制裁：伊拉克的国际投资与金融发展银行被指替伊朗提供美元渠道、和亲伊朗民兵有关；国务院同时制裁古巴国营的国际商业银行（BICSA），指它自 2022 年起为受制裁的伊朗 Karafarin 银行服务。名单还包括伊朗两家离岸银行、一名在迪拜帮伊朗卖油的中间人，以及多家伊朗换汇行和一家香港公司。财政部长贝森特说：「绞索正在收紧伊朗经济，连它的所谓盟友也救不了它。」和这些银行往来的外国金融机构也可能受到二级制裁；与伊拉克这家银行的交易须在 10 月 30 日前结清。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "home.treasury.gov",
+          "url": "https://home.treasury.gov/news/press-releases/sb0660"
+        },
+        {
+          "label": "ofac.treasury.gov",
+          "url": "https://ofac.treasury.gov/recent-actions/20261015"
+        }
+      ]
+    },
+    {
+      "id": "1016早-15",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "谷歌量子芯片首次在真机上「养出」魔态，错误率降到约 1/40",
+      "time": "2026-10-16T02:45:35+08:00",
+      "summary": "谷歌量子 AI 团队周四在《科学》期刊发表论文：在 Willow 量子芯片上，首次用真实硬件验证了「魔态培育」。量子计算机要能跑各种有用的程序，需要一种叫「魔态」的特殊原料，但它用一次就没了，而且很难做得干净；有估算认为，一台量子计算机可能要花多达 95% 的能力专门制造魔态，这个难题困扰了研究者 20 年。新方法像过滤器：先放进一个粗糙的状态，反复检查、淘汰有瑕疵的尝试，最后「养」出很纯的版本。结果错误率比不培育时降低约 40 倍，纯度达到创纪录的 99.99%。谷歌也承认，还要在更大规模上验证，离实用量子计算机仍有不少技术难关。",
+      "relevance": "量子计算机一旦实用，能加快新药和新材料研发，也会威胁今天保护网银和比特币的加密方式；这类「把实用机门槛往下压」的进展，会牵动量子概念股和加密货币的长期预期，值得留意。",
+      "sources": [
+        {
+          "label": "blog.google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/quantum-computing/magic-state-cultivation-quantum-computing/"
+        },
+        {
+          "label": "science.org（论文）",
+          "url": "https://www.science.org/doi/10.1126/science.aee7961"
+        },
+        {
+          "label": "x.com/sundarpichai",
+          "url": "https://x.com/sundarpichai/status/2110804295352488143"
+        }
+      ]
+    }
+  ]
+}
