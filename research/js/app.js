@@ -278,6 +278,7 @@ function homePage() {
     </section>
     <section class="sec" style="margin-top:22px">
       <h2>第二轮</h2>
+      ${mainlineVerdict()}
       <p class="plain">${esc(o.currentRound.mainline || o.currentRound.lockedBy)}</p>
       ${o.currentRound.families ? `<p class="plain">C 家族 N=${esc(o.currentRound.families.C.n)}（${esc((o.currentRound.families.C.items || []).join('、'))}），Holm 最严门槛 ${esc(o.currentRound.families.C.holmStrictest)}。L 家族 N=${esc(o.currentRound.families.L.n)}，门槛 ${esc(o.currentRound.families.L.threshold)}。</p>` : ''}
       ${o.currentRound.progress ? `<p class="plain">进度：${esc(o.currentRound.progress)}</p>` : ''}
@@ -304,6 +305,7 @@ function progressPage() {
     <h1 class="page-title">进展</h1>
     <p class="lede">每一条都来自材料里的编号检验。状态以修订版为准。没有写明主人的，这里就空着。标了「探索性」的不占 N，不能当成正式结论。</p>
     ${cr.progress ? `<p class="note-box">${esc(cr.progress)}</p>` : ''}
+    ${mainlineVerdict()}
     <form class="filters" id="filters">
       <input type="search" id="q" placeholder="编号、标题、问题" value="${esc(state.filter.q)}" autocomplete="off">
       <select id="status" aria-label="状态">${options(statuses, state.filter.status)}</select>
@@ -316,21 +318,39 @@ function progressPage() {
   `;
 }
 
+function isUndecided(item) {
+  return Boolean(item && typeof item.statusNote === 'string' && item.statusNote.startsWith('未判定'));
+}
+
+function statusMarkup(item) {
+  if (isUndecided(item)) return '<span class="tag is-undecided">未判定</span>';
+  return statusTag(item && item.status);
+}
+
+function statsBlock(item) {
+  if (!item || !Array.isArray(item.stats) || !item.stats.length) return '';
+  return `<div class="stats">${item.stats.map((row) => `<div><span>${esc(row.label)}</span><b>${esc(row.value)}</b></div>`).join('')}</div>`;
+}
+
+function mainlineVerdict() {
+  const item = state.items.find((row) => row.id === 'r2-main');
+  if (!isUndecided(item)) return '';
+  return '<p class="verdict"><span class="tag is-undecided">未判定</span><span>总主线没有推翻，也没有支持。</span></p>';
+}
+
 function itemCard(item, extra = '') {
   const owner = item.owner ? `<span class="tag">${esc(item.owner)}</span>` : '';
-  const stats = Array.isArray(item.stats) && item.stats.length
-    ? `<div class="stats">${item.stats.map((row) => `<div><span>${esc(row.label)}</span><b>${esc(row.value)}</b></div>`).join('')}</div>`
-    : '';
+  const stats = statsBlock(item);
   const mapping = item.mapping ? `<p class="note">未能干净对应：${esc(item.mapping)}</p>` : '';
   return `
-    <article class="item${item.exploratory ? ' is-explore' : ''}" data-item="${esc(item.id)}" id="item-${esc(item.id)}">
+    <article class="item${item.exploratory ? ' is-explore' : ''}${isUndecided(item) ? ' is-undecided' : ''}" data-item="${esc(item.id)}" id="item-${esc(item.id)}">
       <div class="item-top">
         <span class="code">${esc(item.code)}</span>
         <h3>${esc(item.title)}</h3>
       </div>
       <p class="question">${esc(item.question)}</p>
       <div class="tags">
-        ${statusTag(item.status)}
+        ${statusMarkup(item)}
         ${item.exploratory ? '<span class="tag is-explore">探索性</span>' : ''}
         ${item.evidence ? `<span class="tag is-rel">〔${esc(item.evidence)}〕</span>` : ''}
         <span class="tag">${esc(item.round)}</span>
@@ -1151,6 +1171,7 @@ function mapDetail(focus) {
   return `
     <p class="kicker">怎么读这张图</p>
     <h2>${esc(t.thesis.title)}</h2>
+    ${mainlineVerdict()}
     <p class="question">${esc(t.thesis.lead)}</p>
     <p class="detail">${esc(t.thesis.note)}点一个市场，或点一条线。图上只保留主线，其余关系在下面的名单里。</p>`;
 }
@@ -1178,6 +1199,7 @@ function edgeDetail(edge) {
     ${item && item.theory ? `<div class="field"><p class="lbl">理论</p><p>${esc(item.theory)}</p></div>` : ''}
     ${item && item.statusNote ? `<p class="note">${esc(item.statusNote)}</p>` : ''}
     ${item && item.detail ? `<p class="detail">${esc(item.detail)}</p>` : ''}
+    ${statsBlock(item)}
     ${look.exploratory ? '<p class="note explore-note">探索性：偏离清单或预先登记为探索项，不占 N，不能当成正式结论。</p>' : ''}
     <p class="detail">连着：${esc(ends.join('、') || '—')}</p>
     ${item ? `<div class="row-actions"><a class="btn" href="#/progress?item=${encodeURIComponent(item.id)}">在进展里打开</a></div>` : ''}`;
