@@ -86,7 +86,7 @@ async function networkFirst(event) {
   }
 
   if (response && response.status < 500) {
-    if (response.ok && response.type === 'basic' && !response.redirected) {
+    if (response.ok && response.type === 'basic' && !response.redirected && !isResearch(request)) {
       const copy = response.clone();
       event.waitUntil(caches.open(CACHE).then((cache) => cache.put(request, copy)).catch(() => {}));
     }
@@ -96,10 +96,20 @@ async function networkFirst(event) {
   return (await fromCache(request, navigate)) || response || offline();
 }
 
+function isResearch(request) {
+  try {
+    return new URL(request.url).pathname.includes('/research');
+  } catch {
+    return false;
+  }
+}
+
 async function fromCache(request, navigate) {
   const cache = await caches.open(CACHE);
   const hit = await cache.match(request, { ignoreVary: true });
   if (hit || !navigate) return hit;
+  // 研究看板是另一套页面，断网时不要退回讯息窗首页。
+  if (isResearch(request)) return undefined;
   for (const path of ['./', './index.html']) {
     const page = await cache.match(new URL(path, self.location).href, { ignoreVary: true });
     if (page) return page;

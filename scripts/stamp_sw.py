@@ -19,7 +19,7 @@ def site_version(site: Path) -> str:
     digest = hashlib.sha256()
     files = sorted((path.relative_to(site).as_posix(), path) for path in site.rglob("*") if path.is_file())
     for rel, path in files:
-        if rel.startswith("data/"):
+        if rel.startswith("data/") or rel.startswith("research/"):
             continue
         body = path.read_bytes()
         digest.update(f"{rel}\0{len(body)}\0".encode("utf-8"))
