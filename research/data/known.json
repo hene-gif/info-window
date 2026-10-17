@@ -1,0 +1,514 @@
+{
+  "updated": "2026-10-17 台北",
+  "intro": "这张图把学术界已经研究多年的成熟规律整理出来，每条都附真实论文出处，并标明可靠程度，以及和我们研究的关系：哪些直接拿来当底座，哪些是我们正在检验的新东西，哪些是要避开的坑。",
+  "position": {
+    "foundation": [
+      "全球金融周期：美联储收紧时全球风险资产一起跌（K7），美元走强时全球钱变紧（K8）。这两条我们直接当底座，不再重复证明。",
+      "日元套息交易会突然崩盘（K9），日元在危机中是避险货币（K10）。",
+      "油价冲击要分供给和需求（K14），黄金是短期避险（K15）。",
+      "AH 溢价长期存在（K11），A股价格已有相当信息量（K13）。",
+      "价值、动量等因子（K2），以及大盘难以提前预测（K4）。"
+    ],
+    "our_addition": [
+      "核心新问题：同一个美国冲击，传到开放市场（港股、中概股、日元套利盘）和封闭市场（A股）时，是否走不同的“管道”：开放市场用价格吸收，封闭市场用政策吸收，代价转到 AH 溢价和降准降息上。学术界对这一点没有成熟答案。",
+      "具体检验点：美国紧缩周 AH 溢价是否扩大（C9）、政策托底后是否反弹（C6）、日元套利仓位越大全球高杠杆股票是否跌得越深（L1）、油价供给冲击是否伤欧股更多（L3）、黄金是否变成去美元化资产（L2）、台韩是否是中美博弈的夹心层（L4）。",
+      "“当下市场信息”面板：用真实行情记录“猜想先行、价格反应、业绩验证”，为叙事经济学（K16）积累可检验的数据。"
+    ],
+    "open_gaps": [
+      "第二轮检验力太低，C9、L1、L3 都是“本轮尚未检出”，主线未判定：现在既不能说我们的新增部分成立，也不能说它不成立。",
+      "日元急升时日经按日元跌、按美元不跌（R3-1）：要先说明它比已知的“日元避险”（K10）多了什么。",
+      "中美摩擦事件对中概股、A股半导体、台韩的影响，学术界研究还少，我们的事件清单也需要按规则重做（R3-3）。",
+      "政策托底的效果，文献主要只有 2015 年救市一次（K12），对降准降息的系统证据不足。"
+    ]
+  },
+  "method_lessons": [
+    "先算检验力再开跑：每项事先算出“需要多少样本才有 80% 把握查出来”，不够就扩大样本或换更高频的数据；检验力不足的项目不进正式检验（第二轮最大的教训，K3、K18）。",
+    "门槛要更高：同时检验很多说法时，按 Holm 等方法校正；Harvey-Liu-Zhu 建议新因子的 t 值至少到 3 左右，远高于常用的 2（K3）。",
+    "一律和“历史平均”比：任何预测模型都要在没用过的新数据上打赢最朴素的历史平均，才算有用（K4）。",
+    "预期效果会打折：论文发表后规律的效果平均明显变弱，所以通过的规律还要做“向前验证”，用接下来的真实行情检验（K3）。",
+    "比较危机时和平时的联动，要先校正“波动变大”带来的相关性虚高（K5）。",
+    "计价货币必须统一：比较不同市场时一律用同一种货币，尤其是按汇率挑事件时（第二轮 L1 的教训，K10）。",
+    "先分清冲击类型：油价、货币政策等冲击要先识别是哪一类，再看影响（K14）。",
+    "记录所有尝试：每次重跑、改口径都要登记，算进“试过的次数”，避免回测过拟合（K18）。"
+  ],
+  "items": [
+    {
+      "id": "K1",
+      "category": "市场效率与因子",
+      "name": "有效市场假说",
+      "claim": "公开信息会很快反映进价格，所以靠公开消息很难长期稳定地跑赢市场。",
+      "reliability": "有争议",
+      "reliability_note": "作为基本框架被广泛接受，但“价格到底多快、多完整地反映信息”至今争论不断，行为金融和大量异象研究都在挑战它。",
+      "studies": [
+        {
+          "作者": "Eugene F. Fama",
+          "年份": 1970,
+          "标题": "Efficient Capital Markets: A Review of Theory and Empirical Work",
+          "url": "https://doi.org/10.2307/2325486"
+        }
+      ],
+      "relation": "注意事项",
+      "relation_note": "它是我们所有检验的“默认对手”：如果某个规律能被公开数据轻易发现，就要先怀疑它是不是早被价格消化了，或者只是偶然。",
+      "related_tests": []
+    },
+    {
+      "id": "K2",
+      "category": "市场效率与因子",
+      "name": "价值、小盘、动量因子",
+      "claim": "便宜的股票（价值）、小公司、过去一年涨得好的股票（动量），长期平均有额外回报，而且在多个国家和资产里都能看到。",
+      "reliability": "反复验证",
+      "reliability_note": "几十年、多国家、多资产类别都有复现；但近十几年价值因子表现很差，效果随时期起伏很大。",
+      "studies": [
+        {
+          "作者": "Eugene F. Fama, Kenneth R. French",
+          "年份": 1993,
+          "标题": "Common risk factors in the returns on stocks and bonds",
+          "url": "https://doi.org/10.1016/0304-405X(93)90023-5"
+        },
+        {
+          "作者": "Narasimhan Jegadeesh, Sheridan Titman",
+          "年份": 1993,
+          "标题": "Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency",
+          "url": "https://doi.org/10.1111/j.1540-6261.1993.tb04702.x"
+        },
+        {
+          "作者": "Clifford S. Asness, Tobias J. Moskowitz, Lasse Heje Pedersen",
+          "年份": 2013,
+          "标题": "Value and Momentum Everywhere",
+          "url": "https://doi.org/10.1111/jofi.12021"
+        }
+      ],
+      "relation": "底座直接用",
+      "relation_note": "比较成长股和价值股时（如 C1），应先扣掉这些已知因子的影响，只看我们新加的“美国紧缩周”效应，否则可能只是重新发现了老因子。",
+      "related_tests": [
+        "C1"
+      ]
+    },
+    {
+      "id": "K3",
+      "category": "市场效率与因子",
+      "name": "“因子动物园”与复现危机",
+      "claim": "学术界报告过几百个“能赚钱的规律”，但用更严格的标准重新检验，相当一部分站不住；就算站得住，论文发表后效果也会明显变弱。",
+      "reliability": "有争议",
+      "reliability_note": "Hou-Xue-Zhang 发现多数异象复现失败；但 Jensen-Kelly-Pedersen 用另一种方法认为多数因子能复现。共识是：门槛要更高，发表后效果会衰减。",
+      "studies": [
+        {
+          "作者": "Campbell R. Harvey, Yan Liu, Heqing Zhu",
+          "年份": 2016,
+          "标题": "… and the Cross-Section of Expected Returns",
+          "url": "https://doi.org/10.1093/rfs/hhv059"
+        },
+        {
+          "作者": "Kewei Hou, Chen Xue, Lu Zhang",
+          "年份": 2020,
+          "标题": "Replicating Anomalies",
+          "url": "https://doi.org/10.1093/rfs/hhy131"
+        },
+        {
+          "作者": "R. David McLean, Jeffrey Pontiff",
+          "年份": 2016,
+          "标题": "Does Academic Research Destroy Stock Return Predictability?",
+          "url": "https://doi.org/10.1111/jofi.12365"
+        },
+        {
+          "作者": "Theis Ingerslev Jensen, Bryan Kelly, Lasse Heje Pedersen",
+          "年份": 2023,
+          "标题": "Is There a Replication Crisis in Finance?",
+          "url": "https://doi.org/10.1111/jofi.13249"
+        }
+      ],
+      "relation": "注意事项",
+      "relation_note": "这正是我们坚持预注册、多重检验校正（Holm）和“向前验证”的理由：回测好看不等于真规律。",
+      "related_tests": []
+    },
+    {
+      "id": "K4",
+      "category": "市场效率与因子",
+      "name": "大盘涨跌很难提前预测（样本外失灵）",
+      "claim": "很多看起来能预测股市整体涨跌的指标（估值、利率、利差等），一拿到“没用过的新数据”上，往往还不如直接用历史平均值。",
+      "reliability": "反复验证",
+      "reliability_note": "Welch-Goyal 的结论被反复引用和更新；Campbell-Thompson 指出加上合理约束后能挤出一点点样本外预测力，但很小。",
+      "studies": [
+        {
+          "作者": "Ivo Welch, Amit Goyal",
+          "年份": 2008,
+          "标题": "A Comprehensive Look at The Empirical Performance of Equity Premium Prediction",
+          "url": "https://doi.org/10.1093/rfs/hhm014"
+        },
+        {
+          "作者": "John Y. Campbell, Samuel B. Thompson",
+          "年份": 2008,
+          "标题": "Predicting Excess Stock Returns Out of Sample: Can Anything Beat the Historical Average?",
+          "url": "https://doi.org/10.1093/rfs/hhm055"
+        }
+      ],
+      "relation": "注意事项",
+      "relation_note": "C2（盈利能否预判）和 C5（社融能否预测 A股）都属于这类问题。第二轮 C2 没打赢“历史平均”、C5 样本外 R² 几乎为 0，和文献的普遍发现一致；以后必须一律拿“历史平均”当对照。",
+      "related_tests": [
+        "C2",
+        "C5"
+      ]
+    },
+    {
+      "id": "K5",
+      "category": "跨市场传导",
+      "name": "“传染”还是“本来就联动”",
+      "claim": "危机时各国股市相关性看起来暴涨，但很大一部分是“波动变大”造成的统计假象；校正后，很多所谓“传染”其实只是平时就存在的联动。",
+      "reliability": "反复验证",
+      "reliability_note": "这个统计偏差已被广泛接受，成为测“传染”的标准注意事项；但“到底有没有真正的传染”在不同危机里仍有争论。",
+      "studies": [
+        {
+          "作者": "Kristin J. Forbes, Roberto Rigobon",
+          "年份": 2002,
+          "标题": "No Contagion, Only Interdependence: Measuring Stock Market Comovements",
+          "url": "https://doi.org/10.1111/0022-1082.00494"
+        }
+      ],
+      "relation": "注意事项",
+      "relation_note": "我们比较“冲击时 vs 平时”的联动（如台韩夹心层、中概股事件）时，不能直接比相关系数，要先处理波动变大带来的偏差。",
+      "related_tests": []
+    },
+    {
+      "id": "K6",
+      "category": "跨市场传导",
+      "name": "溢出指数：谁影响谁、影响多少",
+      "claim": "可以用一个指数量化各市场之间的“溢出”：谁是冲击的输出方、谁是接收方；危机时波动的溢出会突然跳升。",
+      "reliability": "反复验证",
+      "reliability_note": "方法被大量研究和机构采用，是测跨市场溢出的常用工具；但结果对模型设定（滞后期、窗口长度）比较敏感。",
+      "studies": [
+        {
+          "作者": "Francis X. Diebold, Kamil Yilmaz",
+          "年份": 2009,
+          "标题": "Measuring Financial Asset Return and Volatility Spillovers, with Application to Global Equity Markets",
+          "url": "https://doi.org/10.1111/j.1468-0297.2008.02208.x"
+        },
+        {
+          "作者": "Francis X. Diebold, Kamil Yilmaz",
+          "年份": 2012,
+          "标题": "Better to give than to receive: Predictive directional measurement of volatility spillovers",
+          "url": "https://doi.org/10.1016/j.ijforecast.2011.02.006"
+        }
+      ],
+      "relation": "底座直接用",
+      "relation_note": "可以直接拿来画我们研究台的“理论关系地图”：用数据算出谁指向谁，而不是靠人画箭头。",
+      "related_tests": []
+    },
+    {
+      "id": "K7",
+      "category": "全球金融周期与美元",
+      "name": "全球金融周期：美联储是总开关",
+      "claim": "全球股价、资金流和信贷有一个共同的涨落节奏，美国货币政策是重要推手：美联储收紧时，全球风险资产普遍下跌、杠杆收缩。",
+      "reliability": "反复验证",
+      "reliability_note": "核心事实被多方复现，是国际金融的主流共识；“其他国家的货币政策还剩多少独立性”仍有讨论。",
+      "studies": [
+        {
+          "作者": "Hélène Rey",
+          "年份": 2013,
+          "标题": "Dilemma not Trilemma: The Global Financial Cycle and Monetary Policy Independence（2013 年杰克逊霍尔会议论文，NBER 工作论文 2015 年版）",
+          "url": "https://www.nber.org/papers/w21162"
+        },
+        {
+          "作者": "Silvia Miranda-Agrippino, Hélène Rey",
+          "年份": 2020,
+          "标题": "U.S. Monetary Policy and the Global Financial Cycle",
+          "url": "https://doi.org/10.1093/restud/rdaa019"
+        }
+      ],
+      "relation": "底座直接用",
+      "relation_note": "我们的“美国紧缩周”就是借这个底座。真正新增的问题是：同一个美国冲击，传到开放的港股和封闭的 A股时，走的管道是否不同（C9）。",
+      "related_tests": [
+        "C9",
+        "C1"
+      ]
+    },
+    {
+      "id": "K8",
+      "category": "全球金融周期与美元",
+      "name": "美元渠道：美元强，全球钱紧",
+      "claim": "美元走强时，全球银行借美元放贷的能力下降，跨境信贷收缩；汇率市场里还有一个与全球风险偏好相关的共同风险因子。",
+      "reliability": "反复验证",
+      "reliability_note": "国际清算银行（BIS）和多篇顶级期刊研究反复记录了这一规律；具体强弱随时期变化。",
+      "studies": [
+        {
+          "作者": "Hanno Lustig, Nikolai Roussanov, Adrien Verdelhan",
+          "年份": 2011,
+          "标题": "Common Risk Factors in Currency Markets",
+          "url": "https://doi.org/10.1093/rfs/hhr068"
+        },
+        {
+          "作者": "Valentina Bruno, Hyun Song Shin",
+          "年份": 2015,
+          "标题": "Cross-Border Banking and Global Liquidity",
+          "url": "https://doi.org/10.1093/restud/rdu042"
+        },
+        {
+          "作者": "Stefan Avdjiev, Wenxin Du, Cathérine Koch, Hyun Song Shin",
+          "年份": 2019,
+          "标题": "The Dollar, Bank Leverage, and Deviations from Covered Interest Parity",
+          "url": "https://doi.org/10.1257/aeri.20180322"
+        }
+      ],
+      "relation": "底座直接用",
+      "relation_note": "检验美股以外的市场时，应把“美元强弱”当控制变量；否则我们以为的“中美制度效应”，可能只是美元周期。",
+      "related_tests": []
+    },
+    {
+      "id": "K9",
+      "category": "杠杆与套息交易",
+      "name": "套息交易会突然崩盘",
+      "claim": "借低息货币（如日元）去买高息资产的“套息交易”，平时慢慢赚、偶尔突然大亏；风险偏好和融资能力下降时会集中平仓，汇率暴动。",
+      "reliability": "反复验证",
+      "reliability_note": "“涨如爬楼、跌如坐电梯”的负偏度被广泛复现；2024 年 8 月日元套息平仓又是一例（BIS 分析）。但套息仓位的真实规模很难测准。",
+      "studies": [
+        {
+          "作者": "Markus K. Brunnermeier, Stefan Nagel, Lasse H. Pedersen",
+          "年份": 2008,
+          "标题": "Carry Trades and Currency Crashes",
+          "url": "https://doi.org/10.1086/593088"
+        },
+        {
+          "作者": "Matteo Aquilina, Marco Jacopo Lombardi, Andreas Schrimpf, Vladyslav Sushko（国际清算银行 BIS Bulletin No 90）",
+          "年份": 2024,
+          "标题": "The market turbulence and carry trade unwind of August 2024",
+          "url": "https://www.bis.org/publ/bisbull90.htm"
+        }
+      ],
+      "relation": "底座直接用",
+      "relation_note": "L1“日元套利是杠杆开关”就是建在这上面。文献已证明“平仓会伤汇率”；我们要验证的新增部分是“仓位越大，全球高杠杆股票跌得越深”。BIS 也提醒仓位数据有缺口，L1 用的仓位指标要注明这个局限。",
+      "related_tests": [
+        "L1"
+      ]
+    },
+    {
+      "id": "K10",
+      "category": "杠杆与套息交易",
+      "name": "日元是避险货币",
+      "claim": "美股下跌、市场波动加大时，日元和瑞郎往往对美元升值，这种避险特性在危机中尤其明显。",
+      "reliability": "反复验证",
+      "reliability_note": "在高频和日度数据、多个危机里都观察到；但避险强弱会随日本利率和资本流动变化。",
+      "studies": [
+        {
+          "作者": "Angelo Ranaldo, Paul Söderlind",
+          "年份": 2010,
+          "标题": "Safe Haven Currencies",
+          "url": "https://doi.org/10.1093/rof/rfq007"
+        }
+      ],
+      "relation": "注意事项",
+      "relation_note": "这直接解释了第二轮 L1 的口径坑：挑“日元急升日”本身就会挑到避险日，日经按日元计和按美元计会差很多。第三轮候选 R3-1（冲击在日本主要被汇率吸收）要先说明比已知的“日元避险”多了什么，否则只是重新发现老规律。",
+      "related_tests": [
+        "L1"
+      ]
+    },
+    {
+      "id": "K11",
+      "category": "中国市场：分割与政策",
+      "name": "AH 溢价：同一家公司，A股比 H股贵",
+      "claim": "同时在内地和香港上市的公司，A股价格长期明显高于 H股；原因包括两地投资者不同、资金不能自由套利、利率和人民币预期、分红等。",
+      "reliability": "有争议",
+      "reliability_note": "溢价存在是公认事实；但各因素谁更重要、沪港通到底让溢价缩小还是扩大，研究结论不一致，代表性的全面研究仍是工作论文。",
+      "studies": [
+        {
+          "作者": "Jennifer N. Carpenter, Robert F. Whitelaw, Dongchen Zou",
+          "年份": 2019,
+          "标题": "The A-H Premium and Implications for Global Investing in Chinese Stocks（工作论文，作者主页）",
+          "url": "https://pages.stern.nyu.edu/~jcarpen0/pdfs/Carpenter%20Whitelaw%20Zou%20-%20The%20A-H%20Premium%20and%20Implications%20for%20Global%20Investing%20in%20Chinese%20Stocks.pdf"
+        },
+        {
+          "作者": "Qingliang Fan, Ting Wang",
+          "年份": 2017,
+          "标题": "The impact of Shanghai–Hong Kong Stock Connect policy on A-H share price premium",
+          "url": "https://doi.org/10.1016/j.frl.2016.11.014"
+        },
+        {
+          "作者": "Feng Jiao, Qingfu Liu, Yiuman Tse, Zhiqin Wang",
+          "年份": 2022,
+          "标题": "Price disparity between Chinese A- and H-shares: Dividends, currency values, and the interest rate differential",
+          "url": "https://doi.org/10.1016/j.gfj.2021.100619"
+        }
+      ],
+      "relation": "我们在检验的新增部分",
+      "relation_note": "AH 溢价本身是底座；我们新增的是“美国紧缩时溢价会扩大”（C9）。Carpenter 等发现溢价随美元/港元利率变化，方向和我们一致，可作为参考；Jiao 等发现人民币预期影响溢价，所以 C9 必须统一换成人民币计价比较（第二轮已这样做）。沪港通（2014）是结构断点，要单独处理。",
+      "related_tests": [
+        "C9"
+      ]
+    },
+    {
+      "id": "K12",
+      "category": "中国市场：分割与政策",
+      "name": "政府救市（“国家队”）短期能托住股价",
+      "claim": "2015 年股灾时政府入市买股，短期内确实提升了被买公司的市值，但长期可能带来道德风险、削弱价格发现和政府信誉。",
+      "reliability": "较新证据有限",
+      "reliability_note": "核心证据主要来自 2015 年这一次救市，样本是单一事件，难以推广到每次政策托底。",
+      "studies": [
+        {
+          "作者": "Yi Huang, Jianjun Miao, Pengfei Wang",
+          "年份": 2019,
+          "标题": "Saving China's Stock Market?",
+          "url": "https://doi.org/10.1057/s41308-019-00079-z"
+        }
+      ],
+      "relation": "我们在检验的新增部分",
+      "relation_note": "和 C6（降准降息后的反弹）同属“封闭市场用政策吸收冲击”。文献讲的是直接买股，我们测的是货币政策托底，两者不同，C6 的结果不能借用这篇的结论。",
+      "related_tests": [
+        "C6"
+      ]
+    },
+    {
+      "id": "K13",
+      "category": "中国市场：分割与政策",
+      "name": "A股不再是“赌场”，但国企股价信息量较低",
+      "claim": "2004 年以后，A股价格对公司未来利润的预示能力已和美股差不多；但金融危机后的刺激期，国有企业的股价信息量和投资效率落后于民企，可能与政府主导的补贴和投资有关。",
+      "reliability": "较新证据有限",
+      "reliability_note": "发表在顶级期刊，但主要是一组作者的研究，数据截至 2016 年，后续独立复现不多。",
+      "studies": [
+        {
+          "作者": "Jennifer N. Carpenter, Fangzhou Lu, Robert F. Whitelaw",
+          "年份": 2021,
+          "标题": "The real value of China's stock market",
+          "url": "https://doi.org/10.1016/j.jfineco.2020.08.012"
+        }
+      ],
+      "relation": "注意事项",
+      "relation_note": "提醒我们不要把 A股简单当成“只看政策”的市场；“A股是信贷政策市”（C5）可能只在国企或特定时期成立，分组看会更有信息量。",
+      "related_tests": [
+        "C5"
+      ]
+    },
+    {
+      "id": "K14",
+      "category": "大宗商品与避险资产",
+      "name": "油价冲击要分清“供给”还是“需求”",
+      "claim": "油价上涨的原因不同，对股市影响完全不同：全球需求旺带来的油价上涨，股市不一定跌；担心供应中断的“预防性需求”冲击才明显伤股市；纯供给冲击对美股的影响相对小。",
+      "reliability": "反复验证",
+      "reliability_note": "这一拆分方法已成为研究油价的标准做法，被广泛使用；具体的识别方法仍有技术争论。",
+      "studies": [
+        {
+          "作者": "Lutz Kilian",
+          "年份": 2009,
+          "标题": "Not All Oil Price Shocks Are Alike: Disentangling Demand and Supply Shocks in the Crude Oil Market",
+          "url": "https://doi.org/10.1257/aer.99.3.1053"
+        },
+        {
+          "作者": "Lutz Kilian, Cheolbeom Park",
+          "年份": 2009,
+          "标题": "The Impact of Oil Price Shocks on the U.S. Stock Market",
+          "url": "https://doi.org/10.1111/j.1468-2354.2009.00568.x"
+        }
+      ],
+      "relation": "底座直接用",
+      "relation_note": "L3（油价供给冲击伤欧股多于美股）应按这个框架先区分冲击类型。文献说纯供给冲击对美股影响较小，所以本轮 L3 尚未检出并不意外；第三轮可考虑改测“预防性需求冲击”。",
+      "related_tests": [
+        "L3"
+      ]
+    },
+    {
+      "id": "K15",
+      "category": "大宗商品与避险资产",
+      "name": "黄金是短期避险，不是万能对冲",
+      "claim": "平均来看黄金能对冲股市下跌，在股市暴跌时还能当“避风港”，但这种效果只维持很短时间（约两周量级），而且不是在所有国家都成立。",
+      "reliability": "反复验证",
+      "reliability_note": "多篇研究和多国数据支持“短期避险”；但黄金作为通胀对冲、长期价值标尺的说法争议很大。",
+      "studies": [
+        {
+          "作者": "Dirk G. Baur, Brian M. Lucey",
+          "年份": 2010,
+          "标题": "Is Gold a Hedge or a Safe Haven? An Analysis of Stocks, Bonds and Gold",
+          "url": "https://doi.org/10.1111/j.1540-6288.2010.00244.x"
+        },
+        {
+          "作者": "Dirk G. Baur, Thomas K. McDermott",
+          "年份": 2010,
+          "标题": "Is gold a safe haven? International evidence",
+          "url": "https://doi.org/10.1016/j.jbankfin.2009.12.008"
+        },
+        {
+          "作者": "Claude B. Erb, Campbell R. Harvey",
+          "年份": 2013,
+          "标题": "The Golden Dilemma",
+          "url": "https://doi.org/10.2469/faj.v69.n4.1"
+        }
+      ],
+      "relation": "我们在检验的新增部分",
+      "relation_note": "“黄金避险”是底座；L2 新增的是“黄金从利率资产变成去美元化资产”。检验时要和普通避险效应分开，否则在冲击日看到金价涨，可能只是老的避险规律。",
+      "related_tests": [
+        "L2"
+      ]
+    },
+    {
+      "id": "K16",
+      "category": "行为金融与叙事",
+      "name": "叙事经济学：故事像病毒一样驱动市场",
+      "claim": "流行的故事（比如“科技股只会涨”“AI 投资赚不回来”），无论真假，都会像传染病一样扩散，影响人们的投资和消费，进而推动行情。",
+      "reliability": "较新证据有限",
+      "reliability_note": "思想影响很大（作者是诺奖得主），但如何量化“叙事”、能否用它预测市场，严格的实证证据还在积累中。",
+      "studies": [
+        {
+          "作者": "Robert J. Shiller",
+          "年份": 2017,
+          "标题": "Narrative Economics",
+          "url": "https://doi.org/10.1257/aer.107.4.967"
+        },
+        {
+          "作者": "Robert J. Shiller",
+          "年份": 2019,
+          "标题": "Narrative Economics: How Stories Go Viral and Drive Major Economic Events（普林斯顿大学出版社）",
+          "url": "https://press.princeton.edu/books/hardcover/9780691182292/narrative-economics"
+        }
+      ],
+      "relation": "底座直接用",
+      "relation_note": "这就是我们“当下市场信息”面板的理论来源：市场先按猜想（叙事）定价，业绩再来验证或打脸。面板积累的每条“猜想→价格→验证”记录，本身就是在为这个理论攒数据。",
+      "related_tests": []
+    },
+    {
+      "id": "K17",
+      "category": "行为金融与叙事",
+      "name": "媒体悲观和投资者情绪会推动短期价格",
+      "claim": "媒体报道越悲观，第二天股价越容易受压，随后又会反弹回来；市场情绪高涨或低落时，小盘、新上市、难估值的股票受影响最大。",
+      "reliability": "反复验证",
+      "reliability_note": "两篇都是高引用研究，后续在多国、多种文本数据上有大量复现；但效应偏短期，且常会回吐。",
+      "studies": [
+        {
+          "作者": "Paul C. Tetlock",
+          "年份": 2007,
+          "标题": "Giving Content to Investor Sentiment: The Role of Media in the Stock Market",
+          "url": "https://doi.org/10.1111/j.1540-6261.2007.01232.x"
+        },
+        {
+          "作者": "Malcolm Baker, Jeffrey Wurgler",
+          "年份": 2006,
+          "标题": "Investor Sentiment and the Cross-Section of Stock Returns",
+          "url": "https://doi.org/10.1111/j.1540-6261.2006.00885.x"
+        }
+      ],
+      "relation": "注意事项",
+      "relation_note": "提醒面板：消息带来的下跌常常会部分反弹，判断“猜想被验证还是被打脸”时要等业绩等硬数据，不要把一两天的价格反应当结论。",
+      "related_tests": []
+    },
+    {
+      "id": "K18",
+      "category": "研究方法",
+      "name": "回测过拟合与“科学的态度”",
+      "claim": "试的方法越多，越容易碰巧“发现”好看的规律；所以要提高显著性门槛、记录所有试过的版本、算出回测“碰巧好看”的概率。",
+      "reliability": "反复验证",
+      "reliability_note": "美国金融学会会长演讲专门讨论此事，已被学界和业界广泛接受为研究规范。",
+      "studies": [
+        {
+          "作者": "Campbell R. Harvey",
+          "年份": 2017,
+          "标题": "Presidential Address: The Scientific Outlook in Financial Economics",
+          "url": "https://doi.org/10.1111/jofi.12530"
+        },
+        {
+          "作者": "David H. Bailey, Jonathan M. Borwein, Marcos López de Prado, Qiji Jim Zhu",
+          "年份": 2016,
+          "标题": "The probability of backtest overfitting",
+          "url": "https://doi.org/10.21314/JCF.2016.322"
+        }
+      ],
+      "relation": "注意事项",
+      "relation_note": "我们的预注册、指纹锁定、“偏离即降为探索性”就是在落实这套规范；第三轮要把每次重跑和改口径都记下来，算进“试过的次数”。",
+      "related_tests": []
+    }
+  ]
+}

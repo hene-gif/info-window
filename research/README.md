@@ -13,7 +13,7 @@
 1. 把新的 markdown 放进 `research/docs/`，图放进 `research/docs/img/`。正文里的图用相对路径 `img/文件名.png`。
 2. 在 `research/data/docs.json` 里登记这篇文档。
 3. 把检验写进 `research/data/items.json`。**只写文档里有的话**：状态、证据标签、主人、p 值、样本，文档没写就留空或写在 `mapping` 里。
-4. 总览结论改 `research/data/overview.json`。对照原版 / 修订版的评估改 `research/data/reviews.json`。理论地图的节点和边改 `research/data/theory.json`。当下市场信息改 `research/data/now.json`。
+4. 总览结论改 `research/data/overview.json`。对照原版 / 修订版的评估改 `research/data/reviews.json`。理论地图的节点和边改 `research/data/theory.json`。当下市场信息改 `research/data/now.json`。已知规律改 `research/data/known.json`。
 5. 不要发明通过/被否。第二轮没跑完时，没过门槛写文档里的「本轮尚未检出」，不要写成已经推翻。
 6. 推到 `main`。Pages 工作流会把整个 `research/` 拷进站点。讯息窗的 service worker 不算 `research/` 的版本，所以只改研究数据不会逼讯息窗重载。
 
@@ -53,6 +53,10 @@
 ### `now.json`
 
 「当下市场信息」页（`#/now`）只读这个文件。猜想、价格和日期都写在这里，页面不另编。`narratives` 空着时，页面显示「本期内容整理中」。`verification_status` 用：待业绩验证、部分支持、业绩支持、业绩打脸、待数据验证。
+
+### `known.json`
+
+「已知规律」页（`#/known`）只读这个文件。`intro` 是页首说明。`position.foundation`、`position.our_addition`、`position.open_gaps` 分别是「我们站在哪里」的三列：底座（成熟规律）、我们新增的部分、尚未解决的缺口。`items` 按 `category` 分组。`reliability` 用 `反复验证` / `有争议` / `较新证据有限`。`relation` 用 `底座直接用` / `我们在检验的新增部分` / `注意事项`。论文字段是 `作者`、`年份`、`标题`、`url`。`related_tests` 写检验编号，能对上理论地图或进展里的条目时，芯片会链过去。`method_lessons` 是页尾的「第三轮方法教训」。
 
 ## 修改意见（GitHub Issue）
 
