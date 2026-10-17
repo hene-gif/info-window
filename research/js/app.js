@@ -296,7 +296,7 @@ function progressPage() {
       <select id="evidence" aria-label="证据">${options(evidences, state.filter.evidence)}</select>
     </form>
     <p class="count">${rows.length} / ${state.items.length} 条</p>
-    <div class="list">${rows.map(itemCard).join('') || '<p class="empty">没有符合筛选的条目。</p>'}</div>
+    <div class="list">${rows.map((item) => itemCard(item)).join('') || '<p class="empty">没有符合筛选的条目。</p>'}</div>
   `;
 }
 

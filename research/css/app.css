@@ -212,7 +212,8 @@ h1, h2, h3, p { margin: 0; }
   display: none;
   align-items: center;
   gap: 4px;
-  margin-right: 8px;
+  margin-left: auto;
+  margin-right: 4px;
   color: var(--faint);
   font-size: 11.5px;
   font-variant-numeric: tabular-nums;
@@ -546,7 +547,7 @@ main {
 
 .stats {
   display: grid;
-  gap: 4px 12px;
+  gap: 4px;
   margin-top: 4px;
 }
 .stats div {
@@ -778,6 +779,7 @@ main {
   .bar-sub { height: 40px; }
   .tab { line-height: 40px; }
   .clock { display: inline-flex; }
+  .home-link { margin-left: 0; }
   .page-title { font-size: 28px; }
   .lede { font-size: 15.5px; }
   .layers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -785,6 +787,7 @@ main {
   .diff { grid-template-columns: 1fr 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
   .item-top { align-items: baseline; }
+  .stats { grid-template-columns: 1fr; }
 }
 
 @media (min-width: 980px) {
