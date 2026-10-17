@@ -20,6 +20,9 @@ const state = {
   docs: [],
   theory: null,
   now: null,
+  known: null,
+  knownFilter: 'all',
+  knownPinned: '',
   meta: null,
   issues: null,
   issuesError: '',
@@ -52,13 +55,14 @@ async function boot() {
   tickClock();
   setInterval(tickClock, 30000);
   try {
-    const [overview, pack, reviews, docs, theory, now] = await Promise.all([
+    const [overview, pack, reviews, docs, theory, now, known] = await Promise.all([
       fetchJson('data/overview.json'),
       fetchJson('data/items.json'),
       fetchJson('data/reviews.json'),
       fetchJson('data/docs.json'),
       fetchJson('data/theory.json'),
       fetchJson('data/now.json'),
+      fetchJson('data/known.json'),
     ]);
     state.overview = overview;
     state.items = Array.isArray(pack.items) ? pack.items : [];
@@ -66,6 +70,7 @@ async function boot() {
     state.docs = docs.docs || [];
     state.theory = theory;
     state.now = now;
+    state.known = known;
     state.meta = docs;
     state.ready = true;
     syncFilterFromRoute();
@@ -144,7 +149,12 @@ function render(options = {}) {
   main.innerHTML = view.html;
   bindPage();
   if (options.resetScroll) {
-    if (state.route.item) {
+    const knownNode = state.route.name === 'known' && state.route.id
+      ? document.getElementById(`known-${state.route.id}`)
+      : null;
+    if (knownNode) {
+      scrollBelowBar(knownNode);
+    } else if (state.route.item) {
       const node = main.querySelector(`[data-item="${CSS.escape(state.route.item)}"]`);
       if (node) node.scrollIntoView({ block: 'start', behavior: reduceMotion.matches ? 'auto' : 'smooth' });
       else window.scrollTo(0, 0);
@@ -174,11 +184,16 @@ function renderNav() {
     void ink.offsetWidth;
     ink.style.transition = '';
   }
+  if (tabs.scrollWidth > tabs.clientWidth) {
+    const left = on.offsetLeft - (tabs.clientWidth - on.offsetWidth) / 2;
+    tabs.scrollTo({ left: Math.max(0, left) });
+  }
 }
 
 function pageView() {
   const { name, id } = state.route;
   if (name === 'map') return { html: mapPage(), title: '理论地图 · 研究台' };
+  if (name === 'known') return { html: knownPage(), title: knownTitle() };
   if (name === 'now') return { html: nowPage(), title: '当下市场信息 · 研究台' };
   if (name === 'progress') return { html: progressPage(), title: '进展 · 研究台' };
   if (name === 'review') return { html: reviewPage(), title: '评估 · 研究台' };
@@ -477,6 +492,7 @@ function bindPage() {
   if (state.route.name === 'docs') loadDoc();
   if (state.route.name === 'map') bindMap();
   if (state.route.name === 'now') bindNow();
+  if (state.route.name === 'known') bindKnown();
 }
 
 function onFilter() {
@@ -1365,6 +1381,236 @@ function bindNow() {
       if (node) node.scrollIntoView({ block: 'start', behavior: reduceMotion.matches ? 'auto' : 'smooth' });
     });
   });
+}
+
+const KNOWN_RELIABILITY = {
+  反复验证: 'is-solid',
+  有争议: 'is-contested',
+  较新证据有限: 'is-thin',
+};
+
+const KNOWN_RELATION = {
+  底座直接用: 'is-base',
+  我们在检验的新增部分: 'is-add',
+  注意事项: 'is-watch',
+};
+
+function knownTitle() {
+  const item = (state.known?.items || []).find((row) => row.id === state.route.id);
+  if (item) return `${item.id} ${item.name} · 已知规律 · 研究台`;
+  return '已知规律 · 研究台';
+}
+
+function knownPage() {
+  const data = state.known;
+  if (!data || typeof data !== 'object') {
+    return `
+      <p class="kicker">文献里的成熟规律</p>
+      <h1 class="page-title">已知规律</h1>
+      <p class="empty">已知规律还没有整理进来。</p>`;
+  }
+  if (state.route.id && state.knownPinned !== state.route.id) {
+    state.knownFilter = 'all';
+    state.knownPinned = state.route.id;
+  }
+  const items = Array.isArray(data.items) ? data.items : [];
+  const shown = knownVisible(items);
+  const groups = knownGrouped(shown);
+  const lessons = Array.isArray(data.method_lessons) ? data.method_lessons : [];
+  return `
+    <p class="kicker">文献里的成熟规律</p>
+    <h1 class="page-title">已知规律</h1>
+    <p class="lede">${esc(data.intro || '')}</p>
+    <div class="meta-row">
+      ${data.updated ? `<span class="chip">更新 ${esc(data.updated)}</span>` : ''}
+      <span class="chip">${items.length} 条规律</span>
+    </div>
+    ${knownStand(data.position || {})}
+    <section class="sec" aria-labelledby="known-items-title">
+      <h2 id="known-items-title">规律条目</h2>
+      ${knownFilters(items)}
+      ${knownJumps(groups)}
+      ${groups.length ? groups.map(knownGroup).join('') : '<p class="empty">这一组里还没有规律。</p>'}
+    </section>
+    ${knownLessons(lessons)}
+  `;
+}
+
+function knownStand(position) {
+  const cols = [
+    { key: 'foundation', title: '底座（成熟规律）', cls: 'is-base', index: '01' },
+    { key: 'our_addition', title: '我们新增的部分', cls: 'is-add', index: '02' },
+    { key: 'open_gaps', title: '尚未解决的缺口', cls: 'is-gap', index: '03' },
+  ];
+  const body = cols.map((col) => {
+    const rows = Array.isArray(position[col.key]) ? position[col.key] : [];
+    const list = rows.map((text) => `<li>${esc(text)}</li>`).join('')
+      || '<li>这里还没有写。</li>';
+    return `
+      <article class="stand-col ${col.cls}">
+        <header>
+          <span class="stand-index">${col.index}</span>
+          <h3>${esc(col.title)}</h3>
+        </header>
+        <ul>${list}</ul>
+      </article>`;
+  }).join('');
+  return `
+    <section class="sec" aria-labelledby="stand-title">
+      <h2 id="stand-title">我们站在哪里</h2>
+      <p class="muted">按这个顺序读：底座、我们新增的部分、尚未解决的缺口。</p>
+      <div class="stand-wrap">
+        <div class="stand">${body}</div>
+        <div class="stand-rail" aria-hidden="true"><span class="is-base"></span><span class="is-add"></span><span class="is-gap"></span></div>
+      </div>
+    </section>`;
+}
+
+function knownFilters(items) {
+  const buttons = [
+    { id: 'all', label: '全部', n: items.length },
+    ...['底座直接用', '我们在检验的新增部分', '注意事项'].map((label) => ({
+      id: `rel:${label}`,
+      label,
+      n: items.filter((item) => item.relation === label).length,
+    })),
+  ];
+  return `<div class="known-filters" role="toolbar" aria-label="按和我们的关系筛选">${buttons.map((btn) => `
+    <button type="button" class="known-filter${state.knownFilter === btn.id ? ' is-on' : ''}" data-known-filter="${esc(btn.id)}" aria-pressed="${state.knownFilter === btn.id ? 'true' : 'false'}">${esc(btn.label)}<span>${btn.n}</span></button>`).join('')}</div>`;
+}
+
+function knownJumps(groups) {
+  if (groups.length < 2) return '';
+  return `<div class="known-jumps" role="navigation" aria-label="分类">${groups.map((group) => `
+    <button type="button" class="known-jump" data-known-jump="${esc(knownCatId(group.category))}">${esc(group.category)}</button>`).join('')}</div>`;
+}
+
+function knownVisible(items) {
+  const filter = state.knownFilter || 'all';
+  if (filter === 'all') return items;
+  if (filter.startsWith('rel:')) return items.filter((item) => item.relation === filter.slice(4));
+  return items;
+}
+
+function knownGrouped(items) {
+  const groups = [];
+  const seen = new Map();
+  items.forEach((item) => {
+    const category = item.category || '未分类';
+    if (!seen.has(category)) {
+      const group = { category, items: [] };
+      seen.set(category, group);
+      groups.push(group);
+    }
+    seen.get(category).items.push(item);
+  });
+  return groups;
+}
+
+function knownCatId(category) {
+  let hash = 0;
+  for (const char of String(category)) hash = (hash * 33 + char.codePointAt(0)) >>> 0;
+  return `known-cat-${hash.toString(36)}`;
+}
+
+function knownGroup(group) {
+  return `
+    <section class="known-cat" id="${esc(knownCatId(group.category))}">
+      <h2>${esc(group.category)}<span>${group.items.length}</span></h2>
+      <div class="known-list">${group.items.map(knownCard).join('')}</div>
+    </section>`;
+}
+
+function knownCard(item) {
+  const tests = Array.isArray(item.related_tests) ? item.related_tests.filter(Boolean) : [];
+  const studies = Array.isArray(item.studies) ? item.studies : [];
+  const on = state.route.id && state.route.id === item.id ? ' is-target' : '';
+  return `
+    <article class="known-card${on}" id="known-${esc(item.id)}">
+      <header class="known-head">
+        <span class="code">${esc(item.id || '')}</span>
+        <h3>${esc(item.name || '')}</h3>
+      </header>
+      <p class="known-claim">${esc(item.claim || '')}</p>
+      <div class="known-pair">
+        <div>
+          <p class="known-k">可靠程度</p>
+          ${knownBadge(KNOWN_RELIABILITY, item.reliability)}
+          ${item.reliability_note ? `<p class="known-note">${esc(item.reliability_note)}</p>` : ''}
+        </div>
+        <div>
+          <p class="known-k">和我们的关系</p>
+          ${knownBadge(KNOWN_RELATION, item.relation)}
+          ${item.relation_note ? `<p class="known-note">${esc(item.relation_note)}</p>` : ''}
+        </div>
+      </div>
+      ${studies.length ? `<div class="studies"><p class="known-k">论文</p><div class="study-list">${studies.map(studyLink).join('')}</div></div>` : ''}
+      ${tests.length ? `<div class="known-tests"><span class="known-k">相关检验</span>${tests.map(knownTestChip).join('')}</div>` : ''}
+    </article>`;
+}
+
+function knownBadge(map, value) {
+  const cls = map[value] || 'is-plain';
+  return `<span class="known-badge ${cls}">${esc(value || '未标注')}</span>`;
+}
+
+function studyLink(study) {
+  const author = study?.['作者'] || '';
+  const year = study?.['年份'] ?? '';
+  const title = study?.['标题'] || '';
+  const url = study?.url || '';
+  const who = [author, year].filter((part) => part !== '' && part != null).join(' · ');
+  const inner = `<span class="study-who">${esc(who)}</span><span class="study-title">${esc(title)}</span>`;
+  if (!url) return `<div class="study">${inner}</div>`;
+  return `<a class="study" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${inner}</a>`;
+}
+
+function knownTestChip(code) {
+  const item = state.items.find((row) => row.code === code || row.id === code);
+  const label = item ? `${item.code} ${item.title}` : String(code);
+  return `<a class="chip known-chip" href="${esc(testHref(code))}" title="${esc(label)}">${esc(code)}</a>`;
+}
+
+function knownLessons(lessons) {
+  if (!lessons.length) return '';
+  return `
+    <section class="sec" aria-labelledby="lessons-title">
+      <h2 id="lessons-title">第三轮方法教训</h2>
+      <ol class="lessons">${lessons.map((text) => `<li>${esc(text)}</li>`).join('')}</ol>
+    </section>`;
+}
+
+function bindKnown() {
+  main.querySelectorAll('[data-known-filter]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const next = btn.getAttribute('data-known-filter') || 'all';
+      if (next === state.knownFilter) return;
+      state.knownFilter = next;
+      const y = window.scrollY;
+      render({ resetScroll: false });
+      window.scrollTo(0, y);
+    });
+  });
+  main.querySelectorAll('[data-known-jump]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const node = document.getElementById(btn.getAttribute('data-known-jump'));
+      if (node) scrollBelowBar(node);
+    });
+  });
+}
+
+function scrollBelowBar(node) {
+  const go = (behavior) => {
+    if (!node.isConnected) return;
+    const bar = $('bar');
+    const offset = (bar ? bar.getBoundingClientRect().height : 96) + 14;
+    const top = node.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: Math.max(0, top), behavior });
+  };
+  go(reduceMotion.matches ? 'auto' : 'smooth');
+  if (document.fonts && document.fonts.status !== 'loaded') {
+    document.fonts.ready.then(() => go('auto'));
+  }
 }
 
 function esc(value) {
