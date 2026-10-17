@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "id": "1017早",
+  "date": "2026-10-17",
+  "slot": "早",
+  "title": "10月17日 · 早",
+  "items": [
+    {
+      "id": "1017早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "美国新实验室 Reflection 开放首个模型 Beam：5010 亿参数、Apache 2.0 免费商用，独立评测排美国开放模型第二",
+      "time": "2026-10-16T21:31:00+08:00",
+      "summary": "Reflection 周五发布第一个模型 Beam，权重直接放上 Hugging Face，用最宽松的 Apache 2.0 协议，企业可以自己部署、自己改。它是「混合专家」结构：总共 5010 亿参数，每次只动用约 230 亿，所以跑起来像中等模型一样快；能一次读 100 万 token，主打写代码和长时间自动干活的智能体任务。独立评测机构 Artificial Analysis 给它的智能指数打 30 分，在美国开放权重模型里排第二（第一是前天 Meta 放出的 Muse Spark Open）。门槛不低：压缩版也要约 280GB 显存，官方建议四块 B200 级别的显卡。上线首日 AWS、谷歌云、微软 Azure、OpenRouter 等 40 多家平台都能用。另外查过：DeepSeek、通义千问、Kimi、智谱这段时间没有新模型发布。",
+      "relevance": "美国这两天连出两个能自己部署的大模型，以后你想把研究系统放在自己掌控的地方跑，选择会多很多。",
+      "sources": [
+        {
+          "label": "reflection.ai（官方）",
+          "url": "https://reflection.ai/blog/beam-is-available"
+        },
+        {
+          "label": "huggingface.co（技术解读）",
+          "url": "https://huggingface.co/blog/reflection-beam"
+        },
+        {
+          "label": "x.com/ArtificialAnlys",
+          "url": "https://x.com/ArtificialAnlys/status/2111087606759030831"
+        }
+      ]
+    },
+    {
+      "id": "1017早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "ChatGPT 的 GPT-6 Pro 升级：回答更快，还能让多个智能体同时分头干一件事",
+      "time": "2026-10-17T04:00:00+08:00",
+      "summary": "OpenAI 今天凌晨宣布，ChatGPT 里的 GPT-6 Pro 和 GPT-6 Astra Pro 升级：回答更快，调用插件和工具更准。最大的新功能是「并行智能体」：一个复杂任务可以拆给多个智能体同时做，你能看到每个的进度，做完的部分可以先点开检查。目前先给 Pro 等付费用户。同一天，OpenAI 还给常驻智能体 Dots 加了 iPhone 桌面小组件，一点就能开对话或语音通话；官方举例，一名工程师半夜三点让自己的 Dot 先排查线上故障，再开 Codex 修，他在手机上指挥。",
+      "relevance": "这正是你想要的「多个模型分工协作」：大厂已经把「拆任务、并行做、人来验收」做成现成功能了。",
+      "sources": [
+        {
+          "label": "x.com/OpenAI",
+          "url": "https://x.com/OpenAI/status/2111192259073094035"
+        },
+        {
+          "label": "x.com/OpenAIDevs",
+          "url": "https://x.com/OpenAIDevs/status/2111211411766399288"
+        },
+        {
+          "label": "runtimewire.com",
+          "url": "https://runtimewire.com/article/chatgpt-ios-widget-dots"
+        }
+      ]
+    },
+    {
+      "id": "1017早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "谷歌四个 Gemini 4 Argon 智能体 27 小时从零通关《我的世界》；Anthropic 称 Claude Mythos 5 设计的电路超过已发表最佳方案",
+      "time": "2026-10-17T00:11:00+08:00",
+      "summary": "谷歌 DeepMind 展示：四个 Gemini 4 Argon 智能体在同一个《我的世界》里，只靠写代码和文字聊天，自己分工、共享笔记、互相改错，27 小时写了 2783 段程序，最后打败末影龙，全程没有人帮忙。同一天 Anthropic 发布「STEM 研究员计划」的成果：研究人员用大白话描述需求，Claude Mythos 5 设计出的量子电路比已发表的最佳方案更省，有时省一个数量级以上。两家都在证明同一件事：模型已经能长时间自己协作、做有用的研究活。",
+      "relevance": "你的「主动索尔」想法，大厂正在用游戏和科研验证：多个 AI 分工、留笔记、互相查错，确实能把长任务做完。",
+      "sources": [
+        {
+          "label": "x.com/GoogleDeepMind",
+          "url": "https://x.com/GoogleDeepMind/status/2111127991401247033"
+        },
+        {
+          "label": "x.com/AnthropicAI",
+          "url": "https://x.com/AnthropicAI/status/2111152183240511640"
+        }
+      ]
+    },
+    {
+      "id": "1017早-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "马斯克：X 平台广告以后要过「审美标准」，丑陋、刺耳、夸大的广告主将被禁投",
+      "time": "2026-10-17T00:24:00+08:00",
+      "summary": "马斯克周五在 X 发文：今后 X 上所有广告都要符合「合理的审美标准」，广告「丑陋、尖叫刺耳或夸大产品功效」的广告主会被禁止投放，并请用户举报。这条帖子获得约 14.7 万个赞、500 万次浏览。他没有公布具体审核规则、谁来判断，以及何时执行。",
+      "relevance": "以后开店若在 X 上投广告，「夸大功效」的文案可能直接被封，成人用品这类敏感品类更要注意措辞。",
+      "sources": [
+        {
+          "label": "x.com/elonmusk",
+          "url": "https://x.com/elonmusk/status/2111131160348688395"
+        }
+      ]
+    },
+    {
+      "id": "1017早-5",
+      "section": "我关注的",
+      "block": "AI 陪伴与成人消费",
+      "title": "【补报】成人用品业两个动向：LELO 推 299 美元「红光护理」款，把护肤科技搬进私密健康；Fort Troff 批发改由 XR Brands 代理",
+      "time": "2026-10-15",
+      "summary": "一、高端品牌 LELO 10 月 9 日推出 MONA Spectra，定价 299 美元/欧元，卖点是把美容院常见的红光（LED 光疗）技术加进私密按摩器，用 App 还能切换近红外等波长，主打「私密健康」和自我护理。LELO 自己的调查称，69% 受访者有兴趣尝试红光护理、20% 已用过。注意：相关健康功效是厂商说法，未见独立临床验证。二、10 月 15 日，男性私密用品品牌 Fort Troff 宣布与 XR Brands 合作，批发订货改由 XR Brands 负责，原代理 Doc Johnson 已不再有货；XR 还负责生产、包装、营销和仓储，计划让热门款重新上市并拓展海外渠道。",
+      "relevance": "对开店来说：「健康、护理」包装正在把客单价往高端推；而品牌换代理很常见，进货前要确认当前的正规批发渠道。",
+      "sources": [
+        {
+          "label": "prnewswire.com（LELO 新闻稿）",
+          "url": "https://www.prnewswire.com/news-releases/lelo-reimagines-intimacy-with-mona-spectra-the-worlds-first-luxury-red-light-intimate-wellness-massager-302903368.html"
+        },
+        {
+          "label": "jrlcharts.com",
+          "url": "https://jrlcharts.com/2026/10/15/xr-brands-lands-fort-troff-in-major-deal-to-expand-wholesale-distribution/"
+        }
+      ]
+    },
+    {
+      "id": "1017早-6",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "【补报】苹果 HomePod mini 2：149 美元，能认出家里 6 个人的声音，新 Siri AI 要等后续更新",
+      "time": "2026-10-13",
+      "summary": "苹果 10 月 13 日发布 HomePod mini 2，美国售价 149 美元，10 月 30 日开卖，有粉、绿、蓝、白、午夜色五种。新芯片 S10 让音质更好，顶部会跟着音乐发光。最大卖点是新版 Siri AI：对话更自然、能结合你手机里的个人信息帮忙办事，还能靠声音分辨家中最多 6 个人。但新 Siri 不是开箱就有，要等之后的软件更新，而且先只支持英语和少数国家地区。",
+      "relevance": "你在关注语音交互：大厂音箱都在往「能聊天、认得人」走，但中文和台湾地区暂时不在首批。",
+      "sources": [
+        {
+          "label": "tech.yahoo.com",
+          "url": "https://tech.yahoo.com/ai/apple-intelligence/articles/apple-homepod-mini-2-launched-131415162.html"
+        }
+      ]
+    },
+    {
+      "id": "1017早-7",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周五收跌：纳指跌 2.15%、本周跌 4.5%，创 6 月底以来最差一周；道指本周仍小涨",
+      "time": "2026-10-17T04:00:00+08:00",
+      "summary": "道指跌 0.34% 收 52002 点，标普 500 跌 1.09% 收 7659 点，纳指跌 2.15% 收 26140 点。科技、芯片和软件股领跌：美光跌 5.6%、Meta 跌 3.7%、特斯拉跌 2.1%；靠借钱建 AI 机房的 CoreWeave 再跌 12%，本周累计约跌 25%，市场开始担心 AI 基建的融资压力。整周看，纳指跌 4.5%、标普跌约 2%，道指反而涨 0.7%，资金从科技股转向公用事业、能源等防御板块。下周特斯拉、Netflix、Meta 公布财报。亚洲股市（日、韩、台、A股、港股）周末休市，昨晚报道的周五收盘之后没有新交易。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "apnews.com",
+          "url": "https://apnews.com/article/stocks-markets-us-ai-oil-tech-warsh-d2655f64db7ec8ae450525d58f97b628"
+        },
+        {
+          "label": "english.news.cn（新华社）",
+          "url": "https://english.news.cn/20261017/92ae47ed06d14f749bcf2b86b3c2970d/c.html"
+        },
+        {
+          "label": "finance.yahoo.com",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-mixed-amid-volatile-week-112939401.html"
+        }
+      ]
+    },
+    {
+      "id": "1017早-8",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "欧股逆势收涨，布伦特原油涨 3.7% 逼近 110 美元；金价微涨，10 年期美债约 5.09%",
+      "time": "2026-10-17T04:00:00+08:00",
+      "summary": "欧洲斯托克 600 指数收涨约 0.7%，德国 DAX 涨 0.94%、法国 CAC 涨 0.28%，英国富时涨 0.38%，四者本周都收涨。欧元区 9 月通胀终值 3.8%，是三年来最高，主要因能源价格同比涨 18.9%。霍尔木兹海峡袭船激增，布伦特原油大涨 3.72%，结算价 109.86 美元，盘中一度碰到 110 美元，是 5 月以来首次；美国原油接近 100 美元。美元指数跌 0.26%，本周四周来首次下跌；金价小涨至约 4167 美元。10 年期美债收益率收在约 5.085%，本周因避险买盘整体回落。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "investing.com（路透）",
+          "url": "https://www.investing.com/news/economy-news/most-asian-stocks-rise-as-calm-returns-after-coreweave-shock-indonesia-faces-market-downgrade-4952993"
+        },
+        {
+          "label": "sharecast.com",
+          "url": "https://www.sharecast.com/news/market-report-europe-close/europe-dac-cac-close-shares-eurozone-nordex-aixtron-schneider--23873506.html"
+        }
+      ]
+    },
+    {
+      "id": "1017早-9",
+      "section": "国际重大影响",
+      "title": "霍尔木兹袭船创纪录、进出船次从 176 降到 131；专家警告若战火扩到阿曼湾，海湾国家补给线将被切断",
+      "time": "2026-10-16",
+      "summary": "BBC 核查英国海事贸易行动办公室（UKMTO）数据：10 月 5 日至 11 日一周有 12 艘船报告遇袭，是开战以来单周最多；本周截至报道时又有 4 起，印度港口部长也确认一艘载有 15 名印度船员的油轮在海峡被击中。分析公司 Kpler 数据：截至 10 月 14 日的一周，过海峡船次从前一周的 176 降到 131；10 月 13 日原油通过量约每天 1260 万桶，低于 9 月底的 1500 万桶和战前约 1700 万桶。尽管危险，仍有油轮冒险通行：新加坡外长转述一位海湾官员的话，油价高到「偶尔挨打也值得跑」。大型集装箱航运公司自 2 月开战以来一直没恢复走这条线。德鲁里航运顾问警告：一旦战事扩到阿曼湾，阿联酋豪尔费坎港、阿曼苏哈尔港这两条替代补给线也会受威胁。这是周五油价大涨的直接原因。",
+      "relevance": "油价逼近 110 美元会推高台湾的油电和物价，也是近期全球股市波动的重要来源。",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/16/strait-hormuz-singapore-ships-attacked.html"
+        },
+        {
+          "label": "thenationalnews.com",
+          "url": "https://www.thenationalnews.com/news/mena/2026/10/16/india-hormuz-strait-tanker-attack/"
+        },
+        {
+          "label": "bbc.com",
+          "url": "https://www.bbc.com/news/articles/cmde8dpg8g0no"
+        }
+      ]
+    },
+    {
+      "id": "1017早-10",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "阿拉斯加挖出 1.38 万年前的「营地」：美洲最早的房屋痕迹、最早的骨针，还可能有最早的家狗",
+      "time": "2026-10-14",
+      "summary": "堪萨斯大学团队在《科学进展》发表研究：在阿拉斯加费尔班克斯东南约 55 公里、一个原住民语叫「他们曾在这里」的遗址，挖出数万件文物。最早一层约 1.38 万年前，有火塘、木柱留下的洞（可能是棚屋或早期帐篷），是西半球已知最早的住所痕迹；还有 8 段骨针，是美洲最古老的针；一个鹿角吊坠；一个装满炭和兽骨、用来慢炖肉的土灶。十几只狼类动物的骨头不是普通狼，可能与人一起从西伯利亚过来，是美洲最早家狗的间接证据。石器样式又显示，这些人同时和亚洲、北美南方都有文化联系。考古队还请当地原住民长老一起决定在哪里挖。",
+      "relevance": "这说明最早的美洲人不是匆匆路过的猎人，而是会盖房、缝衣、养狗、安家过日子的人，换个角度看「人类怎么扩散到全世界」。",
+      "sources": [
+        {
+          "label": "livescience.com",
+          "url": "https://www.livescience.com/archaeology/americas/archaeologists-discover-the-oldest-dwelling-in-the-western-hemisphere-at-a-13-800-year-old-site-in-alaska"
+        }
+      ]
+    }
+  ]
+}
