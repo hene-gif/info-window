@@ -4,7 +4,7 @@
 
 <https://hene-gif.github.io/info-window/research/>
 
-深色研究终端自己的视觉（青绿强调、等宽状态灯），和讯息窗分开。不走讯息窗的 hash 路由，也不改 `data/` 或 `scripts/check_data.py`。
+浅色页，深色字，高对比。和讯息窗分开。不走讯息窗的 hash 路由，也不改 `data/` 或 `scripts/check_data.py`。
 
 ## 以后每一轮怎么更新
 
@@ -13,7 +13,7 @@
 1. 把新的 markdown 放进 `research/docs/`，图放进 `research/docs/img/`。正文里的图用相对路径 `img/文件名.png`。
 2. 在 `research/data/docs.json` 里登记这篇文档。
 3. 把检验写进 `research/data/items.json`。**只写文档里有的话**：状态、证据标签、主人、p 值、样本，文档没写就留空或写在 `mapping` 里。
-4. 总览结论改 `research/data/overview.json`。对照原版 / 修订版的评估改 `research/data/reviews.json`。
+4. 总览结论改 `research/data/overview.json`。对照原版 / 修订版的评估改 `research/data/reviews.json`。理论地图的节点和边改 `research/data/theory.json`。
 5. 不要发明通过/被否。第二轮没跑完时，没过门槛写文档里的「本轮尚未检出」，不要写成已经推翻。
 6. 推到 `main`。Pages 工作流会把整个 `research/` 拷进站点。讯息窗的 service worker 不算 `research/` 的版本，所以只改研究数据不会逼讯息窗重载。
 
@@ -31,6 +31,19 @@
 | `exploratory` | `true` 时进展页打「探索性」徽章并加注：不占 N，不能当成正式结论。C1、C2 因偏离清单降级；X1 预先就是探索项 |
 
 进展页以 `理论层第一轮报告_修订版.md` 为准。原版若用词更重（例如 T2「被推翻」），写在 `statusOriginal`，评估页会对照着展示。
+
+### `theory.json`
+
+理论地图的节点、分区和边。边只记结构和 `itemId`。**状态、证据、探索性都从 `items.json` 读**，不要在这里再写一份。改一条检验的状态，地图上的颜色和标签会跟着变。
+
+| 字段 | 用法 |
+| --- | --- |
+| `itemId` | 对应 `items.json` 里的 `id`，例如 `r2-C9`、`T3` |
+| `short` | 这条线的短名称，用文档里的说法 |
+| `hypothesis` | 这条线属于哪条假说，用文档里的说法 |
+| `placeNote` | 它在总主线里的位置。文档没写就留空 |
+| `also` | 线没有直接连上、但点开时要一起高亮的节点 |
+| `wide` / `narrow` | 宽屏和窄屏的走线。`from` / `to` 是节点 id；`c` 是弯曲控制点；`paths` 是一条检验连到多个市场；`loop` 是绕在一个节点上的线 |
 
 ## 修改意见（GitHub Issue）
 
