@@ -1,11 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "source": "第二轮预注册检验清单.md；第一轮已出结果来自理论层第一轮报告_修订版.md",
-  "note": "边的状态、证据、探索性不写在这里。页面用 itemId 去 items.json 读。改状态只改 items.json，地图会跟着变。",
-  "layouts": {
-    "wide": { "w": 820, "h": 1140 },
-    "narrow": { "w": 328, "h": 2300 }
-  },
+  "note": "边只记结构和 itemId。状态、证据、探索性从 items.json 读。页面只把「已经有结果」或「进入总主线判定」的关系画成线；其余关系留在图下面的名单里。改状态只改 items.json。",
   "thesis": {
     "title": "制度决定冲击走哪条管道",
     "lead": "开放市场用价格吸收，封闭市场用政策吸收。",
@@ -39,143 +35,146 @@
       { "when": "任何一项推翻", "then": "必须修订主线，不许换个说法圆回去" }
     ]
   },
-  "zones": [
+  "layers": [
     {
-      "id": "macro",
-      "label": "宏观指标",
-      "wide": { "x": 36, "y": 86, "w": 520, "h": 168 },
-      "narrow": { "x": 12, "y": 28, "w": 304, "h": 366 }
+      "id": "water",
+      "label": "美国流动性",
+      "hint": "美元、美债、实际利率，以及日元套利仓位"
     },
     {
-      "id": "goldz",
-      "label": "中立旁观者",
-      "wide": { "x": 590, "y": 86, "w": 196, "h": 168 },
-      "narrow": { "x": 12, "y": 440, "w": 304, "h": 160 }
+      "id": "game",
+      "label": "中美博弈与商品",
+      "hint": "科技、关税、资金；黄金；原油"
     },
     {
-      "id": "open",
-      "label": "开放市场 · 用价格吸收",
-      "wide": { "x": 32, "y": 378, "w": 756, "h": 176 },
-      "narrow": { "x": 12, "y": 848, "w": 304, "h": 600 }
+      "id": "markets",
+      "label": "股市",
+      "hint": "美股、A股（港股附属）；台股和韩股合成亚洲芯片链"
     },
     {
-      "id": "cost",
-      "label": "通胀 / 成本",
-      "wide": { "x": 600, "y": 676, "w": 186, "h": 180 },
-      "narrow": { "x": 12, "y": 640, "w": 304, "h": 170 }
-    },
-    {
-      "id": "closed",
-      "label": "封闭市场 · 用政策吸收",
-      "wide": { "x": 120, "y": 676, "w": 250, "h": 180 },
-      "narrow": { "x": 12, "y": 1476, "w": 304, "h": 180 }
-    },
-    {
-      "id": "middle",
-      "label": "台韩芯片链 · 可能两边获利的中间地带",
-      "wide": { "x": 150, "y": 948, "w": 500, "h": 164 },
-      "narrow": { "x": 12, "y": 1888, "w": 304, "h": 390 }
+      "id": "later",
+      "label": "日股、欧股",
+      "hint": "日股和上面的日元套利仓位不是同一个东西"
     }
   ],
   "nodes": [
     {
-      "id": "us",
-      "name": "美国",
-      "sub": "美股 · 美联储 · 实际利率 · 美元",
-      "role": "全球水位",
-      "plain": "美联储政策通过美元和利率影响全部市场。实际利率＝扣掉通胀后的真实借钱成本，实际利率越高，钱越贵。美元越强，钱越往美国回流。",
-      "wide": { "x": 400, "y": 190 },
-      "narrow": { "x": 164, "y": 330 }
+      "id": "yen",
+      "layer": "water",
+      "name": "日元套利仓位",
+      "sub": "急升＝平仓风险",
+      "role": "杠杆开关",
+      "plain": "套利交易＝借利率很低的日元，换成别的货币去买收益更高的资产；日元突然升值时，借钱的人被迫一起卖资产还钱。"
+    },
+    {
+      "id": "real",
+      "layer": "water",
+      "name": "实际利率",
+      "sub": "扣掉通胀后的借钱成本",
+      "role": "水位",
+      "plain": "实际利率＝扣掉通胀后的真实借钱成本，实际利率越高，钱越贵。"
+    },
+    {
+      "id": "usd",
+      "layer": "water",
+      "name": "美元",
+      "sub": "越强，钱越回流美国",
+      "role": "水位",
+      "plain": "美元越强，钱越往美国回流。"
     },
     {
       "id": "ust",
+      "layer": "water",
       "name": "美债",
       "sub": "2 年 / 10 年收益率",
       "role": "",
-      "plain": "美债收益率（2年/10年）：2年期反映对美联储短期利率的预期，10年期反映长期增长、通胀和风险补偿。",
-      "wide": { "x": 145, "y": 190 },
-      "narrow": { "x": 164, "y": 120 }
+      "plain": "美债收益率（2年/10年）：2年期反映对美联储短期利率的预期，10年期反映长期增长、通胀和风险补偿。"
     },
     {
-      "id": "oil",
-      "name": "原油",
-      "sub": "通胀和成本",
-      "role": "成本",
-      "plain": "原油是全球通胀和成本的核心变量。供给冲击带来的上涨对进口国不利。",
-      "wide": { "x": 690, "y": 790 },
-      "narrow": { "x": 164, "y": 750 }
+      "id": "game",
+      "layer": "game",
+      "name": "中美博弈",
+      "sub": "科技、关税、资金",
+      "role": "",
+      "plain": "中美摩擦、芯片管制这些检验从这里出发。点开下面的名单看每一条。"
     },
     {
       "id": "gold",
+      "layer": "game",
       "name": "黄金",
       "sub": "避险与货币信用",
       "role": "中立旁观者",
-      "plain": "黄金是中立旁观者。避险资产，也反映对货币信用和地缘的担心。",
-      "wide": { "x": 675, "y": 190 },
-      "narrow": { "x": 164, "y": 540 }
+      "plain": "黄金是中立旁观者。避险资产，也反映对货币信用和地缘的担心。"
     },
     {
-      "id": "kweb",
-      "name": "中概股",
-      "sub": "KWEB",
-      "role": "开放市场",
-      "plain": "开放市场：中概股。用价格吸收，代价是价格直接下跌。",
-      "wide": { "x": 145, "y": 490 },
-      "narrow": { "x": 164, "y": 960 }
+      "id": "oil",
+      "layer": "game",
+      "name": "原油",
+      "sub": "通胀和成本",
+      "role": "成本",
+      "plain": "原油是全球通胀和成本的核心变量。供给冲击带来的上涨对进口国不利。"
     },
     {
-      "id": "hk",
-      "name": "港股",
-      "sub": "价格吸收",
-      "role": "开放市场",
-      "plain": "开放市场：港股。用价格吸收，代价是价格直接下跌。港股的特殊性：中国基本面 + 美国资金面。",
-      "wide": { "x": 400, "y": 490 },
-      "narrow": { "x": 164, "y": 1170 }
-    },
-    {
-      "id": "jp",
-      "name": "日股 / 日元套利",
-      "sub": "日元套利盘",
-      "role": "开放市场",
-      "plain": "开放市场：日元套利盘。用价格吸收，代价是价格直接下跌。突然急升＝套利平仓风险。",
-      "wide": { "x": 655, "y": 490 },
-      "narrow": { "x": 164, "y": 1380 }
+      "id": "useq",
+      "layer": "markets",
+      "name": "美股",
+      "sub": "含费半",
+      "role": "",
+      "plain": "费半是美国上市芯片公司的指数。T3 看台韩科技股扣掉共同主线后，是否更贴近费半，而不是港股、A股。"
     },
     {
       "id": "a",
+      "layer": "markets",
       "name": "A股",
       "sub": "价格被托住",
       "role": "封闭市场",
       "plain": "封闭市场：A股。用政策吸收，价格被托住。代价转到 AH 溢价扩大，以及随后的降准降息。",
-      "wide": { "x": 230, "y": 790 },
-      "narrow": { "x": 164, "y": 1590 }
-    },
-    {
-      "id": "eu",
-      "name": "欧股",
-      "sub": "能源净进口",
-      "role": "",
-      "plain": "欧洲是能源净进口地区，油气价格上涨直接压制工业利润和居民消费。",
-      "wide": { "x": 470, "y": 790 },
-      "narrow": { "x": 164, "y": 1800 }
+      "satellites": [
+        {
+          "id": "hk",
+          "name": "港股",
+          "plain": "开放市场：港股。用价格吸收，代价是价格直接下跌。港股的特殊性：中国基本面 + 美国资金面。"
+        },
+        {
+          "id": "kweb",
+          "name": "中概股",
+          "plain": "开放市场：中概股。用价格吸收，代价是价格直接下跌。"
+        }
+      ]
     },
     {
       "id": "tw",
+      "layer": "markets",
+      "group": "chip",
       "name": "台股",
       "sub": "芯片链",
       "role": "中间地带",
-      "plain": "台韩芯片链，可能两边获利的中间地带。",
-      "wide": { "x": 290, "y": 1060 },
-      "narrow": { "x": 164, "y": 2010 }
+      "plain": "台韩芯片链，可能两边获利的中间地带。"
     },
     {
       "id": "kr",
+      "layer": "markets",
+      "group": "chip",
       "name": "韩股",
       "sub": "芯片链",
       "role": "中间地带",
-      "plain": "台韩芯片链，可能两边获利的中间地带。与台股同属芯片链，经常同步。",
-      "wide": { "x": 540, "y": 1060 },
-      "narrow": { "x": 164, "y": 2220 }
+      "plain": "台韩芯片链，可能两边获利的中间地带。与台股同属芯片链，经常同步。"
+    },
+    {
+      "id": "jp",
+      "layer": "later",
+      "name": "日股",
+      "sub": "股市本身",
+      "role": "",
+      "plain": "日股放在这一层。上面的日元套利仓位是融资开关，不是日股本身。"
+    },
+    {
+      "id": "eu",
+      "layer": "later",
+      "name": "欧股",
+      "sub": "能源净进口",
+      "role": "",
+      "plain": "欧洲是能源净进口地区，油气价格上涨直接压制工业利润和居民消费。"
     }
   ],
   "edges": [
@@ -186,8 +185,7 @@
       "hypothesis": "制度决定冲击走哪条管道",
       "placeNote": "",
       "also": [],
-      "wide": { "from": "us", "to": "kweb" },
-      "narrow": { "from": "us", "to": "kweb" }
+      "paths": [{ "from": "game", "to": "kweb" }]
     },
     {
       "id": "C5",
@@ -196,8 +194,7 @@
       "hypothesis": "制度决定冲击走哪条管道",
       "placeNote": "只作旁证，不进入判定",
       "also": [],
-      "wide": { "loop": "a", "side": "right" },
-      "narrow": { "loop": "a", "side": "down" }
+      "loop": "a"
     },
     {
       "id": "C6",
@@ -206,8 +203,7 @@
       "hypothesis": "制度决定冲击走哪条管道",
       "placeNote": "进入总主线判定",
       "also": [],
-      "wide": { "loop": "a", "side": "down" },
-      "narrow": { "loop": "a", "side": "up" }
+      "loop": "a"
     },
     {
       "id": "C9",
@@ -215,9 +211,8 @@
       "short": "美国紧缩→AH溢价",
       "hypothesis": "制度决定冲击走哪条管道",
       "placeNote": "进入总主线判定",
-      "also": ["a"],
-      "wide": { "from": "us", "to": "hk" },
-      "narrow": { "from": "us", "to": "hk" }
+      "also": ["hk"],
+      "paths": [{ "from": "real", "to": "a" }]
     },
     {
       "id": "C10",
@@ -226,8 +221,7 @@
       "hypothesis": "制度决定冲击走哪条管道",
       "placeNote": "",
       "also": [],
-      "wide": { "from": "us", "to": "a" },
-      "narrow": { "from": "us", "to": "a" }
+      "paths": [{ "from": "game", "to": "a" }]
     },
     {
       "id": "L1",
@@ -236,18 +230,10 @@
       "hypothesis": "制度决定冲击走哪条管道",
       "placeNote": "进入总主线判定",
       "also": [],
-      "wide": {
-        "paths": [
-          { "from": "jp", "to": "us" },
-          { "from": "jp", "to": "kweb" }
-        ]
-      },
-      "narrow": {
-        "paths": [
-          { "from": "jp", "to": "us" },
-          { "from": "jp", "to": "kweb" }
-        ]
-      }
+      "paths": [
+        { "from": "yen", "to": "useq" },
+        { "from": "yen", "to": "kweb" }
+      ]
     },
     {
       "id": "L2",
@@ -256,8 +242,10 @@
       "hypothesis": "制度决定冲击走哪条管道",
       "placeNote": "",
       "also": [],
-      "wide": { "from": "us", "to": "gold" },
-      "narrow": { "from": "us", "to": "gold" }
+      "paths": [
+        { "from": "real", "to": "gold" },
+        { "from": "game", "to": "gold" }
+      ]
     },
     {
       "id": "L3",
@@ -265,9 +253,8 @@
       "short": "油价供给冲击→欧股 vs 美股",
       "hypothesis": "制度决定冲击走哪条管道",
       "placeNote": "",
-      "also": ["us"],
-      "wide": { "from": "oil", "to": "eu" },
-      "narrow": { "from": "oil", "to": "eu" }
+      "also": ["useq"],
+      "paths": [{ "from": "oil", "to": "eu" }]
     },
     {
       "id": "L4",
@@ -276,18 +263,10 @@
       "hypothesis": "制度决定冲击走哪条管道",
       "placeNote": "",
       "also": [],
-      "wide": {
-        "paths": [
-          { "from": "us", "to": "tw" },
-          { "from": "us", "to": "kr" }
-        ]
-      },
-      "narrow": {
-        "paths": [
-          { "from": "us", "to": "tw" },
-          { "from": "us", "to": "kr" }
-        ]
-      }
+      "paths": [
+        { "from": "game", "to": "tw" },
+        { "from": "game", "to": "kr" }
+      ]
     },
     {
       "id": "T3",
@@ -296,18 +275,10 @@
       "hypothesis": "产业链位置",
       "placeNote": "",
       "also": [],
-      "wide": {
-        "paths": [
-          { "from": "us", "to": "tw" },
-          { "from": "us", "to": "kr" }
-        ]
-      },
-      "narrow": {
-        "paths": [
-          { "from": "us", "to": "tw" },
-          { "from": "us", "to": "kr" }
-        ]
-      }
+      "paths": [
+        { "from": "useq", "to": "tw" },
+        { "from": "useq", "to": "kr" }
+      ]
     },
     {
       "id": "D5",
@@ -316,8 +287,7 @@
       "hypothesis": "利率推动的美元走强周，韩股是否明显跑输美股",
       "placeNote": "",
       "also": [],
-      "wide": { "from": "us", "to": "kr" },
-      "narrow": { "from": "us", "to": "kr" }
+      "paths": [{ "from": "usd", "to": "kr" }]
     }
   ]
 }
