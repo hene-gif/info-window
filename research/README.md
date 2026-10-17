@@ -4,7 +4,7 @@
 
 <https://hene-gif.github.io/info-window/research/>
 
-和讯息窗共用同一套视觉（字号、颜色、页首），但是**单独的页面**，不走讯息窗的 hash 路由，也不改 `data/` 或 `scripts/check_data.py`。
+深色研究终端自己的视觉（青绿强调、等宽状态灯），和讯息窗分开。不走讯息窗的 hash 路由，也不改 `data/` 或 `scripts/check_data.py`。
 
 ## 以后每一轮怎么更新
 

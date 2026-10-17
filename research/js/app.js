@@ -123,7 +123,7 @@ async function loadIssues() {
 function render(options = {}) {
   renderNav();
   if (state.fatal) {
-    document.title = '研究 · 讯息窗';
+    document.title = '研究台';
     main.innerHTML = `<p class="status">${esc(state.fatal)}</p>`;
     return;
   }
@@ -170,11 +170,11 @@ function renderNav() {
 
 function pageView() {
   const { name, id } = state.route;
-  if (name === 'progress') return { html: progressPage(), title: '进展 · 研究' };
-  if (name === 'review') return { html: reviewPage(), title: '评估 · 研究' };
-  if (name === 'feedback') return { html: feedbackPage(), title: '修改意见 · 研究' };
-  if (name === 'docs') return { html: docsPage(id), title: '文档 · 研究' };
-  return { html: homePage(), title: '研究 · 讯息窗' };
+  if (name === 'progress') return { html: progressPage(), title: '进展 · 研究台' };
+  if (name === 'review') return { html: reviewPage(), title: '评估 · 研究台' };
+  if (name === 'feedback') return { html: feedbackPage(), title: '修改意见 · 研究台' };
+  if (name === 'docs') return { html: docsPage(id), title: '文档 · 研究台' };
+  return { html: homePage(), title: '研究台' };
 }
 
 function homePage() {

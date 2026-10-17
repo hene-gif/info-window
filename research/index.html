@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>研究 · 讯息窗</title>
+  <title>研究台</title>
   <meta name="description" content="全球股市研究看板：框架、进展、评估、修改意见和原文。">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c0c0e">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#070b10">
   <link rel="icon" href="../icons/icon.svg" type="image/svg+xml">
   <link rel="icon" href="../icons/icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -19,19 +20,17 @@
   <header class="bar" id="bar">
     <div class="bar-in">
       <div class="bar-top">
-        <a class="brand" href="#/" aria-label="研究看板，回到总览">
+        <a class="brand" href="#/" aria-label="研究台，回到总览">
           <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
-            <rect width="24" height="24" rx="6.5" class="mark-tile"/>
-            <rect x="5.5" y="5.5" width="5.6" height="5.6" rx="1.3" class="mark-pane"/>
-            <rect x="12.9" y="5.5" width="5.6" height="5.6" rx="1.3" class="mark-lit"/>
-            <rect x="5.5" y="12.9" width="5.6" height="5.6" rx="1.3" class="mark-pane"/>
-            <rect x="12.9" y="12.9" width="5.6" height="5.6" rx="1.3" class="mark-pane"/>
+            <rect x="1" y="1" width="22" height="22" rx="3" class="mark-tile"/>
+            <path d="M5 16V10M8 16V7M12 16V11M16 16V6M19 16V12" class="mark-bars"/>
+            <path d="M5 13h3M12 13.5h4" class="mark-wicks"/>
           </svg>
-          <span class="brand-name">讯息窗</span>
-          <span class="brand-sub">研究</span>
+          <span class="brand-name">研究台</span>
+          <span class="brand-sub">全球股市</span>
         </a>
-        <p class="clock" aria-label="台北时间"><span>台北</span><time id="clock">--:--</time></p>
-        <a class="home-link" href="../">回讯息窗</a>
+        <p class="clock" aria-label="台北时间"><span>TPE</span><time id="clock">--:--</time></p>
+        <a class="home-link" href="../">讯息窗</a>
       </div>
       <div class="bar-sub">
         <nav class="tabs" id="tabs" aria-label="研究页面">
@@ -50,7 +49,7 @@
   </main>
   <div id="toast" role="status" aria-live="polite"></div>
   <noscript>
-    <p class="status">研究看板需要 JavaScript。</p>
+    <p class="status">研究台需要 JavaScript。</p>
   </noscript>
   <script src="js/markdown.js"></script>
   <script src="js/app.js"></script>
