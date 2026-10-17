@@ -583,10 +583,11 @@ function mapPage() {
   const chips = Object.entries(counts).map(([status, n]) =>
     `<span class="chip">${esc(status)} ${n}</span>`).join('');
   const focus = mapFocus();
+  const plan = buildMapPlan(mode, lay);
   return `
     <p class="kicker">第二轮总主线</p>
     <h1 class="page-title">理论地图</h1>
-    <p class="lede">${esc(t.thesis.title)}。${esc(t.thesis.lead)}点一个市场，或点一条线，看它对应的检验、状态和假说。</p>
+    <p class="lede">${esc(t.thesis.title)}。${esc(t.thesis.lead)}点一个市场或一条线，看对应的检验。图上只标编号，名称和状态在图下面。</p>
     <div class="meta-row">${chips}<span class="chip">状态跟着检验数据变</span></div>
     ${thesisTable(t.thesis)}
     ${judgeTable(t.thesis)}
@@ -596,19 +597,20 @@ function mapPage() {
         <div class="map-frame">
           <div class="map-scroll">
             <div class="map-board" style="--map-w:${lay.w};--map-h:${lay.h}">
-              ${mapSvg(t, mode)}
+              ${mapSvg(t, mode, plan)}
               ${(t.zones || []).map((zone) => zoneTag(zone, mode, lay)).join('')}
               ${nodes.map((node) => nodeButton(node, mode, lay, focus)).join('')}
-              ${edgeChips(edges, mode, lay)}
+              ${edgeBadges(plan, mode, lay, focus)}
             </div>
           </div>
         </div>
+        <section class="rel-list">
+          <h2>图上的线</h2>
+          <p class="map-key">编号标在线旁边。名称、状态和证据在这里，不盖住市场。</p>
+          <div class="rel-grid">${edges.map((edge) => relButton(edge, focus)).join('')}</div>
+        </section>
       </div>
       <aside class="map-side" id="map-side">${mapDetail(focus)}</aside>
-      <section class="rel-list">
-        <h2>登记的关系</h2>
-        <div class="rel-grid">${edges.map((edge) => relButton(edge, focus)).join('')}</div>
-      </section>
     </div>`;
 }
 
@@ -722,7 +724,7 @@ function nodeById(id) {
   return (state.theory.nodes || []).find((node) => node.id === id) || null;
 }
 
-function mapSvg(theory, mode) {
+function mapSvg(theory, mode, plan) {
   const lay = theory.layouts[mode];
   const focus = mapFocus();
   const edges = theory.edges || [];
@@ -732,7 +734,7 @@ function mapSvg(theory, mode) {
     if (!box || box.w <= 0 || box.h <= 0) return '';
     return `<rect class="zone" x="${box.x}" y="${box.y}" width="${box.w}" height="${box.h}" rx="16"></rect>`;
   }).join('');
-  const wires = edges.map((edge) => edgeWires(edge, mode, hot)).join('');
+  const wires = edges.map((edge) => edgeWires(edge, hot, plan)).join('');
   return `
     <svg class="map-svg" viewBox="0 0 ${lay.w} ${lay.h}" aria-hidden="true">
       <defs>
@@ -745,93 +747,426 @@ function mapSvg(theory, mode) {
     </svg>`;
 }
 
-function edgeWires(edge, mode, hot) {
+function edgeWires(edge, hot, plan) {
   const look = edgeLook(edge);
   const dim = hot && !hot.has(edge.id) ? ' is-dim' : '';
   const on = hot && hot.has(edge.id) ? ' is-hot' : '';
   const cls = `wire ${look.cls}${dim}${on}`;
-  return edgePolys(edge, mode).map((pts) => {
-    const d = toPath(pts);
+  return plan.routes.filter((route) => route.id === edge.id).map((route) => {
+    const d = toPath(route.pts);
     return `<path class="wire-halo${dim}" d="${d}"></path><path class="${cls}" d="${d}" marker-end="url(#arrow)"></path><path class="wire-hit" data-edge="${esc(edge.id)}" d="${d}"></path>`;
   }).join('');
 }
 
-function edgePolys(edge, mode) {
-  const spec = edge[mode] || {};
-  if (spec.loop) {
-    const node = nodeById(spec.loop);
-    if (!node || !node[mode]) return [];
-    const g = loopGeometry(node[mode], spec.side || 'left', spec.reach || 72);
-    return [sampleCubic(g.start, g.c1, g.c2, g.end, 0, 1)];
-  }
-  const paths = spec.paths || (spec.from && spec.to ? [spec] : []);
-  return paths.map((path) => {
-    const a = nodeById(path.from);
-    const b = nodeById(path.to);
-    if (!a || !b || !a[mode] || !b[mode]) return [];
-    const c = controlPoint(a[mode], b[mode], path.bend, path.c);
-    return sampleQuad(a[mode], c, b[mode], 0.2, 0.8);
-  }).filter((pts) => pts.length);
-}
-
-function controlPoint(a, b, bend, c) {
-  if (Array.isArray(c)) return { x: c[0], y: c[1] };
-  const dx = b.x - a.x;
-  const dy = b.y - a.y;
-  const len = Math.hypot(dx, dy) || 1;
-  const n = bend || 0;
-  return { x: (a.x + b.x) / 2 + (-dy / len) * n, y: (a.y + b.y) / 2 + (dx / len) * n };
-}
-
-function sampleQuad(a, c, b, t0, t1) {
-  const pts = [];
-  for (let i = 0; i <= 24; i += 1) {
-    const t = t0 + ((t1 - t0) * i) / 24;
-    const u = 1 - t;
-    pts.push({
-      x: u * u * a.x + 2 * u * t * c.x + t * t * b.x,
-      y: u * u * a.y + 2 * u * t * c.y + t * t * b.y,
-    });
-  }
-  return pts;
-}
-
-function sampleCubic(p0, p1, p2, p3, t0, t1) {
-  const pts = [];
-  for (let i = 0; i <= 28; i += 1) {
-    const t = t0 + ((t1 - t0) * i) / 28;
-    const u = 1 - t;
-    pts.push({
-      x: u * u * u * p0.x + 3 * u * u * t * p1.x + 3 * u * t * t * p2.x + t * t * t * p3.x,
-      y: u * u * u * p0.y + 3 * u * u * t * p1.y + 3 * u * t * t * p2.y + t * t * t * p3.y,
-    });
-  }
-  return pts;
-}
-
-function loopGeometry(pos, side, reach) {
-  const { x, y } = pos;
-  if (side === 'down') {
-    return {
-      start: { x: x - 28, y: y + 16 },
-      c1: { x: x - 78, y: y + reach },
-      c2: { x: x + 78, y: y + reach },
-      end: { x: x + 28, y: y + 16 },
-      label: { x, y: y + reach },
-    };
-  }
-  const dir = side === 'right' ? 1 : -1;
+// 宽高必须和 .m-node 的 CSS 一致，走线才不会穿过方块。
+function nodeMetrics(mode) {
+  const narrow = mode === 'narrow';
   return {
-    start: { x: x + dir * 22, y: y - 16 },
-    c1: { x: x + dir * reach, y: y - 52 },
-    c2: { x: x + dir * reach, y: y + 56 },
-    end: { x: x + dir * 22, y: y + 20 },
-    label: { x: x + dir * reach, y },
+    h: 96,
+    w(id) {
+      if (narrow) {
+        if (id === 'us') return 176;
+        if (id === 'jp') return 148;
+        return 136;
+      }
+      if (id === 'us') return 220;
+      if (id === 'jp') return 168;
+      return 132;
+    },
   };
 }
 
+function nodeRect(node, mode) {
+  const pos = node[mode];
+  if (!pos) return null;
+  const metrics = nodeMetrics(mode);
+  const w = metrics.w(node.id);
+  const h = metrics.h;
+  return { id: node.id, x: pos.x - w / 2, y: pos.y - h / 2, w, h, cx: pos.x, cy: pos.y };
+}
+
+function clamp(value, lo, hi) {
+  return Math.max(lo, Math.min(hi, value));
+}
+
+function pushPt(pts, point) {
+  const last = pts[pts.length - 1];
+  if (last && Math.hypot(last.x - point.x, last.y - point.y) < 0.6) return;
+  pts.push(point);
+}
+
+function clusterRows(rects) {
+  const rows = [];
+  const sorted = [...rects].sort((a, b) => a.cy - b.cy || a.cx - b.cx);
+  for (const rect of sorted) {
+    const row = rows.find((item) => Math.abs(item.cy - rect.cy) < 40);
+    if (row) {
+      row.nodes.push(rect);
+      row.cy = row.nodes.reduce((sum, node) => sum + node.cy, 0) / row.nodes.length;
+    } else {
+      rows.push({ cy: rect.cy, nodes: [rect] });
+    }
+  }
+  return rows;
+}
+
+function isColumn(rects) {
+  if (rects.length < 2) return false;
+  const xs = rects.map((rect) => rect.cx);
+  return Math.max(...xs) - Math.min(...xs) < 48;
+}
+
+function gutterIndexes(fromRow, toRow) {
+  if (fromRow === toRow) return [fromRow];
+  const step = fromRow < toRow ? 1 : -1;
+  const indexes = [];
+  for (let row = fromRow; row !== toRow; row += step) indexes.push(step > 0 ? row : row - 1);
+  return indexes;
+}
+
+function gapX(row, preferX, boardW, lane) {
+  const nodes = [...row.nodes].sort((a, b) => a.x - b.x);
+  const gaps = [];
+  let left = 12;
+  for (const node of nodes) {
+    const right = node.x - 10;
+    if (right - left >= 16) gaps.push([left, right]);
+    left = node.x + node.w + 10;
+  }
+  if (boardW - 12 - left >= 16) gaps.push([left, boardW - 12]);
+  if (!gaps.length) return clamp(preferX, 16, boardW - 16);
+  let best = null;
+  let bestDist = Infinity;
+  for (const [lo, hi] of gaps) {
+    const pick = clamp(preferX + (lane - 1) * 14, lo + 8, hi - 8);
+    const dist = Math.abs(pick - preferX);
+    if (dist < bestDist) {
+      bestDist = dist;
+      best = pick;
+    }
+  }
+  return best;
+}
+
+function laneY(gutter, lane, slots) {
+  const count = Math.max(1, slots || 1);
+  const y = gutter.y0 + ((gutter.y1 - gutter.y0) * (lane + 0.5)) / count;
+  return clamp(y, gutter.y0 + 16, gutter.y1 - 16);
+}
+
+function routeSameRow(a, b, lane, rowIndex, gutters, laneMax) {
+  const below = gutters[rowIndex];
+  const gutter = below || gutters[rowIndex - 1];
+  if (!gutter) return null;
+  const dir = below ? 1 : -1;
+  const slots = below ? laneMax[rowIndex] : laneMax[rowIndex - 1];
+  const y = laneY(gutter, lane, slots);
+  const ax = clamp(a.cx + (lane - 1) * 10, a.x + 18, a.x + a.w - 18);
+  const bx = clamp(b.cx + (lane - 1) * 10, b.x + 18, b.x + b.w - 18);
+  return fillet([
+    { x: ax, y: a.cy + dir * (a.h / 2) },
+    { x: ax, y },
+    { x: bx, y },
+    { x: bx, y: b.cy + dir * (b.h / 2) },
+  ], 12);
+}
+
+function routeAcross(a, b, lane, rows, gutters, laneMax) {
+  const fromRow = rows.findIndex((row) => row.nodes.some((node) => node.id === a.id));
+  const toRow = rows.findIndex((row) => row.nodes.some((node) => node.id === b.id));
+  if (fromRow < 0 || toRow < 0) return null;
+  if (fromRow === toRow) return routeSameRow(a, b, lane, fromRow, gutters, laneMax);
+  const step = fromRow < toRow ? 1 : -1;
+  const pts = [];
+  let x = clamp(a.cx + (lane - 1) * 12, a.x + 18, a.x + a.w - 18);
+  pushPt(pts, { x, y: a.cy + step * (a.h / 2) });
+  let rowIndex = fromRow;
+  while (rowIndex !== toRow) {
+    const gutterIndex = step > 0 ? rowIndex : rowIndex - 1;
+    const gutter = gutters[gutterIndex];
+    const y = laneY(gutter, lane, laneMax[gutterIndex]);
+    const next = rowIndex + step;
+    const targetX = next === toRow
+      ? clamp(b.cx + (lane - 1) * 12, b.x + 18, b.x + b.w - 18)
+      : gapX(rows[next], b.cx, gutter.boardW, lane);
+    pushPt(pts, { x, y });
+    pushPt(pts, { x: targetX, y });
+    x = targetX;
+    rowIndex = next;
+  }
+  pushPt(pts, { x, y: b.cy - step * (b.h / 2) });
+  return fillet(pts, 12);
+}
+
+function routeColumn(a, b, side, slot, lay) {
+  if (!a || !b) return null;
+  const dir = b.cy >= a.cy ? 1 : -1;
+  const x = side === 'left' ? 12 + slot * 9 : lay.w - 12 - slot * 9;
+  return fillet([
+    { x: a.cx, y: a.cy + dir * (a.h / 2) },
+    { x, y: a.cy + dir * (a.h / 2) },
+    { x, y: b.cy - dir * (b.h / 2) },
+    { x: b.cx, y: b.cy - dir * (b.h / 2) },
+  ], 10);
+}
+
+function fillet(pts, radius) {
+  if (!pts || pts.length < 3) return pts || [];
+  const out = [pts[0]];
+  for (let i = 1; i < pts.length - 1; i += 1) {
+    const prev = out[out.length - 1];
+    const cur = pts[i];
+    const next = pts[i + 1];
+    const v1 = { x: cur.x - prev.x, y: cur.y - prev.y };
+    const v2 = { x: next.x - cur.x, y: next.y - cur.y };
+    const len1 = Math.hypot(v1.x, v1.y);
+    const len2 = Math.hypot(v2.x, v2.y);
+    if (len1 < 1 || len2 < 1) continue;
+    const dist = Math.min(radius, len1 / 2, len2 / 2);
+    const a = { x: cur.x - (v1.x / len1) * dist, y: cur.y - (v1.y / len1) * dist };
+    const b = { x: cur.x + (v2.x / len2) * dist, y: cur.y + (v2.y / len2) * dist };
+    pushPt(out, a);
+    for (let step = 1; step <= 4; step += 1) {
+      const t = step / 4;
+      const u = 1 - t;
+      out.push({
+        x: u * u * a.x + 2 * u * t * cur.x + t * t * b.x,
+        y: u * u * a.y + 2 * u * t * cur.y + t * t * b.y,
+      });
+    }
+  }
+  pushPt(out, pts[pts.length - 1]);
+  return out;
+}
+
+function loopPolyline(rect, side, reach) {
+  const { cx, cy, w, h } = rect;
+  const hw = w / 2;
+  const hh = h / 2;
+  if (side === 'down' || side === 'up') {
+    const dir = side === 'down' ? 1 : -1;
+    const y = cy + dir * (hh + reach);
+    return fillet([
+      { x: cx - 22, y: cy + dir * hh },
+      { x: cx - 48, y },
+      { x: cx + 48, y },
+      { x: cx + 22, y: cy + dir * hh },
+    ], 14);
+  }
+  const dir = side === 'right' ? 1 : -1;
+  const x = cx + dir * (hw + reach);
+  return fillet([
+    { x: cx + dir * hw, y: cy - 18 },
+    { x, y: cy - 36 },
+    { x, y: cy + 40 },
+    { x: cx + dir * hw, y: cy + 18 },
+  ], 14);
+}
+
+function boundsOf(pts) {
+  const xs = pts.map((point) => point.x);
+  const ys = pts.map((point) => point.y);
+  const x = Math.min(...xs);
+  const y = Math.min(...ys);
+  return { x, y, w: Math.max(...xs) - x, h: Math.max(...ys) - y };
+}
+
+function rectsOverlap(a, b, pad = 0) {
+  return a.x < b.x + b.w + pad
+    && a.x + a.w + pad > b.x
+    && a.y < b.y + b.h + pad
+    && a.y + a.h + pad > b.y;
+}
+
+function loopClear(pts, self, rects, lay) {
+  const box = boundsOf(pts);
+  if (box.x < 8 || box.y < 8 || box.x + box.w > lay.w - 8 || box.y + box.h > lay.h - 8) return false;
+  return rects.every((rect) => rect.id === self.id || !rectsOverlap(box, rect, 8));
+}
+
+function pickLoop(rect, prefer, rects, lay, taken) {
+  const used = taken.get(rect.id) || new Set();
+  const order = [prefer, 'down', 'up', 'right', 'left'];
+  for (const side of order) {
+    if (used.has(side)) continue;
+    for (const reach of [64, 48, 36]) {
+      const pts = loopPolyline(rect, side, reach);
+      if (loopClear(pts, rect, rects, lay)) {
+        used.add(side);
+        taken.set(rect.id, used);
+        return pts;
+      }
+    }
+  }
+  return null;
+}
+
+function densify(pts, step) {
+  const out = [];
+  for (let i = 0; i < pts.length - 1; i += 1) {
+    const a = pts[i];
+    const b = pts[i + 1];
+    const len = Math.hypot(b.x - a.x, b.y - a.y);
+    const parts = Math.max(1, Math.ceil(len / step));
+    for (let part = 0; part < parts; part += 1) {
+      const t = part / parts;
+      out.push({ x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t });
+    }
+  }
+  if (pts.length) out.push(pts[pts.length - 1]);
+  return out;
+}
+
+function zoneObstacles(mode, lay) {
+  return (state.theory.zones || []).map((zone) => {
+    const box = zone[mode];
+    if (!box || !box.w || !zone.label) return null;
+    const textW = Math.min(box.w - 20, lay.w * 0.46, zone.label.length * 13);
+    const lines = zone.label.length * 13 > textW + 8 ? 2 : 1;
+    return { x: box.x + 10, y: box.y + 8, w: Math.max(24, textW), h: lines * 18 };
+  }).filter(Boolean);
+}
+
+function preferPoint(pts) {
+  let best = pts[Math.floor(pts.length / 2)] || { x: 0, y: 0 };
+  let bestLen = -1;
+  for (let i = 0; i < pts.length - 1; i += 1) {
+    const len = Math.hypot(pts[i + 1].x - pts[i].x, pts[i + 1].y - pts[i].y);
+    if (len > bestLen) {
+      bestLen = len;
+      best = { x: (pts[i].x + pts[i + 1].x) / 2, y: (pts[i].y + pts[i + 1].y) / 2 };
+    }
+  }
+  return best;
+}
+
+function hitsCurve(rect, curves, pad) {
+  const box = { x: rect.x - pad, y: rect.y - pad, w: rect.w + pad * 2, h: rect.h + pad * 2 };
+  return curves.some((pts) => pts.some((point) => (
+    point.x >= box.x && point.x <= box.x + box.w && point.y >= box.y && point.y <= box.y + box.h
+  )));
+}
+
+function findBadge(prefer, obstacles, curves, placed, lay) {
+  const w = 40;
+  const h = 22;
+  for (const radius of [0, 18, 32, 48, 64, 84, 108, 136]) {
+    const steps = radius === 0 ? 1 : Math.max(8, Math.round((2 * Math.PI * radius) / 14));
+    for (let step = 0; step < steps; step += 1) {
+      const angle = radius === 0 ? 0 : (step / steps) * Math.PI * 2 - Math.PI / 2;
+      const cx = prefer.x + Math.cos(angle) * radius;
+      const cy = prefer.y + Math.sin(angle) * radius;
+      const rect = { x: cx - w / 2, y: cy - h / 2, w, h };
+      if (rect.x < 4 || rect.y < 4 || rect.x + w > lay.w - 4 || rect.y + h > lay.h - 4) continue;
+      if (obstacles.some((item) => rectsOverlap(rect, item, 4))) continue;
+      if (placed.some((item) => rectsOverlap(rect, item, 4))) continue;
+      if (hitsCurve(rect, curves, 3)) continue;
+      return rect;
+    }
+  }
+  return null;
+}
+
+function buildMapPlan(mode, lay) {
+  const rects = (state.theory.nodes || []).map((node) => nodeRect(node, mode)).filter(Boolean);
+  const byId = new Map(rects.map((rect) => [rect.id, rect]));
+  const rows = clusterRows(rects);
+  const column = isColumn(rects);
+  const jobs = [];
+  for (const edge of state.theory.edges || []) {
+    const spec = edge[mode] || {};
+    if (spec.loop) {
+      jobs.push({ id: edge.id, kind: 'loop', nodeId: spec.loop, side: spec.side || 'down' });
+      continue;
+    }
+    const paths = spec.paths || (spec.from && spec.to ? [spec] : []);
+    paths.forEach((path, index) => {
+      jobs.push({ id: edge.id, kind: 'path', from: path.from, to: path.to, index });
+    });
+  }
+  const routes = [];
+  if (column) {
+    const ordered = jobs.filter((job) => job.kind === 'path')
+      .sort((a, b) => a.id.localeCompare(b.id) || a.index - b.index);
+    ordered.forEach((job, index) => {
+      const pts = routeColumn(byId.get(job.from), byId.get(job.to), index % 2 === 0 ? 'left' : 'right', Math.floor(index / 2), lay);
+      if (pts) routes.push({ id: job.id, pts });
+    });
+  } else {
+    const gutters = [];
+    for (let i = 0; i < rows.length - 1; i += 1) {
+      const above = Math.max(...rows[i].nodes.map((node) => node.y + node.h));
+      const below = Math.min(...rows[i + 1].nodes.map((node) => node.y));
+      gutters.push({ y0: above, y1: below, boardW: lay.w });
+    }
+    const usage = gutters.map(() => 0);
+    const ordered = jobs.filter((job) => job.kind === 'path')
+      .sort((a, b) => a.id.localeCompare(b.id) || a.index - b.index);
+    for (const job of ordered) {
+      const from = byId.get(job.from);
+      const to = byId.get(job.to);
+      if (!from || !to) continue;
+      const fromRow = rows.findIndex((row) => row.nodes.some((node) => node.id === from.id));
+      const toRow = rows.findIndex((row) => row.nodes.some((node) => node.id === to.id));
+      let indexes = gutterIndexes(fromRow, toRow);
+      if (fromRow === toRow && fromRow >= gutters.length) indexes = [fromRow - 1];
+      indexes = indexes.filter((index) => index >= 0 && index < gutters.length);
+      const lane = indexes.length ? Math.max(...indexes.map((index) => usage[index])) : 0;
+      indexes.forEach((index) => { usage[index] = lane + 1; });
+      job.lane = lane;
+    }
+    for (const job of ordered) {
+      const from = byId.get(job.from);
+      const to = byId.get(job.to);
+      if (!from || !to) continue;
+      const pts = routeAcross(from, to, job.lane || 0, rows, gutters, usage);
+      if (pts && pts.length > 1) routes.push({ id: job.id, pts });
+    }
+  }
+  const taken = new Map();
+  for (const job of jobs) {
+    if (job.kind !== 'loop') continue;
+    const rect = byId.get(job.nodeId);
+    if (!rect) continue;
+    const pts = pickLoop(rect, job.side, rects, lay, taken);
+    if (pts) routes.push({ id: job.id, pts });
+  }
+  const curves = routes.map((route) => densify(route.pts, 7));
+  const obstacles = [
+    ...rects.map((rect) => ({ x: rect.x, y: rect.y, w: rect.w, h: rect.h })),
+    ...zoneObstacles(mode, lay),
+  ];
+  const badges = [];
+  const seen = new Set();
+  const badgeRoutes = routes.filter((route) => {
+    if (seen.has(route.id)) return false;
+    seen.add(route.id);
+    return true;
+  }).sort((a, b) => a.pts.length - b.pts.length);
+  for (const route of badgeRoutes) {
+    const spot = findBadge(preferPoint(route.pts), obstacles, curves, badges, lay);
+    if (spot) badges.push({ id: route.id, ...spot });
+  }
+  return { routes, badges };
+}
+
+function edgeBadges(plan, mode, lay, focus) {
+  const hot = hotEdgeIds(focus, state.theory.edges || [], mode);
+  return plan.badges.map((badge) => {
+    const edge = (state.theory.edges || []).find((row) => row.id === badge.id);
+    if (!edge) return '';
+    const look = edgeLook(edge);
+    const code = look.item ? look.item.code : edge.id;
+    const on = focus.kind === 'edge' && focus.id === edge.id;
+    const dim = hot && !hot.has(edge.id) ? ' is-dim' : '';
+    const left = (badge.x + badge.w / 2) / lay.w * 100;
+    const top = (badge.y + badge.h / 2) / lay.h * 100;
+    return `<button type="button" class="edge-badge ${look.cls}${on ? ' is-on' : ''}${dim}" data-edge="${esc(edge.id)}" style="left:${left.toFixed(2)}%;top:${top.toFixed(2)}%" aria-pressed="${on ? 'true' : 'false'}" aria-label="${esc(`${code} ${edge.short}`)}">${esc(code)}</button>`;
+  }).join('');
+}
+
 function toPath(pts) {
-  return pts.map((p, i) => `${i ? 'L' : 'M'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
+  return pts.map((point, index) => `${index ? 'L' : 'M'}${point.x.toFixed(1)} ${point.y.toFixed(1)}`).join(' ');
 }
 
 function zoneTag(zone, mode, lay) {
@@ -854,53 +1189,6 @@ function nodeButton(node, mode, lay, focus) {
   const role = node.role ? `<span class="m-role">${esc(node.role)}</span>` : '';
   const sub = node.sub ? `<span class="m-sub">${esc(node.sub)}</span>` : '';
   return `<button type="button" class="m-node${cls}" data-node="${esc(node.id)}" style="left:${left.toFixed(2)}%;top:${top.toFixed(2)}%" aria-pressed="${on ? 'true' : 'false'}">${role}<strong>${esc(node.name)}</strong>${sub}</button>`;
-}
-
-function edgeChips(edges, mode, lay) {
-  const focus = mapFocus();
-  return edges.map((edge) => {
-    const { x, y } = labelPoint(edge, mode);
-    const look = edgeLook(edge);
-    const left = (x / lay.w) * 100;
-    const top = (y / lay.h) * 100;
-    const on = focus.kind === 'edge' && focus.id === edge.id;
-    const code = look.item ? look.item.code : edge.id;
-    const badge = edge.placeNote === '进入总主线判定'
-      ? '<span class="tag is-judge">判定</span>'
-      : (edge.placeNote === '只作旁证，不进入判定' ? '<span class="tag is-judge">旁证</span>' : '');
-    return `<button type="button" class="edge-chip${on ? ' is-on' : ''}${look.exploratory ? ' is-explore' : ''}" data-edge="${esc(edge.id)}" style="left:${left.toFixed(2)}%;top:${top.toFixed(2)}%" aria-pressed="${on ? 'true' : 'false'}">
-      <span class="edge-kicker"><b>${esc(code)}</b>${statusTag(look.status || '缺失')}${look.item && look.item.evidence ? `<span class="tag is-rel">〔${esc(look.item.evidence)}〕</span>` : ''}${look.exploratory ? '<span class="tag is-explore">探索性</span>' : ''}${badge}</span>
-      <span class="edge-short">${esc(edge.short)}</span>
-    </button>`;
-  }).join('');
-}
-
-function labelPoint(edge, mode) {
-  const spec = edge[mode] || {};
-  if (spec.label) return { x: spec.label.x, y: spec.label.y };
-  if (spec.loop) {
-    const node = nodeById(spec.loop);
-    if (!node || !node[mode]) return { x: 0, y: 0 };
-    return loopGeometry(node[mode], spec.side || 'left', spec.reach || 72).label;
-  }
-  const paths = spec.paths || (spec.from ? [spec] : []);
-  const mids = paths.map((path) => {
-    const a = nodeById(path.from);
-    const b = nodeById(path.to);
-    if (!a || !b || !a[mode] || !b[mode]) return null;
-    const c = controlPoint(a[mode], b[mode], path.bend, path.c);
-    const t = 0.5;
-    const u = 1 - t;
-    return {
-      x: u * u * a[mode].x + 2 * u * t * c.x + t * t * b[mode].x,
-      y: u * u * a[mode].y + 2 * u * t * c.y + t * t * b[mode].y,
-    };
-  }).filter(Boolean);
-  if (!mids.length) return { x: 0, y: 0 };
-  return {
-    x: mids.reduce((sum, p) => sum + p.x, 0) / mids.length,
-    y: mids.reduce((sum, p) => sum + p.y, 0) / mids.length,
-  };
 }
 
 function mapDetail(focus) {
