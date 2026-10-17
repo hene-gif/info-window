@@ -267,6 +267,9 @@ function homePage() {
     </section>
     <section class="sec" style="margin-top:22px">
       <h2>第二轮</h2>
+      <p class="plain">${esc(o.currentRound.mainline || o.currentRound.lockedBy)}</p>
+      ${o.currentRound.families ? `<p class="plain">C 家族 N=${esc(o.currentRound.families.C.n)}（${esc((o.currentRound.families.C.items || []).join('、'))}），Holm 最严门槛 ${esc(o.currentRound.families.C.holmStrictest)}。L 家族 N=${esc(o.currentRound.families.L.n)}，门槛 ${esc(o.currentRound.families.L.threshold)}。</p>` : ''}
+      ${o.currentRound.progress ? `<p class="plain">进度：${esc(o.currentRound.progress)}</p>` : ''}
       <p class="plain">${esc(o.currentRound.lockedBy)}</p>
       <p class="plain">${esc(o.currentRound.rule)}</p>
     </section>
@@ -277,6 +280,7 @@ function homePage() {
 
 function progressPage() {
   const rows = filteredItems();
+  const cr = (state.overview && state.overview.currentRound) || {};
   const options = (values, current) => values.map((value) =>
     `<option value="${esc(value)}"${value === current ? ' selected' : ''}>${esc(value === 'all' ? '全部' : value)}</option>`
   ).join('');
@@ -285,9 +289,10 @@ function progressPage() {
   const statuses = ['all', ...uniq(state.items.map((item) => item.status))];
   const evidences = ['all', ...uniq(state.items.map((item) => item.evidence).filter(Boolean))];
   return `
-    <p class="kicker">第一轮已完成 · 第二轮已锁定未跑</p>
+    <p class="kicker">${esc(cr.previous ? `${cr.previous.name}${cr.previous.status}` : '第一轮已完成')} · ${esc(cr.name || '第二轮')} · ${esc(cr.status || '')}</p>
     <h1 class="page-title">进展</h1>
-    <p class="lede">每一条都来自材料里的编号检验。状态以修订版为准。没有写明主人的，这里就空着。</p>
+    <p class="lede">每一条都来自材料里的编号检验。状态以修订版为准。没有写明主人的，这里就空着。标了「探索性」的不占 N，不能当成正式结论。</p>
+    ${cr.progress ? `<p class="note-box">${esc(cr.progress)}</p>` : ''}
     <form class="filters" id="filters">
       <input type="search" id="q" placeholder="编号、标题、问题" value="${esc(state.filter.q)}" autocomplete="off">
       <select id="status" aria-label="状态">${options(statuses, state.filter.status)}</select>
@@ -307,7 +312,7 @@ function itemCard(item, extra = '') {
     : '';
   const mapping = item.mapping ? `<p class="note">未能干净对应：${esc(item.mapping)}</p>` : '';
   return `
-    <article class="item" data-item="${esc(item.id)}" id="item-${esc(item.id)}">
+    <article class="item${item.exploratory ? ' is-explore' : ''}" data-item="${esc(item.id)}" id="item-${esc(item.id)}">
       <div class="item-top">
         <span class="code">${esc(item.code)}</span>
         <h3>${esc(item.title)}</h3>
@@ -315,11 +320,13 @@ function itemCard(item, extra = '') {
       <p class="question">${esc(item.question)}</p>
       <div class="tags">
         ${statusTag(item.status)}
+        ${item.exploratory ? '<span class="tag is-explore">探索性</span>' : ''}
         ${item.evidence ? `<span class="tag is-rel">〔${esc(item.evidence)}〕</span>` : ''}
         <span class="tag">${esc(item.round)}</span>
         <span class="tag">${esc(item.family)}</span>
         ${owner}
       </div>
+      ${item.exploratory ? '<p class="note explore-note">探索性：偏离清单或预先登记为探索项，不占 N，不能当成正式结论。</p>' : ''}
       ${item.statusNote ? `<p class="note">${esc(item.statusNote)}</p>` : ''}
       ${item.detail ? `<p class="detail">${esc(item.detail)}</p>` : ''}
       ${stats}

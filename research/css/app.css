@@ -601,6 +601,21 @@ main {
 .tag.is-na { color: var(--na); border-color: rgba(138, 151, 166, 0.28); background: var(--na-wash); }
 .tag.is-rel { color: var(--accent-text); border-color: rgba(46, 230, 197, 0.28); background: var(--accent-wash); }
 .tag.is-rel::before { border-radius: 1px; }
+.tag.is-explore {
+  color: #e8b4ff;
+  border-color: rgba(232, 180, 255, 0.55);
+  background: rgba(232, 180, 255, 0.18);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+.item.is-explore {
+  border-left: 3px solid #e8b4ff;
+  background: rgba(232, 180, 255, 0.06);
+}
+.explore-note {
+  color: #e8b4ff !important;
+  font-weight: 600;
+}
 
 .stats {
   display: grid;
