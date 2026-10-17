@@ -13,7 +13,7 @@
 1. 把新的 markdown 放进 `research/docs/`，图放进 `research/docs/img/`。正文里的图用相对路径 `img/文件名.png`。
 2. 在 `research/data/docs.json` 里登记这篇文档。
 3. 把检验写进 `research/data/items.json`。**只写文档里有的话**：状态、证据标签、主人、p 值、样本，文档没写就留空或写在 `mapping` 里。
-4. 总览结论改 `research/data/overview.json`。对照原版 / 修订版的评估改 `research/data/reviews.json`。理论地图的节点和边改 `research/data/theory.json`。
+4. 总览结论改 `research/data/overview.json`。对照原版 / 修订版的评估改 `research/data/reviews.json`。理论地图的节点和边改 `research/data/theory.json`。当下市场信息改 `research/data/now.json`。
 5. 不要发明通过/被否。第二轮没跑完时，没过门槛写文档里的「本轮尚未检出」，不要写成已经推翻。
 6. 推到 `main`。Pages 工作流会把整个 `research/` 拷进站点。讯息窗的 service worker 不算 `research/` 的版本，所以只改研究数据不会逼讯息窗重载。
 
@@ -34,16 +34,25 @@
 
 ### `theory.json`
 
-理论地图的节点、分区和边。边只记结构和 `itemId`。**状态、证据、探索性都从 `items.json` 读**，不要在这里再写一份。改一条检验的状态，地图上的颜色和标签会跟着变。
+理论地图的层、节点和边。边只记结构和 `itemId`。**状态、证据、探索性都从 `items.json` 读**，不要在这里再写一份。改一条检验的状态，地图上的线形会跟着变。
+
+图分成四层，宽屏从左到右，窄屏从上到下。页面只把主线画出来：检验状态不是「待测」，或者 `placeNote` 写了「进入总主线判定」（现在是 C9、C6、L1）。其余关系只出现在图下面的名单里。同一对市场只画一条线，箭头从原因指向被影响的一边。线上只放编号。
 
 | 字段 | 用法 |
 | --- | --- |
+| `layers` | 四层的名称和一句说明。节点用 `layer` 归到某一层 |
+| `nodes` | 市场或指标。`satellites` 是附在大节点上的小块，例如 A股下面的港股、中概股。`group: "chip"` 的节点收成「亚洲芯片链」 |
 | `itemId` | 对应 `items.json` 里的 `id`，例如 `r2-C9`、`T3` |
 | `short` | 这条线的短名称，用文档里的说法 |
 | `hypothesis` | 这条线属于哪条假说，用文档里的说法 |
 | `placeNote` | 它在总主线里的位置。文档没写就留空 |
 | `also` | 线没有直接连上、但点开时要一起高亮的节点 |
-| `wide` / `narrow` | 宽屏和窄屏连哪些市场。`from` / `to` 是节点 id；`paths` 是一条检验连到多个市场；`loop` 是绕在一个节点上的线，`side` 是优先方向（左 `left`、右 `right`、上 `up`、下 `down`）。页面自己把线画在市场之间的空隙里，并只在线上放编号。编号放不下就留在图下面的名单里，不要在这里写标签坐标 |
+| `paths` | 原因节点 `from` 指向被影响的节点 `to`。一条检验可以有多条，页面仍保证每一对只画一条线 |
+| `loop` | 绕回同一个节点的线，例如降准降息回到 A股 |
+
+### `now.json`
+
+「当下市场信息」页（`#/now`）只读这个文件。猜想、价格和日期都写在这里，页面不另编。`narratives` 空着时，页面显示「本期内容整理中」。`verification_status` 用：待业绩验证、部分支持、业绩支持、业绩打脸、待数据验证。
 
 ## 修改意见（GitHub Issue）
 
