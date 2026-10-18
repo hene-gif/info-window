@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "id": "1018早",
+  "date": "2026-10-18",
+  "slot": "早",
+  "title": "10月18日 · 早",
+  "items": [
+    {
+      "id": "1018早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "开源编程助手 OpenCode 遭「蒸馏攻击」相关入侵：约 1.4% Console 用户的 OpenAI/Anthropic/Google 等 API 密钥可能泄露",
+      "time": "2026-10-18T02:08:06+08:00",
+      "summary": "开源编程智能体 OpenCode（月活称约 1600 万开发者）周六在 X 通报：前一晚发生与大规模「蒸馏攻击」相关的安全事件，影响约 1.4% 的付费 Console 用户；已全部发邮件，没收到邮件的一般不受影响。问题出在正在退役的旧系统被未授权访问，部分工作区里保存的第三方模型密钥（OpenAI、Anthropic、Google 等）可能暴露。有用户称密钥被人刷出数百到上千美元用量；谷歌侧人员随后表示已封禁已知泄露的 Gemini 密钥，并建议立刻换新钥、删旧钥、查账单。OpenCode 称正与三家厂商一起处置，细节仍未全部公开。蒸馏是指用别人模型的输出去训练自己的模型；公司把这次泄露和这类攻击挂钩，但完整技术路径尚未充分披露。",
+      "relevance": "你若把密钥交给第三方编程助手存着，就等于把「钱包」放在别人家：一旦出事，钱被刷、模型被偷练都可能。",
+      "sources": [
+        {
+          "label": "x.com/opencode",
+          "url": "https://x.com/opencode/status/2111519637049319818"
+        },
+        {
+          "label": "thelatent.co",
+          "url": "https://thelatent.co/models/opencode-says-breach-tied-to-distillation-attack-exposed-users-ai-provider-keys"
+        },
+        {
+          "label": "x.com/dotey",
+          "url": "https://x.com/dotey/status/2111553994867028409"
+        }
+      ]
+    },
+    {
+      "id": "1018早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Replit 把默认模型从 Anthropic 换成 OpenAI：CEO 称看成本、合作和自家编程评测；用户仍可选 Claude",
+      "time": "2026-10-17",
+      "summary": "浏览器里写代码、部署应用的平台 Replit，CEO Amjad Masad 在 TechCrunch Disrupt 上说：公司不再以 Anthropic 为主力合作方，默认改走 OpenAI；理由包括成本、合作关系，以及自家评测里 Sol、Astra 在「从零 vibe coding 做应用」上更稳。会后他澄清：平台仍模型无关，用户可选手动选 Claude 等，只是 Replit Agent 的默认伙伴换成 OpenAI——大多数人不会改默认，因此 Anthropic 侧的实际用量可能明显下降。他称 Replit 此前一度是 Anthropic 前五大客户之一；也有知情人士对「彻底不再合作」的说法提出异议。文章 10 月 16 日首发，17 日更新标题与澄清。",
+      "relevance": "大厂默认选谁，会直接左右中小开发工具的账单和模型份额；看清「默认」和「还能选」两层，才不会被标题带跑。",
+      "sources": [
+        {
+          "label": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+        }
+      ]
+    },
+    {
+      "id": "1018早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Mistral 发布 Timestral：专做时间序列预测的小模型家族，最大仅 2.09 亿参数，三项主流榜单称第一，可在 CPU 上跑",
+      "time": "2026-10-15",
+      "summary": "法国 Mistral 10 月 15 日发布 Timestral，自称首个时间序列基础模型家族，共 4 个规格（约 500 万到 2.09 亿参数）。公司称最大版在 GIFT-Eval、TIME、fev-bench 三项公开零样本预测榜上均排第一，参数量却小于此前部分领先模型；支持多变量、概率预测（21 个分位数），以及「过去已知 / 未来已知」协变量。推理不强制 GPU：官方举例在 8 线程服务器 CPU 上，用三周 15 分钟粒度历史预测一天，5M 约 10 毫秒、209M 约 140 毫秒。开源仓库已放出，许可为修改版 MIT；也可经 Mistral Forge 做领域微调或本地/断网部署。适合工厂传感器、能源、供应链等「要预报数字」的场景，不是聊天大模型。",
+      "relevance": "你做全球市场研究时天天看价格曲线：以后用小模型在本地做多变量概率预测，会比只会聊天的大模型更对口。",
+      "sources": [
+        {
+          "label": "mistral.ai",
+          "url": "https://mistral.ai/news/timestral/"
+        },
+        {
+          "label": "github.com/mistralai/timestral",
+          "url": "https://github.com/mistralai/timestral"
+        }
+      ]
+    },
+    {
+      "id": "1018早-4",
+      "section": "我关注的",
+      "block": "AI 陪伴与成人消费",
+      "title": "【补报】中欧都在管「AI 陪伴」：中国 4 月专规禁止诱导成瘾，7 月大厂关陪伴功能；欧盟 9 月提出 KIDS 法案盯未成年人依赖",
+      "time": "2026-10-14",
+      "summary": "科隆大学欧洲中国法研究博客 10 月 14 日梳理：中国网信办等 4 月 10 日施行《人工智能拟人化互动服务管理暂行办法》，禁止过度迎合、诱导情感依赖或成瘾，禁止向未成年人提供虚拟恋人等亲密关系，连续使用超两小时须提醒，百万注册或十万月活触发安全评估。7 月 15 日起阿里通义千问等立刻关陪伴；字节豆包给约三个月迁移期，相关数据拟在 10 月 15 日前后永久删除，腾讯元宝更早关掉。欧洲暂无专法，靠 GDPR、AI 法案、DSA 拼凑；意大利曾因 Replika 缺年龄核验罚 500 万欧元。欧委会 9 月 17 日提出的 EU KIDS 法案草案，要求陪伴类产品默认防情感依赖、未满 13 岁须家长工具、不得向未成年人自动推销。文中引用中国陪伴市场 2025 年约 500 亿元、2027 年或超 1200 亿元等估算，属二手转述，实际以官方与机构原件为准。",
+      "relevance": "你若考虑成人/陪伴相关开店或联名，先看清中欧监管在管什么：成瘾诱导、未成年人、退出路径——产品设计和广告话术都要避开红线。",
+      "sources": [
+        {
+          "label": "blog.uni-koeln.de",
+          "url": "https://blog.uni-koeln.de/eclrhub/2026/10/14/love-simulated-china-europe-and-the-regulation-of-ai-companions/"
+        }
+      ]
+    },
+    {
+      "id": "1018早-5",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "Ato 推出像收音机的无屏 AI 语音助手：一颗橙钮说话、大旋钮调音量，主打给长辈用，售价 179 美元、会员另计",
+      "time": "2026-10-17",
+      "summary": "设计媒体 Yanko Design 10 月 17 日介绍：Boostep 为 Ato 做的新版桌面 AI 助手，外形像奶油色小收音机，没有触摸屏，正面织纹网罩加一颗橙色按键（按下开始说话），侧面是带凹点的大音量旋钮，高约 5.5 英寸。家人用手机 App 设提醒、发消息，老人端只靠语音听和回；还称会主动问候、可听广播。供电靠 USB-C 插电（无内置电池），需 Wi-Fi。公司称不保存录音、不让亲属看对话全文，但会存少量个人事实供后续聊天；明确不是医疗器械、不能打急救电话。标价约 179 美元加运费，计划 2027 年 2 月交货；基础提醒和广播免费，无限畅聊需另购年费约 249 美元。目前仍是原型推进阶段的产品介绍，量产与实际体验以官方为准。",
+      "relevance": "语音硬件在往「给不会玩手机的人用」细分：开店或选品时，长辈陪伴音箱是另一条需求线，和年轻向玩具不一样。",
+      "sources": [
+        {
+          "label": "yankodesign.com",
+          "url": "https://www.yankodesign.com/2026/10/17/atos-radio-inspired-ai-assistant-trades-touchscreens-for-a-button-and-knob/"
+        }
+      ]
+    },
+    {
+      "id": "1018早-6",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-10-18",
+      "summary": "这段时间没有。今天是周日，美股、日韩台、A 股港股、欧股以及正规时段的原油、黄金、美债市场均休市。周五欧股与油价见 1017早-7、1017早-8；霍尔木兹通航争议可能影响周一开盘情绪，见本期国际栏。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1018早-7",
+      "section": "国际重大影响",
+      "title": "美军中央司令部再表态：伊朗关霍尔木兹「没成功」，约 97% 过往船只未被击中；伊方仍称海峡关闭",
+      "time": "2026-10-18",
+      "summary": "继昨晚伊方宣称超级油轮触雷、海峡已关闭，美方坚持仍可通航之后，10 月 18 日凌晨前后多家媒体援引美军中央司令部（CENTCOM）进一步说法：发言人霍金斯称伊朗试图封闭霍尔木兹未能达到目标，绝大多数试图过峡的船只完成航程，估算约 97% 未被伊方投射物击中；美军继续协助护航。司令库珀重申过去七天约 400 艘商船过峡，并称自 2026 年 2 月以来国际海事组织报告已有逾 20 名平民船员在对商船的袭击中死亡。美方同时称继续封锁伊朗港口（人道物资除外）。伊方「海峡已关闭」与美方「仍开放」的对立仍在，独立现场核实有限；周末油市休市，价格反应要看周一。",
+      "relevance": "周一开盘前，市场会继续在「海峡断供」和「其实多数船还在走」之间定价；油价一抖就会牵到台湾油电成本。",
+      "sources": [
+        {
+          "label": "voiceofemirates.com",
+          "url": "https://www.voiceofemirates.com/en/news/2026/10/18/centcom-irans-attempts-to-close-the-strait-of-hormuz-have-failed/"
+        },
+        {
+          "label": "euronews.com",
+          "url": "https://www.euronews.com/2026/10/17/super-tanker-ablaze-after-striking-mine-in-strait-of-hormuz-irgc-says"
+        }
+      ]
+    },
+    {
+      "id": "1018早-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "港城大等团队：把三种分子「故意混乱」做成钙钛矿电池接触层，效率约 27.5%，85℃ 连续跑 1300 小时几乎不掉电",
+      "time": "2026-10-09",
+      "summary": "香港城市大学联合吉林大学、中山大学等在《Nature Photonics》发表工作：借鉴合金里的「高熵」思路，把三种结构相近、堆积偏好不同的咔唑—萘类自组装分子按约 1:1:1 混成空穴选择接触层，而不是追求单一完美有序排列。倒置钙钛矿电池冠军效率约 27.50%，认证稳态约 27.31%；在 85℃、最大功率点跟踪、环境空气条件下连续运行约 1300 小时，效率几乎无明显衰减。传统单分子单层受热或受力时堆积一旦塌掉，空穴通路就断；混装后形成多种堆积马赛克，更难被一种失效模式击穿。材料本身并不稀奇，关键是「可控的分子混乱」比「过度追求完美有序」更耐造。目前仍是实验室与小电池结果，大面积组件和量产涂布还要继续验证。",
+      "relevance": "能源成本最终会进物价和电价：钙钛矿若真能又高效又耐热，是比炒短期油价更底层的一条线。",
+      "sources": [
+        {
+          "label": "nature.com",
+          "url": "https://www.nature.com/articles/s41566-026-02028-5"
+        },
+        {
+          "label": "bioengineer.org",
+          "url": "https://bioengineer.org/molecular-chaos-becomes-a-strength-in-record-breaking-perovskite-solar-cells/"
+        }
+      ]
+    }
+  ]
+}
