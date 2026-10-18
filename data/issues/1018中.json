@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "id": "1018中",
+  "date": "2026-10-18",
+  "slot": "中",
+  "title": "10月18日 · 中",
+  "items": [
+    {
+      "id": "1018中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【传闻】OpenAI API 里冒出三个神秘新模型 aurora-red / green / blue-alpha，官方尚未说明",
+      "time": "2026-10-18T11:13:32+08:00",
+      "summary": "常追踪 AI 动态的 Andrew Curran 周日上午在 X 发帖称，OpenAI 的 API 里新出现三个模型名：aurora-red-alpha、aurora-green-alpha、aurora-blue-alpha，随后多名开发者转发截图。OpenAI 目前没有发布任何说明、文档或价格，也没有公开开放使用，所以这三个是什么（更快的 GPT-6 变体、编程专用模型，还是内部测试名）都只是社区猜测。按惯例，带 alpha 字样的名字常是上线前的测试代号，正式名称和能力要等官方公布。",
+      "relevance": "这类「模型名先漏出来」往往是新品前兆，但在官方公布前别把猜测当事实，等正式发布再看值不值得换用。",
+      "sources": [
+        {
+          "label": "x.com/AndrewCurran_",
+          "url": "https://x.com/AndrewCurran_/status/2111656899338973391"
+        }
+      ]
+    },
+    {
+      "id": "1018中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】英国金融时报：Anthropic 为买谷歌 TPU 芯片举债 600 亿美元，给黑石开出 10% 以上收益率",
+      "time": "2026-10-17",
+      "summary": "据英国《金融时报》报道（Investing.com 转述），Anthropic 正在推进名为「北极星」（Project North Star）的 600 亿美元债务融资，用来拿下约 1.5 吉瓦的谷歌自研 TPU 算力芯片，有望成为史上最大的芯片融资。其中约 420 亿美元是由博通担保的优先债；另有 180 亿美元次级债，黑石旗下基金预计认购一半（90 亿美元），票面利率 10%，算上折价和费用实际回报更高，而信用评级相近的公司在公开债市一般约 7%。四个月前 Anthropic 类似的「Big Sky」融资利率是 8.5%。Anthropic 目前评级比投资级低一档，正争取升级以降低借钱成本；债务预计 2027 年提款后可在机构债市交易。黑石不予置评，Anthropic 未回应。",
+      "relevance": "AI 公司借钱越来越贵，说明债市开始要求更高风险补偿；你研究全球市场时，这是判断 AI 投资热度是否过头的一个硬指标。",
+      "sources": [
+        {
+          "label": "ft.com",
+          "url": "https://www.ft.com/content/cb4034e1-475f-40b9-a5f9-256e91aacb89"
+        },
+        {
+          "label": "investing.com",
+          "url": "https://www.investing.com/news/company-news/anthropic-offers-blackstone-over-10-yield-in-60b-ai-chip-financing--ft-reports-4955122"
+        }
+      ]
+    },
+    {
+      "id": "1018中-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Claude 半小时解开 25 年密码学悬案：美国标准加密曲线的神秘「种子」，原来只是 1997 年的时间戳加普通随机数",
+      "time": "2026-10-16",
+      "summary": "Anthropic 10 月 16 日发文：全球最常用的数字签名标准 ECDSA 里，NIST P-256 等五条椭圆曲线的「种子」参数当年由美国国安局提供、从未解释来源，二十多年来一直有人怀疑藏有后门。一名员工让内部研究模型试着找来源，Claude 不到半小时就发现：这些种子不是什么哈希暗语，而是 C 语言自带的 lrand48 随机数生成器、以 1997 年的 Unix 时间戳为起点跑出来的；P-256 的种子正是第 1842 个候选值，任何人都能复现。密码学家 Filippo Valsorda 设立的 36864 美元悬赏已被认领并捐给非营利机构 ISRG。Anthropic 强调这不是破解、不是新攻击，反而让人更相信这些曲线没有被故意动手脚，用户无需做任何改变。",
+      "relevance": "AI 不只会写代码，也开始帮人类解开悬而未决的老问题；这类「真发现」比跑分更能说明模型的实际能力。",
+      "sources": [
+        {
+          "label": "anthropic.com",
+          "url": "https://www.anthropic.com/research/ecdsa-curve-origins"
+        },
+        {
+          "label": "words.filippo.io",
+          "url": "https://words.filippo.io/seeds-solved/"
+        },
+        {
+          "label": "coindesk.com",
+          "url": "https://www.coindesk.com/tech/2026/10/17/wow-it-s-a-real-discovery-claude-cracks-a-25-year-nsa-number-mystery"
+        }
+      ]
+    },
+    {
+      "id": "1018中-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】前 DeepMind 高管创办的 Elorian 发布首个模型 Glimpse：会「回头再看」图片和视频来推理，价格比 GPT-6 Astra 低 94%",
+      "time": "2026-10-16",
+      "summary": "新创公司 Elorian（CEO Andrew Dai 曾在谷歌 DeepMind 工作 12 年、负责 Gemini 数据方向）10 月 16 日发布首个「视觉思考」模型 Glimpse。它的特点是推理过程中会反复回到图像证据：裁剪局部、从视频里抽帧、写代码测量比较，而不是把图片一次性转成文字就算了。公司称，Glimpse 在科学图表推理、开放词汇计数、短视频描述等四项评测上超过 GPT-6 Astra，其余多项相当；模型更小，团队只用了几百张 GPU，在开放权重底座上后训练。价格为每百万输入 token 0.6 美元、输出 3 美元。已通过 API 和聊天界面开放预览。评测成绩为公司自报；Elorian 半年前出道时获 Menlo、Altimeter 等领投，英伟达和谷歌首席科学家 Jeff Dean 参投。",
+      "relevance": "小团队用开源底座也能在某个方向追上大厂，说明「专精+便宜」正在成为新模型的竞争路线。",
+      "sources": [
+        {
+          "label": "elorian.ai",
+          "url": "https://elorian.ai/blog/introducing-glimpse"
+        },
+        {
+          "label": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/"
+        }
+      ]
+    },
+    {
+      "id": "1018中-5",
+      "section": "我关注的",
+      "block": "AI 陪伴与成人消费",
+      "title": "【补报】Character.AI 破产文件摊开账本：月活 1200 万、人均每天聊 2 小时，月收入 530 万美元仍月亏约 800 万",
+      "time": "2026-10-13",
+      "summary": "Character.AI 首席执行官 10 月 13 日向特拉华破产法院提交 68 页宣誓声明，首次公开这家 AI 陪伴应用的收支：约 1200 万月活用户，平均每天使用约 120 分钟。2026 年 8 月月收入约 530 万美元，其中订阅约 280 万、广告约 250 万（广告 2025 年 7 月才上线，13 个月涨了五倍）；2024 全年收入约 740 万、2025 年约 2360 万。成本端，2026 年 1–8 月算力支出约 5610 万美元，占运营开支约 45%；2024 下半年每月算力约 1380 万。公司改用更便宜的 GPU、改为微调开源模型、裁员，仍每月亏约 800–900 万美元。融资失败的原因是 46 个州和地区检察长联合调查、多国监管和诉讼包袱太重。迪士尼的 2000 万美元报价须在 12 月 17 日前完成，若没有买家愿意接手经营，平台将关闭。",
+      "relevance": "用户黏性再高，算力账单和监管成本也可能吃掉利润；你考虑开店时，可以把「靠实体商品赚钱」和「靠持续算力服务赚钱」这两种模式的成本结构分开算。",
+      "sources": [
+        {
+          "label": "ppc.land",
+          "url": "https://ppc.land/character-ai-loses-8m-a-month-despite-2-5m-in-monthly-ad-sales/"
+        },
+        {
+          "label": "404media.co",
+          "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/"
+        }
+      ]
+    },
+    {
+      "id": "1018中-6",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "【补报】两家香港公司推 AI 小硬件：HooRii 约 100 美元口袋语音助手 StageGo 能替你打电话；UDEXREAL 159 美元「只认触摸」的毛绒 AI 宠物",
+      "time": "2026-10-15",
+      "summary": "10 月 15 日两款香港出品的 AI 随身硬件同日亮相。HooRii 发布 StageGo：可放桌面、口袋或挂包，1.54 英寸屏显示用户自选的 AI 角色，按住说话即可问答搜索；「任务」模式下描述需求、确认摘要后交给 AI 智能体执行，Agent Call 功能可插 SIM/eSIM 替用户拨出电话并汇报结果。预计 11 月初开 Kickstarter 预热，2027 年 1 月开卖，价格约 100 美元。UDEXREAL 则在 Kickstarter 上线 NiniQuu：巴掌大的毛绒挂件，没有摄像头、麦克风、Wi-Fi 和蓝牙，靠 7 个可拉伸传感器感知捏、摸、拍和晃动，用两块小屏眼睛、声音和震动给出 300 多种反应，会慢慢记住主人的触摸习惯且数据只存在本机，售价 159 美元。",
+      "relevance": "一个走「能替你办事」，一个走「完全不联网、只陪着你」，正好代表 AI 陪伴硬件的两极；隐私卖点在成人和陪伴类产品里尤其值钱。",
+      "sources": [
+        {
+          "label": "globenewswire.com",
+          "url": "https://www.globenewswire.com/news-release/2026/10/15/3381920/0/en/hoorii-unveils-stagego-to-bring-personal-ai-agents-to-your-desk-and-pocket.html"
+        },
+        {
+          "label": "auganix.org",
+          "url": "https://www.auganix.org/xr-news-udexreal-niniquu-ai-plush-companion/"
+        }
+      ]
+    },
+    {
+      "id": "1018中-7",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-10-18",
+      "summary": "这段时间没有。周日全球主要股市、原油、黄金和美债市场休市，周一开盘后再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1018中-8",
+      "section": "国际重大影响",
+      "title": "【补报】伊朗外长：已经卡塔尔递交「七天重开霍尔木兹」方案，球在美国；革命卫队又称第二艘超级油轮触雷起火",
+      "time": "2026-10-17",
+      "summary": "伊朗外长阿拉格齐 10 月 17 日在巴格达伊斯兰合作组织外长会上说，伊朗已通过卡塔尔转交一份具体的七天方案：只要「必要条件」满足，霍尔木兹海峡可在七天内恢复正常通航，「选择权在美国」；他未公开具体条件，并称 6 月签的《伊斯兰堡备忘录》曾让通航恢复到战前约六成，后因美方行动中断。同日，伊朗革命卫队称继早前一艘之后，又有第二艘载约 200 万桶原油的超级油轮在海峡触雷起火，称两船关闭定位、走了未经伊方许可的航线；伊朗海军另称阿曼湾有一艘油轮起火，船名和货主均未公布。Kpler 数据显示，10 月 8 日约 2080 万桶原油过峡，11 日只剩 290 万桶。特朗普接受采访时称不会动用核武、不考虑派地面部队，认为 11 月 3 日美国中期选举后会达成停战协议。",
+      "relevance": "一边谈「七天重开」一边继续触雷，油价周一开盘可能在两种消息间大幅摇摆；空仓观望时，这是最值得盯的外部变量。",
+      "sources": [
+        {
+          "label": "tasnimnews.ir",
+          "url": "https://www.tasnimnews.ir/en/news/2026/10/17/3725165/iran-offers-7-day-plan-to-reopen-hormuz"
+        },
+        {
+          "label": "aljazeera.com",
+          "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz"
+        },
+        {
+          "label": "aljazeera.com（直播）",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats"
+        }
+      ]
+    },
+    {
+      "id": "1018中-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "德国发现「吃塑料的吃豆人酶」：可降解塑料在林地土壤里约一年被吃光，这种酶竟还能分解青霉素",
+      "time": "2026-10-16",
+      "summary": "德国康斯坦茨大学团队在《ISME 期刊》发表研究：把一类可降解聚酯塑料（LCAP）埋进森林腐殖土，实验室条件下这类塑料和 PHBV、PCL 等生物塑料约 250–330 天被微生物完全分解，纤维素约 80 天，而常见的高密度聚乙烯（HDPE）几乎没变化。电镜下塑料膜表面布满和细菌一般大小的小洞，像是细菌「啃」进去的。团队从土壤 DNA 里找到一种被大量启用的酶，它固定在细菌表面、活性口特别宽，因此被叫作「吃豆人酶」；没想到它的结构也像让细菌抗药的 β-内酰胺酶，实验证实它还能切开青霉素。研究者提醒，试管里能分解青霉素不等于会让细菌真的耐药；要靠微生物治塑料污染，前提是更多塑料改用「有断点」可被酶切开的材料。",
+      "relevance": "你如果做实体零售，包装材料选「真可降解」还是普通塑料，未来可能直接影响环保合规和顾客观感；而且这项研究提醒，环保和抗药性这两件看似无关的事，在微生物世界里可能连在一起。",
+      "sources": [
+        {
+          "label": "sciencedaily.com",
+          "url": "http://www.sciencedaily.com/releases/2026/10/261014015509.htm"
+        }
+      ]
+    }
+  ]
+}
