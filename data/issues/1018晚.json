@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "id": "1018晚",
+  "date": "2026-10-18",
+  "slot": "晚",
+  "title": "10月18日 · 晚",
+  "items": [
+    {
+      "id": "1018晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】英伟达给月之暗面 Kimi K3 写专用加速代码：同样的芯片，单用户出字速度快约 1.7 倍",
+      "time": "2026-10-18T09:15:06+08:00",
+      "summary": "开源推理框架 vLLM 10 月 16 日发文并合入代码：英伟达工程师 Benjamin Chislett 借助编程智能体，为月之暗面 2.8 万亿参数的开源大模型 Kimi K3 写了一套只用于「出字阶段」的专用 GPU 程序，把注意力计算、专家路由和多卡通信合并成更少的步骤，每层耗时从约 130 微秒降到 69 微秒。在 16 块英伟达 GB300 上，单个请求配合「投机解码」可达每秒 842 个 token（原版 488），不用投机解码时快 1.6～1.9 倍。芯片研究机构 SemiAnalysis 周日上午在 X 上把它概括为「每用户每秒 423 个 token、同硬件快 1.68 倍」。这只是部署层面的提速，不改变模型本身能力；功能默认关闭，需要手动开启，数据均为 vLLM 和英伟达自测。下一步计划给 DeepSeek-V4.1-Flash 和智谱 GLM-5.3 做同样优化。",
+      "relevance": "同一个模型，软件优化就能让速度翻近一倍，意味着用 AI 的成本还会继续往下掉；中国开源模型也因此能在美国顶级芯片上跑得更快。",
+      "sources": [
+        {
+          "label": "x.com/SemiAnalysis_",
+          "url": "https://x.com/SemiAnalysis_/status/2111627094878790023"
+        },
+        {
+          "label": "vllm.ai",
+          "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel"
+        }
+      ]
+    },
+    {
+      "id": "1018晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Anthropic 私下向美国国会推销自拟的 AI 安全法案：只有可能造成 10 亿美元以上损失或 50 人以上伤亡时，政府才能叫停模型",
+      "time": "2026-10-17T05:45:00+08:00",
+      "summary": "美国政治新闻网 Politico 10 月 16 日引述三名知情人士报道，Anthropic 正向国会议员推销一份自己起草的前沿 AI 安全法案草稿，Anthropic 发言人随后向路透社证实，称内容来自公司今年稍早发布的「先进 AI 框架」。按报道和外流的草稿：大模型公司须公开安全框架、测试模型风险、定期接受在美国商务部登记的独立评估机构检查，评估方发现「迫在眉睫的重大风险」要在 72 小时内上报；只有商务部能向华盛顿特区联邦法院申请暂停某个模型，条件是它在生物武器、失控逃脱或网络攻击等特定途径上，有可能造成超过 10 亿美元损失或 50 人以上死伤，其他政府部门一律无权叫停。草稿还会取代部分州法律。智库人士评价它「相当合理」但比众议院今夏提出的 FRONTIER 法案宽松，也有批评者认为门槛太高。目前没有议员正式提案。",
+      "relevance": "大模型公司开始自己写规则交给国会，未来美国怎么管 AI、管多严，可能直接影响各家模型的发布节奏和 AI 股的估值。",
+      "sources": [
+        {
+          "label": "politico.com",
+          "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654"
+        },
+        {
+          "label": "channelnewsasia.com（路透）",
+          "url": "https://www.channelnewsasia.com/business/anthropic-quietly-pitches-its-own-ai-safety-bill-us-lawmakers-6467581"
+        },
+        {
+          "label": "aipolicy.tech（草稿解读）",
+          "url": "https://aipolicy.tech/proposals/anthropic-draft"
+        }
+      ]
+    },
+    {
+      "id": "1018晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】OpenAI 想让已停掉的视频模型 Sora「复活」：正和前 Sora 负责人、梦工厂创始人卡森伯格合办的新创公司谈授权",
+      "time": "2026-10-12T22:00:37+08:00",
+      "summary": "科技媒体 The Information 10 月 12 日报道，OpenAI 正与一家尚未公开名字的电影制作 AI 新创公司谈判，让对方深度使用并改造 Sora，再卖给电影公司和制片人做专业工具。这家公司由好莱坞大亨、梦工厂动画联合创始人杰弗里·卡森伯格、前 Sora 研究负责人 Bill Peebles 和前 Dropbox 财务长 Sujay Jaswa 共同创办。若谈成，OpenAI 可能拿到对方股份；目前还不清楚是否会交出模型权重，也没有公布条款和时间表。背景是 OpenAI 今年为准备上市、收缩耗算力的「副业」，已关停 Sora 及其短视频应用。（本期另查过谷歌、xAI、Meta、DeepSeek、通义千问：这段时间没有新的重大模型发布。）",
+      "relevance": "大公司自己不做的产品，改成授权给专业团队赚分成，是一种常见的「轻资产」打法；你做生意时，也可以想想哪些环节自己做、哪些授权给别人。",
+      "sources": [
+        {
+          "label": "theinformation.com",
+          "url": "https://www.theinformation.com/newsletters/ai-agenda/openais-plan-revive-sora"
+        },
+        {
+          "label": "pymnts.com",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openais-video-model-sora-could-get-a-second-act/"
+        }
+      ]
+    },
+    {
+      "id": "1018晚-4",
+      "section": "我关注的",
+      "block": "AI 陪伴与成人消费",
+      "title": "【补报】AI 角色扮演社交应用 Status 年化收入达数千万美元，用户日均玩 90 多分钟；靠调整模型和提示词，AI 成本砍掉约 95%",
+      "time": "2026-10-15",
+      "summary": "据创业收入追踪网站 ARR Club 10 月 15 日整理，Status AI 创始人兼 CEO Fai Nur 宣布，公司年化收入已达数千万美元。Status 是一款游戏化社交应用：用户设定一个身份，走进 AI 生成的故事世界，比如当明星、竞选总统、住进喜欢的剧里，和 AI 角色建立关系，平均每天使用超过 90 分钟。公司称与语音和角色 AI 公司 Inworld 合作挑选模型、改写提示词并测试内容质量后，AI 成本降了约 95%，内容质量持平或更好。Status 是 Y Combinator 2022 冬季班公司，种子轮加 A 轮共融资 1700 万美元，投资方包括 General Catalyst、Union Square Ventures 等。收入和降本数据均为公司自述。",
+      "relevance": "对比上期 Character.AI 算力占开支近一半、月亏 800 万，Status 说明陪伴类产品能不能赚钱，关键在把每个用户的 AI 成本压下来；你评估这类合作或产品时，可以先问清楚单位成本。",
+      "sources": [
+        {
+          "label": "arr.club",
+          "url": "https://www.arr.club/signal/status-ai-tens-of-millions-annualized-revenue"
+        }
+      ]
+    },
+    {
+      "id": "1018晚-5",
+      "section": "我关注的",
+      "block": "AI 陪伴与成人消费",
+      "title": "【补报】成人用品往「App + AI」走：VR 内容平台 SexLikeReal 推首款 AI 学习偏好的男性设备，定价约 200～300 美元；Satisfyer 第四代爆款同价加入 App 内容功能",
+      "time": "2026-10-02",
+      "summary": "两家成人用品业者 10 月初相继推出联网新品。以 VR 成人内容起家的 SexLikeReal 宣布首款自有硬件 Melody，计划今年第四季度上市：内置机器学习算法，会记住用户偏好的节奏和强度并自动调整，带彩色小屏和开放接口，可接入第三方平台和直播服务，并通过 Haptics Connect 应用支持异地伴侣同步；首批 1000 台，预估售价 200～300 美元，直接对标同类竞品 Handy 2。德国品牌 Satisfyer 则在 10 月 1 日推出累计销量超过 5000 万台的 Pro 2 系列第四代 App 版，德国官网售价 89.95 欧元，与上一代 App 版同价；新增两个震动马达和四种可换头，App 支持异地控制加视频通话、音频故事联动、音乐同步和环境声转震动。行业媒体评论认为，硬件已趋同，竞争正转向 App 内容库和贴合度，同时监听环境声这类功能也会引来隐私疑问。",
+      "relevance": "一家是内容平台反向做硬件，一家是硬件龙头加 App 内容，说明「硬件+内容/订阅」正成为成人用品的新利润来源；你选品时，联网款要特别留意隐私和数据安全说明。",
+      "sources": [
+        {
+          "label": "ecchi.it",
+          "url": "https://ecchi.it/notizie/articolo.php?id=art_6abf8b6e5658d&lang=en"
+        },
+        {
+          "label": "afterglow.news",
+          "url": "https://afterglow.news/stories/satisfyer-pro-2-gen-4-launch"
+        }
+      ]
+    },
+    {
+      "id": "1018晚-6",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "【补报】阿里千问推 AI 眼镜和与 Bose 合作的耳夹式耳机：眼镜 2999 元起，靠骨传导麦克风对话，能翻译、记会议、付款",
+      "time": "2026-10-14",
+      "summary": "据第一财经 10 月 14 日报道（Benzinga 10 月 16 日转述），阿里巴巴旗下千问团队发布 Qwen Glasses N1 系列 AI 眼镜和与 Bose 合作开发的 Qwen Clip 耳机。N1 配 5000 万像素摄像头，可持续感知周围环境，支持翻译、会议纪要、语音服务、购物和付款，用户通过骨传导麦克风与 AI 智能体对话；N1 Pro 另加心率、血氧、皮肤温度监测、眼动追踪和虹膜身份验证。待机约 25 小时、听音乐约 9 小时；售价 2999 元起，Pro 版 3499 元（优惠前）。Qwen Clip 耳机支持多语言翻译、实时听写和派发任务。千问副总裁宋刚说，目标是让千问成为「每个人的个人智能体」，可穿戴设备是它在现实世界的延伸。外界普遍把它视为对标 Meta 智能眼镜。",
+      "relevance": "语音成了 AI 进入日常生活的主入口，大厂纷纷用眼镜和耳机抢这个位置；接下来比拼的不是硬件参数，而是 AI 能替用户办成多少事。",
+      "sources": [
+        {
+          "label": "tech.yahoo.com（Benzinga）",
+          "url": "https://tech.yahoo.com/wearables/articles/alibaba-takes-ai-beyond-chatbots-143108471.html"
+        }
+      ]
+    },
+    {
+      "id": "1018晚-7",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-10-18",
+      "summary": "这段时间没有。周日全球主要股市、原油、黄金和美债市场休市，周一亚洲开盘后再更新；周末影响油价的霍尔木兹最新动向见下方国际重大影响。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1018晚-8",
+      "section": "国际重大影响",
+      "title": "伊朗外长周日再喊话：美方接受条件就六天内重开霍尔木兹；英国海事机构统计上周过峡船只仍比战前少约七成",
+      "time": "2026-10-18",
+      "summary": "伊朗外长阿拉格齐周日在巴格达对当地媒体说，伊朗 9 月中提出的「七天重开霍尔木兹」方案仍然有效，美方已提出意见、伊方正在研究，但他称美国「没有诚意」。伊方条件包括解除美国对伊朗港口的封锁、取消对伊朗石油出口的制裁、停止地区所有战线的敌对行动；美方若接受，海峡可在六天内开放，第二天恢复谈判。双方主要分歧在于美国坚持一开始就谈伊朗核计划，美国副总统万斯本月稍早要求伊朗「实质性」削减铀浓缩能力，伊朗则主张先谈开放海峡。另据英国海事贸易行动办公室（UKMTO）10 月 17 日发布的周报，截至 17 日的一周海峡共 254 船次通过（出 125、进 129），比战前少约 70%，期间发生 12 起袭船事件，一艘船沉没；自 2 月底开战以来海峡已记录 84 起事件，实际可能更多。",
+      "relevance": "条件谈不拢、船只通行仍只剩三成，周一油价大概率继续高位震荡；空仓观望时，伊朗和美国谁先松口是最该盯的信号。",
+      "sources": [
+        {
+          "label": "arabnews.com（路透）",
+          "url": "https://www.arabnews.com/middle-east/iran-urges-us-to-accept-proposal-to-reopen-strait-of-hormuz-3006986"
+        },
+        {
+          "label": "maritimenews.com",
+          "url": "https://www.maritimenews.com/strait-hormuz/strait-hormuz-traffic-falls-70-percent"
+        }
+      ]
+    },
+    {
+      "id": "1018晚-9",
+      "section": "国际重大影响",
+      "title": "【补报】特朗普暂停刚签署的对俄制裁法：100% 关税等措施搁置 60 天，泽连斯基称是「奖励普京」；美共和党人也有批评",
+      "time": "2026-10-17",
+      "summary": "特朗普美东时间 10 月 16 日周五晚签署行政命令，在《林赛·格雷厄姆制裁俄罗斯与伊朗法》生效前两天，暂停其中大部分制裁、限制和关税措施，称符合美国国家利益。这部法律 9 月由国会两党通过、特朗普本人签署，授权对俄罗斯油气前五大买家（主要是中国和印度）征最高 100% 关税，并制裁普京等高官、俄罗斯金融机构和「影子船队」。国务卿鲁比奥说这是 60 天暂停，用来评估对全球和美国经济的影响。俄方特使德米特里耶夫称这是「历史性时刻」；泽连斯基周六批评这是在奖励普京，并预计美国还会继续松绑。共和党参议员克鲁兹、科宁、蒂利斯等也公开反对。背景是美国上周与俄罗斯谈成进口柴油以压低国内油价。另据英国《卫报》，乌方称美方本周数次未提供导弹来袭情报，乌军使用的军用版星链在乌克兰境内被限速，有报道称是白宫要求五角大楼所为；特朗普否认故意限速。",
+      "relevance": "对俄制裁松动可能让更多俄罗斯油品流向市场、压低油价，但也让中印暂时躲过关税；星链被卷入地缘政治，也是马斯克旗下业务的一个风险点。",
+      "sources": [
+        {
+          "label": "bbc.com",
+          "url": "https://www.bbc.com/news/articles/cxr5yvzv7rp0o"
+        },
+        {
+          "label": "theguardian.com",
+          "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine"
+        },
+        {
+          "label": "whitehouse.gov",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/10/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026/"
+        }
+      ]
+    },
+    {
+      "id": "1018晚-10",
+      "section": "国际重大影响",
+      "title": "法国全国「抗议物价高」演变成骚乱：超过 1800 人被捕、约 1500 家商店受损，「黄背心」运动有重燃之势",
+      "time": "2026-10-18",
+      "summary": "法国周六爆发全国性示威，抗议汽油、能源和食品价格飙升，并声援从 9 月中开始封锁学校的高中生。工会 CGT 称逾 50 万人参加，多数和平游行，但巴黎、里昂、马赛等多地出现蒙面人群纵火、抢劫：巴黎共和广场汽车和报亭被烧，警方动用催泪弹和水炮，单巴黎就拘捕创纪录的 855 人；利摩日一座有 143 年历史的市政建筑被闯入纵火，尖塔倒塌。内政部长努涅斯周日说，全国已逮捕超过 1800 人。一家法国零售集团的负责人博帕尔称，周末约 1500 家商店受损，损失达「数亿欧元」。许多人重新穿上 2018 年「黄背心」运动的荧光背心，抗议正影响法国总统大选选情。",
+      "relevance": "油价高涨的压力已从市场蔓延到街头，欧洲政局不稳可能拖累欧股和欧元；这也说明霍尔木兹危机的影响远不止中东。",
+      "sources": [
+        {
+          "label": "cbsnews.com（美联社）",
+          "url": "https://www.cbsnews.com/news/protests-france-rising-living-costs-students/"
+        },
+        {
+          "label": "theguardian.com",
+          "url": "https://www.theguardian.com/world/2026/oct/17/protests-france-high-prices-social-security-gilets-jaunes"
+        }
+      ]
+    },
+    {
+      "id": "1018晚-11",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "你觉得自己一直「看着」同一样东西？猴脑实验发现，大脑每秒约 15 次在「意识到的画面」和「被压下去的画面」之间来回切换",
+      "time": "2026-10-16",
+      "summary": "加州大学伯克利分校神经科学家曹颖（Doris Tsao）团队 10 月 16 日在预印本平台 bioRxiv 发表研究（尚未经同行评审）：他们给猕猴两只眼睛分别看两张不同的人脸，其中一张会被大脑「压下去」、意识不到，再用高密度 Neuropixels 电极同时记录颞叶和前额叶多个「人脸区」的神经元群。结果发现，即便画面不变、猴子感觉到的也一直是同一张脸，神经活动其实每秒约 15 次在两种状态间交替：一种只代表「看到的脸」，另一种只代表「被压下去的脸」，两种状态下都能从脑电信号把对应的人脸还原出来；意识状态下的信号更强、更精细。作者认为，意识可能不是由某个固定脑区决定，而更取决于「时间上的挑选」。",
+      "relevance": "你以为的连续、稳定的感知，其实是大脑高速切换后「剪辑」出来的；这也提醒我们，没进入意识的信息并没有消失，仍可能悄悄影响判断，比如看盘时的情绪和直觉。",
+      "sources": [
+        {
+          "label": "biorxiv.org",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.10.15.759299v1"
+        }
+      ]
+    }
+  ]
+}
