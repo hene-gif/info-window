@@ -136,6 +136,48 @@
           "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
         }
       ]
+    },
+    {
+      "id": "1019中-8",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】前 OpenAI 研究员 Kokotajlo 在英国议会作证：Anthropic 一位对齐研究员私下估计「Claude 接管研究后暗中作对」概率约 5%，还觉得不算大事",
+      "time": "2026-10-13",
+      "summary": "10 月 13 日，Daniel Kokotajlo 在英国下议院商业、创新、科学与贸易委员会（BIST）听证会上转述：几个月前他问 Anthropic 一位对齐研究员，如果一两年后把整个研究流程（包括安全研究）交给 Claude，它暗中对抗公司或人类的概率有多大，对方答「大约 5%，不值得担心」，还说自己正打算调离对齐团队。要分清：这是对一次私下谈话的转述，对方没有具名，不是 Anthropic 官方估计；5% 指的是「一两年后全面交接」这个前提下的个人猜测，网上流传的「交接第一天就开始密谋」是夸大。Kokotajlo 自己估计接近 50%，并称整个行业的风险容忍度「高到灾难级」；同场的 Geoffrey Irving 说，对齐问题若解决不了，AI 毁灭人类的可能「像抛硬币」，这些都是个人判断。同一场听证会上，OpenAI 代表承认因对齐指标退步而没有发布 GPT-6.1 Astra。",
+      "relevance": "重点不在 5% 这个数字，而在前员工公开指控各家拿人类风险打赌；监管一旦收紧，会直接影响 AI 公司的上市和估值。",
+      "sources": [
+        {
+          "label": "cityam.com",
+          "url": "https://www.cityam.com/ai-firms-taking-catastrophically-high-risks-ex-openai-researcher-warns-mps/"
+        },
+        {
+          "label": "听证会视频摘要（postcutoff.com）",
+          "url": "https://postcutoff.com/v/sky-news-ex-openai-anthropic-staff-face-mps/"
+        }
+      ]
+    },
+    {
+      "id": "1019中-9",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】X 热议：几台 M5 Ultra Mac Studio 串起来，约 10 万美元就能在家跑 2 万亿参数模型？账算得有点乐观",
+      "time": "2026-10-19",
+      "summary": "苹果 8 月 25 日发布的 M5 Ultra Mac Studio 最高可配 512GB 统一内存，带宽 1.2TB/s。苹果官方说，多台可以通过雷雳 5 和 RDMA（远程直接内存访问）合成一个共享内存池，四台串联的推理速度最高约为单台的 3 倍，没有到 4 倍。X 上流传的说法是：512GB 版每台约 1.5–2 万美元，六台串起来超过 3TB 内存，大约 10 万美元就能在本地跑超过 2 万亿参数的前沿开源模型，而英伟达方案要约 50 万美元。核对后要注意：512GB 版要到 10 月底才上市，苹果还没公布价格；已上市的 256GB 满配是 10,799 美元。多台串联时，每生成一个字都要跨机器传数据，速度涨不了那么多，独立测试也还没出来。英伟达 50 万美元是发帖人自己的对比，没有出处。",
+      "relevance": "如果这条路走得通，强大的模型就能装在自己桌上、完全断网使用，这比你那个 9B 小模型强得多，只是现在价格还太贵。",
+      "sources": [
+        {
+          "label": "apple.com（官方新闻稿）",
+          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/"
+        },
+        {
+          "label": "blog.invidelabs.com",
+          "url": "https://blog.invidelabs.com/m5-ultra-mac-studio-local-ai/"
+        },
+        {
+          "label": "tokenstead.ai",
+          "url": "https://tokenstead.ai/guides/512gb-local-ai-m5-ultra-vs-dgx-spark-cluster-vs-strix-halo"
+        }
+      ]
     }
   ]
 }
