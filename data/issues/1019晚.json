@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "id": "1019晚",
+  "date": "2026-10-19",
+  "slot": "晚",
+  "title": "10月19日 · 晚",
+  "items": [
+    {
+      "id": "1019晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "马斯克：明年把自己手里的 SpaceX 股票给每个美国孩子各送一股，「这只是很多次中的第一次」",
+      "time": "2026-10-19T15:52:00+08:00",
+      "summary": "马斯克台北时间今天下午 3 点 52 分在 X 上发帖：「明年我会把我的 SpaceX 股票给美国每个孩子各一股，这将是很多次中的第一次。」随后把这条帖子置顶。Axios 按美国人口普查局约 7200 多万未成年人、SpaceX 上周五收盘价 146.03 美元估算，总价值约 105 亿美元，几乎是迈克尔·戴尔此前给「特朗普账户」捐款纪录的两倍；Moneycontrol 估算约 107 亿美元，约占他个人身家的 1%。他没说「孩子」是指所有 18 岁以下的人还是只算公民，也没说怎么发、由谁保管（未成年人一般不能直接持股，可能要走家长托管账户）。背景：前一天 Anthropic 宣布拿 5% 股份成立公共利益基金，马斯克回应「建议直接把股份给公众」，又说「这就是我要做的」。SpaceX 今年 6 月在纳斯达克上市，募资 857 亿美元，创史上最大 IPO 纪录。The Verge 提醒，他过去有不少承诺没有按时兑现。另据路透，SpaceX 本周二（美东时间）公布财报。",
+      "relevance": "这既是慈善表态，也是给 SpaceX 拉一大批「小股东」的品牌动作；具体怎么落地还得等细则，先别把它当成已经确定的事。",
+      "sources": [
+        {
+          "label": "x.com（马斯克原帖）",
+          "url": "https://x.com/elonmusk/status/2112089556615123114"
+        },
+        {
+          "label": "axios.com",
+          "url": "https://www.axios.com/2026/10/19/elon-musk-spacex-shares-kids"
+        },
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html"
+        },
+        {
+          "label": "theverge.com",
+          "url": "https://www.theverge.com/tech/1013585/elon-musk-says-hell-give-every-american-child-a-spacex-share"
+        }
+      ]
+    },
+    {
+      "id": "1019晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "MiniMax 认领神秘模型「太空兔」：M3.1-Flash 已出现在官方 API 列表，主打便宜好用的编程和智能体，官方跑分和定价还没公布",
+      "time": "2026-10-19T17:21:00+08:00",
+      "summary": "MiniMax 官方账号今天下午 5 点 21 分发视频，配文「Welcome back. Space Bunny. 🚀 MiniMax-M3.1-Flash is coming.」，等于承认 9 月下旬在 OpenRouter 上匿名测试的「Space Bunny（太空兔）」就是自家模型。第一财经称，这个匿名模型上线 3 天就登上 OpenRouter 和 OpenCode 的 Token 日调用量榜首，与 DeepSeek V4.1 Flash、GLM 5.3 Flash 一起占据前三。模型追踪站 AI Tracker 显示，minimax-m3.1-flash 已在台北时间今天中午 12 点 36 分出现在 MiniMax 官方 API 模型列表里。目前已知：100 万 token 上下文，能读文字、图片和视频，思考深度可从 low 调到 max，专门为编程和智能体任务优化。要注意的是，截至目前 MiniMax 还没公布正式定价和官方跑分；Startup Fortune 指出还没有权威的公开评测，一家私测机构在低思考档的后端编程任务里只给了 30 分（满分 100）。（本期也查过 OpenAI、Anthropic、谷歌 DeepMind、xAI、Meta、DeepSeek、通义千问：中午以后都没有新的重大模型发布。）",
+      "relevance": "国产模型正在比「谁又便宜又够用」，这会继续压低用 AI 写代码、做产品的成本；不过最好等独立评测出来，别被首发热度带着走。",
+      "sources": [
+        {
+          "label": "x.com（MiniMax 官方）",
+          "url": "https://x.com/MiniMax_AI/status/2112111925975032241"
+        },
+        {
+          "label": "yicai.com（第一财经）",
+          "url": "https://www.yicai.com/news/103399228.html"
+        },
+        {
+          "label": "live.aitracker.bot",
+          "url": "https://live.aitracker.bot/minimax-m3.1-flash"
+        },
+        {
+          "label": "startupfortune.com",
+          "url": "https://startupfortune.com/minimax-quietly-launches-m31-flash-after-weeks-as-a-mystery-space-bunny-model/"
+        }
+      ]
+    },
+    {
+      "id": "1019晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】ChatGPT 的 Chrome 插件升级：能读你开着的网页标签，在 Work 模式下还能替你填表、发消息、下载文件",
+      "time": "2026-10-16",
+      "summary": "OpenAI 在美国时间 10 月 15 日（台北时间 16 日）升级了 ChatGPT 的浏览器扩展。据 The Verge 和 PCMag 报道：在 ChatGPT 网页版或桌面版里输入 @Chrome，它就能读取你已经打开的标签页，比如同时比较三个沙发商品页再给建议；切到 Work 模式后，它还能直接操作这些标签页，包括填表单、发消息、下载文件、把标签按主题分组。OpenAI 给的示例之一是根据活动简介填报名表，并且「在提交前停下」，留给用户自己核对。插件支持 Chrome、Edge、Brave、Opera 和 Vivaldi；Android Authority 称所有方案的用户（包括免费用户）都能用。背景：OpenAI 已在 8 月停掉独立的 ChatGPT Atlas 浏览器，改走插件路线，和谷歌 Gemini 的「自动浏览」功能正面竞争。",
+      "relevance": "这和中午那期提到的银行、航司挡 AI 代理（1019中-2）是同一场拉锯：AI 越来越能替你点按钮，但涉及付钱和账号的事，最后一步最好还是自己确认。",
+      "sources": [
+        {
+          "label": "theverge.com",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
+        },
+        {
+          "label": "uk.pcmag.com",
+          "url": "https://uk.pcmag.com/news/167989/chatgpt-can-now-take-control-of-your-chrome-tabs"
+        },
+        {
+          "label": "androidauthority.com",
+          "url": "https://www.androidauthority.com/chatgpt-extension-google-chrome-integration-3724838/"
+        }
+      ]
+    },
+    {
+      "id": "1019晚-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】微软退出英国 Nscale 在埃塞克斯的 AI 数据中心租约：电网说要到 2030 年代才能供上电",
+      "time": "2026-10-18T13:30:00+08:00",
+      "summary": "英国《每日电讯报》10 月 18 日报道，BBC、《卫报》、《金融时报》随后跟进：微软已终止作为「主租户」租用英国 AI 云公司 Nscale 位于埃塞克斯郡 Loughton 数据中心的协议。这个站点原计划放约 2.3 万颗英伟达 AI 芯片、明年上线，但电网方面告诉 Nscale，预计要到 2030 年代才能供电。微软没有公开说明原因；Nscale 表示会继续推进项目，正在找替代电源和新的扩建地点。这对 Nscale 是不小的打击：公司上个月刚在美国申请上市，目标估值最高约 350 亿美元；它约 1030 亿美元的合同收入里四成以上来自微软（英国这单只占一小部分），Anthropic 是另一大客户。这个项目曾被英国政府当作微软 220 亿英镑对英投资承诺和「英国要做 AI 强国」的样板。",
+      "relevance": "AI 数据中心不只缺芯片，更缺电；最近市场正担心借钱建算力的公司（比如 CoreWeave）还不上债，这条又是一个现实例子，也会影响这类公司上市能卖多少钱。",
+      "sources": [
+        {
+          "label": "telegraph.co.uk",
+          "url": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/"
+        },
+        {
+          "label": "theguardian.com",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns"
+        },
+        {
+          "label": "bbc.co.uk",
+          "url": "https://www.bbc.co.uk/news/articles/c9m26kl5y7epo"
+        }
+      ]
+    },
+    {
+      "id": "1019晚-5",
+      "section": "我关注的",
+      "block": "AI 陪伴与成人消费",
+      "title": "成人科技品牌 Lovense 发布情侣款感应产品 Glint，10 月 20 日全球开卖：不靠手机遥控，靠触摸传感器自动调节",
+      "time": "2026-10-19",
+      "summary": "行业媒体 ASN Hub 10 月 19 日报道，做 App 控制类成人用品的 Lovense（2010 年成立）发布新品 Glint，定位是情侣亲密时佩戴的小型入门款，10 月 20 日起在官网全球上市，报道没有披露售价。它的卖点从「手机遥控」换成了「感应身体互动」：底座里的触摸传感器会读取接触面积、角度和时长，自动在五档强度之间切换；用户只要在 Lovense Remote App 里设置一次灵敏度和三种反应模式，之后就不用再碰手机。它还能通过「Toy Sync」联动 Lovense 自家的其他设备，一次接触同时改变多台设备；也兼容面向直播主播的打赏联动工具；使用记录功能默认关闭。Lovense 在新闻稿里专门给零售商建议：这款应摆在情侣用品和入门款的货架上。CEO Dan Liu 称，目标是改变情侣对「亲密时使用玩具」的看法和习惯。",
+      "relevance": "对开店的你，值得注意三个趋势：传感器让产品「拿来就会用」，同品牌设备互相联动把顾客留在一个生态里，厂商还直接教零售商怎么摆货；选品时可以优先看有 App 和生态的品牌。",
+      "sources": [
+        {
+          "label": "asnhub.com",
+          "url": "https://asnhub.com/lovense-launches-glint-a-touch-responsive-butt-plug-that-syncs-with-a-partners-thrust/"
+        }
+      ]
+    },
+    {
+      "id": "1019晚-6",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "【补报】杭州镭萌科技的 AI 潮玩机器人 bibo：毛绒外形、1499 元，不靠聊天靠「表情和动作」陪伴，刚拿到千万元级天使轮",
+      "time": "2026-10-13T08:00:00+08:00",
+      "summary": "《21世纪商业评论》10 月 13 日报道：成立于 2024 年的杭州镭萌科技，用 18 个月做出毛绒外形的 AI 潮玩机器人 bibo，定价 1499 元。创始人马丁（前阿里员工）为了控制成本，砍掉了行走关节和柔性机械臂，把研发集中在「情感大脑」上：本机负责快速反应，云端负责长期记忆和推理，配了 5 类传感器和可转动的摄像头，能记住主人的声音和脸。听到声音它会转头去看；看到主人，眼睛会「闪星星」；看到陌生人则表现出警惕或好奇。它主打非语言互动，所以出海不用做多语言语音包。不到 1000 名种子用户在两个月里用它拍了 4 万多张照片。9 月上旬，公司完成千万元级天使轮融资，时尚传媒集团参投；产品拿过 CES 2026 三项媒体奖，日本订单下半年进入生产，计划明年 1 月 CES 期间进入北美；国内在天猫、京东、小红书有售，杭州有首家体验店。",
+      "relevance": "AI 玩具不一定要会聊天：用「像小动物一样的反应」做情绪陪伴，既避开了大模型说错话的风险，也更容易卖到全世界，这个思路对陪伴类硬件很有参考价值。",
+      "sources": [
+        {
+          "label": "21jingji.com（21世纪经济报道）",
+          "url": "https://www.21jingji.com/article/20261013/herald/1229fadbca2a07fd1abb8e7d97d0b735.html"
+        }
+      ]
+    },
+    {
+      "id": "1019晚-7",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收盘分化：韩股反弹 1.8%，日经、台股各跌约 0.6%，沪指涨 0.39%；欧股因法国骚乱走低，纳指期货涨约 1.1%，美债 10 年期收益率回落到约 5.07%",
+      "time": "2026-10-19T16:37:00+08:00",
+      "summary": "收盘：据路透（经香港电台转载），日经 225 跌 0.62%，收 64,916.70 点，东证指数微涨 0.04%；韩国综指反弹 1.76%，收 5,768.01 点，芯片股有逢低买盘（美联社称三星电子涨 1.2%、SK 海力士涨 0.4%），但仍远低于 6 月突破 9000 点时的高位；台股加权指数跌 0.61%，收 46,822.08 点，早盘大跌后跌幅一路收窄。A 股：上证指数涨 0.39%，收 3,730.92 点，沪深 300 微涨约 0.1%，创业板指跌 0.94%，科创 50 跌 2.2%；银行、白酒领涨，机器人公司宇树科技从上周的历史低点反弹 16%，存储芯片公司长鑫存储跌 7.8%。港股因重阳节翌日休市。印尼股市再跌 3.6% 创新低，因为 MSCI 在考虑把它从「新兴市场」降为「独立市场」。欧洲：路透称，截至台北时间 16 点 37 分左右，斯托克 600 指数跌 0.7%，法国 CAC 40 跌超过 1%，法国银行股领跌（道琼斯数据：法国兴业银行跌约 3.1%、法国巴黎银行跌约 2.7%），法国 10 年期国债收益率升约 7 个基点到 4.857%。美国：纳指期货涨 1.1%，标普 500 期货涨 0.6%；上周费城半导体指数跌 11.4%，是 2008 年以来最长的连跌。商品和债市：路透称布伦特原油跌约 1.8%，道琼斯快讯报 107.36 美元，美油约 99.4 美元；现货黄金涨约 0.3%，报约 4,183 美元；美国 10 年期国债收益率降 2.5 个基点到 5.07%。人民币对美元升到 6.6815，是 2022 年 6 月以来最强。本周看点：SpaceX 周二、Meta 和特斯拉周三（美东时间）盘后公布财报；CNBC 引用 CME 数据称，市场认为本月加息的概率只有约 15%，12 月加息的概率约 89%。",
+      "relevance": "今天韩股反弹、欧洲走弱、美股期货回升，说明资金还在等本周 SpaceX、Meta、特斯拉的财报给答案；你空仓观望的话，周三盘后的数字比今天的涨跌更关键。",
+      "sources": [
+        {
+          "label": "news.rthk.hk（路透）",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1874487-20261019.htm"
+        },
+        {
+          "label": "live.euronext.com（路透）",
+          "url": "https://live.euronext.com/en/financial-news/asian-stocks-slip-wall-st-and-bonds-benefit-oil-skid"
+        },
+        {
+          "label": "apnews.com",
+          "url": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058"
+        },
+        {
+          "label": "marketscreener.com（道琼斯）",
+          "url": "https://ae.marketscreener.com/news/european-midday-briefing-shares-lower-as-french-stocks-slip-after-riots-ce785cdbd981ff2c"
+        },
+        {
+          "label": "cnbc.com（黄金）",
+          "url": "https://www.cnbc.com/2026/10/19/gold-edges-higher-on-softer-oil-fed-rate-outlook-in-focus.html"
+        }
+      ]
+    },
+    {
+      "id": "1019晚-8",
+      "section": "国际重大影响",
+      "title": "《华尔街日报》：普京提议 11 月和特朗普、习近平三方会谈结束俄乌战争，不带泽连斯基；俄军夜间大规模空袭，乌克兰至少 55 万户断电",
+      "time": "2026-10-19T11:56:00+08:00",
+      "summary": "《华尔街日报》周一报道，普京在 10 月 9 日和特朗普通电话时提出，11 月和特朗普、习近平举行三方峰会，谈一份对莫斯科有利的停战方案，地点可能在 11 月 18 至 19 日深圳亚太经合组织（APEC）峰会期间，乌克兰总统泽连斯基不在受邀之列。克里姆林宫发言人佩斯科夫说，三方都承认有这种「假设的可能性」，但会议本身和议程都还不清楚；美国国务卿鲁比奥说「有过会面的讨论，不知道是否已经敲定」，并称特朗普「对任何能结束战争的事都持开放态度」。同时美乌关系紧张：特朗普暂停了新的对俄制裁，还临时放开俄罗斯柴油出口；泽连斯基说这些举动「看起来像在逼乌克兰投降」。泽连斯基周一还说，俄军夜间向基辅一带发射 16 枚弹道导弹，在全国出动 200 多架无人机，十多处能源设施受损，至少 55 万户断电。",
+      "relevance": "如果大国绕开乌克兰谈停战，欧洲的安全格局和能源价格都会重新定价；对市场来说，更多俄罗斯油品流出可能压低油价，这也是本周油价回落的背景之一。",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/19/putin-trump-xi-ukraine-war-energy.html"
+        },
+        {
+          "label": "wsj.com",
+          "url": "https://www.wsj.com/world/russia/putin-floats-a-summit-with-trump-and-xi-to-decide-ukraines-fate-1cf6acc1"
+        },
+        {
+          "label": "newsukraine.rbc.ua",
+          "url": "https://newsukraine.rbc.ua/news/kremlin-says-putin-trump-and-xi-jinping-could-1792387817.html"
+        }
+      ]
+    },
+    {
+      "id": "1019晚-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "稻瘟病每年毁掉够 6000 万人吃的稻米：科学家给小麦细胞「改装免疫雷达」，一次能认出两种真菌信号",
+      "time": "2026-10-15",
+      "summary": "英国约翰·英尼斯中心和日本神户大学在《科学进展》发表研究。稻瘟病菌引起的是水稻最严重的真菌病，每年毁掉的稻米足够养活约 6000 万人，近年还扩散到亚洲和非洲的小麦、大麦（小麦瘟 1980 年代首次在巴西发现）。过去三十年，植物免疫研究多集中在一类叫 NLR 的受体；这次团队研究的是另一类较新发现的「串联激酶蛋白」（TKP）受体。他们用晶体学看清了这些受体怎样「咬住」真菌释放的分子，再动手改造，让受体能同时认出小麦和大麦感染里的两种真菌分子。这种「一次认两种」在天然受体里很少见。目前只在单个小麦细胞里测试过，下一步才进温室做整株植物；团队设想以后把两类受体叠加到同一种作物里，让真菌更难靠进化绕过去。研究者还提到，气候变暖未来可能让北欧也面临小麦瘟的风险。",
+      "relevance": "粮食价格牵动通胀和新兴市场的稳定；这类「给作物装多层免疫」的技术如果走通，长远可能减少农药使用和歉收风险，看农业和大宗商品时值得知道这个背景。",
+      "sources": [
+        {
+          "label": "sciencedaily.com（约翰·英尼斯中心）",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261014015501.htm"
+        }
+      ]
+    }
+  ]
+}
