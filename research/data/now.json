@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-17 11:45 台北",
-  "summary": "最近这轮下跌的主线是“AI 这么砸钱，到底赚不赚得回来”。偏偏同一时间，油价冲到 110 美元附近，美国通胀又抬头，市场开始押注美联储还要加息。利率越高，靠借钱建数据中心的 AI 公司压力越大，所以 10 月 12–16 日这一周纳斯达克跌了约 4.5%，韩国、台湾的芯片股跌得更凶。最值得注意的是：三星、台积电刚交出创纪录的业绩，股价照样大跌。市场在按“未来可能出问题”的猜想定价，没等业绩来验证。欧洲股市靠能源、银行和财报反而涨了一周，A 股、港股相对平稳，国产存储芯片股还在反弹。接下来两周（10/21–11/2）美国科技巨头陆续发财报，10/28 美联储议息，10/28–29 SK海力士和三星发完整财报，这几件事会检验这些猜想是对是错。",
+  "updated": "2026-10-19 19:10 台北",
+  "summary": "最近这轮下跌的主线还是“AI 这么砸钱，到底赚不赚得回来”。油价在 110 美元附近、美国通胀抬头，市场押注美联储还要加息；利率越高，靠借钱建数据中心的 AI 公司压力越大，所以 10 月 12–16 日纳斯达克跌了约 4.5%，韩国、台湾芯片股跌得更凶，三星、台积电交出创纪录业绩，股价照样大跌。10/19（周一）有三个新变化：一是特朗普暂停对俄罗斯的部分制裁，布伦特油价从 5 个月高点回落约 2%；二是中国三季度 GDP 增长 4.5%，略好于预期；三是之前说“A 股相对平稳”需要修正——沪深 300 已连跌 10 周、比 6 月高点低约 17%，近期能稳住，很大程度上是“国家队”资金托底，不完全是靠业绩。韩股当天反弹 1.8%，但带头的是医药和电池股，芯片股只是小涨；日股、台股小跌。接下来看 10/21 Meta 和特斯拉财报、10/28 美联储议息和微软谷歌财报、10/28–29 SK海力士和三星完整财报，这些会检验上面的猜想是对是错。",
   "narratives": [
     {
       "id": "N1",
@@ -14,7 +14,7 @@
       "verification_status": "待业绩验证",
       "next_check": {
         "date": "2026-10-21",
-        "event": "Meta 第三季度财报（美东盘后），先看资本开支有没有放缓；之后 10/28 微软、谷歌，10/29 亚马逊，11/17 英伟达"
+        "event": "Meta、特斯拉第三季度财报（美东盘后），先看资本开支有没有放缓；之后 10/28 微软、谷歌，10/29 亚马逊，11/17 英伟达"
       },
       "evidence_tag": "相关",
       "related_tests": [],
@@ -91,7 +91,7 @@
       ],
       "claim": "市场在押注：中国长鑫（CXMT）的新架构内存加上全行业扩产，会让存储芯片在 2028–2029 年供过于求，现在的超级周期提前见顶。",
       "first_seen": "2026-10-12",
-      "price_reaction": "10/8 三星初步公布三季度营业利润 107.4 万亿韩元，同比增 782.5%，创纪录。可截至 10/15 的 5 天里，SK海力士跌 26%、三星跌 22%、美光跌约 11%。10/15 韩国 KOSPI 跌 7.57%，收 5554.22，是半年低点，盘中触发熔断，三星当天跌 9.5%、海力士跌 11.1%。A 股方向相反：10/16 长鑫科技涨超 5%，市值重回 3 万亿元以上，再次成为 A 股第一。",
+      "price_reaction": "10/8 三星初步公布三季度营业利润 107.4 万亿韩元，同比增 782.5%，创纪录。可截至 10/15 的 5 天里，SK海力士跌 26%、三星跌 22%、美光跌约 11%。10/15 韩国 KOSPI 跌 7.57%，收 5554.22，是半年低点，盘中触发熔断，三星当天跌 9.5%、海力士跌 11.1%。A 股方向相反：10/16 长鑫科技涨超 5%，市值重回 3 万亿元以上，再次成为 A 股第一。 10/19 KOSPI 反弹 1.76%，收 5,768.01，连涨两天，但主要靠医药、电池股带动，三星只涨 1.16%、SK海力士涨 0.39%，券商分析说芯片板块“仍然疲弱”；KOSPI 近一个月仍跌超 17%。",
       "verification_status": "待业绩验证",
       "next_check": {
         "date": "2026-10-28",
@@ -119,6 +119,16 @@
           "title": "新浪财经：科技股反弹！龙头业绩预增19倍，长鑫科技重返A股市值第一",
           "url": "https://finance.sina.com.cn/jjxw/2026-10-16/doc-inivksmm7053222.shtml",
           "date": "2026-10-16"
+        },
+        {
+          "title": "韩联社：코스피, 1.8% 오른 5,768…이틀 연속 상승하며 반등흐름 유지",
+          "url": "https://www.yna.co.kr/view/AKR20261019137000008?section=economy%2Fall",
+          "date": "2026-10-19"
+        },
+        {
+          "title": "AP：European stocks slip and oil falls",
+          "url": "https://apnews.com/article/stocks-markets-oil-us-ai-494fbe4361a0360b2f6368e7a6d8f058",
+          "date": "2026-10-19"
         }
       ]
     },
@@ -131,7 +141,7 @@
       ],
       "claim": "市场在押注：AI 需求虽然还强，但 2 纳米量产和海外建厂会继续压低利润率，资本开支越来越重，好消息已经提前反映在股价里了。",
       "first_seen": "2026-10-15",
-      "price_reaction": "10/15 台积电公布三季度营收 467.2 亿美元，高于自己给的指引上限（458 亿）；每股盈余 29.43 新台币，同比增 68.7%；四季度营收指引 523–543 亿美元。但毛利率降了 1.3 个百分点，到 66.4%。同日台股加权指数跌 3.41%，收 46,969.87 点，全周跌 4.47%；10/16 台积电收 2,420 新台币。",
+      "price_reaction": "10/15 台积电公布三季度营收 467.2 亿美元，高于自己给的指引上限（458 亿）；每股盈余 29.43 新台币，同比增 68.7%；四季度营收指引 523–543 亿美元。但毛利率降了 1.3 个百分点，到 66.4%。同日台股加权指数跌 3.41%，收 46,969.87 点，全周跌 4.47%；10/16 台积电收 2,420 新台币。 10/19 台股加权指数再跌 0.61%，收 46,822.08 点；开盘急跌后收窄跌幅，报道提到费城半导体指数上周累计跌 11.4%，压着台湾芯片供应链。",
       "verification_status": "部分支持",
       "next_check": {
         "date": "2026-11-17",
@@ -159,6 +169,11 @@
           "title": "Taiwan News：TAIEX ends week down 2,200 points",
           "url": "https://www.taiwannews.com.tw/news/6459970",
           "date": "2026-10-16"
+        },
+        {
+          "title": "이투데이：아시아증시, AI 투자 부담에 혼조세⋯日 닛케이 0.6%↓",
+          "url": "https://www.etoday.co.kr/news/view/2637542",
+          "date": "2026-10-19"
         }
       ]
     },
@@ -172,7 +187,7 @@
       ],
       "claim": "市场在押注：中东航运遇袭和俄罗斯炼油产能受损会让油价（尤其柴油）长期偏高，继续推高通胀和利率。",
       "first_seen": "2026-10-16",
-      "price_reaction": "10/16 布伦特原油涨 3.7%，收 109.86 美元，是 5/19 以来最高收盘价，全周涨约 4.9%；美国 WTI 收 101.41 美元，9 月以来首次站上 100。9 月美国 CPI 里能源分项环比涨 5.2%。有意思的是，同一周欧洲 STOXX 600 涨了 2% 以上（收 644.74，6 月以来最好的一周），没有因为油价被拖累。",
+      "price_reaction": "10/16 布伦特原油涨 3.7%，收 109.86 美元，是 5/19 以来最高收盘价，全周涨约 4.9%；美国 WTI 收 101.41 美元，9 月以来首次站上 100。9 月美国 CPI 里能源分项环比涨 5.2%。有意思的是，同一周欧洲 STOXX 600 涨了 2% 以上（收 644.74，6 月以来最好的一周），没有因为油价被拖累。 10/19 油价回落：特朗普上周五签令暂停《格雷厄姆法案》下对俄罗斯的部分制裁和关税，市场预期俄罗斯燃油出口会增加，布伦特一度跌 2.08% 到 107.57 美元（台北 10/19 下午 2 点左右），WTI 跌到 99.46 美元。不过中东风险没解除：Kpler 估计上周海湾原油外运降到 7 日平均约 850 万桶/天，前一周还超过 2,000 万桶/天。也就是说，“俄罗斯这条线推高油价”的部分在松动，“霍尔木兹这条线”还在。",
       "verification_status": "部分支持",
       "next_check": {
         "date": "2026-10-29",
@@ -197,6 +212,16 @@
           "title": "Irish Times：European shares notch up strong week as earnings cushion tech sell-off",
           "url": "https://www.irishtimes.com/business/markets/2026/10/16/european-shares-notch-up-strong-week-as-earnings-cushion-tech-sell-off/",
           "date": "2026-10-16"
+        },
+        {
+          "title": "Reuters/Arab News：Oil slips from 5-month high as Trump’s Russia sanctions waiver may bring more supplies",
+          "url": "https://www.arabnews.com/energy/oil-slips-from-5-month-high-as-trumps-russia-sanctions-waiver-may-bring-more-supplies-3007111",
+          "date": "2026-10-19"
+        },
+        {
+          "title": "Economic Times：Crude oil dips 2% to $108 after hitting its highest levels since May",
+          "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-19-crude-oil-dips-2-to-108-after-hitting-its-highest-levels-since-may-heres-why/articleshow/135037940.cms",
+          "date": "2026-10-19"
         }
       ]
     },
@@ -239,7 +264,7 @@
       ],
       "claim": "市场在押注：日本央行 10/29–30 会按兵不动（利率维持 1.25%），日元继续偏弱，日元套利交易暂时不会被迫平仓；日股涨跌主要跟着 AI 芯片股走。",
       "first_seen": "2026-10-13",
-      "price_reaction": "10/15 日经 225 跌近 5%；10/16 涨 1.39%，收 65,324.29，是 7 天来首次反弹。10/15 美元兑日元约 157.98（美元刚从 18 个月高点回落）。",
+      "price_reaction": "10/15 日经 225 跌近 5%；10/16 涨 1.39%，收 65,324.29，是 7 天来首次反弹。10/15 美元兑日元约 157.98（美元刚从 18 个月高点回落）。 10/19 日经 225 跌 0.62%，收 64,916.70，东京电子跌 2.6%、软银跌 2%，还是跟着 AI 芯片股走；美元兑日元约 157.97，基本没动。",
       "verification_status": "待数据验证",
       "next_check": {
         "date": "2026-10-30",
@@ -264,19 +289,24 @@
           "title": "Reuters：Global stocks flat as AI and rate fears hit tech",
           "url": "https://www.investing.com/news/economy-news/asian-markets-sell-off-as-ai-trades-crumble-after-hot-us-cpi-data-4950348",
           "date": "2026-10-15"
+        },
+        {
+          "title": "Japan Times/AFP：Asian tech stocks mixed after Wall St losses, eyes on earnings",
+          "url": "https://www.thejapantimes.jp/Economy/771373-asian-tech-stocks-mixed-after-wall-st-losses-eyes-on-earnings.html",
+          "date": "2026-10-19"
         }
       ]
     },
     {
       "id": "N8",
-      "title": "A 股、港股相对平稳，国产芯片靠业绩撑住",
+      "title": "A 股：表面稳住，靠的是“国家队”托底 + 国产芯片业绩",
       "markets": [
         "A股",
         "港股"
       ],
-      "claim": "市场在押注：全球 AI 抛售主要打的是韩美台，中国国产存储和算力公司有实打实的业绩增长，受冲击小，甚至可能抢到份额。",
+      "claim": "市场在押注：中国监管层和国家背景资金会托住大盘，加上国产存储、算力公司有实打实的业绩增长，A 股不会像韩股、台股那样跟着全球 AI 抛售大跌。要注意：这里的“稳”有相当部分是政策托出来的，不全是基本面。",
       "first_seen": "2026-10-15",
-      "price_reaction": "10/16 上证指数涨 0.24%，收 3,716.28；恒生指数涨 0.52%，收 24,186.83。同期韩国、台湾分别大跌。10/15 晚，江波龙预告前三季度净利润 140–149 亿元，同比增约 19 倍；沐曦预告扭亏为盈。",
+      "price_reaction": "10/16 上证指数涨 0.24%，收 3,716.28；恒生指数涨 0.52%，收 24,186.83。但拉长看并不平稳：截至 10/16，沪深 300 连跌 10 周，是有记录以来最长，比 6 月高点低约 17%，逼近技术性熊市；科创 50 指数今年下半年累计跌近 40%。据彭博报道，监管层 10/15 开会要求企业和国家背景基金买股票、引导部分机构少卖；10/12–16 股票型 ETF 净流入 921 亿元，主要进了沪深 300 宽基 ETF，官方没有证实是“国家队”。10/19 中国公布三季度 GDP 同比增 4.5%（路透调查预期 4.4%），沪深 300 收涨 0.09%、上证涨 0.39% 收 3,730.92；港股当天休市。10/15 晚，江波龙预告前三季度净利润 140–149 亿元，同比增约 19 倍；沐曦预告扭亏为盈。",
       "verification_status": "部分支持",
       "next_check": {
         "date": "2026-11-18",
@@ -285,6 +315,31 @@
       "evidence_tag": "待验证",
       "related_tests": [],
       "sources": [
+        {
+          "title": "国家统计局：前三季度国民经济运行情况（英文）",
+          "url": "https://www.stats.gov.cn/english/PressRelease/202610/t20261019_1965619.html",
+          "date": "2026-10-19"
+        },
+        {
+          "title": "CNBC：China's third-quarter economic growth quickens to 4.5% as exports surge, beating estimates",
+          "url": "https://www.cnbc.com/2026/10/19/chinas-economic-growth-quickens-to-4point6percent-as-exports-surge-stimulus-rolls-out.html",
+          "date": "2026-10-19"
+        },
+        {
+          "title": "联合早报：沪深300指数连续下跌 “国家队”资金入市迹象浮现",
+          "url": "https://www.zaobao.com.sg/news/china/story20261019-9858704",
+          "date": "2026-10-19"
+        },
+        {
+          "title": "investingLive（转述彭博）：China moves to prop up stocks with selling curbs, buybacks after 10% slide this year",
+          "url": "https://investinglive.com/news/china-moves-to-prop-up-stocks-with-selling-curbs-buybacks-after-10-slide-this-year/",
+          "date": "2026-10-19"
+        },
+        {
+          "title": "东方财富/澎湃：股票ETF单周净流入921亿元 沪深300、创业板宽基成吸金主力",
+          "url": "https://finance.eastmoney.com/a/202610193899769178.html",
+          "date": "2026-10-19"
+        },
         {
           "title": "新华社：Chinese shares close mixed Friday",
           "url": "https://english.news.cn/20261016/f21b4df3183d43df83d8d00ad0373c3c/c.html",
@@ -312,6 +367,13 @@
     {
       "date": "2026-10-21",
       "event": "Meta 三季度财报（美东盘后，台北 10/22 早上）",
+      "narratives": [
+        "N1"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "event": "特斯拉三季度财报（美东盘后，台北 10/22 早上）",
       "narratives": [
         "N1"
       ]
