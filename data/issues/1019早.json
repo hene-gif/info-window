@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "id": "1019早",
+  "date": "2026-10-19",
+  "slot": "早",
+  "title": "10月19日 · 早",
+  "items": [
+    {
+      "id": "1019早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 拿出 5% 股份成立「公共利益基金」：公司估值每涨 50% 可再加 2%，钱可直接发给受 AI 冲击的人群",
+      "time": "2026-10-19T02:07:51+08:00",
+      "summary": "Anthropic 周日（美国时间 10 月 18 日）在官网和 X 上宣布，成立全资子公司「Anthropic 公共利益基金」，经股东批准后先注入公司 5% 的股份；此后公司估值每比设定基准高出 50%，董事会可酌情再加 2%。Anthropic 说，安全研究、给非营利和科研机构打折等工作仍放在公司内部做，这个基金则更灵活，可以向传统慈善机构大额捐款，或直接把钱发给特定人群，例如 AI 冲击就业带来的问题（公司此前已承诺投入 2 亿美元研究和应对）。基金采用有限责任公司而非免税慈善机构形式，所持股份不得用于游说或政治捐款。加上联合创始人承诺捐出 80% 股权、约一半员工参与的股权捐赠配捐计划，Anthropic 称约 20% 的股份将用于公益；具体治理结构和估值门槛几个月内公布。路透、CNBC、TechCrunch 均有报道。",
+      "relevance": "Anthropic 正在准备上市，这一步既是兑现「公益公司」的承诺，也是在给投资人和监管者看；以后评估它的股票时，要记得有一块股份是「不为股东赚钱」的。",
+      "sources": [
+        {
+          "label": "x.com/AnthropicAI",
+          "url": "https://x.com/AnthropicAI/status/2111881963657412903"
+        },
+        {
+          "label": "anthropic.com",
+          "url": "https://www.anthropic.com/news/public-benefit-fund"
+        },
+        {
+          "label": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/"
+        }
+      ]
+    },
+    {
+      "id": "1019早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 的 Dean Ball：进了 OpenAI 才发现，中国模型能紧追美国，大约一半要归功于「蒸馏」",
+      "time": "2026-10-18T20:51:41+08:00",
+      "summary": "AI 政策研究者 Dean Ball 周日在 X 上发文说，「蒸馏」（用别人模型的输出来训练自己的模型）一直被认为是中国模型在基准测试上紧追美国的原因之一，但他加入 OpenAI 后看到内部情况，认为蒸馏的作用比他想的更大。被追问具体比例时，他说加入前会估计约 30%，现在更像 50%。他还强调，实际中的蒸馏很大一部分是「偷取模型的思考过程」，而不只是用正常回答来训练，所以业内把它当成「攻击」；同时坦言要训练出识别这类行为的检测器很难，误判率非常高。他的帖子引用了另一位用户的观察：DeepSeek 新模型的推理风格变得和 OpenAI 的 Astra 一样简短。这是个人估计，没有公布数据，DeepSeek 等公司也未回应。",
+      "relevance": "美国大模型公司正把「中国靠蒸馏追上来」当成主要说法，这会影响接下来美国的出口管制和中美 AI 竞争的政策走向，也会影响市场怎么给中国 AI 公司估值。",
+      "sources": [
+        {
+          "label": "x.com/deanwball",
+          "url": "https://x.com/deanwball/status/2111802397148471496"
+        },
+        {
+          "label": "x.com/deanwball（30%→50%）",
+          "url": "https://x.com/deanwball/status/2111807534940185051"
+        }
+      ]
+    },
+    {
+      "id": "1019早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】谷歌开源 Harness²：不改模型本身，只让智能体自己反复改「工作方法」，专业任务得分最多提高约 12 分",
+      "time": "2026-10-09",
+      "summary": "谷歌云 AI 研究团队 10 月 9 日发表论文并开源 Harness² 框架（Apache 2.0 免费商用），周末在 X 上引发讨论。它针对的是模型外面那一层「工作环境」，包括提示词、工具、记忆、技能、子智能体、脚本等八个部分：遇到新任务时，先提出几种修改方案，在同一任务上试跑对比效果，再把有效的改法组合起来；每做完一个任务，还会把有证据支持的经验存进「经验库」，供以后的任务参考。整个过程不需要标准答案，也不重新训练模型。在 WorkBuddy-Bench、JobBench、LAB 三个职场类测试上，智谱 GLM-5 和谷歌 Gemini 3.5 Flash 只跑一轮就分别最多提高 11.5 分、4.5 分和 11.8 个百分点。项目注明不是谷歌官方产品，数据为论文作者自测。（本期另查过 xAI、Meta、DeepSeek、通义千问、月之暗面：这段时间没有新的重大模型发布。）",
+      "relevance": "同一个模型，换一套更好的「工作方法」就能明显变强，说明 AI 产品的差距越来越多在模型之外；挑 AI 工具时，不能只看用的是哪个模型。",
+      "sources": [
+        {
+          "label": "github.com/google-research",
+          "url": "https://github.com/google-research/harness2"
+        },
+        {
+          "label": "arxiv.org",
+          "url": "https://arxiv.org/html/2610.14224"
+        },
+        {
+          "label": "x.com（话题汇总）",
+          "url": "https://x.com/i/trending/2111809599519002671"
+        }
+      ]
+    },
+    {
+      "id": "1019早-4",
+      "section": "我关注的",
+      "block": "AI 陪伴与成人消费",
+      "title": "【补报】巴西 49 岁泥瓦匠变卖家当、坐车 2000 公里去见「网恋对象」，到了才发现她是 AI 虚拟人；账号 30 万粉丝，用来带货",
+      "time": "2026-10-13",
+      "summary": "据巴西环球网 G1 10 月 13 日至 17 日的连续报道，49 岁、离异的泥瓦匠 Edimar Rocha Martins 10 月 9 日从马拉尼昂州伊佩拉特里斯出发，坐了 2000 多公里大巴到贝洛奥里藏特，去找 TikTok 上的「农场女主人 Jéssica Oliveira」。这个账号在 TikTok 有 30 多万粉丝，视频里的女子外貌和声音都很逼真，常说自己独居农场、想找个男人「养着」、让对方「不用再工作」。他到了当地拿着照片四处打听，才发现她是 AI 生成的虚拟人；他说自己卖掉了全部家当，且双方曾私聊，对方还说要替他出车票。账号经营者否认私下联系过他，称这个角色是为了「吸引互动、带动卖货」，事后删除了视频。米纳斯吉拉斯州警方表示，用 AI 创造虚拟角色本身不违法，但若用来骗取不当利益，可能构成诈骗；市政府为他提供了食宿和回乡车票。此事 10 月 18 日在 X 上再度广泛传播。",
+      "relevance": "用 AI 虚拟人「卖陪伴感」来带货的成本已经很低，但一旦出事，口碑和法律风险都会落在经营者身上；你将来做成人用品或陪伴相关的营销，虚拟形象要明确标注是 AI。",
+      "sources": [
+        {
+          "label": "g1.globo.com",
+          "url": "https://g1.globo.com/mg/minas-gerais/noticia/2026/10/17/viagem-de-2-mil-km-promessa-de-vida-no-campo-entenda-caso-de-homem-enganado-por-mulher-de-ia-e-saiba-identificar-perfis-virtuais.ghtml"
+        },
+        {
+          "label": "cnnbrasil.com.br",
+          "url": "https://www.cnnbrasil.com.br/nacional/sudeste/mg/vou-te-sustentar-veja-videos-de-ia-que-fizeram-pedreiro-viajar-2-mil-km/"
+        },
+        {
+          "label": "x.com（话题汇总）",
+          "url": "https://x.com/i/trending/2111600887756120363"
+        }
+      ]
+    },
+    {
+      "id": "1019早-5",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "【补报】李未可 AI「记忆眼镜」预售 699 元起：连续录音 12 小时，说一句话就能查回会议内容，可接豆包、飞书、Claude 等智能体",
+      "time": "2026-10-18T11:43:07+08:00",
+      "summary": "据 IT之家 10 月 18 日报道，国产 AI 眼镜品牌李未可（Lawaken）的 X-AI 记忆眼镜开启预售，到手价 699 元起，钛架款最高 1099 元，机身 26 克，镜框可快拆更换。它主打「全程记录」：会议、灵感、商务拜访、微信和电话沟通都能录下来，自动整理待办和重点，用户直接用语音提问就能调出完整内容；集成腾讯云 WorkBuddy，可按个人记忆库一键生成纪要和文稿。眼镜通过 MCP 标准协议接入豆包、飞书、千问办公、Codex、Claude 等智能体平台；支持最长 12 小时录音、128 种语言实时翻译、25 种语言加 21 种方言转写，记忆数据可编辑、删除、导出，云端 AES-256 加密。另可选配 10 克、1200 万像素的磁吸摄像模组。",
+      "relevance": "上期阿里千问眼镜卖 2999 元，这款不带摄像头的版本压到 699 元，语音 AI 眼镜正在快速变便宜；但「随时录音」也意味着身边人的隐私问题会越来越常见。",
+      "sources": [
+        {
+          "label": "ithome.com",
+          "url": "https://www.ithome.com/1/014/477.htm"
+        }
+      ]
+    },
+    {
+      "id": "1019早-6",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "【补报】美国加州立法：2027 年起禁止生产和销售给 16 岁以下孩子的「AI 聊天玩具」，为期四年",
+      "time": "2026-09-10",
+      "summary": "加州州长纽森 9 月 10 日签署参议院第 867 号法案（SB 867），从 2027 年 1 月 1 日起到 2030 年底，禁止在加州生产、销售或交换内置「陪伴型聊天机器人」、面向 16 岁以下儿童的实体玩具；所谓陪伴型聊天机器人，是指能像人一样随机应变回应、并在多次互动中维持「关系」的 AI。只在游戏内对话的角色、不维持长期关系的普通语音助手不在禁令范围内。起因是美国公共利益研究组织 PIRG 测试发现，一款 AI 泰迪熊 Kumma 会告诉孩子去哪里找刀、药片和火柴，长时间聊天后还会谈到露骨的性话题。提案参议员 Padilla 说这是美国第一个州级同类禁令，目的是争取时间制定安全标准；美国玩具协会反对。法律事务网站 Law Commentary 9 月 17 日详细报道。",
+      "relevance": "AI 陪伴硬件一旦涉及未成年人，监管会非常严；你做相关产品时，「成人专用、严格验证年龄」不只是道德问题，也是能不能在大市场合法卖的问题。",
+      "sources": [
+        {
+          "label": "lawcommentary.com",
+          "url": "https://www.lawcommentary.com/articles/newsom-california-ban-ai-chatbot-toys-kids-under-16"
+        }
+      ]
+    },
+    {
+      "id": "1019早-7",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股期货周日晚小幅反弹：纳指期货涨约 0.4%～0.6%；布伦特原油从 110 美元回落约 1% 至 108.6 美元，金价约 4175 美元",
+      "time": "2026-10-19T06:15:00+08:00",
+      "summary": "上周标普 500 跌近 2%、纳指跌 4.5%，是 6 月底以来最差一周；费城半导体指数连跌 8 天，是 2008 年金融危机以来最长的连跌。周日晚（美东时间）期货重开后，据 CNBC 和彭博，标普 500 期货涨 0.2%～0.4%，纳指 100 期货涨 0.4%～0.6%，道指期货涨约 0.2%。CNBC 指出，市场担忧的焦点是 AI 投资回报：Anthropic 三季度营收增速放缓引发讨论，大量举债建数据中心的 CoreWeave 上周暴跌 25%，信用违约互换报价达「困境」水平；高盛交易员称 AI 相关公司信用利差处于年内最宽。商品方面，布伦特原油上周五一度冲上约 110 美元（5 月以来首次），周日晚回落约 1% 至 108.6～108.8 美元，美国 WTI 约 101 美元；现货黄金微涨 0.2%～0.3% 至约 4175 美元；彭博称美债期货走高，法国等欧洲多国抗议推高避险需求。本周看点：周二奈飞和 SpaceX、周三特斯拉和 Meta 发布财报；中国今天上午 10 点（北京时间）公布三季度 GDP；美联储 10 月 28 日议息，目前已进入静默期。",
+      "relevance": "期货反弹幅度很小，市场真正在等的是特斯拉、Meta 和 SpaceX 的财报；对你这样空仓观望的人来说，这周财报是判断 AI 行情能否企稳的关键窗口。",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/18/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "swissinfo.ch（彭博）",
+          "url": "https://www.swissinfo.ch/eng/us-stock-futures-bounce-from-tech-rout%2c-oil-slips%3a-markets-wrap/92235911"
+        },
+        {
+          "label": "seekingalpha.com",
+          "url": "https://seekingalpha.com/news/4654081-stock-futures-rebound-as-oil-nears-110-ai-earnings-loom"
+        }
+      ]
+    },
+    {
+      "id": "1019早-8",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "日韩股市周一低开：韩国综指开盘暴跌 3.17%，日经开盘跌 0.9% 后跌幅扩大到约 980 点",
+      "time": "2026-10-19T08:05:00+08:00",
+      "summary": "受美股上周五科技股大跌拖累，韩国综合指数（KOSPI）周一开盘跌 179.64 点、跌 3.17%，报 5488.41 点，科斯达克指数开盘跌 2.73%；韩联社称，市场担心 AI 基础设施的巨额投资能否带来足够回报，KOSPI 上周五刚涨 2.05%，结束了累计跌 6.3% 的七连跌。日经 225 指数开盘跌 595.90 点（0.91%），报 64728.39 点；据日本财经资讯 FISCO，到东京时间 9 点 05 分跌幅已扩大到 982 点，AI 和半导体股承压，油价和美国长期利率走高也让投资者更谨慎；FISCO 提到，日经仍比 10 月 6 日收盘的 70683 点低 5300 多点，有观点认为短期再跌空间不大。台股、A 股和港股稍后开盘。",
+      "relevance": "韩国以三星、SK 海力士等芯片股为主，对 AI 半导体情绪最敏感；台股同样重仓芯片，今天开盘大概率也会受压。",
+      "sources": [
+        {
+          "label": "en.yna.co.kr（韩联社）",
+          "url": "https://en.yna.co.kr/view/AEN20261019001000320"
+        },
+        {
+          "label": "biz.chosun.com",
+          "url": "https://biz.chosun.com/jp/jp-finance/2026/10/19/QHVEUGQVEZEPDCOLE54WK6TDWE/"
+        },
+        {
+          "label": "topics.smt.docomo.ne.jp（FISCO）",
+          "url": "https://topics.smt.docomo.ne.jp/article/fisco/business/fisco-0009340020261019008"
+        },
+        {
+          "label": "panewslab.com",
+          "url": "https://www.panewslab.com/ko/articles/01a1517e-f871-75c5-bc98-e1e8d8227a77"
+        }
+      ]
+    },
+    {
+      "id": "1019早-9",
+      "section": "国际重大影响",
+      "title": "能源设施周末多点遇袭：乌克兰无人机炸圣彼得堡石油码头起火；胡塞武装瞄准沙特延布港；伊朗革命卫队又称一艘油轮触雷",
+      "time": "2026-10-19T05:50:45+08:00",
+      "summary": "据 CNBC，乌克兰周日（10 月 18 日）对俄罗斯发动大规模无人机袭击，圣彼得堡州长别格洛夫称当地一处石油码头和油库起火；该码头每天出口约 12 万桶成品油，以燃料油为主。这是美国斡旋的能源停火破裂后，乌方恢复打击俄罗斯能源设施。另据 Seeking Alpha，也门胡塞武装周末把目标对准沙特红海边的延布石油出口枢纽；英国海事贸易行动办公室（UKMTO）称上周五两艘油轮在沙特外海的波斯湾遇袭。新华社报道，伊朗革命卫队海军周一凌晨宣布，一艘「违规」油轮在霍尔木兹海峡南侧触雷，机舱起火，称该船关闭了定位和导航系统、试图走「未经授权」的南侧航道（美军护航船只走的路线）。不过据欧洲新闻台波斯语频道，UKMTO 近期报告中没有记录船只触雷，联合海事信息中心（JMIC）也说伊方 17 日两艘油轮触雷的说法未获证实。美军称上周护送了超过 1 亿桶原油通过霍尔木兹。",
+      "relevance": "俄罗斯、红海、霍尔木兹三条供应线同时有风险，油价很难快速回落；高油价会推高通胀、让降息更难，这对股市整体都是压力。",
+      "sources": [
+        {
+          "label": "cnbc.com",
+          "url": "https://www.cnbc.com/2026/10/18/oil-price-today-ukraine-russia-iran-strait-hormuz.html"
+        },
+        {
+          "label": "english.news.cn（新华社）",
+          "url": "https://english.news.cn/20261019/6b4e05a1580a4af183318eeb0563ed2f/c.html"
+        },
+        {
+          "label": "parsi.euronews.com",
+          "url": "https://parsi.euronews.com/2026/10/19/tanker-hits-sea-mine-strait-of-hormuz-irgc-oct-2026"
+        },
+        {
+          "label": "seekingalpha.com",
+          "url": "https://seekingalpha.com/news/4654081-stock-futures-rebound-as-oil-nears-110-ai-earnings-loom"
+        }
+      ]
+    },
+    {
+      "id": "1019早-10",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "宇宙里可能有「没有一颗星星的星系」：中国天眼 FAST 发现一团孤零零的氢气云，总质量约 1.3 亿个太阳，却完全看不到恒星",
+      "time": "2026-10-17",
+      "summary": "科普网站 Phys.org 10 月 17 日报道，中国科学院国家天文台徐金龙团队用贵州的 500 米口径球面射电望远镜（FAST，中国天眼）在巡天中发现一团编号 J1351+0039 的中性氢气云，周围投影距离约 30 万光年内没有大星系，也没有被引力撕扯出的气体尾巴。团队 7 至 8 月又观测三次，算出它的总质量约 1.3 亿个太阳，其中氢气只有约 50 万个太阳质量，其余大部分应是看不见的暗物质；而深度光学巡天图像里找不到任何恒星。它呈圆形、温度约 1 万度、几乎不转，符合理论预言的「暗星系」：小的暗物质团块因为被宇宙紫外线背景加热，气体始终冷不下来，所以一直没能形成恒星。此前只确认过一个此类天体，且都靠近大星系，这团是迄今最「孤立」、最干净的候选。论文 9 月 24 日发在预印本平台 arXiv，尚未经同行评审，团队说还需韦伯或哈勃望远镜确认它真的没有恒星。",
+      "relevance": "我们肉眼和望远镜能看到的发光物质只占宇宙很小一部分，大量东西「存在却不发光」；这也是个好提醒：看不见的力量，往往比看得见的更大。",
+      "sources": [
+        {
+          "label": "phys.org",
+          "url": "https://phys.org/news/2026-10-lone-starless-cloud-dark-galaxy.html"
+        }
+      ]
+    }
+  ]
+}
