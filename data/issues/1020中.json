@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "id": "1020中",
+  "date": "2026-10-20",
+  "slot": "中",
+  "title": "10月20日 · 中",
+  "items": [
+    {
+      "id": "1020中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "路透独家：OpenAI 赶在 Anthropic 11 月中上市前，加速募资约 300 亿美元，估值可能超过 1.4 万亿美元；彭博称 Anthropic 还在谈第二笔约 450 亿美元的算力大单",
+      "time": "2026-10-20T07:22:00+08:00",
+      "summary": "路透台北时间今早 7 点 22 分引述两位知情人报道：OpenAI 正以少见的速度推进一轮约 300 亿美元的融资，估值可能超过 1.4 万亿美元（今年 3 月那轮是 8520 亿美元），软银、阿布扎比的 MGX 等老股东在谈参与。之所以赶，是想在对手 Anthropic 预计 11 月中旬上市、公开详细财务数据之前，先把投资人的钱锁定，免得两家被放在一起直接比较；两家现在争的是同一批投资人。OpenAI 向投资人宣称，GPT-6 Astra 推出后增长加速，年化收入已到 500 亿美元，年底预计 700 亿美元；路透此前报道 Anthropic 7 月的年化收入约 650 亿美元，第三季度收入 168 亿美元（第二季度 116 亿），但逐月增速放缓让部分投资人担心估值。两家还在会计口径上互相较劲：OpenAI 指责 Anthropic 把经云厂商卖出的合同按总额记收入、虚增数字，Anthropic 回应说遵循的是通行会计准则。另据彭博台北时间凌晨 3 点 24 分报道，英国 AI 算力公司 Nscale 正和 Anthropic 谈第二笔约 450 亿美元的算力合同，用于西弗吉尼亚 Monarch 园区的第二栋 460 兆瓦数据中心（英伟达 Vera Rubin 芯片），条款还可能变；8 月签的第一笔规模相同。TechCrunch 和 Mint 补充：Nscale 自己也在筹备上市，但上半年亏损 10 亿美元、收入只有 1.41 亿美元，第一笔合同的建设资金至今还没落实。（本期也查过谷歌、Meta、xAI、DeepSeek、通义千问：今早到中午没有新的重大模型发布。）",
+      "relevance": "两大 AI 公司的竞争已经从比模型变成比谁先拿到钱；Anthropic 上市前后公开的财报，会是第一次看清这些公司真实赚钱能力的机会，也会影响整个 AI 股的情绪。",
+      "sources": [
+        {
+          "label": "investing.com（路透独家）",
+          "url": "https://www.investing.com/news/stock-market-news/exclusiveopenai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-4958511"
+        },
+        {
+          "label": "moneycontrol.com（路透全文转载）",
+          "url": "https://www.moneycontrol.com/artificial-intelligence/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-report-article-14055784.html"
+        },
+        {
+          "label": "news.bgov.com（彭博：Nscale 与 Anthropic）",
+          "url": "https://news.bgov.com/tech-and-telecom-law/nscale-anthropic-in-talks-for-45-billion-cloud-computing-deal"
+        },
+        {
+          "label": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/"
+        },
+        {
+          "label": "livemint.com",
+          "url": "https://www.livemint.com/companies/news/anthropic-eyes-second-45-billion-nscale-deal-as-460mw-ai-data-centre-plans-advance-ahead-of-potential-ipo-11792466448988.html"
+        }
+      ]
+    },
+    {
+      "id": "1020中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "The Information：奥特曼在 OpenAI 全员大会上讲了三种「给 AI 竞赛踩刹车」的方案，其中一种是「熔掉其他所有人的 GPU」",
+      "time": "2026-10-20T10:26:00+08:00",
+      "summary": "科技媒体 The Information 记者 Stephanie Palazzolo 台北时间上午 10 点 26 分在 X 上推介她和同事的报道：上周 OpenAI 全员大会上，CEO 萨姆·奥特曼介绍了业界提出过的三种「控制 AI 发展速度」的方案。第一种是「AI 界的国际原子能机构（IAEA）」，由国际机构监督和核查最先进的 AI；第二种是「Demis 方案」，也就是谷歌 DeepMind 负责人哈萨比斯主张的「AI 界的欧洲核子研究中心（CERN）」，各方集中到一个国际联合实验室里研发；第三种被称为「Eliezer 方案」（应是指长期警告 AI 风险的研究者尤德科夫斯基），即某一家公司领先到能「熔掉其他所有人的 GPU」，让别人没法继续训练。原文付费，细节有限；加密媒体 Crypto Briefing 转述称，第三种情形指的是某家公司率先做出能「自我改进」的 AI 后遥遥领先，奥特曼本人形容这种结局「很糟糕」。这是内部讲话，OpenAI 没有对外公开说明。",
+      "relevance": "头部 AI 公司的老板已经在员工面前认真讨论「这场竞赛怎么收场」，说明他们自己也觉得速度快到需要有人来管；以后看各国 AI 监管新闻，可以拿这三种路线去对照。",
+      "sources": [
+        {
+          "label": "x.com（The Information 记者原帖）",
+          "url": "https://x.com/steph_palazzolo/status/2112369785514373403"
+        },
+        {
+          "label": "theinformation.com",
+          "url": "https://www.theinformation.com/articles/altman-describes-three-endgames-ai-including-one-single-firm-melts-everyone-elses-gpus"
+        },
+        {
+          "label": "cryptobriefing.com（转述）",
+          "url": "https://cryptobriefing.com/sam-altman-three-ai-endgames/"
+        }
+      ]
+    },
+    {
+      "id": "1020中-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "马斯克：X 首页推荐换上新的 AI 排序模型，专门预测你会花多久看一条帖子、优先推那些大家会读完的内容",
+      "time": "2026-10-20T10:41:00+08:00",
+      "summary": "马斯克台北时间上午 10 点 41 分发帖，宣布 X 时间线推荐有两项重要改动：一是换上新的 AI 排序模型，能更准确地预测用户可能在一条帖子上停留多久；二是新的召回模型，专门训练来挑出「人们会从头读到尾」的帖子。他同时贴图称，用户活跃时长正在指数级增长，几乎每天都在创新高（这是他本人的说法，X 没有公布可供核实的完整数据）。随后他在回复里补充说，重写 X 的安卓 App 也是一件大事，因为旧版「烂了很久」。（本期查过他今早的其他帖子，多是转发和闲聊，没有收录。）",
+      "relevance": "X 的推荐开始看「你读了多久」而不只是点赞转发，你在 X 上停留越久的内容类型，以后会被推得越多；想让首页更有料，就多花时间读真正有用的帖子。",
+      "sources": [
+        {
+          "label": "x.com（马斯克原帖）",
+          "url": "https://x.com/elonmusk/status/2112373713937084809"
+        },
+        {
+          "label": "x.com（马斯克：安卓 App 重写）",
+          "url": "https://x.com/elonmusk/status/2112396145137946819"
+        }
+      ]
+    },
+    {
+      "id": "1020中-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Inception 发布「扩散式」大模型 Mercury 3：每秒吐出 1000 多个字，自称质量超过 GPT-6 Luna 和 Claude Haiku 5.5，首发价每百万 token 输入 0.1 美元",
+      "time": "2026-10-20T00:42:00+08:00",
+      "summary": "AI 创业公司 Inception 联合创始人 Stefano Ermon 台北时间今天凌晨 0 点 42 分在 X 上宣布推出 Mercury 3。和 ChatGPT、Claude 这类「一个字一个字往外写」的模型不同，Mercury 用的是「扩散」方法：先给出整段草稿，再并行地反复修改，所以特别快。官方博客称，它在英伟达 GPU 上每秒能生成 1068 个 token，比同类快速模型快 4 到 8 倍；参数规模是第一代的 40 多倍，上下文长度从上一代的 26 万提到 100 万 token；在多数测试上和 GPT-6 Luna、Claude Haiku 5.5 这类「快而便宜」的模型持平或更好。定价为每百万 token 输入 0.2 美元、输出 0.7 美元，首发期五折（0.1 和 0.35 美元），已上架 OpenRouter、Baseten、Vercel，早期用户包括网页代理、在线辅导和客服公司。要注意：跑分都是公司自己公布的；科技媒体 The Hype 指出发布时还没有独立评测，OpenRouter 第一天实测的中位速度约每秒 383 个 token，明显低于官方数字。",
+      "relevance": "大模型不一定都要「一个字一个字写」，换一种生成方式就能快好几倍；如果这条路走通，语音助手、实时客服这类要求秒回的产品会更便宜、更顺手。",
+      "sources": [
+        {
+          "label": "x.com（Stefano Ermon 发布帖）",
+          "url": "https://x.com/StefanoErmon/status/2112222911218291051"
+        },
+        {
+          "label": "inceptionlabs.ai（官方博客）",
+          "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3"
+        },
+        {
+          "label": "thehype.news",
+          "url": "https://thehype.news/inception-mercury-3-diffusion-llm/"
+        }
+      ]
+    },
+    {
+      "id": "1020中-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股午间普遍走弱：韩股跌约 3.5%、SK 海力士创 4 月以来新低，日经上午收跌 404 点；台股盘中由跌 425 点翻平；中国 LPR 连续 17 个月不变；美债 10 年期约 5.13%，布伦特原油约 109.8 美元",
+      "time": "2026-10-20T11:53:00+08:00",
+      "summary": "美股周一科技股反弹没能带动亚洲。韩国：据韩国 Aju Press，韩国综指上午 9 点半（台北时间）跌 3.2% 至 5,587.27 点，盘中最低 5,493.24 点，外资和机构合计卖超约 1.08 万亿韩元，散户承接；彭博截至台北时间 11 点 53 分报跌 3.5%。SK 海力士一度跌破 120 万韩元、为近半年首次，市场担心其 NAND 子公司 Solidigm 赴美单独上市会稀释母公司价值；三星电子跌约 1.5%，电力设备和电缆股普遍跌 6% 到 15%。数据中心公司 Elice 首日上市盘中一度暴跌 33%。日本：日经 225 上午收 64,512.35 点、跌 404.35 点，东证指数跌 35.63 点到 4,031.85；软银集团和藤仓拖累最大，爱德万测试、迅销逆势上涨。台湾：据中央社，台股开低、早盘最低 46,397 点（跌近 425 点），之后南亚涨 3.6%、被动元件和印刷电路板股走强，盘中一度翻红，10 点 24 分报 46,809.98 点、仅跌 12.1 点；台积电早盘最低 2,395 元，金融股跌 1.38%。中国和香港：人民银行今早公布贷款市场报价利率（LPR）不变，1 年期 3.0%、5 年期以上 3.5%，连续第 17 个月按兵不动；上证指数基本持平，恒生指数跌约 0.9%。债市和商品（彭博，台北时间 11 点 53 分）：美国 10 年期国债收益率约 5.13%，标普 500 期货涨 0.2%；布伦特原油约每桶 109.80 美元，接近五个月高位；美油 11 月合约约 103.92 美元；现货黄金约每盎司 4,145.57 美元，变化不大；美元兑主要货币普遍走弱。本周看点：Netflix 周二、特斯拉和 Meta 周三（美东时间）盘后公布财报。",
+      "relevance": "美国科技股的反弹没传到亚洲，韩股这个「AI 晴雨表」还在大跌，说明市场对 AI 花钱太多、利率太高的担心没消；继续空仓观察、等这周科技财报出来再看，是合理的做法。",
+      "sources": [
+        {
+          "label": "swissinfo.ch（彭博市场综述）",
+          "url": "https://www.swissinfo.ch/eng/asian-stocks-shrug-off-us-chip-rally,-oil-steadies:-markets-wrap/92241741"
+        },
+        {
+          "label": "ajupress.com（韩股）",
+          "url": "https://m.ajupress.com/view/20261020111022028"
+        },
+        {
+          "label": "zaikei.co.jp（日股上午收盘）",
+          "url": "https://www.zaikei.co.jp/article/20261020/874185.html"
+        },
+        {
+          "label": "cna.com.tw（中央社：台股盘中）",
+          "url": "https://www.cna.com.tw/news/afe/202610200055.aspx"
+        },
+        {
+          "label": "ce.cn（中国经济网：LPR）",
+          "url": "http://www.ce.cn/xwzx/gnsz/gdxw/202610/t20261020_3264967.shtml"
+        }
+      ]
+    },
+    {
+      "id": "1020中-6",
+      "section": "国际重大影响",
+      "title": "澳大利亚准备起诉 Facebook、Instagram、TikTok、Snapchat、YouTube：指控它们没执行「16 岁以下禁用社交媒体」的法律，罚款上限已翻倍到 1.092 亿澳元",
+      "time": "2026-10-20T12:10:00+08:00",
+      "summary": "据彭博报道、《海峡时报》转载：澳大利亚通讯部长安妮卡·威尔斯 10 月 19 日在悉尼接受采访时说，预计政府将对五个平台提起诉讼，分别是 Meta 旗下的 Facebook 和 Instagram、TikTok、Snapchat 和 YouTube，理由是它们没有采取「合理措施」阻止 16 岁以下的孩子持有账号。澳大利亚这项全球首创的禁令 2025 年生效；网络安全专员 7 月的报告发现，大多数未成年用户仍能保留或新开账号，主要是平台的年龄核查不到位。政府已把单次违规的最高罚款翻倍到 1.092 亿澳元，并给网络安全专员更大的调查权，可以要求平台交出文件、传唤现任和前任员工，她正在据此准备向联邦法院起诉。威尔斯上周说：「不是法律失败了，是平台不守法。」Meta 和网络安全专员办公室暂未回应，Snap、TikTok 和谷歌也没有立即答复。",
+      "relevance": "这是第一次有国家要把「未成年人禁用社交媒体」真正告上法庭；如果判下来，其他国家很可能跟进，科技平台的年龄核查会变严，普通用户以后注册账号也可能要交更多身份信息。",
+      "sources": [
+        {
+          "label": "straitstimes.com（彭博）",
+          "url": "https://www.straitstimes.com/asia/australianz/australia-to-sue-facebook-tiktok-for-alleged-breaches-of-ban-minister"
+        },
+        {
+          "label": "bloomberg.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-20/australia-to-sue-facebook-tiktok-for-alleged-breaches-of-ban"
+        }
+      ]
+    },
+    {
+      "id": "1020中-7",
+      "section": "国际重大影响",
+      "title": "【补报】俄罗斯外长拉夫罗夫访问德黑兰，表态愿意斡旋结束伊朗战争、恢复霍尔木兹通航；海湾六国要求把伊朗核计划和导弹问题纳入谈判",
+      "time": "2026-10-19",
+      "summary": "据半岛电视台：俄罗斯外长拉夫罗夫周一下午抵达德黑兰，这是他 2025 年 2 月以来首次访问伊朗，先后会见伊朗外长阿拉格齐和总统佩泽什基安。阿拉格齐说，霍尔木兹海峡的不安全「直接源于美国和以色列对伊朗的军事侵略」，伊朗的政策是走外交路线。拉夫罗夫说俄方坚守 10 月 2 日生效的俄伊 20 年战略伙伴协议，俄罗斯专家会陆续回到布什尔核电站；他把恢复通航和「保护伊朗不再遭受攻击」挂钩，并表示支持把 6 月美伊签署、后来破裂的谅解备忘录作为缓和框架。访问伊朗前一天，他在巴林参加俄罗斯与海湾合作委员会的战略对话，海湾国家请他利用对德黑兰的影响力推动「认真对话」、恢复海峡航运；海合会秘书长说开战以来成员国遭到 7000 多枚伊朗导弹和无人机袭击，海湾六国还要求未来谈判必须包括伊朗的核计划、导弹和对地区武装的支持。分析人士认为，油价高、伊朗石油卖不出去对俄罗斯有利，所以俄方既想当调停人，又不急于让战争结束。美国中期选举 11 月 3 日举行，特朗普称要「很快把事情了结」，阿拉格齐回应「我们也有没做完的事」。",
+      "relevance": "多了一个调停者不等于马上停火，俄罗斯本身就是高油价的受益者；短期内霍尔木兹和油价的风险还在，别把「有人斡旋」当成利好信号。",
+      "sources": [
+        {
+          "label": "aljazeera.com（半岛电视台）",
+          "url": "https://www.aljazeera.com/news/2026/10/19/russias-lavrov-to-discuss-us-war-and-regional-security-during-tehran-visit"
+        }
+      ]
+    },
+    {
+      "id": "1020中-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "苏丹出土 2600 多年前的皇家「彩陶作坊」：古代努比亚人没有石灰石，就用碾碎的贝壳代替，做出和埃及不一样的彩釉器物",
+      "time": "2026-10-19",
+      "summary": "考古期刊《Antiquity》10 月 19 日发布：杜伦大学、纽约大学等团队在今天苏丹境内、古代努比亚库施王国都城纳帕塔的萨纳姆神庙（公元前 7 世纪由国王塔哈尔卡修建）发掘出一处彩陶（faience，一种表面有亮丽釉色的烧制器物）作坊，出土数百颗彩陶珠，还有一件「沙布提」，也就是放进王室墓葬的小陪葬人偶。烧制彩陶又臭又烟，在埃及通常放在城镇边缘，这里却紧挨着神庙，研究者认为这说明神庙不只是宗教场所，也是国家控制的生产中心，专门为王室墓地制作象征王权的器物。更有意思的是配方：苏丹大部分地方缺石灰石，工匠就用碾碎的贝壳来提供石灰。库施王国在公元前 8 世纪甚至一度统治过埃及，但过去学界常把它看成「埃及的模仿者」；领头作者 Rennan Lemos 说，这项发现说明努比亚人是根据本地条件改造技术，并不是照抄，而且和埃及靠控制土地和农业来维持权力不同，库施更像是靠垄断贵重器物的生产来巩固王权。",
+      "relevance": "同样的技术，换个地方、换种原料就能做出新东西；这跟今天各国做 AI 很像，「后来者」不一定只是模仿，也可能用本地的办法走出自己的路。",
+      "sources": [
+        {
+          "label": "antiquity.ac.uk（Antiquity 期刊）",
+          "url": "https://www.antiquity.ac.uk/news/2026/uncovering-shimmering-material-helped-craft-power-ancient-nubia"
+        }
+      ]
+    }
+  ]
+}
