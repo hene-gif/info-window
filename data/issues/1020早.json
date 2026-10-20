@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "id": "1020早",
+  "date": "2026-10-20",
+  "slot": "早",
+  "title": "10月20日 · 早",
+  "items": [
+    {
+      "id": "1020早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【传闻】The Information：Anthropic 本月要发一款更会「猜你心思」的新模型，谷歌 Gemini 4 Carbon、OpenAI 新的 Terra 模型也在路上",
+      "time": "2026-10-19T22:07:00+08:00",
+      "summary": "科技媒体 The Information 记者 Stephanie Palazzolo 台北时间昨晚 10 点多在 X 上预告了一篇独家：Anthropic 正准备推出一款新模型，推理和「直觉」都强于它目前对外提供的模型。消息来自一位用过这款模型的人，Anthropic 没有公开回应。据宝玉的中文整理，这位知情人提到两点：一是它更会揣摩用户没说出口的意图，比如让它修一个 bug，它可能顺藤摸瓜找出同一类问题，再问你要不要一起修；二是它更少给套路化答案，原文举例说，问它怎么炒股，它不会只说「看看市盈率」，而可能自己设计一套预测算法（报道没说这套算法准不准，只是用来说明回答方式）。名字和上线时间都没定，TestingCatalog 转述称会在本月发布，但还不清楚归入 Fable 还是 Opus 系列。同一篇报道还提到：谷歌在做 Gemini 4 Carbon，是上周推出的 Gemini 4 Argon 的升级版；OpenAI 在准备 Terra 系列新模型，可能几周内发布，价格会比 GPT-6.1 Sol 低。（本期也查过 xAI、DeepSeek、通义千问：昨晚到今早没有新的重大模型发布；OpenAI 官方今早另发帖称，最新模型在 COBOL、Fortran 这类老旧编程语言上的改写和迁移能力更强了。）",
+      "relevance": "这只是单一来源的爆料，三家都没官宣，先当成「下个月前可能密集发新模型」的信号看；真发布后，本栏会再按官方数据核实。",
+      "sources": [
+        {
+          "label": "x.com（The Information 记者原帖）",
+          "url": "https://x.com/steph_palazzolo/status/2112183963452059734"
+        },
+        {
+          "label": "theinformation.com",
+          "url": "https://www.theinformation.com/newsletters/ai-agenda/anthropic-readies-model-reads-users-intentions-better"
+        },
+        {
+          "label": "x.com（宝玉中文整理）",
+          "url": "https://x.com/dotey/status/2112257496954135030"
+        },
+        {
+          "label": "x.com（TestingCatalog）",
+          "url": "https://x.com/testingcatalog/status/2112195306695647502"
+        },
+        {
+          "label": "x.com（OpenAI 官方：老旧编程语言）",
+          "url": "https://x.com/OpenAI/status/2112310345863930168"
+        }
+      ]
+    },
+    {
+      "id": "1020早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Meta 公布开源模型 Muse Glimmer 的技术报告：300 亿参数，一张家用显卡或一台 Mac 就能跑，专门练「替你连续办事」",
+      "time": "2026-10-20T03:33:00+08:00",
+      "summary": "Meta 官方账号 AI at Meta 台北时间今天凌晨 3 点 33 分发帖，公开了 Muse Glimmer 的技术报告。这是一款 300 亿参数的开放权重模型，压缩到约 4 比特精度后，能在一台 Mac 或装一张家用显卡的电脑上以实用速度运行；Meta 称它在工具调用和多步规划上领先同等规模的开源模型。按 Meta 开发者博客，这款模型本身 8 月已经开源，用的是 Apache 2.0 许可（Meta 至今最宽松的一次），压缩后模型不到 20 GB，大约需要 24 到 32 GB 显存，能读图片和截图，默认上下文 12.8 万 token，不需要 API 密钥、也不按 token 收费；它在工具调用出错时会自己诊断再重试，遇到删除整个配置目录这类危险指令会先解释后果、等用户确认。科技博主 Chubby（@kimmonismus）解读报告称，Meta 是让智能体在「模拟出来的数字生活」里训练的：每个虚拟人有 10 到 14 个联系人、好几周的消息、日历和文档，练习跨好几天的任务。也有开发者在 X 上说，自己测下来阿里的 Qwen 3.8 27B 比它强，独立评测还不多。",
+      "relevance": "能装在自己电脑上的「私人助理模型」越来越实用，数据不出本机，适合处理聊天记录、日程这类隐私内容；Meta 在这条路上押得很重。",
+      "sources": [
+        {
+          "label": "x.com（AI at Meta 原帖）",
+          "url": "https://x.com/AIatMeta/status/2112265822274302066"
+        },
+        {
+          "label": "ai.meta.com（技术报告）",
+          "url": "https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/"
+        },
+        {
+          "label": "dev.meta.ai（开发者博客）",
+          "url": "https://dev.meta.ai/resources/blog/build-with-muse-glimmer"
+        },
+        {
+          "label": "x.com（@kimmonismus 解读）",
+          "url": "https://x.com/kimmonismus/status/2112270439078625477"
+        }
+      ]
+    },
+    {
+      "id": "1020早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "后续：MiniMax 正式发布 M3.1-Flash，公布定价和跑分——每百万 token 输入 0.15 美元，号称成本是上一代的三分之一，10 月 23 日开源权重",
+      "time": "2026-10-19T19:56:00+08:00",
+      "summary": "接上期 1019晚-2：MiniMax 官方账号昨晚 7 点 56 分发布正式公告，确认在 OpenRouter 上匿名霸榜的「Space Bunny（太空兔）」是 M3.1-Flash 的早期版本，累计处理了 200 多万亿 token。官方自报成绩：办公自动化 Automation-Bench 62%、ALE 30%，编程 DeepSWE 74%，视觉推理 BabyVision 91%；成本是 M3 的三分之一，速度是 3 倍。API 定价统一为每百万 token 输入 0.15 美元、输出 0.60 美元，缓存读取 0.015 美元；模型权重 10 月 23 日公开。随后官方又陆续宣布：OpenRouter 免费 72 小时、OpenCode 免费 3 天、编程工具 Cline 里限时免费，Ollama 当天就支持。要注意，以上跑分都是 MiniMax 自己公布的，上期提到的独立评测还没跟上。",
+      "relevance": "国产模型的价格战又往下压了一档；免费试用期正好可以拿来比，但别只看官方跑分，等第三方评测再下结论。",
+      "sources": [
+        {
+          "label": "x.com（MiniMax 官方公告）",
+          "url": "https://x.com/MiniMax_AI/status/2112150867868541221"
+        },
+        {
+          "label": "x.com（MiniMax：OpenRouter 免费 72 小时）",
+          "url": "https://x.com/MiniMax_AI/status/2112287025361801272"
+        }
+      ]
+    },
+    {
+      "id": "1020早-4",
+      "section": "我关注的",
+      "block": "AI 陪伴与成人消费",
+      "title": "AI 陪伴应用 Tolan 再融 3000 万美元：靠分档会员收费，年化收入「千万美元级」，七成用户是女性",
+      "time": "2026-10-20T03:00:00+08:00",
+      "summary": "TechCrunch 引用 Upstarts Media 报道：AI 陪伴应用 Tolan 新融资 3000 万美元，投资方包括 Union Square Ventures、Khosla Ventures 和 Homebrew，累计融资额翻倍，估值超过此前的 1.2 亿美元（公司没披露新估值，PitchBook 以「中等可信度」估计在 2.68 亿美元以上）。Tolan 用一个卡通角色陪用户聊情绪、理人际关系、推进待办事项，收入来自分档会员，完整功能必须付费；公司称年化经常性收入已达「两位数百万美元」，活跃用户超过 25 万，过去一年累计对话 7000 多万次，约 70% 用户是女性、40% 是父母。TechCrunch 的对比是：Friend 的吊坠式 AI 陪伴被媒体和用户吐槽「尴尬」，Character.AI 已申请破产（剩余员工转去迪士尼），而 Tolan 是少数找到市场的陪伴产品。风险也写得很清楚：它要面对 Meta Muse 这类「能替你办事」的助手竞争，还有多起指控聊天机器人与用户自杀有关的诉讼带来的监管压力。",
+      "relevance": "对你的生意判断：能持续收钱的陪伴产品，走的是温和、实用、偏女性用户、靠会员订阅的路线，而不是露骨或猎奇路线；做定位和选品时可以参考这个客群画像。",
+      "sources": [
+        {
+          "label": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/"
+        }
+      ]
+    },
+    {
+      "id": "1020早-5",
+      "section": "我关注的",
+      "block": "语音交互和 AI 硬件玩具",
+      "title": "蚂蚁集团开源 5 款 Ming-3.0 语音模型：5 亿参数的小模型就能克隆声音、按文字描述「捏」新声音，还会笑、叹气、咳嗽",
+      "time": "2026-10-19T23:54:00+08:00",
+      "summary": "蚂蚁集团的百灵大模型团队（Ant Ling / inclusionAI）台北时间昨晚 11 点 54 分宣布，开源三个系列共 5 款 Ming-3.0 语音模型，全部用 MIT 许可，可以免费商用。语音合成：0.5B（5 亿参数）小模型和 7.9B 的 Tiny 版，能用一小段录音零样本克隆声音、按一句文字描述设计新声音，内置 100 多种中文音色，支持 14 种插在句子里的语气标签（呼吸、咳嗽、叹气、笑、犹豫、惊讶等），可调情绪、语速、音高、音量，会中英德西法韩日 7 种语言和四川话、粤语。音频理解：旗舰 Ming-3.0-audio-flash 是 1260 亿总参数、每次只激活 65 亿的混合专家模型，能听长录音、回答语音问题、调用工具；另有 9.3B 的 Tiny 版。语音识别：Tiny 版主打方言和结合上下文转写。ModelScope 等账号称，0.5B 合成模型在第三方榜单 Artificial Analysis 的「指定音色」评测里拿到 1069 Elo，是开放权重模型第一。官方模型卡也写明了短板：音色相似度不如内容准确度，一句里放好几个语气效果时还不够稳；并要求不得未经同意冒充真人，合成语音要标明是合成的。",
+      "relevance": "做会说话的玩具和陪伴硬件，「有表情的声音」以前要花钱买商用接口，现在小模型免费就能用，门槛和成本都在快速下降。",
+      "sources": [
+        {
+          "label": "x.com（Ant Ling 官方）",
+          "url": "https://x.com/AntLingAGI/status/2112210811997540475"
+        },
+        {
+          "label": "huggingface.co（Ming-3.0 合集）",
+          "url": "https://huggingface.co/collections/inclusionAI/ming-30"
+        },
+        {
+          "label": "huggingface.co（0.5B 合成模型卡）",
+          "url": "https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B"
+        },
+        {
+          "label": "x.com（ModelScope）",
+          "url": "https://x.com/ModelScope2022/status/2112191301957345541"
+        }
+      ]
+    },
+    {
+      "id": "1020早-6",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股收盘分化：纳指涨 1.1%、费城半导体指数结束 8 连跌，道指微跌；欧股全线收跌，法国 CAC 跌 1.1%；美债 10 年期收益率收在约 5.135%；今早韩股、日股小幅低开",
+      "time": "2026-10-20T08:12:00+08:00",
+      "summary": "美股（台北时间今天凌晨 4 点收盘）：据路透和《华尔街日报》，道指跌 0.07% 收 51,966.03 点，标普 500 涨 0.41% 收 7,690.73 点，纳指涨 1.11% 收 26,430.89 点，收复上周（6 月以来最差的一周）部分跌幅。费城半导体指数涨 1.6%，结束 8 连跌（这 8 天累计跌约 15.7%，是 2008 年 10 月以来最长连跌）；英特尔涨 2.4%、美光涨 3%、迈威尔涨 4%。但涨势主要靠大型科技股：标普 11 个板块里 7 个收跌，公用事业跌 2%，纽交所下跌股多于上涨股。Meta 收跌 0.5%。恐慌指数 VIX 跌 7.75% 到 18.44。欧洲：法国周末骚乱引发政治和财政担忧，泛欧斯托克 600 跌 0.87% 收 639.10 点，法国 CAC 40 跌 1.11%，德国 DAX 跌 1.18%，英国富时 100 跌 1.08%；法国兴业银行跌 3.41%，法国 10 年期国债收益率到 4.9291%，和德国的利差扩大到 147 个基点；法国内政部长请辞被马克龙驳回，总理勒科尔尼下令部分地区宵禁。债市和商品：美国 10 年期国债收益率收在约 5.135%（白天一度回落，收盘反而上升），因为市场在防美联储为抑制能源推高的通胀而加息；黄金收跌 0.5% 至每盎司 4,160.10 美元；布伦特 12 月原油收 109.55 美元、跌 0.3%，美油 11 月合约（今天到期、交投清淡）涨 2.2% 到 103.66 美元，更活跃的 12 月合约收 98.54 美元。今早亚洲：韩国综指开盘跌 0.6% 报 5,733.57 点；日经 225 开盘跌约 0.41%；港股昨天休市，今天预估开盘偏弱；中国今天公布贷款市场报价利率（LPR）；台股 9 点开盘。本周看点不变：SpaceX 周二、Meta 和特斯拉周三（美东时间）盘后公布财报。",
+      "relevance": "科技股反弹了，但大多数股票还在跌、长期利率还在往上走，这更像超跌后的喘口气，不是趋势反转；你空仓等看清楚，耐心还用得上。",
+      "sources": [
+        {
+          "label": "investing.com（路透）",
+          "url": "https://www.investing.com/news/economy-news/wall-st-futures-climb-as-ai-stocks-rebound-oil-yields-fall-4956777"
+        },
+        {
+          "label": "wsj.com（实时报道）",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-19-2026"
+        },
+        {
+          "label": "boursorama.com（路透：欧股收盘）",
+          "url": "https://www.boursorama.com/bourse/actualites/l-europe-finit-dans-le-rouge-penalisee-par-les-tensions-apres-les-evenements-en-france-c7c1b3f3076b48b5613532dce49a21ed"
+        },
+        {
+          "label": "edgeconsultancykw.com（商品收盘）",
+          "url": "https://edgeconsultancykw.com/commodities-wrap-19-october-2026/"
+        },
+        {
+          "label": "en.yna.co.kr（韩联社：韩股开盘）",
+          "url": "https://en.yna.co.kr/view/AEN20261020001500320"
+        },
+        {
+          "label": "ansa.it（东京开盘）",
+          "url": "https://www.ansa.it/sito/notizie/economia/2026/10/20/borsa-tokyo-apertura-in-calo-041_9125046e-dee7-4101-a645-ab9fbbf52e24.html"
+        }
+      ]
+    },
+    {
+      "id": "1020早-7",
+      "section": "国际重大影响",
+      "title": "胡塞武装称 48 小时内 6 次袭击沙特油田、机场和军事目标；沙特把「沙漠达沃斯」未来投资倡议大会推迟到 2027 年",
+      "time": "2026-10-20T05:42:00+08:00",
+      "summary": "据新华社和路透：也门胡塞武装发言人萨雷亚周一称，过去 48 小时对沙特发动了 6 次袭击，目标包括延布的沙特阿美设施、东部的沙伊巴油田（称都引发火灾），以及利雅得哈立德国王国际机场、艾卜哈机场、多处雷达站和空军基地；他说这是对沙特 48 小时内 200 多次空袭和导弹打击萨那等地的回应。沙特方面没有立即回应，路透也无法独立核实。同一天，胡塞武装用导弹袭击也门政府在舍卜沃省的一处训练营，当地政府称 53 人死亡、200 多人受伤。受安全形势影响，沙特宣布把原定 10 月 26 至 29 日在利雅得举行的第十届「未来投资倡议」大会（俗称「沙漠达沃斯」）推迟到 2027 年。埃及总统塞西已请议会授权「在沙特请求时协助防卫」，议会把表决推迟到 10 月 26 日。能源方面，分析公司 Kpler 称，上周经霍尔木兹海峡的原油流量七日均值降到约每天 850 万桶，前一周还超过 2000 万桶，一周内至少 10 起商船事件；伊朗革命卫队称周日又有一艘油轮在海峡南部触雷爆炸起火。",
+      "relevance": "中东冲突已经从「有风险」变成「影响到沙特的招商大会和海峡运量」，这是油价高位不下、通胀和加息担忧挥之不去的根源之一。",
+      "sources": [
+        {
+          "label": "english.news.cn（新华社）",
+          "url": "https://english.news.cn/20261020/03826e79b31f4c308b19d15caa9806bc/c.html"
+        },
+        {
+          "label": "channelnewsasia.com（路透）",
+          "url": "https://www.channelnewsasia.com/business/oil-edges-higher-investors-weigh-renewed-houthi-attacks-saudi-infrastructure-6470481"
+        }
+      ]
+    },
+    {
+      "id": "1020早-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "阿拉斯加一座山塌进峡湾，掀起史上第二高的海啸：海水冲上对岸 481 米高，比台北 101 顶楼还高",
+      "time": "2026-10-19",
+      "summary": "阿拉斯加地震中心的研究人员（其中一位是阿拉斯加州地震学家）在 The Conversation 撰文、ScienceDaily 转载，介绍他们的新研究：2025 年 8 月 9 日，阿拉斯加 Tracy Arm 峡湾旁的山体在清晨 5 点多突然崩塌落水，掀起有记录以来第二高的海啸，海水和碎石冲上对岸山坡 1580 英尺（481 米），比台北 101 顶楼还高，把峡湾岩壁冲成光秃秃的岩石。就在 12 小时前，一艘观光船上的游客还在那里拍冰川。幸好当时附近没有船，事后一些邮轮公司开始绕开这条峡湾。研究发现，崩塌前其实有三个明显征兆：山脚的冰川两个月内后退了 500 多米、连日大雨渗进山体裂缝，以及崩塌前几天出现成千上万次微小地震，最后几小时变成持续的「地震嗡鸣」。作者认为，如果有监测系统，至少提前一天就能对附近船只发出黄色、再到橙色预警。近年在冰川退缩的位置，这类大滑坡越来越多，从阿拉斯加到格陵兰、挪威都在发生；美国目前还没有这种规模的滑坡预警系统。",
+      "relevance": "冰川变暖带来的危险不只是海平面上升，还有这种「看起来很美的地方突然出事」；以后坐邮轮去阿拉斯加、挪威峡湾，可以留意航线是否有这类预警安排。",
+      "sources": [
+        {
+          "label": "sciencedaily.com（The Conversation）",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261018205047.htm"
+        }
+      ]
+    }
+  ]
+}
