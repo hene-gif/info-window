@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "id": "1020晚",
+  "date": "2026-10-20",
+  "slot": "晚",
+  "title": "10月20日 · 晚",
+  "items": [
+    {
+      "id": "1020晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "DeepSeek 把自家线上服务用的推理引擎 DeepInfer 全部开源：同时为英伟达和华为昇腾芯片做了优化，官方称单个集群每天处理约 155 万亿 token",
+      "time": "2026-10-20T17:30:00+08:00",
+      "summary": "DeepSeek 台北时间今天下午 5 点 30 分在 X 上宣布，把内部推理框架 DeepInfer 完整开源，用的是 Apache-2.0 许可，企业可以免费商用。「推理」就是模型训练好之后真正回答用户问题的那一步，也是 AI 公司每天最大的开销。DeepInfer 正是 DeepSeek 官方 API 背后跑 V4.1-Flash 的那套系统，包括为芯片专门写的底层计算程序、多台机器一起跑一个模型的分布式方案、「投机解码」（先猜后面几个字再核对，用来加快输出）和固定格式输出等功能；官方说以后新模型的推理代码也会放进这个项目。同时开源的还有 deepseek-recipe，负责把文字切成 token 再还原，保证企业自己部署时的表现和官方 API 一致。据 Crypto Briefing 转述的官方数据：单个集群每天吞吐约 155 万亿 token，输入缓存命中率 96%，第一个字平均约 0.4 秒出来，生成速度每秒约 230 个 token（写代码时最高约 300）；框架主要针对英伟达 SM100 系列 GPU 和华为昇腾 950 两种芯片优化，重点是大批量的离线推理。要注意：这些性能数字是 DeepSeek 自己公布的，还没有第三方复核。去年 DeepSeek 曾在 GitHub 上说内部引擎和自家基础设施绑得太紧、暂时不完整开源，这次等于兑现了。（本期也查过 OpenAI、Anthropic、谷歌、xAI、Meta、通义千问的官方账号：中午到傍晚正值美国深夜，没有新的重大发布；马斯克这段时间只有转发和闲聊，没有收录。）",
+      "relevance": "中国实验室不只开源模型，还把「怎么便宜地把模型跑起来」的家底公开，而且把华为芯片和英伟达放在同等位置；这会继续压低 AI 的使用价格，也说明中国这边在为「没有英伟达也能跑」做准备。",
+      "sources": [
+        {
+          "label": "x.com（DeepSeek 官方发布帖）",
+          "url": "https://x.com/deepseek_ai/status/2112476496283775135"
+        },
+        {
+          "label": "x.com（DeepSeek：deepseek-recipe）",
+          "url": "https://x.com/deepseek_ai/status/2112476501065286085"
+        },
+        {
+          "label": "cryptobriefing.com",
+          "url": "https://cryptobriefing.com/deepseek-open-sources-deepinfer-inference-framework/"
+        },
+        {
+          "label": "yicai.com（第一财经）",
+          "url": "https://www.yicai.com/news/103401026.html"
+        },
+        {
+          "label": "github.com（DeepSeek 去年关于推理引擎开源的说明）",
+          "url": "https://github.com/deepseek-ai/open-infra-index/tree/main/OpenSourcing_DeepSeek_Inference_Engine"
+        }
+      ]
+    },
+    {
+      "id": "1020晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】路透独家：一名讲中文的黑客几乎全靠 AI 代理，三周多攻进 100 多家公司的网站，包括约翰迪尔和 SharkNinja；平均每次成功入侵只花约 50 美元",
+      "time": "2026-10-19T18:06:00+08:00",
+      "summary": "路透记者 Raphael Satter 台北时间 10 月 19 日傍晚发布独家报道：网络安全公司 NorForge 的研究员 Snorre Fagerland 从 10 月初开始，在网上找到约两打被误公开的 Cairn 实例。Cairn 是一个开源的多智能体「通用解题」平台，在黑客圈很流行，这些实例公开在外，让他可以「站在黑客身后」看他们怎么用 AI 作案。最活跃的是一名讲中文的黑客：从 9 月 25 日起，他只用不到 100 个汉字写下自己偏好的入侵手法，就让 AI 代理自己去攻击美国、加拿大、澳大利亚和日本的电商网站。到上周末，这些代理尝试入侵了 1200 多个网站，攻进 100 多家公司，包括农机巨头约翰迪尔（Deere）、家电公司 SharkNinja 和发动机厂商康明斯；每次成功通常要花约 23 小时反复试探。研究员估计这次行动混用了 DeepSeek 和 Anthropic 的 Claude Code，总共烧掉约 5000 美元的 token，平均每次成功约 50 美元。有一次，AI 在一家大公司的主站上找不到漏洞，就自己翻公开记录找到关联服务器的控制面板，试了几个小时后利用一个很隐蔽的缺陷让服务器执行了恶意命令，研究员说「这不是新手照抄脚本的水平」。约翰迪尔说已经处理、没发现敏感信息被获取；SharkNinja 说被黑的只是一个产品支持网站，已经控制住；康明斯说正在调查一家第三方供应商运营的网站。Cairn 的作者说平台「不是为黑客攻击设计的」。路透无法确认到底有多少数据被偷走。",
+      "relevance": "以前要一个熟练团队干几周的事，现在一个人加几千美元的 AI 额度就能做；这也是 AI 公司安全审查越收越紧、常把「敏感」提问一刀切拦下的原因，它们防的是这种滥用，普通用户难免被误伤。",
+      "sources": [
+        {
+          "label": "yahoo.com（路透独家全文）",
+          "url": "https://ca.finance.yahoo.com/news/exclusive-one-hacker-used-ai-100625294.html"
+        },
+        {
+          "label": "theverge.com",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
+        },
+        {
+          "label": "tomshardware.com",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/a-chinese-hacker-used-ai-agents-to-break-into-more-than-100-company-websites-deere-and-sharkninja-among-websites-hit-by-open-source-ai-powered-problem-solving-platform-demo"
+        }
+      ]
+    },
+    {
+      "id": "1020晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Meta 首次公开俄亥俄「普罗米修斯」超级 AI 算力集群的内部细节：已有几十万块英伟达 GPU、目标约 100 万块，训练中断次数一年减少 99%",
+      "time": "2026-10-20T00:17:00+08:00",
+      "summary": "Meta 的工程师美国时间 10 月 19 日在公司工程博客发表长文，科技媒体 StorageReview 台北时间今天凌晨 0 点 17 分整理报道。普罗米修斯位于美国俄亥俄州新奥尔巴尼，两年前还是一座普通数据中心；第一期已经建成，训练出了 Meta 的 Muse 系列模型（包括 Muse Wonder），现在正往约 100 万块 GPU、吉瓦级用电的规模扩建。它用的是英伟达 GB200 和 GB300 两代整机柜，下一代 Vera Rubin 也快要进场。文章最有看头的是「怎么让几十万块芯片不掉链子」：2025 年年中刚启用时，每 8000 块 GPU 每天最多中断近 1000 次，经过一年和英伟达驻场工程师一起排查，降了 99%；现在预训练的有效利用率超过 85%，强化学习超过 90%。每个 72 块 GPU 的机柜只让 64 块干活，留 8 块当备胎，哪块坏了马上顶上。训练时成千上万块芯片同时「一起用力、一起歇」，整个集群的用电会在几秒内波动 30% 到 40%、相当于几十兆瓦，Meta 用逐步限功率、机柜电池、电容和大型储能来削峰。连接各栋楼的训练网络跨度从 2 公里到 100 多公里。这些经验会用在它在路易斯安那州从零设计的下一座超级集群 Hyperion 上。",
+      "relevance": "外界只看到 AI 公司砸几千亿美元盖数据中心，这篇少见地讲清了钱花在哪、难在哪：芯片多不等于算力够，能不能稳定跑起来才决定投资能不能回本。Meta 周三（美东时间）公布财报，市场最想听的就是这个答案。",
+      "sources": [
+        {
+          "label": "storagereview.com",
+          "url": "https://www.storagereview.com/news/meta-prometheus-gigawatt-supercluster-1-million-gpus-gb200-gb300-nvl72"
+        },
+        {
+          "label": "devfeed.tech（转载 Meta 工程博客）",
+          "url": "https://devfeed.tech/articles/inside-prometheus-meta-s-journey-to-a-gigawatt-scale-supercluster-89979"
+        }
+      ]
+    },
+    {
+      "id": "1020晚-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收盘全线走弱：韩股跌 3.73% 创 4 月以来最低收盘，日经跌 1.3%，台股跌 529 点、外资卖超近 800 亿台币；欧股连跌两天，布伦特原油站上 110 美元、创五个月新高；SpaceX、Netflix 今晚公布财报",
+      "time": "2026-10-20T17:18:00+08:00",
+      "summary": "韩国：据韩联社，韩国综指收跌 215.27 点、跌幅 3.73%，收 5,552.74 点，盘中最低 5,493.24 点；香港电台引述路透称这是 4 月 7 日以来最低收盘。此前连涨两天，但 10 月 6 日到上周四的七个交易日曾累计暴跌约 21%；大信证券分析师说，市场对 AI 投资的信用风险和赚钱能力的担心还没消，反弹难持续。日本：日经 225 收跌 841.28 点、跌 1.30%，收 64,075.42 点；东证指数跌 1.43% 到 4,009 点。台湾：据中央社和经济日报，加权指数收跌 529.15 点、跌 1.13%，收 46,292.93 点，盘中高低差超过 800 点；台积电跌 15 元收 2,405 元；三大法人合计卖超 968.04 亿台币，其中外资近 800 亿，成交额缩到约 7,587 亿。中国和香港：上证指数涨 0.12% 收 3,735.37 点，深证成指跌 0.14%，创业板指跌 0.26%，科创综指涨 2.13%；两市成交 1.46 万亿元，上涨个股 3,778 只、下跌 1,668 只，人形机器人、AI PC、脑机接口板块领涨，煤炭、有色、航运走弱。恒生指数跌 1.32% 收 23,867.74 点，恒生科技指数跌 1.5%；香港电台说三季度 GDP 好于预期、LPR 连续 17 个月不变，让市场不再期待马上有新刺激。欧洲和商品（路透，台北时间下午 5 点多）：斯托克 600 指数跌 0.6%，前一天已跌近 1%，ASML 等欧洲半导体股跌超 3%，法国抗议引发的财政担忧还在；布伦特原油突破每桶 110 美元、创五个月新高，起因是胡塞武装称袭击了沙特能源设施；黄金跌 0.4% 到每盎司约 4,122 美元；美元指数跌 0.2%；纳指期货跌 0.3%。日本超长期国债拍卖需求创纪录，日元走强；阿尔伯塔公投选择留在加拿大后，加元走强。美债：据 investingLive，10 年期美债收益率约 5.12%。今晚看点：SpaceX 美股收盘后公布第三季度业绩，电话会在台北时间周三凌晨 4 点 30 分；Netflix、通用电气、通用汽车、3M 也是今天；Meta、特斯拉、IBM 周三（美东时间）公布。",
+      "relevance": "美股前一天刚反弹，亚洲和欧洲却接着跌，外资还在撤；接下来两天 SpaceX、Netflix、Meta、特斯拉的财报会直接回答「AI 的钱能不能赚回来」，看不清就继续空仓等答案，是稳妥的做法。",
+      "sources": [
+        {
+          "label": "en.yna.co.kr（韩联社：韩股收盘）",
+          "url": "https://en.yna.co.kr/view/AEN20261020007151320"
+        },
+        {
+          "label": "news.rthk.hk（香港电台：港股、A股、日股收盘）",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1874633-20261020.htm"
+        },
+        {
+          "label": "cna.com.tw（中央社：台股收盘）",
+          "url": "https://www.cna.com.tw/news/afe/202610200145.aspx"
+        },
+        {
+          "label": "money.udn.com（经济日报：法人买卖超）",
+          "url": "https://money.udn.com/money/story/5607/9826402"
+        },
+        {
+          "label": "finance.eastmoney.com（东方财富：A股收盘）",
+          "url": "https://finance.eastmoney.com/a/202610203901303686.html"
+        },
+        {
+          "label": "live.euronext.com（路透：欧股、油价、黄金）",
+          "url": "https://live.euronext.com/en/financial-news/shares-stumble-oil-rises-investors-await-ai-sector-earnings"
+        },
+        {
+          "label": "investinglive.com（美债收益率）",
+          "url": "https://investinglive.com/stocks/european-stock-market-open-equities-retreat-as-bond-yields-and-fiscal-risks-weigh/"
+        },
+        {
+          "label": "ir.spacex.com（SpaceX 财报日期）",
+          "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx"
+        }
+      ]
+    },
+    {
+      "id": "1020晚-5",
+      "section": "国际重大影响",
+      "title": "路透：伊朗高层称故意拖长和美国的谈判，不想在 11 月 3 日中期选举前给特朗普送「胜利」；美国防长赫格塞思突访以色列，和内塔尼亚胡谈伊朗",
+      "time": "2026-10-20T18:31:00+08:00",
+      "summary": "路透台北时间今天傍晚 6 点 31 分发布：三名伊朗高级官员和一名知情人匿名表示，伊朗是故意拖长和美国的谈判，想在 11 月 3 日美国中期选举前削弱特朗普；一名官员说，「伊朗在准备迎接以色列和美国的新一轮攻击，而不是准备和美国达成结束战争的协议」。这场战争从 2 月美以空袭伊朗开始，已经打了八个月；高油价把特朗普的支持率压到历史新低，霍尔木兹海峡开战后基本被伊朗封住。伊朗经卡塔尔转交的「七天方案」是：美国解除海上封锁、放松石油出口限制、解冻资产并全面停火，伊朗就在七天内重开海峡，但海峡要由伊朗控制；美国则在以色列压力下，坚持一开始就把伊朗核计划放上桌。特朗普说选举前不会再轰炸伊朗，但伊朗官员认为轰炸迟早会恢复。拖下去伊朗自己也付出代价：9 月通胀率 73.6%，里亚尔自 7 月美国重新封锁以来贬值近 35%，据 Vortexa 数据，伊朗海运原油出口从 9 月第二周起降到零。另据 Axios、半岛电视台和路透：美国国防部长赫格塞思周一没有事先宣布就飞到以色列，在南部沙漠的一处空军基地会见内塔尼亚胡，三名以色列官员说双方谈了伊朗；以色列 10 月 27 日大选，内塔尼亚胡选情告急，特朗普前一天刚公开力挺他，副总统万斯则说自己不介入。五角大楼拒绝评论。",
+      "relevance": "双方都在拖、都在等选举，霍尔木兹海峡短期很难重开，高油价可能至少撑到 11 月初；选举之后是谈成还是重新开打，会是油价和全球股市接下来最大的变数。",
+      "sources": [
+        {
+          "label": "straitstimes.com（路透全文）",
+          "url": "https://www.straitstimes.com/world/middle-east/iran-prolongs-talks-in-stalemate-to-influence-us-midterms-officials-say"
+        },
+        {
+          "label": "aljazeera.com（半岛电视台：赫格塞思访以）",
+          "url": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit"
+        },
+        {
+          "label": "axios.com",
+          "url": "https://www.axios.com/2026/10/19/pete-hegseth-israel-visit-netanyahu-meeting"
+        }
+      ]
+    },
+    {
+      "id": "1020晚-6",
+      "section": "国际重大影响",
+      "title": "【补报】加拿大产油大省阿尔伯塔公投：约 76% 选择留在加拿大，否决启动「独立公投」程序；加元应声走强",
+      "time": "2026-10-20T18:34:00+08:00",
+      "summary": "阿尔伯塔当地时间 10 月 19 日（周一）举行公投，问的不是直接要不要独立，而是要不要启动宪法程序、将来再办一次有约束力的独立公投；计票结果从台北时间今天上午陆续出来。据美联社（台北时间傍晚 6 点 34 分更新），按选举局非官方结果，计入 150 多万票时，约 76% 支持留在加拿大，近 24% 支持启动独立程序；官方结果 10 月 29 日公布。总理卡尼说「阿尔伯塔人做了明确的选择，他们选择了加拿大」，并表示要加快贸易多元化和能源基建，让阿尔伯塔成为核心。省长丹妮尔·史密斯本人反对独立，是在执政党内独派压力下才办了这次公投，她说选民选择了「统一加拿大中更强大的阿尔伯塔」。独派领袖 Keith Wilson 说，至少四分之一的人觉得阿尔伯塔该被更好地对待；另一个独派团体说会继续推动，还可能另组新党。美联社分析，特朗普的贸易战和「把加拿大变成第 51 个州」的说法，反而帮卡尼在这个传统上不喜欢自由党的省份凝聚了支持。阿尔伯塔拥有全球第四大探明石油储量。据路透，结果出来后美元兑加元跌 0.35% 到 1.406。",
+      "relevance": "一个产油大省没有闹分家，北美能源供应少了一个政治变数；这也是一个很典型的人性反应：外面的威胁越大，里面反而越抱团。",
+      "sources": [
+        {
+          "label": "cbs8.com（美联社全文）",
+          "url": "https://www.cbs8.com/article/news/nation-world/alberta-rejects-a-bid-for-independence/507-44753249-a16e-40bf-a394-62e294fcf167"
+        },
+        {
+          "label": "apnews.com（美联社）",
+          "url": "https://apnews.com/article/alberta-canada-referendum-indepence-carney-ed0d58ef051859ce12052e75d2d6e8a0"
+        },
+        {
+          "label": "ctvnews.ca",
+          "url": "https://www.ctvnews.ca/edmonton/alberta-referendum/article/albertans-vote-to-reject-a-referendum-on-separation/"
+        },
+        {
+          "label": "elections.ab.ca（阿尔伯塔选举局）",
+          "url": "https://www.elections.ab.ca/elections/referendum/referendum-results/"
+        }
+      ]
+    },
+    {
+      "id": "1020晚-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "阿尔茨海默病人睡不好，元凶可能不是脑里的斑块，而是「反应过度」的免疫细胞：小鼠清掉大部分这类细胞后，每天多睡了两个多小时",
+      "time": "2026-10-19",
+      "summary": "据 ScienceDaily 10 月 19 日转发的美国肯塔基大学新闻稿，研究发表在《阿尔茨海默病与痴呆》期刊。过去一般认为，阿尔茨海默病人失眠，是因为大脑里堆积的淀粉样蛋白斑块或受损的神经元。这个团队发现，真正「吵醒」大脑的可能是小胶质细胞，也就是脑里的免疫细胞：它们碰到斑块后反应过度，引发一连串炎症，研究负责人 Macauley 形容「像是在开通宵派对，让大脑睡不着」。实验里，研究者给有类似病变的小鼠吃了 14 天一种原本用于癌症研究的药（PLX3397），清掉约 87% 的小胶质细胞，结果小鼠每天多睡了两个多小时，最能让身体修复的深睡也变长了，而斑块一点没少。另一个意外发现：睡眠变差在斑块刚出现时就已经发生，之后斑块翻了一倍多，失眠也没有继续加重。研究还发现，正常衰老主要减少做梦的快速眼动睡眠，这种病变则专门破坏深睡。要注意：这些都是小鼠实验，清掉免疫细胞也不是能直接用在人身上的疗法；团队下一步想试试降糖药二甲双胍、抗癫痫药司替戊醇能不能只是「让这些细胞冷静下来」，并希望以后用便宜的脑电图帮助早期筛查。",
+      "relevance": "最显眼的东西（斑块）不一定是直接原因，身体对问题的「过度反应」有时伤害更大，这个道理在医学之外也常见；如果家里有长辈睡眠突然变差，也值得当成一个早期信号认真对待。",
+      "sources": [
+        {
+          "label": "sciencedaily.com（肯塔基大学新闻稿）",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261018084421.htm"
+        },
+        {
+          "label": "doi.org（期刊论文）",
+          "url": "https://doi.org/10.1002/alz.71579"
+        }
+      ]
+    }
+  ]
+}
