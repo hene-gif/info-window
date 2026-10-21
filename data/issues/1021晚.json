@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "id": "1021晚",
+  "date": "2026-10-21",
+  "slot": "晚",
+  "title": "10月21日 · 晚",
+  "items": [
+    {
+      "id": "1021晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Meta 已经在正式业务里用谷歌 TPU 芯片跑 AI：谷歌开源 TorchTPU，让最常用的 PyTorch 直接跑在 TPU 上，外界开始问英伟达的「软件护城河」还有多牢",
+      "time": "2026-10-20",
+      "summary": "谷歌开发者博客 10 月 20 日（美国时间）发布：推出两套能在谷歌自研 AI 芯片 TPU 上运行的推理引擎（也就是让训练好的模型对外回答问题的软件），分别是和 vLLM 团队创办的 Inferact、SGLang 团队创办的 RadixArk 合作开发的；底层的 TorchTPU 同时开源，让开发者不用改写代码，就能把全球最常用的 AI 框架 PyTorch 直接跑在 TPU 上。博客里引用了 Meta 的 PyTorch-TPU 负责人 Zongwei Zhou 的原话：「SGLang-TorchTPU 今天已经在 Meta 的生产环境中运行」，是 Meta、谷歌和 SGLang 团队三方合作做成的。芯片研究机构 SemiAnalysis 称这是 Meta 首次确认在正式业务中用 TPU 做推理；宝玉 @dotey 也指出这是目前唯一的一手确认。谷歌还称，在 SemiAnalysis 的公开测试里，用最新一代 Ironwood TPU 跑通义千问 Qwen 3.5，每百万 token 成本最低降到 2.01 美分；还为月之暗面 2.8 万亿参数的 Kimi K3 做了专门优化，单个用户每秒能收到 700 多个 token。支持的开源模型包括 Qwen、DeepSeek、GLM、Kimi、GPT-OSS、Gemma4 等。（本期也查过 Anthropic、xAI、DeepSeek、通义千问的官方账号：下午没有新的重大发布；马斯克下午主要是转发 SpaceX 财报和 Grok Bot 用户的帖子，没有新的重要声明。）",
+      "relevance": "英伟达赚大钱的底气，一半来自全世界的 AI 代码都写在它的软件生态上；当 Meta 这种大客户真把业务搬到谷歌芯片上，说明「只能买英伟达」开始松动，这对英伟达、台积电和整条 AI 芯片链的长期估值都是要盯的变量。",
+      "sources": [
+        {
+          "label": "developers.googleblog.com（谷歌：TPU 推理引擎和 Meta 原话）",
+          "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/"
+        },
+        {
+          "label": "x.com（SemiAnalysis 原帖）",
+          "url": "https://x.com/SemiAnalysis_/status/2112740274870837443"
+        },
+        {
+          "label": "x.com（宝玉 @dotey 中文梳理）",
+          "url": "https://x.com/dotey/status/2112788283251962092"
+        }
+      ]
+    },
+    {
+      "id": "1021晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "英伟达 GTC 柏林大会：黄仁勋发布「集装箱 AI 工厂」DSX POD，把 Vera Rubin 数据中心在工厂里装好再运过去，建设时间从六个月缩到最快 14 天",
+      "time": "2026-10-21",
+      "summary": "英伟达今天在德国柏林的 GTC 大会上发布 DSX POD：一套整座 AI 数据中心的参考设计，由合作伙伴在工厂里把 Vera Rubin 服务器、网络、布线、机柜供电和液冷全部装进模块化集装箱，测试好再整箱运到现场，接上电、冷却和网络就能用。英伟达说，在已经准备好的场地上，部署时间能从约六个月缩短到最快 14 天，客户能更早开始「产出 token」、更早赚钱。黄仁勋的原话是：「AI 工厂开始产出 token 才创造价值，不是盖完才算。」合作伙伴包括戴尔、HPE、联想、施耐德电气、维谛（Vertiv）、法国 Bull，以及台湾的鸿海（旗下 Ingrasys）、广达（QCT）、纬创、和硕、技嘉、台达电等，计划 2027 年初开始在全球交付。英伟达同时称，配套的冷却设计在产出相同 AI 算力时最多可省 30% 电，冷却用水最多可以完全不用。",
+      "relevance": "AI 竞赛现在比的已经不只是芯片，而是谁能更快把电和机房接上；名单里一长串台湾代工厂，说明这波「盖 AI 工厂」的钱会继续流向台股的服务器和电源供应链。",
+      "sources": [
+        {
+          "label": "nvidianews.nvidia.com（英伟达官方新闻稿）",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment"
+        },
+        {
+          "label": "datacenterdynamics.com（DCD：节能和节水说法）",
+          "url": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/"
+        },
+        {
+          "label": "blogs.nvidia.com（GTC 柏林主题演讲直播）",
+          "url": "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/"
+        }
+      ]
+    },
+    {
+      "id": "1021晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】美国国土安全部下令：联邦民用机构立即停用并删除 DeepSeek 产品，连用 DeepSeek 技术做出来的第三方产品也算在内",
+      "time": "2026-10-20",
+      "summary": "美国国土安全部（DHS）依据《联邦采购供应链安全法》发布命令，并于 10 月 20 日刊登在《联邦公报》上（命令本身 7 月 24 日签发）：联邦民用行政机构要立即停止采购 DeepSeek 产品，从采购清单和采购平台上撤下；已经装在系统里的要立即删除，范围包括 DeepSeek 本身、它的关联公司，以及基于 DeepSeek 技术做出来的第三方产品和服务。确实做不到的机构，要在 60 天内书面申请例外、说明风险控制办法，由网络安全局（CISA）审批。国防和机密系统不在这份命令范围内，也不是针对私人或一般消费者的禁令。DHS 给出的理由是：中国政府可能接触 DeepSeek 的基础设施、收集个人信息和追踪用户、政府敏感数据可能被传到中国，并引用了 2025 年安全公司 NowSecure 对 DeepSeek iOS 应用的检测，当时发现数据未加密传输、加密方式薄弱等问题。",
+      "relevance": "同一周 DeepSeek 刚把自家推理引擎开源、被开发者称赞，美国政府却把它整套赶出机关电脑，技术越开放、政治越设防，这正是中美 AI 往两套体系分开走的又一步。",
+      "sources": [
+        {
+          "label": "federalregister.gov（《联邦公报》命令原文）",
+          "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21447/notice-of-order-regarding-exclusion-and-removal-of-deepseek-products-from-federal-civilian-executive"
+        },
+        {
+          "label": "bleepingcomputer.com（BleepingComputer 报道）",
+          "url": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/"
+        }
+      ]
+    },
+    {
+      "id": "1021晚-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】OpenAI 给开发者降成本：API 的提示缓存最长可以保留 12 小时；登录 Codex 和 Work 的用户，旧对话的缓存永久保留，隔几小时回来接着聊也不会多收钱",
+      "time": "2026-10-21T09:10:00+08:00",
+      "summary": "OpenAI Codex 负责人 Tibo（@thsottiaux）台北时间今天上午 9 点 10 分发帖宣布：API 现在可以把提示缓存保留 12 小时（原本只有短时间的缓存）；对登录 Codex 和 Work 的用户，缓存会永久保留，回到几小时前的旧对话或恢复会话，都保证命中缓存，不会因为缓存失效被「惩罚」。所谓缓存，就是 AI 已经读过的长篇上下文不用每次重新读一遍，按更便宜的价格计费、回答也更快。宝玉 @dotey 称这是「这些天以来最有价值的更新」，推测 OpenAI 可能把缓存存到了硬盘上。这条帖子发出后半天内有 160 多万次浏览。",
+      "relevance": "AI 代理一干就是几小时、反复读同一大堆资料，账单大头就在这里；谁先把「长时间干活」的成本打下来，谁就更能把企业客户留住，这也是 OpenAI 和 Anthropic 抢编程客户的价格战。",
+      "sources": [
+        {
+          "label": "x.com（Tibo 原帖）",
+          "url": "https://x.com/thsottiaux/status/2112712984644784534"
+        },
+        {
+          "label": "x.com（宝玉 @dotey 中文解读）",
+          "url": "https://x.com/dotey/status/2112775224236077393"
+        }
+      ]
+    },
+    {
+      "id": "1021晚-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收盘分化：韩股涨 3.29%、触发两个月来首次「买入熔断」，台股涨 594 点收 46,888 点，日经涨 0.85%；宁德时代 A、H 股都跌超 11%，拖累沪指跌 0.6%、恒生科技跌破 4,000 点；欧股小涨，美股期货看涨等 Meta、特斯拉财报",
+      "time": "2026-10-21T19:09:00+08:00",
+      "summary": "韩国：据韩联社，综指涨 182.92 点、涨 3.29%，收 5,735.66 点，盘中最高 5,816 点；KOSPI 200 期货涨超 5%，交易所上午 11 点前启动「买方 sidecar」，暂停程序化买单 5 分钟，是两个月来第一次。三星电子涨 5.67%、SK 海力士涨 5.81%，外资净买约 6,600 亿韩元；路透说本月 1 到 20 日韩国出口比去年同期翻倍多。日本：日经 225 涨 0.85% 收 64,621.24 点，铠侠涨 2.82%、软银涨 1.49%。台湾：据证交所和经济日报，加权指数涨 594.84 点、涨 1.28%，收 46,887.77 点，盘中数度站上 47,000 点但没守住，成交 8,331.91 亿台币；台积电收 2,420 元、涨 15 元，联发科跌 10 元到 4,140 元，电路板展带动欣兴涨 4.27%。A 股：据新华财经，沪指跌 0.60% 收 3,713.03 点，深成指跌 0.82%，创业板指跌 1.62% 收 2,694.71 点；宁德时代 A 股跌约 12%，电池、能源金属板块领跌，碳酸锂价格跌破每吨 10 万元。港股：据新华社和财联社，恒指跌 0.90% 收 23,651.87 点，恒生科技指数跌 1.26% 收 3,994.77 点、跌破 4,000 点；宁德时代 H 股跌 11.41%，摩根大通把它的目标价从 725 港元降到 500 港元、评级降为「中性」；腾讯跌 4.04%，中国移动跌 3.66%（第三季度净利润同比降 12.2%）；存储芯片股逆势走强，澜起科技涨近 9%。澳洲：ASX 200 涨 0.2%，数据中心公司 NEXTDC 下调明年收入预期、暂停后续开发，盘中暴跌超 45%。欧洲：据美联社（台北时间下午 5 点多），德国 DAX 涨 0.5% 到 25,423.64 点，法国 CAC 40 涨 0.5%，英国富时 100 涨 0.1%；英国 9 月通胀从 3.1% 升到 3.5%，主要因为油价；家乐福因骚乱下调利润目标大跌，法国 10 年期国债收益率升到约 4.96%。美国：据雅虎财经（台北时间晚上 7 点），标普 500 期货涨 0.3%，纳指 100 期货涨 0.5%，道指期货持平；SpaceX 盘前一度涨 8%，Netflix 盘前大跌。商品和债市：布伦特原油约每桶 110 美元，WTI 约 100 美元；美国 10 年期国债收益率在亚洲时段升到 5.131%；黄金约每盎司 4,126 美元，市场在等下周美联储开会。今晚看点：Meta 和特斯拉美股收盘后公布财报（台北时间明早），IBM 也同晚公布。",
+      "relevance": "今天亚洲的分化很清楚：卖 AI「铲子」的存储和代工被抢回来，电动车电池和电信这些增长放慢的老龙头被狠砍；资金只追还在加速的故事，明早 Meta 和特斯拉的财报会决定这次反弹能不能延续。",
+      "sources": [
+        {
+          "label": "en.yna.co.kr（韩联社：韩股收盘）",
+          "url": "https://en.yna.co.kr/view/AEN20261021007052320"
+        },
+        {
+          "label": "tradingkey.com（日韩收盘）",
+          "url": "https://www.tradingkey.com/analysis/stocks/more/262228327-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey"
+        },
+        {
+          "label": "topics.smt.docomo.ne.jp（路透：亚洲收盘摘要）",
+          "url": "https://topics.smt.docomo.ne.jp/article/reuters/business/reuters-20261021092"
+        },
+        {
+          "label": "money.udn.com（经济日报：台股收盘）",
+          "url": "https://money.udn.com/money/story/12509/9828527"
+        },
+        {
+          "label": "setn.com（三立：台股权值股）",
+          "url": "https://www.setn.com/news/1925995"
+        },
+        {
+          "label": "cnfin.com（新华财经：A 股收评）",
+          "url": "https://www.cnfin.com/yw-lb/detail/20261021/4484213_1.html"
+        },
+        {
+          "label": "news.cn（新华社：港股收盘）",
+          "url": "https://www.news.cn/20261021/88c75847d6b94685acbae5b33f61cf9e/c.html"
+        },
+        {
+          "label": "finance.sina.com.cn（财联社：港股收盘）",
+          "url": "https://finance.sina.com.cn/roll/2026-10-21/doc-inivynsp6220172.shtml"
+        },
+        {
+          "label": "apnews.com（美联社：全球股市）",
+          "url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        },
+        {
+          "label": "borsaitaliana.it（英国通胀数据）",
+          "url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/finance/dettaglio/european-shares-open-lower-as-investors-weigh-tech-earnings-rising-oil-nRC_21102026_0916_188699312.html?lang=en"
+        },
+        {
+          "label": "au.marketscreener.com（道琼斯：欧洲午盘和美债）",
+          "url": "https://au.marketscreener.com/news/european-midday-briefing-investor-sentiment-improves-shares-rise-ce785cd8d180fe21"
+        },
+        {
+          "label": "finance.yahoo.com（雅虎财经：美股期货）",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-21-dow-sp-500-nasdaq-100000105.html"
+        }
+      ]
+    },
+    {
+      "id": "1021晚-6",
+      "section": "国际重大影响",
+      "title": "威特科夫在圣彼得堡见普京：递交新和平方案、请求恢复美俄乌三方谈判；俄方会前「白送」释放一名 70 多岁的美国人；普京主动提出要帮美伊斡旋，并想谈 11 月中在中国和特朗普见面",
+      "time": "2026-10-21T17:41:00+08:00",
+      "summary": "据克里姆林宫公布的会谈开场实录和 Axios：美国特使威特科夫今天在圣彼得堡康斯坦丁宫见普京，俄方由总统助理乌沙科夫和主权基金负责人德米特里耶夫陪同。普京一开场就问奥斯陆会谈的结果，并宣布俄方已释放美国公民斯蒂芬·哈伯德（2022 年 4 月在乌克兰东部被俄军抓走，关了四年多），「他已经在普尔科沃机场了」。特朗普在社交平台上说，美国「没有拿任何东西交换」。威特科夫说奥斯陆会谈「富有成效、有进展」，带来了几份结束战争的方案文件，请普京考虑恢复美、俄、乌三方谈判，可以先由技术专家小组细谈。普京还主动提出，俄罗斯和伊朗关系「特殊、互信」，愿意在美伊之间斡旋；并表示想讨论 11 月中旬在中国和特朗普会面的可能。Axios 指出，白宫希望特朗普刚取消对俄罗斯柴油销售的制裁之后，普京会更愿意让步。目前没有宣布任何突破，也没有安排普京和泽连斯基见面；泽连斯基此前说下一步应该是他、普京、特朗普三人会面，这个形式俄方一直拒绝。",
+      "relevance": "普京一边放人示好、一边把伊朗和中国会面都摆上桌，是想把乌克兰问题换成和美国的「大交易」；真要谈成能源停火，油价和欧洲股市都会先反应，但从今天的内容看，离停火还有距离。",
+      "sources": [
+        {
+          "label": "kremlin.ru（克里姆林宫：会谈实录）",
+          "url": "http://kremlin.ru/events/president/transcripts/81044"
+        },
+        {
+          "label": "axios.com（Axios：请求恢复三方谈判）",
+          "url": "https://www.axios.com/2026/10/21/russia-ukraine-putin-witkoff-peace"
+        },
+        {
+          "label": "tass.com（塔斯社）",
+          "url": "https://tass.com/politics/2205311"
+        }
+      ]
+    },
+    {
+      "id": "1021晚-7",
+      "section": "国际重大影响",
+      "title": "【补报】法国政府承认上周末骚乱应对失误：周六抗议将出动军队协助警察，「规模会非常大」；近 2,400 人被捕、约 1,000 名警察受伤，法国 10 年期国债收益率创 24 年新高",
+      "time": "2026-10-20",
+      "summary": "据路透（CNBC TV18 转载）：法国总理勒科尔尼周二在议会说，10 月 17 日巴黎、马赛、里昂等城市的骚乱和抢劫暴露出情报失误、警力部署太死板、该取消的警察休假没取消；内政部长努涅斯公开道歉，说「我承担我那一份责任」，并表示军队会和警察一起部署，迎接周六（10 月 24 日）的新一轮抗议，勒科尔尼说部署「规模会非常大」。内政部统计近 2,400 人被捕、约 1,000 名警察和宪兵受伤；政府宣布增加 3,000 名代课教师、取消部分大学注册费上涨。几个受影响地区实施的针对性宵禁（有的专门针对 18 岁以下）延长到周二晚上，政府说宵禁帮助恢复了平静。议会将成立调查委员会，200 名调查员在追查参与者；里摩日一座历史市政厅被烧，嫌犯被捕，官方称他属于极左团体。学生工会和自称「黄背心」的团体都号召周六继续抗议。意大利米兰等北部城市上周末也有骚乱，意大利国防部长称之为通过 TikTok、YouTube 等社交平台进行的「混合战争」。法国 10 年期国债收益率周二一度创 24 年新高，家乐福称损失数千万欧元。",
+      "relevance": "物价和公共服务的怨气在欧洲蔓延，法国明年又要选总统，政府越难靠花钱安抚，国债和欧元就越要承压；周六这一轮会不会再失控，是看欧洲资产的下一个节点。",
+      "sources": [
+        {
+          "label": "cnbctv18.com（路透：法国将出动军队）",
+          "url": "https://www.cnbctv18.com/world/france-deploy-troops-admits-failures-over-weekend-unrest-paris-italy-prime-minister-sebastien-lecornu-emmanuel-macron-giorgia-meloni-protest-20015733.htm"
+        },
+        {
+          "label": "france24.com（法国 24 台：总理表态）",
+          "url": "https://www.france24.com/en/france/20261020-french-pm-blames-ultra-left-groups-for-weekend-riots-promises-massive-security-deployment"
+        }
+      ]
+    },
+    {
+      "id": "1021晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "电解水制氢，冷一点反而更耐用：日本理化学研究所发现，把水降到接近 0°C，便宜的锰催化剂寿命明显变长；再往下冷到冰点以下，反而又坏得更快",
+      "time": "2026-10-21",
+      "summary": "日本理化学研究所（RIKEN）中村龙平团队今天在《自然·化学》发表论文。用电把水分解成氢气和氧气时，产生氧气的那一侧需要催化剂，而催化剂一直有个两难：反应越快，催化剂通常损耗得也越快。一般常识是温度越高、化学反应越快，所以电解槽常在较高温度下运行。研究团队用常见、便宜的二氧化锰做催化剂，从 80°C 一路测到零下 12°C，发现降温虽然让产氧变慢，但让催化剂「溶解变质」的那个副反应被压得更厉害，所以催化剂寿命反而变长。更反直觉的是，降到 0°C 以下、水处在「过冷」（低于冰点却还没结冰）状态时，副反应又重新加快，所以最佳温度就在接近 0°C 附近。作者说，这说明调温度本身就能成为延长催化剂寿命的办法，对冬天、极地，甚至外星环境里的电化学设备都有意义。",
+      "relevance": "我们习惯「加热才更快更好」，但这项研究提醒：有时候慢一点、冷一点，东西反而用得更久；放到投资上也一样，最快的增长不一定最耐久。",
+      "sources": [
+        {
+          "label": "nature.com（《自然·化学》论文）",
+          "url": "https://www.nature.com/articles/s41557-026-02274-8"
+        }
+      ]
+    }
+  ]
+}
