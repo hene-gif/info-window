@@ -1286,6 +1286,7 @@ function nowPage() {
       </div>
       <p>${esc(summary)}</p>
     </article>
+    ${factorsSection(data.factors)}
     <section class="sec">
       <h2>正在定价的猜想</h2>
       ${narratives.length ? `<div class="now-list">${narratives.map(narrativeCard).join('')}</div>` : '<p class="empty">本期内容整理中</p>'}
@@ -1293,6 +1294,113 @@ function nowPage() {
     <section class="sec">
       <h2>接下来要核对</h2>
       ${calendar.length ? calendarHtml(calendar, narratives) : '<p class="empty">这段时间没有待核对的事。</p>'}
+    </section>`;
+}
+
+const FACTOR_STRENGTH = { 低: 'is-low', 中: 'is-mid', 高: 'is-high', 极高: 'is-top', 暂缺: 'is-na' };
+const FACTOR_DIR = {
+  加压: { cls: 'is-up', icon: '↑' },
+  缓解: { cls: 'is-down', icon: '↓' },
+  持平: { cls: 'is-flat', icon: '→' },
+  暂缺: { cls: 'is-na', icon: '·' },
+};
+
+function factorStrength(level) {
+  const name = level || '暂缺';
+  return `<span class="fx-strength ${FACTOR_STRENGTH[name] || 'is-na'}">${esc(name)}</span>`;
+}
+
+function factorDir(dir) {
+  const name = dir || '暂缺';
+  const meta = FACTOR_DIR[name] || FACTOR_DIR.暂缺;
+  return `<span class="fx-dir ${meta.cls}"><span aria-hidden="true">${meta.icon}</span>${esc(name)}</span>`;
+}
+
+function factorBar(pct) {
+  if (pct === null || pct === undefined || Number.isNaN(Number(pct))) {
+    return '<div class="fx-bar is-empty" aria-label="百分位暂缺"><span class="fx-bar-text">百分位暂缺</span></div>';
+  }
+  const v = Math.max(0, Math.min(100, Number(pct)));
+  return `
+    <div class="fx-bar" role="img" aria-label="压力百分位 ${esc(v)}">
+      <span class="fx-bar-zone z1"></span><span class="fx-bar-zone z2"></span><span class="fx-bar-zone z3"></span><span class="fx-bar-zone z4"></span>
+      <span class="fx-bar-mark" style="left:${v}%"></span>
+    </div>`;
+}
+
+function factorIndicator(row) {
+  const missing = row.value === null || row.value === undefined;
+  const src = row.source || {};
+  const pct = row.percentile === null || row.percentile === undefined ? '暂缺' : `${row.percentile}`;
+  return `
+    <li class="fx-ind">
+      <div class="fx-ind-top">
+        <div class="fx-ind-name">
+          <h4>${esc(row.name || '')}</h4>
+          ${row.plain ? `<p>${esc(row.plain)}</p>` : ''}
+        </div>
+        <div class="fx-ind-value">
+          <strong>${missing ? '暂缺' : esc(row.display)}</strong>${!missing && row.unit ? `<span>${esc(row.unit)}</span>` : ''}
+          <time>${esc(row.date_label || row.date || '暂缺')}${row.freq ? ` · ${esc(row.freq)}` : ''}</time>
+        </div>
+      </div>
+      ${factorBar(row.pressure_pct)}
+      <div class="fx-ind-meta">
+        <span>10 年百分位 <b>${esc(pct)}</b></span>
+        ${factorStrength(row.strength)}
+        ${factorDir(row.direction)}
+        ${!missing && row.prev_value !== undefined ? `<span class="fx-prev">上一期 ${esc(row.prev_date || '')}：${esc(Number(row.prev_value).toFixed(2))}</span>` : ''}
+      </div>
+      ${row.note ? `<p class="fx-note">${esc(row.note)}</p>` : ''}
+      ${src.url ? `<p class="fx-src">来源：<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">${esc(src.title || src.url)}</a></p>` : ''}
+    </li>`;
+}
+
+function factorCard(row) {
+  return `
+    <article class="fx-card" id="factor-${esc(row.id)}">
+      <header class="fx-head">
+        <span class="now-id">${esc(row.id)}</span>
+        <div class="fx-title">
+          <h3>${esc(row.name || '')}</h3>
+          ${row.question ? `<p>${esc(row.question)}</p>` : ''}
+        </div>
+        <div class="fx-head-tags">${factorStrength(row.strength)}${factorDir(row.direction)}</div>
+      </header>
+      <ul class="fx-inds">${(row.indicators || []).map(factorIndicator).join('')}</ul>
+    </article>`;
+}
+
+function factorsSection(fx) {
+  if (!fx || typeof fx !== 'object' || !Array.isArray(fx.factors) || !fx.factors.length) return '';
+  const stack = fx.stack || {};
+  const stacked = new Set(stack.factors || []);
+  const tiles = fx.factors.map((row) => `
+    <a class="fx-tile${stacked.has(row.id) ? ' is-stacked' : ''}" href="#/now" data-factor-jump="${esc(row.id)}">
+      <span class="fx-tile-name">${esc(row.name || '')}</span>
+      <span class="fx-tile-tags">${factorStrength(row.strength)}${factorDir(row.direction)}</span>
+    </a>`).join('');
+  const rules = (fx.rules || []).map((line) => `<li>${esc(line)}</li>`).join('');
+  return `
+    <section class="sec fx-sec" aria-labelledby="fx-title">
+      <h2 id="fx-title">${esc(fx.title || '因子叠加')}</h2>
+      <p class="fx-lede">不光看有哪些压力，还看每个压力有多大、在往哪边走。每个数都附日期和来源，拿不到的写“暂缺”。</p>
+      <article class="fx-stack">
+        <div class="meta-row">
+          ${fx.updated ? `<span class="chip">更新 ${esc(fx.updated)}</span>` : ''}
+          ${fx.evidence_tag ? `<span class="tag is-rel">〔${esc(fx.evidence_tag)}〕</span>` : ''}
+        </div>
+        <div class="fx-stack-main">
+          <span class="fx-stack-label">叠加读数</span>
+          <strong class="fx-stack-level">${esc(stack.level || '暂缺')}</strong>
+          <span class="fx-stack-count">高位 ${esc((stack.high_factors || []).length)} / ${esc(fx.factors.length)} · 高位且加压 ${esc(stack.count ?? 0)} / ${esc(fx.factors.length)}</span>
+        </div>
+        ${stack.text ? `<p class="fx-stack-text">${esc(stack.text)}</p>` : ''}
+        <div class="fx-tiles">${tiles}</div>
+        ${fx.disclaimer ? `<p class="fx-disclaimer">${esc(fx.disclaimer)}</p>` : ''}
+      </article>
+      <div class="fx-grid">${fx.factors.map(factorCard).join('')}</div>
+      ${rules ? `<details class="fx-rules"><summary>怎么读这张表（规则事先写死）</summary><ol>${rules}</ol></details>` : ''}
     </section>`;
 }
 
@@ -1375,6 +1483,13 @@ function calendarHtml(calendar, narratives) {
 }
 
 function bindNow() {
+  main.querySelectorAll('[data-factor-jump]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const node = document.getElementById(`factor-${link.getAttribute('data-factor-jump')}`);
+      if (node) node.scrollIntoView({ block: 'start', behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+    });
+  });
   main.querySelectorAll('[data-jump]').forEach((btn) => {
     btn.addEventListener('click', () => {
       const node = document.getElementById(`narrative-${btn.getAttribute('data-jump')}`);
