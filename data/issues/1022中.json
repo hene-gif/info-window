@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "id": "1022中",
+  "date": "2026-10-22",
+  "slot": "中",
+  "title": "10月22日 · 中",
+  "items": [
+    {
+      "id": "1022中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "DeepSeek 完成约 1,000 亿元人民币（约 150 亿美元）融资，是中国规模最大的融资之一：宁德时代、腾讯是最大投资方，目标两次上调，为明年上市铺路",
+      "time": "2026-10-22T10:17:00+08:00",
+      "summary": "彭博今天上午（台北时间）引述知情人士报道：杭州的 DeepSeek（深度求索）完成新一轮约 1,000 亿元人民币、约 150 亿美元的融资，是中国历来规模最大的融资交易之一。谈判期间它至少两次上调目标：从最初的 500 亿元提高到 800 亿元，最后定在约 1,000 亿元。电池巨头宁德时代和微信母公司腾讯是这轮最大的投资方之一。新浪财经转述称，这笔钱也为 DeepSeek 的上市计划铺路。CNBC 本月初报道过背景：DeepSeek 今年才第一次接受外部资金，6 月首轮约 500 亿元；这一轮主要只让国资基金和企业投资，拒绝向散户募集的私募基金，寻求的估值约 5,000 亿元人民币（约 750 亿美元），并已请中信证券准备明年可能在上海科创板上市。Investing.com 转述彭博说，这笔钱能缩小和美国对手的资源差距，但 OpenAI、Anthropic 各自都已融资超过 1,000 亿美元，DeepSeek 的弹药仍少得多。同一天上午港股 AI 应用股普遍下跌，新浪港股午评把原因之一归到美国国土安全部前几天禁止联邦机构使用 DeepSeek。",
+      "relevance": "中国最会「省钱做模型」的公司也开始大把收钱，说明 AI 竞赛已经从比聪明变成比谁烧得起算力；投资方是宁德时代和腾讯这样的产业巨头，也意味着 DeepSeek 以后会更深地绑进中国的电池、社交和算力生意。",
+      "sources": [
+        {
+          "label": "bloomberg.com（彭博独家）",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs"
+        },
+        {
+          "label": "finance.sina.com.cn（新浪财经：中文转述）",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-22/doc-iniwaezt5988685.shtml"
+        },
+        {
+          "label": "investing.com（Investing.com 转述彭博）",
+          "url": "https://www.investing.com/news/stock-market-news/deepseek-raises-15-bln-in-tencent-catlbacked-funding-round--bloomberg-4964584"
+        },
+        {
+          "label": "cnbc.com（CNBC：本轮融资背景和估值）",
+          "url": "https://www.cnbc.com/2026/10/06/deepseek-funding-round.html"
+        }
+      ]
+    },
+    {
+      "id": "1022中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】谷歌 DeepMind 掌门人哈萨比斯把「通用人工智能」到来的预测缩短到两三年：今年 1 月他还说五到十年，「我在不断往近处调」",
+      "time": "2026-10-21",
+      "summary": "《华尔街日报》10 月 21 日刊出谷歌 DeepMind 联合创始人、现任 Alphabet 首席科学家哈萨比斯的长篇专访。他说，自己预计通用人工智能（AGI，指能具备人类全部认知能力的 AI，而不只是在某项考试拿高分）会在两到三年内出现，比今年早些时候说的三到五年又提前了。他的原话是「很快了」「我在不断往更近的方向更新判断」。The Verge 引述他说，「赢得」AI 竞赛的意思是帮助人类把 AGI 安全地带进世界、让所有人受益。Startup Fortune 梳理了他今年的说法变化：1 月在达沃斯说五到十年、到 2030 年前实现的概率约一半；2 月在新德里说可能五年内；5 月谷歌 I/O 说「再过几年」；现在是两到三年。他还提过一个检验标准：只给 AI 1911 年以前的知识，看它能不能像爱因斯坦那样自己推出广义相对论，目前还没有任何系统公开通过。该文也提醒，哈萨比斯曾对 Axios 承认，他故意用直白的说法，是想让政府、经济学家和公众更有紧迫感。",
+      "relevance": "连一向说话最谨慎的哈萨比斯都把时间表砍了一半，这会推着各国政府和资本按「两三年」来规划；但你也要看到，这个数字一半是预测、一半是喊话，判断真假要看接下来模型的实际表现，而不是谁说得更早。",
+      "sources": [
+        {
+          "label": "wsj.com（《华尔街日报》专访）",
+          "url": "https://www.wsj.com/tech/ai/demis-hassabis-ai-deepmind-google-isomorphic-2b4e3153"
+        },
+        {
+          "label": "theverge.com（The Verge 摘要）",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1015277/google-deepminds-demis-hassabis-thinks-agi-is-two-to-three-years-away"
+        },
+        {
+          "label": "startupfortune.com（Startup Fortune：时间表变化梳理）",
+          "url": "https://startupfortune.com/demis-hassabis-now-says-agi-could-arrive-in-just-two-to-three-years/"
+        }
+      ]
+    },
+    {
+      "id": "1022中-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】「让 AI 研究 AI」做出的开源模型：Recursive 发布 Flint，号称同级别里写代码最强、在 MacBook 上每秒能吐 125 个词元，模型几乎全程由它的自动研究系统做出来",
+      "time": "2026-10-22T00:29:00+08:00",
+      "summary": "AI 新创公司 Recursive 的创办人、前 Salesforce 首席科学家理查德·索切（Richard Socher）在 X 上发布公司第一个模型 Flint：一个可以在自己电脑上跑的写代码模型，权重放在 Hugging Face 免费下载，可以用 Ollama、LM Studio、llama.cpp 等工具在本地运行。官方说，在 50B 参数以下的混合专家（MoE）模型里，它在 SWE-bench Pro v2、Terminal-Bench 2.1、SWE-bench Verified 这几项「让 AI 真的去改代码」的测试上成绩最好；速度上，在 M4 Pro 的 MacBook Pro 上每秒超过 125 个词元，比同级模型快最多 2 倍，数据也留在你自己的电脑上。更特别的是做法：索切说 Flint 是公司「尤里卡机器」（Eureka Machine）的实战测试，这套系统自己提想法、写实现、做验证，再根据结果决定下一步，几乎用在了 Flint 研发的每个环节。Hugging Face 联合创始人托马斯·沃尔夫评论说，AI 研究员决定把一般人都说要保留高精度的输出层压到 4 位、而且被证明是对的，这一点「确实令人印象深刻」。索切转发《连线》记者 Will Knight 的试用评价：同尺寸的模型常常容易出错或很慢，但 Flint 每次都完成了他的编程要求。这些成绩目前主要是公司自己公布的。",
+      "relevance": "「AI 自己做研究、做出下一个 AI」正在从口号变成产品；如果小公司靠自动研究就能做出好用的本地模型，大厂的领先时间会被压缩，而你这种不想把资料交给云端的人，也会多一个便宜、私密的选择。",
+      "sources": [
+        {
+          "label": "x.com（索切：Flint 发布帖）",
+          "url": "https://x.com/RichardSocher/status/2112944385415426249"
+        },
+        {
+          "label": "x.com（索切：跑分说明）",
+          "url": "https://x.com/RichardSocher/status/2112944391266386133"
+        },
+        {
+          "label": "x.com（索切：尤里卡机器说明）",
+          "url": "https://x.com/RichardSocher/status/2112944397385879899"
+        },
+        {
+          "label": "x.com（托马斯·沃尔夫评论）",
+          "url": "https://x.com/Thom_Wolf/status/2112967683813609724"
+        },
+        {
+          "label": "x.com（索切转述《连线》试用评价）",
+          "url": "https://x.com/RichardSocher/status/2112997407671910554"
+        }
+      ]
+    },
+    {
+      "id": "1022中-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股上午普遍走弱：恒生科技指数跌 4.6%、恒指失守 23,000 点，创业板跌 2.8%，日经跌 1.1%，韩股跌约 1.8%；台股开高后翻黑，颱风和连假前资金先走；布伦特原油逼近 110 美元",
+      "time": "2026-10-22T12:00:00+08:00",
+      "summary": "港股：恒生指数午间收盘跌 2.87%，报 22,971 点，失守 23,000 点；恒生科技指数跌 4.64%，国企指数跌 3.12%。联想跌超 8%、网易跌超 6%，光通信股长飞光纤跌超 9%，AI 应用股智谱跌超 8%，宁德时代继续下跌；新浪港股午评把原因归到 Meta 继续加码 AI 支出引发「云厂商支出是否见顶」的讨论，以及美国禁用 DeepSeek 带来的出海政策风险。A 股：上证指数午间跌 0.89% 报 3,679.86 点，深证成指跌 1.78%，创业板指跌 2.77%，电机、工程机械逆势走强。日本：日经 225 上午收盘跌 703 点、1.09%，报 63,917 点，开盘一度涨 200 多点后翻黑；日经新闻说，芯片设备商 Lam Research 公布财报后盘后跌 7% 多，拖累东京电子等 AI 半导体股，沙特局势也让人担心油价。日本央行副行长氷见野良三表态准备加息。韩国：韩国央行全票通过把基准利率维持在 3.00%，同时上调今明两年的经济增长预期、说明年通胀会高于原先预期；KOSPI 盘中一度跌 2.2%，最新约跌 1.76% 报 5,634 点，三星、SK 海力士跌约 3%。台股：开盘跳空涨 444 点到 47,332 点，随后翻黑，最低到 46,450 点、跌 438 点，高低差 882 点；台积电从 2,435 元跌到 2,405 元。工商时报和中央社说，明天可能放颱风假、接着光复节连假，资金不愿抱股过节，成交量萎缩到约 8,000 亿元。美股期货：标普 500 期货跌约 0.4%～0.5%，纳指期货跌约 0.7%。欧洲：要到台北时间下午 3 点才开盘，指数期货跌约 0.4%～0.5%。油价：布伦特原油涨约 1.1% 到每桶约 110 美元，接近五个月高点，WTI 约 98 美元，起因是沙特东部油田和机场再遭无人机袭击。黄金：每盎司约 4,115 美元，小跌。美债：10 年期收益率跌约 4 个基点到约 5.11%，30 年期约 5.40%、一周低点。",
+      "relevance": "美股昨晚因财报大涨，亚洲今天却全面回吐，说明市场对「AI 钱烧得值不值」还没有共识，一份不够惊艳的财报就能让半导体股跳水；台股今天跌的主要是放假心理，不一定代表趋势，但港股科技股一天跌近 5%，提醒你高估值的东西掉起来有多快。",
+      "sources": [
+        {
+          "label": "city.sina.cn（新浪港股午评）",
+          "url": "https://city.sina.cn/finance/2026-10-22/detail-iniwamip5185638.d.html?node_id=76524&vt=4"
+        },
+        {
+          "label": "finance.ce.cn（中国经济网：A 股午评）",
+          "url": "http://finance.ce.cn/stock/gsgdbd/202610/t20261022_3267945.shtml"
+        },
+        {
+          "label": "nikkei.com（日经新闻：日经上午收盘）",
+          "url": "https://www.nikkei.com/article/DGXZQOFL220L70S6A021C2000000/"
+        },
+        {
+          "label": "bok.or.kr（韩国央行利率决定）",
+          "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?depth=200690&menuNo=200690&nttId=11065823&programType=newsData&relate=Y"
+        },
+        {
+          "label": "bloom-x.com（韩股盘中和欧洲期货）",
+          "url": "https://bloom-x.com/insight/macro-briefings"
+        },
+        {
+          "label": "ctee.com.tw（工商时报：台股早盘）",
+          "url": "https://www.ctee.com.tw/news/20261022700952-430201"
+        },
+        {
+          "label": "news.pchome.com.tw（中央社：台股盘中）",
+          "url": "https://news.pchome.com.tw/finance/cna_business/20261022/index-17926385205054322003.html"
+        },
+        {
+          "label": "channelnewsasia.com（路透：亚股、油价、黄金、美债）",
+          "url": "https://www.channelnewsasia.com/business/asian-markets-dip-investors-weigh-tech-earnings-gulf-tensions-6481076"
+        },
+        {
+          "label": "ndtvprofit.com（美股期货和沙特袭击）",
+          "url": "https://www.ndtvprofit.com/markets/asian-markets-today-nikkei-kospi-fall-as-oil-climbs-on-middle-east-tensions-12217792"
+        }
+      ]
+    },
+    {
+      "id": "1022中-5",
+      "section": "国际重大影响",
+      "title": "《纽约时报》：美国和以色列已拟好计划，准备在 11 月 3 日中期选举后对伊朗发动「短而猛烈」的新一轮打击，目标包括能源设施和核设施；白宫称选举前不会动手",
+      "time": "2026-10-22",
+      "summary": "《纽约时报》引述美国官员和知情人士报道：美以两军已经制定在美国中期选举后重新空袭伊朗的计划，形容是「短而猛烈的行动」，并加强了演练，包括飞越伊拉克上空模拟打击。可能的目标包括伊朗的能源设施、核设施以及导弹和无人机库存，核设施方面可能包括埋得很深的「镐山」（Pickaxe Mountain）。《以色列时报》转述说，官员认为再一轮大规模打击可能重创伊朗经济、逼它在谈判上让步；报道也说特朗普有很小可能本月就动手，也可能最终不批准。白宫首席副新闻秘书安娜·凯利对 Drop Site 表示，「美国在中期选举前任何时候都不会攻击伊朗」。背景：美以 2 月 28 日对伊朗开战，伊朗以导弹、无人机反击，并几乎封锁霍尔木兹海峡。10 月 21 日，沙特能源部说，防空系统在阿美公司沙伊巴油田拦截一架无人机，碎片引发火灾、两名外籍工人死亡，油田运作没受影响；稍后达曼法赫德国王国际机场遇袭，一死八伤。",
+      "relevance": "前几天路透说伊朗故意拖着谈判、不想在选前给特朗普送「胜利」，现在美方也被曝出「选后再打」的计划，两边都在等 11 月 3 日；这意味着选后可能才是油价和亚洲股市真正的风险窗口。",
+      "sources": [
+        {
+          "label": "nytimes.com（《纽约时报》原报道）",
+          "url": "https://www.nytimes.com/2026/10/21/us/politics/us-israel-renewed-iran-strikes.html"
+        },
+        {
+          "label": "timesofisrael.com（《以色列时报》转述）",
+          "url": "https://www.timesofisrael.com/liveblog_entry/us-and-israel-said-to-draft-plans-for-resumed-strikes-on-iran-after-midterm-elections/"
+        },
+        {
+          "label": "moneycontrol.com（白宫回应）",
+          "url": "https://www.moneycontrol.com/world/us-israel-chalk-out-plan-to-resume-attacks-on-iran-post-midterm-elections-report-article-14057145.html"
+        },
+        {
+          "label": "aljazeera.com（半岛电视台/路透：沙特油田和机场遇袭）",
+          "url": "https://www.aljazeera.com/news/2026/10/22/one-killed-eight-injured-in-attack-on-saudi-arabias-king-fahd-airport-2"
+        }
+      ]
+    },
+    {
+      "id": "1022中-6",
+      "section": "国际重大影响",
+      "title": "朝韩边境再升温：金与正称朝鲜「新的反制手段」将在整条南部边境进入戒备，对韩宣传喇叭几天内就位；韩军说暂未发现新武器部署",
+      "time": "2026-10-22",
+      "summary": "据韩联社：朝鲜领导人金正恩的妹妹金与正周四通过朝中社发表声明，说朝鲜「新的反制手段」将在整条南部边境进入戒备值勤，对韩国的宣传喇叭「几天之内」就会待命。前一天她视察了边境加固工程，威胁要对向越界朝鲜士兵鸣枪示警的韩国军队采取军事行动，并说本月稍后会恢复对韩喇叭广播；她还说新的「火力」部队已进入射击阵地。她警告韩国如果「犯错」，不论有意无意，都会面临「最可怕、最痛苦的局面」。韩国联合参谋本部说，目前没发现朝鲜在边境安装新武器或系统，只看到朝方在例行维护前线喇叭；韩国国防部要求朝方停止越过军事分界线。背景是：9 月 21 日非军事区内一起地雷爆炸炸伤三名韩国士兵，韩军和联合国军司令部认定是朝鲜在分界线以南埋的雷，朝鲜否认。",
+      "relevance": "韩国股市今年是 AI 芯片行情的主角之一，朝鲜半岛的风险平常很少被定价，一旦边境擦枪走火，最先被卖的就是三星、SK 海力士这类外资重仓股。",
+      "sources": [
+        {
+          "label": "en.yna.co.kr（韩联社：金与正最新声明）",
+          "url": "https://en.yna.co.kr/view/AEN20261022001152320"
+        },
+        {
+          "label": "en.yna.co.kr（韩联社：前一天恢复喇叭广播的警告）",
+          "url": "https://en.yna.co.kr/view/AEN20261021009152315"
+        },
+        {
+          "label": "apnews.com（美联社）",
+          "url": "https://apnews.com/article/north-korea-border-kim-yo-jong-mine-blasts-8c8d7f87b20c4be0859e5206044b1813"
+        }
+      ]
+    },
+    {
+      "id": "1022中-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "在中国博物馆里躺了五十年的骨头，终于认出了主人：许家窑的人类化石被证实属于神秘的「丹尼索瓦人」，让人第一次比较清楚地看到他们长什么样",
+      "time": "2026-10-21",
+      "summary": "《自然》杂志 10 月 21 日发表研究，中科院古脊椎动物与古人类研究所付巧妹团队分析了中国北方许家窑遗址出土的一批化石。这批共 20 件的头骨碎片、牙齿和颌骨至少有 13 万年历史，上世纪 70 年代就挖出来了，当时一直说不清是哪一种人，被归为「许家窑人」（Homo juluensis）。研究团队从其中两块骨头里提取古老的蛋白质片段，和现代人、尼安德特人对比，发现一个只在丹尼索瓦人身上出现的氨基酸变化，由此认定它们属于丹尼索瓦人。丹尼索瓦人 2010 年才被发现，当时只靠西伯利亚山洞里的一节手指骨的基因；之后哈尔滨出土的近乎完整的头骨让人第一次看到他们的脸。这次的许家窑化石给出更完整的样貌：低而后倾的额头、很厚的眉骨、偏长方形的眼眶、扁平的脸颊和中等高度的鼻梁。哥本哈根大学的古人类学家说，这是「一大步」，进一步说明丹尼索瓦人分布广、可能还很多样。研究者也指出，蛋白质比 DNA 保存得更久，成了认出远古人类的新工具。",
+      "relevance": "一批放了半个世纪、早就有「定论」的化石，换一种新方法重查就改写了答案；这跟你研究市场规律是同一个道理：很多被当成常识的结论，只是还没被新的证据重新检验过。",
+      "sources": [
+        {
+          "label": "nature.com（《自然》新闻报道）",
+          "url": "https://www.nature.com/articles/d41586-026-03360-0"
+        },
+        {
+          "label": "nature.com（《自然》论文）",
+          "url": "https://doi.org/10.1038/s41586-026-11132-z"
+        }
+      ]
+    }
+  ]
+}
