@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "id": "1022早",
+  "date": "2026-10-22",
+  "slot": "早",
+  "title": "10月22日 · 早",
+  "items": [
+    {
+      "id": "1022早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 推出 Claude Duet：会主动找你的 AI 助理，每天早上发简报、在云端自己的电脑上替你干活，先对美国 Pro 和 Max 用户排队开放",
+      "time": "2026-10-22T03:09:00+08:00",
+      "summary": "Anthropic 今天凌晨（台北时间）开放 Claude Duet 研究预览版，是一个独立 App，有 iOS、Android 版，电脑上在 claude.ai 网页使用，底层模型是 Claude Opus 5.5。和平时「你问它才答」的 Claude 不同，Duet 会主动找你：每天早上发一份简报，列出你连接的邮箱、日历、记账软件里最要紧的事；白天每隔几个小时检查一次你的账号，有事才发消息；你交代的任务它在云端自己的虚拟电脑上做，你的手机电脑关着也不耽误。官方说主要为专业人士和小企业主设计，例子包括在 Gmail、Slack 里找出漏回的消息并起草回复，查 QuickBooks、Stripe 里没收的款、写催款提醒，在 Gusto 里准备工资单，能用 6,000 多个连接器和插件。安全上：发消息、付款、签文件、删东西之前都要你批准；买卖证券、账户间转钱即使你批准也不做；它看不到你的密码；新加了一个专门的审核分类器，信用卡号、身份证件号一律拦下，健康和个人财务信息只有你明确要求才发。目前只对美国 Pro 和 Max 订阅用户开放、要排候补名单，不另收费但和 Claude 共用额度。官方也承认它可能读错邮件往来、误判轻重缓急。宝玉 @dotey 指出，两个多月里四家公司都推出了同类产品：xAI 的 Grok Bot（8 月）、Meta 的 Muse 和 OpenAI 的 Dots（9 月），Duet 是最晚的一个。",
+      "relevance": "四大实验室都在抢「每天早上第一个找你的 AI」这个位置，比的已经不只是模型聪明，而是谁更懂你、你更离不开谁；这也正是你一直在观察的大厂意图：拿到你的日常入口，比卖模型更值钱。",
+      "sources": [
+        {
+          "label": "x.com（Claude 官方发布帖）",
+          "url": "https://x.com/claudeai/status/2112984664256241837"
+        },
+        {
+          "label": "claude.com（Anthropic 官方介绍）",
+          "url": "https://claude.com/resources/articles/claude-duet"
+        },
+        {
+          "label": "x.com（宝玉 @dotey 中文梳理）",
+          "url": "https://x.com/dotey/status/2112995995017421133"
+        },
+        {
+          "label": "x.com（宝玉 @dotey：四家同类产品对比）",
+          "url": "https://x.com/dotey/status/2113014531853365681"
+        }
+      ]
+    },
+    {
+      "id": "1022早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 模型登上谷歌云：GPT-6 Astra、GPT-6.1 Sol 等进入谷歌的模型商店，谷歌成为唯一同时卖 Gemini、Claude、GPT 三家顶级闭源模型的大云厂",
+      "time": "2026-10-21T20:00:00+08:00",
+      "summary": "OpenAI 和谷歌云昨晚（台北时间）同时宣布：OpenAI 的 GPT-6 Astra、GPT-6.1 Sol、GPT-6 Luna 开始在谷歌云的模型商店（Model Garden）对部分企业客户私人预览，开发者也能把本地的 Codex 编程工具直接接到谷歌平台上用；之后还会进入谷歌的企业版 Gemini 和编程工具 Antigravity。路透和 Axios 说，正式开放预计在未来几周。企业可以通过谷歌云商城购买，费用算进原本和谷歌签的云消费承诺、开在同一张账单上。谷歌云说，现在它是唯一同时提供三家领先闭源大模型的超大规模云厂商，平台上还有 200 多个其他模型；客户的提示和输出不会被拿去训练模型，OpenAI 模型跑在谷歌云专用的基础设施上。背景是：OpenAI 和微软的独家授权今年 4 月结束，随后亚马逊 AWS 先上架了 OpenAI 模型，现在轮到谷歌。Axios 引用分析师的话说，这对谷歌是一种自信，因为 Gemini 得在 OpenAI 就摆在旁边的情况下赢客户。",
+      "relevance": "对手之间互相上架，说明 AI 的钱越来越多是流向「卖铲子、收过路费」的云平台，而不是单一模型；OpenAI 要冲企业营收，谷歌要当中立的大超市，两家各取所需。",
+      "sources": [
+        {
+          "label": "x.com（OpenAI 官方帖）",
+          "url": "https://x.com/OpenAI/status/2112988118471295323"
+        },
+        {
+          "label": "x.com（谷歌云官方帖）",
+          "url": "https://x.com/googlecloud/status/2112896659608785181"
+        },
+        {
+          "label": "cloud.google.com（谷歌云官方博客）",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"
+        },
+        {
+          "label": "axios.com（Axios 报道）",
+          "url": "https://www.axios.com/2026/10/21/openai-google-cloud-ai-models"
+        },
+        {
+          "label": "investing.com（路透报道）",
+          "url": "https://www.investing.com/news/stock-market-news/openai-to-sell-its-top-models-on-google-cloud-in-latest-enterprise-push-4962854"
+        }
+      ]
+    },
+    {
+      "id": "1022早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "AI 抢在黑客前面找到「全网级」漏洞：PHP 曝两个免登录就能接管服务器的严重漏洞，约七成网站用 PHP，OpenAI 称是近年影响最大的漏洞之一",
+      "time": "2026-10-21T22:04:00+08:00",
+      "summary": "PHP 官方 10 月 21 日紧急发布新版本，修补两个严重漏洞（研究者叫它 PHP2Shell）：攻击者不用登录，发特制请求就可能在服务器上执行任意代码，等于拿下整台服务器。WordPress、Drupal、Magento 都跑在 PHP 上，OpenAI 引用的估算是全球约 70% 的网站在用它。OpenAI 说，安全公司 Calif 在它的「Patch the Planet」计划里用 GPT-5.6 Sol 找到了漏洞，OpenAI 过去两个月牵头协调维护者和安全厂商提前准备修复，称这是「近年影响最大的漏洞之一」，也标志着 AI 已经能找到影响整个互联网的安全漏洞。据宝玉 @dotey 整理，安全公司 Wiz 也独立发现并上报，用的工具包括谷歌 Gemini 4 Argon 和 GPT-5.6 Sol。漏洞原定 22 日公开，20 日被人在 Hacker News 提前曝光，PHP 官方随即提前到 21 日发布；Cloudflare 称补丁发布前就看到早期攻击，安全公司 watchTowr 说已有人用 AI 辅助写的工具发起攻击。欧洲等地一些政府和企业网站（包括荷兰政府的 DigiD）先自行下线避险。",
+      "relevance": "同一种 AI 能力，防守方用来补洞，攻击方也能用来写攻击工具；谁先用上谁占便宜，这会让网络安全公司和云厂商的生意更重要，也让「AI 安全」从口号变成真金白银的竞争。",
+      "sources": [
+        {
+          "label": "x.com（OpenAI 官方帖）",
+          "url": "https://x.com/OpenAI/status/2112907856018309586"
+        },
+        {
+          "label": "openai.com（OpenAI：漏洞协调披露说明）",
+          "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+        },
+        {
+          "label": "php.net（PHP 官方公告）",
+          "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
+        },
+        {
+          "label": "x.com（宝玉 @dotey 中文梳理）",
+          "url": "https://x.com/dotey/status/2112934529916616991"
+        }
+      ]
+    },
+    {
+      "id": "1022早-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "特斯拉第三季财报略好于预期：Optimus 机器人在弗里蒙特高产量生产线上开始生产，马斯克说「Optimus 会是地球上最大的产品」，但也提醒还要大约一年才能把问题解决",
+      "time": "2026-10-22T04:04:00+08:00",
+      "summary": "特斯拉今天清晨（台北时间）公布第三季财报：营收 280.5 亿美元、调整后每股收益 0.48 美元，都略高于分析师预期；自由现金流超过 15 亿美元，现金和投资超过 450 亿美元；汽车毛利率（不含碳积分）从上季的 16.3% 升到 18.1%，储能毛利率 33.1%。特斯拉官方帖说：北美新车里超过 75% 买了 FSD 辅助驾驶；Cybercab 已加入奥斯汀的无人出租车车队，无人监督累计里程接近 200 万英里，一个季度增长 8 倍；Cybercab 里加入了 Grok Bot，可以用语音处理邮箱、日历和文件；Optimus 人形机器人已在弗里蒙特的高产量生产线上开始生产，是第一批「量产品质」的机器人。马斯克在电话会上说，年产 100 万台的 Optimus 生产线大部分已经装好，但设计还要调整、机器人里的 AI 还有很多工作，可靠性和使用寿命等问题预计明年底解决，「我依然相信 Optimus 会是地球上最大的产品，但想给大家降降预期，大约要一年」。他也在 X 上发帖说「人们买的是附带一辆车的 FSD，而不是反过来」。股价常规时段涨 3.4% 收 386.47 美元，盘后一度先涨后跌约 2%～3%。",
+      "relevance": "马斯克这次难得主动「降预期」，说明机器人离真正赚钱还有一段路；市场盘后先涨后跌，也提醒你：特斯拉的股价买的是未来故事，财报只要不够惊艳就会有人先落袋。",
+      "sources": [
+        {
+          "label": "x.com（特斯拉官方财报帖）",
+          "url": "https://x.com/Tesla/status/2112998455383847332"
+        },
+        {
+          "label": "x.com（Sawyer Merritt：马斯克谈 Optimus 原话，马斯克转发）",
+          "url": "https://x.com/SawyerMerritt/status/2113022539140087843"
+        },
+        {
+          "label": "x.com（马斯克：买的是 FSD）",
+          "url": "https://x.com/elonmusk/status/2113011056847278486"
+        },
+        {
+          "label": "ca.investing.com（Investing.com：电话会和股价）",
+          "url": "https://ca.investing.com/news/stock-market-news/earnings-call-transcript-tesla-beats-q3-2026-estimates-as-stock-slips-after-hours-93CH-4894862"
+        },
+        {
+          "label": "cnbc.com（CNBC：特斯拉财报）",
+          "url": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html"
+        }
+      ]
+    },
+    {
+      "id": "1022早-5",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Meta 第三季营收涨 26%，扎克伯格说「AI 投资正在回报」：全年 AI 资本支出下限上调到 1,350 亿美元，新设无投票权的 C 类股票来给 AI 筹钱；但同一天被判赔新墨西哥州 250 亿美元",
+      "time": "2026-10-22T04:33:00+08:00",
+      "summary": "Meta 今天清晨（台北时间）公布第三季财报：营收 646 亿美元，同比涨 26%，高于预期；广告展示量涨 10%、单条广告价格涨 14%。净利润 98.6 亿美元、每股 3.83 美元，被一笔 98.9 亿美元的诉讼费用拖累（和 52 个州检察长就青少年心理健康案达成的和解），不算这笔每股约 7.40 美元。第三季资本支出 349 亿美元，自由现金流为负 21 亿美元；全年资本支出从 1,300～1,450 亿美元收窄到 1,350～1,450 亿美元，第四季营收指引 730～760 亿美元，高于市场预期。董事会还批准新设一种公开上市、没有投票权的 C 类股票，2027 年 1 月起每持有一股 A 类或 B 类股就送一股 C 类股，效果类似一拆二，但不改变扎克伯格的控制权，公司说这是为了以后融资、发员工薪酬和做收购更灵活。扎克伯格说：「我们这个季度在为每个人提供个人超级智能的路上达成了重大里程碑，投资正在回报。」Stocktwits 报道 Meta 的 Muse 助理上线 40 天下载约 1,090 万次。另据《海峡时报》，就在财报前几小时，一名法官判 Meta 要赔新墨西哥州 250 亿美元（剑桥分析数据丑闻相关）；CFO 苏珊·李说，未来几个月在美国还有多起青少年相关的审判。股价盘后涨约 3%～4%，一度涨到 7%。",
+      "relevance": "Meta 一边说 AI 已经赚钱、一边造出不带投票权的新股来继续烧钱，说明大厂的 AI 军备竞赛还在加码；而接连的巨额罚款，是它这类靠用户数据赚钱的公司要一直背着的账。",
+      "sources": [
+        {
+          "label": "investor.atmeta.com（Meta 官方财报新闻稿）",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+        },
+        {
+          "label": "stocktwits.com（Stocktwits：C 类股票和 Muse 下载量）",
+          "url": "https://stocktwits.com/news-articles/markets/equity/meta-stock-jumps-3-after-hours-after-q3-revenue-beats-expectations-with-a-narrowed-ai-capex-outlook-and-new-non-voting-class-c-stock/cZxMhJJRBv6"
+        },
+        {
+          "label": "straitstimes.com（海峡时报：新墨西哥州 250 亿美元判决）",
+          "url": "https://www.straitstimes.com/business/meta-beats-expectations-but-legal-penalties-hit-profit-amid-ai-race"
+        }
+      ]
+    },
+    {
+      "id": "1022早-6",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股三大指数齐涨、纳指涨 1.05%，SpaceX 大涨 7%；欧股普涨、德股涨 1.35%；今早韩股低开 1.1%、日经小跌，台指期夜盘大涨 469 点，台股有望反弹",
+      "time": "2026-10-22T08:10:00+08:00",
+      "summary": "美股（周三收盘，台北今天凌晨）：道指涨 360 点、0.69%，收 52,856 点；标普 500 涨 0.58%，收 7,757 点，连涨三天；纳指涨 1.05%，收 26,703 点。CNBC 说 SpaceX 公布营收增长 161% 后股价大涨约 7%，带动 AMD 涨超 3%、英伟达涨超 2%，半导体 ETF 涨近 2%；Netflix 因全年营收指引不及预期跌超 5%。盘后 Meta 涨约 3%～4%，特斯拉先涨后跌约 2%～3%。尾盘一度受到美国下令部分驻沙特人员撤离的消息拖累（见国际重大影响）。欧股：斯托克 600 指数涨 0.92% 收 644.49 点，德国 DAX 涨 1.35%，法国 CAC 40 涨 1.06%，但法国 10 年期国债收益率站上 5%，是 2002 年以来第一次。油价：布伦特原油在每桶 108～111 美元之间来回，美联社说收在约 108 美元一带；国际能源署（IEA）负责人说明年油市都难恢复正常。黄金：期货收在每盎司约 4,145 美元，涨 0.4%。美债：10 年期收益率收在约 5.12%。亚股今早：日经 225 低开 0.07%，约 64,573 点；韩国 KOSPI 前一天大涨 3.29% 后今天低开 1.14%，开盘后跌幅收窄到 0.7% 左右，韩国央行今天公布利率决定。台股：经济日报说外资结束连续 10 天卖超、前一天小幅买超 22 亿台币，台积电 ADR 涨 1.6%，台指期夜盘大涨 469 点收 47,482 点，预计今天震荡偏强；美光桃园厂工会说今天照原计划罢工。A 股和港股要到 9:30 才开盘，这期还没有今天的数据。",
+      "relevance": "SpaceX、Meta 的财报暂时把「AI 是泡沫」的担心压下去了，但油价还在 100 美元以上、法国和美国的长期利率都在 5% 以上，钱一贵，估值高的科技股随时会再被拿出来检验；这正是你说的「看不懂就别进场」的那种行情。",
+      "sources": [
+        {
+          "label": "cnbc.com（CNBC：美股收盘）",
+          "url": "https://www.cnbc.com/2026/10/20/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "apnews.com（美联社：油价和美债）",
+          "url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        },
+        {
+          "label": "morningstar.com（道琼斯：斯托克 600 收盘）",
+          "url": "https://www.morningstar.com/news/dow-jones/202610217318/stoxx-europe-600-index-ends-092-higher-at-64449-data-talk"
+        },
+        {
+          "label": "ausecure.com（黄金收盘）",
+          "url": "https://www.ausecure.com/gold-market-close-oct-21-2026/"
+        },
+        {
+          "label": "oneturn.news（法国国债、IEA 和布伦特原油）",
+          "url": "https://oneturn.news/day/2026-10-21/"
+        },
+        {
+          "label": "en.yna.co.kr（韩联社：韩股开盘）",
+          "url": "https://en.yna.co.kr/view/AEN20261022001800320"
+        },
+        {
+          "label": "yna.co.kr（韩联社：开盘后走势）",
+          "url": "https://www.yna.co.kr/view/AKR20261022037200008"
+        },
+        {
+          "label": "techflowpost.com（日经和 KOSPI 开盘）",
+          "url": "https://www.techflowpost.com/en-US/newsletter/140865"
+        },
+        {
+          "label": "money.udn.com（经济日报：台股盘前）",
+          "url": "https://money.udn.com/money/story/5607/9830047"
+        },
+        {
+          "label": "newsquawk.com（Newsquawk：亚太开盘前要闻）",
+          "url": "https://www.newsquawk.com/headlines/newsquawk-daily-asia-pac-opening-news---22nd-october-2026"
+        }
+      ]
+    },
+    {
+      "id": "1022早-7",
+      "section": "国际重大影响",
+      "title": "美国下令非紧急人员和家属撤离沙特：胡塞武装接连袭击沙特机场和关键设施；国务院否认要撤整个海湾，但路透称其他海湾使馆也会让家属先走",
+      "time": "2026-10-21",
+      "summary": "据半岛电视台和路透：美国国务院周三（美国时间）下令驻沙特使团的非紧急政府雇员和家属撤离。发言人皮戈特说，伊朗支持的胡塞武装「越来越多地对沙特采取敌对行动，包括袭击民用机场和其他关键基础设施，造成平民伤亡和严重的出行中断」。他称此前有媒体说美国要撤离整个海湾使馆人员的报道「不准确」，但四名美国官员告诉路透，其他海湾国家的美国使馆也会让家属离开。美国驻利雅得使馆当天发布安全警报，提醒胡塞武装可能再次袭击沙特；今年 3 月伊朗战争开打后，这座使馆和设在里面的中情局站点就曾遭无人机攻击。同期，沙特取消了被称为「沙漠达沃斯」的未来投资倡议大会，英国宣布派「台风」战斗机帮沙特防空。Newsquawk 说，这条消息让美股尾盘的风险情绪降温。",
+      "relevance": "美国开始从沙特撤人，说明战火正在从也门烧进全球最大的产油国之一；沙特的油田和港口一旦被打中，油价就不只是 100 美元的问题，这会直接压到台湾、日本这些靠进口能源的经济体。",
+      "sources": [
+        {
+          "label": "aljazeera.com（半岛电视台/路透）",
+          "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat"
+        },
+        {
+          "label": "aa.com.tr（阿纳多卢社：国务院否认撤离整个海湾）",
+          "url": "https://aa.com.tr/en/americas/us-state-department-denies-gulf-wide-evacuation-plan-says-ordered-departure-applies-only-to-saudi-arabia/4096492"
+        },
+        {
+          "label": "oneturn.news（沙特取消投资大会、英国派战机）",
+          "url": "https://oneturn.news/day/2026-10-21/"
+        }
+      ]
+    },
+    {
+      "id": "1022早-8",
+      "section": "国际重大影响",
+      "title": "【补报】埃博拉传到非洲人口最多的尼日利亚：首都阿布贾确诊一例从乌干达入境的输入病例，是这波疫情波及的第四个非洲国家",
+      "time": "2026-10-20",
+      "summary": "尼日利亚卫生部 10 月 20 日确认，首都阿布贾出现一例埃博拉病例，是本迪布焦（Bundibugyo）型病毒，世卫组织非洲区域办公室随后也发布消息。患者是一名从乌干达来的女性，10 月 7 日出现症状，11 日住进阿布贾一家私立医院，现在已隔离治疗；当局已找出 44 名密切接触者并在跟踪观察，同时加强医院感染控制。这是尼日利亚十多年来第一次出现埃博拉病例，也是这波疫情波及的第四个非洲国家。乌干达说本国目前没有活跃病例，这名女性曾去过刚果（金）东部；肯尼亚有一个聚集性群体、共 9 例，官方说病人都在好转。这波疫情从刚果（金）开始，卫生官员说传播得很快。西非卫生组织已经要求区域内加强监测。",
+      "relevance": "尼日利亚有两亿多人口、是西非的交通枢纽，病毒一旦在这里扩散，就可能从地区疫情变成国际公共卫生事件；对市场来说，这是一个现在还小、但要放在雷达上的风险。",
+      "sources": [
+        {
+          "label": "health.gov.ng（尼日利亚卫生部声明）",
+          "url": "https://health.gov.ng/wp-content/uploads/2026/10/Immediate-Press-statememnt_confirmed-Ebola-in-Nigeria-1.pdf"
+        },
+        {
+          "label": "afro.who.int（世卫组织非洲区域办公室）",
+          "url": "https://afro.who.int/countries/nigeria/news/nigeria-confirms-imported-case-ebola-bundibugyo-virus-disease"
+        },
+        {
+          "label": "bbc.co.uk（BBC 报道）",
+          "url": "https://www.bbc.co.uk/news/articles/cm2l4xw7xpjgo"
+        },
+        {
+          "label": "wahooas.org（西非卫生组织）",
+          "url": "https://www.wahooas.org/web-ooas/news/waho-strengthens-regional-health-vigilance-following-confirmation-ebola-virus-disease-case"
+        }
+      ]
+    },
+    {
+      "id": "1022早-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "以为自己对青霉素过敏？九成可能其实不过敏：澳大利亚发布新指南，鼓励把多年前记下的「过敏」重新检查一遍",
+      "time": "2026-10-21T21:01:00+08:00",
+      "summary": "澳大利亚国家过敏委员会（由澳大拉西亚临床免疫与过敏学会 ASCIA 和患者组织合办）今天配合 ASCIA 新的成人青霉素过敏指南发起宣传：大约 10% 的人自称对青霉素过敏，但真正过敏的不到总人口的 1%；被记为青霉素过敏的人里，超过九成经过正规评估后其实可以用青霉素。常见原因是：小时候生病吃青霉素时出了疹子，就被认定是药物过敏，其实疹子可能是病本身引起的。另外，青霉素皮肤测试阳性的人约一半在五年内会失去反应，真正速发型过敏的人约八成在十年后也能耐受。被错误贴上「过敏」标签，医生就只能换用其他抗生素，研究发现这和住院更久、再住院更多有关，还会助长细菌耐药。新指南把人按风险分级：风险最低的人可以不做测试直接撤掉标签，低风险的人可以在医生监护下口服一次青霉素观察约两小时，中高风险的人要看过敏专科。专家特别强调：千万不要自己试吃青霉素来测试，要先和医生谈。",
+      "relevance": "如果你或家人病历上写着「青霉素过敏」，而且是很多年前留下的，下次看医生时值得问一句要不要重新评估，这可能决定将来生病时能不能用上最对症、最便宜的那种药。",
+      "sources": [
+        {
+          "label": "newshub.medianet.com.au（澳大利亚国家过敏委员会新闻稿）",
+          "url": "https://newshub.medianet.com.au/2026/10/think-youre-allergic-to-penicillin-it-may-be-worth-checking/177808/"
+        },
+        {
+          "label": "allergy.org.au（ASCIA 新指南）",
+          "url": "https://www.allergy.org.au/about-ascia/info-updates/new-ascia-guidelines-adult-penicillin-allergy-management"
+        },
+        {
+          "label": "jaci-global.org（指南论文）",
+          "url": "https://www.jaci-global.org/article/S2772-8293(26)00146-3/fulltext"
+        }
+      ]
+    }
+  ]
+}
