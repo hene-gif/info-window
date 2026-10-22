@@ -1103,5 +1103,414 @@
         "N8"
       ]
     }
-  ]
+  ],
+  "factors": {
+    "updated": "2026-10-22 20:19 台北",
+    "title": "因子叠加",
+    "evidence_tag": "待验证",
+    "disclaimer": "这是描述性仪表，只说明眼下各个压力有多大、往哪边走，不是预测，也没有经过检验〔待验证〕。",
+    "rules": [
+      "百分位：当前值在过去 10 年里排第几。比如 90 表示过去 10 年里有 90% 的时候比现在低。",
+      "压力百分位：数值越高压力越大的指标直接用百分位；越低压力越大的（股票超额收益率）用 100 减百分位。",
+      "强度：压力百分位低于 50 为“低”，50–80 为“中”，80–95 为“高”，95 及以上为“极高”。",
+      "方向：和上一期比，变化幅度达到过去 10 年同样间隔“正常波动”（标准差）的一半以上，往压力大的方向为“加压”，往压力小的方向为“缓解”，否则“持平”。日度数据的上一期是约一周前（5 个交易日），周度和月度数据是上一次发布。",
+      "因子读数：强度取它下面几个指标压力百分位的平均；方向取几个指标变化幅度的平均，按同样规则判断。",
+      "叠加读数：同时满足“强度高或极高”和“方向加压”的因子有几个。0–1 个为“分散”，2 个为“局部叠加”，3 个及以上为“多处叠加”。",
+      "拿不到的数据标“暂缺”，不估算、不补数。"
+    ],
+    "stack": {
+      "count": 1,
+      "level": "分散",
+      "factors": [
+        "F4"
+      ],
+      "high_factors": [
+        "F1",
+        "F3",
+        "F4",
+        "F5"
+      ],
+      "text": "4 个因子处在高位（AI 回报未验证 / 估值、油价 / 通胀、财政压力、仓位拥挤与杠杆），其中同时在加压的有 1 个（财政压力），读数：分散。"
+    },
+    "factors": [
+      {
+        "id": "F1",
+        "name": "AI 回报未验证 / 估值",
+        "question": "股票有多贵？",
+        "indicators": [
+          {
+            "key": "cape",
+            "name": "标普 500 席勒市盈率（CAPE）",
+            "plain": "用过去 10 年平均利润算的市盈率，越高越贵",
+            "unit": "倍",
+            "source": {
+              "title": "multpl.com：S&P 500 Shiller CAPE Ratio by Month",
+              "url": "https://www.multpl.com/shiller-pe/table/by-month",
+              "date": null
+            },
+            "note": "月度数据，当月最新值为 multpl 的即时估算。",
+            "value": 41.08,
+            "display": "41.08",
+            "date": "2026-10-21",
+            "prev_value": 40.81,
+            "prev_date": "2026-10-01",
+            "percentile": 100.0,
+            "pressure_pct": 100.0,
+            "move": 0.24,
+            "window": "2016-11-01 起 121 个观测",
+            "higher_is_pressure": true,
+            "strength": "极高",
+            "direction": "持平",
+            "freq": "月度",
+            "date_label": "2026-10-21"
+          },
+          {
+            "key": "excess_yield",
+            "name": "股票超额收益率（1/CAPE − 10 年期实际利率）",
+            "plain": "买股票比买抗通胀国债多赚多少，越低说明股票越不划算",
+            "unit": "个百分点",
+            "source": {
+              "title": "计算：multpl CAPE + FRED DFII10",
+              "url": "https://fred.stlouisfed.org/series/DFII10",
+              "date": null
+            },
+            "note": "数值越低压力越大，所以压力百分位 = 100 − 百分位。",
+            "value": -0.3357,
+            "display": "-0.34",
+            "date": "2026-10-20",
+            "prev_value": -0.4089,
+            "prev_date": "2026-10-01",
+            "percentile": 1.7,
+            "pressure_pct": 98.3,
+            "move": -0.42,
+            "window": "2016-11-01 起 121 个观测",
+            "higher_is_pressure": false,
+            "strength": "极高",
+            "direction": "持平",
+            "freq": "月度",
+            "date_label": "2026-10-20"
+          }
+        ],
+        "pressure_pct": 99.2,
+        "move": -0.09,
+        "strength": "极高",
+        "direction": "持平"
+      },
+      {
+        "id": "F2",
+        "name": "利率与金融条件",
+        "question": "钱有多贵、多难借？",
+        "indicators": [
+          {
+            "key": "real10",
+            "name": "美国 10 年期实际利率",
+            "plain": "扣掉通胀后的长期借钱成本",
+            "unit": "%",
+            "source": {
+              "title": "FRED DFII10：10-Year TIPS Yield",
+              "url": "https://fred.stlouisfed.org/series/DFII10",
+              "date": null
+            },
+            "note": "",
+            "value": 2.77,
+            "display": "2.77",
+            "date": "2026-10-20",
+            "prev_value": 2.88,
+            "prev_date": "2026-10-13",
+            "percentile": 99.4,
+            "pressure_pct": 99.4,
+            "move": -1.03,
+            "window": "2016-10-24 起 2497 个观测",
+            "higher_is_pressure": true,
+            "strength": "极高",
+            "direction": "缓解",
+            "freq": "日度",
+            "date_label": "2026-10-20"
+          },
+          {
+            "key": "nfci",
+            "name": "芝加哥联储全国金融条件指数（NFCI）",
+            "plain": "0 是历史平均，正数偏紧、负数偏松",
+            "unit": "",
+            "source": {
+              "title": "FRED NFCI：Chicago Fed National Financial Conditions Index",
+              "url": "https://fred.stlouisfed.org/series/NFCI",
+              "date": null
+            },
+            "note": "",
+            "value": -0.496,
+            "display": "-0.496",
+            "date": "2026-10-16",
+            "prev_value": -0.502,
+            "prev_date": "2026-10-09",
+            "percentile": 53.9,
+            "pressure_pct": 53.9,
+            "move": 0.29,
+            "window": "2016-10-28 起 521 个观测",
+            "higher_is_pressure": true,
+            "strength": "中",
+            "direction": "持平",
+            "freq": "周度",
+            "date_label": "2026-10-16"
+          }
+        ],
+        "pressure_pct": 76.7,
+        "move": -0.37,
+        "strength": "中",
+        "direction": "持平"
+      },
+      {
+        "id": "F3",
+        "name": "油价 / 通胀",
+        "question": "物价压力有多大？",
+        "indicators": [
+          {
+            "key": "brent",
+            "name": "布伦特原油现货价",
+            "plain": "国际油价；EIA 现货价，和新闻里常说的期货价可能差几美元",
+            "unit": "美元/桶",
+            "source": {
+              "title": "FRED DCOILBRENTEU：Brent Crude Oil Spot Price（EIA）",
+              "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
+              "date": null
+            },
+            "note": "FRED 现货价通常晚 1–2 天发布。",
+            "value": 115.22,
+            "display": "115.22",
+            "date": "2026-10-20",
+            "prev_value": 125.78,
+            "prev_date": "2026-10-13",
+            "percentile": 96.6,
+            "pressure_pct": 96.6,
+            "move": -2.35,
+            "window": "2016-10-24 起 2534 个观测",
+            "higher_is_pressure": true,
+            "strength": "极高",
+            "direction": "缓解",
+            "freq": "日度",
+            "date_label": "2026-10-20"
+          },
+          {
+            "key": "bei10",
+            "name": "美国 10 年期盈亏平衡通胀率",
+            "plain": "市场预期未来 10 年平均通胀",
+            "unit": "%",
+            "source": {
+              "title": "FRED T10YIE：10-Year Breakeven Inflation Rate",
+              "url": "https://fred.stlouisfed.org/series/T10YIE",
+              "date": null
+            },
+            "note": "",
+            "value": 2.37,
+            "display": "2.37",
+            "date": "2026-10-21",
+            "prev_value": 2.35,
+            "prev_date": "2026-10-14",
+            "percentile": 81.9,
+            "pressure_pct": 81.9,
+            "move": 0.29,
+            "window": "2016-10-24 起 2498 个观测",
+            "higher_is_pressure": true,
+            "strength": "高",
+            "direction": "持平",
+            "freq": "日度",
+            "date_label": "2026-10-21"
+          }
+        ],
+        "pressure_pct": 89.2,
+        "move": -1.03,
+        "strength": "高",
+        "direction": "缓解"
+      },
+      {
+        "id": "F4",
+        "name": "财政压力",
+        "question": "政府借钱有多难？",
+        "indicators": [
+          {
+            "key": "frde",
+            "name": "法国 − 德国 10 年期国债利差",
+            "plain": "借钱给法国比借给德国多要的利息",
+            "unit": "基点",
+            "source": {
+              "title": "Macropole：Spread OAT Bund 10 ans, quotidien（按法国央行 TEC10 与德国央行 10 年期收益率计算）",
+              "url": "https://macropole.fr/s/fr.oat.spread.bund.d",
+              "date": "2026-10-21"
+            },
+            "note": "历史分布用 FRED 月度平均（OECD），最新值用日度收盘值，二者频率不同，百分位为近似。",
+            "value": 154.5,
+            "display": "154.5",
+            "date": "2026-10-21",
+            "prev_value": 132.5,
+            "prev_date": "2026-10-14",
+            "percentile": 100.0,
+            "pressure_pct": 100.0,
+            "move": 3.95,
+            "window": "2016-11-01 起 120 个观测",
+            "higher_is_pressure": true,
+            "strength": "极高",
+            "direction": "加压",
+            "freq": "日度",
+            "date_label": "2026-10-21"
+          },
+          {
+            "key": "tp10",
+            "name": "美国 10 年期期限溢价（Kim-Wright）",
+            "plain": "投资者为长期持有美债多要的补偿，债发得越多通常越高",
+            "unit": "%",
+            "source": {
+              "title": "FRED THREEFYTP10：Term Premium on a 10 Year Zero Coupon Bond",
+              "url": "https://fred.stlouisfed.org/series/THREEFYTP10",
+              "date": null
+            },
+            "note": "",
+            "value": 0.9857,
+            "display": "0.986",
+            "date": "2026-10-16",
+            "prev_value": 1.0694,
+            "prev_date": "2026-10-08",
+            "percentile": 99.4,
+            "pressure_pct": 99.4,
+            "move": -1.45,
+            "window": "2016-10-24 起 2495 个观测",
+            "higher_is_pressure": true,
+            "strength": "极高",
+            "direction": "缓解",
+            "freq": "日度",
+            "date_label": "2026-10-16"
+          }
+        ],
+        "pressure_pct": 99.7,
+        "move": 1.25,
+        "strength": "极高",
+        "direction": "加压"
+      },
+      {
+        "id": "F5",
+        "name": "仓位拥挤与杠杆",
+        "question": "挤得有多满、借了多少钱买股票？",
+        "indicators": [
+          {
+            "key": "margin_yoy",
+            "name": "FINRA 融资余额同比增速",
+            "plain": "散户和机构借钱买股票的余额比一年前多了多少",
+            "unit": "%",
+            "source": {
+              "title": "FINRA：Margin Statistics（月度）",
+              "url": "https://www.finra.org/rules-guidance/key-topics/margin-accounts/margin-statistics",
+              "date": null
+            },
+            "note": "最新余额 1.480 万亿美元（2026-09）。",
+            "value": 31.3859,
+            "display": "+31.4",
+            "date": "2026-09-01",
+            "prev_value": 37.1898,
+            "prev_date": "2026-08-01",
+            "percentile": 78.2,
+            "pressure_pct": 78.2,
+            "move": -0.89,
+            "window": "2016-11-01 起 119 个观测",
+            "higher_is_pressure": true,
+            "strength": "中",
+            "direction": "缓解",
+            "freq": "月度",
+            "date_label": "2026-09 月"
+          },
+          {
+            "key": "ndx_am",
+            "name": "纳指 100 期货：资产管理人净多头占持仓比例",
+            "plain": "大机构在纳指期货上押涨的仓位有多重",
+            "unit": "%",
+            "source": {
+              "title": "CFTC：Traders in Financial Futures，NASDAQ MINI（代码 209742）",
+              "url": "https://publicreporting.cftc.gov/Commitments-of-Traders/TFF-Futures-Only/gpe5-46if",
+              "date": null
+            },
+            "note": "每周五公布，数据截至当周周二。",
+            "value": 26.9477,
+            "display": "26.9",
+            "date": "2026-10-13",
+            "prev_value": 26.0231,
+            "prev_date": "2026-10-06",
+            "percentile": 83.9,
+            "pressure_pct": 83.9,
+            "move": 0.24,
+            "window": "2016-10-25 起 521 个观测",
+            "higher_is_pressure": true,
+            "strength": "高",
+            "direction": "持平",
+            "freq": "周度",
+            "date_label": "2026-10-13"
+          }
+        ],
+        "pressure_pct": 81.1,
+        "move": -0.33,
+        "strength": "高",
+        "direction": "持平"
+      },
+      {
+        "id": "F6",
+        "name": "市场压力 / 波动",
+        "question": "市场有多紧张？",
+        "indicators": [
+          {
+            "key": "vix",
+            "name": "VIX 恐慌指数",
+            "plain": "标普 500 未来 30 天的预期波动",
+            "unit": "",
+            "source": {
+              "title": "CBOE：VIX 历史日线（收盘价）",
+              "url": "https://www.cboe.com/tradable_products/vix/vix_historical_data/",
+              "date": null
+            },
+            "note": "",
+            "value": 16.68,
+            "display": "16.68",
+            "date": "2026-10-21",
+            "prev_value": 16.87,
+            "prev_date": "2026-10-14",
+            "percentile": 47.9,
+            "pressure_pct": 47.9,
+            "move": -0.05,
+            "window": "2016-10-24 起 2545 个观测",
+            "higher_is_pressure": true,
+            "strength": "低",
+            "direction": "持平",
+            "freq": "日度",
+            "date_label": "2026-10-21"
+          },
+          {
+            "key": "ofr",
+            "name": "OFR 金融压力指数",
+            "plain": "美国财政部金融研究办公室汇总 33 个市场指标，0 是平均，正数偏紧张",
+            "unit": "",
+            "source": {
+              "title": "OFR：Financial Stress Index",
+              "url": "https://www.financialresearch.gov/financial-stress-index/",
+              "date": null
+            },
+            "note": "",
+            "value": -1.893,
+            "display": "-1.893",
+            "date": "2026-10-19",
+            "prev_value": -2.154,
+            "prev_date": "2026-10-12",
+            "percentile": 54.0,
+            "pressure_pct": 54.0,
+            "move": 0.44,
+            "window": "2016-10-24 起 2554 个观测",
+            "higher_is_pressure": true,
+            "strength": "中",
+            "direction": "持平",
+            "freq": "日度",
+            "date_label": "2026-10-19"
+          }
+        ],
+        "pressure_pct": 51.0,
+        "move": 0.2,
+        "strength": "中",
+        "direction": "持平"
+      }
+    ]
+  }
 }

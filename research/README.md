@@ -54,6 +54,8 @@
 
 「当下市场信息」页（`#/now`）只读这个文件。猜想、价格和日期都写在这里，页面不另编。`narratives` 空着时，页面显示「本期内容整理中」。`verification_status` 用：待业绩验证、部分支持、业绩支持、业绩打脸、待数据验证。
 
+`factors` 是「因子叠加」栏：`factors[]` 每个因子带 `indicators[]`（当前值、日期、来源、10 年百分位、强度、方向），`stack` 是叠加读数，`rules` 是写死的分级规则。这个字段由本地脚本 `factors.py` 生成，强度只用 低 / 中 / 高 / 极高 / 暂缺，方向只用 加压 / 缓解 / 持平 / 暂缺。没有 `factors` 时这一栏不显示。
+
 ### `known.json`
 
 「已知规律」页（`#/known`）只读这个文件。`intro` 是页首说明。`position.foundation`、`position.our_addition`、`position.open_gaps` 分别是「我们站在哪里」的三列：底座（成熟规律）、我们新增的部分、尚未解决的缺口。`items` 按 `category` 分组。`reliability` 用 `反复验证` / `有争议` / `较新证据有限`。`relation` 用 `底座直接用` / `我们在检验的新增部分` / `注意事项`。论文字段是 `作者`、`年份`、`标题`、`url`。`related_tests` 写检验编号，能对上理论地图或进展里的条目时，芯片会链过去。`method_lessons` 是页尾的「第三轮方法教训」。
