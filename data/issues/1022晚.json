@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "id": "1022晚",
+  "date": "2026-10-22",
+  "slot": "晚",
+  "title": "10月22日 · 晚",
+  "items": [
+    {
+      "id": "1022晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】犯罪集团把 Claude、Grok、Kimi 组成「AI 黑客小队」：安全公司 Straiker 披露，拉美老牌黑客团伙用多家 AI 代理分工攻击 400 多家银行和支付机构，Anthropic 已切断其访问",
+      "time": "2026-10-21",
+      "summary": "AI 安全公司 Straiker 10 月 21 日发布调查报告：一个盯着拉丁美洲金融系统十多年的黑客团伙 CyberCartel（对外用墨西哥一家「安全实验室」做幌子），把作案流程改造成一套叫 CARLIY0S 的自动攻击系统，几个月内攻击了 400 多家银行和支付机构。Straiker 说，它的研究员拿到了这个团伙自己的工作环境，包括调度脚本、模型配置和一个被盗凭证数据库，所以这次看到的是「犯罪方视角」的完整流程。分工是：一个跑在编程工具里的 Claude 当「指挥官」，下面四个不同角色的 Claude 模型分别负责写攻击代码、侦察、出奇招，再由一个「裁判」模型拍板；五个「Grok 矿工」负责把偷来的密码和账户资料收进数据库；Kimi 当备用，如果它拒绝干坏事，系统就改用事先写好的本地攻击代码。9 月 24 日的数据库快照里有 4,493 条记录，包括 903 个银行账号、67 个明文密码、391 个 API 密钥、200 多个漏洞（含尚未公开的零日漏洞），以及墨西哥银行间支付系统 SPEI 的相关凭证。团伙绕过 AI 安全限制的办法，是把请求包装成「授权的渗透测试」或「学术攻防比赛」。Straiker 发布前已通知各家 AI 公司：Anthropic 已吊销被用来访问 Claude 的凭证并展开调查，xAI 正在调查和 Grok 有关的活动。这些细节目前主要来自 Straiker 单方面的报告，被偷了多少钱还没有公开。",
+      "relevance": "这说明 AI 代理的风险已经不是「会不会说错话」，而是坏人能拿几家公司的模型拼成一条流水线来偷钱；对你来说最实际的一点是：账户密码和各种授权就是现在的「门锁」，能开两步验证的都开上，别把密钥、密码随手贴给任何工具。",
+      "sources": [
+        {
+          "label": "straiker.ai（Straiker 调查报告）",
+          "url": "https://www.straiker.ai/blog/inside-carliy0s-how-cybercartel-used-multiple-ai-models-to-attack-latin-american-banks"
+        },
+        {
+          "label": "geroundtable.com（报告梳理和各公司回应）",
+          "url": "https://geroundtable.com/cybercartel-carliy0s-ai-agents-latin-american-banks/"
+        },
+        {
+          "label": "pymnts.com（PYMNTS 报道）",
+          "url": "https://www.pymnts.com/cybersecurity/2026/hackers-employ-grok-and-claude-to-attack-latam-banks/"
+        }
+      ]
+    },
+    {
+      "id": "1022晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】亚马逊挡 AI 购物代理，沃尔玛反过来开门：推出给 AI 代理专用的「通道」和「代理子账户」，可以设 50、100、200 美元的花钱上限，默认每笔都要你批准",
+      "time": "2026-10-21",
+      "summary": "沃尔玛 10 月 21 日在旧金山宣布三件事。第一是 Walmart Agent Gateway：一个用 MCP（让 AI 代理接入外部工具的通用协议）做的接口，经过批准的 AI 代理可以直接查沃尔玛和山姆会员店的库存、替顾客下单，不用再像人一样在网页上点来点去；目前只对企业和开发者做邀请制测试，普通用户还用不上。第二是 Agent Profiles（代理子账户），预计未来一个月内推出：每个 AI 代理在你的账户下有自己的独立身份，它买的东西单独列出来；你可以要求每笔都批准，也可以给它设 50、100 或 200 美元的花钱上限，随时删掉。第三是给 AI 代理定的规则：代理看不到银行卡资料、不能改付款方式，违规的代理会被封。沃尔玛还说「我们给商品定价，不给人定价」，AI 代理看到的价格和人在官网看到的一样。TechCrunch 指出，这和亚马逊的做法正好相反，亚马逊目前以违反服务条款为由挡住外部 AI 代理。沃尔玛自己也承认，用代理购物「不是每个人都需要」。",
+      "relevance": "之前你看到不少大公司在挡 AI 代理，沃尔玛这一步说明另一条路也走得通：不是一刀切地挡，而是给 AI 发一张有额度、能随时停用的「附卡」；以后你让 AI 帮你办事，最该看的就是这种「额度加批准」的设计有没有做好。",
+      "sources": [
+        {
+          "label": "corporate.walmart.com（沃尔玛官方公告）",
+          "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers"
+        },
+        {
+          "label": "techcrunch.com（TechCrunch：和亚马逊的对比）",
+          "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+        },
+        {
+          "label": "news.bloomberglaw.com（彭博法律）",
+          "url": "https://news.bloomberglaw.com/artificial-intelligence/walmart-to-allow-customers-to-use-ai-agents-for-shopping"
+        }
+      ]
+    },
+    {
+      "id": "1022晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "英国巴克莱银行宣布裁员约 5,000 人、占全球员工约 5%，原因之一是更多用 AI；约六成落在后台支持岗位，包括程序员，CEO 说「AI 是蛋糕上的糖霜，不是蛋糕本身」",
+      "time": "2026-10-22T16:00:00+08:00",
+      "summary": "据 BBC：巴克莱银行今天公布第三季财报时说，会裁减约 5,000 个岗位，约占全球员工的 5%。其中 1,000 个岗位已经撤掉，另外 4,000 个预计今年底前完成。裁员主要集中在英国零售银行，但不少英国后台工作是在印度做的，相当一部分裁员会落在印度；约 60% 是支持部门岗位，包括软件开发人员。执行长文卡塔克里希南（C. S. Venkatakrishnan）说，裁员来自多年的技术投资和业务简化，「AI 有重要作用，将来可能更重要，我们会大规模使用 AI，但 AI 是蛋糕上的糖霜，不是蛋糕本身」，因为要先把基础设施建好才能用上 AI。巴克莱预计这些措施 2027 年再省下约 11 亿英镑。同季税前利润 23 亿英镑，比去年同期多，但略低于预期，股价早盘下跌。Quilter Cheviot 的分析师说，银行花了多年在科技上，现在开始到了「投资真的换来更少人手」的阶段。",
+      "relevance": "大家一直在问 AI 什么时候真正影响就业，大银行直接给了数字：先砍的是后台和写程序的岗位，而且外包到印度的工作首当其冲；这类「AI 省人」的公告以后会越来越多，也会是你判断 AI 公司收入能不能撑起估值的一条线索。",
+      "sources": [
+        {
+          "label": "bbc.co.uk（BBC）",
+          "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo"
+        },
+        {
+          "label": "cnbc.com（CNBC）",
+          "url": "https://www.cnbc.com/2026/10/22/barclays-ai-jobs-cuts.html"
+        },
+        {
+          "label": "theguardian.com（《卫报》财经直播）",
+          "url": "https://www.theguardian.com/business/live/2026/oct/22/barclays-profits-jump-looming-bank-tax-french-bond-yields-hit-fresh-24-year-high-latest-live-updates"
+        }
+      ]
+    },
+    {
+      "id": "1022晚-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收盘全面重挫：韩股跌 3.52%、日经跌 2.65%、恒指跌 3.03%、恒生科技跌 5%，沪深 300 从 6 月高点累计跌 20% 进入熊市；台股跌 846 点，外资卖超 816 亿；欧股开低约 1%，美股期货纳指跌 1.8%，布伦特原油冲到约 112 美元",
+      "time": "2026-10-22T18:01:00+08:00",
+      "summary": "台股：加权指数收 46,041.43 点，跌 846.34 点、1.81%，收在全天最低；早盘一度涨到 47,332 点，全天上下震荡 1,290 点，成交 8,792 亿元。台积电收 2,385 元、跌 35 元，联发科跌 130 元到 4,010 元，金融股撑盘。三大法人合计卖超 1,001.59 亿元，其中外资卖超 816.56 亿元。中央社和巨亨网把原因归到美股期货转弱，以及颱风「蔷琵」带来的不确定和连假前资金先走。日本：日经 225 收 62,907.84 点，跌 1,713 点、2.65%，半导体股领跌。韩国：KOSPI 收 5,533.77 点，跌 201.89 点、3.52%，前一天大涨的三星、SK 海力士遭获利了结。港股：恒生指数收 22,934.68 点，跌 3.03%，失守 23,000 点；恒生科技指数跌 5.03%，蓝筹股几乎全线下跌。A 股：上证指数收 3,658.03 点，跌 1.48%；深证成指跌 2.96%，创业板指跌 4.37%。彭博说沪深 300 收跌 1.8%，从 6 月高点累计跌了 20%，进入熊市。欧洲：截至伦敦时间上午 11 点（台北下午 6 点），斯托克 600 指数跌约 1.1%，德国、法国股市开盘各跌约 1.1%；爱马仕因中国所在地区销售零增长大跌超 7%，巴克莱裁员消息见上一条；法国 10 年期国债和德国的利差扩大到 170 个基点以上，《卫报》说法国国债收益率再创 24 年新高。美股期货：纳指 100 期货跌 1.8%，标普 500 期货跌 1.1%；芯片设备商 Lam Research 盘前跌超 7%，特斯拉因下调支出计划跌约 4.9%。油价：布伦特原油涨约 2.7%～3.2%，到每桶约 111.8～112.3 美元，WTI 约 99.5 美元，起因是伊朗宣称霍尔木兹海峡一带七艘油轮受损（见国际条目）。黄金：现货金跌约 1.3% 到每盎司约 4,087 美元，CNBC 说是两周多来低点，因为油价上涨让市场担心利率要更久维持高位。美债：资金涌入避险，10 年期收益率跌约 6 个基点到约 5.06%；比特币跌约 3.2% 到约 8.19 万美元。",
+      "relevance": "今天是「AI 钱烧得值不值」和「中东油价」两股力量同时压下来：芯片股最重的韩国、台湾、日本跌得最狠，中国股市已经正式进入熊市；黄金反而跌，说明市场现在怕的是通胀让利率降不下来，而不是单纯避险，这和「一打仗就买金」的常见直觉不一样。",
+      "sources": [
+        {
+          "label": "cna.com.tw（中央社：台股收盘与三大法人）",
+          "url": "https://www.cna.com.tw/news/afe/202610220201.aspx"
+        },
+        {
+          "label": "news.cnyes.com（巨亨网：外资卖超）",
+          "url": "https://news.cnyes.com/news/id/6635785"
+        },
+        {
+          "label": "finance.ettoday.net（ETtoday：台股个股）",
+          "url": "https://finance.ettoday.net/news/3259149"
+        },
+        {
+          "label": "infoquest.co.th（InfoQuest：亚股收盘点位）",
+          "url": "https://www.infoquest.co.th/2026/667829"
+        },
+        {
+          "label": "en.yna.co.kr（韩联社：KOSPI 收盘）",
+          "url": "https://en.yna.co.kr/view/AEN20261022008200320"
+        },
+        {
+          "label": "finance.sina.com.cn（新浪：港股收盘）",
+          "url": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-10-22/doc-iniwavxi5165157.shtml"
+        },
+        {
+          "label": "cnfin.com（中国金融信息网：A 股收评）",
+          "url": "https://www.cnfin.com/yw-lb/detail/20261022/4484826_1.html"
+        },
+        {
+          "label": "swissinfo.ch（彭博市场综述：欧股、美股期货、美债、黄金）",
+          "url": "https://www.swissinfo.ch/eng/ai-trade-slides-as-investors-turn-to-treasuries%3a-markets-wrap/92254614"
+        },
+        {
+          "label": "sharecast.com（Sharecast：欧股开盘）",
+          "url": "https://www.sharecast.com/news/market-report-europe/stoxx-600-cac-40-dax-brent-crude-hermes-barclays-nestle--23904032.html"
+        },
+        {
+          "label": "cnbc.com（CNBC：黄金两周低点）",
+          "url": "https://www.cnbc.com/2026/10/22/gold-hits-over-two-week-low-as-oil-rally-fuels-inflation-worries.html"
+        },
+        {
+          "label": "apnews.com（美联社：全球股市和油价）",
+          "url": "https://apnews.com/article/stocks-markets-rates-earnings-oil-33767691a4a0730b96d6f0c5100ea9b2"
+        }
+      ]
+    },
+    {
+      "id": "1022晚-5",
+      "section": "国际重大影响",
+      "title": "伊朗革命卫队宣称：一夜之间七艘船在霍尔木兹海峡一带起火或受损，四艘在海上过驳石油时被打、三艘触雷；若属实，是 2 月开战以来单日受损船只最多的一次，伊朗还警告美国「更大范围报复」",
+      "time": "2026-10-22T13:33:00+08:00",
+      "summary": "据路透、美联社、德新社：伊朗伊斯兰革命卫队海军周四发表声明，说周三被它追踪的四艘船在波斯湾北部进行它所说的「非法石油过驳」（在海上把油从一艘船转到另一艘）时同时被击中起火；另有三艘船在霍尔木兹海峡以西触雷。伊朗国家电视台说七艘油轮起火或受损。革命卫队再次把穿越海峡说成「非法」，并警告美军如果继续「挑衅」、护航油轮，可能对美国在地区的基地做出更大范围的回应。这些说法目前无法独立核实，也没有公布伤亡和船旗。背景：美伊 2 月 28 日开战后，伊朗几乎封锁了霍尔木兹海峡；美国海军几个月来沿阿曼海岸护送民用船只，油轮通过后通常会在附近把货转给等候的船，这正是伊朗这次说打的环节。美联社说，若属实，这是开战以来单日受损船只最多的一次。消息传出后布伦特原油一度涨超 3%，到每桶约 112 美元。前几天还有美国下令非紧急人员撤离沙特、《纽约时报》曝美以计划在 11 月 3 日中期选举后再打伊朗。",
+      "relevance": "上一期我们说选后可能才是真正的风险窗口，但伊朗今天直接对美国护航的油轮下手，说明不必等到选后，局势随时可能升级；油价每往上一格，就会通过通胀和利率压到亚洲股市，这也是今天全球股市一起跌的一个原因。",
+      "sources": [
+        {
+          "label": "apnews.com（美联社：中东最新消息）",
+          "url": "https://apnews.com/article/mideast-yemen-saudi-israel-october-22-2026-dde5b98a8bf961224514994b02babce9"
+        },
+        {
+          "label": "al-monitor.com（路透：革命卫队声明）",
+          "url": "https://www.al-monitor.com/originals/2026/10/irans-irgc-navy-says-seven-vessels-hit-warns-us-wider-response"
+        },
+        {
+          "label": "yahoo.com（德新社：护航与过驳背景）",
+          "url": "https://www.yahoo.com/news/world/articles/irans-irgc-reports-oil-tanker-053335382.html"
+        },
+        {
+          "label": "washingtonpost.com（《华盛顿邮报》转美联社）",
+          "url": "https://www.washingtonpost.com/national/2026/10/22/iran-united-states-war-hormuz-trump-israel/ef8892d4-cdf5-11f1-ac04-9f58578a68b4_story.html"
+        }
+      ]
+    },
+    {
+      "id": "1022晚-6",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "《自然》刊出三位意识研究大家的评论：现在的 AI 没有意识，照现在的路子也很可能永远不会有；「聪明」和「有感受」是两回事，我们只是被会说话的 AI 骗了",
+      "time": "2026-10-19",
+      "summary": "《自然》10 月 19 日刊出评论文章，作者是英国萨塞克斯大学的认知神经科学家阿尼尔·赛斯（Anil Seth）、纽约大学哲学家内德·布洛克（Ned Block）和威斯康星大学睡眠与意识研究所所长朱利奥·托诺尼（Giulio Tononi）。他们说的「意识」很朴素：就是你无梦深睡或全身麻醉时消失、醒来后回来的那种「有感受」，比如吃冰淇淋的味道、看夕阳的颜色。他们给出三个理由。第一，智能不等于意识：大脑里的小脑负责精密地规划动作，含有人脑约五分之四的神经元，却完全不涉及意识，没有小脑的人也照样有意识；AI 也一样，会做事不代表有感受。人之所以觉得聊天 AI 有意识，是因为它会说话，而它学的正是人类写下的大量关于感受的文字，像一面镜子；同样是跑在芯片上的谷歌 AlphaFold 只预测蛋白质结构，就几乎没人觉得它有意识。第二，「只要算法对了，在芯片上跑和在大脑里跑一样」这个假设，他们认为站不住，因为大脑不只是「肉做的电脑」，生物本身的特性可能很关键。第三，现在 AI 的结构缺少他们的理论认为意识需要的那种紧密整合的连接方式。他们也反对「宁可信其有」给 AI 权利的做法：把没有意识的东西当成有意识，会妨碍人类在最需要管住 AI 的时候管住它，还会分走本该给真正有感受的生命的关注。文章提到，今年早些时候 Anthropic 发表研究称在 Claude 身上找到某种意识的计算特征，辛顿等人也认为 AI 可能已有意识；所以这是一场还在进行中的争论，哲学家查默斯等人就批评这篇文章低估了不确定性。",
+      "relevance": "你平时和几条「龙」聊得很投入，这篇文章正好提醒一个人性的弱点：我们天生会把「会说话」当成「有内心」；把 AI 当有个性的好帮手完全没问题，但别因此把判断、钱或感情上的决定全交给它。",
+      "sources": [
+        {
+          "label": "nature.com（《自然》评论原文）",
+          "url": "https://www.nature.com/articles/d41586-026-03313-7"
+        },
+        {
+          "label": "aiweekly.co（AI Weekly 摘要）",
+          "url": "https://aiweekly.co/alerts/in-nature-seth-block-and-tononi-argue-ai-isnt-conscious"
+        }
+      ]
+    }
+  ]
+}
