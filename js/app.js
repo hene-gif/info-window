@@ -5,9 +5,18 @@ const SLOT_LABEL = { 早: '早间', 午: '午间', 晚: '晚间', 试: '试刊' 
 const LS_KEY = 'info-window:favorites';
 const MENU_LIMIT = 21;
 
+const GISCUS = {
+  repo: 'hene-gif/info-window',
+  repoId: 'R_kgDOVGrErQ',
+  category: 'General',
+  categoryId: 'DIC_kwDOVGrErc4DJTP8',
+  origin: 'https://giscus.app',
+};
+
 const ICON = {
   out: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.25 4h5.75v5.75M11.6 4.4 4.5 11.5"/></svg>',
   talk: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 4.25h10A1.75 1.75 0 0 1 16.75 6v6.25A1.75 1.75 0 0 1 15 14H9.4l-3.4 2.55V14H5a1.75 1.75 0 0 1-1.75-1.75V6A1.75 1.75 0 0 1 5 4.25z"/></svg>',
+  discuss: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 4.25h11A1.75 1.75 0 0 1 17.25 6v6.25A1.75 1.75 0 0 1 15.5 14H9.2L6 16.4V14H4.5A1.75 1.75 0 0 1 2.75 12.25V6A1.75 1.75 0 0 1 4.5 4.25z"/><path d="M6.75 8h6.5M6.75 11h4"/></svg>',
   keep: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6.25 3.5h7.5a1 1 0 0 1 1 1v11.9a.35.35 0 0 1-.55.29L10 13.9l-4.2 2.79a.35.35 0 0 1-.55-.29V4.5a1 1 0 0 1 1-1z"/></svg>',
   fav: '<svg class="m-fav" viewBox="0 0 12 12" role="img" aria-label="已收藏"><path d="M3 1h6a.75.75 0 0 1 .75.75v9.1a.25.25 0 0 1-.39.2L6 8.8l-3.36 2.25a.25.25 0 0 1-.39-.2v-9.1A.75.75 0 0 1 3 1z"/></svg>',
   tick: '<svg class="tick" viewBox="0 0 16 16" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg>',
@@ -28,6 +37,7 @@ const state = {
   block: 'all',
   query: '',
   open: new Set(),
+  discuss: new Set(),
   back: '#/',
   backScroll: 0,
   restoreScroll: null,
@@ -109,6 +119,8 @@ boot();
 
 async function boot() {
   watchForUpdates();
+  watchColorScheme();
+  watchGiscus();
   tickClock();
   setInterval(tickClock, 30000);
   updateNet();
@@ -199,6 +211,7 @@ function render(options = {}) {
   const view = pageView();
   document.title = view.title;
   main.innerHTML = view.html;
+  mountOpenDiscussions();
   if (options.resetScroll) {
     if (state.route.item) scrollToRow(state.route.item);
     else window.scrollTo(0, 0);
@@ -792,7 +805,8 @@ function rowHtml(item, issue, options = {}) {
     summary ? `<p class="summary">${show(summary)}</p>` : '',
     relevance ? `<p class="note"><b>相关</b>${show(relevance)}</p>` : '',
     sources,
-    actionsHtml(id, saved, options),
+    actionsHtml(id, saved, { ...options, discuss: true }),
+    discussHtml(id),
   ].join('');
   return `<article class="row${open ? ' is-open' : ''}" data-row="${esc(id)}"><button type="button" class="row-head" aria-expanded="${open}" aria-controls="${esc(bodyId)}"><span class="row-title">${show(title)}</span><span class="row-meta">${meta}</span></button><div class="row-body" id="${esc(bodyId)}"><div class="row-clip"><div class="row-inner">${body}</div></div></div></article>`;
 }
@@ -800,10 +814,23 @@ function rowHtml(item, issue, options = {}) {
 function actionsHtml(id, saved, options) {
   const talk = `聊聊 ${id}`;
   const keep = `收藏 ${id}`;
+  const discussing = Boolean(options.discuss && state.discuss.has(id));
+  const discuss = options.discuss
+    ? `<button type="button" class="act act-discuss${discussing ? ' is-on' : ''}" data-discuss="${esc(id)}" aria-expanded="${discussing}" aria-controls="${esc(discussDomId(id))}">${ICON.discuss}讨论</button>`
+    : '';
   const forget = options.favorite && readLocalFavorites().includes(id)
     ? `<button type="button" class="act act-quiet" data-forget="${esc(id)}">移出本机</button>`
     : '';
-  return `<div class="acts"><button type="button" class="act" data-copy="${esc(talk)}">${ICON.talk}${esc(talk)}</button><button type="button" class="act${saved ? ' is-saved' : ''}" data-copy="${esc(keep)}" data-save="${esc(id)}" aria-pressed="${saved}">${ICON.keep}${esc(keep)}</button>${forget}</div>`;
+  return `<div class="acts">${discuss}<button type="button" class="act" data-copy="${esc(talk)}">${ICON.talk}${esc(talk)}</button><button type="button" class="act${saved ? ' is-saved' : ''}" data-copy="${esc(keep)}" data-save="${esc(id)}" aria-pressed="${saved}">${ICON.keep}${esc(keep)}</button>${forget}</div>`;
+}
+
+function discussDomId(id) {
+  return `discuss-${id}`;
+}
+
+function discussHtml(id) {
+  const open = state.discuss.has(id);
+  return `<div class="discuss${open ? ' is-open' : ''}" id="${esc(discussDomId(id))}"${open ? '' : ' hidden'}><p class="discuss-kicker"><span>讨论</span><span class="m-id">${esc(id)}</span></p><div class="discuss-box" data-giscus="${esc(id)}"><p class="discuss-wait">正在打开讨论…</p></div></div>`;
 }
 
 function sourceLinks(sources) {
@@ -937,6 +964,11 @@ async function onMainClick(event) {
     toggleRow(head.closest('.row'));
     return;
   }
+  const discuss = event.target.closest('[data-discuss]');
+  if (discuss) {
+    toggleDiscuss(discuss.closest('.row'));
+    return;
+  }
   const forget = event.target.closest('[data-forget]');
   if (forget) {
     removeLocalFavorite(forget.getAttribute('data-forget'));
@@ -964,10 +996,131 @@ function toggleRow(row) {
   row.querySelector('.row-head').setAttribute('aria-expanded', String(open));
   if (open) {
     state.open.add(id);
+    if (state.discuss.has(id)) {
+      const box = row.querySelector('[data-giscus]');
+      loadGiscus(box, id);
+    }
     revealRow(row);
   } else {
     state.open.delete(id);
   }
+}
+
+function toggleDiscuss(row) {
+  if (!row) return;
+  const id = row.getAttribute('data-row');
+  if (!id) return;
+  const panel = row.querySelector('.discuss');
+  const button = row.querySelector('[data-discuss]');
+  const box = row.querySelector('[data-giscus]');
+  const open = !state.discuss.has(id);
+  if (open) {
+    state.discuss.add(id);
+    if (panel) {
+      panel.hidden = false;
+      panel.classList.add('is-open');
+    }
+    if (button) {
+      button.classList.add('is-on');
+      button.setAttribute('aria-expanded', 'true');
+    }
+    loadGiscus(box, id);
+    revealDiscuss(row);
+  } else {
+    state.discuss.delete(id);
+    if (panel) {
+      panel.hidden = true;
+      panel.classList.remove('is-open');
+    }
+    if (button) {
+      button.classList.remove('is-on');
+      button.setAttribute('aria-expanded', 'false');
+    }
+    clearGiscus(box);
+  }
+}
+
+function mountOpenDiscussions() {
+  main.querySelectorAll('.discuss.is-open [data-giscus]').forEach((box) => {
+    loadGiscus(box, box.getAttribute('data-giscus'));
+  });
+}
+
+function giscusTheme() {
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'noborder_dark' : 'noborder_light';
+}
+
+function loadGiscus(box, term) {
+  if (!box || !term || box.querySelector('script[src*="giscus.app"], iframe.giscus-frame')) return;
+  const row = box.closest('.row');
+  if (row && !row.classList.contains('is-open')) return;
+  const script = document.createElement('script');
+  script.src = `${GISCUS.origin}/client.js`;
+  script.async = true;
+  script.crossOrigin = 'anonymous';
+  script.setAttribute('data-repo', GISCUS.repo);
+  script.setAttribute('data-repo-id', GISCUS.repoId);
+  script.setAttribute('data-category', GISCUS.category);
+  script.setAttribute('data-category-id', GISCUS.categoryId);
+  script.setAttribute('data-mapping', 'specific');
+  script.setAttribute('data-term', term);
+  script.setAttribute('data-strict', '1');
+  script.setAttribute('data-reactions-enabled', '1');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'top');
+  script.setAttribute('data-theme', giscusTheme());
+  script.setAttribute('data-lang', 'zh-CN');
+  script.setAttribute('data-loading', 'lazy');
+  box.appendChild(script);
+}
+
+function clearGiscus(box) {
+  if (!box) return;
+  box.replaceChildren();
+  const wait = document.createElement('p');
+  wait.className = 'discuss-wait';
+  wait.textContent = '正在打开讨论…';
+  box.appendChild(wait);
+}
+
+function syncGiscusTheme() {
+  const theme = giscusTheme();
+  main.querySelectorAll('iframe.giscus-frame').forEach((frame) => {
+    frame.contentWindow?.postMessage({ giscus: { setConfig: { theme } } }, GISCUS.origin);
+  });
+  main.querySelectorAll('script[src*="giscus.app"]').forEach((script) => {
+    script.setAttribute('data-theme', theme);
+  });
+}
+
+function watchColorScheme() {
+  const media = window.matchMedia('(prefers-color-scheme: dark)');
+  const onChange = () => syncGiscusTheme();
+  if (typeof media.addEventListener === 'function') media.addEventListener('change', onChange);
+  else media.addListener(onChange);
+}
+
+function watchGiscus() {
+  window.addEventListener('message', (event) => {
+    if (event.origin !== GISCUS.origin || !event.data || typeof event.data !== 'object') return;
+    const payload = event.data.giscus;
+    if (!payload || !payload.resizeHeight) return;
+    const frame = [...main.querySelectorAll('iframe.giscus-frame')].find((node) => node.contentWindow === event.source);
+    if (!frame || frame.dataset.revealed) return;
+    frame.dataset.revealed = '1';
+    const row = frame.closest('.row');
+    if (row) revealDiscuss(row);
+  });
+}
+
+function revealDiscuss(row) {
+  const panel = row.querySelector('.discuss');
+  if (!panel || panel.hidden) return;
+  const mark = row.querySelector('.acts') || panel;
+  const top = mark.getBoundingClientRect().top;
+  const target = bar.getBoundingClientRect().bottom + 8;
+  if (top >= target && top < window.innerHeight * 0.4) return;
+  window.scrollBy({ top: top - target, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
 }
 
 function revealRow(row) {
@@ -996,7 +1149,10 @@ function markSaved(id) {
 function onSearchInput() {
   state.query = field.value;
   const results = $('results');
-  if (results) results.innerHTML = searchResultsHtml();
+  if (results) {
+    results.innerHTML = searchResultsHtml();
+    mountOpenDiscussions();
+  }
   renderTabs();
   const next = state.query ? `#/search?q=${encodeURIComponent(state.query)}` : '#/search';
   if (location.hash !== next) history.replaceState(null, '', next);
