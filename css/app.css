@@ -970,6 +970,70 @@ main {
   color: var(--muted);
 }
 
+.act-discuss {
+  min-width: 72px;
+}
+
+.act-discuss.is-on {
+  border-color: transparent;
+  background: var(--accent-wash);
+  color: var(--accent-text);
+}
+
+.act-discuss.is-on svg { fill: none; }
+
+.discuss {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 0.5px solid var(--line);
+  animation: fade-in 220ms var(--ease);
+}
+
+.discuss-kicker {
+  display: flex;
+  align-items: baseline;
+  color: var(--accent-text);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.discuss-kicker .m-id {
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.discuss-kicker .m-id::before {
+  content: "·";
+  margin: 0 6px;
+  color: var(--faint);
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.discuss-box {
+  min-height: 112px;
+  margin: 2px -6px 0;
+}
+
+.discuss-wait {
+  padding: 16px 6px 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.discuss-box:has(iframe:not(.giscus-frame--loading)) .discuss-wait { display: none; }
+
+.giscus,
+.giscus-frame {
+  width: 100%;
+  border: 0;
+}
+
+.giscus-frame { color-scheme: light dark; }
+
 mark {
   padding: 0 1px;
   border-radius: 3px;
@@ -1401,7 +1465,7 @@ mark {
 }
 
 @media print {
-  .bar, .skip, .acts, #toast { display: none !important; }
+  .bar, .skip, .acts, .discuss, #toast { display: none !important; }
   .row-body { display: block; visibility: visible; }
   .row-inner { opacity: 1; transform: none; }
   .row { break-inside: avoid; }

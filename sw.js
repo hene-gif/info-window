@@ -37,8 +37,16 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const request = event.request;
   if (request.method !== 'GET') return;
+  let url;
+  try {
+    url = new URL(request.url);
+  } catch {
+    return;
+  }
+  // 只处理本站同源请求。giscus.app、GitHub 等跨域讨论请求必须交给浏览器，不能进缓存或被拦下。
+  if (url.origin !== self.location.origin) return;
   if (!request.url.startsWith(self.registration.scope)) return;
-  if (new URL(request.url).pathname.endsWith('/sw.js')) return;
+  if (url.pathname.endsWith('/sw.js')) return;
 
   event.respondWith(networkFirst(event));
 });
