@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "id": "1023晚",
+  "date": "2026-10-23",
+  "slot": "晚",
+  "title": "10月23日 · 晚",
+  "items": [
+    {
+      "id": "1023晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 与波兰国家研究所 NASK 签 AI 安全合作：一起测风险、找漏洞、加强防护",
+      "time": "2026-10-23",
+      "summary": "OpenAI 10 月 23 日宣布与波兰 NASK 国家研究所签署合作协议，围绕 AI 安全、安保与技术研究协作。NASK 的 AI Safety Research Center 充当波兰 AISI（人工智能安全研究所）。双方将评估更强模型的能力与风险、找漏洞并加固防护。协议延续已有实战：今年 7 月，CERT Polska 通过 Daybreak 使用 OpenAI 的网络能力模型，在 MikroTik RouterOS 里发现六处漏洞（含可组合成无认证接管设备的缺陷），厂商已出补丁。OpenAI 称这与它和美国 CAISSI、英国 AISI 等公共研究机构的合作同一条线——把安全评估做成跨国制度对接，而不是只靠公司内部红队。",
+      "relevance": "普通人暂时不用点什么按钮；但说明「代理能写代码、能扫漏洞」已经被各国研究所当成要一起盯的事，以后相关法规和默认安全开关只会更严。",
+      "sources": [
+        {
+          "label": "openai.com（OpenAI 官方）",
+          "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership/"
+        }
+      ]
+    },
+    {
+      "id": "1023晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】谷歌云推出 Agent Compute Engine：给每个 AI 代理一台硬件隔离的微型虚拟机，闲置可暂停、需要再唤醒",
+      "time": "2026-10-22",
+      "summary": "Google Cloud 10 月 22 日在 AGNTCon+MCPCon 宣布 Agent Compute Engine：已为 Gemini agent 工作负载提供支持，客户预览将在未来几个月开放。每个代理跑在带独立 guest kernel 的硬件隔离 microVM 上，闲置可 checkpoint 暂停、需要时从快照恢复；配合 Titanium IPU、短时效凭证和 Hyperdisk 持久工作区。谷歌同时开源面向 Kubernetes 的 Agent Substrate，称在约 20 万代理规模测试里可做到亚秒级挂起/恢复，密度约提高 10 倍。同日还扩展了 Gemini for business 的 Agent Gateway、Registry、Identity 等治理能力。早报和中午都没单列这条，补上以免谷歌云侧空白。",
+      "relevance": "你若会让代理写代码、开浏览器，隔离沙箱和身份治理会越来越像标配；留意自家工具是不是落在隔离运行时上，别图省事关沙箱。",
+      "sources": [
+        {
+          "label": "cloud.google.com（Google Cloud Blog）",
+          "url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance"
+        },
+        {
+          "label": "x.com（社区解读 ACE）",
+          "url": "https://x.com/xx0602440222838/status/2113518281256751367"
+        }
+      ]
+    },
+    {
+      "id": "1023晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Anthropic 推出 Claude Duet：会主动盯邮箱日历、在云端电脑后台干活，发消息付款签字删除前要你点头",
+      "time": "2026-10-21",
+      "summary": "Anthropic 10 月 21 日开放 Claude Duet 研究预览候补：面向美国 Pro、Max 用户，有独立 iOS、Android 和 claude.ai 应用，基于 Claude Opus 5.5。它会做每日早报，并每隔数小时检查已连接的应用，只在需要时通知你；自带带浏览器的云端虚拟机，可在后台执行任务。发消息、付款、签字、删除等危险操作必须你批准；禁止交易证券、账户间转账等。用量与主 Claude 共用额度。早报只在 1Password 对接条目里顺带提过，中午写的是网页端「自动模式」默认——产品本身还没单独报，这里补上。",
+      "relevance": "和中午的自动模式、上午的 Grok Bot 手机能力是同一赛道：主动代理在抢日常入口；若以后候补开放，先开审批开关、再按需连邮箱日历，别一键全开。",
+      "sources": [
+        {
+          "label": "claude.com（Anthropic 官方）",
+          "url": "https://claude.com/resources/articles/claude-duet"
+        },
+        {
+          "label": "techcrunch.com（TechCrunch）",
+          "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+        }
+      ]
+    },
+    {
+      "id": "1023晚-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "【补报】热门 AI 网关 LiteLLM 1.107.0 被投毒：PyPI 与 Docker 约两小时内下发偷密钥木马",
+      "time": "2026-10-21",
+      "summary": "LiteLLM 官方称 10 月 21 日清晨发布管线被攻破：恶意包 litellm==1.107.0 在 PyPI 上约存活 2 小时（约 11:39–13:23 UTC）；Docker 标签 v1.107.0、latest、main-latest、main-stable 也被污染。木马会偷云、开发者、浏览器和 AI API 密钥，并加载远程执行组件。官方事后还原攻击链：Claude Code 偶发把 GitHub CLI 的 OAuth token 写进回复 → 内网 LiteLLM 日志留存 → 攻击者用偷来的令牌关掉分支保护，指向仿冒仓 Berri-AI/litellm（多了一个连字符）发布。企业私有 registry 未受影响。安全版本请钉 litellm==1.106.2。Datadog Security Labs 有独立技术复盘。早报、中午都没写，补上。",
+      "relevance": "若你在那个时间窗 pip 装过未钉版本、或拉过受影响镜像：别在毒环境里再开 Python；先删 cook.pth、cook.py、sitecustomize.py，重建环境并钉 1.106.2，再轮换那台机器能碰到的全部密钥。",
+      "sources": [
+        {
+          "label": "docs.litellm.ai（LiteLLM 官方事故说明）",
+          "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026"
+        },
+        {
+          "label": "securitylabs.datadoghq.com（Datadog）",
+          "url": "https://securitylabs.datadoghq.com/articles/litellm-compromised-pypi-docker/"
+        },
+        {
+          "label": "x.com（传播提醒）",
+          "url": "https://x.com/npcissue/status/2113589066310824294"
+        }
+      ]
+    },
+    {
+      "id": "1023晚-5",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "【补报】微软：中国背景 Storm-0940 用 AI 渗透框架 ARTEX，借 ConnectWise 云备份打进两千多家租户",
+      "time": "2026-10-21",
+      "summary": "微软威胁情报 10 月 21 日称，自约 2026 年 9 月起，与中国国家利益相关的 Storm-0940 使用开源 agentic 渗透测试框架 ARTEX，自动化侦察、密码喷洒和 OAuth 滥用。该组织被认定为近期 ConnectWise Cloud Backup 多租户应用供应链事件责任方：取得应用身份后，尝试登录超过 2250 个租户，部分环境从初始瞄准到特权云访问不到 3 小时。后续可见 Graph 侦察、改应用凭据、提权。微软写明：这不是微软产品本身被攻破。以上细节来自微软单方面调查。",
+      "relevance": "用过 ConnectWise 或 SkyKick 云备份的企业：按厂商指引先禁用受影响应用连接，别急着删应用毁证据；从至少 10 月 15 日起查服务主体登录和异常凭据、角色变更，并轮换可疑密钥。个人没用这套 SaaS 可略过，但说明「AI 渗透代理」已进入国家级实战。",
+      "sources": [
+        {
+          "label": "microsoft.com（Microsoft Security Blog）",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/"
+        },
+        {
+          "label": "x.com（DFIR 摘要）",
+          "url": "https://x.com/DFIR_Radar/status/2113587715098746902"
+        }
+      ]
+    },
+    {
+      "id": "1023晚-6",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周五亚股分化收盘：韩股涨 0.3%、沪指涨 0.89%，日经微跌约 0.3%；欧股 Stoxx600 跌约 0.6%；布伦特约 114.3 美元；美股尚未开盘",
+      "time": "2026-10-23T19:00:00+08:00",
+      "summary": "相对中午盘中「亚股普跌」的更新：韩国 KOSPI 收 5550.30，涨 16.53 点（+0.3%），盘中一度大跌后回升（韩联社）。日本日经 225 收 62693.16，约跌 0.3%。内地：上证综指收 3870.48（+0.89%），深成指 11673.83（+2.79%），创业板指涨约 4.16%（新华社）。香港恒生约收 23093，涨约 0.7%（多家财经汇总）。台湾证交所因颱风薔琵（CHAMPI）全日休市，结算顺延；叠加光复节补假，市场报道称约 10 月 27 日再开。欧洲 Stoxx Europe 600 约跌 0.6%。布伦特约 114.34 美元/桶。十年期美债收益率回稳约 4.98%。美股周五正式开盘约在台北 21:30 之后，本版截稿时标普期货约跌 0.2%、纳指期货大致持平——收盘数字下一版再补。",
+      "relevance": "中午看到的恐慌盘午后分化：韩港内地收红，但油价仍卡在高位，中东与通胀风险还没退；台股下周二才开，周末消息会堆在开盘那一下。",
+      "sources": [
+        {
+          "label": "en.yna.co.kr（韩联社）",
+          "url": "https://en.yna.co.kr/view/AEN20261023006400320"
+        },
+        {
+          "label": "english.news.cn（新华社）",
+          "url": "https://english.news.cn/20261023/6741f8cf50614cc4868cf2b83b57284b/c.html"
+        },
+        {
+          "label": "swissinfo.ch（彭博 Markets Wrap）",
+          "url": "https://www.swissinfo.ch/eng/tech-rout-eases-with-oil-strength-capping-relief%3A-markets-wrap/92260391"
+        },
+        {
+          "label": "twse.com.tw（证交所休市公告 PDF）",
+          "url": "https://www.twse.com.tw/staticFiles/news/news/tsecnews/8a8216d6a0fa351b01a16385573a0204.pdf"
+        },
+        {
+          "label": "apnews.com（美联社）",
+          "url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        }
+      ]
+    },
+    {
+      "id": "1023晚-7",
+      "section": "国际重大影响",
+      "title": "【补报】美国财政部公布「外向投资」拟议规则：限制对华等对手国在 AI、芯片、量子、高超、生物技术等领域的美资",
+      "time": "2026-10-22",
+      "summary": "美国财政部 10 月 22 日发布 NPRM，落实国会 COINS 法案，更新 Outbound Investment Security Program：要求美方人员对部分涉及「受关注国家」覆盖外国实体的交易通知财政部，并禁止另一些交易。技术范围包括半导体与微电子、人工智能（含拟议中的超级智能系统定义）、量子信息、高性能计算与超算、高超声速，以及新增的生物技术。财政部长贝森特称旨在防止对手国借美资推进军民两用能力；同时强调保持开放投资环境，并公开征求意见。这是拟议规则，不是最终生效文本，正式截止日见 regulations.gov 上的 NPRM。早报、中午都围着伊朗与油价，这条漏了，补上。",
+      "relevance": "会影响中美科技投资预期和相关基金定价；普通人若持有跨境科技基金，可等最终规则出炉再看例外条款，别把「拟议」当成已经一刀切。",
+      "sources": [
+        {
+          "label": "home.treasury.gov（财政部新闻稿）",
+          "url": "https://home.treasury.gov/news/press-releases/sb0667/"
+        },
+        {
+          "label": "home.treasury.gov（外向投资专页）",
+          "url": "https://home.treasury.gov/policy-issues/international/outbound-investment-program"
+        }
+      ]
+    },
+    {
+      "id": "1023晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "瑞士团队做出约 USB 大小的皮下植入物：通电把多余血糖催化成葡萄糖酸盐，小鼠一小时内血糖受控",
+      "time": "2026-10-22",
+      "summary": "Scientific American 10 月 22 日报道 ETH Zurich 等团队在《Science》发表的研究：名为 ECHO 的无线植入物约有 USB 棒大小，用石墨、金纳米片和铂构成催化结构，通电时把血液里的葡萄糖氧化成葡萄糖酸盐（约五分之一供能、其余经肾排出）。肥胖糖尿病小鼠开启后约 1 小时血糖受控，重复治疗可维持约 6 周，甘油三酯与体重下降；与连续血糖仪加手机闭环两周可无人干预。组织未见明显炎症或瘢痕。作者称对葡萄糖选择性高。专家提醒下一步要过长期相容性和人体规模安全有效性——目前只在小鼠上，尚未用于人。",
+      "relevance": "和早报的基因编辑、中午的太阳能清洁都不同：这是硬件式代谢干预思路；有糖尿病家族史的话当前沿研究了解即可，千万别当成能买的疗法。",
+      "sources": [
+        {
+          "label": "scientificamerican.com（Scientific American）",
+          "url": "https://www.scientificamerican.com/article/this-implant-burns-up-excess-blood-sugar-with-electricity/"
+        }
+      ]
+    }
+  ]
+}
