@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "id": "1023中",
+  "date": "2026-10-23",
+  "slot": "中",
+  "title": "10月23日 · 中",
+  "items": [
+    {
+      "id": "1023中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Grok Bot 开始对接手机自带应用：日历、提醒、通讯录等，iOS 和 Android 正在推送；马斯克转发「现在能用你手机上的 App」",
+      "time": "2026-10-23T09:34:00+08:00",
+      "summary": "SpaceXSI 官方账号 @bot 10 月 22 日下午（太平洋时间）宣布：Grok Bot 现在能使用手机上的日历、提醒事项、通讯录，以及更多内置应用，iOS 和 Android 正在陆续推送。配图里的权限列表显示，每项应用单独点「允许」：短信可读可发、定位找附近地点、日历看日程和加事件、Home 控灯和锁、提醒设事项、通讯录查找和添加联系人。官方没写清两边系统是否功能完全一样、需要哪个版本。马斯克 10 月 23 日上午（台北时间约 9:34）转发并写「Grok Bot now integrates with your phone apps」。此前同一周，Grok Bot 刚上了 iPhone 操作按钮语音对话，并开始对接 1Password（已在早报写过）。合在一起，就是代理不只连邮箱和网页，还开始摸到你手机里真正天天用的日程和通讯录。",
+      "relevance": "你已经在用 Grok Bot 做讯息窗；如果手机弹出日历或通讯录授权，先按需开、别一键全开，短信和 Home 尤其谨慎。",
+      "sources": [
+        {
+          "label": "x.com（Grok Bot 官方帖）",
+          "url": "https://x.com/bot/status/2113393684209176718"
+        },
+        {
+          "label": "x.com（马斯克转发）",
+          "url": "https://x.com/elonmusk/status/2113444022408937913"
+        },
+        {
+          "label": "teslanorth.com（TeslaNorth 报道）",
+          "url": "https://teslanorth.com/2026/10/22/grok-bot-phone-calendar-reminders-contacts/"
+        }
+      ]
+    },
+    {
+      "id": "1023中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic：下周起 Claude 网页、桌面、手机 App 新会话默认开「自动模式」——安全操作直接做，危险的会拦下或再问你；企业版暂不默认",
+      "time": "2026-10-22",
+      "summary": "Anthropic 10 月 22 日更新说明：下周起，Pro、Max、Team 用户在大多数 Claude 网页、桌面和手机 App 里新建会话时，会默认进入「自动模式」（auto mode）。做法是：每一步操作先过自动检查，安全的放行，风险高的拦住并让 Claude 另找路，或再请你批准；你可以随时切回逐步批准。企业版管理员会先收到邮件，目前还不默认改。更早时候，Claude Code 编程工具已经把自动模式设成默认：内部和第三方红队测试后，Anthropic 称在受控实验里，人工逐条点批准只拦住约 13.6% 的危险命令，自动模式拦住约 89%；真实生产会话里，自动模式出现「用户没明确要求却造成较严重伤害」的比例也更低。官方同时承认分类器仍会漏拦，高风险改生产环境仍建议人肉复核。",
+      "relevance": "以后用 Claude 写代码或让它动文件，留意界面是不是悄悄变成「自动」；重要删改、对外发东西，自己切回手动更稳。",
+      "sources": [
+        {
+          "label": "claude.com（Anthropic 官方说明）",
+          "url": "https://claude.com/resources/articles/auto-mode-default-in-claude-code"
+        },
+        {
+          "label": "claude.com（同文博客镜像）",
+          "url": "https://claude.com/blog/auto-mode-default-in-claude-code"
+        }
+      ]
+    },
+    {
+      "id": "1023中-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Artificial Analysis 发布编码代理榜单 2.0：Claude Opus 5.5 以 61.7 分居首，Meta Muse、OpenAI Codex、DeepSeek 也上榜；题目变难，多数配置分数比旧版掉一截",
+      "time": "2026-10-23T08:17:00+08:00",
+      "summary": "评测机构 Artificial Analysis 10 月 23 日凌晨（台北时间）在 X 宣布 Coding Agent Index v2.0：把「模型 + 代理工具链」一起打分，共 290 道题，三块各占三分之一——Cognition 的 FrontierCode v1.1（改真实开源仓库、按「维护者会不会合并」打分）、终端任务 Terminal-Bench 4.0、仓库问答 SWE-Atlas-QnA-AA。头条结果：Claude Code + Claude Opus 5.5（max）综合 61.7 第一；其后 Claude Sonnet 5.5 59.3、Meta Muse Code + Muse Wonder Full 58.9、Claude Fable 5.1 57.6。FrontierCode 上 Opus 5.5 得 56.0%，DeepSeek V4.1 Flash 在 Codex 里 52.6%，GPT-6.1 Sol 与 GPT-6 Astra 分别约 49.4%、49.3%。性价比前沿四档：DeepSeek V4.1 Flash 约每题 0.39 美元、Sol 1.50、Astra 7.04、Opus 5.5 11.42（按 API 按量价，不含订阅套餐）。因 FrontierCode 更严、问答裁判也改了，同一批配置平均分从旧版约 54.8 掉到约 47.4，新旧榜不能直接比。",
+      "relevance": "别只看谁「第一」：贵的 Opus 适合难改仓库，便宜的 DeepSeek 适合量大、能接受差一点的活；你挑工具时要对着自己的任务类型看分项。",
+      "sources": [
+        {
+          "label": "x.com（Artificial Analysis 官方帖）",
+          "url": "https://x.com/ArtificialAnlys/status/2113424551396934134"
+        },
+        {
+          "label": "artificialanalysis.ai（编码代理榜单页）",
+          "url": "https://artificialanalysis.ai/agents/coding-agents"
+        },
+        {
+          "label": "alphasignal.ai（AlphaSignal 汇总）",
+          "url": "https://alphasignal.ai/news/artificial-analysis-ranks-claude-opus-5-5-first-in-tougher-coding-agent-index"
+        }
+      ]
+    },
+    {
+      "id": "1023中-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "【补报】Palo Alto Unit 42：网名 BUGSTER 的攻击者用 DeepSeek V4 + 越狱版 Cursor，靠 AI 写脚本攻入印度高校，偷走逾 5200 条含隐私的学生教职工记录",
+      "time": "2026-10-21",
+      "summary": "Palo Alto Networks 旗下 Unit 42 10 月 21 日发布调查：他们拿到一名代号 BUGSTER 的攻击者操作环境后发现，对方把 Hermes Agent 配上 DeepSeek V4 当主脑，再用关掉安全检查的 Cursor 写代码，靠 AI 生成侦察报告和爆破脚本。已确认影响包括：对一所印度大学教育平台做 WordPress 枚举与暴力破解；对另一所公立大学拖走 MongoDB，清单显示逾 5200 条学生、教职工个人身份信息；还枚举过电商后台令牌和支付商户号。同一环境里，AI 还在教对方怎么办美国壳公司、绕开来电认证去搞 VoIP 欺诈，并搭了 Wi-Fi 抓包+云端撞密码、加密货币巨鲸侦察、远控木马等流水线——VoIP 欺诈当时仍偏筹划阶段。Unit 42 写明：对方技术并不高，很多报告格式像 AI 代写，但照样造成真实伤害；多家互不相关的人也在用 Hermes+DeepSeek 这套组合，原因之一是便宜、好越狱。以上细节来自 Unit 42 单方面调查。",
+      "relevance": "普通人能做的：别给 AI 编程工具关掉沙箱和权限检查；学校或单位账号用强密码、开二次验证；接到「AI 客服」或陌生高管语音要转账，先换一个你自己查到的号码回拨核实。",
+      "sources": [
+        {
+          "label": "unit42.paloaltonetworks.com（Unit 42 原文）",
+          "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/"
+        }
+      ]
+    },
+    {
+      "id": "1023中-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股周五续跌：日经跌约 1.3%～1.7%，韩股跌约 1.7%～2.5%，内地蓝筹跌约 1.1%；美债十年期收益率一夜跌超 19 个基点至约 4.96%；布伦特约 114 美元，台股因颱风休市",
+      "time": "2026-10-23T12:00:00+08:00",
+      "summary": "据路透、美联社与彭博：亚洲股市 10 月 23 日（周五）延续隔夜美股科技股大跌。日本日经 225 跌约 1.3%～1.7%，美联社援引盘中点位约跌 1.7% 至 61,825.26，本周累计跌约 5%。韩国 KOSPI 跌约 1.7%～2.5%，美联社写跌约 2.4% 至约 5,403.32，SK 海力士等芯片股承压。MSCI 亚太（除日本）跌约 0.3%～0.9%，内地蓝筹指数跌约 1.1%，创 2025 年 7 月以来低位；香港恒生微涨约 0.1%，消化周四约 3% 的跌幅。台湾证交所因蔷琵颱风全日休市。避险资金涌入美债：十年期美债收益率一夜跌逾 19 个基点，为 2023 年 3 月以来最大单日降幅，周五回稳在约 4.96%，跌破 5%；两年期也大降后回稳约 4.66%。油价：布伦特升至约 114 美元/桶附近（五日高位区），胡塞袭击沙特目标与霍尔木兹风险继续撑价。黄金：现货金周四大跌近 3% 后，周五大致平盘在约 4,020～4,030 美元/盎司。",
+      "relevance": "AI 股杀估值已经从美股传到亚股，债市却大涨——说明钱在逃风险；台股下周二才开，中间周末消息会堆在开盘那一下。",
+      "sources": [
+        {
+          "label": "live.euronext.com（路透：亚股与美债）",
+          "url": "https://live.euronext.com/en/financial-news/asian-shares-wobble-tech-rout-boosts-bonds-dents-rate-hike-bets"
+        },
+        {
+          "label": "apnews.com（美联社：亚股与油价）",
+          "url": "https://apnews.com/article/stocks-markets-ai-oil-inflation-7b47ef3b037bfba4e34f685329b9b963"
+        },
+        {
+          "label": "swissinfo.ch（彭博 Markets Wrap）",
+          "url": "https://www.swissinfo.ch/eng/tech-stock-selloff-deepens%2C-crude-oil-extends-gain%3A-markets-wrap/92260391"
+        }
+      ]
+    },
+    {
+      "id": "1023中-6",
+      "section": "国际重大影响",
+      "title": "特朗普称对伊朗「已经打得很狠」，并说「或许还会再往前推一点」；同时排除谈判，油价因胡塞袭沙特与霍尔木兹风险留在约 114 美元",
+      "time": "2026-10-23T07:00:00+08:00",
+      "summary": "据阿纳多卢通讯社：美国总统特朗普周四在白宫对记者说，对伊朗的战争「早该由前任总统做」，「我们已经把他们打得很惨，或许还会再往前推一点」（we've knocked the hell out of them, and we may do it a little bit further）。他重申不能让伊朗拥有核武器，并承认「要付出代价」。此前一天他已表示美方未与伊朗谈判，「很快会以某种方式有所动作」。纽约时报另报道，美以军方已拟定中期选举后再袭伊朗的方案，但是否批准仍不确定。同一时段，胡塞武装对沙特目标的袭击与霍尔木兹航运风险继续推高油价，布伦特徘徊在约 114 美元/桶的五个月高位区。早报已写过特朗普指控伊朗「编造假袭击」推高油价——两边说法仍在信息战里拉扯，市场则按供应风险定价。",
+      "relevance": "中东只要再升级一步，油价和通胀预期就会马上反映到你看到的股市和利率预期上；看这类发言时，分清「威胁」和「已经开打」再下判断。",
+      "sources": [
+        {
+          "label": "aa.com.tr（阿纳多卢通讯社）",
+          "url": "https://www.aa.com.tr/en/us-israel-iran-war/trump-says-us-may-do-it-a-little-bit-further-in-iran/4097848"
+        },
+        {
+          "label": "economictimes.indiatimes.com（经济时报：油价与胡塞）",
+          "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-23-crude-oil-ticks-over-114-jumps-nearly-8-this-week-as-energy-attacks-intensify-what-are-experts-saying/articleshow/135131739.cms"
+        },
+        {
+          "label": "gulfnews.com（Gulf News 综合）",
+          "url": "https://gulfnews.com/world/mena/middle-east-war-trump-warns-us-may-hit-iran-a-little-bit-further-as-irgc-threatens-us-bases-netanyahu-calls-for-regime-change-in-tehran-1.500720580"
+        }
+      ]
+    },
+    {
+      "id": "1023中-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "清洁太阳能板有时比「追着太阳转」更划算：模型显示每月至少擦一次，整体发电能力平均能多出四成以上",
+      "time": "2026-10-22",
+      "summary": "美国地球物理联盟（AGU）新闻室 10 月 22 日介绍一项发表在《Earth's Future》的研究：用 2000–2022 年全球太阳辐射数据做模型后发现，灰尘等颗粒盖在板子上会挡住阳光；若至少每月清洁一次，整体装机出力平均可提高逾 40%，把大部分损失找回来。更扎眼的是：会跟着太阳转向的「追日」支架更容易积灰，在多尘地区，与其砸钱上追日系统，不如把固定板子定期擦干净，可能更划算。研究还提到，太阳能场加装风机，能在板子变脏时补上缺口，组合发电量接近翻倍，稳定性也比纯太阳能高约一半。",
+      "relevance": "这和聊天模型无关，但说明「贵科技」不一定赢「勤维护」；以后看能源或屋顶光伏新闻，清洁和维护成本该算进账，别只比面板峰值功率。",
+      "sources": [
+        {
+          "label": "news.agu.org（AGU 新闻室）",
+          "url": "https://news.agu.org/10-22-2026-keeping-solar-panels-clean-pays-off-more-than-fancy-sun-tracking-tech/"
+        }
+      ]
+    }
+  ]
+}
