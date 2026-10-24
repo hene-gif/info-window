@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "id": "1024晚",
+  "date": "2026-10-24",
+  "slot": "晚",
+  "title": "10月24日 · 晚",
+  "items": [
+    {
+      "id": "1024晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Jack Dorsey / Block 发布 Dessa：自称「只靠人声对话训练」的全双工语音模型，可本地跑在 MacBook Pro M4 Max；现为研究预览，向安全研究者开放早期访问",
+      "time": "2026-10-24T02:23:00+08:00",
+      "summary": "Block（Jack Dorsey）发布 Dessa：官方称从零、仅用人类对话音频训练（无文本、无预训练大语言模型中转），真正 speech-to-speech、全双工（可边听边说、插话、附和）。可本地跑在 MacBook Pro M4 Max 或更好。动机写为好奇、更好人机理解、以及安全（语音情绪信息）。当前为研究预览：演示音频公开，向一小群 AI 安全研究者提供早期访问；非大众消费产品上架。官网 block.xyz/dessa；@jack 主帖约台北 10 月 24 日 02:23。早刊与中刊均未收录，本晚标【补报】。注意：公开权重与面向大众的 API 尚未宣布，勿当成「人人可下载」。",
+      "relevance": "语音 AI 又多一条「不靠文字中转」的路线；若以后有早期访问或产品化，先当研究预览看，别把演示录音当成已开源可商用。",
+      "sources": [
+        {
+          "label": "block.xyz/dessa（官方）",
+          "url": "https://block.xyz/dessa"
+        },
+        {
+          "label": "x.com（@jack）",
+          "url": "https://x.com/jack/status/2113697902916751661"
+        },
+        {
+          "label": "x.com（@blocks）",
+          "url": "https://x.com/blocks/status/2113677471417819386"
+        },
+        {
+          "label": "theverge.com（The Verge）",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+        }
+      ]
+    },
+    {
+      "id": "1024晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】NVIDIA 发布 Nemotron 3.5 Bolt E4B 4GB：面向本地对话/语音/机器人代理的开源小模型，约 4GB 目标负载；基于 Gemma 4 E4B + Nemotron 后训练",
+      "time": "2026-10-23",
+      "summary": "NVIDIA Nemotron 研究页标注 Published: October 23, 2026：Bolt E4B 4GB 为开源小模型，面向 GeForce RTX、Jetson、RTX/DGX Spark 上的本地对话代理、交互角色与嵌入式/工业接口。特性含多轮工具调用、对话模式、可开关推理、64K 上下文、35 语。官方称相对前代 Nano 4B 平均质量约 +40%，部分对比下输出 token 可少约 80%。演示含 Jetson Orin Nano 上的 Reachy Mini。权重与部署路径见模型页（含 Hugging Face、llama.cpp 等）。家族中 Super VL / 更大 Bolt 更早于 10 月 15 日预告；本条只报 E4B 正式可用。早/中刊漏报，标【补报】。",
+      "relevance": "想在笔记本或边缘板子上跑本地小代理，这是又一个可跟的开源选项；装之前看清显存与许可，别和 10 月 15 日那批更大的 Nemotron 型号混成「同一天新品」。",
+      "sources": [
+        {
+          "label": "research.nvidia.com（Nemotron 模型页）",
+          "url": "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/"
+        },
+        {
+          "label": "blogs.nvidia.com（NVIDIA Blog 家族预告）",
+          "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+        }
+      ]
+    },
+    {
+      "id": "1024晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Grok Imagine 推出《Odyssey》系列第 1 集（约 7 分钟 AI 叙事片）；马斯克转发「Odyssey with Grok Imagine」",
+      "time": "2026-10-24T13:45:00+08:00",
+      "summary": "Grok Imagine（@imagine）于台北约 10 月 24 日 03:23 发布 Odyssey 系列 Episode 1，合作 Wonder Studios / 导演 Dev Walker；视频时长约 7 分钟。马斯克约 13:45（中刊截稿后）引用并写「Odyssey with Grok Imagine」。属长视频叙事能力展示，非新底座模型发版。Vault 相关转发本窗不再重复（中刊已报）。",
+      "relevance": "跟马斯克产品线时：这条是 Imagine 长片演示，不是新大模型上线；想试生成视频可看官方账号，别把它当成「又一个聊天模型发版」。",
+      "sources": [
+        {
+          "label": "x.com（@imagine）",
+          "url": "https://x.com/imagine/status/2113712964419063911"
+        },
+        {
+          "label": "x.com（@elonmusk）",
+          "url": "https://x.com/elonmusk/status/2113869401930039702"
+        }
+      ]
+    },
+    {
+      "id": "1024晚-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "Fortune：骗子用 AI 克隆女儿哭喊声假绑架，加州母亲约 5 小时被骗汇出约 5400 美元；专家呼吁每家设只有亲人知道的「安全暗号词」",
+      "time": "2026-10-24T18:36:00+08:00",
+      "summary": "Fortune 10 月 24 日报道（约美东 06:36，台北约 18:36）：McAfee 测试称约 3 秒语音即可生成约 85% 匹配度的声纹克隆。Gallup×Stop Scams Alliance 调查：2025 年约 1500 万美国成人因诈骗损失约 680 亿美元，所报诈骗中约 12% 涉及 AI/深度伪造（或低估）。个案：加州 Martinez 母亲 Deborah Del Mastro 接到陌生来电，对方声称墨西哥毒帮绑架其 37 岁女儿，并播放「女儿」惊恐哭喊；她按指令行动约 5 小时，分多处向墨西哥汇出约 5400 美元，到约定超市接人后才打通女儿——女儿一直在上班。辛辛那提大学营销助理教授 Kimberly Hyun 解释：熟悉音色会降低防备。防护核心：与家人提前约定只有双方知道的 safe code / 暗号词；接到「亲人遇险」陌生来电先挂断，用通讯录自己存的号码回拨核实。可向 FTC ReportFraud.ftc.gov 与 FBI IC3 报案。文中 2024 年香港 Arup 深度伪造视频会议案为背景旧案，勿当本窗新案。ABC7 Bay Area 同期报道同一当事人。",
+      "relevance": "今晚就和家人约定一句只有你们知道的暗号；再接到「我是你女儿/儿子，快汇款」的陌生电话——先挂断，自己查通讯录打回去问暗号，对不上就别转账。",
+      "sources": [
+        {
+          "label": "fortune.com（Fortune）",
+          "url": "https://fortune.com/2026/10/24/ai-voice-cloning-scam-fake-kidnapping-safe-word/"
+        },
+        {
+          "label": "abc7news.com（ABC7 Bay Area）",
+          "url": "https://abc7news.com/post/bay-area-mom-thousands-scammers-use-ai-mimic-daughters-voice-fake-kidnapping-part-growing-trend/19154381/"
+        }
+      ]
+    },
+    {
+      "id": "1024晚-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-10-24",
+      "summary": "这段时间没有。周六全球主要现货股市、原油、黄金与美债休市；美股指数期货通常周日晚再开。周五收盘与布伦特结算等数字早刊已报，不重复。台股仍约 10 月 27 日（周二）再开。周一开盘后再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1024晚-6",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-10-24",
+      "summary": "这段时间没有超出早刊与中刊的新独立核实事实。伊方称霍尔木兹油轮触雷等说法仍缺 JMIC/UKMTO 等独立核实，勿当已确认重报；周末油市无新结算，周一再看核实进展与开盘。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1024晚-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "福建郑和生物群发现约 1.5 亿年前鸟类新种 Yuezhuornis：带恐龙式锯齿牙与镰刀爪，却更像地栖，可能是已知最早「失去飞行能力」的鸟类一支",
+      "time": "2026-10-23",
+      "summary": "中科院古脊椎所与福建地质调查院等在福建晚侏罗世（约 1.50–1.48 亿年前）郑和生物群描述新种 Yuezhuornis yangyuanensis（约乌鸦大小）。它兼具鸟类骨盆/后肢特征，又保留似恐爪龙类的密排锯齿牙与可大幅后弯的第二趾镰状爪。系统发育（最大简约 + 贝叶斯 tip-dating）将其置于 Avialae，位置在始祖鸟（Archaeopteryx）冠侧、与 Zhengheornis 为姐妹群。肢骨比例更接近现生地栖鸟与部分近鸟类恐龙，研究者据此认为它适应地面生活，并可能代表已知最早的鸟类飞行能力丧失案例之一——说明早期鸟类演化并非单向「越飞越好」，而是很快分化出多种生态位。论文发表于《Nature》；ScienceDaily 转中科院通稿。与早刊绿氢、中刊「多读一年书×痴呆」不同赛道。",
+      "relevance": "和早报绿氢、中午教育×脑健康完全不同赛道：一块福建化石提醒你——鸟类刚出现时就已经有「放弃飞行、改走地面」的实验；演化不是一条笔直跑道，而是一堆试错。",
+      "sources": [
+        {
+          "label": "sciencedaily.com（ScienceDaily）",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261023023710.htm"
+        },
+        {
+          "label": "doi.org（Nature 论文 DOI）",
+          "url": "https://doi.org/10.1038/s41586-026-10972-z"
+        }
+      ]
+    }
+  ]
+}
