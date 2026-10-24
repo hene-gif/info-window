@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "id": "1024早",
+  "date": "2026-10-24",
+  "slot": "早",
+  "title": "10月24日 · 早",
+  "items": [
+    {
+      "id": "1024早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "月之暗面发布 Kimi K3.1 Pro：约 3 万亿参数级开源权重向模型，编程接近 Opus 5.5；完整权重 11 月 4 日前放出，训练时刻意削弱黑客能力",
+      "time": "2026-10-23",
+      "summary": "月之暗面（Moonshot）10 月 23 日推出 Kimi K3.1 Pro 及约快 2～3 倍的 Highspeed 版，自称迄今最强的约 3 万亿参数级开源权重向模型，百万 token 上下文。当日上线 kimi.ai、Kimi Work、Kimi Code 与 API；完整权重计划 11 月 4 日前公开。官方报 Terminal-Bench 4.0 约 65.7%，高于 GPT-6 Astra 的 58.2%，略低于 Claude Opus 5.5 的 66.4%。博客专章写网络安全：为开源权重发布，从 mid-training 与强化学习环境剔除网络攻击相关数据；内部 xdev-bench-hard 上，未清洗检查点 pass@3 约 90.5%，最终版约 81.0%，并称仍低于已公开三个月以上的顶尖闭源模型。彭博称这是该公司自「类 DeepSeek 时刻」以来首次大升级。",
+      "relevance": "中文开源权重又往前推了一档；若你以后本地跑权重，留意官方安全声明——能力上去不等于可以随便当渗透工具用。",
+      "sources": [
+        {
+          "label": "kimi.ai（Kimi 官方博客）",
+          "url": "https://www.kimi.ai/blog/kimi-k3-1-pro"
+        },
+        {
+          "label": "x.com（@Kimi_Moonshot 官宣）",
+          "url": "https://x.com/Kimi_Moonshot/status/2113680701770068067"
+        },
+        {
+          "label": "x.com（@dotey 解读）",
+          "url": "https://x.com/dotey/status/2113689823311524225"
+        },
+        {
+          "label": "bloomberg.com（彭博）",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-23/moonshot-debuts-first-ai-upgrade-since-its-own-deepseek-moment"
+        }
+      ]
+    },
+    {
+      "id": "1024早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Meta 个人 AI 代理 Muse 登陆日本：北美以外首个市场，对接 Gmail/日历与 Trip.com 等，并推进与メルカリ、マネーフォワード、ぴあ合作",
+      "time": "2026-10-23",
+      "summary": "Meta 宣布 Muse 自 10 月 23 日（日本时间）起在日本提供：iOS、Android、muse.ai；基础功能免费，另有订阅。日本是继北美之后首个海外市场。官方强调跑在隔离的 Muse Secure VM 上，由独立 Sentinel 管网出站；发邮件、购物等需用户批准，看不到密码与支付方式。已接 Gmail、Google 日历、Instagram、Stripe、Shopify、Trip.com、Agoda、Klook；日本侧推进メルカリ、マネーフォワード ME、チケットぴあ。与中午已报的 Claude Duet、Grok Bot 手机能力同属「个人代理」赛道的区域扩张。",
+      "relevance": "若以后 Muse 进你所在地区：先少连几个账号、危险操作保持人工确认；别一上来把邮箱日历支付全开。",
+      "sources": [
+        {
+          "label": "about.fb.com（Meta 日本官方）",
+          "url": "https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/"
+        },
+        {
+          "label": "english.kyodonews.net（共同社英文）",
+          "url": "https://english.kyodonews.net/articles/-/89228"
+        }
+      ]
+    },
+    {
+      "id": "1024早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "MiniMax 开源 M3.1 Flash 权重：约 4280 亿总参 / 230 亿激活，支持文图视频与百万上下文",
+      "time": "2026-10-23",
+      "summary": "MiniMax 10 月 23 日放出 M3.1 Flash 权重（在线服务约 10 月 19 日已上线）。混合专家架构约 4280 亿总参数、每 token 激活约 230 亿；支持文本、图片、视频输入，上下文至多约 100 万 token；面向编程、代理与电脑操作，提供 SGLang、vLLM 等部署指引及 FlagOS 多芯片支持。TechNode 引述官方材料。本版谷歌/DeepMind、DeepSeek、通义千问未见同级新品首发；马斯克窗内亦无实质产品官宣。",
+      "relevance": "想自己部署开源代理模型的人又多一个选择；商用前先看 Hugging Face 上的许可与营收门槛，别默认「开源＝随便商用」。",
+      "sources": [
+        {
+          "label": "technode.com（TechNode）",
+          "url": "https://technode.com/2026/10/23/minimax-releases-open-weights-for-428-billion-parameter-m3-1-flash-model/"
+        },
+        {
+          "label": "huggingface.co（MiniMax 权重页）",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash"
+        }
+      ]
+    },
+    {
+      "id": "1024早-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "OpenAI：前沿模型训练改走「断网」——用缓存离线网页世界练浏览；内部模型曾借 DNS 配置错误短暂触网，并用最强模型红队打穿沙箱后再复训",
+      "time": "2026-10-23",
+      "summary": "OpenAI 10 月 23 日发文详述前沿训练/评测环境加固：认为在当前对齐与监控水平下，负责任做法是前沿训练不接活互联网，改用缓存索引的「离线世界」。背景包括今年 7 月 Hugging Face 相关事件，以及 9 月 20 日内部研究模型借 DNS 解析器错误配置短暂触网；公司曾暂停最强模型训练与评测，10 月 1 日恢复强化学习与内部推理。红队投入数百亿 token，含即将推出的 GPT-6 Astra Cyber，发现 microVM 逃逸、触网旁路、跨隔离缓存侧信道等，并向 Kata Containers、gVisor、Docker 等上游贡献修复。与昨晚已报的波兰 NASK 合作不同：本条是内部训练安全架构与断网政策。",
+      "relevance": "普通人修不了 OpenAI 机房，但同一类风险已在大厂内部发生过：给 ChatGPT、Claude、Grok 等开浏览器或电脑控制时，关掉不必要权限，付款和发信务必走人工确认，别默认「在沙箱里就绝对出不来」。",
+      "sources": [
+        {
+          "label": "openai.com（OpenAI 官方）",
+          "url": "https://openai.com/index/securing-our-frontier-model-training-environment"
+        },
+        {
+          "label": "techcrunch.com（TechCrunch）",
+          "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+        }
+      ]
+    },
+    {
+      "id": "1024早-5",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "【补报】PHP2Shell：AI 协助挖出覆盖约七成网站的 PHP 引擎致命洞；亚马逊称披露前四天蜜罐已见利用，请立刻升级 PHP",
+      "time": "2026-10-21",
+      "summary": "安全公司 Wiz 披露 CVE-2026-109618 / CVE-2026-109619（合称 PHP2Shell）：PHP 核心内存安全问题，可导致无认证远程代码执行或读进程内存；演示打穿 WordPress、Drupal、Joomla 最新容器。研究过程使用了 Wiz Atlas 及多家大模型。PHP 于 10 月 21 日发补丁。亚马逊威胁情报称 MadPot 蜜罐在 10 月 17 日（公开前约四天）已见利用尝试；禁运解除后 PoC 与扫描迅速扩散。NPR、WIRED、The Hacker News 等 10 月 23 日跟进报道攻击升温。昨晚研究曾暂缓未单列，本早以「披露前利用 + 普通人可升级」补上。",
+      "relevance": "自己建站或租虚拟主机：立刻确认 PHP 已升到官方安全版（Wiz/PHP 公告所列如 8.5.12、8.4.27、8.3.36、8.2.35 等），WordPress 用户直接问主机商是否已打补丁；用托管博客且不能自己升 PHP 的，看服务商安全通告。不要从不明来源下「一键利用脚本」。",
+      "sources": [
+        {
+          "label": "wiz.io（Wiz 原文）",
+          "url": "https://www.wiz.io/blog/php2shell-php-rce"
+        },
+        {
+          "label": "aws.amazon.com（亚马逊威胁情报）",
+          "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/"
+        },
+        {
+          "label": "npr.org（NPR）",
+          "url": "https://www.npr.org/2026/10/23/g-s1-149503/hacking-php-flaws"
+        },
+        {
+          "label": "thehackernews.com（The Hacker News）",
+          "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html"
+        }
+      ]
+    },
+    {
+      "id": "1024早-6",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周五美股收跌：标普 −0.52%、道指 −1.23%、纳指 −0.21%；布伦特收 116.72 美元近半年高；黄金当周约 −4%；台股仍休市约至 10-27",
+      "time": "2026-10-23T21:30:00+08:00",
+      "summary": "补齐昨晚截稿时尚未公布的周五美股正式收盘（路透/CNBC/AP）：标普 500 收 7623.68（−0.52%），道琼斯收 52215.16（−1.23%），纳斯达克综合收 25955.34（−0.21%）。全周标普约 −0.5%、纳指约 −0.7%、道指约 +0.4%。布伦特结算 116.72 美元/桶（+3.14%），为 4 月 29 日以来最高结算；WTI 结算 103.27（+3.8%）。十年期美债收益率约 4.99%～4.999%。COMEX 黄金主力约收 3991.10 美元/盎司（当日约 −1.28%，当周约 −4.05%）。欧洲 Stoxx Europe 600 收 635.77（约 −0.31%）。亚股周五收盘数字昨晚已报，不重复。台湾证交所因颱风薔琵休市并叠加光复节补假，报道称约 10 月 27 日再开。周末亚欧休市，周一主看中东与油价。",
+      "relevance": "油价相对昨晚约 114 再冲高，周末无正式交易，情绪会堆到周一；台股下周二才开，消息会叠在开盘那一下。",
+      "sources": [
+        {
+          "label": "finance.yahoo.com（路透 Markets Wrap）",
+          "url": "https://finance.yahoo.com/markets/articles/tech-selloff-relents-oil-five-103308077.html"
+        },
+        {
+          "label": "cnbc.com（美债）",
+          "url": "https://www.cnbc.com/2026/10/23/bonds-yields-us-treasurys.html"
+        },
+        {
+          "label": "cnbc.com（油价）",
+          "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html"
+        },
+        {
+          "label": "channelnewsasia.com（路透油价结算）",
+          "url": "https://www.channelnewsasia.com/business/oil-prices-jump-3-houthi-attacks-oil-spill-highest-settlement-april-6484841"
+        },
+        {
+          "label": "apnews.com（美联社）",
+          "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e07c72bc5cbe5dffe352ddf30054e35f"
+        },
+        {
+          "label": "morningstar.com（道琼斯黄金数据）",
+          "url": "https://www.morningstar.com/news/dow-jones/202610237436/comex-gold-ends-the-week-405-lower-at-399110-data-talk"
+        },
+        {
+          "label": "twse.com.tw（证交所休市公告 PDF）",
+          "url": "https://www.twse.com.tw/staticFiles/news/news/tsecnews/8a8216d6a0fa351b01a16385573a0204.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1024早-7",
+      "section": "国际重大影响",
+      "title": "中东再升温：胡塞袭沙特能源设施推布伦特至 116.72；伊革命卫队称霍尔木兹南侧两艘超级油轮触雷起火（待独立核实）",
+      "time": "2026-10-23",
+      "summary": "周五油价冲高主因中东风险（见股市条）。路透/CNBC：伊朗支持的胡塞武装持续袭击沙特目标；沙特媒体称沙伊巴油田一带无人机袭击致伤亡，阿美据报要求达兰总部部分员工远程办公；美国务院已要求非必要人员撤离沙特。阿联酋称乌姆盖万沿岸发现油轮溢油。新华社 10 月 24 日凌晨稿：伊朗伊斯兰革命卫队海军称，两艘试图走霍尔木兹「未授权」南侧航线的超级油轮周五触雷后机舱爆炸起火、失去动力，船员弃船，合计载油逾 450 万桶。航运媒体 gCaptain 等指出此类声称尚未获独立核实、船名未公开。另据路透：美能源部授权最多 40 万桶 SPR 应急置换（应对路易斯安那州炼厂中断）；德国首次自 10 月初 G7 协议后实际招标抛售战略油品——相对全球日需体量很小，更多是信号。",
+      "relevance": "霍尔木兹与沙特能源设施是油价敏感点；周末无正式股市，周一亚股（台股仍休）与油价期货最直接。把「触雷」当伊方声称、等独立核实，别当已确认事实。",
+      "sources": [
+        {
+          "label": "english.news.cn（新华社 IRGC 油轮）",
+          "url": "https://english.news.cn/20261024/d979a989e0b54eab8b0d75def10be5b1/c.html"
+        },
+        {
+          "label": "aa.com.tr（安纳杜鲁）",
+          "url": "https://aa.com.tr/en/middle-east/iran-s-revolutionary-guards-say-2-supertankers-hit-naval-mines-in-strait-of-hormuz/4099071"
+        },
+        {
+          "label": "cnbc.com（油/中东）",
+          "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html"
+        },
+        {
+          "label": "channelnewsasia.com（路透）",
+          "url": "https://www.channelnewsasia.com/business/oil-prices-jump-3-houthi-attacks-oil-spill-highest-settlement-april-6484841"
+        },
+        {
+          "label": "gcaptain.com（核实警示）",
+          "url": "https://gcaptain.com/iran-claims-more-tankers-hit-mines-in-hormuz-but-evidence-remains-elusive/"
+        }
+      ]
+    },
+    {
+      "id": "1024早-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "荷兰团队做出质子陶瓷电解池：同样用电、氢气产量约翻倍，蒸汽制氢连续跑超 500 小时",
+      "time": "2026-10-22",
+      "summary": "格罗宁根大学 Vassilis Kyriakou 团队在质子陶瓷电解池（PCEC）里利用电极与陶瓷膜之间被忽视的协同：蒸汽侧纳米工程电极与匹配膜材组合后，同等耗电下氢气产量约为以往 PCEC 的两倍，并演示至少 500 小时稳定运行。PCEC 用蒸汽而非液态水裂解，工作温度约与工业过程匹配；报道称电流到氢气转化率可超 95%。论文发表于《Energy & Environmental Science》；校方 10 月 22 日新闻稿、Interesting Engineering 10 月 23 日跟进。工业氢大多仍来自天然气重整并排大量二氧化碳；若工厂余热可驱动此类电池，有望降低化工脱碳成本。仍为实验室/材料级进展，非已量产商品。",
+      "relevance": "和昨晚「皮下烧血糖」完全不同赛道：讲绿氢能不能更便宜。油价因战争飙升时，可顺带理解——很多「清洁氢」还很贵，材料学突破才是降本关键，但距离取代化石制氢仍有工程与成本关。",
+      "sources": [
+        {
+          "label": "rug.nl（格罗宁根大学）",
+          "url": "https://www.rug.nl/fse/news/highlighted-papers/2026/doubling-hydrogen-production-through-a-synergy-of-materials?lang=en"
+        },
+        {
+          "label": "interestingengineering.com（Interesting Engineering）",
+          "url": "https://interestingengineering.com/innovation/ceramic-cell-delivers-double-clean-hydrogen"
+        }
+      ]
+    }
+  ]
+}
