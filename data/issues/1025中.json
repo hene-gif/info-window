@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "id": "1025中",
+  "date": "2026-10-25",
+  "slot": "中",
+  "title": "10月25日 · 中",
+  "items": [
+    {
+      "id": "1025中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-10-25",
+      "summary": "这段时间没有。自早刊以来核对 OpenAI、Anthropic、Google/DeepMind、xAI、Meta、DeepSeek、Qwen 等官方账号与公开发版线索，以及 @elonmusk、@dotey 相关帖：无新的模型/产品正式发布、权重落地或权威基准更新。马斯克周末帖以 Starlink/乌克兰等为主，早刊已报；X Money「长按点赞付 1 美元」属支付产品，不放本块。Kimi K3.1 Pro 等仍在发酵，但 1024早 已报，不重复、不标补报。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1025中-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-10-25",
+      "summary": "这段时间没有。早刊后检索未见符合门槛的新案：无已核实实害的 AI 作案新事件、无普通人须立刻行动的新护栏/执法落地；若干旧案被聚合站伪标新日期、单方说法（如研究者指控）或缺主流通稿核实。Eaton 县 AI 假警长图、Fortune 声纹绑票、新加坡假警察广告、Phantom/Mythos 等此前各期已报，不重复。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1025中-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-10-25",
+      "summary": "这段时间没有。周日全球主要现货股市、原油、黄金与美债仍休市；台股仍约 10 月 27 日（周二）再开。CME 股指/油/金/美债期货通常周日美东 18:00 开，约合周一台北清晨，中午截稿时尚未开盘。周五收盘与布伦特等数字早刊已报，不重复。周一开盘后再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1025中-4",
+      "section": "国际重大影响",
+      "title": "法国再抗议：内政部估约 41 万、工会约 80 万；近千人被捕，巴黎马赛等地傍晚冲突",
+      "time": "2026-10-24",
+      "summary": "BBC、AP 等报道：10 月 24 日（周六）法国再爆发全国示威，内政部估约 41 万人（巴黎约 11 万），工会估约 80 万；约 7 万警力。白天大体和平，傍晚巴黎、马赛、波尔多、里昂等出现催泪瓦斯/水炮与路障点火；内政部长称近 1000 人被捕（仍可能上升），2 人重伤。马克龙此前只允许工会组织示威，规模低于上周末大骚乱，但仍牵动中期选举前欧洲局势；阿尔巴尼亚、比利时、意大利等亦有关联示威。早刊未单列这轮周六数字与逮捕。",
+      "relevance": "欧洲街头动荡会牵动风险情绪与周一开盘气氛；跟中东油运线分开看，别把「再抗议」自动当成「又一场全国骚乱」。",
+      "sources": [
+        {
+          "label": "bbc.com（BBC）",
+          "url": "https://www.bbc.com/news/articles/c95ynd587ynzo"
+        },
+        {
+          "label": "apnews.com（AP）",
+          "url": "https://apnews.com/article/france-protests-paris-unrest-ad2fb9206e72e5d1b4ae43fdf7aa96a9"
+        }
+      ]
+    },
+    {
+      "id": "1025中-5",
+      "section": "国际重大影响",
+      "title": "特朗普称对伊「也许明天动手」，也可能达成「大而美」协议；口头两手准备，非已开战",
+      "time": "2026-10-24",
+      "summary": "安纳多卢通讯社等引述：特朗普周六对记者称美方在考虑行动，「maybe tomorrow」；同时说也可能达成 “big, beautiful” 协议。称伊朗想谈但「会不会守约」存疑，目标是永久防核；又称霍尔木兹石油航运量较开战前增加，未当场给数字。表述是军事与谈判两手并存，不是宣布已实施新一轮打击。伊方信号仍矛盾，独立核实的新协议文本尚未出现。油价与霍尔木兹情绪周一可能被口头消息扰动，写时务必与「已开战」分开。",
+      "relevance": "周一开盘前把这当「口头两手准备」：油价可能跟着话术抖，但没有确认打击就别当作战报交易。",
+      "sources": [
+        {
+          "label": "aa.com.tr（Anadolu Agency）",
+          "url": "https://www.aa.com.tr/en/world/trump-says-us-could-strike-iran-tomorrow-or-reach-big-beautiful-deal/4099883"
+        },
+        {
+          "label": "iranintl.com（Iran International）",
+          "url": "https://www.iranintl.com/en/202610252197"
+        }
+      ]
+    },
+    {
+      "id": "1025中-6",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "俄亥俄州大 Scentronic：电子鼻认出气味后，远端手腕/项链装置喷出对应香味",
+      "time": "2026-10-23T18:03:00+08:00",
+      "summary": "《Science Advances》10 月 22 日发表、路透通稿经 CNA 约 10 月 23 日 18:03（新加坡/台北）转载：俄亥俄州大团队做 IoT 嗅觉接口——电子鼻 + 机器学习识别目前 5 类气味（啤酒、蛋糕、咖啡、橙、红酒），经云端把「类别指令」传给压电雾化可穿戴装置在远端释放预装香液；分子本身不经网传送。志愿者单气味识别约七成量级；作者强调仍是研究原型，库容、混合气味与商用都未就绪。与早刊阿根廷睡眠、晚刊福建化石不同赛道——这是远程「闻」的人机接口雏形。",
+      "relevance": "视频和 AR 一直缺「闻」这一维；这是远程社交和医疗嗅觉测试的雏形——别当成手机马上能闻到热狗。",
+      "sources": [
+        {
+          "label": "science.org（《Science Advances》论文）",
+          "url": "https://www.science.org/doi/10.1126/sciadv.aee9266"
+        },
+        {
+          "label": "channelnewsasia.com（CNA / Reuters）",
+          "url": "https://www.channelnewsasia.com/business/new-scentronic-technology-can-detect-and-transmit-aromas-remotely-6486011"
+        }
+      ]
+    }
+  ]
+}
