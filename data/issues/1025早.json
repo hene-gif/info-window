@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "id": "1025早",
+  "date": "2026-10-25",
+  "slot": "早",
+  "title": "10月25日 · 早",
+  "items": [
+    {
+      "id": "1025早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】SpaceX 限制乌克兰 Starlink/Starshield 高速后恢复；马斯克称乌军用民用 Starlink 打进攻性无人机违反服务条款，Starshield 由政府掌控",
+      "time": "2026-10-25T02:38:00+08:00",
+      "summary": "周六（美东）乌克兰国防部称 Starlink/Starshield 速度已恢复，设备在时速超过约 400 km/h 时连接仍稳定；此前自约 10 月 14 日起乌方指责高速被限，无人机等任务受影响，泽连斯基周五仍称限速未解除。马斯克随后在 X 发帖（台北约 10 月 25 日 02:38）：称乌军违反 Starlink 服务条款、用民用服务做进攻性无人机打击，该漏洞上周已堵；并区分 Starlink（民用商业）与 Starshield（美政府控制的另一系统）。另帖强调民用 Starlink 从未获准用于进攻性无人机杀人。CNBC 报道特朗普周六对记者称已与马斯克谈过、要求放宽限制（呼应《华尔街日报》本周报道）。美两党议员要求调查。早/中/晚刊均未单列这条周末进展，本早标【补报】。注意：谁下令限速、限速范围与恢复细节仍有多方说法，以乌防部监测声明与马斯克公开帖为准，勿把传闻当已定论。",
+      "relevance": "跟马斯克/SpaceX 时：民用 Starlink 和军用 Starshield 不是同一套规则；看战时通讯新闻先分清是哪一套，再看官方有没有确认恢复，别只看转发摘要。",
+      "sources": [
+        {
+          "label": "cnbc.com（CNBC）",
+          "url": "https://www.cnbc.com/2026/10/24/ukraine-starlink-starshield-service-restored.html"
+        },
+        {
+          "label": "x.com（@elonmusk：条款与 Starshield）",
+          "url": "https://x.com/elonmusk/status/2114063986744275011"
+        },
+        {
+          "label": "x.com（@elonmusk：民用非武器）",
+          "url": "https://x.com/elonmusk/status/2114074712041197969"
+        }
+      ]
+    },
+    {
+      "id": "1025早-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "美国密歇根 Eaton 县警长警告：骗子用 AI 生成副警长假照片配比特币 ATM，伪装本地来电催「交保释金/罚金」",
+      "time": "2026-10-25T07:48:00+08:00",
+      "summary": "WILX（Gray Media）10 月 24 日晚报道（美东约 19:48，台北约 25 日 07:48）：Eaton County 警长 Tom Reich 在 Facebook 警示，诈骗分子拨打伪装成当地县电话的号码，有时还配上 AI 生成的「副警长站在加密货币机旁」图片，引导受害者去比特币 ATM 存款。警方指出合成图里制服颜色与该县官方装备不符；来电者还会编造假警员姓名。常见话术：未出庭陪审的逮捕令、亲属急需保释金、欠交通罚单等，施压立刻交钱。警长强调：执法人员绝不会电话要求你付现金、罚金、保释金或加密货币。本窗不与昨晚 Fortune 假绑架声纹案、中午新加坡假警察广告案重复——这是另一起「假警察 + AI 图 + 加密货币」本地警告。",
+      "relevance": "接到「警察要你马上交钱/去比特币机」的电话：直接挂断，自己查官网或通讯录回拨真警局；真警察不会让你往加密货币机塞钱。",
+      "sources": [
+        {
+          "label": "wilx.com（WILX News 10）",
+          "url": "https://www.wilx.com/2026/10/24/eaton-county-sheriff-warns-new-scam-using-ai-generated-photos-deputies-bitcoin-demands/"
+        }
+      ]
+    },
+    {
+      "id": "1025早-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-10-25",
+      "summary": "这段时间没有。周日全球主要现货股市、原油、黄金与美债仍休市；美股指数期货通常周日晚再开。周五收盘与布伦特约 116.72 美元等数字早刊已报，不重复。台股仍约 10 月 27 日（周二）再开。周一开盘后再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1025早-4",
+      "section": "国际重大影响",
+      "title": "阿联酋 Ras Al Khaimah 因油轮溢油关闭全部海滩「直至另行通知」；乌姆盖万、沙迦部分岸线亦封闭",
+      "time": "2026-10-24",
+      "summary": "《The National》10 月 24 日报道：Ras Al Khaimah 公共服务部门宣布因阿拉伯湾超级油轮溢油，关闭全部海滩直至另行通知；乌姆盖万此前已临时关闭海滩与沿岸，沙迦封闭 Al Hamriya 等岸段。气候变化与环境部周五确认溢油，并称近日全国多地闻到的浓烈燃油味与此有关。乌姆盖万市政称正开展现场围控与影响评估。欧空局 SAR 雷达图显示约 10 月 21 日乌姆盖万外海约 25 公里处油轮渗漏。早刊已提乌姆盖万溢油与胡塞/霍尔木兹风险；本条只补「RAK 全境海滩关闭」这一新确认措施。伊方「霍尔木兹触雷」等说法仍缺 JMIC/UKMTO 等独立核实，本窗不升格为已确认事实。",
+      "relevance": "海湾溢油与航运风险会牵动油价情绪；周一开盘前把「海滩关闭」当已确认的环境应急，把「触雷」继续当未核实声称分开看。",
+      "sources": [
+        {
+          "label": "thenationalnews.com（The National：RAK 关海滩）",
+          "url": "https://www.thenationalnews.com/news/uae/2026/10/24/uae-oil-spill-ras-al-khaimah-closes-all-beaches-until-further-notice/"
+        },
+        {
+          "label": "thenationalnews.com（The National：乌姆盖万确认溢油）",
+          "url": "https://www.thenationalnews.com/news/uae/2026/10/23/umm-al-quwain-beaches-uae-tanker-oil-spill/"
+        }
+      ]
+    },
+    {
+      "id": "1025早-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "阿根廷乡村通电并用上智能手机后，居民平均每晚少睡约 35 分钟、入睡更晚：12 年追踪研究",
+      "time": "2026-10-23",
+      "summary": "《自然》研究亮点 10 月 23 日介绍：Casiraghi 等人在《Current Biology》发表一项约 12 年追踪，观察阿根廷乡村原住民社区接通市电、进而能上网与使用智能手机后的睡眠变化。结果：通电后平均每晚睡眠约少 35 分钟，入睡时间推迟。研究把「照明 + 联网屏幕」引入日常生活的时间点，和睡眠缩短、作息后移连在一起。论文 DOI：10.1016/j.cub.2026.09.058。与早刊绿氢、中午教育×痴呆、晚刊福建化石不同赛道——这是生活方式与睡眠的实地证据，不是实验室小白鼠。",
+      "relevance": "和股市、模型发版无关：电和手机进来以后，少睡几十分钟是「文明升级」的隐形成本；你自己若总刷到很晚，这不是意志力差这么简单，是环境在改你的钟。",
+      "sources": [
+        {
+          "label": "nature.com（《自然》研究亮点）",
+          "url": "https://www.nature.com/articles/d41586-026-03318-2"
+        },
+        {
+          "label": "doi.org（Current Biology 论文 DOI）",
+          "url": "https://doi.org/10.1016/j.cub.2026.09.058"
+        }
+      ]
+    }
+  ]
+}
