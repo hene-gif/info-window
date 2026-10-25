@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "id": "1025晚",
+  "date": "2026-10-25",
+  "slot": "晚",
+  "title": "10月25日 · 晚",
+  "items": [
+    {
+      "id": "1025晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-10-25",
+      "summary": "这段时间没有。自中刊以来核对 OpenAI、Anthropic、Google/DeepMind、xAI、Meta、DeepSeek、Qwen 等官方账号与公开 changelog/newsroom，以及 @elonmusk、@dotey：无新的模型/产品正式发布、权重落地或权威基准更新。马斯克午后帖以 Starlink 促销、RT 第三方用户数对比、「Cool」回应用户 iOS Hey Grok 技巧为主，均未达进版门槛；Starlink/乌克兰与 ToS 早刊已报，不重复。无补报。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1025晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-10-25",
+      "summary": "这段时间没有。中刊后检索未见符合门槛的新案：无已核实实害的 AI 作案新事件、无普通人须立刻行动的新护栏/执法落地。Eaton 县 AI 假警长图、Fortune 声纹绑票、新加坡假警察广告、Phantom/Mythos、CyberCartel 等此前各期已报；央视「AI小海」卖惨与抖音处置核心事实在 10-20～23，今日转载不计入本窗新案。若干政治深伪广告、企业 agent 限制、研究 PoC 或单方薄稿均未过筛。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1025晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-10-25",
+      "summary": "这段时间没有。周日晚全球主要现货股市、原油、黄金与美债仍休市；CME 股指/油/金/美债期货通常周日美东 18:00 再开，约合周一台北清晨，晚刊截稿时尚未开盘。台股仍约 10 月 27 日（周二）再开。周五收盘与布伦特等数字早刊已报，不重复。周一开盘后再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1025晚-4",
+      "section": "国际重大影响",
+      "title": "利雅得 King Khalid 机场周日部分复航（T1 国内 / T2 本国航司国际）；沙特称拦截飞向利雅得与南部的无人机/导弹，胡塞称机场仍是「军事目标」",
+      "time": "2026-10-25",
+      "summary": "Arab News、路透/海峡时报、海湾新闻等报道：沙特首都 King Khalid 国际机场周六晚宣布，自 10 月 25 日（周日）起 Terminal 1 供国内航班、Terminal 2 供本国航司国际航班；旅客须先向航司确认。机场约两周前因胡塞袭击关闭，报道称当时约 12–13 人死亡、逾 300 人受伤。同日沙特主导联军称拦截飞向利雅得的弹道导弹与无人机，并称拦截射向南部约 10 枚弹道导弹及射向 Khamis Mushait 的巡航导弹；民防曾对利雅得等地发警报后宣布威胁解除，AFP 记者称利雅得传出爆炸声。胡塞发言人警告机场仍是「军事目标」、呼吁勿使用。中刊已报法国抗议与特朗普对伊口头两手，本条只写「复航安排 + 当日防空声明 + 胡塞再警告」；设施是否再遭袭、拦截战果以联军/独立核实为准，勿把宣称当已确认战果。",
+      "relevance": "海湾航空与油运情绪会牵动周一开盘；把「已宣布复航」和「当日仍有防空警报/拦截声明」分开看，别当成冲突已经结束。",
+      "sources": [
+        {
+          "label": "arabnews.com（Arab News）",
+          "url": "https://www.arabnews.com/saudi-arabia/riyadhs-king-khalid-international-airport-to-reopen-terminals-on-sunday-3008107"
+        },
+        {
+          "label": "straitstimes.com（Straits Times / Reuters）",
+          "url": "https://www.straitstimes.com/world/middle-east/iran-backed-houthis-warn-against-using-riyadh-airport-as-it-announces-reopening"
+        },
+        {
+          "label": "gulfnews.com（Gulf News 直播）",
+          "url": "https://gulfnews.com/world/mena/middle-east-war-drone-missile-intercepted-over-riyadh-as-king-khalid-airport-resumes-operations-1.500722685"
+        },
+        {
+          "label": "apnews.com（AP）",
+          "url": "https://apnews.com/article/mideast-news-october-25-2026-4779a3deeb1a23f59414164532d5c885"
+        }
+      ]
+    },
+    {
+      "id": "1025晚-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "Nature：常见微塑料遇水会在界面自发产生活性氧（尤其羟基自由基），挑战「塑料化学惰性」老假设",
+      "time": "2026-10-25T17:00:00+08:00",
+      "summary": "哥伦比亚大学 Min 组与加州伯克利 Head-Gordon 等《Nature》论文（在线约 10 月 14 日，DOI：10.1038/s41586-026-11141-y）；《华盛顿邮报》约 10 月 25 日 05:00 EDT（台北约 17:00）通稿。发现：聚苯乙烯等日用微塑料悬在水里时，会在塑料–水界面自发产生羟基自由基等活性氧，无需光照或额外试剂；疏水性越强活性越高。作者提出这可能是微塑料相关组织损伤被忽视的机制之一，并强调不等于已证明对人体的临床伤害。与中午远程嗅觉、早上通电少睡不同赛道——这是「塑料进水之后本身就会化学折腾」的界面化学证据。",
+      "relevance": "瓶装水、食物包装里的微塑料话题，多了一层硬核化学解释：不是「塑料本身绝对惰性」，界面会产自由基——别当成明天就能定量算你喝进多少伤害。",
+      "sources": [
+        {
+          "label": "nature.com（《Nature》论文）",
+          "url": "https://www.nature.com/articles/s41586-026-11141-y"
+        },
+        {
+          "label": "washingtonpost.com（《华盛顿邮报》）",
+          "url": "https://www.washingtonpost.com/climate-environment/2026/10/25/microplastics-create-dangerous-chemicals-when-mixed-with-water-researchers-find/"
+        },
+        {
+          "label": "news.columbia.edu（哥伦比亚大学新闻）",
+          "url": "https://news.columbia.edu/news/microplastics-are-chemically-active-and-could-cause-biological-harm"
+        }
+      ]
+    }
+  ]
+}
