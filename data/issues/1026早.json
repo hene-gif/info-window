@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "id": "1026早",
+  "date": "2026-10-26",
+  "slot": "早",
+  "title": "10月26日 · 早",
+  "items": [
+    {
+      "id": "1026早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Grok Bot 可代用户打电话：拨号、提要求、记笔记并回传对话摘要；马斯克周日官宣",
+      "time": "2026-10-25T22:35:59+08:00",
+      "summary": "马斯克 10 月 25 日晚发帖称：Grok Bot 现在能替你打给某人或某家公司，代提要求，记录对方回复，再给你发一份对话摘要。这是把 Bot「往外打」——以前更多是你跟 Bot 语音聊，这次是 Bot 去跟人/商家通话并交差。官方 @bot / @xai 本窗未另发细则；马斯克也没写清哪些订阅档、哪些国家可用、对方屏幕上来电显示什么号。社区有人拆 0.77 预览：可排队等候、按键转接、边看实时字幕——仅作能力旁证，不是 xAI 官方 changelog。本窗核对 OpenAI、Anthropic、Google/DeepMind、Meta、DeepSeek、Qwen 等：无新的模型/产品正式发布或权威基准更新；GPT-6.1 Terra 属传闻不采；Nanbeige4.3-33B 开源属小盘旁注、不进主条。无七大 lab 补报。",
+      "relevance": "跟 Bot 时先弄清：它能不能真打出去、你的套餐和国家开没开、对方看到的是什么号；别把马斯克一句官宣当成「全球全量已上线」。",
+      "sources": [
+        {
+          "label": "x.com（@elonmusk）",
+          "url": "https://x.com/elonmusk/status/2114365361068138990"
+        },
+        {
+          "label": "teslanorth.com（TeslaNorth）",
+          "url": "https://teslanorth.com/2026/10/25/grok-bot-phone-calls-elon-musk/"
+        }
+      ]
+    },
+    {
+      "id": "1026早-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "Forever：网页可静默往「下载」文件夹丢恶意 AGENTS.md，诱导 Codex/Claude Code 装流氓 npm 或泄露登录令牌；真实客户机曾差点装上恶意包 function-color",
+      "time": "2026-10-25T23:49:00+08:00",
+      "summary": "Forever Security 在真实客户机器上拦住一次：编码 Agent 正要按指令安装已知恶意 npm 包 function-color，溯源发现不是依赖库，而是 ~/Downloads 里的恶意 AGENTS.md（Agent 启动时会自动读并服从的项目说明文件）。浏览器默认可把文件静默写入 Downloads；只要用户（或 Agent）在该目录启动 Codex/Claude Code，就会当「项目指令」执行。团队用真实恶意文件在隔离 VM 复现 Codex：改写 ~/.codex/config.toml 注册假 MCP、绕过沙箱装包，成功率约 90%，且配置是整机持久的。对 Claude Code 用恶意 CLAUDE.md 把 API 流量改到攻击者域名，可偷 OAuth 令牌并回灌工具调用，约 50%。研究者强调：这不是厂商「漏补丁」，而是「网页可写的文件夹」+「Agent 信任工作目录指令」的设计缝隙。Forever 主文约 10 月 22 日；BleepingComputer 约 10 月 25 日 15:49 UTC（台北约 23:49）主流报道，此前各刊未收。属「AI 系统被滥用」。",
+      "relevance": "别在「下载」文件夹里开编程 Agent；陌生 AGENTS.md / CLAUDE.md 先自己读一遍再让 Agent 跟；开着审批/沙箱别关；若发现异常 MCP 或改过的 API 地址，立刻换令牌、当账号可能被接管。",
+      "sources": [
+        {
+          "label": "forever.security（Forever Security 主文）",
+          "url": "https://forever.security/blog/hijacking-ai-agents-via-downloads-folder/"
+        },
+        {
+          "label": "bleepingcomputer.com（BleepingComputer）",
+          "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/"
+        }
+      ]
+    },
+    {
+      "id": "1026早-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "印度拉贾斯坦警方预警：骗子用 AI 深伪视频冒充政治人物宣布「政府福利/返现」，FB/IG 导流后要注册费，或诱你接受 UPI collect 把钱转走",
+      "time": "2026-10-26T00:22:00+08:00",
+      "summary": "拉贾斯坦邦网警（ADGP Cyber Crime V.K. Singh）发通告，Times of India、Jaipur Times 约 10 月 25 日晚至 26 日凌晨报道：骗子在 Facebook/Instagram 用公众人物姓名照片，并以 AI 生成/篡改视频伪装成官员亲自宣布补贴或返现；点进广告后被导到可疑网站、WhatsApp，或接到 +92 等国际号，索要注册/手续/税务/核验费。另一套路是刮刮卡、转盘「返现」，诱骗接受 UPI collect 请求或输入 UPI PIN——PIN 是付钱不是收款，一点就扣款。属「犯罪分子用 AI」+「警方响应」；与已报新加坡假警察追讨诈骗手法不同（本条是假政府福利+UPI）。",
+      "relevance": "政府补贴别信广告——只上官方部门网站核对；陌生人要「手续费」或让你点收款/报 PIN、OTP、身份证号，一律拒绝；可疑广告截图举报，别转发未核实的福利帖。",
+      "sources": [
+        {
+          "label": "timesofindia.indiatimes.com（Times of India）",
+          "url": "https://timesofindia.indiatimes.com/city/jaipur/cops-warns-of-fake-govt-schemes-cashback-scams-using-ai-videos/articleshow/135194475.cms"
+        },
+        {
+          "label": "jaipurtimes.org（Jaipur Times）",
+          "url": "https://www.jaipurtimes.org/article/11702/rajasthan-police-warns-against-deepfake-scams-and-fake-government-scheme-ads"
+        }
+      ]
+    },
+    {
+      "id": "1026早-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周一亚盘：CME 股指期货小幅反弹、油价自周五高位回落；日经开盘约 −0.4%、韩股约 −0.9%；台股仍休至约 10 月 27 日，A/港截稿未开",
+      "time": "2026-10-26T08:00:00+08:00",
+      "summary": "相对昨晚「周日休市、期货未开」：CME Globex 已于美东周日 18:00（约台北周一 06:00）再开。CNBC 更新至美东周日约 19:52：标普 500 期货约 +0.4%、纳指 100 期货约 +0.6%、道指期货约 +0.2～0.3%；Yahoo 侧栏稍后 ES 约 7675.50（+0.21%）、NQ 约 29232（+0.39%）。原油期货回落：Yahoo WTI 约 101.70（−1.52%），前结约 103.27；CNBC 布伦特约 115～115.7（约 −0.9～−1.1%）。黄金期货约 4002（−0.14%）。日本：时事通信开盘日经约 62450（−243），金十另报约 62412（−0.45%），前收约 62693。韩国：파이낸셜뉴스 开盘 KOSPI 5499.05（−0.92%）、KOSDAQ 742.17（−1.27%）。台股因光复节补假等仍休市，约 10 月 27 日（周二）再开。A股/港股常规 09:30 开盘，截稿时尚未开；欧洲现货尚未开。美债周末无新结算，周五 10Y 约 4.999% 早刊脉络已报。本周另有美联储/欧央行/日央行决议与美科技巨头财报（CNBC 预览）。",
+      "relevance": "周一先看亚洲现货和油价回吐，别把期货反弹当成美股已收阳；台股还没开，A/港要等 09:30 后的实盘。",
+      "sources": [
+        {
+          "label": "cnbc.com（CNBC 期货/亚太）",
+          "url": "https://www.cnbc.com/world/"
+        },
+        {
+          "label": "finance.yahoo.com（Yahoo Finance CL/GC/ES）",
+          "url": "https://finance.yahoo.com/"
+        },
+        {
+          "label": "jiji.com（时事通信 · 日经开盘）",
+          "url": "https://www.jiji.com/"
+        }
+      ]
+    },
+    {
+      "id": "1026早-5",
+      "section": "国际重大影响",
+      "title": "诺奖得主、委内瑞拉反对派领袖 María Corina Machado 周日突然回国，现身 Lara 州；特朗普称不知情并继续挺过渡总统 Rodriguez",
+      "time": "2026-10-26T06:11:00+08:00",
+      "summary": "CNA/路透、AP、WSJ 等报道：Machado 近一年多流亡后于周日返回委内瑞拉，在 X 发「I'm here. With you all」；团队照片显示她现身西部 Lara 州教堂，路人唱国歌；将走公路前往加拉加斯。知情人士称路径为私人飞机巴拿马→哥伦比亚再陆路入境。她此前多次试图回国未果，并曾因此与特朗普政府关系紧张。周日白宫，特朗普称对她回国不知情，称 Machado「very nice woman」，但强调「we're doing really well in Venezuela」，并继续支持过渡总统 Delcy Rodriguez。国务卿 Rubio 声明称她能安全回国是美方支持的和解会谈结果。背景包括美企扩大委内瑞拉能源项目；Machado 强调唯有严肃民主政府才能给投资者稳定。与昨晚利雅得机场复航/胡塞、中午法国抗议/特朗普口头伊朗均不同条；特朗普周日称「今天不打」伊朗属同一口头博弈线，不另开主条。",
+      "relevance": "拉美政权博弈会牵动油价与美企能源布局叙事；把「她人已回国」和「华盛顿公开站谁」分开看，别当成过渡安排已经定死。",
+      "sources": [
+        {
+          "label": "channelnewsasia.com（CNA / Reuters）",
+          "url": "https://www.channelnewsasia.com/world/venezuela-opposition-leader-machado-returns-home-after-fraught-year-away-6490756"
+        },
+        {
+          "label": "apnews.com（AP）",
+          "url": "https://apnews.com/article/venezuela-maria-corina-machado-return-democracy-maduro-e6eff0c2ff962fd9b0f87270b24ef567"
+        },
+        {
+          "label": "wsj.com（《华尔街日报》）",
+          "url": "https://www.wsj.com/world/americas/venezuelas-machado-returns-home-challenging-u-s-backed-government-7e3468e8"
+        },
+        {
+          "label": "straitstimes.com（《海峡时报》）",
+          "url": "https://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-oct-26-2026"
+        }
+      ]
+    },
+    {
+      "id": "1026早-6",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "Nature：Prime editing 首次在活人体内直接改写 DNA——Prime Medicine 用其治疗威尔逊病，公司本月初宣布全球 I/II 期首例患者已给药",
+      "time": "2026-10-22",
+      "summary": "《Nature》新闻（约 10 月 22 日，Heidi Ledford）：更精密的基因编辑技术 prime editing 首次被用于在人体内直接改写 DNA（此前同类多为体外编辑再回输）。适应症为威尔逊病：ATP7B 基因突变使肝脏无法排出多余铜，可致肝与神经损伤。Prime Medicine（麻省剑桥）在全球 I/II 期试验中，用脂质纳米颗粒静脉输注，在肝细胞内纠正常见突变（H1069Q / PM577a）；公司 10 月 5 日宣布首例患者已给药，预计明年公布初步结果。相对已获批的 CRISPR-Cas9（多用于「关掉」基因）和碱基编辑，prime editing 可插入、删除、改写 DNA 片段。专家提醒体内编辑有递送与脱靶等风险；FDA 目前尚无批准的体内基因编辑疗法。与昨晚微塑料、中午远程嗅觉、早上通电少睡不同赛道——这是「药可以在身体里把错的基因改对」的生物医学台阶。",
+      "relevance": "跟 AI 赋能医疗、长寿和生物科技投资挨着：体内基因编辑从「剪断」迈到「改写」，但还是早期试验，别当成明天就能买到的药。",
+      "sources": [
+        {
+          "label": "nature.com（《Nature》新闻）",
+          "url": "https://www.nature.com/articles/d41586-026-03371-x"
+        },
+        {
+          "label": "globenewswire.com（Prime Medicine 新闻稿）",
+          "url": "https://www.globenewswire.com/news-release/2026/10/05/3374466/0/en/Prime-Medicine-Announces-First-Patient-Dosed-in-Global-Phase-1-2-Clinical-Trial-of-PM577a-for-H1069Q-Mutated-Wilson-Disease.html"
+        },
+        {
+          "label": "clinicaltrials.gov（NCT07748403）",
+          "url": "https://clinicaltrials.gov/study/NCT07748403"
+        }
+      ]
+    }
+  ]
+}
