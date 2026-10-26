@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "id": "1026晚",
+  "date": "2026-10-26",
+  "slot": "晚",
+  "title": "10月26日 · 晚",
+  "items": [
+    {
+      "id": "1026晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-10-26",
+      "summary": "这段时间没有。自中刊以来核对 OpenAI、Anthropic、Google/DeepMind、xAI、Meta、DeepSeek、Qwen 等官方账号与公开发版线索，以及 @elonmusk、@dotey 相关帖：无新的模型/产品正式发布、权重落地或权威基准更新。马斯克本窗 3 帖均为「So beautiful」类闲聊与政治/吹捧转发，无 xAI/Grok、Tesla、SpaceX、Starlink、Neuralink、X 产品级官宣，不采。Anthropic S-1「最快周一公开」仍属二手传闻、未见公开 EDGAR 文件，且非模型发版，不进本块。无七大 lab 补报。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1026晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-10-26",
+      "summary": "这段时间没有。自中刊以来检索安全厂商、执法通报、公司声明与 X 上 AI 安全线索：无满足「已确认利用/实害，或普通人须立刻行动」门槛的新条目。中刊已报首尔生成式 AI 大规模黑客检举、Anthropic Claude 佐治亚汇总选票绕付费墙；早刊已报 Forever 恶意 AGENTS.md 劫持 Codex/Claude Code——本日再炒属回温，不重复。其余多为例行披露、未证实实害的「犯罪 AI 代理」宣传、或非 AI 钓鱼，按本块严格过滤不采。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1026晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收市分化、欧股走强，美股期货近乎平盘；油价回落，金与美债收益率微升",
+      "time": "2026-10-26T19:07:00+08:00",
+      "summary": "相对中刊「A/港午间、美期小反弹、油跌金翻红」：亚洲已收——日经约 62189.65（−0.80%，中刊约 −0.43%）、韩国综指约 5469.47（−1.46%，中刊约 −0.91%）；台股仍因光复节补假休市至约 10 月 27 日，加权上次收约 46041（−1.81%）。A/港收盘：上证约 3697.52（+0.19%，较午间约 3683/−0.18% 翻红收高）、深成约 11534.38（−1.19%，较午间约 −1.05% 略加深）、恒生约 23211.81（+0.51%，较午间约 +0.44%）。欧洲盘中：DAX 约 25386.97（+0.82%）、FTSE 约 10739.11（+0.46%）、欧股50 约 6096.06（+0.46%）。美股现货周一尚未开盘（上周五：道指约 52215 −1.23%、标普约 7624 −0.52%、纳指约 25955 −0.21%）；期货约台北 19:07：YM 约 52574（+0.34%）、ES 约 7663.25（+0.05%）、NQ 约 29095（−0.08%）——相对中刊纳指期货反弹已收窄近乎平。WTI 约 101.08（−2.12%）；布伦特（ICE）仍自高位回落约 −1.6% 量级。黄金期货约 4026.90（+0.47%，中刊约 4021）；10 年美债收益率约 4.99%（中刊亚盘约 4.96%）。本周仍看美联储/欧央行/日央行与美科技巨头财报。",
+      "relevance": "先看亚洲收盘分化和欧股偏强，别把美期平盘当成现货已定调；台股还没开，油价回落要和中东消息一块看。",
+      "sources": [
+        {
+          "label": "news.rthk.hk（RTHK A/港）",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1875370-20261026.htm"
+        },
+        {
+          "label": "finance.yahoo.com（Yahoo Finance）",
+          "url": "https://finance.yahoo.com/"
+        },
+        {
+          "label": "cnbc.com（CNBC）",
+          "url": "https://www.cnbc.com/world/"
+        },
+        {
+          "label": "swissinfo.ch（Bloomberg via SWI）",
+          "url": "https://www.swissinfo.ch/eng/stocks-edge-up-with-treasuries%2C-crude-oil-declines%3A-markets-wrap/92273033"
+        }
+      ]
+    },
+    {
+      "id": "1026晚-4",
+      "section": "国际重大影响",
+      "title": "特朗普称对伊朗到了「做决定」时刻；调解方赴德黑兰，油价自近战高回落",
+      "time": "2026-10-26T18:18:00+08:00",
+      "summary": "Euronews、CNBC、WSJ 等周一报道：特朗普在 Fox 访谈中把对伊朗表述成「跟他们达成协议，还是把仗打完」的选择；卡塔尔等调解方据报赴德黑兰，沙特国防部长、巴基斯坦陆军参谋长、土耳其情报首长等亦有区域安全会谈安排。市场定价缓和预期——周一油价自近四年/近半年来高位回落：Euronews 称布伦特自周五约 117.4 一度回落逾约 6%；WTI 约跌至 101 一带。供应风险未消：胡塞周末仍袭击沙特机场与能源设施相关目标，利雅得称继续拦截导弹与无人机。霍尔木兹与海湾出口叙事仍在；本周叠加美联储等主要央行决议与大型科技财报。伊朗方面则称在条件满足前谈美「无意义」。与中刊巴西 Lula 决选不同事件，不重复。",
+      "relevance": "地缘和油价会牵动通膨预期与风险资产；把「调解在谈」和「袭击还在、选择未定」分开看，别当成冲突已经结束。",
+      "sources": [
+        {
+          "label": "euronews.com（Euronews）",
+          "url": "https://www.euronews.com/2026/10/26/oil-plunges-more-than-6-from-near-wartime-highs-as-diplomacy-over-iran-seemingly-gathers-p"
+        },
+        {
+          "label": "cnbc.com（CNBC oil）",
+          "url": "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html"
+        },
+        {
+          "label": "wsj.com（WSJ）",
+          "url": "https://www.wsj.com/business/energy-oil/oil-prices-fall-as-traders-weigh-u-s-iran-diplomacy-saudi-attacks-a59376cd"
+        },
+        {
+          "label": "hindustantimes.com（Hindustan Times）",
+          "url": "https://www.hindustantimes.com/world-news/make-a-deal-or-finish-them-off-trump-says-its-decision-time-on-iran-as-us-midterms-near-101792977894056.html"
+        }
+      ]
+    },
+    {
+      "id": "1026晚-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "一滴药水、不用钻牙：美国大型试验确认氟化银氨可拦住幼儿蛀牙",
+      "time": "2026-10-25",
+      "summary": "ScienceDaily / 密歇根大学新闻（约 10 月 25 日）：JAMA Pediatrics 发表 NIH 资助的 III 期试验，纳入 830 名 6 岁以下幼儿。牙医用海绵头把 38% 氟化银氨（SDF）涂在蛀牙上，数秒完成、无需钻孔/打针/麻醉；约每半年一次，超过半数受累乳牙蛀蚀被「拦住」（arrest）。银抗菌、氟加固；副作用主要是蛀坏部位永久变黑（乳牙会换）。美国目前多作敏感牙获批、治蛀牙多为超适应证使用；更强本土证据有望推动 FDA 适应证与保险覆盖，儿科诊所也可能参与早干预。与中刊马普所光催化制过氧化氢不同赛道——这是牙科 / 公共卫生。",
+      "relevance": "蛀牙是儿童最常见慢性病之一；这种便宜涂一下的办法，有望让很多小孩少受钻牙、少进急诊甚至少做全麻手术。",
+      "sources": [
+        {
+          "label": "sciencedaily.com（ScienceDaily）",
+          "url": "https://www.sciencedaily.com/releases/2026/10/261025222339.htm"
+        },
+        {
+          "label": "doi.org（JAMA Pediatrics）",
+          "url": "https://doi.org/10.1001/jamapediatrics.2026.2567"
+        },
+        {
+          "label": "nih.gov（NIH Research Matters）",
+          "url": "https://www.nih.gov/news-events/nih-research-matters/coating-stops-tooth-decay-children"
+        }
+      ]
+    }
+  ]
+}
