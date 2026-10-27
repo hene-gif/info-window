@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "id": "2026-10-26-anthropic-s1",
+  "date": "2026-10-26",
+  "title": "Anthropic 递交 S-1：闭源前沿模型的账，写进了招股书",
+  "summary": "2026 年 10 月 26 日，Anthropic 向美国证监会公开递交 Form S-1，准备以代码 ANT 在纳斯达克上市。发行股数和价格都还没定。招股书写明：2026 年上半年营收 162.86 亿美元，去年同期 11.63 亿美元；经营亏损 6.93 亿美元。净亏损 807.48 亿美元里，约 723.88 亿是可转债等公允价值变动，不是同等规模的经营亏损。公司把模型权重视为核心资产，并称开放权重模型主要在更在意成本、而不是智能上限的工作上竞争；截至 9 月 30 日，净收入留存率大约 900%。这些是招股书里的数字和表述，不是独立评测。",
+  "related": ["1027早-2"],
+  "sources": [
+    {
+      "label": "sec.gov（Form S-1）",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "date": "2026-10-26"
+    },
+    {
+      "label": "anthropic.com（公司声明）",
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "date": "2026-10-26"
+    },
+    {
+      "label": "fortune.com",
+      "url": "https://fortune.com/2026/10/26/anthropics-s-1/",
+      "date": "2026-10-26"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate 讯息窗 data files. Exits 0 when issues, columns, and favorites match the documented format."""
+"""Validate 讯息窗 data files. Exits 0 when issues, columns, timeline events, and favorites match the documented format."""
 
 from __future__ import annotations
 
@@ -12,9 +12,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INDEX_PATH = ROOT / "data" / "index.json"
 COLUMNS_INDEX_PATH = ROOT / "data" / "columns" / "index.json"
+TIMELINE_INDEX_PATH = ROOT / "data" / "timeline" / "index.json"
 FAVORITES_PATH = ROOT / "data" / "favorites.json"
 ISSUES_DIR = ROOT / "data" / "issues"
 COLUMNS_DIR = ROOT / "data" / "columns"
+TIMELINE_DIR = ROOT / "data" / "timeline"
 
 SECTIONS = ("我关注的", "国际重大影响")
 # Common 我关注的 sub-block names. New non-empty names are also accepted.
@@ -22,6 +24,7 @@ BLOCKS = ("AI 模型和产品动态", "人机恋和 AI 陪伴赛道", "语音交
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ITEM_ID_RE = re.compile(r"^.+-[1-9]\d*$")
 COLUMN_ID_RE = re.compile(r"^专栏-[1-9]\d*$")
+TIMELINE_ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 INDEX_KEYS = {"version", "issues"}
 META_KEYS = {"id", "date", "slot", "title", "itemCount"}
@@ -35,6 +38,10 @@ COLUMN_KEYS = {"version", "id", "title", "date", "summary", "body", "related", "
 COLUMN_BODY_P_KEYS = {"type", "text"}
 COLUMN_BODY_SECTION_KEYS = {"type", "label", "text"}
 COLUMN_SOURCE_KEYS = {"title", "outlet", "url", "date"}
+TIMELINE_INDEX_KEYS = {"version", "events"}
+TIMELINE_META_KEYS = {"id", "date", "title", "summary"}
+TIMELINE_KEYS = {"version", "id", "date", "title", "summary", "related", "sources"}
+TIMELINE_SOURCE_KEYS = {"label", "url", "date"}
 OPINION_LABEL = "观点"
 
 errors: list[str] = []
@@ -354,6 +361,96 @@ def main() -> int:
         if path.stem not in indexed_columns:
             fail(f"{path.relative_to(ROOT)} 没有写进 data/columns/index.json")
 
+    timeline_index = load_json(TIMELINE_INDEX_PATH)
+    timeline_paths = (
+        sorted(path for path in TIMELINE_DIR.glob("*.json") if path.name != "index.json")
+        if TIMELINE_DIR.exists()
+        else []
+    )
+    if timeline_index is not None and require_keys(
+        timeline_index, TIMELINE_INDEX_KEYS, TIMELINE_INDEX_KEYS, "data/timeline/index.json"
+    ):
+        if timeline_index.get("version") != 1:
+            fail("data/timeline/index.json version 必须为 1")
+        timeline_metas = timeline_index.get("events")
+        if not isinstance(timeline_metas, list):
+            fail("data/timeline/index.json events 必须是数组")
+            timeline_metas = []
+    else:
+        timeline_metas = []
+
+    timeline_ids = set()
+    previous_event_date = None
+    for position, meta in enumerate(timeline_metas):
+        where = f"data/timeline/index.json events[{position}]"
+        if not require_keys(meta, TIMELINE_META_KEYS, TIMELINE_META_KEYS, where):
+            continue
+        event_id = meta["id"]
+        if not nonempty(event_id, f"{where}.id"):
+            continue
+        if not TIMELINE_ID_RE.fullmatch(event_id):
+            fail(f"{where}.id 只能用小写英文、数字和连字符")
+            continue
+        if event_id in timeline_ids:
+            fail(f"时间线 id 重复：{event_id}")
+        if event_id in item_ids or event_id in column_ids:
+            fail(f"时间线 id 与条目或专栏冲突：{event_id}")
+        timeline_ids.add(event_id)
+        if not nonempty(meta.get("title"), f"{where}.title"):
+            pass
+        if not isinstance(meta.get("summary"), str) or not str(meta.get("summary")).strip():
+            fail(f"{where}.summary 必须是非空字符串")
+        if not check_date(meta.get("date"), f"{where}.date"):
+            continue
+        parsed = date.fromisoformat(meta["date"])
+        if previous_event_date is not None and parsed > previous_event_date:
+            fail(f"{where} 日期比前一条更新；events 必须从新到旧")
+        previous_event_date = parsed
+
+        path = TIMELINE_DIR / f"{event_id}.json"
+        event = load_json(path)
+        if event is None:
+            continue
+        event_where = f"data/timeline/{event_id}.json"
+        if not require_keys(event, TIMELINE_KEYS, TIMELINE_KEYS - {"related"}, event_where):
+            continue
+        if event.get("version") != 1:
+            fail(f"{event_where} version 必须为 1")
+        for field in ("id", "date", "title", "summary"):
+            if event.get(field) != meta.get(field):
+                fail(f"{event_where} 的 {field} 与目录不一致")
+        related = event.get("related", [])
+        if not isinstance(related, list) or not all(isinstance(item, str) for item in related):
+            fail(f"{event_where} related 必须是字符串数组")
+            related = []
+        if len(related) != len(set(related)):
+            fail(f"{event_where} related 有重复")
+        for related_index, related_id in enumerate(related):
+            related_where = f"{event_where} related[{related_index}]"
+            if not nonempty(related_id, related_where):
+                continue
+            if related_id not in item_ids:
+                fail(f"{related_where} 引用了不存在的条目 {related_id}")
+        sources = event.get("sources")
+        if not isinstance(sources, list) or not sources:
+            fail(f"{event_where} sources 至少要有一条")
+            sources = []
+        for source_index, source in enumerate(sources):
+            source_where = f"{event_where} sources[{source_index}]"
+            if not require_keys(source, TIMELINE_SOURCE_KEYS, TIMELINE_SOURCE_KEYS, source_where):
+                continue
+            if not nonempty(source.get("label"), f"{source_where}.label"):
+                pass
+            url = source.get("url")
+            if not isinstance(url, str) or not re.match(r"^https?://", url):
+                fail(f"{source_where}.url 必须是 http 或 https 链接")
+            check_date(source.get("date"), f"{source_where}.date")
+
+    indexed_events = {meta.get("id") for meta in timeline_metas if isinstance(meta, dict)}
+    for path in timeline_paths:
+        if path.stem not in indexed_events:
+            fail(f"{path.relative_to(ROOT)} 没有写进 data/timeline/index.json")
+
     known_ids = item_ids | column_ids
     for favorite_id in favorite_ids:
         if favorite_id not in known_ids:
@@ -364,7 +461,10 @@ def main() -> int:
             print(message, file=sys.stderr)
         print(f"{len(errors)} 个问题", file=sys.stderr)
         return 1
-    print(f"ok: {len(issues)} 期, {len(item_ids)} 条, {len(column_ids)} 篇专栏, {len(favorite_ids)} 条收藏")
+    print(
+        f"ok: {len(issues)} 期, {len(item_ids)} 条, {len(column_ids)} 篇专栏, "
+        f"{len(timeline_ids)} 条时间线, {len(favorite_ids)} 条收藏"
+    )
     return 0
 
 

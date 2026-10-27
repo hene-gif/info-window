@@ -18,6 +18,7 @@ const SHELL = [
   './data/index.json',
   './data/favorites.json',
   './data/columns/index.json',
+  './data/timeline/index.json',
 ];
 
 self.addEventListener('install', (event) => {
@@ -51,26 +52,23 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(networkFirst(event));
 });
 
-// 期次清单读自目录。取不到的文件只是跳过：整批失败会让安装失败，旧版本就一直换不掉。
+// 清单读自目录。取不到的文件只是跳过：整批失败会让安装失败，旧版本就一直换不掉。
 async function precache() {
   const cache = await caches.open(CACHE);
   await Promise.all(SHELL.map((path) => store(cache, path)));
-  const index = await cache.match(new URL('./data/index.json', self.location).href);
-  const issues = index ? await index.json().then((data) => data.issues).catch(() => null) : null;
-  if (Array.isArray(issues)) {
-    await Promise.all(
-      issues
-        .filter((meta) => typeof meta?.id === 'string')
-        .map((meta) => store(cache, `./data/issues/${encodeURIComponent(meta.id)}.json`))
-    );
-  }
-  const columnsIndex = await cache.match(new URL('./data/columns/index.json', self.location).href);
-  const columns = columnsIndex ? await columnsIndex.json().then((data) => data.columns).catch(() => null) : null;
-  if (!Array.isArray(columns)) return;
+  await precacheListed(cache, './data/index.json', 'issues', './data/issues/');
+  await precacheListed(cache, './data/columns/index.json', 'columns', './data/columns/');
+  await precacheListed(cache, './data/timeline/index.json', 'events', './data/timeline/');
+}
+
+async function precacheListed(cache, indexPath, key, dir) {
+  const response = await cache.match(new URL(indexPath, self.location).href);
+  const list = response ? await response.json().then((data) => data[key]).catch(() => null) : null;
+  if (!Array.isArray(list)) return;
   await Promise.all(
-    columns
+    list
       .filter((meta) => typeof meta?.id === 'string')
-      .map((meta) => store(cache, `./data/columns/${encodeURIComponent(meta.id)}.json`))
+      .map((meta) => store(cache, `${dir}${encodeURIComponent(meta.id)}.json`))
   );
 }
 

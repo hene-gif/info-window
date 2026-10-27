@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "id": "2026-10-17-deepseek-v41-flash-1017",
+  "date": "2026-10-17",
+  "title": "DeepSeek V4.1 Flash 1017：开放权重，便宜到可以大规模用",
+  "summary": "10 月 17 日，DeepSeek 以 MIT 协议公开 V4.1 Flash 1017 的权重，并在官网、App 和 API 上线。官方称基准更好、任务更快、输出更短，并让 DeepSeek Harness 升到 v0.2.1-rc.1 来配合。权重可以自己部署，分发也跟着变广：Hugging Face 显示该仓库近一个月约 10.6 万次下载；10 月 26 日 Cursor 把它放进原生模型列表。据 Automater、AlphaSignal 转述的 CursorBench 4.0，四档推理的单任务成本大约 0.60 到 0.98 美元，Cursor 称每一档都在成本前沿，最高分约 47.7%。官方模型卡里，它在 DeepSWE 上高于表中的 Opus 5，在 HLE 和 Terminal-Bench 上仍低一截。低价铺开之后会不会自己长出新能力，现在只是观察，还没有独立证据。",
+  "related": ["1017晚-1"],
+  "sources": [
+    {
+      "label": "api-docs.deepseek.com",
+      "url": "https://api-docs.deepseek.com/news/news261017/",
+      "date": "2026-10-17"
+    },
+    {
+      "label": "huggingface.co（模型卡）",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "date": "2026-10-17"
+    },
+    {
+      "label": "cursor.com（模型说明）",
+      "url": "https://cursor.com/docs/models/deepseek-v4-1-flash-1017",
+      "date": "2026-10-26"
+    },
+    {
+      "label": "automater.ai（CursorBench）",
+      "url": "https://automater.ai/news/cursor-deepseek-v41-flash-cursorbench-cost-frontier/",
+      "date": "2026-10-26"
+    },
+    {
+      "label": "alphasignal.ai（CursorBench）",
+      "url": "https://alphasignal.ai/news/cursor-adds-deepseek-v4-1-flash-hitting-47-7-for-under-1-per-task",
+      "date": "2026-10-26"
+    }
+  ]
+}

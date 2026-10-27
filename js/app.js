@@ -31,6 +31,8 @@ const state = {
   issues: new Map(),
   columnsIndex: { columns: [] },
   columns: new Map(),
+  timelineIndex: { events: [] },
+  timeline: new Map(),
   fileFavorites: [],
   route: parseRoute(),
   section: 'all',
@@ -50,6 +52,7 @@ if (state.route.item) {
   state.section = 'all';
   state.block = 'all';
 }
+if (state.route.name === 'timeline' && state.route.id) state.open.add(state.route.id);
 
 const $ = (id) => document.getElementById(id);
 const bar = $('bar');
@@ -106,6 +109,7 @@ window.addEventListener('hashchange', () => {
     state.section = 'all';
     state.block = 'all';
   }
+  if (state.route.name === 'timeline' && state.route.id) state.open.add(state.route.id);
   render({ resetScroll: true });
   if (state.restoreScroll != null && state.route.name !== 'search') window.scrollTo(0, state.restoreScroll);
   state.restoreScroll = null;
@@ -143,7 +147,13 @@ async function boot() {
     } catch {
       state.columnsIndex = { columns: [] };
     }
-    await Promise.all([loadIssues(), loadColumns()]);
+    try {
+      const timeline = await fetchJson('data/timeline/index.json');
+      state.timelineIndex = timeline && Array.isArray(timeline.events) ? timeline : { events: [] };
+    } catch {
+      state.timelineIndex = { events: [] };
+    }
+    await Promise.all([loadIssues(), loadColumns(), loadTimeline()]);
     state.ready = true;
   } catch {
     state.fatal = '这份目录没有打开。可以稍后再试。';
@@ -196,6 +206,19 @@ async function loadColumns() {
   );
 }
 
+async function loadTimeline() {
+  await Promise.all(
+    (state.timelineIndex.events || []).map(async (meta) => {
+      try {
+        const event = await fetchJson(`data/timeline/${encodeURIComponent(meta.id)}.json`);
+        state.timeline.set(meta.id, event);
+      } catch {
+        state.timeline.set(meta.id, { ...meta, related: [], sources: [], error: true });
+      }
+    })
+  );
+}
+
 function render(options = {}) {
   closeMenu();
   renderBar();
@@ -213,7 +236,8 @@ function render(options = {}) {
   main.innerHTML = view.html;
   mountOpenDiscussions();
   if (options.resetScroll) {
-    if (state.route.item) scrollToRow(state.route.item);
+    const focusId = state.route.item || (state.route.name === 'timeline' ? state.route.id : '');
+    if (focusId) scrollToRow(focusId);
     else window.scrollTo(0, 0);
   }
 }
@@ -223,6 +247,7 @@ function pageView() {
   if (name === 'search') return { html: searchPage(), title: '检索 · 讯息窗' };
   if (name === 'favorites') return { html: favoritesPage(), title: '收藏 · 讯息窗' };
   if (name === 'columns') return { html: columnsPage(), title: '专栏 · 讯息窗' };
+  if (name === 'timeline') return { html: timelinePage(), title: '时间线 · 讯息窗' };
   if (name === 'column') {
     const column = state.columns.get(id);
     return {
@@ -265,7 +290,7 @@ function renderBar() {
   badge.hidden = total === 0;
   badge.textContent = String(total);
   $('jump').hidden = name !== 'dates';
-  $('tabs').hidden = name === 'dates' || isColumnRoute(name);
+  $('tabs').hidden = hidesDigestTabs(name);
   renderTabs();
 }
 
@@ -273,7 +298,7 @@ function renderTabs() {
   const tabs = $('tabs');
   const blocks = $('blocks');
   const name = state.route.name;
-  if (!state.ready || name === 'dates' || isColumnRoute(name)) {
+  if (!state.ready || hidesDigestTabs(name)) {
     tabs.innerHTML = '';
     blocks.hidden = true;
     return;
@@ -338,12 +363,16 @@ function contextItems() {
 function extraAllCount() {
   const { name } = state.route;
   if (name === 'favorites') return favoriteEntries(false).foundColumns.length;
-  if (name === 'search' && state.query.trim()) return searchColumnHits().length;
+  if (name === 'search' && state.query.trim()) return searchColumnHits().length + searchTimelineHits().length;
   return 0;
 }
 
 function isColumnRoute(name = state.route.name) {
   return name === 'columns' || name === 'column';
+}
+
+function hidesDigestTabs(name = state.route.name) {
+  return name === 'dates' || name === 'timeline' || isColumnRoute(name);
 }
 
 function pickerLabel() {
@@ -352,6 +381,7 @@ function pickerLabel() {
   if (name === 'dates') return '往期';
   if (name === 'search') return '检索';
   if (name === 'columns') return '专栏';
+  if (name === 'timeline') return '时间线';
   if (name === 'column') return state.columns.get(id)?.title || '没有这篇专栏';
   if (name === 'date') return `${shortDate(id)} ${weekText(id)}`.trim();
   const meta = state.index.issues.find((item) => item.id === currentIssueId());
@@ -591,6 +621,45 @@ function columnRowHtml(column, options = {}) {
   return `<article class="row${open ? ' is-open' : ''}" data-row="${esc(id)}"><button type="button" class="row-head" aria-expanded="${open}" aria-controls="${esc(bodyId)}"><span class="row-title">${show(title)}</span><span class="row-meta">${meta}</span></button><div class="row-body" id="${esc(bodyId)}"><div class="row-clip"><div class="row-inner">${body}</div></div></div></article>`;
 }
 
+function timelinePage() {
+  const events = timelineEntries();
+  if (!events.length) {
+    return '<h1 class="sr-only">时间线</h1><p class="empty">还没有记入时间线的事件。</p>';
+  }
+  const cards = events.map((event) => `<li class="tl-item">${timelineCardHtml(event)}</li>`).join('');
+  return `<h1 class="sr-only">时间线</h1><p class="tl-lead">只记录影响比较大的科技事件，从新到旧。不是每天的摘要。</p><p class="result-count">${events.length} 件</p><ol class="tl-list">${cards}</ol>`;
+}
+
+function timelineEntries() {
+  return (state.timelineIndex.events || []).map(
+    (meta) => state.timeline.get(meta.id) || { ...meta, related: [], sources: [], error: true }
+  );
+}
+
+function timelineCardHtml(event, options = {}) {
+  const query = options.query || '';
+  const show = (value) => (query ? highlight(value, query) : esc(value));
+  const id = text(event.id);
+  const open = state.open.has(id);
+  const bodyId = `body-${id}`;
+  const when = event.date ? `${formatLongDate(event.date)} ${weekText(event.date)}`.trim() : '';
+  const links = sourceLinks(event.sources);
+  const source = links.length
+    ? `<span class="m-src">${esc(links[0].label)}${links.length > 1 ? ` +${links.length - 1}` : ''}</span>`
+    : '';
+  const meta = [when ? `<time datetime="${esc(event.date)}">${esc(when)}</time>` : '', source].join('');
+  const body = event.error
+    ? '<p class="empty">这条事件没有打开。</p>'
+    : `<p class="tl-kicker">为什么重要</p><p class="summary">${show(text(event.summary))}</p>${timelineSourcesHtml(event.sources)}${relatedHtml(event.related)}`;
+  return `<article class="row tl-card${open ? ' is-open' : ''}" data-row="${esc(id)}"><button type="button" class="row-head" aria-expanded="${open}" aria-controls="${esc(bodyId)}"><span class="row-title">${show(text(event.title))}</span><span class="row-meta">${meta}</span></button><div class="row-body" id="${esc(bodyId)}"><div class="row-clip"><div class="row-inner">${body}</div></div></div></article>`;
+}
+
+function timelineSourcesHtml(sources) {
+  const links = sourceLinks(sources);
+  if (!links.length) return '';
+  return `<p class="srcs">${links.map((link) => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)}${ICON.out}</a>`).join('')}</p>`;
+}
+
 function issueBody(issue, options = {}) {
   if (issue.error) return '<p class="empty">这一期没有打开。</p>';
   return sectionsHtml(applyFilter(issue.items || []), issue, { showEmpty: true, ...options });
@@ -665,19 +734,29 @@ function searchColumnHits() {
     .filter((column) => column && !column.error && matchesColumn(column, query));
 }
 
+function searchTimelineHits() {
+  const query = state.query.trim();
+  if (!query) return [];
+  return timelineEntries().filter((event) => event && !event.error && matchesTimeline(event, query));
+}
+
 function searchResultsHtml() {
-  if (!state.query.trim()) return '<p class="empty">在全部期次和专栏里找标题、摘要、相关说明、来源和编号。</p>';
+  if (!state.query.trim()) return '<p class="empty">在全部期次、专栏和时间线里找标题、摘要、相关说明、来源和编号。</p>';
   const hits = searchHits(true);
   const columns = searchColumnHits();
-  if (!hits.length && !columns.length) return '<p class="empty">没有匹配的条目。</p>';
-  const total = hits.reduce((sum, hit) => sum + hit.items.length, 0) + columns.length;
+  const events = searchTimelineHits();
+  if (!hits.length && !columns.length && !events.length) return '<p class="empty">没有匹配的条目。</p>';
+  const total = hits.reduce((sum, hit) => sum + hit.items.length, 0) + columns.length + events.length;
   const colBody = columns.length
     ? `<h2 class="grp-head"><a href="#/columns">专栏</a><span class="n">${columns.length}</span></h2><div class="rows">${columns.map((column) => columnRowHtml(column, { query: state.query })).join('')}</div>`
+    : '';
+  const timelineBody = events.length
+    ? `<h2 class="grp-head"><a href="#/timeline">时间线</a><span class="n">${events.length}</span></h2><div class="rows">${events.map((event) => timelineCardHtml(event, { query: state.query })).join('')}</div>`
     : '';
   const body = hits
     .map((hit) => groupHtml(hit.issue, hit.items, { query: state.query, crumb: true }))
     .join('');
-  return `<p class="result-count">${total} 条结果</p>${colBody}${body}`;
+  return `<p class="result-count">${total} 条结果</p>${timelineBody}${colBody}${body}`;
 }
 
 function favoritesPage() {
@@ -845,6 +924,27 @@ function applyFilter(items) {
     if (state.section === FOCUS && state.block !== 'all' && item.block !== state.block) return false;
     return true;
   });
+}
+
+function matchesTimeline(event, query) {
+  const haystack = [
+    event.id,
+    event.title,
+    event.summary,
+    event.date,
+    ...(Array.isArray(event.related) ? event.related : []),
+    ...(Array.isArray(event.sources)
+      ? event.sources.flatMap((source) => [source.label, source.url, source.date])
+      : []),
+  ]
+    .filter(Boolean)
+    .join('\n')
+    .toLowerCase();
+  return query
+    .trim()
+    .split(/\s+/u)
+    .filter(Boolean)
+    .every((token) => haystack.includes(token.toLowerCase()));
 }
 
 function matchesColumn(column, query) {
@@ -1243,6 +1343,12 @@ async function checkForUpdates(reloadsOnTakeover) {
     if (JSON.stringify(columns) !== JSON.stringify(state.columnsIndex)) window.location.reload();
   } catch {
     /* 专栏目录读不到时，仍以已经打开的页面为准。 */
+  }
+  try {
+    const timeline = await fetchJson('data/timeline/index.json');
+    if (JSON.stringify(timeline) !== JSON.stringify(state.timelineIndex)) window.location.reload();
+  } catch {
+    /* 时间线目录读不到时，仍以已经打开的页面为准。 */
   }
 }
 
