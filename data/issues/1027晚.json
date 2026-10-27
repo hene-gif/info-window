@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "id": "1027晚",
+  "date": "2026-10-27",
+  "slot": "晚",
+  "title": "10月27日 · 晚",
+  "items": [
+    {
+      "id": "1027晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 公开 Claude 署名论文：称内部研究版独立找到证伪 ETH 的 3-SAT 算法，附 Lean 形式化；仍待专家核查",
+      "time": "2026-10-27T12:00:00+08:00",
+      "summary": "相对早刊 OpenAI「科学结果」侧：Anthropic 在公开仓库 anthropics/formal-math 的 eth/ 目录放出论文《A 2^o(n) Time Algorithm for 3-SAT》，署名 Claude (Anthropic)，并附 Lean 4 形式化。研究员 @__alpoge__ 于台北约 10 月 27 日 12:00 发帖，转述材料称核心算法由内部研究版 Claude 于 10 月 16 日找到（约 1400 万输出 token、该步无人类输入），研究员再协助润色表述。声称确定性算法以 2^o(n) 时间解 3-SAT，并对更难的 #3-SAT 给出更紧渐近界，从而反驳指数时间假设（ETH）；README 写明结果纯属渐近，对实际 SAT 求解「什么也没说」。Lean 构建称主定理仅依赖 Lean 三公理，CI 另用 Comparator + 第二内核 nanoda 复核。属研究公开物，非新聊天模型发版；尚未经同行评审定论。本窗再核 OpenAI、Google/DeepMind、xAI、Meta、DeepSeek、Qwen：无新模型正式发版；马斯克本窗多为政治/短评转发，无 xAI/Grok 产品官宣，不单独占条。Fable 5.5、Artificial Analysis Intelligence Index v5 仍属未发/预告，不采。",
+      "relevance": "别当成「Claude 突然变强能替你解数学作业」——这是理论复杂度结果，下一步看专家能不能把证明钉死；跟换哪款日常模型不是一回事。",
+      "sources": [
+        {
+          "label": "github.com/anthropics/formal-math（eth README）",
+          "url": "https://github.com/anthropics/formal-math/tree/main/eth"
+        },
+        {
+          "label": "x.com/__alpoge__（研究员转述帖）",
+          "url": "https://x.com/__alpoge__/status/2114930095009968506"
+        },
+        {
+          "label": "x.com/dotey（中文跟进）",
+          "url": "https://x.com/dotey/status/2114952872458633296"
+        },
+        {
+          "label": "openai.com（早刊对照：科学结果说明）",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+        }
+      ]
+    },
+    {
+      "id": "1027晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "补报：Gen Digital——骗子把假「下载 Claude」页挂在真 claude.ai 的 Shared Chat/Artifact 上，再买 Google 广告引流；诱导粘贴命令装 AMOS / Windows 远控木马",
+      "time": "2026-10-26",
+      "summary": "补报（Gen Digital 威胁分析师 Vojtěch Moravec 报告标 10 月 26 日；早刊/中刊未收；CybersecurityNews 10 月 27 日转述、午后仍在 X 扩散）。攻击者不注册仿冒域名，而是用 Claude 正常的「分享对话 / 公开 Artifact」在 claude.ai 上挂假「Download Claude / Install Claude on Windows」页（带「user-generated and unverified」薄条提示，但域名、锁标、品牌几乎一模一样），再用 Google Ads 买搜索置顶。Mac：页面「一键复制」把混淆命令塞进剪贴板，粘贴进 Terminal 后装上 Atomic macOS Stealer（AMOS）——骗 Full Disk Access、假系统密码框、收浏览器/钥匙串/钱包等，并可覆盖 Ledger Live / Trezor Suite，之后在「恢复/验证助记词」屏里偷种子。Windows：教 Win+R → Ctrl+V → Enter，跑恶意 PowerShell，经 github.io 拉混淆 .NET 远控载荷。报告强调 Anthropic 服务器没被黑，是分享功能被滥用；同手法更早有 BleepingComputer 等旧案，本条以 Gen Digital 新报告（确认 AMOS + Windows + 硬件钱包木马化 + 真域名 Artifact）为主合并。",
+      "relevance": "装 Claude 等软件：自己在地址栏敲 claude.com/download，别点搜索赞助广告；看到「粘贴到终端 / Win+R」就停——正规安装不会让你跑一串看不懂的命令；永远别在电脑软件里输入钱包助记词。",
+      "sources": [
+        {
+          "label": "gendigital.com（Gen Digital 主文）",
+          "url": "https://www.gendigital.com/blog/insights/research/claude-content-sharing-malware"
+        },
+        {
+          "label": "cybersecuritynews.com（10-27 转述）",
+          "url": "https://cybersecuritynews.com/claudes-official-website/"
+        },
+        {
+          "label": "bleepingcomputer.com（相关旧案语境）",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-claudeai-chats-to-push-mac-malware/"
+        }
+      ]
+    },
+    {
+      "id": "1027晚-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "上海普陀警方：姜某用 AI 生成「父亲重病」短视频发朋友圈，多年编造患癌、丧葬等理由向同学好友骗约 170 万元炒股亏光；已刑拘",
+      "time": "2026-10-26",
+      "summary": "中新网约 10 月 26 日 15:53（台北）报道、央广网 10 月 27 日早间汇总：上海市公安局普陀分局白丽路派出所通报，姜某自约 2019 年起以「技术投资」「结婚买房」「公司周转」及后来的「父亲患癌急需治疗」「父亲过世需丧葬费」等理由，向三名朋友累计借款约 170 余万元；钱款几乎全部投入股市并亏损。民警核查流水与聊天记录发现「父亲去世」等亦系捏造。为增强可信度，姜某利用 AI 技术生成父亲重病在床的短视频发布在朋友圈（警方供图）。姜某供述全部借款理由系伪造；因涉嫌诈骗罪已被依法刑事拘留，案件侦办中。属「犯罪分子用 AI 辅助诈骗」+ 有警方确认实害；AI 是增信手段之一（骗局本身跨多年），勿写成「纯 AI 一夜骗光」。瑞典封 ChatGPT/Claude、Cohere×Qwen 沙箱异常外联中刊已报，不重复。",
+      "relevance": "朋友圈「重病/去世」视频+借钱：先打本人或家属你本来就有的电话、当面核实，别只凭视频和转账截图打款；熟人也要二次确认。",
+      "sources": [
+        {
+          "label": "chinanews.com.cn（中新网）",
+          "url": "https://www.chinanews.com.cn/sh/2026/10-26/10721156.shtml"
+        },
+        {
+          "label": "news.cnr.cn（央广网 10-27 汇总）",
+          "url": "https://news.cnr.cn/dj/20261027/t20261027_527853840.shtml"
+        },
+        {
+          "label": "thepaper.cn（澎湃转述）",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34334887"
+        }
+      ]
+    },
+    {
+      "id": "1027晚-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "台股收翻红微涨；日韩大涨自高点回吐；A/港收跌加深；油反弹、金回落；美股尚未开盘",
+      "time": "2026-10-27T19:20:00+08:00",
+      "summary": "相对中刊 midday「台股翻绿、日韩大涨、A/港偏弱」：亚盘正式收盘——台股收 46096.23（+54.80，+0.12%；成交约 NT$976.55 亿），由中午约 −0.2% 翻红微涨；日经收 63268.37（+1.73%），自盘中约 +1.96% 高点回吐；韩国综指收 5638.34（+3.09%），盘中一度约 +4.9% 后回落。A/港收跌加深：上证约 3648（−1.33%）、深成约 11246（−2.5%）、恒生约 23041（−0.7%）。欧股截稿时仍在交易、盘中偏弱（FTSE 约 −1%，汇丰等拖累）。美股周二尚未开盘（约台北 21:30）；周一收涨仍在（道指约 +0.28%、标普约 +0.70%、纳指约 +0.82%），周二期货大致持平。WTI 约 102.16（中刊约 100.85 一带反弹）；现货金约 3996（中刊约 4035 明显回落）；10 年美债收益率约 4.982%，仍贴 5%。本周焦点仍是美联储周三决议与美科技巨头财报。",
+      "relevance": "别拿中午截图当收盘：台股翻红、日韩仍强但吐了高点、A/港更弱；油涨金跌这一对照，比「全红/全绿」口号有用。",
+      "sources": [
+        {
+          "label": "focustaiwan.tw（台股收盘）",
+          "url": "https://focustaiwan.tw/business/202610270010"
+        },
+        {
+          "label": "nikkei.com（日经收评）",
+          "url": "https://www.nikkei.com/article/DGXZQOFL270E60X21C26A0000000/"
+        },
+        {
+          "label": "en.yna.co.kr（韩联社收盘）",
+          "url": "https://en.yna.co.kr/view/AEN20261027008500320"
+        },
+        {
+          "label": "english.news.cn（新华社 A 股）",
+          "url": "https://english.news.cn/20261027/e0997e568bba4c5681f482e57b94b767/c.html"
+        },
+        {
+          "label": "news.rthk.hk（港台亚股收评）",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1875516-20261027.htm"
+        },
+        {
+          "label": "cnbc.com（金价）",
+          "url": "https://www.cnbc.com/2026/10/27/gold-eases-on-firmer-dollar-ahead-of-fed-decision.html"
+        }
+      ]
+    },
+    {
+      "id": "1027晚-5",
+      "section": "国际重大影响",
+      "title": "卡塔尔：伊朗须展现善意、停止威胁海湾并重开霍尔木兹，调解才可能成功；四国续谈仍无停火/重开海峡签字",
+      "time": "2026-10-27",
+      "summary": "相对中刊「卡塔尔五日方案尚无签字」：卡塔尔外长部发言人周二明确列出调解前提——伊朗须展现善意、停止对阿拉伯海湾国家的威胁，并开放霍尔木兹海峡，否则斡旋难有成（Al Arabiya / Reuters、Iran International 约 10 月 27 日报道）。周一沙特国防大臣、巴基斯坦军方高层、土耳其情报负责人与伊朗官员会谈后，伊官方媒体称同意就地区和平安全继续磋商；分析指属「强制外交」窗口，未宣布胡塞停火或重开海峡的正式协议。胡塞方面周一仍宣称袭击沙特油气与机场等目标（沙特当局未必即时确认），油价高位震荡叙事仍成立。勿写成「已达成停火/已重开霍尔木兹」——本条新意是卡塔尔公开条件清单，不是签约。Meta 约 950 亿美元融资中刊已报，金额微调报道不另占条。",
+      "relevance": "海峡通不通会牵动油价，进而影响通膨预期和风险资产；中刊已报斡旋草案，晚刊新在卡塔尔把「重开霍尔木兹」说成调解前置条件——还没签字，别提前松口气。",
+      "sources": [
+        {
+          "label": "english.alarabiya.net（Al Arabiya / Reuters）",
+          "url": "https://english.alarabiya.net/News/middle-east/2026/10/27/qatar-says-iran-needs-to-show-good-intentions-for-mediation-efforts-to-succeed"
+        },
+        {
+          "label": "iranintl.com（Iran International）",
+          "url": "https://www.iranintl.com/en/202610273582"
+        },
+        {
+          "label": "investing.com（Reuters 油价外交 vs 袭击）",
+          "url": "https://www.investing.com/news/commodities-news/oil-eases-on-middle-east-diplomacy-hopes-saudi-attacks-keep-supply-worries-alive-4974185"
+        }
+      ]
+    },
+    {
+      "id": "1027晚-6",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "阿肯色大学团队：石墨烯电感从家用电力线 60Hz 磁场取电，做出可「装完就不管」的无电池温度传感器",
+      "time": "2026-10-23",
+      "summary": "与中刊靠墙静蹲降血压不同赛道——这是能源材料 / 物联网取电：阿肯色大学物理系 Paul Thibado 团队与密歇根大学合作，论文发表于 Journal of Vacuum Science & Technology B（在线约 10 月 20 日；大学新闻 / TechXplore 约 10 月 23 日）。用石墨烯电感采集建筑物电线产生的 60Hz 交变磁场，经定制电路整流后给电容充电，驱动纳瓦级温度传感器——不装电池。论文称同时满足本地取能、可长期无人值守设想、纳瓦功耗；Thibado 称电容蓄电在断电后仍可支撑传感器约 24 小时乃至约一周（其表述）。应用设想包括物流追踪、环境监测、穿戴与医疗监测等；更长期目标是多模式取能支撑物联网。系实验/原理验证，商业化仍早，勿夸大成「已经量产进你家」。",
+      "relevance": "以后很多传感器也许不用换电池、少产生废电池——跟讯息窗常盯的 AI/股市不是一类新闻，但和家里电线、物联网设备有关。",
+      "sources": [
+        {
+          "label": "techxplore.com（TechXplore / U of Arkansas）",
+          "url": "https://techxplore.com/news/2026-10-ambient-power-battery-free-temperature.html"
+        },
+        {
+          "label": "doi.org（JVST B）",
+          "url": "https://doi.org/10.1116/6.0005814"
+        },
+        {
+          "label": "pubs.aip.org（AIP 条目）",
+          "url": "https://pubs.aip.org/avs/jvb/article/44/6/062401/3406852/Graphene-powerline-energy-harvester-powers-a"
+        }
+      ]
+    }
+  ]
+}
