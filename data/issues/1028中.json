@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "id": "1028中",
+  "date": "2026-10-28",
+  "slot": "中",
+  "title": "10月28日 · 中",
+  "items": [
+    {
+      "id": "1028中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 扩 OneGov：联邦/州/地方/部落政府用 Claude 按量价再打 4 折，无最低消费；估可为政府省约 10 亿美元",
+      "time": "2026-10-28T06:20:00+08:00",
+      "summary": "相对早刊 Anthropic 新药/判断研究：官方 X 约台北 10 月 28 日 06:20、博客标 10 月 27 日宣布扩大与美国总务管理局（GSA）OneGov 合作——政府伙伴在 Claude Enterprise、Claude for Government、Claude API 上再享约 40% 按量（token）折扣，首次覆盖各产品面（含直接采购与后续经云厂商购买）；并延伸到州、地方、部落与领地政府。无最低消费，按实际用量付；Anthropic 称折扣合计估可为政府省约 10 亿美元。约 500 个联邦/州/地方政府组织在用 Claude；Claude for Government 周活自 2 月约增 8 倍，联邦民用机构用量约一年增 20 倍。Claude for Government 9 月 30 日已一般可用（FedRAMP High）；Bedrock/Vertex 亦可。属政府侧采购与产品通路扩面，不是新模型发版。本窗再核 OpenAI、Google/DeepMind、xAI、DeepSeek、Qwen：无新模型正式发版；马斯克本窗多为转发/短评，无 xAI/Grok 产品官宣，不单独占条。",
+      "relevance": "这是「政府能更便宜按量买 Claude」——普通人用不到这折扣，但说明 Claude 已深度嵌进美国公职流程；别把它读成新模型发布。",
+      "sources": [
+        {
+          "label": "anthropic.com（官方博文）",
+          "url": "https://www.anthropic.com/news/expanding-partnership-gsa"
+        },
+        {
+          "label": "gsa.gov（GSA 新闻稿）",
+          "url": "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-anthropic-reach-onegov-agreement-on-discounted-consumptionbased-pricing-10272026"
+        },
+        {
+          "label": "x.com/AnthropicAI（官方帖）",
+          "url": "https://x.com/AnthropicAI/status/2115207004293853358"
+        }
+      ]
+    },
+    {
+      "id": "1028中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Meta Muse 登陆新加坡（iOS/Android/muse.ai），接 Shopee、Grab、新航等；英伟达官宣再投 30 亿美元扩 Muse 算力合作",
+      "time": "2026-10-27",
+      "summary": "早刊未收：Meta 新闻室 10 月 27 日称个人 AI agent Muse 在新加坡上线（iOS、Android、muse.ai；AI 眼镜稍后），可连 Gmail、谷歌日历、Instagram；本地早期连接方含 Shopee、Grab、新加坡航空、Agoda、ShopBack、Klook、Trip.com、Lazada，功能分批开放。宣称多数场景免费、进阶订阅；跑在 Muse Secure VM，密码与支付方式不进 agent 视野，发信/下单等敏感动作先问你。同日英伟达新闻稿：与 Meta 扩大 Muse 及模型族合作（推理/训练优化），并考虑 OpenShell、Sentry 等安全监控协作；Meta 拟扩大部署 Vera Rubin / Vera CPU、Spectrum-X、BlueField-4；英伟达将认购 Meta 股权发行中约 30 亿美元（媒体另报 AMD 约 10 亿）。中刊曾写英伟达/AMD/Broadcom 对 Meta 约 950 亿融资「非约束性兴趣」——本条是英伟达侧正式落笔的 Muse 合作+30 亿认购，作产品与算力确认，不重复融资结构全盘。",
+      "relevance": "Muse 是「能替你点外卖订机票」的个人 agent，不是新聊天机器人；新加坡可试，敏感操作仍要自己点同意。芯片厂给客户投钱属供应链捆绑，别当成 Muse 已经全球随处可用。",
+      "sources": [
+        {
+          "label": "about.fb.com（Meta 新闻室）",
+          "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/"
+        },
+        {
+          "label": "investor.nvidia.com（英伟达新闻稿）",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Meta-to-Expand-Collaboration-on-Muse-and-Muse-Family-of-Models-Amid-Robust-Growth/default.aspx"
+        },
+        {
+          "label": "cnbc.com（英伟达/AMD 投资 Meta）",
+          "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
+        }
+      ]
+    },
+    {
+      "id": "1028中-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "补报：JFrog——testmetest npm 蠕虫已武装 42 个真实 GitHub 仓库，开 Claude Code/Cursor/Gemini/VS Code 就会跑巨型载荷",
+      "time": "2026-10-26",
+      "summary": "补报（JFrog 研究 10 月 26 日；早刊/近几期未收）。SafeDep 先报 testmetest 系列恶意 npm，当时以为多是攻击者自测账户；JFrog 补查 GitHub 基础设施：11 个合法所有者旗下 42 个真实仓库已被植入 AI 编程助手/IDE 执行钩子（.claude/settings.json SessionStart、.gemini、.cursor/mcp.json、.vscode/tasks.json 等），旁放约 12.9–13.7 MB 多态包装的 .github/init.js——体积大到常规 GitHub 代码搜索/内容 API 扫不到，开工作区或开 Claude Code/Cursor 等就会执行，解码后是同一套 CI 发包载荷（偷令牌、经 Actions 再发恶意包）。另见原生 addon+.napi_cache 伪装、检测 CI/沙箱则静默退出。同集群关联此前 Socket 披露的 shellpanel/cPanel CVE-2026-41940 扫描基础设施；JFrog 确认 42 仓武装与广域扫描企图，未证实下游 cPanel 已被打穿。属「AI 开发工具被滥用」+供应链蠕虫，与早刊 Yoba 假桌面安装包不同链。",
+      "relevance": "用 Claude Code / Cursor / VS Code 开陌生或协作仓库前：先查有没有奇怪的 .github/init.js、.claude/settings.json、超大脚本；别乱 npm install「placeholder」原生插件。中招就当主机失陷——立刻轮换 GitHub/npm/云密钥。",
+      "sources": [
+        {
+          "label": "research.jfrog.com（JFrog 主文）",
+          "url": "https://research.jfrog.com/post/beyond-testmetest-42-hijacked-github-repos/"
+        },
+        {
+          "label": "theregister.com（The Register）",
+          "url": "https://www.theregister.com/security/2026/10/26/worm-armed-42-github-repos-by-hiding-a-payload-too-big-to-fail/5305570"
+        }
+      ]
+    },
+    {
+      "id": "1028中-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "台股盘中一度涨逾850点站回季线；韩综触6000、涨约6%；日经收约+1.2%；A/港股高开；今晚美东看美联储",
+      "time": "2026-10-28T12:00:00+08:00",
+      "summary": "相对早刊「台股现货未开、韩开+2.23%」：中央社约 11:06–12:15——台股开 46402.79（+306.56），盘中最高 46949.98（+853.75）站回季线约 46392；约 10:48 报 46759.79（+663.56，+1.44%），成交约 4104 亿新台币；台积电盘中最高 2430、约 2415（+0.63%），联发科涨逾 5%、日月光投控逾 6%。韩：Aju 约 11:10 综指 5974.34（约 +5.96%），盘中短暂触 6000；SK 海力士与三星电子约 +8%；外资/机构净买、散户兑现。日经午后报道收约 64041.60（约 +1.22%）量级。A 股：财新称沪指开 3676.92（+0.78%）、深成指开 +1.01%、创业板指开 +1.77%。港股早盘恒指开约 23083.99（+0.19%），盘中报道恒科指涨幅约 1%–2% 量级。油金：亚盘 Brent 报道约 114.3–114.4、WTI 约 100.4；现货金约平 4058 附近。美联储决议仍约美东 10 月 28 日 14:00（台北 29 日凌晨）公布，普遍预期维持 3.75%–4.00%，盯声明与 12 月线索。截稿时台股尚未终盘，数字以盘中通稿为准。",
+      "relevance": "亚洲芯片股在抢美联储前的风险偏好；台股涨幅大但未收盘别当最终成绩。真正变盘点仍是今晚美联储声明——别只看盘中最高点。",
+      "sources": [
+        {
+          "label": "cna.com.tw（中央社台股）",
+          "url": "https://www.cna.com.tw/news/afe/202610280058.aspx"
+        },
+        {
+          "label": "ajupress.com（韩综触6000）",
+          "url": "https://www.ajupress.com/view/20261028112541969"
+        },
+        {
+          "label": "finance.caixin.com（A股开盘）",
+          "url": "https://finance.caixin.com/2026-10-28/102498056.html"
+        },
+        {
+          "label": "swissinfo.ch（彭博亚股综述）",
+          "url": "https://www.swissinfo.ch/eng/asian-stocks-rise%2C-treasuries-steady-before-fed%3A-markets-wrap/92285228"
+        },
+        {
+          "label": "federalreserve.gov（议息日历）",
+          "url": "https://www.federalreserve.gov/newsevents/2026-october.htm"
+        }
+      ]
+    },
+    {
+      "id": "1028中-5",
+      "section": "国际重大影响",
+      "title": "以色列大选出口民调：内塔尼亚胡与艾森科特两大阵营皆难凑 61 席，阿裔政党约 17–18 席创高；正式结果约 11 月 4 日",
+      "time": "2026-10-28",
+      "summary": "相对早刊 Oleshky 局部停火：以色列 10 月 27 日大选（哈马斯 2023-10-07 袭击后首次全国选举）出口民调显示，总理内塔尼亚胡与前总参谋长加迪·艾森科特（Gadi Eisenkot）两大阵营皆远未到组阁所需 61 席；Channel 13 更新约双方各 51，Channel 12/Kan 11 显示艾森科特阵营略领先约 52–50；不属两大阵营的阿裔政党合计约 17–18 席，为历来最强表现之一。投票率约 77.7%，为约 27 年来最高。艾森科特已宣称初步结果显示对内塔尼亚胡政府「完全不信任」并要求优先组阁权；正式结果约一周后（11 月 4 日）公布，组阁谈判可能数周。这是中东战后政治格局的关键变数，不等于停火协议或霍尔木兹谈判已有新签字；早刊局部人道停火不重复。",
+      "relevance": "出口民调≠最终席次——跟中东风险溢价和油价情绪相关，但别把「难组阁」自动读成立刻换政府或战争结束。",
+      "sources": [
+        {
+          "label": "cnbc.com（出口民调）",
+          "url": "https://www.cnbc.com/2026/10/28/israel-election-netanyahu-trump-gaza-.html"
+        },
+        {
+          "label": "theguardian.com（选举直播）",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news"
+        }
+      ]
+    },
+    {
+      "id": "1028中-6",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "太阳能发电量已超过核电：Ember/BBC 称 2025 年刚反超，近 12 个月太阳能比核电多约 13%；2026 年全球发电占比逼近一成",
+      "time": "2026-10-26",
+      "summary": "与早刊 ETH 苏黎世血糖植入装置不同赛道——这是能源结构硬数据：BBC Future 约 10 月 26 日分析 Ember 数据称，全球太阳能发电量在 2025 年已（勉强）超过核电；截至 2026 年 9 月的近 12 个月，太阳能发电量约比核电高出 13%。十年前太阳能约占全球电力约 1%，2026 年几乎肯定接近/达到约 10%。核电发电量自约 2000 年来基本持平，太阳能同期约增 2700 倍；2025 年全球电力需求增量里约四分之三由太阳能满足。推动因素：组件「冒犯性地便宜」、中美印澳与「阳光带」国家自建/进口、油价推高柴油机替代、电池把午间电挪到晚高峰。作者提醒：并网、长时储能与制度跟不上才是下一瓶颈；中国装机增速或放缓，但剔中国后其他地区装机仍在增。马斯克亦转发「太阳能 2026 年占全球发电约 10%、首次大于核电」类帖，本条以 Ember/BBC 数据为准，不单靠转发。",
+      "relevance": "这不是「明天就能无煤无油」——是发电结构已经翻了一页；看电价和电网新闻时，太阳能+电池比核电口号更贴近正在发生的事。",
+      "sources": [
+        {
+          "label": "bbc.com（BBC Future）",
+          "url": "https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear"
+        },
+        {
+          "label": "ember-energy.org（Ember 洞察）",
+          "url": "https://ember-energy.org/latest-insights/batteries-have-unlocked-the-era-of-anytime-solar/"
+        }
+      ]
+    }
+  ]
+}
