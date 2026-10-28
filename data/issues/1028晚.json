@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "id": "1028晚",
+  "date": "2026-10-28",
+  "slot": "晚",
+  "title": "10月28日 · 晚",
+  "items": [
+    {
+      "id": "1028晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：Artificial Analysis Intelligence Index v5 上线——60% 用私有题；Opus 5.5 领跑 58，开源权重差距扩到约 12 分",
+      "time": "2026-10-27",
+      "summary": "早刊曾写「AA Index v5 仍属未发/预告」——现已正式公布：独立评测站 Artificial Analysis 于约 10 月 27 日发布 Intelligence Index v5（changelog/文章同日；X 与第三方榜 10 月 28 日仍在扩散）。九项评测四等分（知识工作/编程/科学/综合各 25%），首次约 60% 分数来自私有或留答案集；新增 Cognition FrontierCode 2.0、Terminal-Bench-Science，并升级 HLE-Diamond、AA-Omniscience v1.1、CritPt v2 难题子集。关键结果（官方文）：Claude Opus 5.5（max）总分 58，GPT-6 Astra（max）57，GPT-6.1 Sol（max）55；Anthropic 与 OpenAI 占据前五；Gemini 4 Argon（high）约 50。开源权重相对领先者差距由约 3 分扩到约 12 分：权重未放的 Kimi K3.1 Pro 约 46；已放权重里 DeepSeek V4.1 Flash 1017 与 GLM-5.3 约 32，低于 Claude Haiku 5.5（约 36）。头部分数差价逾 13 倍：同批领先模型中 GPT-6.1 Terra 每任务约 $0.96，Claude Fable 5.1 约 $13。另推 Progress Index v1 跨年可比。属独立榜单换代，不是某一家发新聊天模型。本窗再核：OpenAI/Anthropic/Google/xAI/Meta/DeepSeek/Qwen——无新 frontier 聊天模型正式发版；马斯克本窗多为 Grok Bot 短促销/转发，无 xAI 产品官宣，不单独占条。",
+      "relevance": "换尺子后分数不能跟旧版硬比；看「谁第一」不如看你真正要做的任务在哪一项（编程/科学/办公）谁领先、贵不贵。",
+      "sources": [
+        {
+          "label": "artificialanalysis.ai（官方 v5 公告）",
+          "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5"
+        },
+        {
+          "label": "artificialanalysis.ai（changelog）",
+          "url": "https://artificialanalysis.ai/changelog"
+        }
+      ]
+    },
+    {
+      "id": "1028晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：OpenAI×Oracle——把 Oracle 应用/数据接进 ChatGPT；推 AI Workspace、Security Mesh、SMB Bundle；美企可用 Universal Credits 买 API/Codex",
+      "time": "2026-10-27",
+      "summary": "早刊/中刊未收：OpenAI 与 Oracle 于 10 月 27 日同步官宣扩大合作——把 Oracle 应用与数据接入 ChatGPT，并给 Oracle 产品线用上 OpenAI 模型与工具。Oracle 称约有 13 万活跃 ChatGPT 用户、逾 9.5 万活跃 Codex 用户。规划中的 Oracle AI Workspace 让员工在 ChatGPT 里按公司权限查数、走审批过的业务流程（例：财务关账前对账）。Oracle 侧新品：AI Security Mesh（用 OpenAI 网络模型在授权范围内找/修漏洞，基础设施由 Oracle 管）、AI SMB Bundle（ChatGPT Business+Codex+OCI 额度）、App Composer（用 Codex 等搭应用并接到获批数据）。美国 Oracle 客户可经 Oracle Marketplace 用合格 Universal Credits 采购 OpenAI API、Codex、ChatGPT Work。属企业通路与工作流集成，不是新模型发版；与中刊 Muse「个人 agent」赛道不同。",
+      "relevance": "这是「公司里的 Oracle 能不能在 ChatGPT 里点一下就办完」——普通人账号用不上；别把它读成 GPT 又发了一个更强的通用模型。",
+      "sources": [
+        {
+          "label": "openai.com（官方新闻）",
+          "url": "https://openai.com/index/oracle-apps-in-chatgpt/"
+        },
+        {
+          "label": "oracle.com（Oracle 新闻稿）",
+          "url": "https://www.oracle.com/news/announcement/ai-world-oracle-reinvents-enterprise-computing-for-the-ai-era-with-openai-2026-10-27/"
+        },
+        {
+          "label": "cnbc.com（综述）",
+          "url": "https://www.cnbc.com/2026/10/27/oracle-openai-chatgpt-codex-google-tpus.html"
+        }
+      ]
+    },
+    {
+      "id": "1028晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Liquid AI 开源 LFM3：约 2B 档六款（文本/视觉/音频/Omni/决策）共享骨干；文本约 4-bit 占 1GB、256K 上下文，可单卡微调上设备",
+      "time": "2026-10-27",
+      "summary": "相对早刊/中刊大厂动态：波士顿 Liquid AI 10 月 27 日官方博客发布 LFM3——新一代 Liquid Foundation Models，首发约 2B 参数档共六款，均从 LFM3-1.7B-Base 分出，覆盖文本、视觉、音频、Omni 与两款决策模型。称预训练约 22T token、三混合架构（门控短卷积+滑动窗注意力+全局注意力）；文本模型 256K 上下文，4-bit 约 1GB 可上设备；官方称可在单卡上微调做「专精小模型」。权重开源，Hugging Face / Playground / Liquid API 可取；日零伙伴含 AMD、Qualcomm、NVIDIA、Ollama、llama.cpp 等。官方自报在代理/工具调用等任务上相对同档甚至更大模型有优势，属厂商基准，待独立复核。与中刊 Muse（云端个人 agent）、早刊 Genie 4（世界模型预览）不同赛道——这是「能塞进手机/边缘的开源小全家桶」。本窗 DiffuSpace Clover-35B 扩散语言模型预览同日有热度，细节待更多独立核验，本条以 Liquid 官方文为主。",
+      "relevance": "想本地跑、不想把数据送云的，这档开源小模型比「再等一个超大闭源」更贴近动手；先当工具箱预览，别把厂商跑分直接当成全面碾压。",
+      "sources": [
+        {
+          "label": "liquid.ai（官方博客）",
+          "url": "https://www.liquid.ai/blog/lfm3"
+        },
+        {
+          "label": "huggingface.co（HF 介绍）",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm3"
+        },
+        {
+          "label": "venturebeat.com（VentureBeat）",
+          "url": "https://venturebeat.com/technology/liquid-ais-new-lfm3-models-put-browser-agents-voice-commands-and-image-recognition-onto-enterprise-controlled-devices"
+        }
+      ]
+    },
+    {
+      "id": "1028晚-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "Anthropic：未发布研究版 Claude 在实验里拼出 Chrome/Safari/安卓/Windows/Linux 可运行利用链；已协调披露并称相关补丁已出",
+      "time": "2026-10-27",
+      "summary": "Anthropic Frontier Red Team 10 月 27 日发文：过去数月用内部未发布研究模型，在「初始提示、人类介入很少」设定下发现并串联多条针对主流软件的攻击链——含 Chrome 一键沙箱外代码执行（PoC 在默认 macOS Chrome 打开页面后弹出计算器；称 Google 已为 Chrome 156 等分配并修补约 62 个 CVE）、Safari 同源策略绕过可读其他站登录数据（Apple 已修）、锁机安卓经 USB 抽照片等（称 Google 已处理）、Windows 对 HTTP/3 监听主机的远程拒绝服务（CVE-2026-33096）、Linux 多路径 TCP 零点击提权至 root（CVE-2026-98432，上游已修）。公司强调属实验室 PoC、按协调披露流程先报厂商，再公开已在公告范围内的细节；不等于野外已有大规模实害。属「AI 做漏洞研究/拼链能力」披露，与早刊 Yoba 假桌面安装包、中刊 testmetest 供应链蠕虫不同链。",
+      "relevance": "普通人该做什么：打开系统与浏览器自动更新（Chrome/Safari/iOS/Android/Windows），别拖补丁；这不是让你去复现利用——文中链条已公开到「补丁已出」这一层，拖着不更新才是风险。",
+      "sources": [
+        {
+          "label": "anthropic.com（官方研究文）",
+          "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude"
+        },
+        {
+          "label": "thehackernews.com（The Hacker News）",
+          "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html"
+        }
+      ]
+    },
+    {
+      "id": "1028晚-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收：台股 +2.04% 收 47035；韩综 +6.63% 破 6000；日经约 +1.1%；A/港股收涨；油因传袭沙特炼厂回升；美联储决议仍待台北凌晨",
+      "time": "2026-10-28T18:22:00+08:00",
+      "summary": "相对中刊「台股盘中、韩综触 6000、今晚看美联储」：亚洲已收盘。中央社（约 18:22 更新）——台股终场 47035.58（+939.35，+2.04%），重返 47000/季线，成交约 7221 亿新台币；台积电收 2425（+1.04%）。韩联社：综指 6012.44（+374.10，+6.63%），SK 海力士约 +10.9%、三星电子约 +9%。日经约 63954（约 +1.08%）。A 股：上证约 3681.47（+0.91%）、CSI300 约 +0.85%；港股恒指约 23094（约 +0.23%），恒科指报道约 +1.4%。油：CNBC 称布伦特约 115.36（约 +1.3%）、WTI 约 101.12，因胡塞武装宣称导弹袭击沙特拉斯塔努拉炼厂（约 55 万桶/日）点燃供应担忧（国际条另述）。金价亚盘仍在约 4050 一带震荡报道。美联储决议仍约美东 10 月 28 日 14:00（台北 29 日凌晨）公布，截稿时未出，普遍预期维持 3.75%–4.00%，盯声明与 12 月线索；美股现金盘对决议的反应要等台北后半夜。",
+      "relevance": "亚洲芯片股把「美联储前的乐观」先涨完了；今晚真正变盘仍是美联储文字——别把台股收盘涨幅当成已经过了决议关。",
+      "sources": [
+        {
+          "label": "cna.com.tw（中央社台股收盘）",
+          "url": "https://www.cna.com.tw/news/afe/202610280138.aspx"
+        },
+        {
+          "label": "en.yna.co.kr（韩联社综指收盘）",
+          "url": "https://en.yna.co.kr/view/AEN20261028008600320"
+        },
+        {
+          "label": "etoday.co.kr（亚股收盘综述）",
+          "url": "https://www.etoday.co.kr/news/view/2641294"
+        },
+        {
+          "label": "cnbc.com（油价）",
+          "url": "https://www.cnbc.com/2026/10/28/oil-prices-rise-after-attack-on-saudi-arabian-refinery-reignites-supply-concerns.html"
+        },
+        {
+          "label": "federalreserve.gov（议息日历）",
+          "url": "https://www.federalreserve.gov/newsevents/2026-october.htm"
+        }
+      ]
+    },
+    {
+      "id": "1028晚-6",
+      "section": "国际重大影响",
+      "title": "以色列计票约八成：内塔尼亚胡阵营约 54 席、艾森科特约 49、阿裔政党约 17——双方仍难凑 61；正式结果待双信封票",
+      "time": "2026-10-28",
+      "summary": "相对中刊出口民调「两大阵营各约 50–52、难组阁」：Times of Israel 等跟踪约 84% 选票开出后，亲内塔尼亚胡阵营约 54 席，加迪·艾森科特阵营约 49 席，阿裔政党合计约 17 席；双方仍远未到组阁所需 61 席。较出口民调「胶着」略偏向内塔尼亚胡领先，但仍属未最终核定（双信封等选票待计）。组阁谈判可能数周；不等于停火或霍尔木兹谈判有新签字。与早刊 Oleshky 局部人道停火不重复。",
+      "relevance": "计票进度≠内阁名单——中东风险溢价和油价情绪仍敏感，但别把「谁暂时多几席」自动读成战争结束或立刻换政府。",
+      "sources": [
+        {
+          "label": "timesofisrael.com（计票直播条目）",
+          "url": "https://www.timesofisrael.com/liveblog_entry/with-84-of-ballots-counted-pro-netanyahu-bloc-at-54-seats-eisenkot-led-bloc-at-49-arab-parties-at-17/"
+        },
+        {
+          "label": "theguardian.com（选举直播）",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news"
+        },
+        {
+          "label": "apnews.com（组阁前景）",
+          "url": "https://apnews.com/article/israel-elections-netanyahu-eisenkot-arab-coalition-results-d4680e90210c9a8611853fda9d0deb61"
+        }
+      ]
+    },
+    {
+      "id": "1028晚-7",
+      "section": "国际重大影响",
+      "title": "胡塞武装宣称导弹袭击沙特最大炼厂拉斯塔努拉；油价周三回升，布伦特报道约 115 美元",
+      "time": "2026-10-27",
+      "summary": "中刊国际块未收此条：也门胡塞武装 10 月 27 日宣称以导弹袭击沙特阿拉伯拉斯塔努拉（Ras Tanura）炼油设施（报道产能约 55 万桶/日，为沙特重要出口枢纽之一）；沙特方面初期未立即确认遇袭细节，另有报道称附近火势一度受控。CNBC 等称此举令中东供应担忧再起，布伦特原油期货周三报道约 115.36 美元/桶（约 +1.3%），WTI 约 101.12。油价前一日曾因外交预期回落近 2 美元。属武装宣称+油市即时反应，破坏程度与装船是否中断仍待官方与船运数据核实；勿写成「全球石油供应已中断」。股市块已记油价数字，本条记地缘事件本身。",
+      "relevance": "看油价和中东新闻时，先分清「宣称袭击」和「产量/出口已被证实砍掉」——后者才决定会不会变成持续涨价。",
+      "sources": [
+        {
+          "label": "cnbc.com（油价与袭击）",
+          "url": "https://www.cnbc.com/2026/10/28/oil-prices-rise-after-attack-on-saudi-arabian-refinery-reignites-supply-concerns.html"
+        },
+        {
+          "label": "investing.com（路透转述胡塞宣称）",
+          "url": "https://www.investing.com/news/commodities-news/yemens-houthis-say-they-hit-saudi-ras-tanura-oil-refinery-with-missile-4976138"
+        },
+        {
+          "label": "dawn.com（火势受控报道）",
+          "url": "https://www.dawn.com/news/2040204"
+        }
+      ]
+    },
+    {
+      "id": "1028晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "维拉·鲁宾天文台发现海王星外矮行星候选体 2026 ED138：估直径约 600–1500 公里，轨道在冥王星之外",
+      "time": "2026-10-27",
+      "summary": "与中刊「太阳能超过核电」不同赛道——这是太阳系勘察：美国 NSF–DOE 维拉·鲁宾天文台（Vera C. Rubin Observatory）10 月 27 日经 SLAC/官方新闻稿宣布，在冥王星轨道之外发现亮而大的海王星外天体候选，临时编号 2026 ED138；国际天文学联合会小行星中心（MPC）同日通报。目前距日约 46 天文单位（冥王星平均约 40）；轨道相对黄道倾角约 25°，属「热经典」海王星外天体。按亮度与假设反照率粗估直径约 600–1500 公里，若确认足够圆且质量够大，有望加入 IAU 目前承认的五颗矮行星之列（冥王星、谷神星、阋神星、妊神星、鸟神星）——但仍需红外等后续观测钉死尺寸与是否「够圆」。发现靠鲁宾巡天多夜成像+回溯至约 2016 年的存档，天体此前淹没在银河系平面星场里。",
+      "relevance": "不是 AI 也不是盘面——是「新一代巡天望远镜刚开张就可能改写矮行星名单」；先当候选体跟，别写成已经官宣第六颗矮行星。",
+      "sources": [
+        {
+          "label": "slac.stanford.edu（SLAC 新闻稿）",
+          "url": "https://www6.slac.stanford.edu/news/2026-10-27-nsf-doe-vera-c-rubin-observatory-reveals-its-first-dwarf-planet-candidate-our-solar"
+        },
+        {
+          "label": "nsf.gov（NSF 新闻）",
+          "url": "https://www.nsf.gov/news/new-dwarf-planet-candidate-discovered-nsf-doe-rubin"
+        },
+        {
+          "label": "scientificamerican.com（Scientific American）",
+          "url": "https://www.scientificamerican.com/article/the-vera-c-rubin-observatory-may-have-just-discovered-our-solar-systems-sixth-dwarf-planet/"
+        }
+      ]
+    }
+  ]
+}
