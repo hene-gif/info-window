@@ -627,7 +627,7 @@ function timelinePage() {
     return '<h1 class="sr-only">时间线</h1><p class="empty">还没有记入时间线的事件。</p>';
   }
   const cards = events.map((event) => `<li class="tl-item">${timelineCardHtml(event)}</li>`).join('');
-  return `<h1 class="sr-only">时间线</h1><p class="tl-lead">只记录影响比较大的科技事件，从新到旧。不是每天的摘要。</p><p class="result-count">${events.length} 件</p><ol class="tl-list">${cards}</ol>`;
+  return `<h1 class="sr-only">时间线</h1><p class="tl-lead">只记影响够大的事，从新到旧。发版本身不够，要看得出格局变了才进。</p><p class="result-count">${events.length} 件</p><ol class="tl-list">${cards}</ol>`;
 }
 
 function timelineEntries() {
@@ -650,7 +650,7 @@ function timelineCardHtml(event, options = {}) {
   const meta = [when ? `<time datetime="${esc(event.date)}">${esc(when)}</time>` : '', source].join('');
   const body = event.error
     ? '<p class="empty">这条事件没有打开。</p>'
-    : `<p class="tl-kicker">为什么重要</p><p class="summary">${show(text(event.summary))}</p>${timelineSourcesHtml(event.sources)}${relatedHtml(event.related)}`;
+    : `<p class="tl-kicker">影响</p><p class="summary">${show(text(event.summary))}</p>${timelineSourcesHtml(event.sources)}${relatedHtml(event.related)}`;
   return `<article class="row tl-card${open ? ' is-open' : ''}" data-row="${esc(id)}"><button type="button" class="row-head" aria-expanded="${open}" aria-controls="${esc(bodyId)}"><span class="row-title">${show(text(event.title))}</span><span class="row-meta">${meta}</span></button><div class="row-body" id="${esc(bodyId)}"><div class="row-clip"><div class="row-inner">${body}</div></div></div></article>`;
 }
 
