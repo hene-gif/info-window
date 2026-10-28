@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "id": "1028早",
+  "date": "2026-10-28",
+  "slot": "早",
+  "title": "10月28日 · 早",
+  "items": [
+    {
+      "id": "1028早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Google DeepMind 发布 Genie 4：实时可交互世界模型，原生音频+自然语言改场景；研究预览，稍后给 AI Ultra / API 伙伴",
+      "time": "2026-10-28T00:30:00+08:00",
+      "summary": "相对晚刊：Google DeepMind 于台北约 10 月 28 日 00:30（美西 10 月 27 日上午）宣布 Genie 4——新一代实时交互「世界模型」。官方称可从提示生成可探索的仿真世界，并首次原生同步生成环境音、音乐与可交互对话；途中可用自然语言改天气、镜头、加人/物，场景连贯最长约 2 分钟（约 Genie 3 的两倍）。与 Gemini 家族更深耦合：Gemini Omni 锚定外观与行为，其他 Gemini（含实验中的 Gemini 3.8 Flash 作环路导演、以及与 Gemini 4 Argon / Robotics 的联试）负责规划与一致性。现为受邀测试者研究预览；随后将面向 Google AI Ultra 的 Project Genie 订阅者，以及 Gemini API / AI Studio 早期伙伴。官方自认长局仍会漂对象、音频与画面内文字仍不稳。TechCrunch 等同日报道。本窗再核 OpenAI、xAI、Meta、DeepSeek、Qwen：无新模型正式发版；马斯克本窗多为转发/短评，无 xAI/Grok 产品官宣，不单独占条。Fable 5.5、Artificial Analysis Index v5 仍属未发/预告，不采。蚂蚁 Ling-3.1-flash-1019 权重更新见下条之外的实验室扫视：属既有模型后训练增量，不另占条。",
+      "relevance": "这不是新聊天机器人，是「能走进去玩一会儿的仿真世界」预览；现在排队测试就好，别当成已经能商用做游戏或拍片的成品。",
+      "sources": [
+        {
+          "label": "blog.google（Google 官方介绍）",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/"
+        },
+        {
+          "label": "deepmind.google（DeepMind 详文）",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+        },
+        {
+          "label": "techcrunch.com（TechCrunch）",
+          "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+        }
+      ]
+    },
+    {
+      "id": "1028早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 研究：50 名因果推断分析师用 Claude Code 时，86% 的关键判断跟着 agent「暗中偏好」走，事后很少承认",
+      "time": "2026-10-27",
+      "summary": "Anthropic Alignment 团队 10 月 27 日发表《How AI agents shape experts’ judgment calls》：随机试验让 50 名有因果推断经验的分析师，用内置 Claude Code（Claude Opus 4.8 High）完成虚构农合社项目评估；四项开放分析选择（如何量产力、对比方法、覆盖哪些农场、如何加权）上，系统在隐藏提示里给 agent 掷硬币设定的「lean」，并要求它诚实论证、证据反了就改口、不许造假。结果：四项合计 86% 次分析师选择与 agent lean 一致（随机期望约 50%）；若分析师先表态再遇反对，60% 会改口；事后解释里 77% 复述 agent 论证（常逐字），仅 15% 把功劳记给 agent。不用 agent 的 11 人错误更多、耗时更长，但两组不可直接比。作者强调：这是加强 lean 后的测量，不等于日常默认 agent 一样强；论文与博客同发。属研究披露，非新模型发版。",
+      "relevance": "你每天让 AI 帮写结论时，先自己写下「我倾向选哪边」再问它；否则很容易把模型的偏好当成自己的判断，还浑然不觉。",
+      "sources": [
+        {
+          "label": "anthropic.com（研究博客）",
+          "url": "https://www.anthropic.com/research/agents-judgment-calls"
+        },
+        {
+          "label": "anthropic.com（论文 PDF）",
+          "url": "https://www-cdn.anthropic.com/519c17a5d23a794e8b6d50a854048d0b61e0d73a.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1028早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：微软向约 6 万名员工发出「自愿离职」方案（约四分之一劳动力），12 月初截止、年底离开；公司称与 AI 提效有关",
+      "time": "2026-10-26",
+      "summary": "补报（微软官方博客 10 月 26 日；1026晚/1027 各期未收）。微软推出 Voluntary Exit Offer：覆盖美、加、印、英等参与团队中约 level 70 及以下岗位，规模报道约 6 万人、约占全球员工约四分之一；无年龄/年资/绩效门槛。可获财务支持与职业规划资源，方案大致对标常规遣散；须约 12 月初前决定，获批者预计 12 月 31 日前离开。CEO Satya Nadella 等口径将此与 AI 带来的效率重组、聚焦优先事项挂钩；媒体强调公司避免称「裁员」。属人员结构新闻，非新模型发版。",
+      "relevance": "大厂用「自愿离职」换编制弹性——跟换哪款模型无关，但说明 AI 提效已经从演示走进人事表；看科技股别只盯发版稿。",
+      "sources": [
+        {
+          "label": "blogs.microsoft.com（微软官方）",
+          "url": "https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/"
+        },
+        {
+          "label": "cnbc.com（CNBC）",
+          "url": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html"
+        },
+        {
+          "label": "apnews.com（AP）",
+          "url": "https://apnews.com/article/microsoft-buyout-ai-layoff-xbox-c5a639f53615be198db1799adf6837e1"
+        }
+      ]
+    },
+    {
+      "id": "1028早-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "补报：Check Point——Aokigahara 信息窃取木马专门扫 Claude / ChatGPT Desktop / Codex / Cursor / Copilot 等本地会话与开发者密钥",
+      "time": "2026-10-23",
+      "summary": "补报（Check Point Research 主文标 10 月 23 日；Dark Reading 10 月 27 日跟进；早前各期未收）。Windows 信息窃取木马 Aokigahara（或与 Kamidere/Stygian 有渊源）除浏览器密码、钱包、VPN 等常规目标外，内置 aisessions / ide 模块，专收 Claude Code/Desktop、ChatGPT Desktop、Codex、Cursor、Windsurf、GitHub Copilot、Gemini CLI、JetBrains AI 等本地凭据、会话与配置，并顺带 Git 凭据、SSH 私钥、AWS/Azure/GCP 配置。报告称已在野观察到样本；分析未证实运营者如何变现，但指出可盗用付费 AI 账号、转售会话，或借对话/源码做勒索。属「AI 工具本身成为窃取目标」+ 厂商一手分析；Forever 恶意 AGENTS.md、Claude Artifact 假下载晚刊/更早已报，不重复。",
+      "relevance": "电脑中毒别只改邮箱密码：把 Claude/ChatGPT/Cursor/Copilot 全部退出重登、吊销会话；开发机上的 Git/SSH/云密钥也要轮换——这些现在和银行卡一样值钱。",
+      "sources": [
+        {
+          "label": "research.checkpoint.com（Check Point 主文）",
+          "url": "https://research.checkpoint.com/2026/infostealer-riding-the-ai-train/"
+        },
+        {
+          "label": "blog.checkpoint.com（Check Point 解读）",
+          "url": "https://blog.checkpoint.com/ai-security/infostealers-are-targeting-ai-what-aokigahara-infostealer-reveals-about-the-new-developer-attack-surface/"
+        },
+        {
+          "label": "darkreading.com（Dark Reading 10-27）",
+          "url": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants"
+        }
+      ]
+    },
+    {
+      "id": "1028早-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周二收涨（纳指 +1.18%、费半 +3.6%）；亚盘早盘期货偏强，台指夜盘大涨；油回落、金回升；美联储决议今晚美东出",
+      "time": "2026-10-28T08:00:00+08:00",
+      "summary": "相对晚刊「美股尚未开盘、亚盘已收」：美股周二（27 日）收——道指 52377.57（+15.99，+0.03%）、标普 7722.60（+0.60%）、纳指 26477.81（+1.18%）；费城半导体约 +3.60%（三立等引约 11482）。芯片与 AI 相关股领涨（报道称博通约 +4%、AMD 约 +5% 量级）。亚盘周三早：LiveMakers 约 06:35 JST 指日经 225 连动期货约 64283（+2.29%）、标普连动期货约 7718.9（+0.59%）；韩国综指开盘报道约 5763.85（+2.23%）；三立称台指夜盘约 +774 点、台积电期货约 +42 元，现货开盘（09:00）前仍属盘前期货。WTI 约 100.19（−1.13% 量级）、金约 4063.6（+1.07%）；10 年美债收益率约 4.99%（27 日）。美联储利率决议约美东 10 月 28 日 14:00（台北 29 日凌晨）公布，市场普遍预期按兵不动于 3.75%–4.00%。",
+      "relevance": "早刊先记美股收盘和亚盘期货，别把夜盘点数当成台股已开；真正变盘点是今晚美联储声明，油价回落也要和霍尔木兹消息一块看。",
+      "sources": [
+        {
+          "label": "cnbc.com（美股收评）",
+          "url": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "apnews.com（AP 三大指数）",
+          "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-eae2932c0c253be1039e1545909656a8"
+        },
+        {
+          "label": "setn.com（三立台股盘前）",
+          "url": "https://www.setn.com/news/1929519"
+        },
+        {
+          "label": "livemakers.com（亚盘早盘 12 指标）",
+          "url": "https://livemakers.com/ja/articles/mkt12-morning-20261028-5d2cfd58"
+        },
+        {
+          "label": "federalreserve.gov（10 月议息日历）",
+          "url": "https://www.federalreserve.gov/newsevents/2026-october.htm"
+        }
+      ]
+    },
+    {
+      "id": "1028早-6",
+      "section": "国际重大影响",
+      "title": "美联储两日议息收官：市场几乎认定按兵不动，焦点转向声明措辞与 12 月是否再加息；霍尔木兹斡旋仍无签字",
+      "time": "2026-10-28",
+      "summary": "美联储 FOMC 10 月 27–28 日会议次日将公布利率决定（美东约 14:00 / 台北 29 日约 02:00）并随后记者会。CME FedWatch 等定价显示本周加息概率极低，目标区间料维持 9 月加息后的 3.75%–4.00%；投资者更盯声明是否为 12 月加息开门，以及能源价格推高的通膨表述。欧央行、日央行本周亦有政策日程。中东：卡塔尔「须善意、停威胁、重开霍尔木兹」前提晚刊已报，截稿前未见停火或重开海峡正式协议；油价周二因外交消息回落但仍处多月高位。勿写成「已经降息/已经重开海峡」。",
+      "relevance": "利率按兵不动几乎被定价进去了——真正会抖股价的是主席怎么说 12 月；海峡通不通继续绑着油价和通膨预期。",
+      "sources": [
+        {
+          "label": "cnbc.com（议息预期）",
+          "url": "https://www.cnbc.com/2026/10/26/fed-decision-expectations-october-meeting.html"
+        },
+        {
+          "label": "federalreserve.gov（会议日历）",
+          "url": "https://www.federalreserve.gov/newsevents/2026-october.htm"
+        },
+        {
+          "label": "english.alarabiya.net（卡塔尔条件·晚刊对照）",
+          "url": "https://english.alarabiya.net/News/middle-east/2026/10/27/qatar-says-iran-needs-to-show-good-intentions-for-mediation-efforts-to-succeed"
+        }
+      ]
+    },
+    {
+      "id": "1028早-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "日本 NIMS：涂一层再晾干，做出「多孔锚」粘合层，异种材料拉伸强度可超 7 MPa",
+      "time": "2026-10-27",
+      "summary": "与晚刊石墨烯电线取电不同赛道——这是材料粘合：日本物质·材料研究机构（NIMS）团队利用粘弹性相分离，把溶液涂覆干燥成纳米到微米级网状多孔锚层（printable porous anchor），一边靠化学亲和贴基材，一边靠微孔机械互锁抓住另一侧难粘聚合物。实验称玻璃与低粘合性柔性聚合物组合拉伸强度可超过约 7 MPa，垂直抗拉强度约翻倍。论文发表于 Small（DOI: 10.1002/smll.75296）；phys.org 约 10 月 27 日报道。目标场景包括轻量化汽车、柔性电子、软体机器人等多材料结构；团队还在做导电/耐热版本。属实验室方法，勿写成「胶水店明天就能买到」。",
+      "relevance": "以后手机、车、软机器人里「硬碰软」怎么粘得住，可能不再靠每种材料单独调胶——跟 AI/股市不是一类新闻，但和你用的设备能不能做得更轻更软有关。",
+      "sources": [
+        {
+          "label": "phys.org（NIMS / phys.org）",
+          "url": "https://phys.org/news/2026-10-porous-anchor-strongly-bonds-dissimilar.html"
+        }
+      ]
+    }
+  ]
+}
