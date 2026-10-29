@@ -9,9 +9,28 @@
       "id": "1029晚-1",
       "section": "我关注的",
       "block": "AI 模型和产品动态",
+      "title": "补报：Grok API 可按请求加 content guidelines——nsfw／violence／profanity 可设 decline；面向全部 API 客户",
+      "time": "2026-10-29T07:20:00+08:00",
+      "summary": "相对中刊 OpenAI 额度／Dot 与早刊 Gemini 4 Carbon：@grok 约台北 10 月 29 日 07:20（UTC 10-28 23:20）官宣，docs.x.ai「Custom moderation controls」同步上线——早刊／中刊未收，作补报。开发者可在 Chat Completions／Responses 请求顶层加 guidelines 数组；每项 type 固定为 policy，category 可选 nsfw／violence／profanity，behavior 目前仅 decline。Grok 按准则用自己的话写回复；未列出的类目保持默认审核；准则只作用于当次请求（多轮需每轮带上）。不支持 multi-agent 模型与 deferred completions；无服务端工具且无附件时若设 stop 或 n>1 会 400。属 API 产品能力，不是新 frontier 底座。本窗再核：OpenAI／Anthropic／Google／Meta／DeepSeek／Qwen 未见新 frontier 聊天模型正式发版；NVIDIA 语音模型另条；马斯克本窗多为转发／短评，无 xAI／Grok 新底座官宣。GPT Image 2.6、Chat／Work 合并仍属未上线线索，不采。",
+      "relevance": "自己接 Grok API 的可以按场景收紧输出边界；别当成「Grok 突然全面审查」——默认行为没改，要自己在请求里加。",
+      "sources": [
+        {
+          "label": "docs.x.ai（官方文档）",
+          "url": "https://docs.x.ai/developers/advanced-api-usage/custom-moderation-controls"
+        },
+        {
+          "label": "x.com/grok（官宣帖）",
+          "url": "https://x.com/grok/status/2115584612122718296"
+        }
+      ]
+    },
+    {
+      "id": "1029晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
       "title": "补报：NVIDIA 开源 Nemotron 3.5 Transcribe——约 30B MoE 语音模型，40 语种转写／说话人标注／翻译；官方称可单卡跑",
       "time": "2026-10-28T23:00:00+08:00",
-      "summary": "相对中刊 OpenAI 额度／Dot 短信与早刊 Gemini 4 Carbon：NVIDIA 约美西 10 月 28 日（台北约同日晚间）发布开源权重语音模型 Nemotron 3.5 Transcribe，并同步放出 Granary v2 语音数据集。官方／TechCrunch：约 30B 参数 MoE（约 4.3B 激活），用自然语言指令切换转写风格；支持约 40 种语言、最长约 1 小时录音、最多约 8 说话人标注，并可做翻译与口语问答；官方称可在单卡（含 Jetson／DGX Spark／Blackwell）运行，面向会议与医疗转写等开发场景；当前面向录音而非直播流。权重在 Hugging Face／ModelScope，许可证 OpenMDW-1.1。官方自报英文／多语 Open ASR 榜领先，属厂商基准，待独立长期复核。本窗再核：OpenAI／Anthropic／xAI／Meta／DeepSeek／Qwen 未见新 frontier 聊天模型正式发版；Google Carbon／Genie 4、Liquid LFM3 已前刊。马斯克本窗多为转发与短评，无 xAI／Grok 产品级官宣，不单独占条。ChatGPT「Chat／Work 合并」仍属未上线预览，GPT Image 2.6 仅 API 文档线索，一律不采。",
+      "summary": "NVIDIA 约美西 10 月 28 日发布开源权重语音模型 Nemotron 3.5 Transcribe，并同步放出 Granary v2 语音数据集；早／中刊未收，作补报。官方／TechCrunch：约 30B 参数 MoE（约 4.3B 激活），用自然语言指令切换转写风格；支持约 40 种语言、最长约 1 小时录音、最多约 8 说话人标注，并可做翻译；官方称可在单卡（含 Jetson／DGX Spark／Blackwell）运行，面向会议与医疗转写等开发场景；当前面向录音而非直播流。权重在 Hugging Face，许可证 OpenMDW-1.1。官方自报英文／多语 Open ASR 榜领先，属厂商基准，待独立长期复核。与 Liquid LFM3（边缘小模型）、Genie 4（世界模型）已前刊者不同赛道。",
       "relevance": "要本地／可定制会议转写可以盯这条开源权重；别当成又一个聊天大模型发版，也别把厂商榜单直接当「碾压一切」。",
       "sources": [
         {
@@ -29,31 +48,27 @@
       ]
     },
     {
-      "id": "1029晚-2",
+      "id": "1029晚-3",
       "section": "我关注的",
       "block": "AI 网络安全跟踪",
-      "title": "Cisco Talos：野外现身 NIK C2——Windows 远控植入可盗密／实时键盘流，并用受害者机器直连 OpenAI API 分析赃数据；可锁屏勒索 BTC／USDT",
+      "title": "Cisco Talos：野外现身 NIK C2——Windows 远控植入可盗密／实时键盘流，并用受害机直连 OpenAI API 分析赃数据；可锁屏勒索 BTC／USDT",
       "time": "2026-10-29T06:00:00+08:00",
-      "summary": "相对中刊 n0n／吴越换脸与早刊 Dream／123 Reg：Cisco Talos 10 月 29 日约 06:00（文中时间）披露在野外观察到 AI 集成远控框架 NIK C2。Go 编写的 64 位 Windows 植入走 TLS WebSocket（443）+ 约 250ms HTTP 轮询，AES-256-GCM；能力含凭证／浏览器／Wi-Fi／钱包窃取、按键直播、屏幕与音视频、HVNC、横向移动，以及锁屏型勒索（不加密文件，HTML 锁屏＋注册表自启，要 BTC／USDT）。关键点：植入内置 OpenAI Chat Completions 客户端（ai_generate），可把 prompt／api_key／model 从受害机发出；若攻击者未塞密钥，会读环境变量 OPENAI_API_KEY——账单与访问日志可能记在受害者名下。Talos 称观察到活跃 C2（如 total-sitevv[.]lol／nik-panel 证书），中等确信非纯 PoC。须标明：目前主要为 Cisco Talos 单方技术报告。与已报 ARTEX／Storm-0940／n0n 不同工具链，不合并。",
+      "summary": "相对中刊 n0n／吴越与早刊 Dream／123 Reg：Cisco Talos 10 月 29 日披露在野外观察到 AI 集成远控框架 NIK C2。Go 编写的 64 位 Windows 植入走 TLS WebSocket（443）+ 约 250ms HTTP 轮询，AES-256-GCM；能力含凭证／浏览器／Wi-Fi／钱包窃取、按键直播、屏幕与音视频、HVNC、横向移动，以及锁屏型勒索（不加密文件，HTML 锁屏＋注册表自启，要 BTC／USDT）。关键点：植入内置 OpenAI Chat Completions 客户端（ai_generate），可把 prompt／api_key／model 从受害机发出；若攻击者未塞密钥，会读环境变量 OPENAI_API_KEY——账单与访问日志可能记在受害者名下。Talos 称观察到活跃 C2（域名／证书含 nik-panel），中等确信非纯 PoC。须标明：目前主要为 Cisco Talos 单方技术报告。与已报 ARTEX／Storm-0940／n0n 不同工具链，不合并。",
       "relevance": "普通人该做什么：Windows 开系统更新与可信杀软；别下不明「破解／激活」安装包；电脑上若曾配 OpenAI／其他 API 密钥，中招后立刻在官网轮换并查异常用量。看到全屏「锁机要加密货币」别付款，先断网、用另一台设备走官方渠道求助。",
       "sources": [
         {
           "label": "blog.talosintelligence.com（Cisco Talos 主文）",
           "url": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/"
-        },
-        {
-          "label": "fortune.com（同日「Black October」综述，含多起旧案）",
-          "url": "https://fortune.com/2026/10/29/black-october-ai-cyberattacks-hackers-php2shell/"
         }
       ]
     },
     {
-      "id": "1029晚-3",
+      "id": "1029晚-4",
       "section": "我关注的",
       "block": "全球股市",
-      "title": "亚股收：日经独涨约 1.1%，台／韩／A／港收跌；欧股 Stoxx 约 +0.5%；美股未开，纳指期货约 −0.8%，Alphabet 盘前约 −10%",
+      "title": "亚股收：日经独涨约 1.1%，台／韩／A／港收跌；欧股盘中偏强；美股未开，纳指期货约 −1%，Alphabet 盘前约 −10%",
       "time": "2026-10-29T19:00:00+08:00",
-      "summary": "相对中刊午间：亚洲现货已收。中央社：台股收 46368.33（−667.25，−1.42%），成交约 7891.52 亿元，失守季线；韩联社：KOSPI 收 5937.66（−74.78，约 −1.2%）；共同社：日经收 64659.47（+705.28，+1.10%），半导体检设备爱德万等领涨；新华财经：上证收 3651.43（−0.82%）、深成 11138.20（−2.92%）、创业板 2517.59（−4.45%），两市成交约 1.56 万亿；港台：恒生收 22958（−136，约 −0.6%），主板成交逾约 1894 亿元。欧洲：Bloomberg 称 Stoxx 600 约 +0.5%。美股现金盘台北晚刊时点未开；纳指期货约 −0.8%、标普期货约 −0.2%，Alphabet 盘前约 −10%、微软约 +3.7%（云与现金流），Oracle 前景提振后仍强。油：Brent 约 114.10（约 −1%）、WTI 约 101.29（约 −1.4%）；现货金约 4029.61（约 −0.9%）。10 年期美债收益率报道约 5.00% 附近（较昨夜 5.05% 略回）。Fed 决议已早刊，不重复。",
+      "summary": "相对中刊午间：亚洲现货已收。中央社：台股收 46368.33（−667.25，−1.42%），成交约 7891.52 亿元；韩联社：KOSPI 收 5937.66（−74.78，约 −1.24%），较午前约 −2% 收窄；共同社：日经收 64659.47（+705.28，+1.10%），半导体检设备爱德万等领涨；新华财经：上证收 3651.43（−0.82%）、深成 11138.20（−2.92%）、创业板 2517.59（−4.45%），两市成交约 1.56 万亿；港台：恒生收 22958（−136，约 −0.6%），恒生科技约 −2.8%。欧洲仍开：Bloomberg／综述称 Stoxx 600 约 +0.4%–0.5%。美股现金盘未开；纳指期货约 −0.8% 至 −1.0%（较午间约 −1.3% 略回升）、标普期货约 −0.2%，Alphabet 盘前约 −10%、微软约 +3.7%。油续软：Brent 约 113.3–114.1、WTI 约 100.7–101.3；现货金约 4020–4030（约 −1%）。10 年期美债收益率报道约 5.00% 附近。Fed 决议已早刊不重复；当日还有拉加德卸任消息，见国际条。",
       "relevance": "今晚别急着按「亚洲跌完了」下结论——美股现金盘还没开，真正定价 Alphabet／AI 开支叙事要等纽交所开盘后再看。",
       "sources": [
         {
@@ -83,21 +98,30 @@
       ]
     },
     {
-      "id": "1029晚-4",
+      "id": "1029晚-5",
       "section": "国际重大影响",
-      "title": "这段时间没有",
+      "title": "欧洲央行行长拉加德宣布将于 2027 年 2 月 7 日卸任——较原任期约提前九个月",
       "time": "2026-10-29",
-      "summary": "这段时间没有超出早刊／中刊的新独立核实主新闻。以色列双信封仍在计：媒体称逾约 40 万张中已计约 2.9 万，利库德在该子集约 18.5%，整体仍约 53／48／19、无人过 61；未改写格局，不重开主条。ECB 决议预期按兵不动、属例行，不作国际主条。晚间若双信封大幅改写席次或中东出现停火／开战级事件再报。",
-      "relevance": "",
-      "sources": []
+      "summary": "欧洲央行（ECB）10 月 29 日新闻稿：Christine Lagarde 已告知理事会及欧洲理事会主席 António Costa，将于 2027 年 2 月 7 日卸任行长；原任期原定至 2027 年 10 月底，约提前九个月。继任者将由欧洲理事会按条约程序任命。同日落在 ECB 利率决议窗口（市场普遍预期按兵不动）。以色列双信封仍在计、投影仍约 53／48／19、无人过 61，不重开早刊主条。",
+      "relevance": "欧元区最高货币政策职位提前换人，会影响往后欧洲利率路径与欧元情绪——先当制度变量记，别当成今晚立刻大放水／大紧缩。",
+      "sources": [
+        {
+          "label": "ecb.europa.eu（ECB 官方新闻稿）",
+          "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html"
+        },
+        {
+          "label": "consilium.europa.eu（欧洲理事会主席声明）",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/29/statement-by-president-antonio-costa-on-the-forthcoming-departure-of-christine-lagarde-from-the-european-central-bank/"
+        }
+      ]
     },
     {
-      "id": "1029晚-5",
+      "id": "1029晚-6",
       "section": "我关注的",
       "block": "你可能没想到",
       "title": "Nature：出生前后人脑会「清算」大量带染色体片段异常的神经元——胎儿样本超约四分之一，出生后只剩约 6%",
       "time": "2026-10-28",
-      "summary": "换赛道——发育神经生物学，不是 AI 也不是盘面（中刊是丹尼索瓦人面孔，早刊是太阳能材料）。Nature 新闻 10 月 28 日报道、同日研究论文：波士顿儿童医院 Diane Shao 等对胎儿至高龄大脑皮层神经元做单细胞基因组分析（样本逾约 2300 个），发现胎儿神经元中超过约四分之一存在大段染色体拷贝数增减；出生后这类异常神经元比例降至约 6%，提示围产期存在大规模「清理」机制。作者推测存活下来的更可能是基因组较完整的细胞；异常细胞也常伴随突触相关基因表达异常。意义：多了一个理解「人脑最终留下哪些细胞」的质控窗口，或与自闭症、癫痫等儿童期神经系统疾病研究相关——但机制、筛选信号仍未完全搞清，不能直接当成可干预疗法。",
+      "summary": "换赛道——发育神经生物学，不是 AI 也不是盘面（中刊是丹尼索瓦人面孔，早刊是太阳能材料）。Nature 新闻 10 月 28 日报道、同日研究论文：波士顿儿童医院 Diane Shao 等对胎儿至高龄大脑皮层神经元做单细胞基因组分析（样本逾约 2300 个），发现胎儿神经元中超过约四分之一存在大段染色体拷贝数增减；出生后这类异常神经元比例降至约 6%，提示围产期存在大规模「清理」机制。作者推测存活下来的更可能是基因组较完整的细胞；异常细胞也常伴随突触相关基因表达异常。意义：多了一个理解「人脑最终留下哪些细胞」的质控窗口，或与自闭症、癫痫等儿童期神经系统疾病研究相关——但机制仍未完全搞清，不能直接当成可干预疗法。",
       "relevance": "这是「大脑怎么自我质检」的冷知识，跟聊天模型无关；当基础科学看，别解读成已经能治自闭症或癫痫。",
       "sources": [
         {
