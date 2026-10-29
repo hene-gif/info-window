@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "id": "1029中",
+  "date": "2026-10-29",
+  "slot": "中",
+  "title": "10月29日 · 中",
+  "items": [
+    {
+      "id": "1029中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：OpenAI 给 ChatGPT Pro／Business 订户每月最高 500 美元 API 额度；Plus 没有，未用完不结转",
+      "time": "2026-10-29T07:17:00+08:00",
+      "summary": "相对早刊 Gemini 4 Carbon／ServiceNow／Copilot Fusion：OpenAI 官方 Help 与 Developers 文档上线「合格 ChatGPT 订阅赠送 API 额度」——@OpenAIDevs 约台北 10 月 29 日 07:17 官宣，早刊未收，作补报。Pro 三档 $100／$200／$500 分别对应每月 API 额度 $100／$200／$500；Business 按付费 Standard 座 $20、Premium 座 $100 汇总，工作区月封顶 $500（年付工作区可一次发全年、年封顶 $6,000）。须付费订阅满至少 7 天；Plus、试用、Enterprise、Edu、旧 Codex 座不合格。额度进一个已链接的 API organization，不增加 ChatGPT 或登录态 Codex 用量，也不覆盖经 API key 的 Codex 用量；未用完不结转，随账期结束过期。首笔按剩余账期按比例。本窗再核：Anthropic、xAI、Meta、DeepSeek、Qwen 未见新 frontier 聊天模型正式发版；Google Carbon 已早刊。马斯克本窗多为转发／短评与航天硬件预言，无 xAI／Grok 产品级官宣，不单独占条。",
+      "relevance": "这是「订 Pro／Business 可顺手领 API 钱」——不是新模型；Plus 用户别指望，且额度过期作废，别当成永久加油包。",
+      "sources": [
+        {
+          "label": "help.openai.com（官方 Help）",
+          "url": "https://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions"
+        },
+        {
+          "label": "developers.openai.com（开发者文档）",
+          "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits"
+        },
+        {
+          "label": "x.com/OpenAIDevs（官方帖）",
+          "url": "https://x.com/OpenAIDevs/status/2115583698074755078"
+        }
+      ]
+    },
+    {
+      "id": "1029中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：ChatGPT Dot 可走 iMessage／RCS 短信——美区 Pro 用户 beta；一对一，可发文字／图／语音",
+      "time": "2026-10-29T01:30:00+08:00",
+      "summary": "早刊未收：@ChatGPT 约台北 10 月 29 日 01:30 宣布 Dot 短信功能（OpenAI 随后转发）；Learn 文档标 Oct 28。美区 Pro 用户 beta：经 iMessage（iPhone）或 RCS（Android）与 Dot 一对一发短信——可发文字、图片、语音；Dot 也可主动回短信；只有你能给 Dot 发、Dot 只能回你，不开放其他短信会话。设置在 Dot 资料页 → Texting；与 App 内 Dot 共享记忆与插件，需审批时 Dot 发 ChatGPT 内审链接。消息通道合作方 Linq，官方称做过渗透测试。属产品通道扩展，不是新底座模型。",
+      "relevance": "先确认你在美区 Pro 再找 Texting 开关；别把短信里的「审批链接」当成陌生推销——应回到 ChatGPT App 里点。",
+      "sources": [
+        {
+          "label": "learn.chatgpt.com（官方说明）",
+          "url": "https://learn.chatgpt.com/docs/whats-new/dots-october-28-2026"
+        },
+        {
+          "label": "x.com/ChatGPT（官宣帖）",
+          "url": "https://x.com/ChatGPT/status/2115496387613786374"
+        },
+        {
+          "label": "engadget.com（Engadget）",
+          "url": "https://www.engadget.com/2300235/openai-now-lets-you-text-your-dot-agent/"
+        }
+      ]
+    },
+    {
+      "id": "1029中-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "SOCRadar：n0n 勒索团伙因服务器误公开暴露工作区——用开源 AI 编程代理 opencode 写攻击脚本；入口全是弱口令／失窃凭证",
+      "time": "2026-10-28",
+      "summary": "相对早刊 Dream／123 Reg：以色列安全公司 SOCRadar Threat Research Unit（STRU）10 月 28 日披露，在瑞典 AS 上一台开放目录的 Python 文件服务器发现 n0n 运营者工作区快照（约 9 月 25–26 日两份），合计约 1719 个文件（含约 829 个脚本、5 份 C++ 加密器源码与勒索基建）。运营者使用开源 AI 编程代理 opencode，配置约 154 个模型条目（含去安全训练／自托管模型），到约 10 月 22 日网关花费超约 7216 美元——证据指向人主导、AI 辅助写脚本，未见全自动攻击系统。初始访问：无 CVE 利用记录，依赖 FortiGate SSL-VPN 对约 305 台设备撞库、弱 RDP／WinRM、暴露 AWS IAM 密钥、被盗主机面板会话。工作区可指认至少约 23 家组织／14 国；泄漏站截至约 10 月 19 日列约 93 受害方、总勒索约 2.837 亿美元。个案含云主机商 Dediserve、体育电商 Fanatics（约 40 个 S3 桶被掏并删备份）、委内瑞拉 ISP Inter（防火墙策略被改成全 BLOCK）。加密扩展名 .n0n。须标明：目前主要为 SOCRadar 单方技术报告，截至本窗未见 THN／Krebs 等独立复现。",
+      "relevance": "普通人该做什么：远程桌面／VPN／管理台开抗钓鱼 MFA、别复用密码；云端别长期留能删全桶的密钥；重要备份做离线或不可变副本。收到 .n0n 勒索信或陌生「n0n-cases」域名邮件，别点链接、先走官方客服核实。",
+      "sources": [
+        {
+          "label": "socradar.io（SOCRadar 主文·单厂商）",
+          "url": "https://socradar.io/blog/n0n-ransomware-ai-assisted-extortion/"
+        },
+        {
+          "label": "mallory.ai（转述同源）",
+          "url": "https://mallory.ai/stories/01a18195-6517-7575-8579-dc50c74d4753"
+        }
+      ]
+    },
+    {
+      "id": "1029中-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "中国消费者报：演员吴越称被 AI 换脸直播带货卖精华液，单品月销约 7000 单；清朗整治累计清理约 561 万条",
+      "time": "2026-10-29T07:54:00+08:00",
+      "summary": "中国经济网 10 月 29 日约 07:54 转载中国消费者报：演员吴越发现 AI 合成数字人冒充自己直播带货重组胶原蛋白精华液，口型神态足以乱真；报道称该单品月销约 7000 余单（数字来自当事人／团队陈述，非司法判决）。文中串联温峥嵘团队 2025 年曾单日发现近约 50 个冒充账号、靳东形象被用于中老年情感诈骗等案例；律师指未经授权用演员形象可能侵犯肖像权／姓名权并侵害消费者知情权。另提中央网信办「清朗·整治 AI 应用乱象」累计清理违法违规信息约 561 万条、查处账号约 4.9 万、处置违规网站／App 约 2400。注意：不少侵权视频仍带「含 AI 生成内容」小字——标识只回答「是不是 AI」，回答不了「有没有授权」。与早刊企业防火墙／域名商入侵不同：这是面向普通消费者的公域名人带货骗局。",
+      "relevance": "普通人该做什么：名人直播带货优先走平台官方认证号或品牌旗舰店，别只凭「长得像」下单；转账／买保健品前用已保存的官方客服或官网回拨核实，勿信直播间临时甩的链接。",
+      "sources": [
+        {
+          "label": "ce.cn（中国经济网转中国消费者报）",
+          "url": "http://www.ce.cn/cysc/newmain/yc/jsxw/202610/t20261029_3275066.shtml"
+        },
+        {
+          "label": "chinanews.com.cn（中新网相关）",
+          "url": "https://www.chinanews.com.cn/sh/2026/10-28/10722078.shtml"
+        }
+      ]
+    },
+    {
+      "id": "1029中-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "Alphabet 盘后约跌一成拖累纳指期货约跌 1%；韩综／台股／A 股午间走弱，油价回落，金略软",
+      "time": "2026-10-29T12:00:00+08:00",
+      "summary": "相对早刊「Fed 按兵不动＋美股收涨＋Alphabet 盘后初报」：周四午间美股现货未开，股指期货消化 Alphabet 财报不及预期——路透／Channel NewsAsia 等称纳指期货约跌 1%、Alphabet 盘后约跌一成、微软盘后约涨 3%。亚洲现货：中央社称台股约 10:54 加权约 46330.67（−704.91，−1.5%），盘中最低约 46146、失守季线约 46502；首尔经济称 KOSPI 午间约 5887.8（约 −2.1%），三星营业利润创新高股价仍跌超约 4%；中新经纬午评：上证午收跌约 0.93%、深成约 −2.55%、创业板约 −3.63%，半日成交约 9965 亿元、近约 4700 只个股下跌；日经相对早刊开盘 64126 小幅上行（Yahoo 午间约 64196、+0.38%）；恒生午间近乎平。油价回落：Channel NewsAsia／路透称约 0351 GMT 时 WTI 约 101.45（−1.3%）、布伦特约 114.10（−1.1%），背景含 WSJ 报道副总统 Vance 致信伊朗安理会秘书 Rezaei 寻求重启和谈——地缘溢价回吐，勿升格国际主条。金略软、守 4000 上方；10 年期美债昨夜收约 5.05%；欧洲现货未开。Fed 决议细节早刊已报不重复。",
+      "relevance": "别只盯「Fed 没加息」——今天盘面更像在卖 Alphabet 这种烧钱叙事；台股／韩股／A 股午间已先跌一截，今晚还要看更多美股财报。",
+      "sources": [
+        {
+          "label": "cna.com.tw（中央社台股）",
+          "url": "https://www.cna.com.tw/news/afe/202610290079.aspx"
+        },
+        {
+          "label": "chinanews.com.cn（中新经纬 A 股午评）",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722642.shtml"
+        },
+        {
+          "label": "sedaily.com（首尔经济 KOSPI）",
+          "url": "https://www.sedaily.com/article/20107688"
+        },
+        {
+          "label": "channelnewsasia.com（亚股／美期）",
+          "url": "https://www.channelnewsasia.com/business/asian-shares-fall-alphabet-earnings-miss-drags-wall-st-futures-lower-6502046"
+        },
+        {
+          "label": "channelnewsasia.com（油价）",
+          "url": "https://www.channelnewsasia.com/business/oil-prices-fall-peace-hopes-offset-fears-growing-middle-east-conflict-6501666"
+        }
+      ]
+    },
+    {
+      "id": "1029中-6",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-10-29",
+      "summary": "这段时间没有超出早刊的新独立核实主新闻。以色列计票仍约九成、席次约 53／48／19，双信封未改写格局，勿重开主条；Vance 致伊朗信函仅作油价一句，尚未构成停火／开打级事件；胡塞侧拦截导弹等属 1028晚炼厂线增量，不单开。晚刊若双信封大幅改写席次再报。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1029中-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "华北许家窑化石蛋白组学确认为丹尼索瓦人；Nature：低斜额头、粗眉脊、近方形眼眶——终于能给这群人「画张脸」",
+      "time": "2026-10-21",
+      "summary": "换赛道——古人类学，不是 AI 也不是盘面（早刊是太阳能材料）。中科院古脊椎所付巧妹团队等 10 月 21 日在 Nature 发表：对泥河湾盆地许家窑两件化石做古蛋白组分析，检出丹尼索瓦人特异氨基酸位点（COL1A2-996 R>K），将该遗址人群归入丹尼索瓦谱系；年代约 19.9–13.8 万年前。结合形态比较（并纳入哈尔滨等已确认标本），归纳面容：低斜额头、粗大且后弯的眉脊、近矩形眼眶、扁平颧区、鼻梁中等抬升等。Nature 新闻称「We are finally starting to put a face to the Denisovan」。意义：丹尼索瓦人 2010 年先以西伯利亚指骨 DNA「出场」，东亚大量中更新世化石长期分类争议；蛋白比 DNA 更耐保存，此次把许家窑及一批东亚晚中更新世标本纳入同一谱系叙事。中科院／文汇报等中文报道同步转述。",
+      "relevance": "人类起源冷知识，而且关键节点在华北遗址——比又一篇电池材料更偏好奇心；当科学画像，别当成博物馆明天就有「真人复原观光」。",
+      "sources": [
+        {
+          "label": "nature.com（研究论文）",
+          "url": "https://www.nature.com/articles/s41586-026-11132-z"
+        },
+        {
+          "label": "nature.com（Nature 新闻）",
+          "url": "https://www.nature.com/articles/d41586-026-03360-0"
+        },
+        {
+          "label": "cas.cn（中科院转述）",
+          "url": "https://www.cas.cn/cm/202610/t20261028_5122973.shtml"
+        }
+      ]
+    }
+  ]
+}
