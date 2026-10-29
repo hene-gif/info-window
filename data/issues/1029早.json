@@ -11,7 +11,7 @@
       "block": "AI 模型和产品动态",
       "title": "Google 发布 Gemini 4 Carbon：AA Intelligence Index v5 以 59 登顶；先给网络安全防御方，公众与开发者稍后",
       "time": "2026-10-29T01:08:00+08:00",
-      "summary": "相对晚刊「七大 lab 无新 frontier 聊天模型」：Google（DeepMind 架构师署名博客）于美西约 10 月 28 日 10:08（台北 29 日约 01:08）宣布 Gemini 4 Carbon——官方称是目前最强 Gemini，强调网络安全全链路、长程 agent 与编程。独立评测站 Artificial Analysis 同日文章：Carbon（high）在 Intelligence Index v5 总分 59，超过晚刊所记 Opus 5.5（max）58、GPT-6 Astra（max）57；九项里四项领先（含 HLE-Diamond、Terminal-Bench-Science、AA-Omniscience、AutomationBench-AA）。官方自报 SEC-bench Pro 约 88.2%、ExploitGym 约 54.8%、CWE-bench 约 71.0%（评测说明未加护栏）；称 Chrome 团队内部补丁质量对比中显著好于「另一家 lab 大模型」、对 Prompt Injection（Gray Swan IPI）攻击成功率称 0.0%。上线策略刻意收紧：本周起先给部分网络防御方，再经 Fairwind Program 扩信任伙伴；开发者/企业/消费者「尽快」开放但未给日期；美政府自愿预发布测试流程中。入门价与 Argon 同档：$2 / M input、$10 / M output（缓存输入约九五折），入门期后标准价 $4/$20。属「两周后的下一档 frontier」，不是聊天应用全面换模型。本窗再核 OpenAI：官宣扩大与 ServiceNow 合作（工作流进 ChatGPT、计划 Codex/安全能力，多在 2027 落地）——企业通路，非新模型；Anthropic、xAI、Meta、DeepSeek、Qwen：未见新 frontier 聊天模型正式发版。马斯克本窗多为转发/短评与 Robotaxi Houston 引用，无 xAI/Grok 产品级官宣，不单独占条。",
+      "summary": "相对晚刊「七大 lab 无新 frontier 聊天模型」：Google（DeepMind 架构师署名博客）于美西约 10 月 28 日 10:08（台北 29 日约 01:08）宣布 Gemini 4 Carbon——官方称是目前最强 Gemini，强调网络安全全链路、长程 agent 与编程。独立评测站 Artificial Analysis 同日文章：Carbon（high）在 Intelligence Index v5 总分 59，超过晚刊所记 Opus 5.5（max）58、GPT-6 Astra（max）57；九项里四项领先（含 HLE-Diamond、Terminal-Bench-Science、AA-Omniscience、AutomationBench-AA）。官方自报 SEC-bench Pro 约 88.2%、ExploitGym 约 54.8%、CWE-bench 约 71.0%（评测说明未加护栏）；称对 Prompt Injection（Gray Swan IPI）攻击成功率 0.0%。上线策略刻意收紧：本周起先给部分网络防御方，再经 Fairwind Program 扩信任伙伴；开发者/企业/消费者「尽快」开放但未给日期。入门价与 Argon 同档：$2 / M input、$10 / M output（缓存输入约九五折），入门期后标准价 $4/$20。X 上 Sundar Pichai、Google DeepMind、Demis Hassabis 同日官宣可核。属「两周后的下一档 frontier」，不是聊天应用全面换模型。本窗再核：OpenAI 官宣扩大与 ServiceNow 合作（工作流进 ChatGPT，安全能力多在 2027）——企业通路非新模型；GitHub Universe 推 Copilot Fusion（路由多家模型）属编程助手产品线；Anthropic、xAI、Meta、DeepSeek、Qwen 未见新 frontier 聊天模型正式发版。马斯克本窗多为转发/短评与 Robotaxi Houston 引用，无 xAI/Grok 产品级官宣，不单独占条。",
       "relevance": "榜上换第一≠你今天就能用：Carbon 先开给安全团队，普通人继续用现有 Gemini；看网络安全/长任务时再盯 Fairwind 与后续开放时间。",
       "sources": [
         {
@@ -21,6 +21,10 @@
         {
           "label": "artificialanalysis.ai（AA Index 登顶文）",
           "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1"
+        },
+        {
+          "label": "x.com/sundarpichai（Sundar 官宣）",
+          "url": "https://x.com/sundarpichai/status/2115489219804352921"
         },
         {
           "label": "theverge.com（The Verge）",
@@ -36,9 +40,24 @@
       "id": "1029早-2",
       "section": "我关注的",
       "block": "AI 网络安全跟踪",
+      "title": "Dream：疑似 AI 辅助的 PHP2Shell 攻击链 root 约 25 台防火墙，含美政府关联环境 3 台；工具痕迹含 Claude Code / DeepSeek / Kimi",
+      "time": "2026-10-28",
+      "summary": "以色列安全公司 Dream 披露、The Hacker News 10 月 28 日报道：疑似中国关联行为体把 PHP2Shell（CVE-2026-109618 / 109619，未认证远程代码执行）与 Linux 内核提权 Fragnesia（CVE-2026-46300）拼成定制利用链，在约 10 月 23–25 日对某大型厂商防火墙（管理面跑 PHP 8.0.30）取得 root——约 25 台分布于美/日/台/韩，其中 3 台属美政府关联环境；攻击者再建反向 SSH 隧道打 Active Directory、枚举与喷密码，是否拿到有效凭据、是否建成后门账户尚未确认。流程：FOFA 扫约 1.9 万暴露管理面 → 约 5000 回版本 → 筛四国新分支约 240 台 → 批量利用。基建侧发现 Claude Code 安装痕迹，以及配置 DeepSeek、Kimi 的 aiscan 等；近 40 个脚本风格高度一致，Dream 判断有 AI 辅助开发迹象——属厂商推断。与晚刊 Anthropic 实验室漏洞研究不同：这是野外实害级入侵链。PHP 侧此前已有补丁路径；其余约 22 台仍可能留有 webshell。",
+      "relevance": "普通人该做什么：家用电脑一般不是这款企业防火墙；若你管公司边界设备，立刻确认管理面是否对公网暴露、补丁是否打上，并查异常 SSH/webshell——拖着不关管理端口风险最大。",
+      "sources": [
+        {
+          "label": "thehackernews.com（The Hacker News）",
+          "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html"
+        }
+      ]
+    },
+    {
+      "id": "1029早-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
       "title": "英国域名商 123 Reg 披露「AI 驱动」入侵：客户联系与 API 产品信息被读；疑似中国关联、工具链含 ARTEX 与 Anthropic skills 镜像",
       "time": "2026-10-28T19:45:00+08:00",
-      "summary": "GoDaddy 旗下英国域名注册商 123 Reg 本周向客户发通知：称 9 月 18 日遭「公司首次已知的 AI 驱动网络攻击」，攻击者活动「限于读取」客户数据——含姓名、电话、国家、语言/货币偏好、开户日、账户上的产品、营销偏好，以及公司 VAT 号与 API 侧产品信息；发言人承认攻击者「可能复制了副本」。The Register 10 月 28 日约 11:45 UTC（台北约 19:45）报道：公司称核心攻击基础设施 IP 在中国与新加坡，并在中方基础设施上发现 AI 攻击「skills」（含 Anthropic 开源 skills 镜像及其他利用框架）；怀疑与滥用 Claude Code、以及 CrowdStrike CSA-261162 所述、用开源中文 agent 渗透工具 ARTEX 打击韩国金融机构的同一类行为体有关——属公司调查判断，非法庭定论。已报执法机构、FTC 与英美欧数据保护当局，并与新加坡 ISP 等协同关停服务器。与晚刊 Anthropic 实验室漏洞研究披露不同链：这是对消费级域名账户的真实数据外泄通知。",
+      "summary": "GoDaddy 旗下英国域名注册商 123 Reg 本周向客户发通知：称 9 月 18 日遭「公司首次已知的 AI 驱动网络攻击」，攻击者活动「限于读取」客户数据——含姓名、电话、国家、语言/货币偏好、开户日、账户上的产品、营销偏好，以及公司 VAT 号与 API 侧产品信息；发言人承认攻击者「可能复制了副本」。The Register 10 月 28 日约 11:45 UTC（台北约 19:45）报道：公司称核心攻击基础设施 IP 在中国与新加坡，并在中方基础设施上发现 AI 攻击「skills」（含 Anthropic 开源 skills 镜像及其他利用框架）；怀疑与滥用 Claude Code、以及 CrowdStrike CSA-261162 所述、用开源中文 agent 渗透工具 ARTEX 打击韩国金融机构的同一类行为体有关——属公司调查判断，非法庭定论。已报执法机构、FTC 与英美欧数据保护当局。与上条 PHP2Shell 实害链不同：这是消费级域名账户的数据外泄通知。",
       "relevance": "普通人该做什么：若你或公司用 123 Reg / 相关 GoDaddy 域名托管，打开官方站点自己登录查通知，开启两步验证；对方若邮件/电话索要密码或验证码，一律当假——先从官网进，别点陌生链接。",
       "sources": [
         {
@@ -48,12 +67,12 @@
       ]
     },
     {
-      "id": "1029早-3",
+      "id": "1029早-4",
       "section": "我关注的",
       "block": "全球股市",
-      "title": "美联储维持 3.75%–4.00%，Cook/Hammack 主张加 25bp；美股收涨后盘 Alphabet 跳水、微软云强；日经开高，油贵金软",
+      "title": "美联储维持 3.75%–4.00%，Cook/Hammack 主张加 25bp；美股收涨后盘 Alphabet 跳水、微软云强；日经开高，油贵金震荡",
       "time": "2026-10-29T02:00:00+08:00",
-      "summary": "相对晚刊「决议仍待台北凌晨」：美联储 FOMC 于美东 10 月 28 日 14:00（台北 29 日约 02:00）宣布维持联邦基金利率目标区间 3.75%–4.00%（10–2 通过）；反对票为 Lisa Cook、Beth Hammack，主张上调 25 个基点。声明称经济活动「强劲扩张」、通胀「仍然偏高」，并写「积累更多信息」后再定政策立场；主席 Kevin Warsh 新闻会称准备在需要时行动，并透露 2027 年拟保留约八次会议、其中一次专谈战略而不表决利率。路透/StreetInsider：道指收 52475.10（+0.19%）、标普 7743.97（+0.28%）、纳指 26549.85（+0.27%）；CME FedWatch 报道市场对 12 月加息约 25bp 概率约 85%。盘后：Alphabet 三季报营收约 1275.8 亿美元、调整后 EPS 约 2.67，双双低于预期，自由现金流约 −90.7 亿美元，全年资本开支指引仍约 1950–2050 亿；股价盘后报道跌约 7%–10%。微软财年 Q1：Azure 营收同比约 +48%，云业务强，盘后上涨。亚太早盘：时事通信称日经平均开于 64126.25（+172.06）；韩联社称首尔综指开盘略高。金：现货报道约 4039 美元/盎司（约 −0.5%）；10 年期美债收益率报道约 5.03%。油：布伦特仍在约 115 一带、WTI 逾 100，中东供应担忧未消。台股开盘细节截稿时仍以盘前为主，承接昨夜亚股乐观与美股收涨。",
+      "summary": "相对晚刊「决议仍待台北凌晨」：美联储 FOMC 于美东 10 月 28 日 14:00（台北 29 日约 02:00）宣布维持联邦基金利率目标区间 3.75%–4.00%（10–2 通过）；反对票为 Lisa Cook、Beth Hammack，主张上调 25 个基点。声明称经济活动「强劲扩张」、通胀「仍然偏高」，并写「积累更多信息」后再定政策立场；主席 Kevin Warsh 新闻会称准备在需要时行动，并透露 2027 年拟保留约八次会议、其中一次专谈战略而不表决利率。路透/StreetInsider：道指收 52475.10（+0.19%）、标普约 7743.98（+0.28%）、纳指 26549.85（+0.27%）；10 年期美债收益率报道约 5.03%；CME FedWatch 报道市场对 12 月加息约 25bp 概率约 85%。盘后：Alphabet 三季报营收约 1275.8 亿美元、调整后 EPS 约 2.67，双双低于预期，自由现金流约 −90.7 亿美元，全年资本开支指引仍约 1950–2050 亿；股价盘后报道跌约 7%–10%。微软财年 Q1：Azure 营收同比约 +48%，云业务强，盘后上涨。亚太早盘：时事通信称日经平均开于 64126.25（+172.06）；韩联社称首尔综指开盘略高。油：新华等称 WTI 约 102.78、布伦特约 115.32。金：现货报道约 4039–4071 一带（来源口径不一，按品种区分）。台股开盘定稿截稿时仍以承接昨夜收涨与美股为主。",
       "relevance": "利率按兵不动≠立刻宽松：声明仍强调通胀偏高，期货已在赌 12 月再加——看盘别只盯「没加息」四个字，还要看 Alphabet 这种 AI 烧钱股的财报反应。",
       "sources": [
         {
@@ -81,17 +100,17 @@
           "url": "https://equity.jiji.com/market_watch/2026102900297"
         },
         {
-          "label": "cnbc.com（金价）",
-          "url": "https://www.cnbc.com/2026/10/28/gold-slips-on-oil-fueled-inflation-fears-ahead-of-fed-meeting.html"
+          "label": "english.news.cn（油价）",
+          "url": "https://english.news.cn/20261029/279ec84332204907a8e9ddfe97bc8124/c.html"
         }
       ]
     },
     {
-      "id": "1029早-4",
+      "id": "1029早-5",
       "section": "国际重大影响",
-      "title": "以色列计票约九成：内塔尼亚胡阵营约 53 席、艾森科特约 48、阿裔政党约 19——双信封票开计，仍难凑 61",
+      "title": "以色列计票约九成：内塔尼亚胡阵营约 53 席、艾森科特阵营约 48、阿裔政党约 19——双信封票开计，仍难凑 61",
       "time": "2026-10-29",
-      "summary": "相对晚刊「约八成计票、亲内塔尼亚胡约 54／艾森科特约 49」：Al Jazeera 等 10 月 29 日报道，中央选举委员会称已计逾约 500 万张、近九成选票（当地约周三 21:00），内塔尼亚胡右翼阵营约 53 席，加迪·艾森科特反对派阵营约 48 席，阿裔政党（联合名单与 Ra'am 等）合计约 19 席——双方仍远未到组阁所需 61 席。逾约 50 万张「双信封」特殊选票（军人、外交人员等）开始计票，最终席次仍可能微调；正式结果或最早周四晚间。总统赫尔佐格下周起咨询组阁；内塔尼亚胡暂任看守总理。利库德指控阿裔政党「偷窃选举」，阿裔阵营则称高投票率挡住了多数——双方说法均待选举机构与司法程序，不采信为已证实舞弊。与晚刊胡塞袭击沙特炼厂条目不重复：油市情绪仍在，但本条只更新选举计票。",
+      "summary": "相对晚刊「约八成计票、亲内塔尼亚胡约 54／艾森科特约 49」：Al Jazeera 等 10 月 29 日报道，中央选举委员会称已计逾约 500 万张、近九成选票，内塔尼亚胡右翼阵营约 53 席，加迪·艾森科特反对派阵营约 48 席，阿裔政党合计约 19 席——双方仍远未到组阁所需 61 席。逾约 50 万张「双信封」特殊选票（军人、外交人员等）开始计票，最终席次仍可能微调；正式结果或最早周四晚间。总统赫尔佐格下周起咨询组阁；内塔尼亚胡暂任看守总理。利库德指控阿裔政党「偷窃选举」，阿裔阵营则称高投票率挡住了多数——双方说法均待选举机构与司法程序，不采信为已证实舞弊。与晚刊胡塞袭击沙特炼厂条目不重复。",
       "relevance": "席位胶着≠战争开关立刻关掉——组阁可能拖数周，中东与油价风险溢价先按「没人拿到钥匙」来读。",
       "sources": [
         {
@@ -105,7 +124,7 @@
       ]
     },
     {
-      "id": "1029早-5",
+      "id": "1029早-6",
       "section": "我关注的",
       "block": "你可能没想到",
       "title": "牛津大学：硫化铋呈「伪直接」能带，强吸光同时电荷复合约慢 75%——太阳能材料旧权衡被打破一角",
