@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "id": "1030中",
+  "date": "2026-10-30",
+  "slot": "中",
+  "title": "10月30日 · 中",
+  "items": [
+    {
+      "id": "1030中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：Anthropic 公开 Claude「自我评估」——答完后自查对话安不安全；自 6 月起在 Fable 5 及之后模型跑，不向用户收费",
+      "time": "2026-10-30T02:22:00+08:00",
+      "summary": "相对早刊 Mistral Large 4／OpenAI Pro 用量翻倍：@AnthropicAI 约台北 10 月 30 日 02:22（UTC 10-29 18:22）官宣「self-assessment」，早刊未收，作补报。技术页署 10 月 16 日：Claude 每条回复后追加短指令，产出紧凑安全评估（是否潜在有害、伤害类别、人工复核优先级、是否已拒答、一句话理由）；评估不对用户可见、不进入后续对话。公司称自 6 月起在 Fable 5 及之后发布模型的大比例全球流量上离线跑，算力自家出、不向用户加价；估增推理成本不足 2%。相对更贵的独立「提示分类器」，Fable 5 在 1% 误报率下召回教师模型所标「潜在有害」对话约 78%、高优先级约 94%。用途是离线监测与优先人工复核，不是实时拦答；红队实验中当阻断器时攻击成功率仅从约 79% 降到约 54%，官方承认扛不住专打它的对手。部署以来曾助查大规模儿童剥削相关 API 滥用并报 NCMEC，并发现用 Claude Code 跑自动化恋爱诈骗等个案。另同窗：ClaudeDevs／宝玉称官方 API Messages／Token Counting 单次请求上限自 32 MB 提到 128 MB（约 4 倍），利好长截图与大 PDF——属接口限额，不是新底座。本窗再核：OpenAI／Google／xAI／Meta／DeepSeek／Qwen／Mistral 未见新 frontier 聊天底座正式发版（Carbon／Large 4 已前刊）。马斯克约台北 12:06–12:10 称 Neuralink 第一产品 Telepathy、第二产品 Blindsight「工程上已就绪、只等监管」——属脑机接口节点、非 xAI／Grok 发版，不单独占条（见 https://x.com/elonmusk/status/2116019939056513218 ）。",
+      "relevance": "这是 Anthropic 的滥用监测层，不是你聊天界面多出来的开关；别指望它替你挡一切越狱，也别把「公司在看流量」理解成「每句都会封号」——官方写明单条标记不直接等于违规裁定。",
+      "sources": [
+        {
+          "label": "safeguards.anthropic.com（官方技术页）",
+          "url": "https://safeguards.anthropic.com/2026/self-assessment/"
+        },
+        {
+          "label": "x.com/AnthropicAI（官宣帖）",
+          "url": "https://x.com/AnthropicAI/status/2115871889549865429"
+        },
+        {
+          "label": "x.com/ClaudeDevs（API 128 MB）",
+          "url": "https://x.com/ClaudeDevs/status/2115923971279614171"
+        },
+        {
+          "label": "x.com/dotey（宝玉转述）",
+          "url": "https://x.com/dotey/status/2115923359149998490"
+        }
+      ]
+    },
+    {
+      "id": "1030中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：Shopify 称 Shop Pay 可在 Grok Bot／Claude Duet／Instinct 里结账——站内外品牌皆可，默认要你批准才付钱",
+      "time": "2026-10-29T23:37:00+08:00",
+      "summary": "相对早刊／昨晚刊未收：@Shopify 约台北 10 月 29 日 23:37（UTC 15:37）官宣，Fall ’26 Editions 同步写明——可用 Shop Pay 在 Grok Bot、Claude Duet、Instinct 购买站内与站外品牌；称安全结账并由 Mastercard／Visa 支持（Amex 即将）。Shop Help「个人 agent」页目前点名 Muse／Instinct／Claude Duet 的 Shop Pay 路径，Editions／官宣帖另明确写出 Grok Bot——以公司营销页与 X 官宣为准，Help 名单或有滞后。Help：默认由 agent 准备结账、用户再批准；可开「Allow agent to pay for me」并设周／月／总额度；非 Shop Pay 店可能用一次性凭证，账单描述类似 SHOPPAY*[店名]；批准即视同本人下单，争议可能失败。属 agent 支付能力产品阶跃，不是新 frontier 模型。",
+      "relevance": "你若给 Grok Bot 开过购物／钱包类权限，先去核对「代付」开关和额度；每笔看清店名和总价再点批准，别在聊天里贴完整卡号或验证码。",
+      "sources": [
+        {
+          "label": "x.com/Shopify（官宣帖）",
+          "url": "https://x.com/Shopify/status/2115830282402042278"
+        },
+        {
+          "label": "shopify.com（Fall ’26 Editions）",
+          "url": "https://www.shopify.com/editions/fall2026"
+        },
+        {
+          "label": "help.shop.app（个人 agent 说明）",
+          "url": "https://help.shop.app/en/shop/shopping/personal-agents"
+        }
+      ]
+    },
+    {
+      "id": "1030中-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "Forever Security「EMBRACE」：Cursor／Copilot／Codex／VS Code／Claude Desktop 内置浏览器被捅——Codex 与 VS Code 发布时仍未修",
+      "time": "2026-10-29",
+      "summary": "相对早刊 Cequence 假冒 AI bot 扫密钥：Forever Security 研究员 Gal Weizman 约 10 月 29 日发文，The Register 同日约 UTC 23:12 报道——五款桌面 AI 编程助手把浏览器嵌进工具并「加权限」，共享根因称 EMBRACE（Embedded Browser trusted like a real one）。Cursor：恶意页可经提示注入让 agent 在主机跑命令，冷启动空项目一次回车可启计算器类程序；9 月 10 日披露，10 月 1 日静默修补，研究员称未收到回复／未见公告。GitHub Copilot：预览页可伪造成任意地址栏（如 github.com/login）同时骗人和 agent；1.1.27 发现，GitHub 于 10 月 13 日在 1.1.29 独立修好。Claude Desktop／Codex／VS Code：本地 HTML 经内置浏览器可读出项目外文件（含 SSH 密钥、.env、token）；Claude／VS Code 对主页面有目录限制但对 web worker 失效，Codex 当时甚至无此限制。披露：Anthropic 7 月曾一度以 Workspace Trust 拒报、后经 Noma 再报接受；OpenAI 7 月 27 日收报至发文时未修（对 Register 称知情并在处理）；微软 9 月 10 日拒报、发文时 VS Code 仍未修。属「AI 工具本身被滥用／存在可利用漏洞」且普通人（开发者）须行动；与 Cequence 扫库不同链路，不合并。",
+      "relevance": "普通人该做什么：用 Cursor 确认已是 10 月 1 日之后的版本；Copilot 升到至少 1.1.29；Codex／VS Code 内置浏览器先别随便打开不明本地 HTML 或陌生预览页，密钥别散落在机器各处——发文时后两者补丁状态仍按厂商说法跟进。",
+      "sources": [
+        {
+          "label": "forever.security（EMBRACE 主文）",
+          "url": "https://forever.security/blog/embrace-hacking-5-ai-assistants-embedded-browsers/"
+        },
+        {
+          "label": "theregister.com（The Register）",
+          "url": "https://www.theregister.com/security/2026/10/29/researchers-find-bugs-in-5-ai-developer-tools-with-openai-and-microsoft-flaws-still-unpatched/5306508"
+        },
+        {
+          "label": "helpnetsecurity.com（Help Net Security）",
+          "url": "https://www.helpnetsecurity.com/2026/10/29/research-ai-assistant-browser-vulnerabilities/"
+        }
+      ]
+    },
+    {
+      "id": "1030中-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股半日分化：韩约 −5%、日经约 −2.7%、台自 −1600 点级低点反弹仍约 −2.6%；A 股修复、恒指午间约 +1.6%；纳期约 −2%",
+      "time": "2026-10-30T12:13:00+08:00",
+      "summary": "相对早刊「美股已收、亚股开盘跟跌」：截稿时亚股多数仍开市，以半日／盘中为准。美股现金收盘数字早刊已报；新压力来自盘后——Investing.com／综述：亚马逊盘后约 −6.7%～−7%，英特尔展望差盘后约 −23%；纳指 100 期货约 −2%（Investing 见约 28975；Yahoo 约同期 NQ≈28950、−2.07%），标普期约 −0.8%～−1%。日本：日经半日约 62934（约 −2.67%，Yahoo 约台北 12:08），低点约 62711；工商时报午前约 63019（−2.5%）。韩国：KOSPI 仍深跌约 −4.9%～−5%（Yahoo 约 5647；工商／盘中多见约 5620 一带）。台股：开 46139.79；低约 44726（盘中跌逾约 1600 点）；中央社约 10:35 报 44923.7（−1444）；Yahoo 约 12:03 报约 45148（−2.63%），自低点反弹但仍失守 45000／半年线叙事。A 股午评（中国经济网）：上证半日 3640.54（−0.30%）、深成 11073.08（−0.58%）、创业板 2487.91（−1.18%），较深开明显收窄。港股午评（新浪／Yahoo）：恒指约 +1.64% 报 23335.66——相对早开微红翻成明显上涨。欧股现货约台北 16:00 才开，本窗不硬报。油金债（Yahoo 约午间）：WTI 约 103.2、Brent 约 112.1；金约 4001；美 10Y 现货昨夜收约 4.99%，东京盘报道约 4.91%——盘中仍会晃。",
+      "relevance": "芯片链（日韩台）仍重，Greater China 半日反而稳住甚至翻红——别用早盘极端点位外推「全亚洲同一根阴线」；今晚看美股现金能否消化亚马逊／英特尔盘后。",
+      "sources": [
+        {
+          "label": "cna.com.tw（中央社台股盘中）",
+          "url": "https://www.cna.com.tw/news/afe/202610300059.aspx"
+        },
+        {
+          "label": "ctee.com.tw（工商时报日韩）",
+          "url": "https://www.ctee.com.tw/news/20261030700833-430702"
+        },
+        {
+          "label": "finance.ce.cn（中国经济网 A 股午评）",
+          "url": "http://finance.ce.cn/stock/gsgdbd/202610/t20261030_3276904.shtml"
+        },
+        {
+          "label": "finance.sina.com.cn（新浪港股午评）",
+          "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-10-30/doc-iniwyncy2373799.shtml"
+        },
+        {
+          "label": "uk.investing.com（美股期货／亚马逊英特尔）",
+          "url": "https://uk.investing.com/news/stock-market-news/us-stock-futures-sink-nasdaq-down-2-as-amazon-intel-earnings-underwhelm-4943796"
+        },
+        {
+          "label": "ec.ltn.com.tw（自由财经台股）",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5623595"
+        }
+      ]
+    },
+    {
+      "id": "1030中-5",
+      "section": "国际重大影响",
+      "title": "币安称约 63 亿美元资产受疑似黑客事件影响；约半数已冻结，承诺赔付；疑涉工程师笔记本被入侵",
+      "time": "2026-10-30",
+      "summary": "相对早刊以色列计票：BBC 报道币安称平台「安全事件」影响约 63 亿美元（约 47 亿英镑）资产，在其他平台协助下约半数已冻结，并称将「覆盖全部损失」；初步检查指向工程师笔记本遭入侵、攻击者得以未授权提现。前 CEO 赵长鹏在 X 称「看起来像黑客」。Tether、Circle 等稳定币发行方称已冻结与事件相关的大额 USDT／USDC（报道口径合计约数十亿美元级，各稿数字随冻结推进而变）。币安称 Binance.com 受影响、面向美国居民的 Binance.US 未受影响；提现一度关闭至环境确认安全。若坐实，规模远超 2025 年 Bybit 约 15 亿美元被盗纪录。属全球最大加密交易所安全事件，影响市场信心与稳定币冻结机制——不是 AI 专条。调查未完，金额与归因仍可能修订。",
+      "relevance": "若你把币放在中心化交易所，这是又一次「平台也会被掏」的提醒；看官方渠道、提现与赔付说明，别点来路不明的「客服」链接。",
+      "sources": [
+        {
+          "label": "bbc.com（BBC）",
+          "url": "https://www.bbc.com/news/articles/cwg7xp8kx4v5o"
+        },
+        {
+          "label": "decrypt.co（Decrypt 链上早期统计）",
+          "url": "https://decrypt.co/382191/binance-suspected-hack-5-billion-tether-circle-freeze-crypto"
+        }
+      ]
+    },
+    {
+      "id": "1030中-6",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "美国能源部给 Constellation 最高 50 亿美元有条件贷款：八座核电站「升功率」约增 1.1 GW，买方已有谷歌／亚马逊／Meta",
+      "time": "2026-10-27",
+      "summary": "换赛道——能源基建，不是 AI 发版也不是盘面（早刊是癌症基因组 BAF／CTCF）。美国能源部 10 月 27 日宣布：能源主导融资办公室向 Constellation Energy 提供最高 50 亿美元有条件贷款承诺，用于伊利诺伊、马里兰、宾州八座核电站升功率与现代化，约增近 1.1 GW。Constellation 同日稿：已与谷歌、亚马逊签订约 20 年协议并计划投入逾 70 亿美元新增约 1080 MW；另有与 Meta 相关的 Clinton 约 30 MW 扩建。电站名单含 Braidwood、Byron、Clinton、Dresden、LaSalle、Quad Cities、Calvert Cliffs、Limerick。贷款仍须尽职调查与最终文件，不是钱已入账；TechCrunch 指出政府「降电价」表述与公司公告并不一一对应。AI 数据中心抢电，正在把「老核电站多挤出一点瓦」变成联邦融资主题。",
+      "relevance": "你追 AI 算力时，下一瓶颈经常是电而不是芯片口号；这类升功率贷款说明云厂已经在用长约锁核电，电价与电网新闻会越来越像科技新闻。",
+      "sources": [
+        {
+          "label": "energy.gov（美国能源部）",
+          "url": "https://www.energy.gov/articles/energy-department-announces-5-billion-loan-boost-nuclear-power-and-help-lower-costs"
+        },
+        {
+          "label": "constellationenergy.com（Constellation 公告）",
+          "url": "https://www.constellationenergy.com/news/2026/10/constellation-secures-conditional-doe-loan-commitment-of-up-to-5-billion-to-expand-nuclear-output.html"
+        },
+        {
+          "label": "techcrunch.com（TechCrunch）",
+          "url": "https://techcrunch.com/2026/10/28/trump-doe-loans-5b-to-nuclear-plants-that-will-power-data-centers/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "id": "1030早",
+  "date": "2026-10-30",
+  "slot": "早",
+  "title": "10月30日 · 早",
+  "items": [
+    {
+      "id": "1030早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：Mistral 放出 Large 4（Le Chonk）开源权重——约 1T MoE／约 52B 激活／1M 上下文；主打编程与防御性安全",
+      "time": "2026-10-29T22:21:00+08:00",
+      "summary": "相对昨晚刊 Grok API 准则／Nemotron 转写：Mistral 约台北 10 月 29 日 22:21（UTC 14:21）官宣放出改进版 Mistral Large 4（昵称 Le Chonk）开源权重——晚刊窗口未收，作补报。官方：约 1 万亿总参、约 52B 激活的原生多模态 MoE，1M 上下文；10 月初曾上架公测 API，本轮称又经约三周强化学习，编程与防御性网络安全明显抬升。权重可在 Hugging Face 下载（FP8／NVFP4），也可经 Mistral API／Studio／OpenRouter／微软 Foundry／NVIDIA NIM 使用；许可为 Mistral Ecosystem Open-Weight（改自 MIT，MaaS 商用另需商业许可）。API 价约 $0.70／百万输入、$2.10／百万输出；现支持 low／medium／high 三档推理。厂商自报在 Cognition FrontierCode、Artificial Analysis Coding Agent／Cyber 等榜靠前——属厂商与部分第三方榜，待独立长期复核。本窗再核：OpenAI／Anthropic／Google／Meta／DeepSeek／Qwen／xAI 未见新 frontier 聊天底座正式发版；OpenAI 另有付费档用量翻倍，见下条。马斯克本窗多为政治转发／短评与梗图，无 xAI／Grok／Tesla／SpaceX 产品级官宣，不单独占条。",
+      "relevance": "要自托管或主权部署开源旗舰可以盯这条；别把厂商榜单直接当成「已碾压 Opus／GPT」，也别忽略 MaaS 商用另要许可这一条。",
+      "sources": [
+        {
+          "label": "mistral.ai（官方开源权重公告）",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/"
+        },
+        {
+          "label": "x.com/MistralAI（官宣帖）",
+          "url": "https://x.com/MistralAI/status/2115811242556137820"
+        },
+        {
+          "label": "huggingface.co（HF 介绍／权重）",
+          "url": "https://huggingface.co/blog/mistral-large4"
+        }
+      ]
+    },
+    {
+      "id": "1030早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI：Pro 100／200／500 与 Business Premium 的 Work／Codex 用量限制即日起翻倍；Pro 200 原定减量取消",
+      "time": "2026-10-30T00:56:00+08:00",
+      "summary": "相对中刊「订阅赠 API 额度」：ChatGPT／Codex 产品负责人 Tibo 约台北 10 月 30 日 00:56（UTC 10-29 16:56）在 X 官宣，OpenAI 官方账号转发——所有 Pro 100／200／500 档与 Business Premium 的用量限制即日起翻倍；此前计划对既有 Pro 200 订阅砍用量的安排取消，Work 与 Codex 共用额度保持。公司称是回应用户反馈；Dots 仍继续给延长额度，且与默认用量分开计算。媒体综述称具体数字档位仍不公开。属订阅产品配额调整，不是新 frontier 模型。另：OpenAI 同日还更新了公开 Model Spec、并介绍扩大的 frontier 模型监控体系——政策／安全说明，不作新模型条。",
+      "relevance": "你若在付费 Pro／Business Premium 上猛用 Work 或 Codex，配额大概会松一截；别指望 Plus 也翻倍——官方点名的是 Pro 与 Business Premium。",
+      "sources": [
+        {
+          "label": "x.com/thsottiaux（Tibo 官宣）",
+          "url": "https://x.com/thsottiaux/status/2115850175868727621"
+        },
+        {
+          "label": "x.com/OpenAI（官方转发）",
+          "url": "https://x.com/OpenAI/status/2115854368566321594"
+        },
+        {
+          "label": "bleepingcomputer.com（BleepingComputer）",
+          "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/"
+        }
+      ]
+    },
+    {
+      "id": "1030早-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "Cequence：单一扫描器假冒约 32 个 AI bot（ChatGPT／Claude／Perplexity 等）狂扫 .env、云凭证与 SSH 私钥",
+      "time": "2026-10-28",
+      "summary": "相对晚刊 Cisco Talos NIK C2（受害机直连 OpenAI API 的 Windows 远控）：Cequence CQ Prime Research 约 10 月 28 日披露另一条工具链——单一攻击者从大型云厂商轮换 IP，伪装成约 32 种 AI 爬虫／助手身份（含 OpenAI、Anthropic、Meta、Perplexity 等），不读网页，专请求约 90 条常见密钥路径（.env、云凭证文件、SSH 私钥、服务器环境数据）。单地址约 8 秒内打 50–190 次请求后换下一家；活跃至少从 9 月底到 10 月底；某日触及 Cequence 监测里「见过任何 AI bot 流量」客户的约 48%。指纹异常：同一机器几秒内自称多家、假 Claude 统一抄了 Anthropic 爬虫联系方式、从不公布自己身份。Cequence 称几乎全部请求被拦或失败；单日可用逾 300 个云地址，静态 IP 黑名单很快过期。与 NIK C2 不同链路，不合并。须标明：目前主要为 Cequence 单方监测报告。",
+      "relevance": "普通人该做什么：别把网站根目录或可公网访问的路径里放 .env、云密钥、SSH 私钥；看到自称「ChatGPT／Claude 爬虫」却在要配置文件的请求，当普通扫库处理——User-Agent 名字证明不了身份。",
+      "sources": [
+        {
+          "label": "cequence.ai（Cequence 主文）",
+          "url": "https://www.cequence.ai/blog/ai-agent-impersonation"
+        },
+        {
+          "label": "darkreading.com（Dark Reading）",
+          "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials"
+        }
+      ]
+    },
+    {
+      "id": "1030早-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股隔夜已收：纳指 −1.38%、标普 −0.30%、道指 −0.25%；Alphabet 约 −12.6% 创上市最惨单日，亚股早盘跟跌",
+      "time": "2026-10-30T10:00:00+08:00",
+      "summary": "相对晚刊「美股未开、Alphabet 盘前约 −10%」：纽交所 10 月 29 日现金盘已收。自由财经／市场数据：道指收 52342.56（−132.54，−0.25%），标普 7720.39（−23.59，−0.30%），纳指 26184.72／73（−365，−1.38%），费城半导体约 −1.42%。Alphabet（GOOGL）收约 283.82 美元（约 −12.64%），CNBC 称约蒸发 5000 亿美元市值、为上市以来最差单日——财报自由现金流更负、搜索广告增速不及预期，叠加 AI 开支回报焦虑；微软收约 530.14（约 −0.16%）相对平稳，亚马逊约 −4.25%，英伟达约 −0.80%。亚洲今开跟跌：台股开 46139.79（−228.54），早盘一度触 44726.26（约 −1642）；日经早盘一度 −1948 至约 62711，午前约 63019.78（约 −2.54%）；韩 KOSPI 开约 5760 后午前约 −5%；A 股开：上证 3605.65（−1.25%）、深成 10871.13（−2.40%）、创业板 2434.80（−3.29%）；恒指高开约 +0.23% 至约 23011，恒生科技开约 −0.63%。欧股尚未开（台北午间）；隔夜欧洲 Stoxx 偏强已是昨日故事。油金债：隔夜报道 WTI 附近约 102、Brent 约 114–115，现货金约 4020–4030 一带偏弱；10 年期美债收益率报道约 4.94% 附近——盘中仍会晃，先当隔夜锚。",
+      "relevance": "昨晚盘前吓人的 Alphabet，收盘坐实成历史级单日暴跌；今天亚股是在消化这件事，别把早盘跳水直接外推成「全年 artificial intelligence 叙事崩了」。",
+      "sources": [
+        {
+          "label": "ec.ltn.com.tw（自由财经美股＋亚股）",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5623472"
+        },
+        {
+          "label": "cnbc.com（CNBC Alphabet 收盘）",
+          "url": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html"
+        },
+        {
+          "label": "apnews.com（美联社市场综述）",
+          "url": "https://apnews.com/article/stocks-markets-ai-oil-fed-1b5c71d31b4ce1e46b0db47b33141f6b"
+        },
+        {
+          "label": "cna.com.tw（中央社台股早盘）",
+          "url": "https://www.cna.com.tw/news/afe/202610300035.aspx"
+        },
+        {
+          "label": "finance.caixin.com（财新 A 股开盘）",
+          "url": "https://finance.caixin.com/2026-10-30/102498765.html"
+        },
+        {
+          "label": "finance.sina.com.cn（新浪港股开盘）",
+          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-30/doc-iniwyfwc8357875.shtml"
+        }
+      ]
+    },
+    {
+      "id": "1030早-5",
+      "section": "国际重大影响",
+      "title": "以色列议会选举初步计票完成：右翼联盟 53、反对派 48、阿拉伯政党 19——无人过 61；正式结果约 11 月 4 日",
+      "time": "2026-10-30",
+      "summary": "相对晚刊「双信封仍在计、投影约 53／48／19」：央视新闻客户端援引总台记者称，以色列中央选举委员会当地时间 10 月 29 日晚完成全部初步计票（含特殊／双信封选票）。结果仍为：内塔尼亚胡领导的右翼执政联盟 53 席，埃森科特领导的反对派阵营 48 席，阿拉伯裔政党 19 席；无一阵营达到组阁所需至少 61 席。利库德 27 席仍为第一大党，正直党 21 席第二。委员会完成交叉核验与申诉程序后，约 11 月 4 日公布正式结果，随后总统将授权组阁协商。Ynet 等确认双信封清点已完成。席位格局与晚刊投影一致，变化在于「计票阶段结束」。",
+      "relevance": "以色列短期内仍是悬空议会、讨价还价组阁——别把「计票完成」读成「政府已经定了」。",
+      "sources": [
+        {
+          "label": "news.cri.cn（央视新闻／国际在线）",
+          "url": "https://news.cri.cn/20261030/fc224e4e-fabc-52d9-23c4-54ca87612edd.html"
+        },
+        {
+          "label": "ynetnews.com（Ynet 双信封计票完成）",
+          "url": "https://www.ynetnews.com/article/lulyehtyv"
+        }
+      ]
+    },
+    {
+      "id": "1030早-6",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "Nature：约两成癌症相关的 BAF 突变，竟是让 CTCF「乱贴标签」重排三维基因组——删掉 CTCF 可逆转",
+      "time": "2026-10-28",
+      "summary": "换赛道——癌症基因组学，不是 AI 也不是盘面（昨晚是围产期神经元清理，前天早刊是太阳能材料）。康奈尔／威尔康奈尔医学院等 10 月 28 日新闻稿、同日 Nature：编码染色质重塑复合体 BAF（SWI/SNF）亚基的突变出现在约 20% 人类癌症里，但共同机制一直不清楚。团队在多种动物与细胞模型里发现：BAF 功能丧失后，DNA 在大量位点变得更容易被主调控蛋白 CTCF 结合；CTCF 本是「邻里分界」标记，结合暴增会重塑三维 DNA 环，打乱基因与调控元件的正常对话，偏向更快分裂。在动物模型中删除 CTCF（或其伙伴 PBAF／ISWI）可逆转这一效应；人类患者数据也提示 CTCF 通路受扰与较好预后相关。作者据此把 CTCF、PBAF、ISWI 列为潜在药靶——但目前是机制与靶点线索，没有现成上市药。",
+      "relevance": "这是「一类很常见的癌症突变为什么在各种器官都能作恶」的统一解释雏形；当基础医学看，别解读成明天就能买到抗 CTCF 神药。",
+      "sources": [
+        {
+          "label": "news.cornell.edu（康奈尔新闻）",
+          "url": "https://news.cornell.edu/stories/2026/10/unifying-mechanism-cancer-driving-mutations"
+        },
+        {
+          "label": "nature.com（研究论文）",
+          "url": "https://www.nature.com/articles/s41586-026-11197-w"
+        }
+      ]
+    }
+  ]
+}
