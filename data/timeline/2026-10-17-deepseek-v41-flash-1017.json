@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "id": "2026-10-17-deepseek-v41-flash-1017",
+  "date": "2026-10-17",
+  "title": "开源足便宜和够强，成了闭源过度限制的闸门",
+  "summary": "能看见的影响，是开源足便宜和够强，成了最近闭源模型过度限制的闸门，让用户产生拥有自主权和真正能实现的能力。2026 年 10 月 17 日 DeepSeek 上线 DeepSeek-V4.1-Flash-1017，并同步把权重放到 Hugging Face 和 ModelScope（MIT 开源协议）。官方称基准更好、任务完成更快、输出更短，是性能和成本一起变好；API 名 deepseek-flash 与价格不变。公司内部数字：DeepSWE v1.1 从上一版约 74.2 升到约 77.0，平均每任务成本约不到 0.2 美元。独立第三方评测当时还没出来，分数与成本是官方说法。同一时间线上可对照 Anthropic 招股书：一边是闭源前沿把账摊开、托着芯片信心；一边是便宜开源权重让人能自己部署、自己改。",
+  "related": ["1017晚-1"],
+  "sources": [
+    {
+      "label": "x.com/deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+      "date": "2026-10-17"
+    },
+    {
+      "label": "huggingface.co",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "date": "2026-10-17"
+    },
+    {
+      "label": "the-decoder.com",
+      "url": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+      "date": "2026-10-17"
+    }
+  ]
+}
