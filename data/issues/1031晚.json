@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "id": "1031晚",
+  "date": "2026-10-31",
+  "slot": "晚",
+  "title": "10月31日 · 晚",
+  "items": [
+    {
+      "id": "1031晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-10-31",
+      "summary": "这段时间没有。自中刊以来核对 OpenAI、Anthropic、Google/DeepMind、xAI、Meta、DeepSeek、Qwen 等官方账号与公开 changelog／newsroom，以及 @elonmusk、@dotey：无新的 frontier 聊天底座发版、权重落地或权威基准更新。OpenAI／Anthropic／DeepMind／DeepSeek／Qwen／Meta／sama 自约 UTC 10-31 04:00 起官方零发帖；ChatGPT 移动端双账号切换属 Oct 30 体验小改，不达本栏门槛。马斯克本窗多为选举转发与例行 Starlink 补星 RT，无 xAI／Grok／Tesla／SpaceX 产品向显著官宣。中刊 Anthropic Automated EM、Gemini Computer Use GA 已报，不重复。无补报。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1031晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "补报：Chainalysis——外部攻击者用「offensive agentic techniques」未授权进入；部分客户姓名／邮箱／角色标签被读；与币安盗窃无关",
+      "time": "2026-10-30",
+      "summary": "相对中刊 Wiz Black October／Northflank：Chainalysis 官方博客署 10 月 30 日，早刊素材曾标一手不足未上版，中刊安全席给了 Wiz，作补报。公司称本月侦测到外部行为体用 offensive agentic techniques 进入系统与内部工具；调查迄今未见调查内容（图／笔记／案件）、交易／查询结果、明文密码、MFA 密钥或会话令牌被取；已读部分非敏感客户数据（user ID、全名、邮箱、组织角色标签），正逐户核对。已通知客户，并请第三方加固；明确写与币安近期盗窃无关。行业侧称 AI 驱动攻击上升。≠ Wiz／n0n／Cursor 投毒／VAPOR PANDA。",
+      "relevance": "普通人该做什么：若你或公司用 Chainalysis，立刻开／确认 2FA，并对陌生密码重置、认证提示保持警惕；别把这条跟币安提现暂停混成同一案。",
+      "sources": [
+        {
+          "label": "chainalysis.com（官方）",
+          "url": "https://www.chainalysis.com/blog/security-incident-october-30/"
+        }
+      ]
+    },
+    {
+      "id": "1031晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-10-31",
+      "summary": "这段时间没有。周六全球主要现货股市、原油、黄金与美债休市；CME 股指／油／金／美债期货通常周日美东 18:00 再开（约合周一台北清晨），晚刊截稿时尚未开盘。周五现金收盘（纳约 −2.86%、标普约 −1.82%、道约 −1.09%、INTC 约 −28.6%、金约 3885 等）早刊已报，不重复。台股仍约下周一再开。周一开盘后再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1031晚-4",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-10-31",
+      "summary": "这段时间没有超出中刊的新独立核实主新闻。币安约 64 亿美元／Chainalysis 朝方归因已报；提现仍暂停，公司目标约周日 Nov 1 分阶段恢复且须通过安全测试——截稿时未见「已全面恢复提现／官方确认延期／归因再升级」门槛，不单开。周一若实质开闸或改口延期再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1031晚-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "Argonne／UCSD 等：「撒盐」式挥发性低共熔驯服钙钛矿结晶——缺陷下降，太阳能／LED 效率约落在 24–26% 高位区间",
+      "time": "2026-10-30",
+      "summary": "换赛道——材料／光伏与光电，不是 AI 发版也不是盘面（早刊是房颤 miR-31，中刊是 CMU 无凝胶读 DNA）。美国能源部阿贡国家实验室 APS 新闻约 10 月 29–30 日推送：与加州大学圣地亚哥等合作，在卤化物钙钛矿成膜时加入溴化锌与甲基铵氯，形成挥发性低共熔；加热时晶界短暂局部熔化，晶粒有时间重排长大，甲基铵盐挥发离开，锌留在晶界钝化缺陷。作者称缺陷是钙钛矿近十年瓶颈；EurekAlert／UCSD 通稿称由此做出的电池与 LED 效率约落在 24–26% 高位区间，并在模拟日照下连续运行约八周仍保留大部分初始效率。论文刊于 Science（DOI 10.1126/science.aeb4554，约 10 月 8 日）。仍是实验室成膜工艺进步——勿当成屋顶板明天换代。",
+      "relevance": "下一代薄膜太阳能老卡在「实验室漂亮、铺大片就垮」；短暂熔化再挥发的盐配方，是在把可放大、更耐用往前推——读科技时别只盯模型发版。",
+      "sources": [
+        {
+          "label": "aps.anl.gov（Argonne APS）",
+          "url": "https://www.aps.anl.gov/APS-News/2026-10-30/argonne-improves-perovskite-crystal-growth-for-next-generation-optoelectronics"
+        },
+        {
+          "label": "science.org（《Science》）",
+          "url": "https://www.science.org/doi/10.1126/science.aeb4554"
+        },
+        {
+          "label": "eurekalert.org（UCSD／EurekAlert）",
+          "url": "https://www.eurekalert.org/news-releases/1147046"
+        }
+      ]
+    }
+  ]
+}
