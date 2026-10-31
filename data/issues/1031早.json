@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "id": "1031早",
+  "date": "2026-10-31",
+  "slot": "早",
+  "title": "10月31日 · 早",
+  "items": [
+    {
+      "id": "1031早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Claude：Max 5x 改名 Max、Max 20x 改名 Ultra；验证过的 Ultra 取消 5 小时限额，周额度与价钱不变",
+      "time": "2026-10-31T01:29:00+08:00",
+      "summary": "相对晚刊 Gemini 聊天改文件：@claudeai 约台北 10 月 31 日 01:29 官宣改名与限额。Max 5x → Max（仍 100 美元／月），Max 20x → Ultra（仍 200 美元／月）；现有订户自动换名、无需操作。验证过的 Ultra：取消滚动 5 小时限额，自公告日起多数现有订户生效；周用量仍约为 Pro 的 10×，不变。较新／未验证账户暂时保留 5 小时防欺诈，验证完成后自动去掉。Settings → Usage 看不到「Current session」条即已验证。属订阅体验／限额产品条，不是新 frontier 底座。本窗再核：OpenAI／Google 另有 robots 训练偏好（下条）；xAI／Meta／DeepSeek／Qwen 未见新 frontier 聊天底座发版；马斯克本窗多为选举与 X 限流透明度，无 xAI／Grok／Tesla／SpaceX 产品向显著官宣。Google Project Suncatcher 在轨 TPU 跑通 Gemma 4「hello world」属研究检查点，影响面弱于订阅限额与 robots，不单开。",
+      "relevance": "付费重度用户真正变的是「验过的 Ultra 不再卡 5 小时」；改名与价钱、周额度都没动——去 Usage 看有没有 Current session 条就够。",
+      "sources": [
+        {
+          "label": "x.com/claudeai（官宣帖）",
+          "url": "https://x.com/claudeai/status/2116220869479428500"
+        },
+        {
+          "label": "support.claude.com（Ultra 说明）",
+          "url": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan"
+        },
+        {
+          "label": "theverge.com（The Verge）",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1023576/max-ultra-claude"
+        }
+      ]
+    },
+    {
+      "id": "1031早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：OpenAI 与 Google 同日表态——将支持 robots.txt 共用 AI 训练偏好信号，站长可一次表态、多厂一起认",
+      "time": "2026-10-30",
+      "summary": "相对晚刊未收：两边博客均署 10 月 30 日（约早于晚刊成刊），作补报。基于 IETF AIPREF 工作组草案，站长可用共用 policy token 在 robots.txt 表达是否允许用于基础生成式 AI 训练，免逐家写爬虫规则。OpenAI：将在未来数月落地；不取代现有 GPTBot 等单独 crawler 控制。Google Search Central：若用该共用信号选择退出训练且未单独写明 Google-Extended，计划按等同 disallow Google-Extended 解释；公司专属控制继续有效；目标约 2027 与其他厂商一起支持，并点出与 EU GPAI Code 中 robots.txt 角色一致。均为「计划支持」，不是今天立刻全网生效。属跨厂训练偏好政策，不是新模型发版。",
+      "relevance": "有网站的人可关注 IETF 共用写法；现在仍以各厂现有 robots／Google-Extended 为准，别以为发一条就立刻所有模型都不训。",
+      "sources": [
+        {
+          "label": "openai.com（官方）",
+          "url": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+        },
+        {
+          "label": "developers.google.com（Search Central）",
+          "url": "https://developers.google.com/search/blog/2026/10/ai-training-control"
+        }
+      ]
+    },
+    {
+      "id": "1031早-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "补报：CrowdStrike——China-nexus「VAPOR PANDA」用 ARTEX＋DeepSeek 等，11 天内对准 200+ 组织并行渗透；至少 9 家上 BLOODALCHEMY",
+      "time": "2026-10-29",
+      "summary": "相对晚刊 Cursor 市场投毒／OpenAI 错位监控：CrowdStrike 博客署 10 月 29 日，早／中／晚均未收，作补报。自 10 月 17 日起约 11 天，单一 ARTEX 控制器对至少 14 国、200+ 组织发起任务（拉美／欧／亚／中东外交部、美国半导体／国防／制药／核／金融、多地电信等）。框架以 DeepSeek 为主，另有一家未确认付费商业 LLM；单次入侵规划 agent 输入量级约 14 亿 token；人类操作员用中文【人类指令】点拨（写 webshell、提域管、盘点 EDR）。已确认至少 9 家进入后渗透并部署 BLOODALCHEMY 后门。明确指示 agent 在域内找未装 CrowdStrike Falcon（猎鹰）的 Windows。公司称与业界 Storm-0940／ARTEX 报道是不同活动。单厂商报告（CrowdStrike）；归因 China-nexus——勿跟 Cyware 等二报写成「朝鲜」。与 Cursor 扩展投毒不同链：这是 AI agent 被用于规模化间谍渗透。",
+      "relevance": "普通人该做什么：个人无直接补丁按钮；若接触政企／外包敏感系统，别把个人 AI agent 接到生产／政府网；历次泄露备份里出现过的邮件与 VPN 密钥一律轮换，装靠谱 EDR 并给联网设备打补丁。",
+      "sources": [
+        {
+          "label": "crowdstrike.com（一手）",
+          "url": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/"
+        }
+      ]
+    },
+    {
+      "id": "1031早-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "补报：Sophos——GOLD OGRE 用 Cursor 与 Anthropic／xAI／Moonshot 等 agent 推进 Aur0ra 勒索；至少三家后上泄密站",
+      "time": "2026-10-29",
+      "summary": "相对 VAPOR PANDA 间谍线：Sophos 约 10 月 29 日报告 GOLD OGRE／Aur0ra（亦作 Aurora）勒索广泛用 AI；早／中／晚未收，作补报。攻击者给 agent VPN／SOCKS、目标与目标说明；agent 做 AD 发现、凭据路径、横向、共享盘搜集；部分环境拿到域管；三家后出现在 Aur0ra 泄密站。绕过模型护栏：把入侵说成「授权红队／诊断测试」。工具链含 BloodHound、PetitPotam、Certipy、Cobalt Strike 等；俄语操作痕迹。与 Gambit／CloudSEK 对公开目录的第三方报告方向一致。单厂商主报告（Sophos）。≠ Cursor 扩展投毒、≠ VAPOR PANDA。",
+      "relevance": "普通人该做什么：开抗钓鱼 MFA；备份离线／不可变并与生产网段隔离；警惕「随便装的 AI 编程助手」接内网 VPN。家庭用户无 Aur0ra 专属按钮——别点勒索邮件，保持系统与路由器更新。",
+      "sources": [
+        {
+          "label": "sophos.com（一手）",
+          "url": "https://www.sophos.com/en-us/blog/ai-used-in-aur0ra-ransomware-testing-and-execution"
+        }
+      ]
+    },
+    {
+      "id": "1031早-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周五现金收：纳 −2.86%、标普 −1.82%、道 −1.09%；AMZN 收窄至 −1.4%、INTC −28.6%、SOX −7.2%；金收约 3885（−3.6%）",
+      "time": "2026-10-31T05:00:00+08:00",
+      "summary": "相对晚刊「亚欧全日 + 美盘前／期指」：周六早间华尔街周五现金已收。纳指收 25,437.00（−747.73，−2.86%）、标普 7,580.07（−140.32，−1.82%）、道指 51,770.31（−572.25，−1.09%）；Yahoo 称纳指十月约 −5.2%～−5.3%（约 2025 年 3 月以来最差月）。个股：AMZN 收 240.35（−1.41%）——相对晚刊盘前约 −6% 大幅收窄；INTC 收 65.76（−28.58%）仍近三成暴跌；SOX 收 10,688.80（−7.20%），AMD 约 −10.9%、NVDA 约 −4.2%。亚欧周五现金收盘晚刊已报，周末无新收。油：WTI 收约 102.95（+0.93%）、Brent 约 112.33（+1.38%）；金 GC=F 收 3,884.90（−3.63%），远深于晚刊「跌破 4000」；美 10Y ^TNX 收 4.929%（−6 bp）。币安提现仍未恢复（公司目标约周日 Nov 1），本窗国际栏不单开续报。",
+      "relevance": "芯片链周五现金仍重杀；别把亚马逊收窄当成科技全面反弹——英特尔与 SOX 才是主杀。周末休市，周一亚盘再看期货能否消化。",
+      "sources": [
+        {
+          "label": "finance.yahoo.com（纳指）",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "finance.yahoo.com（INTC／AMZN／金）",
+          "url": "https://finance.yahoo.com/quote/INTC/"
+        },
+        {
+          "label": "investopedia.com（周五盘面综述）",
+          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-10302026-12202212"
+        }
+      ]
+    },
+    {
+      "id": "1031早-6",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-10-31",
+      "summary": "这段时间没有超出晚刊的新独立核实主新闻。币安约 64 亿美元／Chainalysis 朝方归因已晚刊；提现尚未恢复（公司目标约周日 Nov 1）、美 Secret Service／FBI 协查属执法层跟进，未达「提现恢复／归因再升级」门槛，不单开。以色列席次与中东油价背景亦无新格局级事件。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1031早-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "Baylor／牛津：阻断 miR-31 与降钙素受体相互作用，小鼠上逆转心房纤维化约 30%、减轻房颤负担",
+      "time": "2026-10-30",
+      "summary": "换赛道——心内科／房颤瘢痕，不是 AI 发版也不是盘面（晚刊是碳纳米带，中刊是核电贷款）。Baylor＋Oxford 团队在 Nature Cardiovascular Research（DOI 10.1038/s44161-026-00897-1）报告：房颤患者心房成纤维细胞里 microRNA-31-5p 升高，压低降钙素受体（CTR），促成纤维细胞过度产瘢痕。用锁定核酸靶点阻断剂挡住 miR-31 与 CTR 相互作用后：人源细胞与小鼠里 CTR 回升；小鼠上可预防纤维化，并对已形成纤维化出现约相对基线退 30%（对照继续恶化），同时缩短异常心律负担。MedicalXpress 10 月 30 日报道。仍属小鼠／人细胞阶段，作者写明人体转化还需更多工作——勿当成马上有药。",
+      "relevance": "房颤是极常见心律失常，现有疗法几乎不直接打心房瘢痕本身；这是「不可逆瘢痕」叙事被实验信号改写的硬医学，读科技时别只盯模型发版。",
+      "sources": [
+        {
+          "label": "medicalxpress.com（MedicalXpress）",
+          "url": "https://medicalxpress.com/news/2026-10-treatment-heart-scarring-abnormal-rhythms.html"
+        },
+        {
+          "label": "nature.com（DOI）",
+          "url": "https://doi.org/10.1038/s44161-026-00897-1"
+        }
+      ]
+    }
+  ]
+}
