@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "id": "1101早",
+  "date": "2026-11-01",
+  "slot": "早",
+  "title": "11月1日 · 早",
+  "items": [
+    {
+      "id": "1101早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：DeepMind／英政府 PlanAssist——Gemini 规划审批辅助扩到英格兰再 12 个地方当局；试点称评估耗时约降 58%，终裁仍归人",
+      "time": "2026-10-31T21:33:00+08:00",
+      "summary": "相对晚刊未收：@GoogleDeepMind 约台北 10 月 31 日 21:33 官宣，同日 deepmind.google 博客与 GOV.UK 新闻稿上线。PlanAssist 用 Gemini，帮规划官员做家居类申请的材料校验、遗产／树木保护等约束核对、既有异议检索，并起草带引用的评估报告；官员可改、保留最终决定。Barnet／Camden／Dorset 早期试点称，官员在家居评估任务上平均耗时约降 58%；约七成工具生成报告被官员零改通过。现从试点扩到 12 个月 Beta、再接入 12 个地方当局（合计约 15 个），分三批上线；若测试顺利，英政府目标约 2027 向英格兰全部议会开放。属公共部门 agent 工具落地，不是新 frontier 聊天底座。本窗再核：OpenAI／Anthropic／xAI／Meta／DeepSeek／Qwen／sama／claudeai 自约 UTC 10-31 02:00 起官方未见新 frontier 发版或权重落地；马斯克本窗多为选举转发与 Neuralink 播客引用、Starlink 规模 RT，无 xAI／Grok／Tesla／SpaceX 产品向显著官宣，不单开。无其他补报。",
+      "relevance": "这是英国地方规划流水线的办公辅助，不是你聊天窗多出来的模型；终裁仍在人。若你跟公共部门 AI 落地，看的是试点耗时／零改率能不能在 15 个议会上站住，而不是又一次发版。",
+      "sources": [
+        {
+          "label": "deepmind.google（官方）",
+          "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/"
+        },
+        {
+          "label": "gov.uk（英政府新闻稿）",
+          "url": "https://www.gov.uk/government/news/faster-planning-decisions-as-new-rules-and-ai-tackle-delays"
+        },
+        {
+          "label": "x.com/GoogleDeepMind（官宣帖）",
+          "url": "https://x.com/GoogleDeepMind/status/2116524000977285321"
+        }
+      ]
+    },
+    {
+      "id": "1101早-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-01",
+      "summary": "这段时间没有。自晚刊以来核对安全厂商博客与相关报道：未见达到本栏门槛的新独立核实主新闻（已确认利用／实害，或 AI 相关且普通人需行动）。晚刊 Chainalysis「offensive agentic techniques」、中刊 Wiz Black October／Northflank、早刊 VAPOR PANDA／Aur0ra 等已报，不重复。Symantec「Skynet」LLMjacking 综述署约 10 月 21 日，超出本窗；OpenAI ChatGPT 分享链／MathLive 问题约 10 月 26 日已修且未见实害报告，不单开。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1101早-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-11-01",
+      "summary": "这段时间没有。周日全球主要现货股市、原油、黄金与美债仍休市；CME 股指／油／金／美债期货通常周日美东 18:00 再开（约合周一台北清晨），早刊截稿时尚未开盘。周五现金收盘（纳约 −2.86%、标普约 −1.82%、道约 −1.09%、INTC 约 −28.6%、金约 3885 等）前刊已报，不重复。台股仍约下周一再开。周一开盘后再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1101早-4",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-01",
+      "summary": "这段时间没有超出晚刊的新独立核实主新闻。币安约 64 亿美元盗窃／朝方归因已报；公司 Update #3（约 10 月 31 日）称已补回约 90% 被盗资产（SAFU／期货保险基金／公司金库），十大币种称达约 1:1 准备金，并仍目标周日 Nov 1 恢复提现、零知识 PoR 约需再 40–50 小时——早刊截稿时未见「已全面恢复提现／官方确认延期／归因再升级」门槛，不单开。日内若实质开闸或改口延期再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1101早-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "NASA／Science：撒哈拉玫瑰石 Teghaza 001——约 ≥41 亿年前火星壳／幔样品，结晶时有液态水渗入；非「找到生命」",
+      "time": "2026-10-29",
+      "summary": "换赛道——行星地质／火星水文，不是 AI 发版也不是盘面（晚刊是钙钛矿成膜，中刊是 CMU 无凝胶读 DNA，早刊是房颤 miR-31）。NASA JPL 新闻署 10 月 29 日：马里撒哈拉 2022 年发现的玫瑰石陨石 Teghaza 001，Science 同日首发表征；铀铅／原位铷锶定年显示约 ≥41 亿年前形成，是已知约 435 块火星陨石里最古老之一。矿物学与氧／氢同位素显示冷却结晶时有液态水渗入更深地壳并与幔源岩浆混合；作者称可对照轨道器所见南半球高地壳，提供「水岩互动」切片。Science Advances 另文（约 6 月）谈其水含量。明确：支持早期火星更湿、或具备宜居条件的说法，但不直接回答「有没有生命」。仍是实验室陨石学——勿当成明天就能挖出火星化石。",
+      "relevance": "读科技时别只盯模型发版；一块能定年到 41 亿年前、还带着早期水印记的火星壳样品，改的是我们对「年轻湿润火星」证据链的厚度。",
+      "sources": [
+        {
+          "label": "nasa.gov（JPL／NASA）",
+          "url": "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found/"
+        },
+        {
+          "label": "science.org（《Science》）",
+          "url": "https://www.science.org/doi/10.1126/science.adz5646"
+        }
+      ]
+    }
+  ]
+}
