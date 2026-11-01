@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "id": "1101中",
+  "date": "2026-11-01",
+  "slot": "中",
+  "title": "11月1日 · 中",
+  "items": [
+    {
+      "id": "1101中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：Apple 官宣国行「Apple 智能」首批功能——自建模型驱动；与阿里合作，Siri／写作工具／视觉智能可接千问；11/4 Beta，12 月随 iOS 27.3 推中国用户",
+      "time": "2026-10-31",
+      "summary": "相对早刊未收：Apple 中国大陆新闻稿署 2026 年 10 月 31 日。首批功能由 Apple 自建生成式模型驱动（实时翻译、写作工具、视觉智能、消除、智绘表情、优先邮件、通知摘要等）。另与阿里合作，在部分体验中加入千问：中国用户可在 Siri、写作工具、视觉智能使用千问文本／图像理解；写作工具「创作」可让千问从零生成；需登录千问账户或「通过 Apple 登录」。时间线：11 月 4 日起随最新 iOS 开发者 Beta 开放测试；12 月随 iOS 27.3 正式面向中国用户；其他平台待审批。明确不含 Siri AI 及 WWDC 2026 下一代 Apple 智能。设备门槛（脚注）：iPhone 16 及后续、iPhone Duo、iPhone 15 Pro／Pro Max、iPhone Air；Siri 与设备语言需设为英文和中文（简体）。属系统入口落地＋中文合规路径，不是新开源权重。本窗七厂 frontier 新聊天底座仍无：OpenAI／Anthropic／GoogleDeepMind／Meta／DeepSeek 官方 X 自早刊后无新底座；马斯克本窗无产品向显著官宣。",
+      "relevance": "国行用户看的是 11/4 Beta 和 12 月正式版里，千问能不能真开进 Siri／写作／视觉——这是入口，不是又一张榜单。",
+      "sources": [
+        {
+          "label": "apple.com.cn（新闻稿）",
+          "url": "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/"
+        },
+        {
+          "label": "english.news.cn（新华转述）",
+          "url": "https://english.news.cn/20261031/0642ddf499b643b1b8babd0b43adee85/c.html"
+        }
+      ]
+    },
+    {
+      "id": "1101中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "补报：DeepSeek 开源 dsh-superagent 研究原型——单仓 GitHub 主动编码 agent；配套 Super-agent 架构（Router／Worker／Watchdog）；非官方产品；Search/Fetch 服务端工具今日起按次计费",
+      "time": "2026-10-31T17:32:00+08:00",
+      "summary": "相对晚刊／早刊未收：deepseek-ai/dsh-superagent-prototype 约 UTC 10-31 09:32 建仓、同日 12:05 首提交（约合台北 17:32／20:05），MIT，截稿时 GitHub 星标约 3400。README 写明「仅供研究参考、非官方产品」：面向单个 GitHub 仓的主动编码 agent，可挂 DeepSeek Harness，监听 GitHub（可选飞书），被允许的人叫活后开独立会话目录干活，并回原会话（例如出 PR）。配套设计文《Exploring Super-agent Design》主张瓶颈从单任务能力转向人注意力（约 3–5 个活跃会话），提出常驻 Router、隔离 Worker、事件驱动与 Watchdog；原型≠文中全部设计。另：1017 已预告的 Search／Fetch 经 Harness／Claude Code／Codex 的服务端工具免费窗，自北京时间 2026-11-01 00:00（约合台北同日零点）起按次计费（官方定价页约 $0.75／千次成功请求）——属日程生效，非新发版。",
+      "relevance": "开源 agent 调度骨架，不是聊天新底座。盯「开源够便宜够强→自主权」的人，看的是多任务盯梢能不能挪出人的注意力，以及免审批命令和云端连本地的安全边界；工具按次计费则开始计入真实账单。",
+      "sources": [
+        {
+          "label": "github.com/deepseek-ai/dsh-superagent-prototype",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+        },
+        {
+          "label": "api-docs.deepseek.com（定价）",
+          "url": "https://api-docs.deepseek.com/quick_start/pricing/"
+        },
+        {
+          "label": "api-docs.deepseek.com（1017 预告）",
+          "url": "https://api-docs.deepseek.com/news/news261017"
+        }
+      ]
+    },
+    {
+      "id": "1101中-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-01",
+      "summary": "这段时间没有。自早刊以来核对安全厂商与相关报道：未见达到本栏门槛的新独立核实主新闻（已确认利用／实害，或 AI 相关且普通人需行动）。晚刊 Chainalysis「offensive agentic techniques」、中刊 Wiz Black October／Northflank、早刊 VAPOR PANDA／Aur0ra、以及 Parameter Labs／Simon Willison 披露、OpenAI 约 10 月 26 日已修的 ChatGPT 分享链问题等已报或早刊已判不达门槛，不重复。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1101中-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-11-01",
+      "summary": "这段时间没有。周日全球主要现货股市、原油、黄金与美债仍休市；CME 股指／油／金／美债期货通常周日美东 18:00 再开（约合周一台北清晨），中刊截稿时尚未开盘。周五现金收盘（纳约 −2.86%、标普约 −1.82%、道约 −1.09%、INTC 约 −28.6%、金约 3885 等）前刊已报，不重复。台股仍约下周一再开。周一开盘后再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1101中-5",
+      "section": "国际重大影响",
+      "title": "币安 Recovery Update #4：称今日 UTC 06:00–09:00 分阶段恢复提现第一批；补回约提至 95%；入金未受影响",
+      "time": "2026-11-01T12:11:00+08:00",
+      "summary": "相对早刊「目标周日恢复、截稿未见开闸」：@binance 约台北 11 月 1 日 12:11（UTC 04:11）发 X 长文 Update #4。称正准备于 2026-11-01 UTC 06:00–09:00（约合台北 14:00–17:00）恢复第一阶段提现；按近一周用户需求排序，逐网络／币种做完安全与稳定性检查后再开；初期可能排队或失败，可稍后重试。入金服务一直开放。补回口径：此前 Update #3 约 90%，本文称已覆盖约 95% 受影响金额；BTC／ETH／USDT／BNB／SOL／USDC／XRP／USD1／RLUSD／ZEC 称仍 1:1 备足，可看 PoR 快照；剩余约 5% 为十大之外流动性较差币种，仍在市／OTC 买入。重申损失由公司承担、不转嫁用户；调查结束后再发事后报告。TokenPost 同日转述第一批含 BTC、ETH、BNB、TRX、SOL、XRP、ZEC、DOGE、TON、POL、AVAX、ARB、BASE、OP、SUI 等——以币安提现页／网络状态页为准。截稿时窗口尚未开始，是否按时开闸仍看后续状态页。≠ 新归因升级。",
+      "relevance": "若你或身边人卡在币安提现：先等官方状态页显示该链可提，再小额试转；只信官方渠道，别理「代提现／加速」私信。钱到账前别把交易所当保险箱。",
+      "sources": [
+        {
+          "label": "x.com/binance（Update #4）",
+          "url": "https://x.com/binance/status/2116744986096292263"
+        },
+        {
+          "label": "tokenpost.com（转述第一批币种）",
+          "url": "https://www.tokenpost.com/news/business/45687"
+        },
+        {
+          "label": "binance.com（网络状态）",
+          "url": "https://www.binance.com/en/network"
+        }
+      ]
+    },
+    {
+      "id": "1101中-6",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "名大／Arase：2024 年 5 月超级磁暴期间，内辐射带「不可逾越」屏障内出现 MeV 级电子局域加速；GRL 新文",
+      "time": "2026-10-31",
+      "summary": "换赛道——近地空间天气／辐射带物理，不是 AI 发版也不是盘面（早刊是 NASA 火星玫瑰石 Teghaza 001，晚刊是钙钛矿成膜）。ScienceAlert 署 10 月 31 日：名大宫吉等团队在 Geophysical Research Letters（DOI 10.1029/2026GL125879）报告，2024 年 5 月 G5 级超级磁暴期间，日本 Arase 卫星在过去常被称作「不可逾越」的内辐射带屏障内侧，观测到超相对论电子通量暴增——约 3 MeV 量级相对暴前可升逾约 5000 倍；能量分层出现（较低能量先增、约半日到一日后更高能量跟上），空间分布呈近屏障处峰值，更符合当地局域加速，而非单纯从外带向内输送。机制线索：暴时冷等离子体层被掏空，chorus 波得以在更内侧生长并加速电子。恢复持续数月，至约 2024 年 10 月另一次暴。含义是极端空间天气下近地辐射环境可比旧模型更「脏」——关卫星电子学与航天员剂量评估，不是地面日常天气预报。",
+      "relevance": "读科技时别只盯模型发版；一次超级磁暴把「内带屏障」撕开一条缝，改的是我们对近地辐射风险边界的假设——跟卫星寿命、载人任务剂量直接相关。",
+      "sources": [
+        {
+          "label": "sciencealert.com",
+          "url": "https://www.sciencealert.com/earths-supposedly-impenetrable-radiation-barrier-has-been-breached"
+        },
+        {
+          "label": "doi.org（GRL）",
+          "url": "https://doi.org/10.1029/2026GL125879"
+        }
+      ]
+    }
+  ]
+}
