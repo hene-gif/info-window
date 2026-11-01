@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "id": "1101晚",
+  "date": "2026-11-01",
+  "slot": "晚",
+  "title": "11月1日 · 晚",
+  "items": [
+    {
+      "id": "1101晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-01",
+      "summary": "这段时间没有。自中刊以来核对 OpenAI、Anthropic、Google/DeepMind、xAI、Meta、DeepSeek、Qwen 等官方账号与公开 changelog／newsroom，以及 @elonmusk、@dotey：无新的 frontier 聊天底座发版、权重落地或权威基准更新。OpenAI／Anthropic／DeepSeek／Qwen 本窗官方零发帖；DeepMind 自中刊窗口外仅有此前已报的 PlanAssist 与万圣节 demo RT，不新开。马斯克本窗仅 RT 家人飞行旧照，无 xAI／Grok／Tesla／SpaceX／Neuralink 产品向显著官宣。中刊 Apple×千问国行、DeepSeek dsh-superagent，以及 1031早 robots.txt 共用训练偏好补报均已收，不重复。部分聚合页把 Claude Sonnet／Haiku 5.5 标成「11/1 新发」——对照 Anthropic 官网分别为约 9/28、10/7，属旧闻误标，不上。无补报。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1101晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-01",
+      "summary": "这段时间没有。自中刊以来核对安全厂商与相关报道：未见达到本栏门槛的新独立核实主新闻（已确认利用／实害，或 AI 相关且普通人需行动）。中刊空栏、晚刊／早刊已报的 Chainalysis、Wiz Black October／Northflank、Cursor 扩展投毒等不重复；单条「黑产出价请人训攻击模型」类转述未见一手实害确认，不达门槛。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1101晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "这段时间没有",
+      "time": "2026-11-01",
+      "summary": "这段时间没有。周日全球主要现货股市、原油、黄金与美债仍休市；CME 股指／油／金／美债期货通常周日美东 18:00 再开（约合周一台北清晨），晚刊截稿时尚未开盘。周五现金收盘（纳约 −2.86%、标普约 −1.82%、道约 −1.09%、INTC 约 −28.6%、金约 3885 等）前刊已报，不重复。台股仍约下周一再开。周一开盘后再更新。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1101晚-4",
+      "section": "国际重大影响",
+      "title": "币安分阶段提现已实际开闸：首批 BTC 约台北 14:20 起；晚间已扩至 ETH／BSC／XRP／Base／DOGE／OP／Arbitrum／TRX／SOL 等多链主流币；PoR 换新地址",
+      "time": "2026-11-01T14:20:00+08:00",
+      "summary": "相对中刊 Update #4「称今日 UTC 06:00–09:00 分阶段恢复、截稿窗口未开」：@binance 约台北 11 月 1 日 14:20（UTC 06:20）确认第一批比特币网络提现已开；随后数小时连续发「Latest Withdrawal Update」，逐步扩网。截稿时官方最新一条（约台北 19:15／UTC 11:15）称已启用：BTC；ETH 网络 ETH／USDT／USDC；BSC 的 BNB／USDT／USDC；XRP；Base 的 ETH／USDC；DOGE；Optimism 的 ETH／USDT／USDC；Arbitrum 的 ARB／ETH／USDT／USDC；TRX／USDT；SOL／USDT／USDC。称将继续按安全检查分阶段恢复更多资产与网络，只经官方渠道通报。另约台北 14:53（UTC 06:53）称已更新 Proof of Reserves 地址列表，此后提现从新钱包地址出。≠ 归因再升级或宣称「全部币种已恢复」。仍以提现页／网络状态页为准；冷门币种与未列网络可能仍关。",
+      "relevance": "若你或身边人要从币安提币：先看官方网络状态页确认该链已开，再小额试转；认准 @binance 与状态页，别理「代提现／加速」私信。PoR 换地址属应急手续，不代表风险消失——大额仍宜分批、别把交易所当保险箱。",
+      "sources": [
+        {
+          "label": "x.com/binance（BTC 首开）",
+          "url": "https://x.com/binance/status/2116777408074600621"
+        },
+        {
+          "label": "x.com/binance（含 SOL 最新清单）",
+          "url": "https://x.com/binance/status/2116851716448718901"
+        },
+        {
+          "label": "x.com/binance（PoR 新地址）",
+          "url": "https://x.com/binance/status/2116785774540787920"
+        },
+        {
+          "label": "binance.com（网络状态）",
+          "url": "https://www.binance.com/en/network"
+        }
+      ]
+    },
+    {
+      "id": "1101晚-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "伯克利 Keasling 组：细菌可控合成多环丙烷燃料分子——算得上约比现航煤每升多约 30% 能量；产量仍差约 1000 倍；Nature Communications",
+      "time": "2026-11-01",
+      "summary": "换赛道——合成生物学／可持续航空燃料，不是 AI 发版也不是盘面（早刊是 NASA 火星玫瑰石，中刊是内辐射带电子加速）。ScienceNews.dk 署 11 月 1 日转述：加州大学伯克利 Jay Keasling 等在 Nature Communications（DOI 10.1038/s41467-026-73172-3，约 2026-05-27 刊出）报告，用迭代聚酮合酶路径在链霉菌里可控生产多环丙烷脂肪酸（POP-FA）——三角环把张力能量「弹簧」进分子，比靠双键更稳。计算模型指向「多环＋缩短碳链」更适合航煤：一例五环／12 碳约合 45.14 MJ／L，对比常规航煤约 35 MJ／L（约高三成）；同时要压住冰点。关键杠杆是环丙烷酶（cyclopropanase）与链延长／释放酶的竞争。作者坦言产量仍极低（摇瓶最佳约刚过 6 mg／L），工业可用前至少还要约 1000 倍放大——「不是一个突破就到，是持续工程」。仍是实验室可控合成，不是明天就能灌进油箱。",
+      "relevance": "读科技别只盯模型发版；飞机要的是「体积里塞更多能量还不冻」——细菌若真能按规格造分子，改的是可持续航煤的设计思路，不是又抄一遍石油馏分。",
+      "sources": [
+        {
+          "label": "sciencenews.dk",
+          "url": "https://sciencenews.dk/en/bacteria-can-build-molecules-to-make-jet-fuel-more-energy-dense"
+        },
+        {
+          "label": "nature.com（Nature Communications）",
+          "url": "https://www.nature.com/articles/s41467-026-73172-3"
+        },
+        {
+          "label": "doi.org",
+          "url": "https://doi.org/10.1038/s41467-026-73172-3"
+        }
+      ]
+    }
+  ]
+}
