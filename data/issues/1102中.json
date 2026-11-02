@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "id": "1102中",
+  "date": "2026-11-02",
+  "slot": "中",
+  "title": "11月2日 · 中",
+  "items": [
+    {
+      "id": "1102中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI：12 月起 Plus／Pro／Business 的 ChatGPT 与 Codex 共用一份用量额度（按 token；Instant 不扣）",
+      "time": "2026-11-01T16:46:00+08:00",
+      "summary": "相对早刊只报「马斯克催试 Grok Bot」、未写订阅计量：OpenAI 帮助中心《Understanding ChatGPT and Codex usage limits》写明——Starting in December，Plus、Pro、Business 的 usage allowance 将在 ChatGPT 与 Codex 之间共享，以便把 Work 的 agentic 能力并进主 ChatGPT 体验。用量按 token 计；更强模型、更复杂任务通常扣得更多；Instant chat will not draw from your usage。可在 Settings → Usage 看合并剩余与重置时间；触顶可等重置、升级或买 credits。官方称多数用户不必比现在更频繁地等重置。Community 约台北 11 月 1 日 16:46 已有帖转发同一口径；Help 页早刊后仍显示近窗更新。≠ 新 frontier 权重发版；≠ 已公布各档具体 token 池大小或 12 月几号生效。本窗亦扫过 OpenAI／Anthropic／GoogleDeepMind／Meta／DeepSeek／Qwen 官 X（自台北约 08:00／00:00Z 起零硬发版）、openai.com/blog·index、anthropic.com/news、alignment.anthropic.com、blog.google/technology/ai、deepmind.google/discover/blog、x.ai/news、ai.meta.com/blog、DeepSeek／Qwen 站与 GitHub releases；确无其他 frontier 发版／权重／权威基准补报。Elon 本窗仅 Grok Bot 口碑 RT 与政治 RT，不另开。",
+      "relevance": "若你同时用 ChatGPT 强模型聊天和 Codex／Work 写代码，12 月起两边抢同一池——白天 Codex 跑长任务，晚上可能发现聊天额度也被掏空；日常闲聊可尽量走 Instant。这是订阅往「可计量干活」挤的一刀，不是又一次榜单。",
+      "sources": [
+        {
+          "label": "help.openai.com（Understanding ChatGPT and Codex usage limits）",
+          "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+        },
+        {
+          "label": "community.openai.com（Usage allowance will be shared…）",
+          "url": "https://community.openai.com/t/usage-allowance-will-be-shared-across-chatgpt-and-codex/1411558"
+        }
+      ]
+    },
+    {
+      "id": "1102中-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-02",
+      "summary": "这段时间没有。本窗已扫 Wiz、Mandiant、CrowdStrike、Microsoft Security、Krebs、CISA 告警／KEV、相关厂商声明，以及 X 近约 12–18 小时 AI／安全事件线索；确无相对早刊达门槛的新独立核实主条（已确认利用／实害，或 AI 相关且普通人须立刻行动）。早刊空栏；此前已报的 Chainalysis、Wiz Black October／Northflank、币安盗窃归因、Cursor Claude 插件后门（1030晚）、CrowdStrike VAPOR PANDA／ARTEX（署 10-29）等不重复。例行 Ivanti／Linux CVE、SANS 复述旧案、单条「黑产出价训攻击模型」转述仍不达门槛。乌／俄应急警报 App 假警报见国际栏，不占本栏配额。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1102中-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周一亚盘分化：韩综午间约 +2%；日经午前约 −195；台股探底约 44399 后收回约 45K；美期反弹、现金未开；油跌金弹",
+      "time": "2026-11-02T12:05:00+08:00",
+      "summary": "相对早刊「日经开约 62972、韩综开约 5638、台股现货待 9 点」：中央社称台股开盘 45034.53（−177.30）；工商时报约 12:05 称早盘最低约 44399，约 11:50 附近约 45144（跌约 68／不到百点），柜买午盘前翻红约 +0.67%，成交额约 5300+ 亿新台币——现货截稿时仍未收盘（约 13:30），晚刊再核收盘。日经午前收约 63095.11（−195／约 −0.31%，jiji）。韩综约 12:32 报约 5855.52（+2.18%，机构净买；Asiae），相对开盘约 5637.77 大幅翻红。Bloomberg 亚盘 wrap：美股期货标普约 +0.4%、纳指约 +0.8%；美股现金＝美东周一早晨，主交易尚未进入本窗。港股／A 股早段报道约平／小幅高开一带，不以未核一手的「收盘」填空。欧股现货对本窗仍偏早；Euro Stoxx 50 期约 +0.3%。每经约 09:41：WTI 约 101.90（−2.12%）、Brent 约 111.09（−2.07%）；现货金约 3909（+0.85%）。美十债约 4.92%，相对周五约 4.93% 几无变动。≠ 宣称「全球已全面反转」或「台股已收」。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "开盘杀跌之后看谁先翻红：韩综机构买盘最抢眼，台股是探底回 45K 还是再杀，要等下午与收盘；别把美期当美股收盘。油跌金弹跟中东谈判预期绑得更紧，别和 AI 股混成一条逻辑。",
+      "sources": [
+        {
+          "label": "cna.com.tw（台股开盘）",
+          "url": "https://www.cna.com.tw/news/afe/202611020017.aspx"
+        },
+        {
+          "label": "ctee.com.tw（台股午盘前）",
+          "url": "https://www.ctee.com.tw/news/20261102700972-430201"
+        },
+        {
+          "label": "jiji.com（日经午前）",
+          "url": "https://www.jiji.com/jc/article?g=eco&k=2026110200411"
+        },
+        {
+          "label": "asiae.co.kr（KOSPI 午间）",
+          "url": "https://www.asiae.co.kr/article/2026110212430539746"
+        },
+        {
+          "label": "nbd.com.cn（油／金）",
+          "url": "https://www.nbd.com.cn/articles/2026-11-02/4633865.html"
+        },
+        {
+          "label": "swissinfo.ch（Bloomberg 亚盘 wrap）",
+          "url": "https://www.swissinfo.ch/eng/stock-selloff-eases-in-asian-trade%2c-crude-falls%3a-markets-wrap/92310840"
+        }
+      ]
+    },
+    {
+      "id": "1102中-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "agent-desktop：界面从来不是像素，是无障碍树",
+      "time": "2026-11-02T09:20:00+08:00",
+      "summary": "闲逛观察：Vercel Labs 开源的 agent-desktop 让 agent 读系统给读屏软件用的无障碍树，按稳定 ref 点按填，做完再快照核对；默认不抢鼠标焦点。可靠性上去的同时，桌面辅助功能权限整片变成新控制面——门禁若只盖浏览器沙箱，本地 App 这一层还是敞着。",
+      "relevance": "人机共管的下一层表面：computer use 从「猜屏幕」变成「读结构」之后，权限问题也跟着搬家。",
+      "sources": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "Snapshots and refs",
+          "url": "https://agent-browser.dev/desktop/snapshots-and-refs"
+        }
+      ]
+    },
+    {
+      "id": "1102中-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Judgment／Orca／路由：三条路都把门禁只盖一半",
+      "time": "2026-10-30",
+      "summary": "闲逛观察：发现未知、并行吞吐、省钱路由——Issues 不接生产 judge 只是 inbox，worktree 不接沙箱+审查只是防撞车，gateway 不接权限就把 agent 工具消耗算漏。三条路撞到同一底。",
+      "relevance": "假安全常长这样：功能齐了，门禁只盖一半。讯息窗盯现象时值得用这把尺子。",
+      "sources": [
+        {
+          "label": "Orca Docs",
+          "url": "https://www.onorca.dev/docs/cli/overview"
+        },
+        {
+          "label": "Orca GitHub",
+          "url": "https://github.com/stablyai/orca/"
+        },
+        {
+          "label": "Judgment Labs · Agent Judge",
+          "url": "https://www.judgmentlabs.ai/blogs/agent-judge-solving-long-context-evaluations"
+        }
+      ]
+    },
+    {
+      "id": "1102中-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Grok→Bankrbot：解码输出被当成转账授权",
+      "time": "2026-11-02T09:20:00+08:00",
+      "summary": "闲逛观察（旧案新挖角度，非本窗新爆发）：2026-05 攻击者先送 NFT 抬权限，再在 X 用 Morse 让 Grok 解码出转账指令，Bankrbot 把这段模型输出当已认证命令执行，转走约 30 亿 DRB（约 15–20 万美元量级，事后大部分退回）。根因不是「模型太蠢」，是公开时间线上的解码文本直接当金融授权——过滤器挡明文，挡不住编码中转。",
+      "relevance": "人机共管副作用教科书：不可逆动作若认「模型说了就算」，门禁写在过滤器上等于没盖。",
+      "sources": [
+        {
+          "label": "PIR-2026-0044",
+          "url": "https://piperoll.org/pir/2026-0044.md"
+        },
+        {
+          "label": "Giskard 复盘",
+          "url": "https://www.giskard.ai/knowledge/how-grok-got-prompt-injected-an-x-user-drained-150-000-from-an-ai-wallet"
+        }
+      ]
+    },
+    {
+      "id": "1102中-7",
+      "section": "国际重大影响",
+      "title": "乌克兰防空警报 App 遭干扰发假辐射／核／化学警报；数小时后俄应急 App 亦称遭大规模网攻发假信息",
+      "time": "2026-11-01",
+      "summary": "相对早刊国际＝币安首阶段 15 网提现恢复：本窗 @binance 无新开闸阶段官宣，不重复。BBC 署 11 月 1 日（后更新）：乌克兰 Air Alert App 约当地 22:47 起短时出现全国／基辅「辐射威胁」、俄语「核警报／Oreshnik」、化学威胁、巷战威胁等假消息；空军 Telegram 称疑遭敌方干扰，强调无辐射威胁；数字转型部称 App 疑遭破坏后暂时维护，吁开手机紧急通知、听警报、只信官方源；利沃夫等地曾有扩音器误播辐射信号（情报／官方称无真实辐射）。数小时后俄紧急情况部称其预警 App 遭「大规模网攻」、向公众发假信息；乌方游击组织 Atesh 曾声称相关，BBC 注明截图未独立核实。恰逢赫尔松局部停火周日 23:00 结束前后。双方互相指责；本窗不替任一方下最终归因。≠ 宣称已确认攻击者身份或真实核／辐射事件。",
+      "relevance": "这不是又一条 CVE，是战时救命 App 被塞假核／辐射警报——普通人只能改听防空警报和官方频道；对讯息窗是「信息战打到手机推送」的量级。",
+      "sources": [
+        {
+          "label": "bbc.co.uk",
+          "url": "https://www.bbc.co.uk/news/articles/c51kdy1ew7zvo"
+        },
+        {
+          "label": "aljazeera.com",
+          "url": "https://www.aljazeera.com/news/2026/11/2/ukraine-blames-russia-after-air-alert-app-sends-out-false-warnings"
+        },
+        {
+          "label": "theguardian.com",
+          "url": "https://www.theguardian.com/world/2026/nov/02/ukraine-war-briefing-kyiv-says-air-raid-warning-app-likely-hacked-after-users-receive-false-alerts"
+        }
+      ]
+    },
+    {
+      "id": "1102中-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "Science Tokyo：无贵金属钴催化剂温和条件合成氨——抗钙钛矿壳＋分子氮阴离子；JACS",
+      "time": "2026-11-02",
+      "summary": "换赛道——催化／氢载体材料，不是 AI 发版也不是盘面（近刊分别是 KAUST 电缆冷漆、细菌航煤、内辐射带、火星玫瑰石）。Science Tokyo 新闻署 11 月 2 日：蒋义豪／细野秀雄／北野政明等组在 Journal of the American Chemical Society（DOI 10.1021/jacs.6c06380，约 2026-10-28）报告 Ba3AlO4–xNyHz 抗钙钛矿壳覆在 Al2O3 纳米棒上、钴自组织成簇的催化剂，借分子二氮阴离子 (N2)− 活化氮氮键，在约 300°C、0.9 MPa 温和条件下氨合成速率约 15.9 mmol·g−1·h−1，称超过基准钌与工业铁催化剂，且不用贵金属。氨既是肥料也是无碳氢载体；仍是实验室催化性能＋机理，不是工厂已换炉。",
+      "relevance": "夏天电网要载流、数据中心要电——氨若能当好搬的氢载体，瓶颈常卡在「高温高压合成」；看的是温和条件＋无贵金属这条路能不能把能耗先抠下来。",
+      "sources": [
+        {
+          "label": "isct.ac.jp（Science Tokyo 新闻）",
+          "url": "https://www.isct.ac.jp/en/news/ooqcqahyqvtu"
+        },
+        {
+          "label": "doi.org（JACS）",
+          "url": "https://doi.org/10.1021/jacs.6c06380"
+        }
+      ]
+    }
+  ]
+}
