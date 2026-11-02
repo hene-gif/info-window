@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "id": "1102早",
+  "date": "2026-11-02",
+  "slot": "早",
+  "title": "11月2日 · 早",
+  "items": [
+    {
+      "id": "1102早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "马斯克催试 Grok Bot：称一周七天持续落地修复／功能／「powers」，并盯用户反馈迭代",
+      "time": "2026-11-02T07:20:05+08:00",
+      "summary": "相对晚刊「马斯克仅 RT 家人飞行旧照、无产品向显著官宣」：@elonmusk 约台北 11 月 2 日 07:20（UTC 11-01 23:20）发帖「Try Grok @Bot! You will love it.」，并写「We land a few dozen fixes, features and sometimes powers to Bot 7 days a week and we look at your feedback to make Bot as perfect as possible.」——属产品运营／持续交付表态，不是新 frontier 聊天底座或权重发版。同窗前后他还连续 RT 多条用户／创作者夸 Grok Bot 仪表盘、模板与 Jarvis（Bot+Page）的演示，口径一致推 Bot，不另开。本窗再核：OpenAI／Anthropic／GoogleDeepMind／MetaAI／Qwen 官方自晚刊截稿起零发帖；DeepSeek 约台北 11 月 1 日 19:42 RT 的 Super-agent 英文版与中刊已报的 dsh-superagent 研究原型同一条线，不重复。无其他补报。",
+      "relevance": "这是马斯克亲自推 Bot 的交付节奏声明，不是又一次模型榜单；若你日常靠 Grok Bot 跑讯息窗这类活，看的是「一周七天几十项修复／功能」能不能稳住，而不是口号。",
+      "sources": [
+        {
+          "label": "x.com/elonmusk（Try Grok Bot）",
+          "url": "https://x.com/elonmusk/status/2117033967782113327"
+        },
+        {
+          "label": "x.com/elonmusk（RT 仪表盘演示）",
+          "url": "https://x.com/elonmusk/status/2117042166321287411"
+        }
+      ]
+    },
+    {
+      "id": "1102早-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-02",
+      "summary": "这段时间没有。自晚刊以来核对安全厂商、警方与相关报道：未见达到本栏门槛的新独立核实主新闻（已确认利用／实害，或 AI 相关且普通人需行动）。晚刊空栏；此前已报的 Chainalysis、Wiz Black October／Northflank、币安盗窃归因等不重复。City of London Police／Report Fraud 署约 10 月 27 日的 AI／deepfake 投资诈骗统计（约 1–8 月损失 £24.3m）超出本窗且属此前漏报旧闻，不单开；荷兰鹿特丹 AI 语音银行诈骗抓捕约 10 月中旬亦过窗。单条「黑产出价请人训攻击模型」类转述仍未见一手实害确认，不达门槛。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1102早-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周一亚股开低：日经开约 62972（−318）；韩综开约 5638（−1.62%）；美期微反弹；金油分化；台股现货 9 点前以夜盘为参考",
+      "time": "2026-11-02T09:08:00+08:00",
+      "summary": "相对晚刊「周日休市、周一开盘后再更新」：时事通信称东京前场开盘日经平均约 62972.02（较前一交易日 −318.09）；韩联社称 KOSPI 开于约 5637.77（−92.97／约 −1.62%），指美股科技财报与 AI 开支疑虑拖累。CNBC 周日夜／周一早更新：标普期约 +0.3%、纳指期约 +0.4%、道指期约 +0.2%（约 +116 点）；日经现货早盘约 −0.54%、东证约 −0.74%；韩综开盘约 −1.39%（与韩联开盘快讯略有差异，以一手快讯为准）。WTI 原油期货约跌逾 1% 至约 102.41 美元／桶，布伦特约 111.68；现货金周五曾跌至约一年低点约 3869.97，周一亚盘早段约 3890 一线附近反弹。台股现货 09:00 开；夜盘资料显示台指期曾破 45K、最后成交约 44433 一带——早刊截稿时现货尚未开盘，半日／收盘中刊再更。欧股现货尚未进入本窗主交易；美债收益率与周五现金收盘（美十债约 4.93%）前刊已述，不重复夸大。≠ 宣称「全球已全面反转」。",
+      "relevance": "周一开盘先看亚股是否把周五美科技杀跌「接住」；台股现货要等 9 点后数字，别把夜盘期货当收盘。金油走的是风险偏好与中东谈判预期，别跟 AI 股混成同一条逻辑。",
+      "sources": [
+        {
+          "label": "jiji.com（日经开盘）",
+          "url": "https://sp.m.jiji.com/article/show/3902690"
+        },
+        {
+          "label": "yna.co.kr（KOSPI 开盘）",
+          "url": "https://en.yna.co.kr/view/AEN20261102001900320"
+        },
+        {
+          "label": "yna.co.kr（开低综述）",
+          "url": "https://en.yna.co.kr/view/AEN20261102001300320"
+        },
+        {
+          "label": "cnbc.com（美期／亚股／油）",
+          "url": "https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html"
+        }
+      ]
+    },
+    {
+      "id": "1102早-4",
+      "section": "国际重大影响",
+      "title": "币安：首阶段 15 条网络／资产提现已全部恢复；称放量后回落趋稳；继续分阶段开更多",
+      "time": "2026-11-02T00:12:16+08:00",
+      "summary": "相对晚刊「多链主流币已开闸、冷门仍可能关」：@binance 约台北 11 月 2 日 00:12（UTC 11-01 16:12）称，自 UTC 11-01 06:00 起分阶段恢复提现，至 UTC 12:36 时首阶段全部 15 条网络与资产已重新启用；初期放量后提现量下降并按预期趋稳，存款侧亦在跟进。此前同日连续「Latest Withdrawal Update」曾扩至 Polygon／Avalanche／ZEC／TON／SUI 等（晚刊截稿后增量）。≠ 宣称「全站所有币种与网络已恢复」或归因／损失数字再升级；仍以提现页／网络状态页为准。",
+      "relevance": "若你要从币安提币：先对官方网络状态页确认该链已开，再小额试转；认准 @binance，别理「代提现」私信。首阶段开完不等于风险清零——大额仍宜分批。",
+      "sources": [
+        {
+          "label": "x.com/binance（首阶段 15 网完成）",
+          "url": "https://x.com/binance/status/2116926305254133892"
+        },
+        {
+          "label": "x.com/binance（ZEC／TON／SUI 更新）",
+          "url": "https://x.com/binance/status/2116871932075516174"
+        },
+        {
+          "label": "binance.com（网络状态）",
+          "url": "https://www.binance.com/en/network"
+        }
+      ]
+    },
+    {
+      "id": "1102早-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "KAUST：高导热辐射制冷涂料给架空电缆降温——利雅得模型白天载流约可多约 10%（盛夏峰值约 18%）；Light: Science & Applications",
+      "time": "2026-11-01",
+      "summary": "换赛道——电网材料／被动制冷，不是 AI 发版也不是盘面（前三刊分别是火星玫瑰石、内辐射带电子、细菌航煤）。沙特通讯社 SPA 署 11 月 1 日转述：KAUST 甘桥强组等在 Light: Science & Applications（DOI 10.1038/s41377-026-02485-1，约 2026-10-08 刊出）报告 h-BN／PDMS「高导热辐射制冷」涂料——同时高反射阳光（约 0.92）、强中红外发射（约 0.95）、导热约 1.28 W／(m·K)，专治「电缆既被太阳烤、又被电流从内部加热」的双热源，可改装到既有架空线。户外与模拟带电测试：沙特盛夏约 45°C 环境与强日照下，涂层缆约 50–70°C，裸缆／常规绝缘缆可到约 90°C／80°C。按 CIGRE 601 建模，利雅得白天全年平均载流约可多约 10%，盛夏峰值约 18.3%；13 个炎热城市约 6–10%。仍是概念验证＋建模，真实运行线路与长期机械耐久还要再测。",
+      "relevance": "AI 与数据中心要电，热天电网却先被电缆温度卡脖子——给旧线刷一层能导热的「冷漆」，比新建线路便宜得多；看的是被动材料能不能把夏天的载流余量抠出来。",
+      "sources": [
+        {
+          "label": "spa.gov.sa（SPA 新闻）",
+          "url": "https://www.spa.gov.sa/en/N2715403"
+        },
+        {
+          "label": "nature.com（Light: Science & Applications）",
+          "url": "https://www.nature.com/articles/s41377-026-02485-1"
+        },
+        {
+          "label": "doi.org",
+          "url": "https://doi.org/10.1038/s41377-026-02485-1"
+        }
+      ]
+    }
+  ]
+}
