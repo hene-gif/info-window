@@ -73,49 +73,15 @@
     {
       "id": "1017晚-4",
       "section": "我关注的",
-      "block": "AI 陪伴与成人消费",
-      "title": "塞浦路斯新平台 Online Companions 上线：对标 OnlyFans + 直播，订阅不抽成，内容用 AI+人工审核",
-      "time": "2026-10-17",
-      "summary": "TS Interactive 宣布成人创作者平台 Online Companions 正式上线，支付接入成人行业常用通道 CCBILL。卖点是公开主页可随便逛（不像有些站只能进圈子）、支持直播和预录、公开展示区不允许露骨内容、聊天室有欧洲语言实时翻译。分成模式：销售和月订不抽成，只对直播打赏和私密录制场次抽 20%。内容上线前后用 AI 工具加人工一起审核；还宣称创作者有「被遗忘权」。未来计划加 AI 帮用户找合适主播、以及主播自己的推广工具。目前称可同时撑约 4 万在线连接，已收到数百份主播申请。以上多为公司新闻稿，用户规模和实际分成以平台规则为准。",
-      "relevance": "成人内容站在卷「抽成更低 + AI 审核/推荐」：开店若做联名或导流，要看清谁收钱、抽多少、内容红线在哪。",
-      "sources": [
-        {
-          "label": "wireassociation.eu",
-          "url": "https://wireassociation.eu/newsroom/ts-interactive-ltd/releases/en/ts-interactive-ltd-unveils-online-companions-new-platform-for-adult-content-creators-2419"
-        },
-        {
-          "label": "greenbot.com",
-          "url": "https://www.greenbot.com/ts-interactive-ltd-unveils-online-companions-a-new-platform-for-adult-content-creators/"
-        }
-      ]
-    },
-    {
-      "id": "1017晚-5",
-      "section": "我关注的",
-      "block": "语音交互和 AI 硬件玩具",
-      "title": "奇瑞旗下 AiMOGA：首款家用陪伴人形机器人 Mobo 将于 10 月 21 日亮相并开全球预售",
-      "time": "2026-10-17T18:27:00+08:00",
-      "summary": "中国芜湖的 AiMOGA Robotics（奇瑞体系）今天宣布：首款消费级家庭陪伴人形机器人 Mobo，将在 10 月 21 日奇瑞国际用户峰会上全球首发，当天同步开全球预售。官方介绍会语音对话、看懂眼前物体、日程提醒和长期记忆，并强调自研 MoAgent 把感知、对话和执行串起来。此前已在世界机器人大会等展出；公司称有 31 个自研实验室，并把智能座舱、智驾相关能力往机器人上搬。10 月 19～23 日还会在奇瑞全球技术创新中心演示交警机器人、护理机器人、四足 Argos 等。售价、身高、续航等关键参数尚未公布。",
-      "relevance": "车企带供应链做「会说话、记得住」的家用机器人，语音硬件赛道从玩具音箱又往人形陪伴迈了一步。",
-      "sources": [
-        {
-          "label": "globenewswire.com",
-          "url": "https://www.globenewswire.com/news-release/2026/10/17/3382868/0/en/aimoga-to-unveil-mobo-its-first-family-companion-robot-on-october-21.html"
-        }
-      ]
-    },
-    {
-      "id": "1017晚-6",
-      "section": "我关注的",
       "block": "全球股市",
       "title": "这段时间没有",
       "time": "2026-10-17",
-      "summary": "这段时间没有。今天是周六，全球主要股市和原油、黄金、美债市场都休市；周五收盘与欧股、油价情况见 1017早-7、1017早-8。霍尔木兹最新消息可能影响周一开盘，见本期国际栏。",
+      "summary": "这段时间没有。今天是周六，全球主要股市和原油、黄金、美债市场都休市；周五收盘与欧股、油价情况见 1017早-5、1017早-6。霍尔木兹最新消息可能影响周一开盘，见本期国际栏。",
       "relevance": "",
       "sources": []
     },
     {
-      "id": "1017晚-7",
+      "id": "1017晚-5",
       "section": "国际重大影响",
       "title": "霍尔木兹「关没关」说法对立：伊方称油轮触雷、海峡已关闭；美方称上周约 400 艘商船通行、海峡仍开放",
       "time": "2026-10-17",
@@ -137,7 +103,7 @@
       ]
     },
     {
-      "id": "1017晚-8",
+      "id": "1017晚-6",
       "section": "国际重大影响",
       "title": "【补报】台湾拟把先进 AI 芯片和服务器列入出口管制，未经许可输往中国可能改走刑事责任",
       "time": "2026-10-16",
@@ -155,7 +121,7 @@
       ]
     },
     {
-      "id": "1017晚-9",
+      "id": "1017晚-7",
       "section": "我关注的",
       "block": "你可能没想到",
       "title": "斯坦福新显微镜：不用荧光染色，也能把活细胞内部看到约 120 纳米清晰度",

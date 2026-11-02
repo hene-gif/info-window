@@ -22,36 +22,6 @@
     },
     {
       "id": "1013试-2",
-      "section": "我关注的",
-      "block": "人机恋和 AI 陪伴赛道",
-      "title": "肯塔基州公开起诉 Character.AI 的完整诉状",
-      "time": "2026-10-12",
-      "summary": "肯塔基州公开起诉 Character.AI 的完整诉状。",
-      "relevance": "",
-      "sources": [
-        {
-          "label": "theverge.com",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1009463/character-ai-chats-encouraging-self-harm-detailed-in-unredacted-kentucky-lawsuit"
-        }
-      ]
-    },
-    {
-      "id": "1013试-3",
-      "section": "我关注的",
-      "block": "语音交互和 AI 硬件玩具",
-      "title": "Mallow 无屏幕语音故事音箱 10/14 出货",
-      "time": "2026-10-14",
-      "summary": "Mallow 无屏幕语音故事音箱 10/14 出货。",
-      "relevance": "",
-      "sources": [
-        {
-          "label": "aixtoy.com",
-          "url": "https://aixtoy.com/blog/ai-toy-news/21858.html"
-        }
-      ]
-    },
-    {
-      "id": "1013试-4",
       "section": "国际重大影响",
       "title": "台湾检方羁押无人机厂商两名高管，涉嫌使用中国芯片",
       "time": "2026-10-13",
@@ -65,7 +35,7 @@
       ]
     },
     {
-      "id": "1013试-5",
+      "id": "1013试-3",
       "section": "国际重大影响",
       "title": "俄罗斯称年底柴油出口可恢复到每月 300-350 万吨",
       "time": "2026-10-13",

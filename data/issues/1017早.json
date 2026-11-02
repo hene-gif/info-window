@@ -88,40 +88,6 @@
     {
       "id": "1017早-5",
       "section": "我关注的",
-      "block": "AI 陪伴与成人消费",
-      "title": "【补报】成人用品业两个动向：LELO 推 299 美元「红光护理」款，把护肤科技搬进私密健康；Fort Troff 批发改由 XR Brands 代理",
-      "time": "2026-10-15",
-      "summary": "一、高端品牌 LELO 10 月 9 日推出 MONA Spectra，定价 299 美元/欧元，卖点是把美容院常见的红光（LED 光疗）技术加进私密按摩器，用 App 还能切换近红外等波长，主打「私密健康」和自我护理。LELO 自己的调查称，69% 受访者有兴趣尝试红光护理、20% 已用过。注意：相关健康功效是厂商说法，未见独立临床验证。二、10 月 15 日，男性私密用品品牌 Fort Troff 宣布与 XR Brands 合作，批发订货改由 XR Brands 负责，原代理 Doc Johnson 已不再有货；XR 还负责生产、包装、营销和仓储，计划让热门款重新上市并拓展海外渠道。",
-      "relevance": "对开店来说：「健康、护理」包装正在把客单价往高端推；而品牌换代理很常见，进货前要确认当前的正规批发渠道。",
-      "sources": [
-        {
-          "label": "prnewswire.com（LELO 新闻稿）",
-          "url": "https://www.prnewswire.com/news-releases/lelo-reimagines-intimacy-with-mona-spectra-the-worlds-first-luxury-red-light-intimate-wellness-massager-302903368.html"
-        },
-        {
-          "label": "jrlcharts.com",
-          "url": "https://jrlcharts.com/2026/10/15/xr-brands-lands-fort-troff-in-major-deal-to-expand-wholesale-distribution/"
-        }
-      ]
-    },
-    {
-      "id": "1017早-6",
-      "section": "我关注的",
-      "block": "语音交互和 AI 硬件玩具",
-      "title": "【补报】苹果 HomePod mini 2：149 美元，能认出家里 6 个人的声音，新 Siri AI 要等后续更新",
-      "time": "2026-10-13",
-      "summary": "苹果 10 月 13 日发布 HomePod mini 2，美国售价 149 美元，10 月 30 日开卖，有粉、绿、蓝、白、午夜色五种。新芯片 S10 让音质更好，顶部会跟着音乐发光。最大卖点是新版 Siri AI：对话更自然、能结合你手机里的个人信息帮忙办事，还能靠声音分辨家中最多 6 个人。但新 Siri 不是开箱就有，要等之后的软件更新，而且先只支持英语和少数国家地区。",
-      "relevance": "你在关注语音交互：大厂音箱都在往「能聊天、认得人」走，但中文和台湾地区暂时不在首批。",
-      "sources": [
-        {
-          "label": "tech.yahoo.com",
-          "url": "https://tech.yahoo.com/ai/apple-intelligence/articles/apple-homepod-mini-2-launched-131415162.html"
-        }
-      ]
-    },
-    {
-      "id": "1017早-7",
-      "section": "我关注的",
       "block": "全球股市",
       "title": "美股周五收跌：纳指跌 2.15%、本周跌 4.5%，创 6 月底以来最差一周；道指本周仍小涨",
       "time": "2026-10-17T04:00:00+08:00",
@@ -143,7 +109,7 @@
       ]
     },
     {
-      "id": "1017早-8",
+      "id": "1017早-6",
       "section": "我关注的",
       "block": "全球股市",
       "title": "欧股逆势收涨，布伦特原油涨 3.7% 逼近 110 美元；金价微涨，10 年期美债约 5.09%",
@@ -162,7 +128,7 @@
       ]
     },
     {
-      "id": "1017早-9",
+      "id": "1017早-7",
       "section": "国际重大影响",
       "title": "霍尔木兹袭船创纪录、进出船次从 176 降到 131；专家警告若战火扩到阿曼湾，海湾国家补给线将被切断",
       "time": "2026-10-16",
@@ -184,7 +150,7 @@
       ]
     },
     {
-      "id": "1017早-10",
+      "id": "1017早-8",
       "section": "我关注的",
       "block": "你可能没想到",
       "title": "阿拉斯加挖出 1.38 万年前的「营地」：美洲最早的房屋痕迹、最早的骨针，还可能有最早的家狗",

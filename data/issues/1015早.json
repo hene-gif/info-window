@@ -84,63 +84,6 @@
     {
       "id": "1015早-5",
       "section": "我关注的",
-      "block": "人机恋和 AI 陪伴赛道",
-      "title": "40 个州要求 Character.AI 破产出售时保护孩子的聊天记录",
-      "time": "2026-10-14",
-      "summary": "Character.AI 破产案首次开庭，40 个州的总检察长要求法官确保任何买家都要保护用户聊天记录、加强安全措施。纽约州总检察长说，这家公司收集了孩子们最私密的心声，不能被卖给出价最高者。公司方面说，目前还没有人出价买用户数据或聊天业务；迪士尼的 2000 万美元授权交易不涉及这些数据。公司破产前每月亏损 800 万到 900 万美元。",
-      "relevance": "",
-      "sources": [
-        {
-          "label": "investing.com（路透）",
-          "url": "https://www.investing.com/news/stock-market-news/us-states-seek-childrens-data-protections-in-characterai-bankruptcy-4950121"
-        }
-      ]
-    },
-    {
-      "id": "1015早-6",
-      "section": "我关注的",
-      "block": "语音交互和 AI 硬件玩具",
-      "title": "xAI 发布 Grok Voice 3.0，登顶语音对话模型榜单",
-      "time": "2026-10-15T01:04:57+08:00",
-      "summary": "马斯克旗下 SpaceXAI 推出语音对话模型 Grok Voice 3.0，第三方机构 Artificial Analysis 的语音对语音榜单上以 86.9 分排第一，超过 OpenAI 和谷歌的同类模型，响应不到一秒，API 价格不变，每分钟 0.08 美元。官方说它每天在特斯拉车里处理数百万次对话，Starlink 客服每天用它接 2 万通电话，约七成不需要真人。马斯克转发称它是「世界上最好的对话语音模型」。",
-      "relevance": "",
-      "sources": [
-        {
-          "label": "x.com/SpaceXSI",
-          "url": "https://x.com/SpaceXSI/status/2110416580899168305"
-        },
-        {
-          "label": "x.ai",
-          "url": "https://x.ai/news/grok-voice-3"
-        },
-        {
-          "label": "x.com/ArtificialAnlys",
-          "url": "https://x.com/ArtificialAnlys/status/2110421964095713743"
-        },
-        {
-          "label": "x.com/elonmusk",
-          "url": "https://x.com/elonmusk/status/2110483960312799675"
-        }
-      ]
-    },
-    {
-      "id": "1015早-7",
-      "section": "我关注的",
-      "block": "语音交互和 AI 硬件玩具",
-      "title": "苹果发布 299 美元智能屏 HomeView，押注 AI 版 Siri 管家",
-      "time": "2026-10-13",
-      "summary": "苹果推出一批智能家居新品，主角是 7 英寸智能屏 HomeView，售价 299 美元，下个月出货，有挂墙版和桌面版。它搭载 AI 版 Siri，能听指令、控制家电，还能认出不同家庭成员给出个性化信息。同时更新了音箱和电视盒子，并和 LG、施耐德合作推出智能锁、门铃、摄像头和温控器。",
-      "relevance": "",
-      "sources": [
-        {
-          "label": "axios.com",
-          "url": "https://www.axios.com/2026/10/14/apple-ai-hardware-smart-display-homeview"
-        }
-      ]
-    },
-    {
-      "id": "1015早-8",
-      "section": "我关注的",
       "block": "全球股市",
       "title": "美国 9 月 CPI 超预期，纳指跌 1.9%，标普创 7 月来最大跌幅",
       "time": "2026-10-15T04:00:00+08:00",
@@ -162,7 +105,7 @@
       ]
     },
     {
-      "id": "1015早-9",
+      "id": "1015早-6",
       "section": "我关注的",
       "block": "全球股市",
       "title": "欧股靠 ASML 小涨：斯托克 600 涨 0.4%，富时 100 涨 0.7%",
@@ -181,7 +124,7 @@
       ]
     },
     {
-      "id": "1015早-10",
+      "id": "1015早-7",
       "section": "我关注的",
       "block": "全球股市",
       "title": "黄金跌 1.7%、白银跌逾 6%，美油升至三周高位，10 年期美债收在约 5.19%",
@@ -200,7 +143,7 @@
       ]
     },
     {
-      "id": "1015早-11",
+      "id": "1015早-8",
       "section": "国际重大影响",
       "title": "乌克兰 Starlink 限速部分恢复，马斯克称军用 Starshield 由美国政府决定",
       "time": "2026-10-15T03:00:10+08:00",
@@ -222,7 +165,7 @@
       ]
     },
     {
-      "id": "1015早-12",
+      "id": "1015早-9",
       "section": "国际重大影响",
       "title": "霍尔木兹遇袭船只创开战以来新高，联合国警告化肥断供恐引发粮荒",
       "time": "2026-10-14",
@@ -240,7 +183,7 @@
       ]
     },
     {
-      "id": "1015早-13",
+      "id": "1015早-10",
       "section": "国际重大影响",
       "title": "朝鲜试射两款潜射战略巡航导弹",
       "time": "2026-10-15T06:39:00+08:00",
@@ -258,7 +201,7 @@
       ]
     },
     {
-      "id": "1015早-14",
+      "id": "1015早-11",
       "section": "我关注的",
       "block": "AI 模型和产品动态",
       "title": "【补报】Anthropic 研究：小型 AI 模型可能几个月内就能在廉价智能设备上自我复制",

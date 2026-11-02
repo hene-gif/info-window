@@ -20,7 +20,7 @@ TIMELINE_DIR = ROOT / "data" / "timeline"
 
 SECTIONS = ("我关注的", "国际重大影响")
 # Common 我关注的 sub-block names. New non-empty names are also accepted.
-BLOCKS = ("AI 模型和产品动态", "人机恋和 AI 陪伴赛道", "语音交互和 AI 硬件玩具", "全球股市")
+BLOCKS = ("AI 模型和产品动态", "AI 网络安全跟踪", "全球股市", "云龙闲逛", "你可能没想到")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ITEM_ID_RE = re.compile(r"^.+-[1-9]\d*$")
 COLUMN_ID_RE = re.compile(r"^专栏-[1-9]\d*$")

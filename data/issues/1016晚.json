@@ -88,52 +88,6 @@
     {
       "id": "1016晚-5",
       "section": "我关注的",
-      "block": "AI 陪伴与成人消费",
-      "title": "【补报】中欧加码管 AI 陪伴：中国大厂关停伴侣功能，字节豆包迁转截止日刚过；欧盟 KIDS 法案盯未成年人依赖",
-      "time": "2026-10-15",
-      "summary": "科隆大学欧洲中国法研究中心本周梳理：中国 2025 年 AI 陪伴市场规模约 500 亿元人民币，预计 2027 年超 1200 亿；今年 7 月 15 日《AI 拟人交互服务管理暂行办法》生效当天，阿里通义立刻关停伴侣服务，腾讯元宝更早在 6 月 30 日关停，字节跳动豆包给了三个月迁到姊妹应用「猫箱」的宽限期，永久删除日定在 10 月 15 日——也就是昨天。规则禁止向未成年人提供虚拟恋人、要求防沉迷提醒、超两小时必须弹窗。欧盟方面，9 月 17 日委员会提出 KIDS 法案草案，要求面向未成年人的 AI 陪伴默认安全、不得设计易致情感依赖的功能，13 岁以下须家长控制。两边共同信号：情感依赖本身成了监管对象，不只是内容是否违规。",
-      "relevance": "你在看成人消费与 AI 硬件生意；合规成本、年龄核验和「不能装恋人」会直接决定哪些产品能上架、能融到钱。",
-      "sources": [
-        {
-          "label": "blog.uni-koeln.de（中欧对比）",
-          "url": "https://blog.uni-koeln.de/eclrhub/2026/10/14/love-simulated-china-europe-and-the-regulation-of-ai-companions/"
-        },
-        {
-          "label": "lw.com（中国新规解读）",
-          "url": "https://www.lw.com/en/insights/china-introduces-rules-for-ai-companion-and-emotional-interaction-services"
-        },
-        {
-          "label": "commission.europa.eu（KIDS 法案）",
-          "url": "https://commission.europa.eu/news-and-media/news/eu-kids-act-helping-children-navigate-safer-online-world-2026-09-17_en"
-        }
-      ]
-    },
-    {
-      "id": "1016晚-6",
-      "section": "我关注的",
-      "block": "语音交互和 AI 硬件玩具",
-      "title": "【补报】悟空声优野泽雅子怒批 AI 盗用其嗓音；日本演员联盟发布首份 AI 配音指南",
-      "time": "2026-10-15",
-      "summary": "《龙珠》孙悟空日语配音野泽雅子周三接受 NHK 采访：看到自称是她嗓音的 AI 视频后说「那不是我的声音」，未经允许使用「不可原谅」，等同偷窃；嗓音是身份，哪怕只用一部分也要先征得同意。她同时表示 AI 技术进步令人兴奋，但必须守规矩。周四，约 2600 名会员的日本演员联盟发布首份「生成式 AI 语音使用指南」：训练、生成或公开使用演员嗓音须事先征得本人或经纪同意；配成外语要按语种再批；已故演员须尊重遗嘱并取得家属同意；违规可要求立刻下架并追偿自侵权日起的销售额等额款项。",
-      "relevance": "语音玩具和 AI 陪伴硬件若克隆明星嗓音，授权和赔偿会成为硬成本；做产品选型时要先问清声音来源合不合法。",
-      "sources": [
-        {
-          "label": "nhk.or.jp（NHK 世界）",
-          "url": "https://www3.nhk.or.jp/nhkworld/news/20261016de60382/"
-        },
-        {
-          "label": "nippairen.com（日俳连指南）",
-          "url": "https://www.nippairen.com/about/jau_guideline.html"
-        },
-        {
-          "label": "nikkei.com",
-          "url": "https://www.nikkei.com/article/DGXZQOUF157N70V11C26A0000000/"
-        }
-      ]
-    },
-    {
-      "id": "1016晚-7",
-      "section": "我关注的",
       "block": "全球股市",
       "title": "亚股收盘多数续涨：日经涨 1.39%、韩股涨 2.05%、台股涨 141 点；印尼暴跌逾 11% 因 MSCI 拟降级",
       "time": "2026-10-16T15:00:00+08:00",
@@ -159,7 +113,7 @@
       ]
     },
     {
-      "id": "1016晚-8",
+      "id": "1016晚-6",
       "section": "我关注的",
       "block": "全球股市",
       "title": "金价回升至约 4184 美元，布伦特跌近 1% 至 105 美元下方；欧股周五盘中偏稳，美股尚未开盘",
@@ -182,7 +136,7 @@
       ]
     },
     {
-      "id": "1016晚-9",
+      "id": "1016晚-7",
       "section": "国际重大影响",
       "title": "近 490 名科学家联名：有网络攻击能力的 AI 初期应「断网」测试，并建国际事故通报机制",
       "time": "2026-10-16",
@@ -204,7 +158,7 @@
       ]
     },
     {
-      "id": "1016晚-10",
+      "id": "1016晚-8",
       "section": "我关注的",
       "block": "你可能没想到",
       "title": "AI 扫 10 万余次体检影像：体内「棕色脂肪」多的人，糖尿病、焦虑抑郁更少；降压药氯沙坦或能「叫醒」它",

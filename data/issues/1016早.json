@@ -165,40 +165,6 @@
     {
       "id": "1016早-8",
       "section": "我关注的",
-      "block": "人机恋和 AI 陪伴赛道",
-      "title": "Anthropic 总裁 Daniela Amodei：AI 恋人是「糟糕的 AI 用法」，Claude 不能当你的伴侣",
-      "time": "2026-10-15T20:55:13+08:00",
-      "summary": "据商业内幕报道，Anthropic 总裁 Daniela Amodei 在和赫芬顿（Arianna Huffington）的预录访谈中说，用 AI 做虚拟恋人「是糟糕的 AI 用法，大家不该这么做」，这会让人和人之间更疏远。她说：「Claude 永远不能当你的上司、你的心理咨询师或你的伴侣」，这些是会变得更重要的人际关系。访谈将在周五的 Think Health 大会播出。报道提到，Character.AI 本周已申请破产保护；Anthropic 上周更新使用政策，11 月 12 日起禁止 Claude 和未成年人进行角色扮演。",
-      "relevance": "",
-      "sources": [
-        {
-          "label": "businessinsider.com",
-          "url": "https://www.businessinsider.com/anthropic-president-amodei-ai-romantic-partners-terrible-use-2026-10"
-        }
-      ]
-    },
-    {
-      "id": "1016早-9",
-      "section": "我关注的",
-      "block": "语音交互和 AI 硬件玩具",
-      "title": "ChatGPT 语音升级到 GPT-Live-1.1：新增日语、韩语等六种语言的新声音，等待时少说「正在查」",
-      "time": "2026-10-16T02:19:54+08:00",
-      "summary": "OpenAI 周四开始向所有用户推送 GPT-Live-1.1，用在 ChatGPT、Codex 和 dots 的语音功能里：法语、德语、印地语、墨西哥西班牙语、韩语和日语都有了新声音，口音更自然；查资料或调用工具时，不再反复说「正在查……」，等待提示更多样。Plus 及以上用户默认用 GPT-Live-1.1，其他用户用轻量版 GPT-Live-1.1 Quip；开发者 API 「即将推出」。这次的新声音名单里没有中文。",
-      "relevance": "",
-      "sources": [
-        {
-          "label": "x.com/OpenAI",
-          "url": "https://x.com/OpenAI/status/2110797830361436604"
-        },
-        {
-          "label": "help.openai.com（更新说明）",
-          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
-        }
-      ]
-    },
-    {
-      "id": "1016早-10",
-      "section": "我关注的",
       "block": "全球股市",
       "title": "美股周四收涨：道指涨 1.08%，资金撤出科技股；批发物价年涨 6.3%，创 2022 年来最大",
       "time": "2026-10-16T04:00:00+08:00",
@@ -220,7 +186,7 @@
       ]
     },
     {
-      "id": "1016早-11",
+      "id": "1016早-9",
       "section": "我关注的",
       "block": "全球股市",
       "title": "欧股收涨，金价涨 1.5%，美债 10 年期收益率单日大跌约 10 个基点；美油涨 3%",
@@ -243,7 +209,7 @@
       ]
     },
     {
-      "id": "1016早-12",
+      "id": "1016早-10",
       "section": "我关注的",
       "block": "全球股市",
       "title": "亚股周五开盘反弹：韩股高开 1.8%，日经高开近 500 点",
@@ -262,7 +228,7 @@
       ]
     },
     {
-      "id": "1016早-13",
+      "id": "1016早-11",
       "section": "国际重大影响",
       "title": "胡塞武装导弹袭击也门政府所在的亚丁总统府，至少 5 死 16 伤",
       "time": "2026-10-15",
@@ -280,7 +246,7 @@
       ]
     },
     {
-      "id": "1016早-14",
+      "id": "1016早-12",
       "section": "国际重大影响",
       "title": "美国制裁伊拉克和古巴的银行，打击伊朗「影子银行」网络",
       "time": "2026-10-15",
@@ -298,7 +264,7 @@
       ]
     },
     {
-      "id": "1016早-15",
+      "id": "1016早-13",
       "section": "我关注的",
       "block": "你可能没想到",
       "title": "谷歌量子芯片首次在真机上「养出」魔态，错误率降到约 1/40",

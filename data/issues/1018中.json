@@ -84,44 +84,6 @@
     {
       "id": "1018中-5",
       "section": "我关注的",
-      "block": "AI 陪伴与成人消费",
-      "title": "【补报】Character.AI 破产文件摊开账本：月活 1200 万、人均每天聊 2 小时，月收入 530 万美元仍月亏约 800 万",
-      "time": "2026-10-13",
-      "summary": "Character.AI 首席执行官 10 月 13 日向特拉华破产法院提交 68 页宣誓声明，首次公开这家 AI 陪伴应用的收支：约 1200 万月活用户，平均每天使用约 120 分钟。2026 年 8 月月收入约 530 万美元，其中订阅约 280 万、广告约 250 万（广告 2025 年 7 月才上线，13 个月涨了五倍）；2024 全年收入约 740 万、2025 年约 2360 万。成本端，2026 年 1–8 月算力支出约 5610 万美元，占运营开支约 45%；2024 下半年每月算力约 1380 万。公司改用更便宜的 GPU、改为微调开源模型、裁员，仍每月亏约 800–900 万美元。融资失败的原因是 46 个州和地区检察长联合调查、多国监管和诉讼包袱太重。迪士尼的 2000 万美元报价须在 12 月 17 日前完成，若没有买家愿意接手经营，平台将关闭。",
-      "relevance": "用户黏性再高，算力账单和监管成本也可能吃掉利润；你考虑开店时，可以把「靠实体商品赚钱」和「靠持续算力服务赚钱」这两种模式的成本结构分开算。",
-      "sources": [
-        {
-          "label": "ppc.land",
-          "url": "https://ppc.land/character-ai-loses-8m-a-month-despite-2-5m-in-monthly-ad-sales/"
-        },
-        {
-          "label": "404media.co",
-          "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/"
-        }
-      ]
-    },
-    {
-      "id": "1018中-6",
-      "section": "我关注的",
-      "block": "语音交互和 AI 硬件玩具",
-      "title": "【补报】两家香港公司推 AI 小硬件：HooRii 约 100 美元口袋语音助手 StageGo 能替你打电话；UDEXREAL 159 美元「只认触摸」的毛绒 AI 宠物",
-      "time": "2026-10-15",
-      "summary": "10 月 15 日两款香港出品的 AI 随身硬件同日亮相。HooRii 发布 StageGo：可放桌面、口袋或挂包，1.54 英寸屏显示用户自选的 AI 角色，按住说话即可问答搜索；「任务」模式下描述需求、确认摘要后交给 AI 智能体执行，Agent Call 功能可插 SIM/eSIM 替用户拨出电话并汇报结果。预计 11 月初开 Kickstarter 预热，2027 年 1 月开卖，价格约 100 美元。UDEXREAL 则在 Kickstarter 上线 NiniQuu：巴掌大的毛绒挂件，没有摄像头、麦克风、Wi-Fi 和蓝牙，靠 7 个可拉伸传感器感知捏、摸、拍和晃动，用两块小屏眼睛、声音和震动给出 300 多种反应，会慢慢记住主人的触摸习惯且数据只存在本机，售价 159 美元。",
-      "relevance": "一个走「能替你办事」，一个走「完全不联网、只陪着你」，正好代表 AI 陪伴硬件的两极；隐私卖点在成人和陪伴类产品里尤其值钱。",
-      "sources": [
-        {
-          "label": "globenewswire.com",
-          "url": "https://www.globenewswire.com/news-release/2026/10/15/3381920/0/en/hoorii-unveils-stagego-to-bring-personal-ai-agents-to-your-desk-and-pocket.html"
-        },
-        {
-          "label": "auganix.org",
-          "url": "https://www.auganix.org/xr-news-udexreal-niniquu-ai-plush-companion/"
-        }
-      ]
-    },
-    {
-      "id": "1018中-7",
-      "section": "我关注的",
       "block": "全球股市",
       "title": "这段时间没有",
       "time": "2026-10-18",
@@ -130,7 +92,7 @@
       "sources": []
     },
     {
-      "id": "1018中-8",
+      "id": "1018中-6",
       "section": "国际重大影响",
       "title": "【补报】伊朗外长：已经卡塔尔递交「七天重开霍尔木兹」方案，球在美国；革命卫队又称第二艘超级油轮触雷起火",
       "time": "2026-10-17",
@@ -152,7 +114,7 @@
       ]
     },
     {
-      "id": "1018中-9",
+      "id": "1018中-7",
       "section": "我关注的",
       "block": "你可能没想到",
       "title": "德国发现「吃塑料的吃豆人酶」：可降解塑料在林地土壤里约一年被吃光，这种酶竟还能分解青霉素",
