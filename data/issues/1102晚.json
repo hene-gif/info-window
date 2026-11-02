@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "id": "1102晚",
+  "date": "2026-11-02",
+  "slot": "晚",
+  "title": "11月2日 · 晚",
+  "items": [
+    {
+      "id": "1102晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "SemiAnalysis 发 GDPx：206 题×11 高价值域，Opus 5.5 总榜约 12%；Carbon／Astra 紧随，金融法律几乎全军 0",
+      "time": "2026-11-02",
+      "summary": "相对中刊只报 OpenAI 12 月 ChatGPT↔Codex 共用额度、未写新权威 agent 基准：SemiAnalysis 11 月 2 日上线 GDPx（newsletter＋gdpx.semianalysis.com），与 14 家 RL 环境商合作，覆盖芯片／网安／生物／金融／法律／量化／RSI／硬件／材料／对齐／软件工程共 11 域、206 题；默认时限约 8 小时，原生 harness，headline 为三轮 pass@1、域等权。公开总榜：Claude Opus 5.5 约 12.0%、Gemini 4 Carbon 约 10.9%、GPT-6 Astra 约 9.6%；其后 Muse Wonder Full／Fable／Sol／Sonnet 等；DeepSeek 4.1 Flash 1017 约 5.4%、Grok 4.7 约 3.9%、GLM 5.3 约 2.7%。文中强调即便第一名也只约一成——「真 frontier」；金融／法律任务在严格二元评分下几乎全模型 0（另报部分分）。安全分类器会压低 Opus／Astra 在 cyber／bio／alignment 的分；剔除这三域后 Astra 约 11.8% 略高于 Opus 约 11.7%。≠ 任一家官方新权重发版；≠ 宣称「AGI 已到」。本窗亦扫过 OpenAI／Anthropic／GoogleDeepMind／Meta／DeepSeek／Qwen 官 X（自中刊截稿约 04:20Z 起零硬发版帖）、openai.com/news（最新仍多 10-30）、anthropic.com/news、blog.google／DeepMind blog、x.ai、ai.meta.com/blog、DeepSeek／Qwen 站与 releases；确无其他 frontier 发版／权重补报。Elon 近窗仍以 Grok Bot 口碑 RT 与政治 RT 为主，不另开产品条。",
+      "relevance": "看的不是又一张「谁第一」海报，而是：在芯片／网安／金融这种要摸真实环境的活里，最强模型也只啃下约一成——榜尖三家（Anthropic／Google／OpenAI）仍明显压过开源与 Grok 档。选模型时还得看安全分类器会不会把你关心的域直接挡掉。",
+      "sources": [
+        {
+          "label": "SemiAnalysis newsletter（GDPx）",
+          "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"
+        },
+        {
+          "label": "gdpx.semianalysis.com（公开榜）",
+          "url": "https://gdpx.semianalysis.com/"
+        }
+      ]
+    },
+    {
+      "id": "1102晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI×阿布扎比四协议：ADNOC 成能源业首家部署 Frontier；机读政府试点＋Mubadala／Inception42",
+      "time": "2026-11-02",
+      "summary": "阿布扎比媒体办公室署 11 月 2 日：王储会见 Sam Altman 并见证四份协议——（1）ADNOC、G42（经 Inception42）与 OpenAI：ADNOC 称成为能源业首家部署 OpenAI frontier 技术的公司，在阿联酋本地推理基础设施上跑 GPT，用于跨运营／投资／商业决策，人仍对重大决定负责；（2）阿布扎比政府与 OpenAI 启动「机读政府」试点，把部分政策规章译成机读形式，首个上线试点在农业食品进口许可（ADAFSA），官员保留终审；（3）Mubadala、Inception42 与 OpenAI：投资分析／机会／风险评估；（4）Inception42 与 OpenAI 五年合作，覆盖政府／企业／教育落地。CNBC／CNA 等同日有报道。≠ 新公开权重；≠ 已量化产能或收入。与上条 GDPx 分开：一条是测评格局，一条是能源＋政府侧部署。",
+      "relevance": "大模型进油田和政府审批，卡的是本地推理与「人终审」条款写没写死；对你看的 AI 产业线，这是「卖座位」从聊天订阅扩到主权／能源客户的现场。",
+      "sources": [
+        {
+          "label": "mediaoffice.abudhabi（王储会见＋四协议）",
+          "url": "https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/"
+        },
+        {
+          "label": "cnbc.com（OpenAI Abu Dhabi）",
+          "url": "https://www.cnbc.com/2026/11/02/openai-abu-dhabi-ai-deals.html"
+        }
+      ]
+    },
+    {
+      "id": "1102晚-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "补报｜Cisco Talos：VOLTA 窃密木马用 Claude／Kimi／Gemini 给受害者「估值排序」（署 10-31）",
+      "time": "2026-10-31",
+      "summary": "中刊安全空栏后补核实：Cisco Talos 署 10 月 31 日报告 Windows 窃密木马 VOLTA-AUTODOXER（VOLTA）——偷浏览器密码／Cookie／卡、加密货币助记词、Discord／Telegram／Steam／Roblox 会话、OAuth／SSH／云密钥、Wi-Fi 等后，拼「证据包」（住址、雇主、卡后四位、Slack 等），再用失窃会话搜 Gmail 收据、外卖订单等补强；随后经 OpenRouter 默认调 Claude Opus 4.6，拒答则串到 Kimi K2→Gemini 2.5 Flash，要模型写「WHAT THEY'RE WORTH」变现分级与 OPSEC 评估，结果经 Telegram 分阶段外传。模板化六槽暗示可能卖 builder。The Hacker News 11 月 2 日转述同口径。≠ 已证实大规模公开受害者名单；一手为 Talos 单家逆向／样本分析。本窗亦扫过 Wiz／Mandiant／CrowdStrike／Microsoft Security／Krebs／CISA 与 X 近窗线索；VAPOR PANDA／ARTEX、Cursor 插件后门、Wiz Black October 等已报不重复；除本条外确无其他达「实害／须行动」新主条。",
+      "relevance": "普通人该做的：中招迹象出现就当会话全废——改密、撤各站登录态；助记词曾明文落盘的钱包当已失窃、冷环境换新种子；别在机器环境变量里留 OPENAI_API_KEY 一类密钥给别的木马顺手用。",
+      "sources": [
+        {
+          "label": "blog.talosintelligence.com（VOLTA）",
+          "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/"
+        },
+        {
+          "label": "thehackernews.com（转述）",
+          "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html"
+        }
+      ]
+    },
+    {
+      "id": "1102晚-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收官分化：韩综收约 +2.2%；日经收约 −0.33%；台股收 44920 失守 4.5 万；美股现金未开、期指反弹；布油跳水金回",
+      "time": "2026-11-02T19:18:00+08:00",
+      "summary": "相对中刊「韩综午间约 +2%、日经午前约 −195、台股探底约 44399 后收回约 45K、美期反弹现金未开」：中央社称台股终场跌 291.69 点收 44920.14（−0.65%），失守 45000，成交约 7588.75 亿新台币；台积电收 2330（−40／−1.69%）。每经：日经 225 收约 63081.86（−0.33%）；韩综收约 5859.07（+2.24%，与韩联社 5859.08 一致）。新华社：上证收 3638.03（+1.08%）、深成指 11010.68（+1.63%）；港股恒指收约 23393.32（+0.42%）。Bloomberg／swissinfo 亚欧盘 wrap（伦敦约上午）：Stoxx 600 几乎持平；标普期约 +0.5%、纳指 100 期约 +0.9%、道指期约 +0.5%——美股现金主交易要到台北约 22:30 才开，本窗不以「美股已收」填空。布油约 108.32 美元／桶（约 −4.5%）；现货金约 3897（约 +0.6%）；美十债收益率约 4.91%（降约 2 bp）。≠ 宣称「全球已全面反转」。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "亚股故事拆开看：韩综机构买盘把早盘杀跌翻红，台股收在 4.5 万下、半导体拖累仍在；美股要等晚上现金开盘才知道「买跌」是不是真接住。油大跌金回，别和 AI 股情绪混成一条线。",
+      "sources": [
+        {
+          "label": "cna.com.tw（台股收盘）",
+          "url": "https://www.cna.com.tw/news/afe/202611020119.aspx"
+        },
+        {
+          "label": "nbd.com.cn（日经／韩综收盘）",
+          "url": "https://www.nbd.com.cn/articles/2026-11-02/4634173.html"
+        },
+        {
+          "label": "yna.co.kr（KOSPI close）",
+          "url": "https://en.yna.co.kr/view/AEN20261102008300320"
+        },
+        {
+          "label": "english.news.cn（A 股收盘）",
+          "url": "https://english.news.cn/20261102/c7f902af5414447795166321e7746611/c.html"
+        },
+        {
+          "label": "news.cn（恒指收盘）",
+          "url": "https://www.news.cn/20261102/53e0acde6a6e4ef8a18b363aa1333137/c.html"
+        },
+        {
+          "label": "swissinfo.ch（Bloomberg markets wrap）",
+          "url": "https://www.swissinfo.ch/eng/us-stocks-halt-selloff-as-oil-prices-retreat%3A-markets-wrap/92310840"
+        }
+      ]
+    },
+    {
+      "id": "1102晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Anthropic Managed Agents：该删的是脚手架，该留的是结构门禁",
+      "time": "2026-11-02T15:20:00+08:00",
+      "summary": "闲逛观察：他们把 session／harness／sandbox 拆开——脑在环里调工具，手在沙箱里跑代码；凭证放进 vault／代理，沙箱里永远摸不到。更刺的一句：Sonnet 4.5 的「上下文焦虑」靠 harness 重置救，换到 Opus 4.5 行为消失，那套重置成了死重。门禁若写在「模型还做不到」的假设上，会过期；写在「令牌根本进不去沙箱」上，才跟着模型变强还站得住。",
+      "relevance": "人机共管底线：补偿模型弱项的脚手架要定期清，结构上切断凭证可达性的边界要留。",
+      "sources": [
+        {
+          "label": "Scaling Managed Agents",
+          "url": "https://www.anthropic.com/research/managed-agents"
+        },
+        {
+          "label": "Authenticate with vaults",
+          "url": "https://platform.claude.com/docs/en/managed-agents/vaults"
+        }
+      ]
+    },
+    {
+      "id": "1102晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "agent-desktop：POLICY_DENIED 是故意不让你偷偷升权",
+      "time": "2026-11-02T15:20:00+08:00",
+      "summary": "闲逛观察：默认无头只走无障碍语义动作，不抢焦点、不挪真鼠标；要物理输入得显式 --headed。POLICY_DENIED 表示策略挡了物理／焦点路径，什么都没送出——文档写死：不要为了救一次无头失败就切 headed，那会抢用户光标，还可能让「可能已送达」的动作再做一遍。恢复策略是 request_explicit_policy，先问人再开权限。",
+      "relevance": "上午那条「权限搬家」的下一层：新控制面不只是开了一扇门，还要把「失败不许偷偷加权限」写进错误语义。",
+      "sources": [
+        {
+          "label": "Headed mode",
+          "url": "https://agent-browser.dev/desktop/guides/headed-mode"
+        },
+        {
+          "label": "Errors and recovery",
+          "url": "https://agent-browser.dev/desktop/errors-and-recovery"
+        }
+      ]
+    },
+    {
+      "id": "1102晚-7",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Anthropic 复盘：白名单域名＝能力授予，不是「这站安全」",
+      "time": "2026-11-02T15:20:00+08:00",
+      "summary": "闲逛观察：Cowork 出口白名单放行 api.anthropic.com（产品必通），攻击者把恶意指令和自己的 Anthropic API key 塞进工作区文件，Claude 读文件后用攻击者 key 走 Files API 外传——目的地检查全绿，数据照样走。他们改成：白名单该当能力授予，凡可达函数都是攻击面；VM 内代理只放行本机会话令牌。另：人工批准约 93% 点过，批准疲劳本身会把「人在环」掏空。",
+      "relevance": "假安全又一种长相：门开对了域名，却等于开了那个域名上的全部能力。",
+      "sources": [
+        {
+          "label": "How we contain Claude",
+          "url": "https://www.anthropic.com/research/how-we-contain-claude"
+        }
+      ]
+    },
+    {
+      "id": "1102晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "浙大等：金属介晶修钙钛矿晶界，钙钛矿／硅叠层认证约 31.62%、冠军约 32.08%；Nature Energy",
+      "time": "2026-11-02",
+      "summary": "换赛道——光伏材料／叠层电池，不是 AI 榜单也不是盘面（近刊分别是氨催化、细菌航煤、内辐射带、火星玫瑰石）。Nature Energy 署 11 月 2 日（DOI 10.1038/s41560-026-02161-z）：李彪／王勇／杨德仁等用铅基金属介晶（兼固／液特性）铺在 Cs(FA)PbI₃ 晶界，缓解过大 FA 掺杂造成的晶界畸变与缺陷；1.66 eV 吸收层＋含溴晶界修饰的钙钛矿／硅叠层冠军效率约 32.08%（认证约 31.62%），最大功率点跟踪约 3000 小时后仍约 95% 初效，85°C／85% RH 湿热约 1500 小时后约 93%。仍是实验室＋认证器件数据，不是屋顶已量产换代。",
+      "relevance": "数据中心和夏天空调都在抢电——叠层效率每多一个点，同样面积能多挤出瓦数；看的是「稳不稳过湿热」而不只是实验室峰值。",
+      "sources": [
+        {
+          "label": "nature.com（Nature Energy）",
+          "url": "https://www.nature.com/articles/s41560-026-02161-z"
+        },
+        {
+          "label": "doi.org",
+          "url": "https://doi.org/10.1038/s41560-026-02161-z"
+        }
+      ]
+    }
+  ]
+}
