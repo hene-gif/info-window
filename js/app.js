@@ -1,6 +1,6 @@
 const SECTIONS = ['我关注的', '国际重大影响'];
 const FOCUS = '我关注的';
-const BLOCKS = ['AI 模型和产品动态', '人机恋和 AI 陪伴赛道', '语音交互和 AI 硬件玩具', '全球股市'];
+const BLOCKS = ['AI 模型和产品动态', 'AI 网络安全跟踪', '全球股市', '云龙闲逛', '你可能没想到'];
 const SLOT_LABEL = { 早: '早间', 午: '午间', 晚: '晚间', 试: '试刊' };
 const LS_KEY = 'info-window:favorites';
 const MENU_LIMIT = 21;
