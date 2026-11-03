@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "id": "1103晚",
+  "date": "2026-11-03",
+  "slot": "晚",
+  "title": "11月3日 · 晚",
+  "items": [
+    {
+      "id": "1103晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "CrowdStrike：Falcon Guardian 原生装进 Anthropic Claude Cowork 虚拟机；macOS beta 已开，Windows 预计 11 月稍后",
+      "time": "2026-11-03T17:29:00+08:00",
+      "summary": "相对中刊只收 OpenAI 安全冲刺／赏金、未见企业 agent 侧新集成：CrowdStrike 新闻稿与博文署 11 月 3 日（Fal.Con Europe，Barcelona）；官 X 约台北 17:29（晚于中刊截稿）宣布与 Anthropic 合作，把 Falcon Linux sensor 跑进 Claude Cowork 本机隔离 VM——宿主机 endpoint 原先只看见一个不透明进程，VM 内装包／进程／外连不可见，而主机目录又可挂进 VM。产品把 Cowork 纳入 Falcon 企业控制面，管理员用既有设备管理开开关；定位是可见性与检测（示例：投毒 Python 包→经挂载目录读主机数据→外连）。macOS beta 已开，Windows 预计 11 月稍后。博文亦称 Falcon Guardian 对 Claude Code／Codex／Copilot／OpenCode／Cursor 等另有 hook 级控制——本条主叙事仍是 Cowork VM 内传感器。≠ 新 frontier 权重；≠ 已确认对外实害 exploit；财务条款未披露。本窗亦扫过 @OpenAI @AnthropicAI @GoogleDeepMind @metaai @deepseek_ai @Alibaba_Qwen、@elonmusk（产品向无新发版）、@sama @demishassabis @karpathy @dotey；openai.com/news、anthropic.com/news、alignment.anthropic.com、blog.google／DeepMind blog、x.ai、ai.meta.com/blog、DeepSeek／Qwen 站与 releases——确无其他 frontier 发版／权重；中刊已报 OpenAI sprint／赏金不重复。",
+      "relevance": "中刊后唯一核实到的七厂生态＋企业产品级当日官宣：本地 agent 一进隔离 VM，传统 EDR「看不见 guest」就被逼成了产品功能。",
+      "sources": [
+        {
+          "label": "crowdstrike.com（新闻稿）",
+          "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-extends-anthropics-claude-cowork/"
+        },
+        {
+          "label": "crowdstrike.com（博文／beta）",
+          "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-secures-ai-agents-inside-claude-cowork/"
+        },
+        {
+          "label": "x.com/CrowdStrike",
+          "url": "https://x.com/CrowdStrike/status/2117549711431225711"
+        }
+      ]
+    },
+    {
+      "id": "1103晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-03",
+      "summary": "这段时间没有达「实害／须行动」门槛的新主条。已扫：Wiz、Mandiant／GTIG 线索、CrowdStrike（当日为 Cowork 产品集成而非 exploit 报告）、Microsoft Security 线索、Krebs、CISA，以及 X 近窗（prompt injection／AI scam／jailbreak／agent hijack）；确无其他新主条。不重复 XCPE／Videostrong、VOLTA、Black October、VAPOR PANDA／ARTEX、Bankrbot Morse、Cursor 插件后门；亦不把 CrowdStrike×Claude Cowork 产品集成算作安全实害栏。",
+      "relevance": "普通人侧：本窗无新的「立刻改密／卸载／打补丁」动作项；继续别装「共享闲置带宽换钱」类应用（中刊 XCPE 线）。",
+      "sources": []
+    },
+    {
+      "id": "1103晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚市收：台韩约 −3.6%；恒指 +0.57%；上证 −0.82%；日休；欧盘中弱；美股现金未开、油略升金续吐",
+      "time": "2026-11-03T19:15:00+08:00",
+      "summary": "相对中刊「亚市半日」：全日收盘已齐——台股收 43307.54（−1612.60／−3.59%，成交约 9281 亿新台币；中刊近午约 43519／−3.12%）；韩综收 5648.79（−210.29／−3.59%；中刊约 −3.3%）；上证收 3608.10（−0.82%），深成 10876.99（−1.21%）、创业板 2391.65（−2.73%）；恒指收 23525.97（+132.65／+0.57%）逆势。日经现货文化日继续休市，指向昨收 63081.86（−0.33%）。欧股现货盘中偏弱（勿写成收盘）：Stoxx50≈6144.5（−0.51%）、DAX≈25811.7（−0.65%）、FTSE≈10707.6（−0.50%）、CAC≈8033.2（−0.18%）。美股现金周二常规盘尚未开（约台北 22:30），仍指周一收：标普 7541.40／纳 25164.36／道 51983.98；E-mini 标普期约 7569.5（−0.07%）。油价较中刊企稳位小幅回升：Brent≈105.54、WTI≈97.75（各源约 105–106／97–98 一带）；金期货约 3915（−1.38%）；10Y 周二早间 CNBC 约 4.92%（Yahoo 周一收 4.894%，勿伪造日终）。主线仍是科技／半导体卖压外溢 vs 港股相对抗跌；中东紧张与油价互动归本段，不另开国际主条。≠ 宣称「美股已收」或「欧股已收」。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "中刊还是半日杀跌，晚刊能看见台韩收在约 −3.6%、港股全日翻红站住——别把美期当美股收盘，也别等台北晚饭就把欧股盘中写成收盘。",
+      "sources": [
+        {
+          "label": "cna.com.tw（台股收盘）",
+          "url": "https://www.cna.com.tw/news/afe/202611030281.aspx"
+        },
+        {
+          "label": "yna.co.kr（韩综）",
+          "url": "https://en.yna.co.kr/view/AEN20261103008500320"
+        },
+        {
+          "label": "news.rthk.hk（亚市收盘）",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1876397-20261103.htm"
+        },
+        {
+          "label": "finance.yahoo.com（ES=F）",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        },
+        {
+          "label": "finance.yahoo.com（BZ=F／CL=F／GC=F）",
+          "url": "https://finance.yahoo.com/quote/BZ=F/"
+        },
+        {
+          "label": "cnbc.com（债／油语境）",
+          "url": "https://www.cnbc.com/2026/11/03/us-treasury-yields-bonds.html"
+        }
+      ]
+    },
+    {
+      "id": "1103晚-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Claude Code：--bare 真能关掉项目 hooks，但默认 -p 还没换过去",
+      "time": "2026-11-03T15:00:00+08:00",
+      "summary": "闲逛接上午那条：官方 headless 页写死——加 `--bare` 才跳过 hooks、skills、自定义命令、子代理、插件、MCP、auto memory 和 CLAUDE.md；队友 `~/.claude` 里的 hook、项目 `.mcp.json` 都不会读。不加的话，`claude -p` 仍像交互会话一样发现并加载它们，而且不弹工作区信任框、也不问每个 MCP 服务器。文档还说 `--bare` 将成 `-p` 的默认。半敞口：`--add-dir` 仍会从该目录 `.claude/skills/` 装技能（commands／agents 仍跳过）。组织侧另有 `allowManagedHooksOnly`：只跑托管 hooks，用户／项目／本地／插件 hooks 被挡；`disableAllHooks` 从下面关不掉托管 hooks。",
+      "relevance": "假安全的「补丁层」：逃生口写在文档里了，但 CI 不显式 `--bare` 时，上午那扇「信任对话框前就跑」的门还开着；而 `--add-dir` 说明 bare 也不是绝对真空。",
+      "sources": [
+        {
+          "label": "Run Claude Code programmatically · bare mode",
+          "url": "https://code.claude.com/docs/en/headless"
+        },
+        {
+          "label": "Hooks reference · allowManagedHooksOnly / disableAllHooks",
+          "url": "https://code.claude.com/docs/en/hooks"
+        },
+        {
+          "label": "Deploy managed settings",
+          "url": "https://code.claude.com/docs/en/managed-settings"
+        }
+      ]
+    },
+    {
+      "id": "1103晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Shop MCP：买家确认写在说明书里，complete_checkout 仍是一次工具调用",
+      "time": "2026-11-03T15:05:00+08:00",
+      "summary": "闲逛接上午 Shopify 开正规门：`shop.dev` 写 `complete_checkout`「只能在购物者批准之后」——先看最新 checkout、只在 `ready_for_complete` 继续、展示商家／件数／总额／支付方式并让人亲手选一档、绝不代选默认、只发一次。WebMCP 页更直白：WBA 和 `ready_for_complete` 都不等于授权。可是服务器 Shop MCP 这条路上，确认是 agent 侧纪律，不是商家再弹一次人机闸；拿到 `payment.instruments`（可含 credential）的无头 agent，若跳过「给真人看一眼」仍可照样调用。浏览器 Checkout WebMCP 偶发 `buyer_review_required`／`continue_url` 才把人拽回页面——两扇门硬度不一样。",
+      "relevance": "协作底线的下一刀：平台开的是「协议要求你先问人」的门，不是「API 强制有人点过」的锁；无头路径上，信任又滑回 harness 会不会真问。",
+      "sources": [
+        {
+          "label": "Carts and checkout · complete_checkout",
+          "url": "https://shop.dev/docs/checkout"
+        },
+        {
+          "label": "Checkout WebMCP · complete_checkout caution",
+          "url": "https://shopify.dev/docs/agents/carts-and-checkout/checkout-webmcp"
+        },
+        {
+          "label": "Shop MCP transactions reference",
+          "url": "https://mcp.shop.com/references/transactions.md"
+        }
+      ]
+    },
+    {
+      "id": "1103晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "MCP 规范：禁止把客户端令牌原样转给上游",
+      "time": "2026-11-03T15:10:00+08:00",
+      "summary": "闲逛旁路：MCP 授权安全页（2026-07-28）写死——服务器必须校验令牌是发给自己的；若还要调上游 API，须另用上游授权服务器发的令牌，「MUST NOT pass through the token it received from the MCP client」。客户端还须带 RFC 8707 `resource`，把受众钉死。对照上午 Traefik：网关 OBO 只转发／剥 Authorization、真正换票在 MCP 服务器——产业底线正在写成「禁止令牌直通」，防的是混淆代理，不是再加一层好看的 UI。",
+      "relevance": "基础设施承压下的协作底线：门禁若只做转发，等于把客户端令牌借给了另一出戏；规范已经点名这种戏不许演。",
+      "sources": [
+        {
+          "label": "MCP Authorization Security Considerations",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security-considerations"
+        }
+      ]
+    },
+    {
+      "id": "1103晚-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-03",
+      "summary": "这段时间没有。本窗已扫 AP Elections（House／Senate／何时知控制权）、CNBC、RTHK；美国期中选举为 11/3 投票日，截稿时 AP 尚未对参众两院控制权作出可写定局的投影／认证；美伊／中东紧张与油价互动已写入股市油价段，不另开国际主条。乌俄警报 App、币安提现分期等已报线不重复。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1103晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "西湖等：用大白话描述功能，16B 模型 Pinal 直接设计出能干活的蛋白；Nature",
+      "time": "2026-10-21",
+      "summary": "换赛道——自然语言蛋白设计，不是 AI 榜单也不是盘面（近刊分别是磁珠假肢、钙钛矿叠层、纳米超晶格、分子电机、氨催化、内辐射带、火星玫瑰石、航煤细菌）。Nature 署 10 月 21 日；西湖大学／港科大广州／中科院深圳先进院等。模型 Pinal（约 160 亿参数）在约 17 亿合成标注的蛋白–文本对上训练，把功能意图连到序列／结构。实验四类任务均见预期功能：荧光蛋白、PET 水解酶、醇脱氢酶、代谢 H-protein；两款设计酶均见催化活性。未经迭代实验优化时，一款 H-protein 在多酶 CO₂ 固定路径里，产物滴度相对对应的天然大肠杆菌 H-protein 提高约 1.7 倍。权重／推理开源语境：Hugging Face westlake-repl/Pinal；完整预训练语料因双重用途风险不公开全量，文称训练结构侧取自 AFDB、未含病毒蛋白质组。仍是论文＋开源入口，不是明天就能点菜做药。",
+      "relevance": "这是「聊天就能点菜」的蛋白设计——和你常跟的大模型能力线同一类跃迁，但落在生物功能上：四类实验都做出了功能，比又一篇发版声明更有动手证据。",
+      "sources": [
+        {
+          "label": "nature.com",
+          "url": "https://www.nature.com/articles/s41586-026-11205-z"
+        }
+      ]
+    }
+  ]
+}
