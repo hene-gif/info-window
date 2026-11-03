@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "id": "1103中",
+  "date": "2026-11-03",
+  "slot": "中",
+  "title": "11月3日 · 中",
+  "items": [
+    {
+      "id": "1103中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI：下一轮内部安全冲刺（联合 Cathedral），漏洞赏金中位区间平均抬到约 4 倍以上；核心产品严重漏洞最高约 3 万美元",
+      "time": "2026-11-03T10:29:00+08:00",
+      "summary": "相对早刊只收同日 LifeVal（旁注 Grid／Git）、未等到安全姿态官宣：官网署 11 月 2 日两文；官 X 线程约台北 10:29（晚于早刊截稿）宣布下一轮内部 security sprint——与 Cathedral Systems 合作，外部研究员用 OpenAI 模型与自家团队一起压测防御。同步重做 Security Bug Bounty：中／高／严重档中位区间平均 >4×；ChatGPT／Codex／API 等核心资产严重档最高约 3 万美元；例外级最高仍约 10 万美元，叠加质量／忠诚／优先战役奖金后示例可达约 17.2 万美元。未决报告按新表计；过去 30 天已发奖金若按新表更高则补差。另提 Daybreak 六个月约 10 亿美元补贴前线防御方用量。≠ 新 frontier 权重；≠ 已确认对外实害 exploit。本窗亦扫过 @AnthropicAI @GoogleDeepMind @metaai @deepseek_ai @Alibaba_Qwen、@elonmusk（产品向无新发版）、@sama @demishassabis @karpathy @dotey；anthropic.com/news、alignment.anthropic.com、blog.google／DeepMind blog、x.ai、ai.meta.com/blog、DeepSeek／Qwen 站与 releases——确无其他 frontier 发版／权重；Anthropic 仅 Residency 招聘不单开；早刊已报 Message Threads／S-1 Q3／LifeVal 不重复。",
+      "relevance": "早刊漏的不是又一张榜，是 OpenAI 把「谁来压测自己」和「赏金值不值得挖」一起抬高——对你判断各厂安全姿态，比人事新闻更硬。",
+      "sources": [
+        {
+          "label": "openai.com（security sprint）",
+          "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai"
+        },
+        {
+          "label": "openai.com（bug bounties）",
+          "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
+        },
+        {
+          "label": "x.com/OpenAI（主帖）",
+          "url": "https://x.com/OpenAI/status/2117444048227123277"
+        },
+        {
+          "label": "x.com/OpenAI（续：追溯补差）",
+          "url": "https://x.com/OpenAI/status/2117444049900654743"
+        }
+      ]
+    },
+    {
+      "id": "1103中-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "补报：Google／GTIG 拆除 XCPE——Videostrong 固件预装后门，逾 130 万 Android TV 机顶盒编入僵尸网络",
+      "time": "2026-11-03",
+      "summary": "相对早刊安全空栏未点名本条：GTIG 文署 11 月 2 日；Krebs 文尾美东 Nov 2 约 21:24（≈台北 11-03 10:24，晚于早刊）。Google Threat Intelligence Group 高置信度认定 OEM／ODM Videostrong 故意在固件预装 x.cpe／com.oemservice 级后门，售卖给联盟方加载广告欺诈、住宅代理（AppSalt／Honeygain、NetNut、Linkfog 等）及其他恶意模块；Google 已切断对 Videostrong 的认证合作并采取法律行动下架 C2，另切断关联模块 C2，估额外影响逾千万设备。多数感染为 Android TV 机顶盒，亦见远程医疗／卡拉 OK／数字标牌等 IoT。后门常驻 system／oem，普通卸载易回装。≠ 新 AI 模型洞；住宅代理供应链与 AI 爬取流量有弱关联，主叙事是供应链实害。本窗亦扫过 Wiz、CrowdStrike、Microsoft Security、CISA 与 X 近窗（prompt injection／AI scam／jailbreak）；不重复 VOLTA、Black October、VAPOR PANDA／ARTEX、Bankrbot Morse、Cursor 插件后门；Playwright／Langflow 等未确认野外部署不采。",
+      "relevance": "买过杂牌／灰色渠道 Android TV 机顶盒的：别指望「卸载一个 App」清干净；优先换可信品牌设备、打开 Play Protect，别装「共享闲置带宽换钱」类应用。",
+      "sources": [
+        {
+          "label": "cloud.google.com／GTIG（XCPE）",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet"
+        },
+        {
+          "label": "krebsonsecurity.com",
+          "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/"
+        },
+        {
+          "label": "bleepingcomputer.com（转述）",
+          "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/"
+        }
+      ]
+    },
+    {
+      "id": "1103中-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚市半日：台股近午约 43519（−3.12%）失守 4.4 万；韩综约 −3.3%；上证午盘 −0.71%；恒指午盘约 +0.52%；日经休市；美期平、油企稳",
+      "time": "2026-11-03T12:20:00+08:00",
+      "summary": "相对早刊「美股周一已收、日股文化日休市、韩综开约 −2.5%、台沪港现货未开」：亚市半日已成型——台股近午约 43518.5（−1401.6／−3.12%，相对昨收 44920.14），盘中失守 4.4 万，报道低点曾至约 43359；韩综约 5663.18（−195.9／−3.34%），相对开盘约 −2.5% 午前加深；上证午盘 3612.09（−0.71%），深成 −0.16%、创业板 −0.94%；恒指午盘约 23512（+0.52%）逆势翻红。日经现货文化日继续休市，指向昨收 63081.86（−0.33%）。欧股现货对本窗仍未开（约台北 16:00），指向周一 DAX 25981／CAC 8048／FTSE 10761。美股现金仍为周一收（标普 7541.40／纳 25164.32／道 51983.98），不重写新收盘；美期约 ES 7567（约 −0.1%）、NQ 28152（约 +0.09%）。油价周一暴跌后企稳：Brent~104.9、WTI~96.8；金期货回吐至约 3938 一带（勿与周一结算 3956.90 混写）；10Y 约 4.89–4.91%。主线：科技／半导体外溢卖压 vs 油价缓和预期。≠ 宣称「全球已全面反转」或「台股已收」。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "早刊还在等开盘，中刊已能看见台韩半日杀跌有多深、港股却翻红——别把美期当美股收盘，也别把油价企稳读成科技股已止跌。",
+      "sources": [
+        {
+          "label": "hk.finance.yahoo.com（^TWII）",
+          "url": "https://hk.finance.yahoo.com/quote/%5ETWII/"
+        },
+        {
+          "label": "cna.com.tw（台股盘中）",
+          "url": "https://www.cna.com.tw/news/afe/202611030061.aspx"
+        },
+        {
+          "label": "sedaily.com（韩综）",
+          "url": "https://www.sedaily.com/article/20109555"
+        },
+        {
+          "label": "cnfin.com（上证午盘）",
+          "url": "https://m.cnfin.com/yw-lb/zixun/20261103/4490199_1.html"
+        },
+        {
+          "label": "sina.com.cn（恒指午评）",
+          "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-03/doc-inixmnqe2392897.shtml"
+        },
+        {
+          "label": "cnbctv18.com（油价）",
+          "url": "https://www.cnbctv18.com/market/commodities/crude-oil-prices-brent-wti-us-iran-peace-talks-strait-of-hormuz-war-houthis-saudi-bab-al-mandeb-west-asia-20025397.htm"
+        },
+        {
+          "label": "news.rthk.hk（亚盘／债）",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1876341-20261103.htm"
+        }
+      ]
+    },
+    {
+      "id": "1103中-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Claude Code：信任对话框挡的是 allow，挡不住 hooks",
+      "time": "2026-11-03T09:00:00+08:00",
+      "summary": "闲逛观察：官方权限页写得很清楚——项目 `.claude/settings.json` 里的 `permissions.allow` 和 `additionalDirectories` 要等你点过工作区信任才生效；但同表另一行：settings 里的 hooks、`env`、`apiKeyHelper`，以及项目 skill 的 hooks／`allowed-tools`，在「只信了父目录」或 `claude -p`／SDK（根本不弹信任框）时照样跑。非交互还会不经询问接上 `.mcp.json` 里的服务器。CSO Online 11-02 把这点钉成评审问题：Markdown 技能卡在 PR 里常被当 README 看，而 `allowed-tools` 官方说信任从不门禁它。",
+      "relevance": "假安全又一种长相：你以为「信任对话框」是整扇门，其实它只锁了放权那一半，执行路径（hooks／助手命令／skill 工具表）在对话框之前就活着。",
+      "sources": [
+        {
+          "label": "Configure permissions · Project allow rules and workspace trust",
+          "url": "https://code.claude.com/docs/en/permissions"
+        },
+        {
+          "label": "CSO Online · Who approves the files…",
+          "url": "https://www.csoonline.com/article/4242707/who-approves-the-files-that-control-your-ai-coding-assistant.html"
+        }
+      ]
+    },
+    {
+      "id": "1103中-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Traefik MCP Gateway：OBO 只转发头，TBAC 三层必须写进同一条规则",
+      "time": "2026-11-03T09:05:00+08:00",
+      "summary": "闲逛观察：Hub 文档（11-02 更新）把职责切得很薄——网关在 OBO 里只做一件事：转发或剥掉 Authorization；真正 RFC 8693 换票是上游 MCP 服务器的事。TBAC 是任务／工具／交易三层，但政策是「第一条命中就定生死」：若三层各写一条 `allow`，过了任务层就放行，工具和交易层根本轮不到。必须用 `&&` 合成一条，默认 `deny`。再叠三重门（AI／MCP／API），任一层单独站着都不够。",
+      "relevance": "门禁半盖的工程版说明书：产品页上的「三重门＋TBAC」看起来齐了，落地时一刀切错规则顺序，就只剩半扇门。",
+      "sources": [
+        {
+          "label": "MCP Gateway Best Practices",
+          "url": "https://doc.traefik.io/traefik-hub/mcp-gateway/guides/mcp-gateway-best-practices"
+        },
+        {
+          "label": "Understanding TBAC",
+          "url": "https://doc.traefik.io/traefik-hub/mcp-gateway/guides/understanding-tbac"
+        }
+      ]
+    },
+    {
+      "id": "1103中-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "购物／银行：外面的 agent 被挡，平台自己的通道在开",
+      "time": "2026-11-03T09:10:00+08:00",
+      "summary": "闲逛观察：Amazon 挡 Meta Muse 等第三方代购，JPMorgan 等大行挡「拿客户凭证登录代操作」——可读余额（Plaid 一类）可以，转账付款不行；Dimon 原话是 liability transfer。对照 Shopify Fall '26：店面默认挂 WebMCP 结构化工具，另有 `mcp.shop.com` 服务端 MCP，下单要买家确认 `complete_checkout`。同一条 agent 商业线，一边收「接入税」、一边开正规门——争的不只是安全，是谁握客户关系与数据。",
+      "relevance": "协作底线正在变成议价：挡的是别人的 agent，不是 agent 这件事本身；开放的那扇门写着买家确认和自有协议。",
+      "sources": [
+        {
+          "label": "CNBC · JPMorgan, Amazon resisting AI bots",
+          "url": "https://www.cnbc.com/2026/11/01/jpmorgan-amazon-ai-agents-meta-muse.html"
+        },
+        {
+          "label": "Shopify Fall '26 Edition for developers",
+          "url": "https://www.shopify.com/news/fall-26-edition-developer"
+        },
+        {
+          "label": "Shop MCP changelog",
+          "url": "https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp"
+        }
+      ]
+    },
+    {
+      "id": "1103中-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-03",
+      "summary": "这段时间没有。本窗已扫 AP Elections 结果页／选情直播入口、RTHK／CNBC TV18／Axios 语境下的美伊外交与油价、以及周末以来地缘头条；美国期中选举为 11/3 投票日，截稿时尚无认证／可写定局的官方结果；美伊「愿谈」已写入股市油价段，不另开国际主条。乌俄警报 App、币安提现分期等已报线不重复。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1103中-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "MIT：肌肉里两颗磁珠，假肢读意图比贴皮电极更稳；Nature Sensors",
+      "time": "2026-10-29",
+      "summary": "换赛道——神经假肢接口／磁测量，不是 AI 榜单也不是盘面（近刊分别是纳米超晶格、钙钛矿叠层、分子电机、氨催化、内辐射带、火星玫瑰石、航煤细菌）。MIT News 署 10 月 29 日；论文 Nature Sensors。旧做法用皮肤表面肌电（EMG）猜肌肉意图，信号会衰减、串扰、怕出汗。新做法 magnetomicrometry：在肌肉里植入成对约 3 mm 磁珠（钕铁硼＋金＋聚对二甲苯涂层），体外传感器无线读间距变化，直接得肌肉长度与速度（可深至约 6 cm）。3 名膝下截肢受试者对照中，虚拟踝足控制任务里磁接口比表面／植入电极 EMG 更准更稳。仍是小样本人因证明，不是明天药店有卖。",
+      "relevance": "假肢几十年靠「听皮肤上的电噪音」猜你想怎么动——这组人改成在肉里放两颗芝麻磁珠，直接量肌肉拉了多长、多快，走路意图读得更稳。",
+      "sources": [
+        {
+          "label": "news.mit.edu",
+          "url": "https://news.mit.edu/2026/magnetic-sensors-track-muscle-movement-better-prosthetic-limb-control-1029"
+        }
+      ]
+    }
+  ]
+}
