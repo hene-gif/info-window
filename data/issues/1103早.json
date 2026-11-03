@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "id": "1103早",
+  "date": "2026-11-03",
+  "slot": "早",
+  "title": "11月3日 · 早",
+  "items": [
+    {
+      "id": "1103早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic Messages API「Message Threads」公测：长对话后续只发新消息；Claude Code 上 50 万–100 万 token 请求中位首 token 约快 35%",
+      "time": "2026-11-02",
+      "summary": "相对晚刊只写 Managed Agents harness／vault、未报 Messages API 产品动作：Claude Platform 发版说明（署 11 月 2 日）开放 beta `message-threads-2026-08-12`——服务端暂存对话，后续请求只送新消息；线程在末次请求后约 5 分钟过期，最迟约 1 小时删除。覆盖 Claude API、Claude Platform on AWS、Anthropic 托管的 Google Cloud Claude、Microsoft Foundry。ClaudeDevs：Claude Code 已接；500K–1M token 请求中位 TTFT 约降 35%；长对话请求体中位约 800 KB→1.8 KB。价格／限速仍按整段对话计 token，≠ 省钱，≠ 新权重。本窗亦扫过 @OpenAI @AnthropicAI @GoogleDeepMind @metaai @deepseek_ai @Alibaba_Qwen、@elonmusk（产品向无新发版）、@sama @demishassabis @karpathy @dotey；openai.com/index、anthropic.com/news、blog.google／DeepMind blog、x.ai、ai.meta.com/blog、DeepSeek／Qwen 站与 releases——Google／xAI／Meta／Qwen 本窗无 frontier 权重或实验室 GA；DeepSeek Harness Creator Mode 仅为预览插件生成，不单开。",
+      "relevance": "Agent／长上下文干活的真实痛点常是「每次把整段对话再推一遍」的延迟与带宽；这条是 Anthropic 把会话状态收到服务端的产品刀，不是又一张榜。",
+      "sources": [
+        {
+          "label": "platform.claude.com（release notes）",
+          "url": "https://platform.claude.com/docs/en/release-notes/overview"
+        },
+        {
+          "label": "x.com/ClaudeDevs（Threads）",
+          "url": "https://x.com/ClaudeDevs/status/2117332449382510884"
+        },
+        {
+          "label": "x.com/ClaudeDevs（续：体量）",
+          "url": "https://x.com/ClaudeDevs/status/2117332451231956997"
+        }
+      ]
+    },
+    {
+      "id": "1103早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 修订 S-1 补 Q3：营收约 170 亿美元（环比约 +47%）；算力／基建承诺合计约 8954 亿美元；披露接近 RSI 监控门槛",
+      "time": "2026-11-02",
+      "summary": "相对 Oct 26 初版 S-1 已报过招股故事：CNBC 称周一（美东）修订 Form S-1 补第三季——九个月营收约 332.4 亿美元（同比约 +1200%）；Q3 约 170 亿美元（同比约 +1127%），环比增速约 47%（相对 Q2 约 144%、Q1 约 132% 明显放缓）。Q3 净亏损约 232.9 亿美元；九个月净亏约 1040 亿美元（多记公允价值变动）。采购／租赁承诺合计约 8954 亿美元，「几乎全部」与算力基建相关；其后 12 个月约 698 亿美元到期（Reuters／Investing 转述）。≥10 万美元 TTM 客户逾 1.19 万（相对 2025 年末逾 1500）。TechCrunch：风险因素增补——已用 AI 参与研发且可能接近内部 RSI 定义，但称尚未越过；考虑更新 RSP 保持人控。≠ 新模型发版；≠ 复述初版招股叙事。署时约美东上午，晚于晚刊截稿。",
+      "relevance": "看修订版比看「又递交一次」更要紧：增速从三位数环比往下走、近万亿美元级算力承诺，以及他们自己写进风险因素的 RSI 措辞——这才是招股书对市场定价真正动手的地方。",
+      "sources": [
+        {
+          "label": "cnbc.com（S-1 Q3）",
+          "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html"
+        },
+        {
+          "label": "investing.com（Reuters 转述）",
+          "url": "https://www.investing.com/news/stock-market-news/anthropics-quarterly-loss-shrinks-revenue-jumps-ahead-of-blockbuster-ipo-4992139"
+        },
+        {
+          "label": "techcrunch.com（RSI 措辞）",
+          "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+        }
+      ]
+    },
+    {
+      "id": "1103早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 发 LifeVal：按日常刚需任务测个人助手（问卷约 3995 人）",
+      "time": "2026-11-02",
+      "summary": "晚刊截稿时 openai.com／news 仍多停在 10-30；官网 index 署 11 月 2 日上线 LifeVal——按育儿、政务、理财、购物等日常任务评个人助手，调查源自 ATUS／国际时间使用研究＋约 3995 人代表性问卷；页面展示多任务高分示例（约 90–100%，展示用）。官 X 约台北 11-03 01:27 转发。定位推动 ChatGPT 从聊天到能办事。≠ 新 frontier 权重；同日另有 Grid Protectors（佐治亚试点至多约 1000 MW 柔性减载）与 Scaling Git 工程文，不单开。",
+      "relevance": "榜单之外又多一把「日常能不能办事」的尺子；对你看产品线，比又一张 coding 榜更接近普通人会不会续订。",
+      "sources": [
+        {
+          "label": "openai.com/index/lifeval",
+          "url": "https://openai.com/index/lifeval/"
+        },
+        {
+          "label": "x.com/OpenAI",
+          "url": "https://x.com/OpenAI/status/2117307611338997846"
+        }
+      ]
+    },
+    {
+      "id": "1103早-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-03",
+      "summary": "这段时间没有达「实害／须行动」门槛的新主条。已扫：Wiz、Mandiant／GTIG、CrowdStrike、Microsoft Security、Krebs、CISA 与 X 近窗线索；确无新条目。不重复上期／晚刊已报的 Cisco Talos VOLTA、Wiz Black October、VAPOR PANDA／ARTEX、Bankrbot Morse、Cursor 插件后门。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1103早-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周一收：标普 −0.51%、纳 −1.07%、道 +0.41%；Brent −7.6%；亚早日股休市、韩综开约 −2.5%，台沪港现货未开",
+      "time": "2026-11-03T08:18:00+08:00",
+      "summary": "相对晚刊「亚收＋美现金未开、Brent~108、金~3897、10Y~4.91%」：周一美股现金已收——标普 7541.40（−38.67／−0.51%）、纳指 25164.32（−272.68／−1.07%）、道指 51983.98（+213.67／+0.41%）；费半（SETN 转述）约 10328.33（−3.37%）。Brent 结算约 104.77 美元／桶（−7.63%），WTI 约 96.46（−7.36%）；叙事含美伊外交缓和预期。COMEX 金结算约 3956.90 美元／盎司（+1.83%）；美十债收益率回落至约 4.87% 一带（相对晚刊~4.91%）。周二亚早：日本文化日现货休市（日经 225 期货开盘报道约 62905，约 −0.43%）；韩综开 5715.19（−143.89／−2.46%，相对前收约 5859）；台股／上证／港股现货截稿时尚未开盘（台 09:00、沪港约 09:30）——指向昨收台股 44920、上证约 3638、恒指约 23393；台指期夜盘约 −917 点。欧股现货对本窗仍未开。≠ 宣称「全球已全面反转」。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "故事拆两半：油大跌和债金回落是「缓和预期」在定价；纳指／费半仍被 AI 资本开支疑虑压着。亚早先看韩综低开与台指期夜盘，别把未开盘的台沪港写成今日收盘。",
+      "sources": [
+        {
+          "label": "cnbc.com（美股／油）",
+          "url": "https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "finance.yahoo.com（AP 美股收盘）",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-212103580.html"
+        },
+        {
+          "label": "asiae.co.kr（韩综开盘）",
+          "url": "https://www.asiae.co.kr/en/article/2026110309012720043"
+        },
+        {
+          "label": "setn.com（台指期／费半）",
+          "url": "https://www.setn.com/news/1932503"
+        },
+        {
+          "label": "goldseek.com（COMEX 金）",
+          "url": "https://goldseek.com/article/comex-gold-settles-183-higher-395690"
+        }
+      ]
+    },
+    {
+      "id": "1103早-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Judgment Labs：真味是生产轨迹上的 judge 标签当索引",
+      "time": "2026-10-30T09:00:00+08:00",
+      "summary": "闲逛观察：已知失败用 online judge 盯，未知问题靠 Issues 挖；跟 Entire Trails 同一条底（门禁／理由），一个在仓里、一个在线上。Cursor Annotate 把「用句子描空间」换成「指一下」，日文推说「右移 5px」常歪，正中要害。",
+      "relevance": "你还在刷产品发版时，这条是人机共管的底：门禁与理由放哪，比吞吐榜更决定敢不敢放手。",
+      "sources": [
+        {
+          "label": "Judgment Labs · Agent Judge",
+          "url": "https://www.judgmentlabs.ai/blogs/agent-judge-solving-long-context-evaluations"
+        },
+        {
+          "label": "Judges 概览",
+          "url": "https://docs.judgmentlabs.ai/documentation/judges/overview"
+        }
+      ]
+    },
+    {
+      "id": "1103早-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-03",
+      "summary": "这段时间没有。本窗已扫 AP Elections／Axios 期中选举、CNBC·Reuters 美伊外交与油价、周末地缘头条；美国期中选举尚在投票、无认证结果可写；美伊「愿谈」已写入股市油价段，不另开国际主条。乌俄警报 App、币安提现分期等已报线不重复。",
+      "relevance": "",
+      "sources": []
+    },
+    {
+      "id": "1103早-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "MIT：连接分子越软，纳米粒子反而能拼出新晶体；Nature Materials",
+      "time": "2026-11-02",
+      "summary": "换赛道——纳米组装／设计材料，不是 AI 榜单也不是盘面（近刊分别是钙钛矿叠层、分子电机、氨催化、内辐射带、火星玫瑰石）。MIT News 署 11 月 2 日；论文 Nature Materials（Breaking symmetry in nanoparticle superlattices via spontaneous valency，DOI 路径 s41563-026-02787-0）。旧教条要粒子间「连接配体」做硬、对准方向；Macfarlane 组把配体做得极软并带电荷，靠近时自己弯、自己决定连几个邻居（自发价态），用粒径＋链长调配位数，做出更稀、对称性更低、以前少见的超晶格。仍是实验室组装方法学，不是明天能量产的神奇材料。",
+      "relevance": "做材料的人喊了二十年「连接要硬」，这组人把连接做成橡皮筋——软到乱指也能自己排好队，反而拼出更稀奇的纳米积木；光子／催化／医药设计材料多一条路。",
+      "sources": [
+        {
+          "label": "news.mit.edu",
+          "url": "https://news.mit.edu/2026/flexible-new-route-designer-materials-from-nanoparticles-1102"
+        },
+        {
+          "label": "nature.com（Nature Materials）",
+          "url": "https://www.nature.com/articles/s41563-026-02787-0"
+        }
+      ]
+    }
+  ]
+}
