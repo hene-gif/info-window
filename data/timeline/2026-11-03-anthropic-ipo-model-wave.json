@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "id": "2026-11-03-anthropic-ipo-model-wave",
+  "date": "2026-11-03",
+  "title": "各家模型挤在 Anthropic IPO 窗口期轰炸注意力",
+  "summary": "能看见的影响，是大家把新一代模型的测试视频、灰测痕迹和发版预期，都挤进 Anthropic IPO／招股书修订这一小段窗口里轰炸注意力：闭源旗舰还没集体官宣出货，公共讨论已经按「IPO 周换代」在排座次。Claude 侧是 Fable／Mythos 5.5 的页面漏字与对比 demo；OpenAI 侧是 Codex 里的 gpt-6.2-astra 痕迹，加上鹈鹕骑车等视频互捅；Gemini 线在第三方比价／评测里冒出 Gemini 3 Pro Image 一类名字；DeepSeek 则是产业链消息称 V5 拟用昇腾做预训练、节奏指向 2027。对照轴是 Grok：现役仍停在已发布的 4.7，马斯克 10 月 30 日承认 Grok 4.8「比预期久」、不冲榜冲有用——同一窗口里，几家在预热上抢镜，Grok 明确更难按时挤进来。记的是 IPO 窗口期的注意力挤兑与预期同步，不是已集体出货；真官宣后再升格各厂条目。同一时间线上可对照 10-26 招股书：一边摊开闭源有多强、托着芯片信心，一边把「下一刀模型」也塞进同一段市场叙事。",
+  "related": [],
+  "sources": [
+    {
+      "label": "sec.gov（Anthropic S-1/A）",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm",
+      "date": "2026-11-02"
+    },
+    {
+      "label": "x.com/xiax0603（Fable／Astra 对比测试帖）",
+      "url": "https://x.com/xiax0603/status/2117621628763025410",
+      "date": "2026-11-03"
+    },
+    {
+      "label": "x.com/TokenGremlin（自称 Astra 生成视频）",
+      "url": "https://x.com/TokenGremlin/status/2117591011388010548",
+      "date": "2026-11-03"
+    },
+    {
+      "label": "theindependentai.com（release week 核对：痕迹真、confirmed 过火）",
+      "url": "https://theindependentai.com/hype-or-fact/claude-mythos-5-5-gpt-6-2-release-week",
+      "date": "2026-11-02"
+    },
+    {
+      "label": "advanceintelligence.ai（马斯克：Grok 4.8 比预期久）",
+      "url": "https://www.advanceintelligence.ai/story/2026-10-30-03",
+      "date": "2026-10-30"
+    }
+  ]
+}
