@@ -166,7 +166,7 @@
 
 ## `data/columns/<id>.json`
 
-文件名就是专栏 id。`version`、`id`、`date`、`title`、`summary` 与目录里的那一条一致。`body` 按阅读顺序排列。观点必须单独成节，`label` 写成 `观点`。仓库里现成的一篇是 [`data/columns/专栏-1.json`](data/columns/专栏-1.json)。
+文件名就是专栏 id。`version`、`id`、`date`、`title`、`summary` 与目录里的那一条一致。`body` 按阅读顺序排列。观点必须单独成节，`label` 写成 `观点`。下面是一篇的形状，id 形如 `专栏-1`。
 
 ```json
 {
