@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "id": "1104晚",
+  "date": "2026-11-04",
+  "slot": "晚",
+  "title": "11月4日 · 晚",
+  "items": [
+    {
+      "id": "1104晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "腾讯混元发布 Hy4：首次加入视觉与电脑操控（CLI／GUI），上架腾讯云／OpenRouter／元宝等；权重与 system card 计划随后开源",
+      "time": "2026-11-04",
+      "summary": "官网文署 Nov 4；@TencentHunyuan 原帖约 06:43Z（≈台北 14:43，晚于中刊）。相对 Hy4 preview，官方称大幅扩展预训练与后训练，首次加入视觉感知（细粒度图像／复杂图表）与 computer use（CLI＋GUI；专项训练含 Blender、CAD 及跨应用长程任务），并强调金融办公、前端／游戏、科研与长程助手等生产力场景。现已可通过 Tencent Cloud、OpenRouter 及 CodeBuddy、WorkBuddy、Yuanbao、ima 等产品使用；API 价相对 preview 不变（Cached input $0.042／Input $0.834／Output $2.501 per million tokens）。官方写「计划开源模型权重」并与 vLLM／SGLang 合作，届时再发 system card——截至本窗权重仓未出，勿写成「已开源全量权重」。团队亦写明与顶尖闭源仍有明显差距，并预告近窗 Hy4 flash。TechNode 等二手称约 770B；一手官网正文未核到该数字，主条不作官宣参数。本窗亦扫过 @elonmusk（严选 0：选举／meme 与 Grok Bot shopping 背书旧功能，非公司级新发版）、@OpenAI @AnthropicAI @GoogleDeepMind @xai（API 未授权改扫 x.ai＋Elon）@MetaAI @deepseek_ai @Alibaba_Qwen、@sama @demishassabis @karpathy @dotey；openai.com／anthropic.com／news／alignment、blog.google／DeepMind blog、x.ai、ai.meta.com/blog、DeepSeek／Qwen 站与 releases——七厂确无新 frontier 发版／权重／权威基准；中刊 Google K-12、早刊 physical engineering／Claude managed auth／FlashProve／Antigravity 不重复；Kimi K3.1 Pro「今日开权重」仍无官库，标传闻不采。",
+      "relevance": "中国头部旗舰正式版：视觉＋computer use 第一次进混元主线，API 当日就能用——别把「计划开源」听成「权重已经躺在 GitHub」。",
+      "sources": [
+        {
+          "label": "Tencent Hy · Introducing Hy4",
+          "url": "https://hy.tencent.ai/research/hy4"
+        },
+        {
+          "label": "@TencentHunyuan",
+          "url": "https://x.com/TencentHunyuan/status/2117870250838630539"
+        }
+      ]
+    },
+    {
+      "id": "1104晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "Bitdefender：3AM 勒索击中英国学区，约 37 台主机被加密；厂商解读为「人＋agentic loop」混合攻击（具体模型未证实）",
+      "time": "2026-11-03",
+      "summary": "相对中刊 Lovable／早刊 GitBook（不重复）：Bitdefender 博客署 2026-11-03——3AM（ThreeAM）affiliate 入侵英国一所学校集团（约 47 台设备可见），窃备份／凭据、建后门域管、拉通多域信任，最终加密约 37／近 50 可达主机。作者把命令节奏（约 40–100 秒重试、小改再换工具、编号脚本）读成 hybrid：人定目标、模型／agentic loop 干机械重试；并明确写明未拿到攻击者本机，不能确认具体模型／是否本地运行／是否有人手动复制粘贴——AI 参与是 working model 而非铁证。工具面多为 LOTL＋公开工具＋商品 encryptor。BleepingComputer 等同日转述。≠ 新模型洞；≠ 已证实哪家 frontier 模型下场。已扫 Wiz／Mandiant／CrowdStrike／Microsoft Security／Krebs／CISA 检索与 X 近窗；不重复 Lovable、GitBook、Aur0ra／GOLD OGRE、ARTEX／WorkOS、VAPOR PANDA、Black October、Bankrbot、CrowdStrike×Cowork、XCPE／Videostrong、GTIG LLMJacking；Binance 巨额＋「内部 AI」X 摘要仍无交易所／执法一手，不采。",
+      "relevance": "勒索还是老套路（备份、域管、关杀软），只是动手阶段更像「人指挥＋自动重试」——家里／公司照样：备份离线不可改、域管别乱共用、每台机装好防护、别留无人管的跳板机。",
+      "sources": [
+        {
+          "label": "Bitdefender · 3AM hybrid AI attack",
+          "url": "https://www.bitdefender.com/en-us/blog/businessinsights/3am-ransomware-hybrid-ai-attack"
+        },
+        {
+          "label": "BleepingComputer 转述",
+          "url": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/"
+        }
+      ]
+    },
+    {
+      "id": "1104晚-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "ChatGPT 反复推荐假 T3 Code 下载站（像素级克隆）；真站为 t3.codes",
+      "time": "2026-11-04",
+      "summary": "同栏第二条（普通人须立刻可做）：用户报告问 ChatGPT「T3 Code 下载」被指向 t33.codes 等像素级克隆（称约两周前注册），真站为 t3.codes。t3.gg 作者 Theo 11-04 发帖确认：假站被 ChatGPT 反复推荐，原因未查清；后续称假站 X 账号已封、站点曾下线／受限，但 ChatGPT 仍可能继续推荐。属「AI 搜索／推荐当钓鱼入口」，非经典入侵。一手为当事人＋受害用户 X 帖，非独立安全厂商长报告。本窗亦扫过上条所列安全固定源，无其他达「实害／须行动」门槛的新主条。",
+      "relevance": "问 AI「下什么软件」时，别直接点它给的链接——先对官方域名或应用商店，差一个字母就是骗局。",
+      "sources": [
+        {
+          "label": "@theo 确认假站被推荐",
+          "url": "https://x.com/theo/status/2117859423641272589"
+        },
+        {
+          "label": "@theo 后续",
+          "url": "https://x.com/theo/status/2117871365378457728"
+        }
+      ]
+    },
+    {
+      "id": "1104晚-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚市全日修复：台收 42949（−0.83%）半日深跌后收复；韩综 +0.62% 翻红；日经 −1.42%；沪深港大涨；欧盘中约 +1.1%～+1.5%；美现金未开、期货自中刊深幅回升翻红；金≈4053（+2.8%）",
+      "time": "2026-11-04T19:25:00+08:00",
+      "summary": "相对中刊（亚市半日台≈42024/−3%、韩≈−3.5%、日经≈−4.4%、上证午−0.1%、恒近平、美期标普≈−1.2%纳≈−2.1%；油 Brent≈103.01／WTI≈95.39；金≈3954；10Y 周二收 4.952%）：亚市全日收已成型——台股收 42948.91（相对周二收 43307.54 ≈ −0.83%），半日约 −3% 后尾盘收复，仍失守 4.3 万上方；韩综收 5683.80（+35.01／+0.62%）vs 昨收 5648.79，全日翻红；日经收 62188.63（−893.23／−1.42%）vs 前一交易日收 63081.86，盘中低见约 60030 后回抽。上证全日 3686.17（+2.16%）、深成 11335.69（+4.22%）、恒生 23919.50（+1.67%）。欧市对本窗为盘中（约台北 19:10＝伦／德约 11:10）：FTSE≈10758（约 +1.13%）、DAX≈26248（约 +1.48%）、CAC≈8135（约 +1.43%），勿写成收盘。美股现金周三尚未开盘（开盘约台北 22:30），仍指向周二收（标普 7568.92／+0.36%、纳 25372.01／+0.83%、道 51786.72／−0.38%）；期货自中刊深幅回升翻红：ES≈7676（约 +1.0% vs 周二结算）、NQ≈28582（约 +0.9%）。油略软：Brent≈102.42、WTI≈95.47；金 GC≈4052.6（日约 +2.8%）；10Y 仍为周二现金收 4.952%（美债现货未开）。主线：亚市科技卖压尾盘修复＋中港强反弹 vs 美现金尚未开盘。≠ 写成美股已收或欧市已收。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "中刊还停在半日杀跌和美期深挫，晚刊已能看见台韩日收盘怎么收、沪深港怎么翻、美期又怎么抽回来——别把期货翻红当成美股收盘，也别把欧股盘中红写成已结算。",
+      "sources": [
+        {
+          "label": "Yahoo ^TWII",
+          "url": "https://finance.yahoo.com/quote/%5ETWII/"
+        },
+        {
+          "label": "Yahoo ^KS11",
+          "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        },
+        {
+          "label": "Yahoo ^N225",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS／399001.SZ／^HSI",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／BZ=F／CL=F／GC=F／^TNX／^FTSE／^GDAXI",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        }
+      ]
+    },
+    {
+      "id": "1104晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Postman：打开 API 客户端，就改了 Claude／Codex 的信任面",
+      "time": "2026-11-04T15:00:00+08:00",
+      "summary": "闲逛撞到今天 X 上吵得很响的一条：Postman 桌面版日志里出现 auto-existing-upgrade，随后 Claude Code／Codex 被装上自家插件；Codex 的 session-start hook 还被写入 trusted_hash。官方安装文档写得很直——「The installer approves the hook for you」；GitHub #14370 里报告人贴了配置与安装器源码路径（approvePostmanHook）。没有证据说外传数据，刺点在别处：agent 的「信任／同意」若只是本机可写的配置文件，别的 App 升级也能替你点同意。",
+      "relevance": "人机共管副作用换皮：大家防的是模型乱来，实际风险也可能是旁边那个正常软件，在改你的 agent 配置。",
+      "sources": [
+        {
+          "label": "Postman Docs · Install into detected agents（installer approves hook）",
+          "url": "https://learning.postman.com/docs/postman-plugin/install/detected-agents"
+        },
+        {
+          "label": "GitHub · postman-app-support#14370",
+          "url": "https://github.com/postmanlabs/postman-app-support/issues/14370"
+        },
+        {
+          "label": "DEV · frankchu 复盘",
+          "url": "https://dev.to/frankchu/postman-installed-itself-into-codex-and-claude-e38"
+        }
+      ]
+    },
+    {
+      "id": "1104晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Claude Code：官方已有 --safe-mode，CI 仍在推会掐 OAuth 的 --bare",
+      "time": "2026-11-04T15:05:00+08:00",
+      "summary": "接上午「--bare 与订阅 OAuth 对不上」。Anthropic 工程师在 #38022 结案：要「跳过 hooks／MCP／CLAUDE.md 但保留 OAuth／钥匙串」，用 `--safe-mode`；`--bare` 仍要 API key。CLI 参考页两边都写清了。可 headless／Actions 页继续主推 `--bare`＋`CLAUDE_CODE_OAUTH_TOKEN` 那条便宜认证叙事，官方 action 也仍靠你自己在 `claude_args` 里加 `--bare`，不会默认替你选 safe。逃生口开了第三扇门，说明书还在推会踩雷的那两扇。",
+      "relevance": "假安全再加一层：产品里其实有「干净上下文＋订阅登录」的正确组合，公开 CI 路径却继续把人往文档对撞口送。",
+      "sources": [
+        {
+          "label": "CLI reference · --safe-mode / --bare",
+          "url": "https://code.claude.com/docs/en/cli-reference"
+        },
+        {
+          "label": "claude-code#38022（官方结案指 safe-mode）",
+          "url": "https://github.com/anthropics/claude-code/issues/38022"
+        },
+        {
+          "label": "Headless · bare mode",
+          "url": "https://code.claude.com/docs/en/headless"
+        }
+      ]
+    },
+    {
+      "id": "1104晚-7",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "MCP gateway：从默认架构缩成过渡补丁，控制面要搬回 IdP",
+      "time": "2026-11-04T15:10:00+08:00",
+      "summary": "旁路读 NewCore 长文（2026-10-01）：早期 gateway 是协议缺身份／审计／开关时的实用补丁；OAuth 2.1＋企业托管授权（EMA）把决策推回 IdP，平台自己的连接器治理和标准遥测也在吃掉网关的活。文中点名网关常诱出规范已禁的 token passthrough，还会变成「第二政策引擎」跟 IdP 漂开。他们自己仍留 gateway 端点，但只执行身份决策、不当决策源。对照 X 上还有人把「能说不」的网关当默认中心——中心正在搬家，半盖风险跟着搬家。",
+      "relevance": "基础设施承压下的协作底线：门禁搬家时，若旧层还以为自己是中心，就容易只盖一半。",
+      "sources": [
+        {
+          "label": "NewCore · The MCP Gateway Had a Good Run",
+          "url": "https://newcore.com/blog/mcp-gateway"
+        },
+        {
+          "label": "MCP Authorization Security（禁令牌直通）",
+          "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security-considerations"
+        }
+      ]
+    },
+    {
+      "id": "1104晚-8",
+      "section": "国际重大影响",
+      "title": "AP：民主党拿下众议院与参议院，取得国会两院控制权",
+      "time": "2026-11-04",
+      "summary": "相对中刊空栏（当时 AP 尚未正式 call 控众院／参院）：本窗 AP 主稿与 live 已明确结算——民主党赢得众议院与参议院控制权，形成对特朗普与共和党执政的广泛反弹。主稿更新约 2026-11-03 深夜～11-04 凌晨美东（Updated 12:57 AM MST Nov 4）。AP 说明文称：与近年「控院拖数日」不同，此次答案较快落定。可观察格局变化：立法否决／调查权回到民主党国会多数手中（具体议事日程仍待会期）。他网投影不单独作源；本条以 AP 主稿／live 为准。美伊／中东与油价互动已写入股市油价段，不另开国际主条。",
+      "relevance": "美国国会谁说了算变了——后面关税、科技监管、对华／中东相关拨款，都会先过这道「蓝多数」关。",
+      "sources": [
+        {
+          "label": "AP：Democrats win House and Senate",
+          "url": "https://apnews.com/article/midterm-election-house-senate-democrats-republicans-trump-f126e12e05b579a327b98481c0ae2226"
+        },
+        {
+          "label": "AP midterm live",
+          "url": "https://apnews.com/live/midterm-election-2026"
+        },
+        {
+          "label": "AP：何时知国会控制权",
+          "url": "https://apnews.com/article/when-ap-calls-congress-control-9dae62cdd7d776a20a26eab6fbd9b12c"
+        }
+      ]
+    },
+    {
+      "id": "1104晚-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "WHO：六项气候健康行动，模型估算每年可少约 160 万例死亡、万亿级收益",
+      "time": "2026-11-04",
+      "summary": "换赛道——气候×公共卫生政策／全球健康经济账，不是 AI 榜单也不是盘面（近刊分别是 SER-155、Cornell 半导体、Pinal 蛋白、磁珠假肢、钙钛矿叠层）。WHO 新闻稿署 2026-11-04：报告 Global benefits and costs of prioritized actions on climate change and health。六项已有工具：高温健康预警；气候韧性饮用水；基本卫生设施；洗手／卫生设施；更清洁的炊事与取暖家用能源；更有效的化石燃料定价（含取消低效补贴与合理征税）。模型估算：全球规模化后每年可避免约 160 万例死亡；每年约 3.9 万亿美元经济福利收益、另约 5.4 万亿美元财政收益；五项合计约每投入 1 美元回报约 24 美元；化石燃料定价单项估算防约 120 万死亡。并称可避免约 167 亿吨 CO₂e（口径为不含 LULUCF 的全球年排放约 31%）。发布时机对准 COP31 前。≠ 「明天立刻少死 160 万」的实测账，是 WHO 模型推演＋政策菜单。",
+      "relevance": "天气越极端，医保和财政越贵——WHO 算的是：高温预警、干净水、清洁炉灶、少补贴脏燃料这些「已经会做的事」，合在一起可能每年少死一百多万人，还比硬扛气候冲击更省钱。",
+      "sources": [
+        {
+          "label": "WHO 新闻稿",
+          "url": "https://www.who.int/news/item/04-11-2026-six-climate-and-health-actions-could-save-1.6-million-lives-and-deliver-trillions-in-benefits-each-year"
+        }
+      ]
+    }
+  ]
+}
