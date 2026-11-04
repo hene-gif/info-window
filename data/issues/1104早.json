@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "id": "1104早",
+  "date": "2026-11-04",
+  "slot": "早",
+  "title": "11月4日 · 早",
+  "items": [
+    {
+      "id": "1104早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI：用 GPT-6／Astra／Codex 加速实体工程；侧项目一周做出可通话 Codex 的原型机；扩大 Chip Ganassi Racing，新合作 Mazda",
+      "time": "2026-11-04T02:56:45+08:00",
+      "summary": "相对晚刊未见实体工程官宣：官网 Research 署 11 月 3 日；@OpenAI 主帖 18:56Z（台北 11-04 02:56，晚于 1103晚截稿）。演示：两人侧项目用 GPT-6 定需求，Astra 做外观／外壳／PCB／固件并接 Codex，约一周出可通话 Codex 的原型；代工厂约一个月小批；量产仍要多轮人工校公差与装配。内部硬件／基建自二月起 CAD／制图／仿真／评审 token 用量约增 23 倍。BenchCAD 2.0：某内部新模型均分约 0.875，对 Astra 最高推理约 0.594（重建 3D 零件／组件与电路连接）。产业：扩大与 Chip Ganassi Racing 把 3D 扫描转可编辑 CAD／2D 制图；新与 Mazda 气动／碰撞安全做设计仿真。≠ 新 frontier 权重正式发版；≠ 已量产消费硬件；文末征集工程／制造合作。本窗亦扫过 @elonmusk（产品向无新发版，严选 0）、@AnthropicAI @GoogleDeepMind @metaai @deepseek_ai @Alibaba_Qwen、@sama @demishassabis @karpathy @dotey；openai.com/news、anthropic.com/news、alignment、blog.google／DeepMind blog、x.ai、ai.meta.com/blog、DeepSeek／Qwen 站与 releases——Meta／xAI／DeepSeek／Qwen 确无 frontier 发版／权重；同窗另条：Claude 企业托管授权、【补报】FlashProve、【补报】Antigravity 化学信息学。",
+      "relevance": "过夜窗七厂主栏最硬官宣：把多模态／computer-use 推到机械电气制造工作流，有对标数字和车队／车厂合作，不是纯招聘或传闻。",
+      "sources": [
+        {
+          "label": "openai.com",
+          "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world"
+        },
+        {
+          "label": "x.com/OpenAI",
+          "url": "https://x.com/OpenAI/status/2117692475775258785"
+        }
+      ]
+    },
+    {
+      "id": "1104早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Claude Team／Enterprise：企业托管授权上线——管理员一次开通插件后，员工登录自动连 MCP（IdP 托管 GA；Claude 签发 beta）",
+      "time": "2026-11-04T02:09:42+08:00",
+      "summary": "相对晚刊无企业授权产品条：@ClaudeDevs 约 18:09Z（台北 02:09）；Help Center「Auto-connect your organization’s apps」近窗更新。面向 Team／Enterprise：管理员为组织开通连接器后，成员首次登录自动继承，免逐个 OAuth 同意屏。两种身份源——IdP-managed（需 SSO，如 Okta）已一般可用；Claude-issued（Claude 作可信签发方、按邮箱匹配）为 beta。Claude-issued beta 插件举例：Amplitude、Apollo.io、Atlassian、Datadog、Dropbox、Figma、Granola、HubSpot、Linear、Mixpanel、Notion、PagerDuty、Semrush、Supabase（Help 文 IdP 路径另列更多）。个人 Free／Pro／Max 不在范围。≠ 新权重；anthropic.com/newsroom 本窗无对等标题，经 ClaudeDevs＋官方文档核实。",
+      "relevance": "企业 agent／MCP 把授权从「每人点允许」改成组织级供给——控制面产品动作，和昨晚 Cowork×Falcon 同一条「本地／企业 agent 怎么管」缝。",
+      "sources": [
+        {
+          "label": "Claude Help Center",
+          "url": "https://support.claude.com/en/articles/15537633-auto-connect-your-organization-s-apps-to-claude"
+        },
+        {
+          "label": "claude.com docs · Enterprise Managed Auth",
+          "url": "https://claude.com/docs/connectors/building/enterprise-managed-auth"
+        },
+        {
+          "label": "x.com/ClaudeDevs",
+          "url": "https://x.com/ClaudeDevs/status/2117680635561312732"
+        }
+      ]
+    },
+    {
+      "id": "1104早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Anthropic 开源 FlashProve：zkSNARK 可证明推理原型；单 H100 约 110 tok/s 证 Llama 4 Maverick（研究文署 11-02）",
+      "time": "2026-11-02",
+      "summary": "补报：研究页 Published Nov 2, 2026，1103晚应可见未收；@AnthropicAI 放大帖约 20:10Z 已在晚刊截稿后。对 Llama 4 Maverick（400B MoE、4-bit）单 H100 约 110 tok/s 出证明，约 19 MB／1024-token 请求；相对 vLLM 约 70–95× GPU 时间。叙事：防聊天劫持／替换模型、给评测方核对「测的是不是服务中同一权重」；隐藏权重、不藏架构。开源：代码／Lean 顶层证明／协议说明（Apache 2.0）；研究原型非生产 GA。≠ 新 Claude 权重发版。",
+      "relevance": "可证明推理从「口号」变成能开源复现的原型——和你盯的安全／忠心议题同轴：用户怎么确认对面真是那组权重。",
+      "sources": [
+        {
+          "label": "anthropic.com/research/provable-inference",
+          "url": "https://www.anthropic.com/research/provable-inference"
+        },
+        {
+          "label": "GitHub anthropics/FlashProve",
+          "url": "https://github.com/anthropics/FlashProve"
+        },
+        {
+          "label": "x.com/AnthropicAI",
+          "url": "https://x.com/AnthropicAI/status/2117710942826123294"
+        }
+      ]
+    },
+    {
+      "id": "1104早-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】DeepMind：Antigravity 化学信息学 Skills——LLM 编排＋RDKit／ChEMBL／PubChem；文署 11-03，晚刊漏扫",
+      "time": "2026-11-03",
+      "summary": "补报：deepmind.google/blog 文署 November 3, 2026；晚刊 lab 表写 DeepMind 无新发版，属漏扫。在 Antigravity 装 Science 插件可用；LLM 编排，RDKit／ChEMBL／PubChem 等确定性工具落地。演示：肺癌相关化合物检索、匹配分子对、效力模型、提出刚性大环与合成路线（约一小时量级叙事）。向 1 万名合格科学家提供最高用量档 6 个月免费（滚动入选／资格与容量限制）。文亦提醒：设计是可测假设不是成药。≠ 新 Gemini 权重。",
+      "relevance": "平衡补上 Google／DeepMind：不是榜单发版，是把 agent 工作台接到化学信息学工具链——科学家侧「少刷官网」该看见的那条。",
+      "sources": [
+        {
+          "label": "deepmind.google/blog",
+          "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+        },
+        {
+          "label": "deepmind.google/discover/blog",
+          "url": "https://deepmind.google/discover/blog/"
+        }
+      ]
+    },
+    {
+      "id": "1104早-5",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "GitBook 遭 AI agent 定向攻击：11-02 基础设施凭证被未授权访问；11-03 恢复并要求轮换令牌、重认证 MCP",
+      "time": "2026-11-03T23:21:00+08:00",
+      "summary": "官方 status 署 11 月 3 日 16:21 CET（≈台北 23:21，晚于 1103晚截稿）：称遭「使用 AI agents」的高度定向攻击；11-02 19:00 CET 攻击者取得部分基础设施凭证，GitBook 称立即检出并阻断，曾下线应用与需认证文档站。恢复后称攻击者可能触及：集成令牌、Git Sync 密钥、API 令牌、访客向 GitBook Assistant 提问内容；称未发现托管内容被篡改证据。用户须：轮换 GitBook API 令牌（个人令牌已全部作废）、轮换接入 GitBook 的第三方密钥／已发布集成密钥；若用 GitBook MCP 须重新认证。完整事后报告称将随后发布。已扫 Wiz、Mandiant／GTIG 线索、CrowdStrike、Microsoft Security、Krebs、CISA 与 X 近窗；不重复 XCPE／Videostrong、VOLTA、Black October、VAPOR PANDA／ARTEX、Bankrbot、CrowdStrike×Cowork 产品集成。GTIG「LLMJacking」11-02 文（窃云／LLM 钥刷账单）本窗不升主条——偏企业账单实害、普通人无统一立刻动作。CISA 11-03 WordPress Core 入 KEV 非 AI 相关，本栏不主开。",
+      "relevance": "普通人／小团队：若用过 GitBook API、第三方集成或 GitBook MCP，按官方清单轮换密钥并重连 MCP；别把「文档站恢复」当成令牌还安全。",
+      "sources": [
+        {
+          "label": "gitbook.com status",
+          "url": "https://www.gitbook.com/status/security-incident-2026-11-03"
+        },
+        {
+          "label": "Decrypt 交叉",
+          "url": "https://decrypt.co/382465/crypto-docs-gitbook-ai-agent-security-breach"
+        }
+      ]
+    },
+    {
+      "id": "1104早-6",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周二收：标普 +0.36%、纳 +0.83%、道 −0.38%；欧股全日收弱；日经复市早盘略低；油回落金回升、10Y 约 4.95%",
+      "time": "2026-11-04T08:19:00+08:00",
+      "summary": "相对晚刊（美现金未开、欧仅盘中、日休、油 Brent≈105.54／WTI≈97.75、金≈3915、10Y≈4.89–4.92%）：美股周二（11/3）已收——标普 7568.92（+27.52／+0.36%）；纳 25372.01（+207.65／+0.83%）；道 51786.72（−197.26／−0.38%）。截稿 E-mini 标普期（ES=F）约 7605（+0.11%）。欧股 11/3 全日收——Stoxx 600 约 646.38（−0.5%）；Stoxx50 约 6144.56（−0.51%）；DAX 约 25874（−0.42%）；CAC 约 8031（−0.21%）；FTSE 100 收 10638.43（−122.90／−1.14%）。日经：文化日休市结束，周三已开；早盘约 62928（−0.24%），昨收仍指 63081.86。台／港／A 今日常规盘截稿尚未开；韩综仍指 11/3 收——台 43307.54（−3.59%）、韩 5648.79（−3.59%）、上证 3608.10（−0.82%）、恒指 23525.97（+0.57%）。油：CNBC 称周二结算 Brent≈103.60、WTI≈96.09（相对晚刊盘中回落）；金约 3946；10Y 收 4.952%。主线：选情未定局下科技股反弹、欧收弱、油自晚刊高位回吐。≠ 写成亚市已全日收。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "晚刊还缺的美现金收盘和欧全日收齐了；日经复市早盘可以对照亚开情绪，油金债数字更新扫一眼就够。",
+      "sources": [
+        {
+          "label": "CNBC（美股收＋油结算）",
+          "url": "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "AP（美股收盘）",
+          "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-95ac47c160dba546cbbdf72c10010e2c"
+        },
+        {
+          "label": "Morningstar／Dow Jones（FTSE）",
+          "url": "https://www.morningstar.com/news/dow-jones/202611038951/ftse-100-index-ends-114-lower-at-1063843-data-talk"
+        },
+        {
+          "label": "Borsa Italiana（欧股收）",
+          "url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/finance/dettaglio/europe-shares-end-lower-amid-ai-middle-east-uncertainty-nRC_03112026_1807_667182344.html?lang=en"
+        },
+        {
+          "label": "Yahoo ^N225",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo ES=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        },
+        {
+          "label": "cna.com.tw（台股昨收）",
+          "url": "https://www.cna.com.tw/news/afe/202611030281.aspx"
+        }
+      ]
+    },
+    {
+      "id": "1104早-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-04",
+      "summary": "这段时间没有达「可写定局／明确重大格局变化」的独立主条。已扫 AP midterm live、elections 2026 hub、Senate results、「何时知国会控制权」说明文：11/3 投票后截稿时 AP 已有个别席位 call，但尚未投影或认证众议院／参议院整体控制权。美伊／中东与油价互动已写入股市油价段，不另开国际主条。乌俄警报 App、币安提现分期等已报线不重复。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "AP midterm live",
+          "url": "https://apnews.com/live/midterm-election-2026"
+        },
+        {
+          "label": "AP elections 2026 hub",
+          "url": "https://apnews.com/projects/elections-2026/"
+        },
+        {
+          "label": "AP：何时知国会控制权",
+          "url": "https://apnews.com/article/when-ap-calls-congress-control-9dae62cdd7d776a20a26eab6fbd9b12c"
+        }
+      ]
+    },
+    {
+      "id": "1104早-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "康奈尔：带宽隙破 7 eV 的铝镓氧化物半导体，还做出二极管和晶体管；Nature",
+      "time": "2026-11-03",
+      "summary": "换赛道——功率／材料，不是 AI 榜单也不是盘面（近刊分别是 Pinal 蛋白、磁珠假肢、钙钛矿叠层、纳米超晶格、分子电机、氨催化、内辐射带、火星玫瑰石、航煤细菌）。Cornell Chronicle 署 11 月 3 日；论文 Nature 2026-10-07。硅掺杂铝镓氧化物带宽隙超过 7 eV（此前同类超宽禁带记录约 6 eV；更宽往往更像绝缘体）。亚氧化物分子束外延低温掺硅；室温导电率称比同档先前报道高出逾 1 亿倍。合作方做成二极管与场效应管 AlphaFET；蓝宝石衬底便于量产语境。作者称有望用于电动车／电网功率电子、数据中心电源及真空紫外光电等；缺陷仍多，实用化还需改进。",
+      "relevance": "跟「AI 要电、功率器件要扛更高电压」同一条基础设施缝：不是又一个聊天模型发版，而是材料端把「能不能扛高压又少浪费」往前推了一截。",
+      "sources": [
+        {
+          "label": "Cornell Chronicle",
+          "url": "https://news.cornell.edu/stories/2026/11/cornell-semiconductor-sets-record-widest-bandgap"
+        }
+      ]
+    }
+  ]
+}
