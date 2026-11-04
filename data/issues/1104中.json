@@ -1,0 +1,176 @@
+{
+  "version": 1,
+  "id": "1104中",
+  "date": "2026-11-04",
+  "slot": "中",
+  "title": "11月4日 · 中",
+  "items": [
+    {
+      "id": "1104中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Google：K-12 学生账号默认关闭 Gemini／Notebook／Classroom 内 Gemini／Search，须管理员显式开启；Classroom 全球上线 Guided Learning，Search 本月试点",
+      "time": "2026-11-03",
+      "summary": "补报：blog.google Education 署 Nov 3, 2026（Chris Phillips）；早刊 Google／DeepMind 只收 Antigravity 化学信息学，漏掉这条教育控制面。听完学校／教师／研究者／政策反馈后更新管控——Gemini、Gemini Notebook、Gemini in Classroom、Google Search 对 K-12 学生账号将完全默认关闭，直到管理员显式打开；具体 rollout 细节「未来几个月」再告知学校。产品：Guided Learning（引导式提问、逐步拆解、不直接给终答）扩到 Google Classroom（文称 starting today 全球可用）与 Google Search（本月起部分美国学校试点，再扩区）。≠ 新 Gemini frontier 权重。本窗亦扫过 @elonmusk（≥早刊截稿无帖，产品向严选 0）、@OpenAI @AnthropicAI @GoogleDeepMind @metaai @deepseek_ai @Alibaba_Qwen、@sama（仅「人应掌控未来」立场帖，非发版）、@demishassabis @karpathy @dotey；openai.com／anthropic.com／news／alignment、blog.google／DeepMind blog、x.ai、ai.meta.com/blog、DeepSeek／Qwen 站与 releases——七厂确无新 frontier 发版／权重；Kimi K3.1 Pro「今日开权重」仅博文承诺 by Nov 4、官库未见，标传闻不采；早刊已报 physical engineering／Claude managed auth／FlashProve／Antigravity 不重复。",
+      "relevance": "不是又一张榜，是学校侧把「默认开 AI」改成「默认关、管理员才开」——你盯的过度限制／忠心议题，在教育产品上先变成控制面动作。",
+      "sources": [
+        {
+          "label": "blog.google（Education）",
+          "url": "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/"
+        }
+      ]
+    },
+    {
+      "id": "1104中-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "Lovable 无代码 AI 应用大规模暴露用户数据：15.9 万项目扫描，大量未登录可读邮箱／护照／聊天",
+      "time": "2026-11-03",
+      "summary": "相对早刊安全主条 GitBook（不重复）：Crissy Field 与 Handelsblatt 合作调研（Handelsblatt 德文报 11-02；英文研究报告更新数字；India Today 等 11-03 转述）。扫描约 159,041 个 Lovable 项目，其中 34,545 用 Supabase；24,664 站加载即吐库表，进一步只读请求后 7,403 站／10,560 表可见邮箱（约 30% 样本，作者称非全库泄漏率）。严重个例：德国生活论坛逾 8 万档案＋逾 20 万条聊天；餐厅／活动票务含支付与票码；物业邮件摘要；逾千条含护照号／国籍的证件记录；另有合同、发票、相册、内部 WhatsApp、单案约 28 万封客户邮件等。成因多指向 Supabase RLS 未配／过宽与可复用集成模式，非经典「入侵」。Lovable 条款把应用与数据处理责任放客户侧。≠ 新模型洞；≠ 已证实大规模滥用。已扫 CISA（WordPress Core 入 KEV 非 AI，本栏不主开）、Microsoft Security 假下载活动（非 AI）、Wiz／Mandiant／CrowdStrike／Krebs 检索与 X 近窗；不重复 GitBook、XCPE／Videostrong、VOLTA、Black October、VAPOR PANDA／ARTEX、Bankrbot、CrowdStrike×Cowork、GTIG LLMJacking。",
+      "relevance": "用 AI 一键搭的小网站如果数据库默认「谁都能读」，护照和聊天会直接挂网上——上线前先关掉公开读、开行级权限，别把「平台好用」当成「已经帮你锁好」。",
+      "sources": [
+        {
+          "label": "Crissy Field 研究报告",
+          "url": "https://www.crissyfield.de/research/lovable-en/"
+        },
+        {
+          "label": "India Today 转述",
+          "url": "https://www.indiatoday.in/technology/news/story/ai-app-maker-lovable-apps-expose-personal-details-researchers-find-thousands-of-cases-3031369-2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "1104中-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚市半日：台股近午约 42024（≈−3.0%）失守 4.3 万；韩综约 −3.5%；日经约 −4.4% 加深；上证午盘 −0.1%；恒指近平；美期标普约 −1.2%、纳约 −2.1%",
+      "time": "2026-11-04T12:20:00+08:00",
+      "summary": "相对早刊（美周二已收、欧弱全日、日经早段约 62928/−0.24%、台／韩／A／港指向昨收、油 Brent≈103.60／WTI≈96.09、金≈3946、10Y≈4.952%）：亚市半日已成型——台股近午约 42024（相对早刊核实周二收 43307.54 ≈ −2.96%），盘中低见约 41873，失守 4.3 万一带；韩综约 5449（−199.7／−3.54%）vs 昨收 5648.79；日经约 60286（−4.43%）vs 昨收 63081.86，相对早段明显加深；上证午盘休市戳约 3604（−0.10%）vs 昨收 3608.10；恒指约 23529，相对周二收 23525.97 近平。欧股现货对本窗仍未开（约台北 15:00–16:00），指向周二 DAX 约 25865（−0.45%）。美股现金仍为周二收（标普 +0.36%／纳 +0.83%／道 −0.38%），不重写新收盘；美期约 ES 7505（−1.21%）、NQ 27710（−2.10%）。油续软：Brent≈103.01、WTI≈95.39；金 GC≈3954；10Y 仍为周二现金收 4.952%（美债现货未开）。主线：亚市科技／半导体卖压加深 vs 港股相对抗跌。≠ 写成亚市已全日收或美现金新收盘。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "早刊还停在昨收和日经早段，中刊已能看见台韩日半日杀跌有多深、美期也跟着下挫——别把期货当美股收盘，也别把港股近平读成科技股已止跌。",
+      "sources": [
+        {
+          "label": "Yahoo ^TWII",
+          "url": "https://finance.yahoo.com/quote/%5ETWII/"
+        },
+        {
+          "label": "Yahoo ^KS11",
+          "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        },
+        {
+          "label": "Yahoo ^N225",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ^HSI",
+          "url": "https://finance.yahoo.com/quote/%5EHSI/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／BZ=F／CL=F／GC=F／^TNX／^GDAXI",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        }
+      ]
+    },
+    {
+      "id": "1104中-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Claude CI：官方推 --bare，又推订阅 OAuth，两套对不上",
+      "time": "2026-11-04T09:00:00+08:00",
+      "summary": "闲逛接昨天「CI 模板是否默认 --bare」。Headless 页写死：CI／脚本该加 `--bare`（以后还要成 `-p` 默认），且 bare「从不读 OAuth／钥匙串」。GitHub Actions 页另一边又把 `CLAUDE_CODE_OAUTH_TOKEN` 当正统认证选项；官方示例 workflow 也没带 `--bare`，还会从 checkout 读 CLAUDE.md／skills／插件。Backgrind 实测：`--bare` + 假 OAuth 环境变量＝「Not logged in · Please run /login」，根本没打到 API；去掉 bare 才会 401。要安全可复现就得 API key（或 federation）；死咬订阅 token 就得卸 bare，等于把仓库 hooks／`.mcp.json` 又放回来。shipmunks 模板也只好写成「有 API key 才加 --bare」。",
+      "relevance": "假安全的「官方文档对撞」：逃生口和便宜认证各写在一页，合在一起 CI 要么登不进去，要么又读上项目侧配置。",
+      "sources": [
+        {
+          "label": "Run Claude Code programmatically · bare mode",
+          "url": "https://code.claude.com/docs/en/headless"
+        },
+        {
+          "label": "Claude Code GitHub Actions",
+          "url": "https://code.claude.com/docs/en/github-actions"
+        },
+        {
+          "label": "Backgrind · Headless Claude Code on GitHub Actions",
+          "url": "https://backgrind.com/blog/run-a-coding-agent-in-ci/"
+        }
+      ]
+    },
+    {
+      "id": "1104中-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Headless CI：dontAsk 拒光工具仍 exit 0，绿灯盖住「什么都没做成」",
+      "time": "2026-11-04T09:05:00+08:00",
+      "summary": "同场闲逛撞到更刺的一刀：无人在环时 `--permission-mode dontAsk` 会把本该弹框的调用直接拒掉，会话从不挂起——但 `-p` 把「跑完」报成成功。Backgrind 测到：无 allowlist 时 agent 被拒 Bash／Edit，工作树字节级未动，仍 exit 0、`is_error: false`、`subtype: \"success\"`，花了约 38 美分写完「我被挡了所以停了」。下一段若只看有没有 diff，就会跳过提交、整 job 绿灯。真正该闸的是 JSON 里的 `permission_denials` 长度，不是退出码。",
+      "relevance": "人机共管副作用：交互态「等人」在 CI 变成「静默拒绝」；成功语义盖住权限失败，比挂死更难发现。",
+      "sources": [
+        {
+          "label": "Backgrind · Wall two: nobody is there to approve",
+          "url": "https://backgrind.com/blog/run-a-coding-agent-in-ci/"
+        },
+        {
+          "label": "Claude Code headless docs",
+          "url": "https://code.claude.com/docs/en/headless"
+        }
+      ]
+    },
+    {
+      "id": "1104中-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Shop MCP：instrument 可含 credential，文档只说「别打进日志」",
+      "time": "2026-11-04T09:10:00+08:00",
+      "summary": "闲逛接昨天「Shop Pay／instrument 在无头怎么泄漏」。`shop.dev` checkout 页写得很直：真实支付工具对象字段更多，「可以包含 credential」；完成下单时要原样拷贝整段并标 `selected: true`——同时叮嘱「不要打印 instrument，也不要写进日志」；CLI 才给了硬一点的旁路：把对象放进文件或 stdin，免得进 shell history。服务器 Shop MCP 这条路上，买家确认仍是 agent 纪律，credential 脱敏也是 harness 纪律：API 照样把敏感字段交到工具结果里，拦泄漏的不是协议闸，是你会不会真听话。",
+      "relevance": "协作底线下一刀：开放通道把支付凭证形状交到 agent 手里，门禁文案是「请别记下来」——无头路径上，日志／轨迹库才是真正的泄洪口。",
+      "sources": [
+        {
+          "label": "Carts and checkout · complete_checkout",
+          "url": "https://shop.dev/docs/checkout"
+        },
+        {
+          "label": "Shop MCP transactions reference",
+          "url": "https://mcp.shop.com/references/transactions.md"
+        }
+      ]
+    },
+    {
+      "id": "1104中-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-04",
+      "summary": "这段时间没有达「可写定局／明确重大格局变化」的独立主条。本窗已扫 AP midterm live、elections 2026 hub、「何时知国会控制权」说明文，以及 NBC／CBS 等他网「Democrats win House」投影：AP 口径仍是一党满 218 席才 call 控众院，截稿时未见 AP 正式宣布众院或参院控制权；个别参院翻转席位已 call，不等于控院结算。他网投影不升格为本栏定局。美伊／中东与油价互动已写入股市油价段，不另开国际主条。乌俄警报 App、币安提现分期等已报线不重复。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "AP midterm live",
+          "url": "https://apnews.com/live/midterm-election-2026"
+        },
+        {
+          "label": "AP elections 2026 hub",
+          "url": "https://apnews.com/projects/elections-2026/"
+        },
+        {
+          "label": "AP：何时知国会控制权",
+          "url": "https://apnews.com/article/when-ap-calls-congress-control-9dae62cdd7d776a20a26eab6fbd9b12c"
+        }
+      ]
+    },
+    {
+      "id": "1104中-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "Nature Medicine：移植后口服活菌药 SER-155，血流感染相对风险降约 77%",
+      "time": "2026-11-03",
+      "summary": "换赛道——活菌生物药／移植感染防控，不是 AI 榜单也不是盘面（近刊分别是 Cornell 半导体、Pinal 蛋白、磁珠假肢、钙钛矿叠层）。Seres Therapeutics 新闻稿署 11 月 3 日 07:00 ET；Phase 1b（allo-HCT 成人）结果刊于 Nature Medicine 2026-11-03。Cohort 2 随机双盲安慰剂对照：SER-155 组血流感染 10% vs 安慰剂 42.9% → 相对风险降低约 77%（p=0.0423）；全身抗生素暴露天数均值 9.2 vs 21.1（p=0.0494）；总体耐受，无治疗相关严重不良事件报告。机制叙事：加强肠黏膜屏障、减少病原定植与易位。FDA 已给 Breakthrough／Fast Track；Phase 2 方案已与 FDA 对齐，尚待融资推进（公司口径）。≠ 已批准常规用药／明天药店有卖。",
+      "relevance": "骨髓移植后最怕肠道里的菌跑进血流——这颗口服多种活菌药在小样本对照里把血流感染从四成多压到一成，还少打很多天抗生素；说明「修肠屏障」可以是抗感染路线，而不只是再堆新抗生素。",
+      "sources": [
+        {
+          "label": "Seres IR／Nature Medicine 刊讯",
+          "url": "https://ir.serestherapeutics.com/news-releases/news-release-details/seres-therapeutics-announces-publication-ser-155-phase-1b"
+        }
+      ]
+    }
+  ]
+}
