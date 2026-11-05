@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "id": "1105晚",
+  "date": "2026-11-05",
+  "slot": "晚",
+  "title": "11月5日 · 晚",
+  "items": [
+    {
+      "id": "1105晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-05",
+      "summary": "这段时间没有相对中刊达「frontier 发版／权重／权威基准」门槛的新主条。本窗已扫 @elonmusk（严选 0：近窗多为 Grok Bot 试用背书／引用，非公司级新产品发版）、@OpenAI @AnthropicAI @GoogleDeepMind @xai @MetaAI @deepseek_ai @Alibaba_Qwen，以及辅助 @sama @demishassabis @karpathy @dotey；并扫 openai.com/index、anthropic.com/news、blog.google/technology/ai、DeepMind blog、x.ai 公开页、ai.meta.com/blog、DeepSeek／Qwen 站与 releases。OpenAI Images 2.6／收购 Pierre、中刊 Anthropic 芯片路演、早刊已报线不重复；Anthropic 近窗 vault 粒子结构／FlashProve 类研究帖不升格；Qwen4「下周／11 月中」仍属会议转述／传闻，无官方发版页不采。七厂确无新 frontier 权重／权威榜单发版。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "label": "DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/"
+        },
+        {
+          "label": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/"
+        }
+      ]
+    },
+    {
+      "id": "1105晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-05",
+      "summary": "这段时间没有相对中刊达「已确认利用／实害，或 AI 相关且普通人须立刻行动」门槛的新独立核实主条。本窗已扫 Wiz、Mandiant／GTIG、CrowdStrike、Microsoft Security、Krebs、CISA 告警／KEV、相关厂商声明，以及 X 近窗 AI／安全线索：CrowdStrike VAPOR PANDA／ARTEX 续报、GTIG／Mandiant LLMJacking（约 11-02）、LiteLLM／KEV、OpenAI 948 Linux LPE、3AM、假 T3、GitBook、Lovable、CrowdStrike Agentic Emulation 产品向等已报线不重复；无新达门槛独立主条。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "GTIG／Mandiant · LLMJacking（已报线，未升格）",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/"
+        },
+        {
+          "label": "CrowdStrike · Agentic Adversary Emulation（产品向，未升格）",
+          "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agentic-adversary-emulation-counters-ai-enabled-adversaries/"
+        }
+      ]
+    },
+    {
+      "id": "1105晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚市全日收：台≈41575（−3.2%）、韩综≈−5.3%、日经≈−1.8%；恒指≈+3.7%；欧收小红；美现金仍周三、周四盘未开；油自低位反抽、金续坚",
+      "time": "2026-11-05T19:18:00+08:00",
+      "summary": "相对中刊（亚市近午：台≈42204/−1.7%、韩≈−3.7%、日经≈−0.4%、上证近平、恒≈+3.1%；美现金仍周三收标普 7688.62/+1.58%、纳 25736.51/+1.44%、道 53356.12/+3.03%；美期小幅回吐；油 Brent≈93.7／WTI≈86.9；金≈4145；10Y≈4.894%）：亚市全日收已成型——Yahoo 日线指向台收 41574.72（vs 周三收 42948.91 ≈ −3.20%），半日弱后尾盘续软；韩综收 5383.80（≈ −5.28% vs 5683.80）；日经收 61077.90（≈ −1.79% vs 62188.63）；上证收 3689.91（≈ +0.10% vs 3686.17）；恒指收 24796.98（≈ +3.67% vs 23919.50）。欧市全日收：STOXX50 ≈6300.97（约 +0.56% vs 昨）、FTSE ≈10909（约 +0.74%）、DAX ≈26619（约 +0.68%）。美股周四现金盘约台北 22:30 才开，对本窗仍指向周三收，不重写；美期约 ES 7732、NQ 28416（相对周三现金／中刊期货偏稳小幅起伏）。油自中刊低位反抽：Brent≈96.2、WTI≈88.8；金 GC≈4137；10Y 仍为周三现金收约 4.894%。主线：台韩科技权重全日加深 vs 港股续强；欧收温和；美现金尚未有周四结算。≠ 写成美股周四已收。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "中刊还停在亚市半日，晚刊已能看见台韩日全日怎么收、欧怎么结；别把期货当成美股周四收盘，也别把港股强读成亚洲科技已止跌。",
+      "sources": [
+        {
+          "label": "Yahoo ^TWII",
+          "url": "https://finance.yahoo.com/quote/%5ETWII/"
+        },
+        {
+          "label": "Yahoo ^KS11",
+          "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        },
+        {
+          "label": "Yahoo ^N225",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS／^HSI",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／BZ=F／CL=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        }
+      ]
+    },
+    {
+      "id": "1105晚-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Cloudflare：个人 agent 从「一锅粥 bot」拆成可逐个放行的访客",
+      "time": "2026-11-05",
+      "summary": "11-04 官方把「Configure AI bot policies」改名「AI Crawler and Agent access policies」，并给头部 Personal Agents 单独设 Allow／仅广告页 Block／全区 Block。Security Analytics 新增 Personal Assistants 类别与按 agent 过滤的路径／状态码／来源网段；开了 Account Abuse Protection 的站还能把登录挂到「哪个用户的哪个助手」。刺点：站点终于能区分「替真人来比价」和「训练爬虫」，协作底线变成站长议价——但个人 agent 默认继承总 Agents 策略，改总闸会冲掉逐个例外；下一句官方也承认：认出 agent 身份还不够，用户授权／订阅上下文怎么穿过 agent 仍未解。",
+      "relevance": "协作底线／接入议价：挡第三方 agent 之外，CDN 层开始卖「欢迎哪几个助手」；身份认出了，关系上下文还欠。",
+      "sources": [
+        {
+          "label": "Cloudflare Blog · personal agents visibility & control",
+          "url": "https://blog.cloudflare.com/personal-agents-visibility-control/"
+        },
+        {
+          "label": "Changelog · granular Personal Agent policies (2026-11-04)",
+          "url": "https://developers.cloudflare.com/changelog/post/2026-11-04-personal-agent-policies/"
+        },
+        {
+          "label": "Docs · AI Crawler and Agent access policies",
+          "url": "https://developers.cloudflare.com/bots/additional-configurations/block-ai-bots/"
+        }
+      ]
+    },
+    {
+      "id": "1105晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "中期选举：41 张数据中心选票几乎全输给「别建在我家」",
+      "time": "2026-11-05",
+      "summary": "CNBC／Ballotpedia：10 州 41 项与数据中心相关的地方公投，已知结果里除北达科他 Harwood 一项外，选民都站在限制／否决扩建一边；俄亥俄一州就占 21 项。州长／参议员级也绑上同一议题——俄亥俄 Amy Acton 要「有条件暂停」并让中心自付电费＋工会建设，德州 Gina Hinojosa 拿扩建速度打掉 Abbott。对照 Derek Thompson 八月长文：地方怒火常不是怕 ChatGPT，是 NDA、背地协议和电费外溢掏空信任。现象：AI 最大的物理瓶颈从「芯片／电」多了一层「选票」。数字口径不一（Sanders 发帖写 43/44），以 Ballotpedia＋CNBC 的 41 项为准。",
+      "relevance": "基础设施承压的政治面：训练／推理要地要电，地方选票已在改可建地图；模型发版热搜盖不住这层。",
+      "sources": [
+        {
+          "label": "CNBC · Voters rebuff data centers in every measure except one",
+          "url": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html"
+        },
+        {
+          "label": "TechCrunch · after midterms, bigger clash over data centers",
+          "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/"
+        },
+        {
+          "label": "Derek Thompson · The Great American AI Rebellion",
+          "url": "https://www.derekthompson.org/p/why-americans-really-hate-data-centers"
+        }
+      ]
+    },
+    {
+      "id": "1105晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Agent37：$4.76／月沙箱 headline，50 倍差里藏着计费假设",
+      "time": "2026-11-05",
+      "summary": "YC 沙箱商把 2 vCPU／4GB、730 运行小时标到约 $4.76，自家对照表把 Vercel／Cloudflare／Daytona 算到上百美元量级——叙事是「每人常驻一个 agent」只有沙箱够便宜才成立。explainx 核过：数字来自卖方按公开价推演，且常假设对手按满 CPU 忙满月、不含套餐费／积分／模型 token；对方若按 active-CPU 计、agent 大半天在睡，价差会缩甚至翻面。刺点不在谁真便宜，而在「常驻个人 agent」产品幻想把基础设施卷成比价战争，门禁／隔离／模型账单却不在那张漂亮表里。",
+      "relevance": "定价权下一刀：agent 经济性叙事用可比价的沙箱行抢注意力；真正账单与安全边界仍在表外。",
+      "sources": [
+        {
+          "label": "Agent37 · sandbox pricing comparison",
+          "url": "https://www.agent37.com/pricing"
+        },
+        {
+          "label": "explainx · claimed vs verified on the $4.76 headline",
+          "url": "https://explainx.ai/blog/agent37-4-76-month-agent-sandbox-vs-vercel-249-cloudflare-145-daytona-121-claimed-vs-verified-2026"
+        }
+      ]
+    },
+    {
+      "id": "1105晚-7",
+      "section": "国际重大影响",
+      "title": "中国外资安全审查否决 SoftBank 收购 ABB 机器人中国业务；约 54 亿美元交易卡关",
+      "time": "2026-11-05",
+      "summary": "相对中刊国际（巴拉圭 Ueno 处置；不重复）：ABB 11-05 官方新闻稿确认——SoftBank 已告知：中国外商投资安全审查工作机制办公室禁止收购 ABB Robotics 在中国的业务；整笔交易企业价值约 53.75 亿美元（媒体常写约 54 亿），监管审批由 SoftBank 主导；ABB 称双方仍在密切沟通、建设性推进。SCMP／Nikkei／swissinfo 等交叉：中国是 ABB 机器人最大市场之一，上海浦东有大型工厂；FT 等引述背景包括担心机器人生产数据外流、被用于训练 AI（含 SoftBank 重仓的 OpenAI 相关模型）——属报道解读，非审查机关公开全文。今年继 Meta／Manus 之后又一起被拦的重大科技并购。≠ 写成全球交易已彻底取消（官方仍称在谈）；≠ 写成仅日中外交口角。",
+      "relevance": "机器人＋数据＋AI 训练被拧成一条安全审查绳——大额跨境并购就算欧委会过了，中国这块业务被否也能把整单拖进泥潭；看的是「数据出得去吗」，不是又一篇估值八卦。",
+      "sources": [
+        {
+          "label": "ABB 官方新闻稿",
+          "url": "https://new.abb.com/news/detail/140154/update-on-divestment-of-abb-robotics"
+        },
+        {
+          "label": "SCMP",
+          "url": "https://www.scmp.com/business/china-business/article/3373415/china-blocks-softbanks-us54-billion-takeover-abbs-robotics-division"
+        },
+        {
+          "label": "Nikkei Asia",
+          "url": "https://asia.nikkei.com/business/business-deals/china-blocks-softbank-s-5-4bn-deal-for-abb-robotics-division"
+        }
+      ]
+    },
+    {
+      "id": "1105晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "港理工／浙大：钙钛矿电池「晶粒交界电荷不均」才是光老化关键；补一层分子后 T90 超 2200 小时",
+      "time": "2026-11-05",
+      "summary": "换赛道——能源材料，不是生物自驾实验台（近刊分别是癫痫化学遗传、SER-155、磁珠假肢、Nature AutoDNA）。港理工杨光团队联合浙大，论文发于 Watt（校方新闻 11-05）：混合晶面钙钛矿在光照下，(100)／(111) 晶粒交界处空穴在 (111) 侧异常堆积，反而让本来更耐光的 (111) 晶粒先老化。他们用体积较大的 m-F-PEABr 分子堵在晶界填补 FA 空位，电荷损耗两侧趋于平衡；处理后效率约 26.55%，并在约 1 个太阳连续运行逾 2200 小时后仍保持初始效率 90% 以上（T90）。Sungkyunkwan 钙钛矿先驱朴南圭在同刊 research highlight 评价。≠ 屋顶明天就能换钙钛矿板；≠ 新聊天模型发版。",
+      "relevance": "卡商业化的常常不是「发一度电的效率」，而是「晒几年还剩多少」——他们给老化机制多钉了一颗钉子，普通人以后看太阳能新闻可以多问一句寿命实验有没有做到两千小时级。",
+      "sources": [
+        {
+          "label": "港理工新闻稿",
+          "url": "https://www.polyu.edu.hk/rio/news/2026/20261104---polyu-research-uncovers-hidden-cause-of-ageing-in-perovskite/"
+        }
+      ]
+    }
+  ]
+}
