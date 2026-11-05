@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "id": "1105中",
+  "date": "2026-11-05",
+  "slot": "中",
+  "title": "11月5日 · 中",
+  "items": [
+    {
+      "id": "1105中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "The Information：Anthropic 路演拿「Claude 帮做自研芯片」当卖点；约 15 人芯片组已用 Claude，自称比照英伟达／AMD 传统流程能缩短设计时间",
+      "time": "2026-11-03",
+      "summary": "相对早刊（Images 2.6、收购 Pierre；七厂无其他 frontier 发版）：The Information 报道（Dealroom／Investing／Benzinga 等交叉；约 11-03 起传）称 Anthropic 在 IPO 前路演里告诉投资人——约 15 人的自研芯片团队已用 Claude 做工程与设计，工程师按他们自己对英伟达／AMD 传统流程的估时，称能缩短设计时间；具体缩短多少、哪颗芯、有没有 tape-out，稿子未量化。官方未宣布要卖芯片设计工具；算力仍走多供应商（英伟达／AMD／Trainium／TPU）＋自研并行。对照：ChipAgents／Nvidia 基准上 Claude Fable 5.1 分数第一，但绝对分约 16.6%——离「全自动写芯片」还远。EDA 股价波动／「逼近 Synopsys」等多为二级解读，不作定论。本窗亦扫过 @elonmusk（严选 0）、@OpenAI @AnthropicAI @GoogleDeepMind @xai @MetaAI @deepseek_ai @Alibaba_Qwen；openai.com／anthropic.com／news、blog.google／DeepMind、x.ai、ai.meta.com/blog、DeepSeek／Qwen——除本条与早刊已报线，七厂确无新 frontier 权重／权威榜单发版；Anthropic X 近窗 vault 粒子结构／FlashProve／Residency 非发版主条不升格；早刊 Images 2.6／Pierre 不重复。",
+      "relevance": "IPO 叙事从「会写软件／聊天」往「能掺硬核硬件流程」挪——有一点真实能力信号，但故事比基准绝对分更满；别把路演讲稿读成「Claude 已经量产芯片」或「马上开卖 EDA」。",
+      "sources": [
+        {
+          "label": "The Information",
+          "url": "https://www.theinformation.com/articles/anthropic-touts-claudes-chip-design-skills-ipo-investors"
+        },
+        {
+          "label": "Dealroom 交叉摘要",
+          "url": "https://dealroom.co/news/169588-anthropic-tells-ipo-investors-its-15-person-chip-team-designs-custom-sil/"
+        },
+        {
+          "label": "X 评论线索（非事实源）",
+          "url": "https://x.com/mylifcc/status/2117890089061675109"
+        }
+      ]
+    },
+    {
+      "id": "1105中-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-05",
+      "summary": "这段时间没有相对早刊达「已确认利用／实害，或 AI 相关且普通人须立刻行动」门槛的新独立核实主条。本窗已扫 Wiz、Mandiant／GTIG、CrowdStrike、Microsoft Security、Krebs、CISA 告警／KEV、相关厂商声明，以及 X 近窗 AI／安全线索：CrowdStrike 11-04 推 Agentic Adversary Emulation（SafeMind 红队能力，早访问）属厂商产品发布，未达本栏实害门槛；VAPOR PANDA／ARTEX、LiteLLM MCP 洞／KEV、OpenAI 948 Linux LPE、3AM、假 T3、GitBook、Lovable 等已报线不重复。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "CrowdStrike · Agentic Adversary Emulation（产品向，未升格）",
+          "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agentic-adversary-emulation-counters-ai-enabled-adversaries/"
+        }
+      ]
+    },
+    {
+      "id": "1105中-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚市近午：台股约 42204（−1.7%）；韩综约 −3.7%；日经约 −0.4%；上证近平；恒指约 +3.1%；美期小幅回吐；油续软、金续弹",
+      "time": "2026-11-05T11:43:00+08:00",
+      "summary": "相对早刊（美周三收：标普 7688.62/+1.58%、纳 25736.51/+1.44%、道 53356.12/+3.03%；欧周三齐红；油大跌；亚市周四早盘台／韩／日走弱）：亚市近午已成型——Yahoo 日线／盘中指向台≈42204（相对周三收 42948.91 ≈ −1.74%）；韩综≈5471（≈ −3.74% vs 5683.80）；日经≈61914（≈ −0.44% vs 62188.63）；上证≈3684（≈ −0.07% vs 3686.17）；恒指≈24669（≈ +3.13% vs 23919.50）。欧股现货对本窗仍未开（约台北 15:00–16:00），指向周三收。美股现金仍为周三收，不重写；美期约 ES 7713（相对周三结算约 −0.1%）、NQ 28389（约 −0.6%）。油：Brent≈93.7、WTI≈86.9；金 GC≈4145；10Y 仍为周三现金收约 4.894%。主线：台韩科技权重续弱 vs 港股偏强；美欧周三大涨后期货仅小幅回吐。≠ 写成亚市已全日收或美现金新收盘。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。国际栏 Ueno 处置与油价无直接联动，不另抬盘面。",
+      "relevance": "早刊还停在亚市早盘弱，中刊已能看见台韩半日跌幅和恒指翻红；别把期货回吐写成美股已翻绿，也别把港股强读成亚洲科技股已止跌。",
+      "sources": [
+        {
+          "label": "Yahoo ^TWII",
+          "url": "https://finance.yahoo.com/quote/%5ETWII/"
+        },
+        {
+          "label": "Yahoo ^KS11",
+          "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        },
+        {
+          "label": "Yahoo ^N225",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS／^HSI",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／BZ=F／CL=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        }
+      ]
+    },
+    {
+      "id": "1105中-4",
+      "section": "国际重大影响",
+      "title": "巴拉圭央行处置数字银行 Ueno：约三百万客户一时取不出钱；行长辞职；存款保险开闸退款",
+      "time": "2026-11-03",
+      "summary": "相对早刊国际（特朗普谈伊朗／油价；不重复）：AP／BBC／ABC Color 等交叉——巴拉圭央行（BCP）11 月 3 日把数字银行 Ueno 拉进决议（resolución／处置），因偿付能力比率跌破法定最低一半；App／卡／转账全关。Ueno 自称约 300 万客户（约六成成年人口），并有报道称国家养老金等公款亦有敞口。央行行长 Carlos Carvallo（曾任 Ueno 高管）应总统 Peña 要求辞职；检方对银行相关人员发拘捕令；街上有抗议。存款保险上限约 ₲2.283 亿／人（约合 3.8 万美元）；另有紧急法把「预付」额度抬到约 40 个最低工资（约 ₲1.22 亿／人），BCP 称自 11 月 5 日起邮件通知约 190 万客户、经他行账户或临时开户退款——不是「永久全没」。病毒帖把 Milei／Epstein／实物金银绑在一起，属立场解读，不采。≠ 写成巴拉圭整个金融体系已崩。",
+      "relevance": "一国六成成年人用的数字银行被央行关闸，说明「App 好用」不等于「钱在银行里永远能提出」；有保险覆盖的部分正在退，超额存款要等清算，别被恐吓帖带着跑。",
+      "sources": [
+        {
+          "label": "AP",
+          "url": "https://apnews.com/article/paraguay-ueno-digital-bank-seizure-santiago-pena-9d7521ddee45a185d2618c7e09a243a3"
+        },
+        {
+          "label": "BBC Mundo",
+          "url": "https://www.bbc.com/mundo/articles/ckx2qj89lggxo"
+        },
+        {
+          "label": "ABC Color（退款细则）",
+          "url": "https://www.abc.com.py/economia/2026/11/04/bcp-designa-nuevo-presidente-interino-y-detalla-como-devolvera-la-plata-a-ahorristas-de-ueno/"
+        }
+      ]
+    },
+    {
+      "id": "1105中-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "Nature：上海交大 AutoDNA——一句提示，AI agent 驱动 20 多类仪器做完 DNA 合成／测序；人只负责补试剂",
+      "time": "2026-11-04",
+      "summary": "换赛道——自驾生物实验室，不是 AI 榜单也不是盘面（近刊分别是癫痫化学遗传、SER-155、磁珠假肢等）。Nature 正刊署 11 月 4 日：上海交大团队的 AutoDNA，用多智能体从自然语言提示起规划、生成仪器控制代码、执行与校验，协调 20 余类仪器、单项目可超万步，覆盖核酸合成／转录／扩增／测序等；人类主要补试剂与维护硬件。演示含：酶法 DNA 合成产量追上专家优化、多协议并发加速约 3.2 倍、端到端 DNA 数据存储并完整读回原文、检出并验证临床 KRAS G13D 突变。Nature 新闻稿亦有科普转述。≠ 普通实验室明天就能「无人值守」；≠ 新聊天大模型发版。",
+      "relevance": "写代码的 agent 已经摸进湿实验台——人还要在，但「设计实验＋开仪器」开始能交给机器跑一整圈；盯的是科研基础设施，不是又一张 LLM 榜。",
+      "sources": [
+        {
+          "label": "Nature 正刊",
+          "url": "https://www.nature.com/articles/s41586-026-11228-6"
+        },
+        {
+          "label": "Nature 新闻稿",
+          "url": "https://www.nature.com/articles/d41586-026-03552-8"
+        }
+      ]
+    }
+  ]
+}
