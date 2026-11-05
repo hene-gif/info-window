@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "id": "专栏-1",
+  "title": "大模型在金融里到底有没有效果",
+  "date": "2026-11-05",
+  "summary": "金融场景里模型「用得多」不等于「能稳定赚钱」：知识问答还行，短线涨跌接近抛硬币，长回测优势易碎，而且大量历史回测会被记忆污染。写代码省钱和猜股价赚钱，是两件事。",
+  "body": [
+    {
+      "type": "p",
+      "text": "妮可看到 Revolut 把写代码默认从 Claude Code 迁到自建 GLM，联想到「金融领域准确率还是 0」。这两件事别揉成一句：前者是工程里换模型、省订阅费；后者是问模型能不能稳定帮你赚超额。最近几篇严肃评测，更像在说：知识能背、推理半截、策略代码勉强能跑，但一放到真市场、长周期，优势就塌。"
+    },
+    {
+      "type": "section",
+      "label": "观点",
+      "text": "结论可以收成一句：金融里模型「用得多」≠「能稳定赚钱」。知识问答尚可；短持有期涨跌二选一贴近随机猜；把择时放到更长周期、更广股票池后，小样本里好看的优势会塌；训练截止日之前的「预测」，很多时候分不清是真会推还是背过答案。写策略代码、搭助手，可以当省人工的工具；别把同一套能力直接当成交易 alpha。"
+    },
+    {
+      "type": "section",
+      "label": "知识还行，推算和写策略差一截",
+      "text": "QuantEval（arXiv:2601.08689）把量化工作拆成三块：知识问答、定量推理、策略编码，再拿可执行回测比风险收益。人专家知识问答约九成、推理也近九成；头部闭源在知识上能摸到八成出头到九成附近，推理大约四成三到五成五，远低于人。策略编码更扎眼：不少开源模型可执行率直接是 0%；Claude Sonnet 4.5、Gemini 2.5 Pro 一类大约六成五能跑起来，GPT-5 约五成三——能跑还不等于指标贴着专家参考线。一句话：会答题 ≠ 会算难的题 ≠ 能写出框架里真能跑、且像专家策略的代码。"
+    },
+    {
+      "type": "section",
+      "label": "短线涨跌：接近抛硬币",
+      "text": "ACM AIDF 2026 那篇《Financial Investment Decisions…》拿五家中国主流模型，对标普 500 成分股做短持有期涨跌二选一：整体准确率贴近随机猜（约 50%），七个交易日窗口平均大约 46%。这不是「偶尔失手」，是任务本身就不给模型稳赢空间——方向猜对一半，离「能当交易信号」还远。"
+    },
+    {
+      "type": "section",
+      "label": "长回测一拉长，优势就碎",
+      "text": "FINSABER（KDD’26，arXiv:2505.07078）专门拆以前那些 LLM 择时论文的评测毛病：时间太短、股票太少、幸存者偏差。放到约二十年、上百只股票、带退市股票的更干净回测里，原先小样本里好看的优势明显塌掉。分行情看更刺眼：牛市偏保守、跑不赢被动基准；熊市又偏猛、回撤伤得重。作者的提醒是：别迷信把框架越做越复杂，先把趋势识别和分行情风控做对。"
+    },
+    {
+      "type": "section",
+      "label": "训练期内的「预测」，分不清是会还是背",
+      "text": "Lopez-Lira、Tang、Zhu《The Memorization Problem》（arXiv:2504.14765，修到 2026-08）把问题钉死：模型若在训练里见过实现值，「反事实预测能力」从观测上就分不清是真本事还是背答案；任何测到的记忆只是下界。GPT-4o 能精确背出宏观和指数数值；假截止日提示、脱敏（entity neutering）经常挡不住，复杂财报语境里仍能把公司／季度抠回来。可靠检验只能看知识截止日之后的样本。所以：很多「历史回测里 LLM 好用」的故事，方法上先要过这一关。"
+    },
+    {
+      "type": "p",
+      "text": "对照一眼就够：PriceSeer 一类实盘股价方向命中率也常在 0.5 一带晃；QuantCode-Bench 显示写策略代码单轮大约七成、多轮代理可到九成五以上——那是「代码写得出来」，不是「稳定超额」。Revolut 换 GLM 写代码，说的是工程成本和默认工具链；跟「金融准确率是不是 0」可以并排看，不要并成一句。"
+    }
+  ],
+  "related": [],
+  "sources": [
+    {
+      "title": "QuantEval: A Benchmark for Financial Quantitative Tasks in Large Language Models",
+      "outlet": "arXiv",
+      "url": "https://arxiv.org/abs/2601.08689",
+      "date": "2026-01-15"
+    },
+    {
+      "title": "Financial Investment Decisions with Large Language Models",
+      "outlet": "ACM AIDF 2026",
+      "url": "https://dl.acm.org/doi/10.1145/3844275.3844298",
+      "date": "2026-01-01"
+    },
+    {
+      "title": "Can LLM-based Financial Investing Strategies Outperform the Market in Long Run? (FINSABER)",
+      "outlet": "arXiv / KDD ’26",
+      "url": "https://arxiv.org/abs/2505.07078",
+      "date": "2025-05-12"
+    },
+    {
+      "title": "The Memorization Problem: Can We Trust LLMs’ Economic Forecasts?",
+      "outlet": "arXiv",
+      "url": "https://arxiv.org/abs/2504.14765",
+      "date": "2026-08-24"
+    }
+  ]
+}
