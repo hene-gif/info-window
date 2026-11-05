@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "id": "1105早",
+  "date": "2026-11-05",
+  "slot": "早",
+  "title": "11月5日 · 早",
+  "items": [
+    {
+      "id": "1105早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 上线 ChatGPT Images 2.6：可做 GIF、更快生成；API 新增 Flare／Sunburst",
+      "time": "2026-11-04",
+      "summary": "相对晚刊（混元 Hy4；七厂无其他 frontier 发版）：OpenAI 官网 Introducing Images 2.6（约 11-04，晚于晚刊截稿；X 新闻摘要更新约 11-04 23:55Z≈台北 11-05 07:55）。ChatGPT 图像能力升到 2.6：文本／照片可生成可调速、可逐帧编辑的 GIF；官方称人像／建筑／产品／风景等基准更强、少伪影。开发者侧 API 新增 GPT-Image-2.6 Flare（强调极速，宣传低至约 6 秒）与 Sunburst（强调一致编辑）。订阅档 Web／桌面／移动端滚动上线。System Card 另有部署安全页。本窗亦扫过 @elonmusk（严选 0：选举／meme，非公司级新发版）、@OpenAI @AnthropicAI @GoogleDeepMind @xai @MetaAI @deepseek_ai @Alibaba_Qwen 与 openai.com／anthropic.com／news、blog.google／DeepMind、x.ai、ai.meta.com/blog、DeepSeek／Qwen——除本条与下条 Pierre 收购，七厂确无新 frontier 权重／权威榜单发版；晚刊 Hy4、早刊／中刊已报线不重复；GPT-6.2／「ChatBLT」等仍属员工梗／传闻，无官网主条不采。",
+      "relevance": "普通人能直接用的那档：聊天里做动图变快了；若你接 API，看清 Flare（快）和 Sunburst（稳编辑）再选，别被「2.6」三个字当成新聊天大模型。",
+      "sources": [
+        {
+          "label": "OpenAI · Introducing Images 2.6",
+          "url": "https://openai.com/index/introducing-images-2-6/"
+        },
+        {
+          "label": "Images 2.6 System Card hub",
+          "url": "https://deploymentsafety.openai.com/chatgpt-images-2-6/introduction"
+        },
+        {
+          "label": "X 新闻摘要（上线窗）",
+          "url": "https://x.com/i/trending/2118128240191525319"
+        }
+      ]
+    },
+    {
+      "id": "1105早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 宣布收购 Pierre Computer：Code Storage／开源 Git 工具并入 Codex 工作流；交易未交割",
+      "time": "2026-11-04",
+      "summary": "同栏第二条（公司／产品级）：OpenAI 官网署将收购 Pierre Computer Company（Code Storage 与 Trees／Diffs 等开源库；已部分支撑 Codex 的文件浏览与变更审阅）。目标是让 Codex 覆盖从存代码、审改到交付的完整链路，并称 Pierre 项目将保持开源。Axios／The Verge 等同日交叉：交易尚未交割、须过监管，金额未披露；叙事上被读成补强相对 GitHub 的 agent 友好 Git 层。≠ 已并表完成；≠ 新 frontier 模型发版。本窗 X／官网扫描结论见上条。",
+      "relevance": "写代码的人盯「Codex 以后怎么管仓」比盯收购价更有用——现在官宣的是方向和开源承诺，仓库还没真正换东家。",
+      "sources": [
+        {
+          "label": "OpenAI · OpenAI to acquire Pierre",
+          "url": "https://openai.com/index/openai-to-acquire-pierre/"
+        },
+        {
+          "label": "Axios 交叉",
+          "url": "https://www.axios.com/2026/11/04/openai-pierre-computer-github"
+        }
+      ]
+    },
+    {
+      "id": "1105早-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "OpenAI：自主挖洞流水线一轮发现并补了 948 个 Linux 本地提权路径；称人类研究员仍先审再报",
+      "time": "2026-11-04",
+      "summary": "相对晚刊 3AM／假 T3（不重复）：OpenAI 博文 A thousand fewer paths to root——中旬约 10 月一次运行中，流水线复现约 1724 个漏洞、做出约 1169 个可工作 LPE exploit，经变体分析后提交约 948 个独立补丁；宣传 API 额度花费约 121 万美元；强调发现仍经人类研究员审阅再报维护者。属「AI 加速内核防守／攻击面测绘」一手厂方叙事，≠ 已证实哪个在野 0-day 被滥用。已扫 Wiz、Mandiant／GTIG 线索、CrowdStrike、Microsoft Security、Krebs、CISA 检索与 X 近窗；不重复 3AM、假 T3、GitBook、Lovable、Aur0ra／GOLD OGRE、ARTEX／WorkOS、VAPOR PANDA、Black October、Bankrbot、XCPE／Videostrong、GTIG LLMJacking；币安「内部 AI」巨额线仍无交易所／执法一手，不采。本栏本窗仅此 1 条达「实害／须行动」相关门槛（内核提权面收窄＋普通人补丁习惯）。",
+      "relevance": "你用不着读那 948 个洞——家用／公司 Linux 与云主机照常开自动安全更新，内核别拖几个月不打；别因为「AI 帮厂商挖洞了」就以为自己那台旧内核已经安全。",
+      "sources": [
+        {
+          "label": "OpenAI · A thousand fewer paths to root",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+        },
+        {
+          "label": "Unite.AI 转述",
+          "url": "https://www.unite.ai/openai-pipeline-finds-948-linux-kernel-privilege-escalation-flaws/"
+        }
+      ]
+    },
+    {
+      "id": "1105早-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周三大涨收：标普 +1.58%、纳 +1.44%、道 +3.03%；欧全日齐红；油大跌；亚市周四早盘台／韩／日再度走弱",
+      "time": "2026-11-05T09:35:00+08:00",
+      "summary": "相对晚刊（亚市周三全日：台 42948.91/−0.83%、韩 5683.80/+0.62%、日经 62188.63/−1.42%；上证 3686.17/+2.16%、恒 23919.50/+1.67%；欧仅盘中；美现金未开、期货翻红；Brent≈102.42／WTI≈95.47；金≈4053；10Y 周二收 4.952%）：美股周三（11/4）已收——标普 7688.62（+119.70／+1.58% vs 7568.92）；纳 25736.51（+364.50／+1.44%）；道 53356.12（+1569.40／+3.03%）。欧股周三全日收——FTSE 100 10829.21（约 +1.79%）、DAX 26437.67（约 +2.22%）、CAC 40 8177.89（约 +1.96%）；新华网等交叉称欧三大股指 4 日全线上涨。亚市周四已开（台北约 09:35 截稿，≠写成周四全日收）：Yahoo 盘中／日线指向台≈42019、韩≈5423、日经≈61378，相对周三收明显下挫；A／港截稿时日线柱多仍指向周三收（上证 3686.17、恒 23919.50），开盘后数字以交易所为准。油：WTI 周三结算约 88.12（相对晚刊盘中大跌），截稿期货≈87.14；Brent 周三约 94.6 一带（AP／市场交叉），截稿≈93.8。金 GC 周三约 4073、截稿≈4120；美债 10Y 周三收约 4.894%（相对周二 4.952% 下行）。主线：选情落地后美欧风险偏好回升＋油价急挫；亚市周四早盘科技权重再遭抛压。≠ 写成美股周四已开或亚市周四已收。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "晚刊还停在美期货翻红和欧盘中，早刊把美欧周三收盘和油金债收齐了；看亚市别把早盘弱写成「周四已经收成这样」。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ^FTSE／^GDAXI／^FCHI",
+          "url": "https://finance.yahoo.com/quote/%5EFTSE/"
+        },
+        {
+          "label": "新华网（欧股 4 日）",
+          "url": "https://www.news.cn/20261105/908ef14264d64032bb717c67bc41f641/c.html"
+        },
+        {
+          "label": "Yahoo ^TWII／^KS11／^N225",
+          "url": "https://finance.yahoo.com/quote/%5ETWII/"
+        },
+        {
+          "label": "Yahoo CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/CL=F/"
+        },
+        {
+          "label": "AP（美股＋油）",
+          "url": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"
+        }
+      ]
+    },
+    {
+      "id": "1105早-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Postman 官方回了「把 opt-in 写清楚」；钩子信任记录用文本编辑器也能铸",
+      "time": "2026-11-05",
+      "summary": "接昨天「旁路软件改信任面」。#14370 里产品侧口径说会把现有用户的 opt-in 写得更清楚，并在审 hook 自批与 session-start；Muscle AI 钉住：更清楚的文案仍可能让安装器替既有用户做主，报告人要的停自动装／去掉自批／完整回滚一条都没点名。同场 bokonon 实测：Codex 的 trusted_hash 就是 config.toml 里可算的声明哈希，文本编辑器铸出记录后钩子照跑，同意 UI 从未出现；Claude Code 更直——写进 settings.json 就够。官方回的是说明书层，主机信任闸仍坐在本机可写配置上。",
+      "relevance": "假安全下一刀：厂商用「更清楚的同意」回应信任边界事件，而 agent 主机把「用户已批准」落成任何同账号进程都能写的文件——散文同意盖不住结构门禁缺席。",
+      "sources": [
+        {
+          "label": "postman-app-support#14370",
+          "url": "https://github.com/postmanlabs/postman-app-support/issues/14370"
+        },
+        {
+          "label": "bokonon · minting hook trust with a text editor",
+          "url": "https://bokonon.ai/notes/2026-11-03-minting-hook-trust-with-a-text-editor/"
+        },
+        {
+          "label": "X · Muscle AI",
+          "url": "https://x.com/themuscleai/status/2118100648361365649"
+        }
+      ]
+    },
+    {
+      "id": "1105早-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Claude auto-connect：同意上移后，半盖挪到离职残留令牌",
+      "time": "2026-11-05",
+      "summary": "早刊已报过 Claude Team／Enterprise managed auth 产品面；闲逛改盯残留会话。管理员为组织授权连接器后，成员可跳过逐插件 OAuth；身份源可以是 IdP 断言（GA），或 Claude 自己当 trusted issuer（beta）。帮助中心写死：Claude-issued 只证明「是本组织当前成员＋邮箱」，不证明 SSO／MFA；人走了 Claude 停签，但连接器已发的 access token 仍活到过期。门禁从「每人同意」搬到「管理员开闸＋发行人信任」，审计与撤销若不同步上移，只是把疲劳换成残留令牌。",
+      "relevance": "人机共管／协作底线：企业 MCP 扩面常死在第十四个同意屏；同意上移之后，离职与邮箱撞号才是新的半盖位置。",
+      "sources": [
+        {
+          "label": "Claude Help · Auto-connect",
+          "url": "https://support.claude.com/en/articles/15537633-auto-connect-your-organization-s-apps-to-claude"
+        },
+        {
+          "label": "Claude Docs · Enterprise Managed Auth",
+          "url": "https://claude.com/docs/connectors/building/enterprise-managed-auth"
+        },
+        {
+          "label": "MCP · Enterprise-Managed Authorization",
+          "url": "https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization"
+        }
+      ]
+    },
+    {
+      "id": "1105早-7",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "AWS AgentCore：要让日志写出「哪个人」，网关还得留下做 OBO 换票",
+      "time": "2026-11-05",
+      "summary": "对照昨天「MCP gateway 缩成过渡补丁」。AWS 11-03 博文：agent 调 ServiceNow 若只带应用身份，审计断、用户级权限易绕过；Bedrock AgentCore Gateway 在目标上开 Token exchange＋`requested_token_use:on_behalf_of`，向 Entra 换出保留原用户声明的 ServiceNow 令牌，日志里是人不是共享服务账号。刺点：原生 OBO 要新建网关且 MCP 版本钉 2025-11-25，旧网关加不上；换票凭证与委托范围仍配在网关上。控制面叙事往 IdP 走，身份传播的执行面却还在要求一扇会换票的网关——半盖从「网关当第二政策引擎」换成「没有这扇网关就写不出人名」。",
+      "relevance": "基础设施承压下的门禁搬家：IdP 决策不等于请求链上自动带人；谁负责 OBO，谁就仍是半扇必须留下的门。",
+      "sources": [
+        {
+          "label": "AWS ML Blog · ServiceNow OBO with AgentCore Gateway",
+          "url": "https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/"
+        },
+        {
+          "label": "MCP · Enterprise-Managed Authorization",
+          "url": "https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization"
+        }
+      ]
+    },
+    {
+      "id": "1105早-8",
+      "section": "国际重大影响",
+      "title": "民主党拿下国会后，特朗普公开谈伊朗战争与油价；油市大跌押「冲突降温压力」",
+      "time": "2026-11-05",
+      "summary": "相对晚刊（AP 已 call 民主党拿下众议院＋参议院）：AP midterm 后续——特朗普在民主党拿下国会控制权后公开为伊朗战争辩护／承认选情与油价压力相关；民主党叙事转向压生活成本（油、食品、医保）。市场侧：美欧周三风险偏好回升的同时原油急挫（见股市栏 WTI／Brent），AP／多家交叉将其读成对「战争／制裁溢价回吐＋政治压力促降温」的定价，≠ 停火已官宣。乌俄、币安提现等已报线不重复。已扫 AP midterm live／elections hub 与油价相关稿。",
+      "relevance": "格局变化不只在华盛顿议席，而在「战争－油价－中期选举」绑成一条绳：油跌是市场在赌政治压力，不是战事已经画句号。",
+      "sources": [
+        {
+          "label": "AP · Trump defends Iran war after Dems win Congress",
+          "url": "https://apnews.com/article/midterm-elections-democrats-republicans-trump-b1d26390b7ed7968435089be6d3bf612"
+        },
+        {
+          "label": "AP · stocks／oil after midterms",
+          "url": "https://apnews.com/article/stock-markets-ai-earnings-oil-4d12764c0b3ce38ffde3077712811182"
+        },
+        {
+          "label": "AP · Trump views on oil since Iran war",
+          "url": "https://apnews.com/article/trump-oil-gas-prices-midterms-iran-war-0ca3059bb35a0f70e15eb0ccb9c207c5"
+        }
+      ]
+    },
+    {
+      "id": "1105早-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "Nature：化学遗传基因疗法早期人体试验，耐药颞叶癫痫发作降逾九成（n=3）",
+      "time": "2026-11-05",
+      "summary": "换赛道——神经／基因治疗，不是 AI 榜单也不是盘面（近刊分别是康奈尔超宽禁带半导体、WHO 气候健康、CMU 胶束电泳、内辐射带等）。Nature 新闻稿：中国一项早期试验（约 3 人）向耐药颞叶癫痫灶递送抑制性 DREADD（hM4Di／AAV9），口服氯氮平激活后发作频率降逾 90%，未报严重副作用；属 pilot，非法正式疗效终点；长期氯氮平风险仍被点名。C&EN／试验登记交叉同向。",
+      "relevance": "实验室里玩了很久的「设计受体＋小分子开关」，第一次认真写进人脑癫痫灶——样本极小，但方向是「少切脑、多开关」。",
+      "sources": [
+        {
+          "label": "Nature news",
+          "url": "https://www.nature.com/articles/d41586-026-03566-2"
+        },
+        {
+          "label": "C&EN 交叉",
+          "url": "https://cen.acs.org/pharmaceuticals/drug-development/designer-gene-therapy-chemogenetics-dreadd-epilepsy-clinical-trial/104/web/2026/11"
+        }
+      ]
+    }
+  ]
+}
