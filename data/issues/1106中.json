@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "id": "1106中",
+  "date": "2026-11-06",
+  "slot": "中",
+  "title": "11月6日 · 中",
+  "items": [
+    {
+      "id": "1106中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Anthropic：Claude Enterprise 上安全中心、推理钩子 GA、集中管理与 EDR 进本地 VM（多项仍 beta）",
+      "time": "2026-11-05",
+      "summary": "相对早刊（GPT‑6 Cyber、Gemini Omni 1.2 Flash GA、Claude Personal Finance；七厂无其他 frontier）：claude.com product-updates 与 Help Center release notes 同日（11-05）另有一条早刊漏收的企业安全／管控栈——本窗补报。要点：Security center（beta）一页对照 chat／Cowork／Claude Code 当前设置与 Anthropic 推荐并可下载报告（官方强调是建议非合规认证）；Inference hooks 现 GA（prompt hooks＋pre-tool-call hooks，把提示／工具调用送到客户已有 DLP／安全厂商做策略检查）；Centralized management（beta）经 admin.claude.com 母组织统一 SSO／SCIM／域名验证／组／Compliance API keys，子组织仍各自成员与边界；Access 侧含 Admin API 一键签退成员会话（不废 API key／已跑云会话／定时任务）、自助 IP allowlist、桌面端可挡个人／外部 Claude 账号；EDR（beta）可在 Cowork／unified Claude 本机隔离 VM 内跑客户 EDR sensor（检测上报、不阻断；不含云端 Cowork；经 MDM，启动时验厂商签名）。≠ 写成新 frontier 权重；≠ 写成全量合规认证；≠ 与早刊 Personal Finance 混成一条；企业安全叙事以本产品栏为主，不另开安全主条。本窗亦扫过 @elonmusk（严选 0）、@OpenAI @AnthropicAI @claudeai @GoogleDeepMind @xai @MetaAI @deepseek_ai @Alibaba_Qwen 与辅助 @sama @demishassabis @karpathy @dotey，以及 openai.com/index、API changelog、ChatGPT release notes、anthropic.com/news、claude.com product-updates、blog.google／DeepMind、x.ai、ai.meta.com/blog、DeepSeek／Qwen——除本条与早刊已报三线，七厂确无新 frontier 权重／权威榜单发版；6.2／Astra 通用 ChatGPT 仍无官宣不采；Images 2.6／Pierre／芯片路演／948 安全主条已报不重复。",
+      "relevance": "早刊收了消费级账本助手，漏了同日企业管控栈——IT／安全的人看的是钩子能不能接到自家 DLP、本机 VM 能不能挂 EDR；别把「安全中心」读成已经过完合规认证。",
+      "sources": [
+        {
+          "label": "Claude · Enterprise security updates",
+          "url": "https://claude.com/resources/articles/claude-enterprise-security-updates"
+        },
+        {
+          "label": "Claude product updates（Nov 5）",
+          "url": "https://claude.com/resources/product-updates"
+        },
+        {
+          "label": "Claude Help · Release notes",
+          "url": "https://support.claude.com/en/articles/12138966-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "1106中-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-06",
+      "summary": "这段时间没有相对早刊达「已确认利用／实害，或 AI 相关且普通人须立刻行动」门槛的新独立核实主条。本窗已扫 Wiz、Mandiant／GTIG、CrowdStrike、Microsoft Security、Krebs、CISA 告警／KEV、相关厂商声明，以及 X 近窗 AI／安全线索：CISA 等 11-05 联合警告工业制冷／冷链温控遭攻（超市／血库等实害）属 OT／冷链运维线、非本栏 AI 滤网主条，记入已扫不升格；CrowdStrike VAPOR PANDA／ARTEX、Wiz Black October 续写、GTIG LLMJacking、LiteLLM、OpenAI 948／Cyber 产品、Crafty Falcon（早刊）等已报线不重复。Enterprise 安全栈见本期产品栏补报，不另开安全主条。",
+      "relevance": "普通人这半窗没有新的「必须立刻改密码／别点这个假站」级 AI 安全动作；冷链告警留给做仓储物流的人看官方 OT 通告。",
+      "sources": [
+        {
+          "label": "CISA · refrigerated food／cold-chain advisory 线索（非 AI 主条，已扫）",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        }
+      ]
+    },
+    {
+      "id": "1106中-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚市周五盘中跟杀美股周四重挫：日经≈−5.8%、韩综≈−5.3%、台加权≈−4.5%；港／A 小跌；美现金仍指周四（标普≈−4.4%）、欧未开；油略抬、金回吐、10Y≈4.84%",
+      "time": "2026-11-06T12:17:45+08:00",
+      "summary": "相对早刊（美股周四现金：标普 7353.73／≈−4.36%、纳 24314.998／≈−5.52%、道 51523／≈−3.44%，10Y≈4.837%；欧指周四 STOXX50≈6231.54／FTSE≈10782.66／DAX≈26325；日经周五早盘约 59567／≈−2.5%，台韩港 A 仍指周四收；油≈91.1／99.1、金≈4114）：本窗增量是亚市周五盘中——Yahoo 5m 约 11:54–12:05 台北：日经≈57524–57559（vs 周四收 61077.9 ≈−5.8%，校正早刊 −2.5% 已加深）；韩综≈5095–5096（vs 5383.8 ≈−5.3%）；台加权≈39698–39704（vs 41574.72 ≈−4.5%）；恒指≈24526–24533（vs 24796.98 ≈−1.1%）；上证≈3647.9（vs 3689.91 ≈−1.1%，Yahoo SSE 当日无 5m，交叉新浪／东财）；深成指≈11217（≈−2.2%）。美股现金仍指周四收，≠周五已收；期货约 ES≈7379.75、NQ≈26927、YM≈51134（相对期货前收仍弱，相对周四现金略贴水上方——弱反抽／震荡，≠周五现金收）。欧股伦敦约台北 16:00 才开，本窗仍指周四收。油：WTI≈91.79、Brent≈100.1（相对早刊略抬）；金 GC≈4049.8（相对早刊≈4114 回吐约 −1.6%）；10Y 仍周四现金 4.837%。主线：美科技权重周四大回吐后，亚市周五盘中日韩台加深跟杀；港／A 跟跌幅度明显小于日韩台。≠ 写成亚市全日已收（日经／台／韩午后仍可能变）；≠ 写成美股周五已收。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "早刊还停在日经早盘浅跌、台韩仍指周四；中刊把亚市盘中加深那一刀补上了。看盘别把期货当周五美收，也别把午休前后的亚市数字当成全日收。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／^TWII／^HSI",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS／399001.SZ（A 股辅新浪／东财）",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        }
+      ]
+    },
+    {
+      "id": "1106中-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Cloudflare TAD：认出 agent 还不够，要把「背后那个人」接回站点",
+      "time": "2026-11-06",
+      "summary": "11/5 Cloudflare 发《Agents aren't humans》，宣布 Trusted Agent Delegation（TAD）联盟。刺点不是再拆一档 bot，而是「中介原则」：站点看见的是 Operator 的 agent，看不见订户／付费人／要负责的那个人；CAPTCHA 证明「此刻有人」解决不了友好欺诈、共享账号、连带封禁。Web Bot Auth 只签出运营商身份；用户层还要 OAuth／MOLE／哈希用户 ID 等拼图。今日起可看 Personal Assistants 分栏、按 agent 设策略，Early Access 里登录能挂到哪个 agent——正是昨天「上下文穿过 agent」的下一刀，且是厂商自己把问题写成标准议程。",
+      "relevance": "人机共管从「放不放行这个助手」上移到「站点—用户关系在代理链上如何可核」。",
+      "sources": [
+        {
+          "label": "Cloudflare Blog · Agents aren't humans (but they kinda are)",
+          "url": "https://blog.cloudflare.com/trusted-agent-delegation/"
+        },
+        {
+          "label": "Cloudflare Docs · Web Bot Auth",
+          "url": "https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/"
+        },
+        {
+          "label": "X · multilayer 摘要转发",
+          "url": "https://x.com/multilayer/status/2118495938503434437"
+        }
+      ]
+    },
+    {
+      "id": "1106中-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "州长当选人动手了：德州暂停令加码，连 SpaceX 旁公地也先按住",
+      "time": "2026-11-06",
+      "summary": "不再数选票。Gina Hinojosa 当选后承诺：上任前／立法前对数据中心审批发全面暂停（超过 Abbott 审计期冻结），1/19 就职；首场发布会当天已亲自联系 Parks & Wildlife，要求过渡期内别动 Boca Chica 附近约 1300 英亩公地处置（议程项已撤）。俄亥俄 Amy Acton 要「条件式暂停」（自担电费／自备发电／工会／环评），佐治亚 Keisha Lance Bottoms 要临时全州暂停；分析点出州长还能捏 PUC 任命，摩擦比竞选口号耐久。基建政治从「选民否决扩建」推进到「许可权与电价规则的人事换手」。",
+      "relevance": "中选后许可／电价层的具体动作，不是公投结果复述。",
+      "sources": [
+        {
+          "label": "Texas Tribune · Under Hinojosa, Texas data center approvals could stay paused",
+          "url": "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
+        },
+        {
+          "label": "Click2Houston · Hinojosa asks TPWD hold off Boca Chica land action",
+          "url": "https://www.click2houston.com/news/texas/2026/11/05/hinojosa-asks-texas-parks-and-wildlife-to-hold-off-on-boca-chica-land-action-amid-spacex-concerns/"
+        },
+        {
+          "label": "Fortune · midterms force Big Tech to negotiating table",
+          "url": "https://fortune.com/2026/11/05/midterm-elections-data-center-construction-big-tech-hinojosa-acton-lance-bottoms/"
+        },
+        {
+          "label": "Latitude Media · midterm sweep rewires energy/data center policy",
+          "url": "https://www.latitudemedia.com/news/how-democrats-midterm-sweep-will-rewire-energy-and-data-center-policy/"
+        }
+      ]
+    },
+    {
+      "id": "1106中-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Glasshand：agent 开始月租机架里的真 iPhone，沙箱不够用了",
+      "time": "2026-11-06",
+      "summary": "Product Hunt 当日榜上的 Glasshand 把真 iPhone／Mac mini 放进机房，经 API 让 Claude Code／Codex／Cursor 等看见屏幕、点按打字；卖点是 App Store、eSIM 真号、iMessage／社交登录——模拟器与廉价沙箱过不去的门。设备独享、月租月结、退租擦除重装。刺点不在又一个云桌面，而在「常驻个人 agent」叙事从「算力沙箱谁便宜」拐到「要冒充／代理真人数字生活，就得租消费级真机」；隔离与密码边界也跟着搬到机架上的 Apple 安全模型。",
+      "relevance": "定价／协作底线旁支：运行时从可比价沙箱，扩到不可虚拟化的设备身份面。",
+      "sources": [
+        {
+          "label": "Glasshand 官网",
+          "url": "https://glasshand.com/"
+        },
+        {
+          "label": "Product Hunt · Glasshand",
+          "url": "https://www.producthunt.com/products/glasshand"
+        }
+      ]
+    },
+    {
+      "id": "1106中-7",
+      "section": "国际重大影响",
+      "title": "日本政府研拟在年底更新的《国家安全保障战略》中写入「紧急时可允许核武器入境」等非核三原则例外",
+      "time": "2026-11-05",
+      "summary": "相对早刊国际（BoE 加息至 4% 不重复；伊朗／霍尔木兹连续战事线不重开主条）：共同社（消息人士，周四；11-06 Digest 再列）称日本政府研拟在年底前更新的《国家安全保障战略》等安保文书中，明文写入紧急情况下允许核武器进入日本等「非核三原则」例外选项——三原则为不拥有、不制造、不运进；来源口径称不必然改写三原则本身，但写入正式战略文件的信号强于国会口头。语境含强化美延伸威慑／核动力或载核舰艇靠港可信度；口径可溯及 2010 年外相冈田克也国会答询；高市早苗首相此前对「不运进」有过质疑，近月又称「有讨论余地」。外相茂木称须考虑他国观感；自民党部分谨慎、维新相对更支持，措辞仍在协商。≠ 写成日本已决定拥核或核共享；≠ 已正式修法废除三原则；≠ 重复 SoftBank／ABB 中国否决或 BoE。",
+      "relevance": "东亚核威慑／美日「延伸威慑」要不要写进白皮书级文件——比又一篇霍尔木兹口水更能改地区军备预期；正式文本还没落地，别读成已经拥核。",
+      "sources": [
+        {
+          "label": "Kyodo · non-nuclear principles exception",
+          "url": "https://english.kyodonews.net/articles/-/90511"
+        },
+        {
+          "label": "Kyodo Digest 11-06",
+          "url": "https://english.kyodonews.net/articles/-/90524"
+        }
+      ]
+    },
+    {
+      "id": "1106中-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "佐治亚理工：可生物降解「STAR」微针粒子混进乳膏，搓开皮肤屏障帮药进去；铜三肽入皮量约增至近 37 倍（测的是递送量≠疗效）",
+      "time": "2026-11-04",
+      "summary": "换赛道——健康／经皮给药，不是早刊港科大 NiTi 弹热制冷，也不是钙钛矿光老化。Georgia Tech Research News（2026-11-04）与期刊 Advanced Healthcare Materials：皮肤外层挡药，口服又要绕全身；贴片微针难盖大面积／不规则皮损。STAR 是粒子上长出星状微针，揉进霜／凝胶，滚动戳微孔助吸收。旧版二氧化钛陶瓷小规模人体试验显示局麻起效更快、可耐受（轻红／刺痒）但不降解；新版三种可降解材料（可溶缝线类、纤维素类、食品添加剂类），尚未做人体试验。报告对铜三肽-1，有 STAR 时进入皮肤量约 37×；甲氨蝶呤、他克莫司亦有正向递送数据——强调是递送量不是临床治愈倍数。利益披露：Prausnitz／Tadros 持 Aldena、Microstar 相关权益。≠ 明天药店有卖；≠ AI 新闻。",
+      "relevance": "治皮肤病老想「涂上去」，可皮本身太防水——有人把微型「豪猪刺」做成会烂掉的粉末混进霜里，想让药局部进去、少走全身副作用；现在还在实验室／递送数据阶段。",
+      "sources": [
+        {
+          "label": "Georgia Tech · STAR microneedle particles",
+          "url": "https://news.research.gatech.edu/2026/11/04/microscopic-porcupines-poke-path-improved-skin-treatments"
+        },
+        {
+          "label": "Advanced Healthcare Materials",
+          "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.71569"
+        }
+      ]
+    }
+  ]
+}
