@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "id": "1106晚",
+  "date": "2026-11-06",
+  "slot": "晚",
+  "title": "11月6日 · 晚",
+  "items": [
+    {
+      "id": "1106晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-06",
+      "summary": "这段时间没有相对中刊达「frontier 发版／权重／权威基准」门槛的新主条。本窗已扫 @elonmusk（严选 0：近窗多为 Starlink／Terafab／闲聊引用，非公司级新产品发版）、@OpenAI @AnthropicAI @claudeai @GoogleDeepMind @xai @MetaAI @deepseek_ai @Alibaba_Qwen，以及辅助 @sama @demishassabis @karpathy @dotey；并扫 openai.com/index、API changelog、ChatGPT release notes、anthropic.com/news、claude.com product-updates、blog.google/technology/ai、DeepMind blog、x.ai 公开页、ai.meta.com/blog、DeepSeek／Qwen 站与 releases。早刊 GPT‑6 Cyber／Gemini Omni 1.2 Flash GA／Claude Personal Finance、中刊 Anthropic Enterprise 安全栈补报、Images 2.6／Pierre／芯片路演等已报线不重复；DeepMind「Agentic cheminformatics／Antigravity Skills」（约 11-03 科学工具帖）不升格为 frontier 发版；6.2／Astra 通用 ChatGPT 仍无官宣不采。七厂确无新 frontier 权重／权威榜单发版。",
+      "relevance": "",
+      "sources": [
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "OpenAI API changelog",
+          "url": "https://platform.openai.com/docs/changelog"
+        },
+        {
+          "label": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Claude product updates",
+          "url": "https://claude.com/resources/product-updates"
+        },
+        {
+          "label": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "label": "DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/"
+        },
+        {
+          "label": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/"
+        }
+      ]
+    },
+    {
+      "id": "1106晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-06",
+      "summary": "这段时间没有相对中刊达「已确认利用／实害，或 AI 相关且普通人须立刻行动」门槛的新独立核实主条。本窗已扫 Wiz、Mandiant／GTIG、CrowdStrike、Microsoft Security、Krebs、CISA 告警／KEV、相关厂商声明，以及 X 近窗 AI／安全线索：CrowdStrike Falcon Guardian／Agent Insider／Agentic Emulation、LiteLLM／KEV、GTIG LLMJacking、OpenAI 948／Cyber 产品、Crafty Falcon、冷链 OT（中刊已扫非 AI 主条）等已报线不重复；CrowdStrike 近窗多为产品／SOC 发布，不升格为实害主条。确无新达门槛独立主条。",
+      "relevance": "普通人这半窗没有新的「必须立刻改密码／别点这个假站」级 AI 安全动作；企业 SOC／agent 防护产品新闻留给做安全的人看厂商博文。",
+      "sources": [
+        {
+          "label": "CISA · advisories／KEV",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "CrowdStrike · Falcon Guardian AI kill switch（产品向，未升格）",
+          "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-advances-ai-security-and-safety-falcon-guardian/"
+        }
+      ]
+    },
+    {
+      "id": "1106晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚市周五全日收加深：日经≈−6.0%、韩综≈−6.0%、台≈−4.5%；港／A 小跌；欧收 STOXX≈−1.6%／FTSE≈−2.2%／DAX≈−2.3%；美现金仍周四（标普≈−4.4%）、周五盘未开；油回吐、金略回升、10Y≈4.84%",
+      "time": "2026-11-06T19:22:00+08:00",
+      "summary": "相对中刊（亚市周五盘中：日经≈57524–57559／≈−5.8%、韩综≈5095–5096／≈−5.3%、台加权≈39698–39704／≈−4.5%、恒≈24526–24533／≈−1.1%、上证≈3647.9／≈−1.1%、深成≈11217／≈−2.2%；美现金仍周四收标普 7353.73／≈−4.36%、纳 24314.998／≈−5.52%、道 51523／≈−3.44%；欧仍指周四；油 WTI≈91.79／Brent≈100.1、金 GC≈4049.8、10Y≈4.837%）：本窗增量是亚市全日收＋欧市周五收——Yahoo 日线：日经收 57434.77（vs 周四收 61077.90 ≈ −5.96%）；韩综收 5059.69（vs 5383.80 ≈ −6.02%）；台加权收 39701.64（vs 41574.72 ≈ −4.51%）；恒指收 24481.86（vs 24796.98 ≈ −1.27%）；上证收 3649.18（vs 3689.91 ≈ −1.10%）；深成指收 11175.78（vs 11471.09 ≈ −2.57%）。欧市周五收：STOXX50 ≈6133.20（vs 周四 6231.54 ≈ −1.58%）；FTSE ≈10546.10（vs 10782.70 ≈ −2.19%）；DAX ≈25720.35（vs 26325.01 ≈ −2.30%）。美股周五现金盘约台北 22:30 才开，对本窗仍指向周四收，不重写；美期约 ES≈7401.75、NQ≈27105、YM≈51122（相对中刊期货约 7379／26927 略反抽，≠周五现金收）。油自中刊回吐：WTI≈90.82、Brent≈98.42；金 GC≈4076（相对中刊≈4049 略回升）；10Y 仍周四现金 4.837%。主线：亚市日韩台全日收确认加深跟杀；欧收同步走弱；美现金尚未有周五结算。≠ 写成美股周五已收。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "中刊还停在亚市盘中、欧未开；晚刊已能看见日韩台港 A 怎么收、欧怎么结。看盘别把期货反抽当成美股周五收盘。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／^TWII／^HSI",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS／399001.SZ",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        }
+      ]
+    },
+    {
+      "id": "1106晚-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "AWS／Google 也在签 Web Bot Auth：运营商身份在汇合，用户仍缺席",
+      "time": "2026-11-06",
+      "summary": "今早 Cloudflare 把问题写成 Trusted Agent Delegation；下午核到另一侧——运营商签名本身正在多云落地。AWS Bedrock AgentCore Browser 把 Web Bot Auth 做成 Preview：`browserSigning.enabled` 后每条请求带 Signature／Signature-Agent／Signature-Input，并已向 Cloudflare、Akamai、HUMAN、DataDome、F5 登记公钥。Google 在部分托管 AI agent 上实验同一 IETF 草案，Signature-Agent 指向 `https://agent.bot.goog`，文档写明「还不签每一个请求、仍须回退 IP／UA」。IETF 草案自己划界：不认证终端用户、不定义授权／委托。现象不是又多一篇 CDN 博文，而是「认出哪家运营商的 agent」开始成公共轨道，而「背后那个人／订户」仍停在今早 TAD 那一刀——WBA 把运营商层焊上了，用户层还是空的。",
+      "relevance": "人机共管／接入议价：运营商身份标准化≠用户关系可核；接上午 TAD「下一想挖」非 Cloudflare 试点。",
+      "sources": [
+        {
+          "label": "AWS AgentCore · Browser Web Bot Auth",
+          "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-web-bot-auth.html"
+        },
+        {
+          "label": "Google · Web Bot Auth (experimental)",
+          "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/web-bot-auth"
+        },
+        {
+          "label": "IETF draft · HTTP Message Signatures for bots",
+          "url": "https://datatracker.ietf.org/doc/html/draft-ietf-webbotauth-httpsig-protocol-01"
+        }
+      ]
+    },
+    {
+      "id": "1106晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Agent 付款协议都在证明「人点过同意」，没人写「付错谁买单」",
+      "time": "2026-11-06",
+      "summary": "旁路读完 Boston Identity 对照表和 Chargewood 按拒付视角拆 ACP／UCP／AP2：Google AP2 让人签开支上限再让 agent 逐笔签；Mastercard Verifiable Intent 三层签名；OpenAI＋Stripe 的 ACP 把 3DS 塞进 agent 窗口；x402／pay-per-request 干脆先结算再交付、文本里几乎没有退款／拒付。五套设计都能证明「人说过可以」；没有一套规范性地分配「agent 买错／被注入／限额外」时的损失归属——AP2 把争议程序标成 out of scope，ACP 官方写明商家仍是 merchant of record、退款拒付归商家。协作底线停在同意剧场：证据链在变长，责任链还在旧卡组织规则里等着被硬套。",
+      "relevance": "定价权／协作底线：开放付款通道卖的是可核同意，不是可分配损失；商家照单收 chargeback。",
+      "sources": [
+        {
+          "label": "Boston Identity · five designs, no who pays",
+          "url": "https://insights.bostonidentity.com/columns/2026-10-10-five-agent-payment-designs-prove-consent-none-says-who-pays-when-it"
+        },
+        {
+          "label": "Chargewood · ACP／UCP／AP2 in a dispute",
+          "url": "https://chargewood.com/blog/agentic-commerce-protocols"
+        },
+        {
+          "label": "OpenAI · Agentic commerce in production（MoR／chargebacks）",
+          "url": "https://developers.openai.com/commerce/guides/production"
+        }
+      ]
+    },
+    {
+      "id": "1106晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Liquid Energy NanoDC：把数据中心做成能搬家的太阳能集装箱，想躲开电网选票",
+      "time": "2026-11-06",
+      "summary": "YC F26 的 Liquid Energy 今日在 X 推 NanoDC：工厂整机出货、现场展开光伏阵列、自称四周可部署、合同到首个推理 token 目标八周内；卖的是推理容量不是电。官网叙事直戳瓶颈——「新机房等电等许可等好几年，我们自带电，去有太阳的地方」。对照今早德州暂停令／中选公投：一边是许可与电价人事化，一边是创业叙事试图把算力物理上拆离「你家电网／你家选票」。刺点不在宣传片漂不漂亮，而在基建政治压力已经大到「逃离并网」本身成了产品卖点；离网能否规模化、土地与储能仍会撞本地政治，是下一层要看的。",
+      "relevance": "基础设施承压的逃逸叙事：许可／电费摩擦催生「不算传统机房」的产能形态。",
+      "sources": [
+        {
+          "label": "Liquid Energy 官网",
+          "url": "https://www.liquidenergy.world/"
+        },
+        {
+          "label": "X · @_LiquidEnergy NanoDC 发布",
+          "url": "https://x.com/_LiquidEnergy/status/2118474012464689271"
+        },
+        {
+          "label": "YC · Liquid Energy",
+          "url": "https://www.ycombinator.com/companies/liquid-energy"
+        }
+      ]
+    },
+    {
+      "id": "1106晚-7",
+      "section": "国际重大影响",
+      "title": "伊朗经卡塔尔向美方递交核提案，称须先满足七项条件才谈；霍尔木兹重开与谈判挂钩",
+      "time": "2026-11-05",
+      "summary": "相对中刊国际（日本非核三原则例外不重复；BoE／SoftBank·ABB 中国否决等已报线不重开）：路透（Al Monitor 等转载，11-05／11-06）引匿名伊朗高级官员称——伊朗已经卡塔尔向美方递交核相关提案，但须华盛顿先满足七项条件才讨论该提案；美方正在审阅，细节未公开。同日伊朗安全高官穆赫森·礼萨伊在俄罗斯重申：七项未执行则「既不开放霍尔木兹海峡，也不谈判」。已公开点名的条件包括解除美制裁、解冻伊朗资产、战争赔偿等；美方口径仍坚持核议题须进入任何初步谈判。语境：美／以 2 月以来与伊朗的冲突仍有复燃风险，中选后斡旋加码，特朗普未排除继续军事行动。≠ 写成协议已谈成或霍尔木兹已重开；≠ 复述日本非核／BoE。",
+      "relevance": "油价与风险溢价这周在「会不会再打」上晃——核提案＋七条件是外交窗口还是拖延，都会立刻拧到能源与亚洲风险资产预期；别读成已经停火。",
+      "sources": [
+        {
+          "label": "Al Monitor · Reuters wire（Iran nuclear proposal via Qatar）",
+          "url": "https://www.al-monitor.com/originals/2026/11/iran-sent-nuclear-proposal-us-qatar-senior-iranian-official-tells-reuters"
+        },
+        {
+          "label": "Arab News · Qatar mediation／proposal context",
+          "url": "https://www.arabnews.com/middle-east/qatars-emir-trump-discuss-mediation-efforts-to-end-regional-crisis-3010128"
+        },
+        {
+          "label": "Iran International · Reuters summary",
+          "url": "https://www.iranintl.com/en/202611055479"
+        }
+      ]
+    },
+    {
+      "id": "1106晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "FAU：湿疹皮肤里的嗜碱性粒细胞，可能是「过敏行军」传到哮喘的那一环（小鼠实验；人还没成药）",
+      "time": "2026-11-06",
+      "summary": "换赛道——免疫／过敏医学，不是中刊 STAR 微针递送，也不是早刊港科大 NiTi 弹热制冷或 1105晚钙钛矿光老化。埃尔朗根—纽伦堡大学（FAU）医学院 11-06 新闻：湿疹（特应性皮炎）患儿长大后常再得过敏性哮喘，医学上称 atopic march，机制长期不清。研究组在小鼠上短时抑制嗜碱性粒细胞（basophils）生成，同时皮肤接触过敏原——之后吸入同一过敏原时，肺部炎症明显弱于对照组；对照未抑 basophils 则接近重度哮喘样反应。他们据此认为皮肤里激活的 basophils 会把过敏「远程」传到肺；白介素‑4（IL‑4）是嫌疑信使之一，通路未完全钉死。综述指出：幼儿期尽快压住皮肤过敏、或将来挡住 basophils 的远程效应，或许能降哮喘风险——现有／在研降 IL‑4 药主打止痒治皮，是否顺带防哮喘「有待观察」。≠ 明天药店有防哮喘新药；≠ AI 新闻。",
+      "relevance": "家里有湿疹娃的人常听「小心以后变哮喘」——他们第一次把一种具体免疫细胞钉成皮肤到肺的中间人；现在还是小鼠＋机制假说，别当成已经能开处方。",
+      "sources": [
+        {
+          "label": "FAU · Why eczema increases the risk of asthma",
+          "url": "https://www.fau.eu/2026/11/news/why-eczema-increases-the-risk-of-asthma-in-patients/"
+        },
+        {
+          "label": "Allergy · Basophils in skin-mediated sensitization（DOI 10.1111/all.70093）",
+          "url": "https://doi.org/10.1111/all.70093"
+        }
+      ]
+    }
+  ]
+}
