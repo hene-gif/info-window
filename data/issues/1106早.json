@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "id": "1106早",
+  "date": "2026-11-06",
+  "slot": "早",
+  "title": "11月6日 · 早",
+  "items": [
+    {
+      "id": "1106早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 发布 GPT‑6 Cyber：防务向网络安全专用模型；ExploitGym 48.5%；经 Daybreak Red 对核准客户开放",
+      "time": "2026-11-05",
+      "summary": "相对晚刊（产品空栏）：OpenAI 官网 Introducing GPT‑6 Cyber（Product，11-05；官 X 约 17:09 UTC≈台北 11-06 01:09）。定位为找／验证可利用漏洞、并留在研究者设定范围内的网络安全模型；相对 GPT‑5.6 Cyber，ExploitGym 从 32.1%→48.5%；越界利用评测无部署提示 99.93%、有提示 100%。Preparedness 网络安全能力标为 Critical（上代 High）。实战：此前已报的 Linux 约 948 条 LPE 流水线由该模型驱动；另称 Firefox 81 个此前未知高危、Mozilla 已修多处；Cisco／Palo Alto／Calif／CodeRabbit 等安全队在用。准入：先经 API／Codex 向部分 Daybreak Red 核准客户开放，将扩至全部 Daybreak Red；同文称 Daybreak Blue（含 GPT‑6 Astra）也在扩 alpha——属既有主线／准入语境，≠ 写成 GPT‑6.2 或 Astra 面向全体 ChatGPT 用户的新旗舰发版。本窗亦扫过 @elonmusk（严选 0）、@OpenAI @AnthropicAI @GoogleDeepMind @xai @MetaAI @deepseek_ai @Alibaba_Qwen 与辅助 @sama @demishassabis @karpathy @dotey，以及 openai.com/index、API changelog、anthropic.com/news、blog.google／DeepMind、x.ai、ai.meta.com/blog、DeepSeek／Qwen——除本条与下两条，七厂确无新 frontier 权重／权威榜单发版；Images 2.6／Pierre／芯片路演／948 安全主条已报不重复；「6.2／周五可能」仍无独立官宣不采。",
+      "relevance": "晚刊空栏之后的真官宣：不是又一个聊天旗舰，是把「能挖洞」做成只给核准红队用的专用模型；普通人别急着去申请——默认你进不去 Daybreak Red。",
+      "sources": [
+        {
+          "label": "OpenAI · Introducing GPT‑6 Cyber",
+          "url": "https://openai.com/index/introducing-gpt-6-cyber/"
+        },
+        {
+          "label": "X @OpenAI",
+          "url": "https://x.com/OpenAI/status/2118390190246879554"
+        }
+      ]
+    },
+    {
+      "id": "1106早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Google：Gemini Omni 1.2 Flash 正式 GA；原生视频最长 15 秒、多轮改片；720p 约 $0.07／秒（较 1.1 降约 30%）",
+      "time": "2026-11-05",
+      "summary": "同栏第二条（晚刊后窗口）：Google／DeepMind 博客与 Cloud 同日宣布 Gemini Omni 1.2 Flash 在 Gemini API 与 Google Cloud／Gemini for business 正式 GA。时长由约 10 秒提到最长 15 秒（可按秒指定 3–15）；支持多轮对话改同一段；参考图／短运动／音频一致性增强（音频需 allowlist）。720p 标价约 $0.07／秒，官方称较 Omni 1.1 降约 30%；可先 360p／720p 草稿再升 1080p／4K；输出带 SynthID。官方自承快动作体育、急剧本、复杂物理仍弱。Vids／Flow／Ads 等产品线滚动可用。≠ 写成新的 Gemini 文本旗舰；≠ 写成免费无限。官 X：@GoogleDeepMind RT @GoogleAIStudio；@demishassabis 亦 RT。",
+      "relevance": "做短视频／广告素材的人可以直接看价和时长：最长 15 秒＋降价约三成＋能多轮改，比等一个「新聊天大脑」更贴近今天能用的东西。",
+      "sources": [
+        {
+          "label": "Google Blog · Gemini Omni 1.2 Flash",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+        },
+        {
+          "label": "Google Cloud Blog",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available"
+        },
+        {
+          "label": "X @GoogleDeepMind",
+          "url": "https://x.com/GoogleDeepMind/status/2118392265961869549"
+        }
+      ]
+    },
+    {
+      "id": "1106早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic：Claude「Personal Finance」美区 beta；经 Plaid 只读连银行／卡，不能转账理财",
+      "time": "2026-11-05",
+      "summary": "同栏第三条（厂别平衡）：@claudeai 与 Plaid 官方同日宣布——美区 Pro／Max／Ultra 用户可在 Claude 的 Personal Finance 里经 Plaid 连接自选账户，用自然语言问余额、流水、账单等。Plaid 明确：Claude 对已连账户为只读，不能挪钱；Anthropic／媒体交叉称非投资建议、无广告／赞助推荐，Personal Finance 会话不用于训模型。TechCrunch 等引述可见数据大致含机构名、账户名／类型、卡号后四位、余额／额度与约两年流水。anthropic.com/news 本窗未见独立新闻卡，以官 X＋Plaid＋TechCrunch／通讯社交叉为准。≠ 写成 Claude 能代你炒股或自动扣款。",
+      "relevance": "愿意把账本交给聊天助手的人：先确认是只读、再决定连哪几张卡；连上不等于它能替你付钱。",
+      "sources": [
+        {
+          "label": "Plaid · Financial Insights in Claude",
+          "url": "https://plaid.com/blog/plaid-anthropic-financial-insights-in-claude/"
+        },
+        {
+          "label": "X @claudeai",
+          "url": "https://x.com/claudeai/status/2118403114890137895"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
+        }
+      ]
+    },
+    {
+      "id": "1106早-4",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "印度 CERT-In：Crafty Falcon 用公开 AI 攻防工具打 NBFC／支付／加密所；调用受害方自身放款 API 转走资金，威胁「仍在进行」",
+      "time": "2026-11-04",
+      "summary": "相对晚刊安全空栏（不重复 VAPOR PANDA／LLMJacking／LiteLLM／948／Lovable 等）：印度 CERT-In／CSIRT-Fin 顾问（约 11-04；印媒 11-05）命名威胁 Crafty Falcon，称针对 BFSI（含 NBFC、支付聚合、加密所等）且 active and ongoing。手法要点：用公开 AI 攻防工具（报道点名 ARTEX、PentAGI、Cairn、CyberStrikeAI）加速侦察与脚本；走云／Lambda；从测试／非生产横向到生产；改装客户端打支付／结算 API；先 ₹1 试探再大额；加密所侧涉失窃钱包密钥。部分机构补丁不全后被故意再打；节日低监控窗口。建议侧：7×24 监控、云审计、隔离测试环境、服务端校验每笔交易、冷钱包／多签等。本窗亦扫 Wiz、Mandiant／GTIG、CrowdStrike、Microsoft Security、Krebs、CISA／KEV 与 X 线索；Era Greeter／Flowise 蜜罐线已扫、偏自建 agent 平台运维，未升独立主条。≠ 写成全球银行普遭；≠ 写成 Mythos 已被滥用。",
+      "relevance": "若你在印度金融／加密所做事：把测试环境与生产切开、交易接口加服务端校验，别只靠「我们打过补丁」。一般读者记住一句——开源 AI 攻防工具已经进真盗资金剧本。",
+      "sources": [
+        {
+          "label": "Indian Express · Crafty Falcon",
+          "url": "https://indianexpress.com/article/technology/tech-news-technology/cert-in-crafty-falcon-ai-driven-hacking-campaign-fintech-10951672/"
+        },
+        {
+          "label": "Economic Times 交叉",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-based-cyber-threat-executing-unauthorised-fund-transfers-from-banking-firms-cert-in/articleshow/135547661.cms"
+        },
+        {
+          "label": "CERT-In 顾问 PDF（MediaNama 托管）",
+          "url": "https://www.medianama.com/wp-content/uploads/2026/11/CERT-In-Advisory.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1106早-5",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周四重挫：标普≈−4.4%、纳≈−5.5%、道≈−3.4%；欧指小幅收弱；日经周五早盘约−2.5%；台韩港A仍指周四收；油反抽、金坚、10Y≈4.84%",
+      "time": "2026-11-06T08:19:58+08:00",
+      "summary": "相对晚刊（亚市周四全日：台≈41574.72/−3.2%、韩综≈5383.80/−5.3%、日经≈61077.90/−1.8%；上证≈3689.91、恒≈24796.98；欧收曾估偏乐观；美现金仍指周三 标普 7688.62／纳 25736.51／道 53356.12；油自低位反抽、金坚、10Y≈4.894%）：美股周四（11-05）现金已收——Yahoo：标普 7353.73（≈ −4.36% vs 周三）、纳 24314.998（≈ −5.52%）、道 51523.06（≈ −3.44%）；10Y 收约 4.837%。欧指周四 Yahoo：STOXX50 ≈6231.54（≈ −0.55% vs 周三约 6265.71）、FTSE ≈10782.66（≈ −0.43% vs 10829.21）、DAX ≈26325.01（≈ −0.43% vs 26437.67）——并校正晚刊 STOXX≈6300「小红」估算偏高。亚市：日经周五已开，截稿 Yahoo 约 59567（相对周四收 61077.9 ≈ −2.5%）；台／韩／上证／恒指截至本窗仍为周四全日收，周五多数约 09:00 后才有新开。期货参考 ES≈7374、NQ≈26779（≠美股周五现金收）。油：WTI≈91.1、Brent≈99.1（相对周三结算低位反抽）；金 GC≈4114。主线：美科技权重周四大回吐周三涨幅；亚市周五早段日经续弱；港股周四强不能读成全球科技已止跌。≠ 写成美股周五已收。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "晚刊还停在美现金周三；早刊把周四大跌收齐了。看盘别把期货当成周五收盘，也别拿港股周四的强去对冲纳指已经砍掉的那一刀。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／^TWII",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS／^HSI",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        }
+      ]
+    },
+    {
+      "id": "1106早-6",
+      "section": "国际重大影响",
+      "title": "英央行将政策利率上调至 4%（自 3.75%）；MPC 8–1；能源冲击推高通胀展望",
+      "time": "2026-11-04",
+      "summary": "相对晚刊国际（SoftBank／ABB 中国业务否决不重复）：英格兰银行 11-04 结束的 MPC 会议，8–1 通过将 Bank Rate 上调 25 个基点至 4.0%（自 3.75%）；Catherine L Mann 反对，主张一次加到 4.25%。官方 Monetary Policy Summary（11-05 发布）：中东冲突进入第九个月、全球能源价格继续抬升；英国 9 月 CPI 3.5%，展望中期或向约 5%；直接能源效应明确，间接／二轮效应证据仍有限，但委员会认为管道内通胀压力已足以加息；活动数据近月偏强。多家媒体称此为逾三年首度加息。≠ 写成已进入明确加息周期（纪要强调非预设路径）；≠ 重复 ABB／SoftBank。",
+      "relevance": "能源地缘把英国通胀预期重新顶上去了——看欧市／镑／全球开盘定价时，这比又一篇并购八卦更直接。",
+      "sources": [
+        {
+          "label": "BoE · Bank rate increased to 4%",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+        },
+        {
+          "label": "BoE Monetary Policy Report Nov 2026 PDF",
+          "url": "https://www.bankofengland.co.uk/-/media/boe/files/monetary-policy-report/2026/november/monetary-policy-report-november-2026.pdf"
+        },
+        {
+          "label": "The Guardian 交叉",
+          "url": "https://www.theguardian.com/business/2026/nov/05/bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years"
+        }
+      ]
+    },
+    {
+      "id": "1106早-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "港科大：镍钛「蜂窝片」冲压叠成管状多孔件，弹热制冷疲劳＞10⁸ 次、比冷功率约 3850 W／kg",
+      "time": "2026-11-05",
+      "summary": "换赛道——制冷／材料，不是晚刊钙钛矿光老化，也不是癫痫基因／SER-155／AutoDNA。Science（2026-11-05，Vol 394 Issue 6824）：港科大苏长峰／孙庆平等，把 NiTi 薄片冲压成蜂窝状芯片再叠成层状管件（stamping and stacking），增大换热面同时减轻薄壁管屈曲／开裂。压缩循环＞10⁸；specific cooling power 约 3850 W／kg；作者称相对现有工艺造价约降一个数量级。Editor’s summary（Phil Szuromi）同上。≠ 明天家用空调就换弹热金属；≠ AI 模型新闻。",
+      "relevance": "空调氟利昂路线之外，有人在用「金属一压就冷」——卡脖子的常常是零件能拍多久、能不能量产，这篇把疲劳和成本一起钉了一下。",
+      "sources": [
+        {
+          "label": "Science · stacked porous NiTi elastocaloric",
+          "url": "https://www.science.org/doi/10.1126/science.aeh7074"
+        }
+      ]
+    }
+  ]
+}
