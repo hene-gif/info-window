@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "id": "1107早",
+  "date": "2026-11-07",
+  "slot": "早",
+  "title": "11月7日 · 早",
+  "items": [
+    {
+      "id": "1107早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-07",
+      "summary": "这段时间没有相对晚刊达「frontier 发版／权重／权威基准」门槛的新主条。本窗已扫 @elonmusk（严选 0：近窗多为 Terafab／Starlink／Tesla／SpaceX 引用与访谈碎片，非公司级新产品发版）、@OpenAI @AnthropicAI @GoogleDeepMind @xai（账号帖接口未授权，改扫 x.ai 公开页）@MetaAI @deepseek_ai @Alibaba_Qwen，以及辅助 @sama @demishassabis @karpathy @dotey；并扫 openai.com/index、API changelog、ChatGPT release notes、anthropic.com/news、engineering／research（含 Nov 6「agent memory／dreaming」工程文）、blog.google/technology/ai、DeepMind blog、x.ai、ai.meta.com/blog、DeepSeek／Qwen 站与 GitHub releases。晚刊后可见增量但不升格：OpenAI 与 Hacktron 安全合作（Nov 6）、OpenAI＋Ligo BioBasicsBench（研究基准）、OpenAI／FMF Jailbreak Rating Framework（政策框架，FMF 标 Nov 5）、Anthropic agent memory「dreaming」工程博文——均非 frontier 权重／权威榜单发版；Gemini Omni 1.2 Flash／GPT‑6 Cyber／Images 2.6／Claude Personal Finance／Anthropic Enterprise 安全栈等已报线不重复；6.2／Astra 通用 ChatGPT 仍无官宣。七厂确无新 frontier 权重／权威榜单发版。",
+      "relevance": "本窗亦扫过七厂官号与官网／changelog，无其他补报。",
+      "sources": [
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "OpenAI API changelog",
+          "url": "https://platform.openai.com/docs/changelog"
+        },
+        {
+          "label": "ChatGPT release notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Anthropic · components of agent memory",
+          "url": "https://www.anthropic.com/research/components-of-agent-memory"
+        },
+        {
+          "label": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "label": "DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/"
+        },
+        {
+          "label": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/"
+        },
+        {
+          "label": "FMF · Jailbreak Rating Framework（政策向，未升格）",
+          "url": "https://www.frontiermodelforum.org/updates/introducing-the-fmf-jailbreak-rating-framework-for-frontier-cyber-threats/"
+        },
+        {
+          "label": "OpenAI · Partnering with Hacktron（安全合作，未升格产品主条）",
+          "url": "https://openai.com/index/partnering-with-hacktron/"
+        }
+      ]
+    },
+    {
+      "id": "1107早-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "DeepMind：人引导 AI agent 挖出遗留 1024-bit RSA 两处弱点；2048 仍称不受本结果影响",
+      "time": "2026-11-06",
+      "summary": "相对晚刊安全空栏：本窗新主条是 Google DeepMind／VP Science Pushmeet Kohli（Nov 6）宣布——在人类引导与密码学专家协作下，AI agent 在数周内推进两项针对遗留 1024-bit RSA 的密码分析结果：可绕过较旧数字签名防护的方向，以及更便宜的批量分解相关模数路径。官方口径明确：这些具体结果不影响现代 RSA‑2048 等现行方案；意图是展示 AI 加速「应力测试」加密假设的节奏，并强调不能再默认历史「硬度」永久成立。二手报道（CryptoBriefing／Interesting Engineering 等）进一步写到签名伪造效率量级提升与批量分解成本下降等数字，但一手以 DeepMind／Kohli 公开帖与文章为准。同窗另扫：CISA Nov 6 将 SonicWall SonicOS SSLVPN 单因素认证漏洞 CVE‑2026‑19868 列入 KEV（已确认利用，属企业 VPN 小众面，不升格普通人主条）；OpenAI×Hacktron／FMF jailbreak 框架为合作／政策向；CrowdStrike／Krebs 近窗无新「立刻改密码」级 AI 实害主条；Crafty Falcon、GTIG LLMJacking、Falcon Guardian 等已报线不重复。",
+      "relevance": "普通人：网银／主流网站若已是 2048-bit 及以上，不必因这篇恐慌换密码；若自家／公司系统、老设备、内部证书还挂着 1024-bit RSA 或过时签名方案，该排期升级——AI 把「挖旧假设」变快了，不等于明天全网被破。企业 VPN 用 SonicWall SSLVPN 的，另问 IT 是否已按 CISA KEV 处置 CVE‑2026‑19868。",
+      "sources": [
+        {
+          "label": "X · GoogleDeepMind 宣布",
+          "url": "https://x.com/GoogleDeepMind/status/2118755418675765656"
+        },
+        {
+          "label": "X · Pushmeet Kohli 长文／Article",
+          "url": "https://x.com/pushmeet/status/2118752095859794390"
+        },
+        {
+          "label": "CryptoBriefing · 报道摘要",
+          "url": "https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/"
+        },
+        {
+          "label": "CISA · KEV SonicWall SSLVPN（已扫未升格普通人主条）",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog"
+        }
+      ]
+    },
+    {
+      "id": "1107早-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周五现金收：标普≈7376.86／+0.3%、纳≈24579／+1.1%、道≈51286／−0.5%；亚欧周六休市→指向晚刊周五亚欧收；油略回吐、金≈4079.5、10Y≈4.86%",
+      "time": "2026-11-07T08:20:00+08:00",
+      "summary": "相对晚刊（美现金仍指周四：标普 7353.73／≈−4.36%、纳 24314.998／≈−5.52%、道 51523／≈−3.44%；亚市周五全日收：日经≈57434.77/−6.0%、韩综≈5059.69/−6.0%、台≈39701.64/−4.5%、恒≈24481.86、上证≈3649.18、深成≈11175.78；欧 STOXX≈6133/−1.6%、FTSE≈10546/−2.2%、DAX≈25720/−2.3%；油 WTI≈90.82／Brent≈98.42、金 GC≈4076、10Y 周四现金≈4.837%）：本窗增量是美股周五现金收盘——Yahoo 日线：标普收 7376.86（vs 周四 7353.73 ≈ +0.31%）；纳斯达克收 24579.42（vs 24315 ≈ +1.09%）；道琼斯收 51285.73（vs 51523.06 ≈ −0.46%）。相对周三（11-04）高点仍深跌：标普≈−4.1%、纳≈−4.5%、道≈−3.9%。今日周六：亚／欧休市，无新收盘，数字仍指向晚刊已报的周五亚欧收，不假装有新亚欧结算。商品／利率：WTI≈90.34、Brent≈97.76（相对晚刊略回吐）；金 GC≈4079.5（相对晚刊≈4076 基本持平）；10Y 周五现金≈4.859%（相对周四 4.837% 略升）。主线：周四重挫后周五美股小幅分化反抽（纳强、道弱），≠写成周线已修复。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "晚刊还只能指周四美收；早刊已能看见周五现金怎么结。周末别把期货当成周一开盘结论；亚欧要等到下周开盘才有新收。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ^IXIC",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo ^DJI",
+          "url": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/CL=F/"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／^TWII（亚休市指向）",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI（欧休市指向）",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        }
+      ]
+    },
+    {
+      "id": "1107早-4",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "霍乱弧菌启发的「水下胶水」：湿环境还能粘牢（Sci. Adv.；人用伤口胶还没上市）",
+      "time": "2026-11-06",
+      "summary": "换赛道——生物启发材料，不是晚刊 FAU 嗜碱粒细胞／哮喘，也不是中刊 STAR 微针、早刊 NiTi 或 1105晚钙钛矿。Nature 11-06 Research Highlight 转述 Science Advances：霍乱弧菌（Vibrio cholerae）会分泌生物膜黏附蛋白把自己钉在潮湿表面；研究组从中抽出肽段（报道称 Bap1 相关肽），做成在湿／盐水条件下仍能产生高剪切强度的粘合剂原型——常规高分子胶水遇水常失效，伤口缝合、水下维修却偏偏需要「越湿越粘」。刺点是病原体生存策略被翻成工程材料灵感；≠ 药店明天有霍乱胶水创可贴，也≠ 已经能拿去修潜艇——仍是实验室／论文阶段。",
+      "relevance": "听起来吓人的细菌，有时先教人怎么在水里把东西粘住；跟日常创可贴／手术缝合的「湿粘」难题同一条物理轴，但离成品还远。",
+      "sources": [
+        {
+          "label": "Nature · Cholera bacterium’s good deed（Research Highlight）",
+          "url": "https://www.nature.com/articles/d41586-026-03630-x"
+        },
+        {
+          "label": "Science Advances · biofilm-derived peptide underwater adhesive",
+          "url": "https://www.science.org/doi/10.1126/sciadv.aei1795"
+        }
+      ]
+    }
+  ]
+}
