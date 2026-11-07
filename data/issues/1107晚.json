@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "id": "1107晚",
+  "date": "2026-11-07",
+  "slot": "晚",
+  "title": "11月7日 · 晚",
+  "items": [
+    {
+      "id": "1107晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-07",
+      "summary": "这段时间没有相对中刊达「frontier 发版／权重／权威基准」门槛的新主条。本窗已扫 @elonmusk（严选 0：近窗多为 Grok Bot 轶事／Cybertruck／政治梗 RT 与短回复，非公司级新产品发版）、@OpenAI @AnthropicAI @GoogleDeepMind @xai（账号帖接口未授权，改扫 x.ai／news）@MetaAI @deepseek_ai @Alibaba_Qwen，以及辅助 @sama @demishassabis（仅 RT Antigravity 界面换新）@karpathy @dotey；并扫 openai.com/index、API changelog、ChatGPT release notes（仍 Nov 4 Images 2.6）、anthropic.com/news、engineering（仍 Nov 6 dreaming）、claude Help Center release notes（仍 Nov 6 project tags）、alignment.anthropic.com、Google AI／DeepMind blog／RSS（仍 Nov 5 Omni）、x.ai、ai.meta.com/blog、DeepSeek／Qwen 站与 GitHub releases。中刊后七厂官号几乎静默；6.2／Astra 通用 ChatGPT 仍无官宣；GPT‑6 Cyber、Images 2.6、Gemini Omni 1.2 Flash、Claude Personal Finance、Anthropic Enterprise 安全栈、OpenAI×Hacktron／FMF／Ligo、agent memory dreaming、project tags 等已报或不升格线不重复。七厂确无新 frontier 权重／权威榜单发版。",
+      "relevance": "本窗亦扫过七厂官号与官网／changelog，无其他补报。",
+      "sources": [
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "OpenAI API changelog",
+          "url": "https://platform.openai.com/docs/changelog"
+        },
+        {
+          "label": "ChatGPT release notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Claude Help · release notes",
+          "url": "https://support.claude.com/en/articles/12138966-release-notes"
+        },
+        {
+          "label": "Anthropic engineering",
+          "url": "https://www.anthropic.com/engineering"
+        },
+        {
+          "label": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "label": "DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/"
+        },
+        {
+          "label": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/"
+        },
+        {
+          "label": "x.ai／news",
+          "url": "https://x.ai/news"
+        }
+      ]
+    },
+    {
+      "id": "1107晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-07",
+      "summary": "这段时间没有相对中刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA（最新仍 Nov 6 SonicWall SSLVPN CVE-2026-19868 入 KEV，早／中已标未升格普通人主条；未见 Nov 7 新 KEV）、WorkOS 公告（中刊已升格 ARTEX 逃逸归因，不重复）、Krebs、Wiz、CrowdStrike、Microsoft Security／Threat Intel，以及 X AI security 线索并回一手核实。中刊后可见但不升格：Microsoft（Nov 6）称柬埔寨背景 Storm-3358 自 Oct 起用 ARTEX 配合自动化工具打金融业（匿名文件上传／SSRF 入口，再拉 WISP／vshell／AdaptixC2 等）——企业／金融防守面，家用读者无立刻行动项，且与中刊 WorkOS「评测 agent 逃逸」同属 ARTEX 轴、不宜同日再升第二主条；DeepMind RSA、Crafty Falcon、SonicWall KEV、Cyber／948、Wiz Black October／LLMJacking、CrowdStrike VAPOR PANDA 等已报或不达标线不重复。",
+      "relevance": "家用读者本窗无立刻改密／急补丁项。若你做金融或对外 Web，可对照微软 Storm-3358／ARTEX 一文查匿名上传与 SSRF 面；与中刊 WorkOS 逃逸案不是同一起。本窗亦扫过 CISA／Krebs／Wiz／CrowdStrike／Microsoft Security 与 X 线索，无其他达门槛新主条。",
+      "sources": [
+        {
+          "label": "CISA · SonicWall KEV（已扫未升格；未见 Nov 7 新条）",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog"
+        },
+        {
+          "label": "WorkOS · Oct 30 事件更新（中刊已升，不重复）",
+          "url": "https://workos.com/security/bulletins/update-for-october-30th-2026-data-security-incident"
+        },
+        {
+          "label": "Microsoft · ARTEX abuse / Storm-3358（未升格对照）",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/"
+        },
+        {
+          "label": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        }
+      ]
+    },
+    {
+      "id": "1107晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周六晚仍休市：美现金仍指周五（标普≈7376.86／+0.3%、纳≈24579／+1.1%、道≈51286／−0.5%）；亚欧休市→周五收；油金美期 Yahoo 周五结算影子相对中刊微更；尚无周日晚预开≠周一开盘",
+      "time": "2026-11-07T19:25:00+08:00",
+      "summary": "相对中刊（周六中午休市；美现金周五：标普≈7376.86／+0.3%、纳≈24579／+1.1%、道≈51286／−0.5%；亚欧周五收已齐；油 WTI≈90.34、Brent≈97.76、金≈4079.5、10Y≈4.859%；美期周五结算 ES≈7404／NQ≈27107.5／YM≈51390）：本窗是周六晚约 19:15 Asia/Shanghai，亚／欧／台／韩／日／港／A／美现金均仍休市，无新收盘——现金指数与亚欧数字相对中刊无可报变化（Yahoo 复核：日经≈57434.77、韩≈5059.69、台≈39701.64、恒≈24481.86、上证≈3649.18、深成≈11175.78；STOXX50≈6170.49、FTSE≈10673.94、DAX≈25820.36；10Y≈4.859%）。商品与美股期货本窗仍无活跃盘；Yahoo 周五日线收相对中刊有结算影子微更——WTI≈90.83、Brent≈98.32、金≈4074.9；ES≈7402、NQ≈27085、YM≈51385（相对各自周四收约 +0.3%／+1.2%／−0.4%）——明确：这是周五结算显示更新，不是周日晚预开，更≠周一开盘结论。CME 股指电子盘通常周日美东傍晚才再开，本窗美东仍为周六上午。主线：周末叙事停在「周四重挫后周五美小幅分化反抽、亚欧周五跟杀已结」；周一开盘前勿把 Yahoo 影子当新价。本窗亦扫过美日韩台／A·港／欧／油／金／美债／ES·NQ·YM 固定源。",
+      "relevance": "周六晚别刷出「新收盘」或「周日已预开」幻觉；现金与亚欧相对中刊没动。油金美期若看到和中午差几毛／几点，当 Yahoo 周五结算影子更新，等周日晚／周一再下结论。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ^IXIC",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo ^DJI",
+          "url": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／YM=F（周五结算影子；≠周一开盘；尚无周日晚预开）",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        },
+        {
+          "label": "Yahoo CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/CL=F/"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／^TWII／^HSI（亚休市指向）",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS／399001.SZ",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI（欧休市）",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        }
+      ]
+    },
+    {
+      "id": "1107晚-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Intent Services 过了公评：共享意图状态有了，运营方与越界谁买单仍空",
+      "time": "2026-11-07T15:20:00+08:00",
+      "summary": "EMVCo（Visa／MC／Amex／Discover／JCB／银联共有）9/1 放出《Agentic Payments – Framework》草案，公评到 9/30 截止；PYMNTS 10/2 引 EMVCo 的 Oliver Manahan：Task Force 正在整理反馈、尚无下一步时间表。草案核心是 Intent Services——让参与方在交易前／中／后登记、引用、取回、管理「消费者授权意图」的共享协调层，补 Verifiable Intent 这类一次签名盖不住的生命周期缺口（循环购、累计预算、事后争议）。但框架明确不写业务规则；Know Your Agent／Agentic Transaction Indicators 只是「可能考虑」；IntentPay 10/6 复盘点出仍空着的三问：谁实际运营 Intent Services、意图数据如何保护、付款落在已登记意图之外时责任怎么移。Chargewood 11/2 侧写同步确认：截至当日仍无卡组织为 agent 交易公布拒付责任转移或专码——标准桌先画了共享状态，没点名运营方，也没把损失写成条文。",
+      "relevance": "付款轴从「规则书把持卡人视同自己买、拒付码仍空」再往前半步：互操作层开始管意图生命周期，但「谁跑这层服务、越界谁买单」仍是空白。",
+      "sources": [
+        {
+          "label": "PYMNTS · EMVCo Takes On Proof of Permission",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/emvco-framework-targets-consumer-intent-agentic-payments/"
+        },
+        {
+          "label": "IntentPay · past public comment",
+          "url": "https://intentpay.ai/blog/emvco-intent-services-after-public-comment/"
+        },
+        {
+          "label": "Chargewood · who carries the loss (as of 2026-11-02)",
+          "url": "https://chargewood.com/blog/agentic-payments"
+        }
+      ]
+    },
+    {
+      "id": "1107晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Project Jupiter：BTM 燃料电池逃逸路径，卡在本州空气许可听证被撤",
+      "time": "2026-11-07T15:20:00+08:00",
+      "summary": "新墨西哥 Santa Teresa 的 Project Jupiter（Oracle／OpenAI 相关、约 2.45 GW 校园，靠 Bloom Energy 天然气燃料电池微电网供电）——11/4–11/6 本地报：开发方 Yucca Growth Infrastructure 与 NMED 联合动议撤销原定 12/7 空气质量许可公听；双方已放弃原先 11/23 决定期限；听证官 James Browning 同意撤期，未定新日，须等 Air Quality Bureau 对 10 月方案修订完成技术审查后再排。Santa Fe New Mexican 指出程序可能拖进候任州长 Deb Haaland 任期（她竞选时承诺上任首日签大型数据中心暂停行政令）。刺点：为躲开电网排队而走的 BTM／就地发电，自己撞上本州空气许可对抗式程序——工地还在挖，发电厂没有许可不能开。",
+      "relevance": "基建轴从「银行甩贷标价／选票暂停」落到具体项目的发电许可卡点：离网逃逸叙事在空气质量听证里露馅。",
+      "sources": [
+        {
+          "label": "Albuquerque Journal · hearing delayed again (2026-11-06)",
+          "url": "https://www.abqjournal.com/news/project-jupiter-air-permit-faces-new-delay/3157572"
+        },
+        {
+          "label": "Santa Fe New Mexican · state+developers ask delay (2026-11-04)",
+          "url": "https://www.santafenewmexican.com/las_cruces/local_news/state-developers-ask-to-delay-public-hearing-on-project-jupiter-air-quality-permit/article_c3be5ca9-9ab4-402a-97a4-bcb02cc596eb.html"
+        },
+        {
+          "label": "Las Cruces Sun-News on X · hearing vacated",
+          "url": "https://x.com/CrucesSunNews/status/2118856027986629030"
+        }
+      ]
+    },
+    {
+      "id": "1107晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "OpenAI Grid Protectors：把「高峰让电」做成全国建厂通行证",
+      "time": "2026-11-07T15:20:00+08:00",
+      "summary": "OpenAI 11/2 官宣 Grid Protectors Program：未来 compute campus 与公用事业约定——电网紧张时主动压负荷；也可配合就地发电／储能平滑需求。首个样板是佐治亚 Effingham：与 Georgia Power 协议含最高 1000 MW 可调需求响应（官宣口径约合 70 万户平均用电），并声称承担服务该项目所需的全部基础设施与电力服务成本；公用事业侧包装进「约 9.5 亿美元／年起客户节省」大盘。刺点：面对选票与电费政治，超大规模不再只说「我们自己付电费」，而是把可中断负荷产品化，当作换地方接纳的政治货币——和 NanoDC「躲开等电等许可」方向相反：留在大电网里，但把自己变成可被调度的资源。",
+      "relevance": "基建政治从「禁令／公投／暂停审批」多出一条：厂商主动出售高峰让电能力，换社区与监管口头信任。",
+      "sources": [
+        {
+          "label": "OpenAI · Introducing the Grid Protectors Program",
+          "url": "https://openai.com/index/grid-protectors-program/"
+        },
+        {
+          "label": "Georgia Power · OpenAI contract approved / large-load savings portfolio",
+          "url": "https://www.georgiapower.com/news-hub/press-releases/contract-openai-approved-part-portfolio-delivering-950-million-annual-savings.html"
+        }
+      ]
+    },
+    {
+      "id": "1107晚-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-07",
+      "summary": "这段时间没有达「立刻影响开盘／普通人」门槛的新独立主条。本窗已扫 AP／NBC／CBS（美伊 Qeshm「minor strikes」＋核情报悬赏）、AA Morning Briefing（阿布扎比俄美乌会谈排程、欧航炸弹威胁、美内阁人事）、Kyodo／Xinhua（美中贸易休战实施摩擦、巴拉圭弹劾、新西兰大选投票日）、BBC／DW（巴拉圭 Peña 遭罢免）；均未升格——伊朗轴仍是同一战／斡旋续报，无协议签署、无霍尔木兹格局级新硬事实；巴拉圭罢免属拉美政局大事但难立刻牵动周一亚开／普通人日常；其余为会谈排程／选举进行中／人事，未达本刊门槛。伊朗经卡塔尔核提议、日本非核三原则例外等已报线不重复。",
+      "relevance": "周末别把「minor strikes／悬赏／会谈排程」读成停火或重开海峡；油价互动已在股市商品段，国际栏等硬增量再开。",
+      "sources": [
+        {
+          "label": "NBC · US targeted strikes Iran",
+          "url": "https://www.nbcnews.com/news/us-news/us-military-carries-new-targeted-strikes-iran-rcna607969"
+        },
+        {
+          "label": "CBS · Iran war live updates",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/"
+        },
+        {
+          "label": "AA Morning Briefing Nov 7",
+          "url": "https://www.aa.com.tr/en/world/morning-briefing-nov-7-2026/4114860"
+        },
+        {
+          "label": "BBC · Paraguay Peña dismissed",
+          "url": "https://www.bbc.com/news/articles/c68jzzvjgdy9o"
+        },
+        {
+          "label": "DW · Paraguay Senate dismisses president",
+          "url": "https://www.dw.com/en/paraguay-senate-dismisses-president-santiago-pena-over-bank-crisis/a-79868484"
+        }
+      ]
+    },
+    {
+      "id": "1107晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "AI 设计的广谱禽流感苗：动物试验完胜储备苗（剑桥／Cell Reports Medicine；还没进人试）",
+      "time": "2026-11-05",
+      "summary": "换赛道——疫苗与大流行准备，不是中刊磺酰胺光化学，也不是晚刊嗜碱粒细胞、中刊 STAR 微针、早刊 NiTi、钙钛矿、霍乱水下胶等。剑桥大学 Jonathan Heeney 团队与衍生公司 DIOSynVax，把全球监测到的禽流感基因序列喂给计算／进化算法，做出覆盖 H5Nx 多样性的「超抗原」，再在细胞与动物里筛。Cell Reports Medicine 报告：小鼠和雪貂对多种已造成人类感染、彼此遗传差异大的毒株达到完全保护；同一挑战下，现有 WHO／政府储备路线的候选苗大约只保住一半动物。作者强调设计思路是「抢在病毒进化前面」而不是跟着单株追。加拿大国家微生物实验室与意大利 IZSVe 等做了独立验证语境。明确边界：这是临床前结果，下一步才进人试；≠ 已获批给人用，≠ 柜台上能买到的新针。",
+      "relevance": "禽流感一直是「会不会跳到人传人」的备灾题；这篇说明 AI 可以帮抗原设计跑得更快，但离普通人能打还差人体试验——当科学进度看，别当已经有新疫苗可预约。",
+      "sources": [
+        {
+          "label": "University of Cambridge · AI-developed vaccines against viruses（2026-11-05）",
+          "url": "https://www.cam.ac.uk/stories/ai-developed-vaccines-against-viruses"
+        },
+        {
+          "label": "Cambridge Vet School 稿（同研究）",
+          "url": "https://www.vet.cam.ac.uk/news/vet-school-researchers-develop-bird-flu-vaccine-outperforms-current-stockpiles"
+        },
+        {
+          "label": "Cell Reports Medicine · Broad vaccine protection… H5Nx（doi:10.1016/j.xcrm.2026.103131）",
+          "url": "https://doi.org/10.1016/j.xcrm.2026.103131"
+        },
+        {
+          "label": "DIOSynVax publications 列表（同 DOI）",
+          "url": "https://diosynvax.com/news-publications/"
+        }
+      ]
+    }
+  ]
+}
