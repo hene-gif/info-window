@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "id": "1108早",
+  "date": "2026-11-08",
+  "slot": "早",
+  "title": "11月8日 · 早",
+  "items": [
+    {
+      "id": "1108早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-08",
+      "summary": "这段时间没有相对晚刊达「frontier 发版／权重／权威基准」门槛的新主条。本窗已扫 @elonmusk（严选 0：近窗有 Cybertruck 加班赶积压、Cybercab 约 40kWh 电池包回复、Model Y 销冠言论与德州／Starlink 政治向帖及 RT，均非公司级新产品发版）、@OpenAI @AnthropicAI @GoogleDeepMind @xai（账号帖接口未授权，改扫 x.ai／news）@MetaAI @deepseek_ai @Alibaba_Qwen，以及辅助 @sama @demishassabis @karpathy @dotey（dotey 转述 11/5《纽约时报》Dario 人物稿，非发版）；七厂官号自晚刊后原创主帖为 0。并扫 openai.com/index（最新仍 Nov 6 Hacktron）、API changelog（最新仍 Nov 5 gpt-6-cyber）、ChatGPT release notes（仍 Nov 4 Images 2.6）、anthropic.com/news、engineering（仍 Nov 6 dreaming）、claude Help Center release notes（页面显示近日有更新，最新条目仍为 Nov 6 project tags）、alignment.anthropic.com（11 月可见 Welfare Regard 多主体研究笔记，非权重发版）、Google AI blog／RSS（最新仍 Nov 5 Omni 1.2 Flash）、DeepMind blog、x.ai／news、ai.meta.com/blog、DeepSeek／Qwen 站与 GitHub releases。晚刊后可见但不升格：二手汇编称 Claude Duet 手机端可查看／批准 Claude Code 会话，一手 release notes 未单列此项；Google ADK 等开发者工具增量不升格。6.2／Astra 通用 ChatGPT 仍无官宣；GPT‑6 Cyber、Images 2.6、Gemini Omni 1.2 Flash、Claude Personal Finance、Anthropic Enterprise 安全栈、OpenAI×Hacktron／FMF／Ligo、agent memory dreaming、project tags 等已报或不升格线不重复。七厂确无新 frontier 权重／权威榜单发版。",
+      "relevance": "本窗亦扫过七厂官号与官网／changelog，无其他补报。",
+      "sources": [
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "OpenAI API changelog",
+          "url": "https://platform.openai.com/docs/changelog"
+        },
+        {
+          "label": "ChatGPT release notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Claude Help · release notes",
+          "url": "https://support.claude.com/en/articles/12138966-release-notes"
+        },
+        {
+          "label": "Anthropic engineering",
+          "url": "https://www.anthropic.com/engineering"
+        },
+        {
+          "label": "Google AI Blog／RSS",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "label": "DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/"
+        },
+        {
+          "label": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/"
+        },
+        {
+          "label": "x.ai／news",
+          "url": "https://x.ai/news"
+        }
+      ]
+    },
+    {
+      "id": "1108早-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-08",
+      "summary": "这段时间没有相对晚刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA（最新仍 Nov 6 将 SonicWall SonicOS SSLVPN CVE-2026-19868 列入 KEV，早／中／晚已标未升格普通人主条；未见 Nov 7／8 新 KEV）、Krebs（首页最新仍 Nov 4 白宫网络代理节点出租，属基础设施／代理面，非 AI 实害主条）、Wiz（近窗为 Green Agent 产品文与已报 Black October／LLMJacking）、CrowdStrike（仍停在 Nov 3 收购 Fiddler／Dreadnode 与 AI Kill Switch，晚刊窗口已过不重复）、Microsoft Security／Threat Intel（ARTEX／Storm-3358 打金融业一文晚刊已标未升格，未见更新主条），以及 X AI security 线索（近窗多为 prompt injection 梗与通识，无一手实害）并回厂商／执法页核实。Crafty Falcon、DeepMind RSA、Cyber／948、Wiz Black October／LLMJacking、WorkOS ARTEX 逃逸、SonicWall KEV、CrowdStrike VAPOR PANDA 等已报或不达标线不重复。",
+      "relevance": "家用读者本窗无立刻改密／急补丁项。本窗亦扫过 CISA／Krebs／Wiz／CrowdStrike／Microsoft Security 与 X 线索，无其他达门槛新主条。",
+      "sources": [
+        {
+          "label": "CISA · SonicWall KEV（已扫未升格；未见 Nov 7／8 新条）",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog"
+        },
+        {
+          "label": "CISA · cybersecurity advisories",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        }
+      ]
+    },
+    {
+      "id": "1108早-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周日早仍休市：美现金仍指周五（标普≈7376.86／+0.3%、纳≈24579／+1.1%、道≈51286／−0.5%）；亚欧休市→周五收；油金美期 Yahoo 仍为周五结算影子、相对晚刊无变；尚无周日晚预开≠周一开盘",
+      "time": "2026-11-08T08:16:00+08:00",
+      "summary": "相对晚刊（周六晚休市；美现金周五：标普≈7376.86／+0.3%、纳≈24579／+1.1%、道≈51286／−0.5%；亚欧周五收已齐；油 WTI≈90.83、Brent≈98.32、金≈4074.9、10Y≈4.859%；美期周五结算 ES≈7402／NQ≈27085／YM≈51385）：本窗是周日早约 08:16 Asia/Shanghai，亚／欧／台／韩／日／港／A／美现金均仍休市，无新收盘——Yahoo 复核数字与晚刊一致（日经≈57434.77、韩≈5059.69、台≈39701.64、恒≈24481.86、上证≈3649.18、深成≈11175.78；STOXX50≈6170.49、FTSE≈10673.94、DAX≈25820.36；10Y≈4.859%；WTI≈90.83、Brent≈98.32、金≈4074.9；ES≈7402、NQ≈27085.25、YM≈51385）。商品与美股期货本窗仍无活跃盘；明确：这仍是周五结算影子，不是周日晚预开，更≠周一开盘结论。CME 股指电子盘通常周日美东 18:00（EST，约周一 07:00 Asia/Shanghai）才再开，本窗美东仍为周六晚。主线停在「周四重挫后周五美小幅分化反抽、亚欧周五跟杀已结」；周一开盘前勿把 Yahoo 影子当新价。本窗亦扫过美日韩台／A·港／欧／油／金／美债／ES·NQ·YM 固定源。",
+      "relevance": "周日早别刷出「新收盘」或「周日已预开」幻觉；现金、亚欧与油金美期相对晚刊都没动。等周日晚／周一再看预开，现在这些数只是把周五收盘再指一遍。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ^IXIC",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo ^DJI",
+          "url": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／YM=F（周五结算影子；≠周一开盘；尚无周日晚预开）",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        },
+        {
+          "label": "Yahoo CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/CL=F/"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／^TWII／^HSI（亚休市指向）",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS／399001.SZ",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI（欧休市）",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        }
+      ]
+    },
+    {
+      "id": "1108早-4",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-08",
+      "summary": "这段时间没有达「立刻影响开盘／普通人」门槛的新独立主条。本窗已扫新华社 11/8 稿（电头为 11/7：美方称对 Qeshm「minor strikes」、核项目线索悬赏至约 2000 万美元、周五称有油轮触雷起火、地区外长密集斡旋）、Al Jazeera 11/8 直播（Qeshm／Jask／Sirik／Bandar Abbas 再传爆炸，并称美方拟扩大阻断伊朗陆上补给）、卫报 11/7 卡塔尔调解方案（以 IAEA 视察换部分解冻资产／解除霍尔木兹封堵，仍是提案）、ILKHA 所称「初步 60 天谅解」（文中同时写明语言点未谈完、特朗普尚未签字）。均未升格——伊朗轴仍是同一战／斡旋续报，无协议签署、无霍尔木兹重开或格局级新硬事实；把未签字的 tentative deal 读成停火或海峡已通不成立。晚刊已标的 Qeshm minor strikes／悬赏／卡塔尔核提议线不重复。",
+      "relevance": "周末别把「再打一处／悬赏／未签字框架」读成停火或重开海峡；油价互动已在股市商品段，国际栏等硬增量再开。",
+      "sources": [
+        {
+          "label": "Xinhua · U.S.-Iran tensions（2026-11-08 刊，电头 Nov 7）",
+          "url": "https://english.news.cn/20261108/e6ef0b68bd204610904f260878ed794b/c.html"
+        },
+        {
+          "label": "Al Jazeera · Iran war live Nov 8",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes"
+        },
+        {
+          "label": "The Guardian · Qatar plan for Hormuz / IAEA visits（2026-11-07）",
+          "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections"
+        }
+      ]
+    },
+    {
+      "id": "1108早-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "莱顿／LOFAR：低频射电天空迄今最锐、最深的一张图（ELAIS-N1；已获 A&A 接收）",
+      "time": "2026-11-06",
+      "summary": "换赛道——射电天文，不是晚刊禽流感苗、中刊磺酰胺光化学、早刊水下胶，也不是嗜碱粒细胞、STAR 微针或镍钛制冷。莱顿大学 Jurjen de Jong 团队牵头、用欧洲低频阵列 LOFAR，对北天著名深场 ELAIS-N1 拍出迄今最锐、最灵敏的低频射电图：莱顿／NOVA 11/6 新闻稿称近 6.3 万个射电源，覆盖约满月 25 倍的天区，分辨力约相当于十公里外看清一枚硬币，整图约 80 亿像素，比该区域此前最灵敏的 LOFAR 图锐约 20 倍。预印本（已获 Astronomy & Astrophysics 接收）给出更细的数：200 小时观测、115–168 MHz，合成约 2.5°×2.5°；中心点源灵敏度 5.3 μJy／beam（0.33″×0.39″），面积加权 7.4 μJy／beam（0.36″×0.45″），称目前 1.28 GHz 以下最深、也属全频段最深之一；与原有 6″ 深图合并后目录共 62,916 个独立源。数据约 400 TB，新校准／处理把算力成本降了一个数量级以上，并已公开。科学用途是把从前糊成一团的射电喷流与恒星形成区分开，看超大质量黑洞喷流如何扰动周围气体。作者同时把它当作 LOFAR2.0 升级、以及即将建成的平方公里阵列（SKA）时代的能力预告。明确边界：这是一张深场科研图和公开目录，不是新发现了某颗肉眼可见的新星，也不改变今晚用普通望远镜能看到什么。",
+      "relevance": "普通人用不上这张图本身，但它说明低频射电天空已经能从「糊斑」变成能分出喷流和恒星形成的细节，而且数据公开了——观星工具的精度上了一个台阶，也是欧洲阵与下一代大阵赛跑的一次预告。",
+      "sources": [
+        {
+          "label": "Leiden University · sharpest LOFAR low-frequency image（2026-11-06）",
+          "url": "https://www.universiteitleiden.nl/en/news/2026/11/astronomers-create-the-sharpest-and-most-sensitive-low-frequency-radio-image-of-the-sky-to-date"
+        },
+        {
+          "label": "arXiv:2611.06152 · De Jong et al.（已获 A&A 接收）",
+          "url": "https://arxiv.org/abs/2611.06152"
+        },
+        {
+          "label": "SURF Data Repository · 图像与目录公开存放",
+          "url": "https://repository.surf.nl/records/xqxgr-cdf21"
+        }
+      ]
+    }
+  ]
+}
