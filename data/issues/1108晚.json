@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "id": "1108晚",
+  "date": "2026-11-08",
+  "slot": "晚",
+  "title": "11月8日 · 晚",
+  "items": [
+    {
+      "id": "1108晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-08",
+      "summary": "这段时间没有相对早刊达「frontier 发版／权重／权威基准」门槛的新主条。本窗已扫 @elonmusk（严选 0：近窗为 RT abundance／Terafab 感想、引用 2006 火星协会旧演讲、「Yes」短复、政治向 RT，以及智利地方诊所上 Starlink 的转帖，均非公司级新产品发版）、@OpenAI @AnthropicAI @GoogleDeepMind @xai（账号帖接口未授权，改扫 x.ai／news，最新仍 Nov 2 Grok Bot 数据科学家文）@MetaAI @deepseek_ai @Alibaba_Qwen，以及辅助 @sama @demishassabis @karpathy @dotey（近窗转述 Anthropic 科研会话分析、已报的 agent memory「做梦」、彭博 IPO 估值讨论等，均非一手发版）；七厂官号自早刊后原创主帖为 0。并扫 openai.com/index（最新仍 Nov 6 Hacktron）、API changelog（最新仍 Nov 5 gpt-6-cyber）、ChatGPT release notes（仍 Nov 4 Images 2.6）、anthropic.com/news、engineering（仍 Nov 6 dreaming）、claude Help Center release notes（最新条目仍为 Nov 6 project tags）、alignment.anthropic.com（11 月可见 Welfare Regard 多主体研究笔记，非权重发版）、Google AI blog／RSS（最新仍 Nov 5 Omni 1.2 Flash）、DeepMind blog（可见 Genie 4 与一篇 Antigravity 化学信息学开发者工具增量，不升格）、x.ai／news、ai.meta.com/blog（仍停在 7 月前后）、DeepSeek 站与 GitHub、Qwen／Hugging Face（近窗可见既有旗舰的 FP8 量化包，不是 Qwen 4；Qwen 4 仍无模型卡）。早刊后可见但不升格：X 二手继续传 6.2／Astra「周五没掉」——仍无官宣；私人基准里的 Qwen-4-Flash-Early 自称非官方发版。GPT‑6 Cyber、Images 2.6、Gemini Omni 1.2 Flash、Claude Personal Finance、Anthropic Enterprise 安全栈、OpenAI×Hacktron／FMF／Ligo、agent memory dreaming、project tags 等已报或不升格线不重复。七厂确无新 frontier 权重／权威榜单发版。",
+      "relevance": "本窗亦扫过七厂官号与官网／changelog，无其他补报。",
+      "sources": [
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "OpenAI API changelog",
+          "url": "https://platform.openai.com/docs/changelog"
+        },
+        {
+          "label": "ChatGPT release notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Claude Help · release notes",
+          "url": "https://support.claude.com/en/articles/12138966-release-notes"
+        },
+        {
+          "label": "Anthropic engineering",
+          "url": "https://www.anthropic.com/engineering"
+        },
+        {
+          "label": "Google AI Blog／RSS",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "label": "DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/"
+        },
+        {
+          "label": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/"
+        },
+        {
+          "label": "x.ai／news",
+          "url": "https://x.ai/news"
+        }
+      ]
+    },
+    {
+      "id": "1108晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-08",
+      "summary": "这段时间没有相对早刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA advisories／KEV（最新仍 Nov 6 将 SonicWall SonicOS SSLVPN CVE-2026-19868 列入 KEV，早刊已标未升格普通人主条；未见 Nov 7／8 新 Alert 或新入目录项；另见 Nov 5 供厂商问答的后量子材料与工业冷链加固提示，非 AI、非家用立刻改密项）、Krebs（首页最新仍 Nov 4 白宫网络代理节点出租，属基础设施／代理面，非 AI 实害主条）、Wiz（最新仍 Nov 3 Green Agent 产品文，以及已报 Black October／LLMJacking）、CrowdStrike（仍停在 Nov 3 收购 Fiddler／Dreadnode 与 AI Kill Switch，窗口已过不重复）、Microsoft Security／Threat Intel（ARTEX／Storm-3358 打金融业一文早刊已标未升格，未见更新主条）、Mandiant／GTIG（置顶 AI Threat Tracker 为 9 月旧文），以及 X AI security 线索（近窗多为通识、政策包装与个人项目，无一手实害）并回厂商／执法页核实。Crafty Falcon、DeepMind RSA、Cyber／948、Wiz Black October／LLMJacking、WorkOS ARTEX 逃逸、SonicWall KEV、CrowdStrike VAPOR PANDA 等已报或不达标线不重复。",
+      "relevance": "家用读者本窗无立刻改密／急补丁项。本窗亦扫过 CISA／Krebs／Wiz／CrowdStrike／Microsoft Security／Mandiant·GTIG 与 X 线索，无其他达门槛新主条。",
+      "sources": [
+        {
+          "label": "CISA · SonicWall KEV（已扫未升格；未见 Nov 7／8 新条）",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog"
+        },
+        {
+          "label": "CISA · cybersecurity advisories",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "CISA · KEV catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        }
+      ]
+    },
+    {
+      "id": "1108晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周日晚仍休市：美现金仍指周五（标普≈7376.86／+0.3%、纳≈24579／+1.1%、道≈51286／−0.5%）；亚欧休市→周五收；油金美期 Yahoo 仍为周五结算影子、相对早刊无变；尚无周日晚预开≠周一开盘",
+      "time": "2026-11-08T19:25:00+08:00",
+      "summary": "相对早刊（周日早休市；美现金周五：标普≈7376.86／+0.3%、纳≈24579／+1.1%、道≈51286／−0.5%；亚欧周五收已齐；油 WTI≈90.83、Brent≈98.32、金≈4074.9、10Y≈4.859%；美期周五结算 ES≈7402／NQ≈27085.25／YM≈51385）：本窗是周日晚约 19:25 Asia/Taipei，亚／欧／台／韩／日／港／A／美现金均仍休市，无新收盘——Yahoo 复核数字与早刊一致（日经≈57434.77、韩≈5059.69、台≈39701.64、恒≈24481.86、上证≈3649.18、深成≈11175.78；STOXX50≈6170.49、FTSE≈10673.94、DAX≈25820.36；10Y≈4.859%；WTI≈90.83、Brent≈98.32、金≈4074.9；ES≈7402、NQ≈27085.25、YM≈51385）。商品与美股期货本窗仍无活跃盘：Yahoo 期货字段虽可能残留 REGULAR，但时间戳全停在周五美东约 16:59（折合台北 11/7 05:59），价格与早刊影子价相同——明确：这仍是周五结算影子，不是周日晚预开，更≠周一开盘结论。CME 股指电子盘通常周日美东 18:00（EST，约周一 07:00 Asia/Taipei）才再开，本窗美东仍为周日早晨。主线停在「周四重挫后周五美小幅分化反抽、亚欧周五跟杀已结」；周一开盘前勿把 Yahoo 影子当新价。本窗亦扫过美日韩台／A·港／欧／油／金／美债／ES·NQ·YM 固定源。",
+      "relevance": "周日晚别刷出「新收盘」或「夜盘已开」幻觉；现金、亚欧与油金美期相对早刊都没动。CME 电子盘按惯例还要等到周一清晨台北时间才再开，现在这些数只是把周五收盘再指一遍。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ^IXIC",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "label": "Yahoo ^DJI",
+          "url": "https://finance.yahoo.com/quote/%5EDJI/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／YM=F（周五结算影子；≠周一开盘；尚无周日晚预开）",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        },
+        {
+          "label": "Yahoo CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/CL=F/"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／^TWII／^HSI（亚休市指向）",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo 000001.SS／399001.SZ",
+          "url": "https://finance.yahoo.com/quote/000001.SS/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI（欧休市）",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        }
+      ]
+    },
+    {
+      "id": "1108晚-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "关掉 agent 还不够：富国银行要你留下「已撤销」的证据，否则仍算你授权",
+      "time": "2026-11-08T09:16:00+08:00",
+      "summary": "富国银行将于 2026 年 11 月 24 日生效的 Online Access Agreement 新增第 15 条「Third-Party Artificial Intelligence Agents or Agentic AI」。它把 AI Agent 定义成任何代表他人采取自主、半自主或「非自主」行动的软件、应用或技术——字面可以罩到脚本和记账工具，不限于聊天机器人。如果你用登录凭证让它进入网银或授权它代行，其指令、操作和交易「视为由你直接发起并授权」，银行「没有义务」再去核查权限范围；使用「AT YOUR OWN RISK」，在法律另有规定之前，非本意操作、不完整／不准确／被操纵的输入、以及越权，都由你负责。更刺的是第 15(f) 条：你必须妥善及时撤销授权，「必须保留此类撤销的证据」并在银行要求时提供；在你按第 17(d) 条通知银行之前，在法律或监管允许范围内，你仍对 agent 的全部活动负责。官方客户摘要也写明：经该工具提交的请求可被视作直接来自你，银行保留限制或拦截某些第三方 AI 工具的权利。普通人能感觉到的刺点：把密码交给助手的那一刻，银行合同已经开始把「这是软件干的」写成「这是你干的」；你以为在对话框里说停就算停，合同要的是你能拿出来给银行看的撤销证据，以及打给银行的那通通知。",
+      "relevance": "人机共管副作用落到存款账户合同层：用户为 agent 背锅，而且背锅持续到你能证明自己已经喊停并通知了银行。",
+      "sources": [
+        {
+          "label": "Wells Fargo · 即将生效的 Online Access Agreement（2026-11-24）",
+          "url": "https://www.wellsfargo.com/online-banking/online-access-agreement/upcoming/"
+        },
+        {
+          "label": "Wells Fargo · 客户更新摘要",
+          "url": "https://www.wellsfargo.com/mobile-online-banking/updates/"
+        },
+        {
+          "label": "Captain Compliance · 撤销举证与 Regulation E 对照",
+          "url": "https://captaincompliance.com/news/wells-fargo-ai-agent-revocation-liability-regulation-e/"
+        }
+      ]
+    },
+    {
+      "id": "1108晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "账本上看不见的那一截：评级机构把五家 hyperscaler 的数据中心或有负债估到超过 1.5 万亿美元",
+      "time": "2026-11-08T09:16:00+08:00",
+      "summary": "Morningstar DBRS 在 10 月 23 日整理的多伦多信用展望会记录里写：许多数据中心投资靠 15 到 30 年的长期合约，把市场风险从业主身上卸走，同时给作为对手方的 hyperscaler 压上大额负债。部门主管 Victor Leung 指出，这类承诺有的取决于尚未完工的设施，所以不一定立刻出现在资产负债表上；他给出的估算是，五家 hyperscaler 的或有负债从 2022 年约 0.5 万亿美元升到 2026 上半年超过 1.5 万亿美元。这些负债可能削弱对手方自身的信用，并反过来影响基础设施资产的评级；为了保护自己的评级，hyperscaler 可能转而寻求约束更少、承诺更轻的合约——合约一松，资产端的现金流又会变得更不稳。Leung 点名 Oracle 近期因管道延误对一个 2.45 吉瓦在建项目启动不可抗力，认为这既是施工风险，也可能是对手方在减负的信号。同一场合还提到 GPU 融资已从今年 3 月他们首单超过 80 亿美元，扩到正在经手的第 10 或第 11 单，有的规模达到 300 亿到 400 亿美元，而 GPU 使用寿命只有五到六年。刺点不在又多一篇行业展望，而在：让数据中心资产看起来「像基础设施一样稳」的长期合约，正以账本外或有负债的形式堆在租户一侧；租户若为了保评级而松绑合约，稳的那一侧也会一起松。",
+      "relevance": "基础设施承压从电网、许可和信贷二级市场再进一层：评级机构开始给尚未入表的机房与电力承诺标价，并警告松绑合约会把风险踢回资产端。",
+      "sources": [
+        {
+          "label": "Morningstar DBRS · Credit Outlook Toronto 纪要（2026-10-23）",
+          "url": "https://dbrs.morningstar.com/research/491958/morningstar-dbrs-takeaways-from-credit-outlook-toronto-data-centres-drive-new-assets-new-risks-and-a-race-for-power"
+        },
+        {
+          "label": "Morningstar DBRS · 表后发电对数据中心融资的信用含义",
+          "url": "https://dbrs.morningstar.com/insights/commentary/488971/powering-the-data-center-buildout-credit-implications-of-behind-the-meter-generation"
+        }
+      ]
+    },
+    {
+      "id": "1108晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "电费元凶叙事已经开动，一篇未评审论文却说居民电价涨幅里数据中心只占约 4%",
+      "time": "2026-11-08T09:16:00+08:00",
+      "summary": "11 月 6 日《华盛顿邮报》以「人人都把高电价怪到数据中心头上，但真正的原因是这些」为题报道一项尚未同行评审的预印本，副题写数据中心对居民电价「只有边际影响」。据 11 月 7 日韩联社转述华邮对该论文的介绍：宾夕法尼亚大学沃顿商学院的 Vishrut Rana、Serguei Netessine 与哈佛商学院的 Christian Kaps 合作的《The Cost of Intelligence: Impacts of AI Data Centers on US Electricity Prices》分析 2020 至 2025 年，认为数据中心在美国居民电价上涨中约占 4%，作者称为「显著但很小」；工业电价上涨中约占 15%。作者的判断是，现有讨论夸大了数据中心对电价的影响，居民侧平均效应小，且集中在托管开发商和特定公用事业。华邮还转引今年 6 月 MIT CEEPR 一份工作论文称，2010 至 2024 年数据中心带来的居民电价平均升幅为 2.1%。韩联社同时提醒：这是预印本、未经学术评审，而华邮老板贝佐斯创办的亚马逊高度依赖云业务。刺点不在替谁开脱，而在：居民电费该怪谁的政治归属已经开始推动地方反弹和让电承诺，可拿来核对的平均数字却把居民侧写成「小头」、工业侧更疼——叙事、政策和账单先不同步了。",
+      "relevance": "基础设施承压不只是缺电，还有「电费该怪谁」的政治定价与可核对数字之间的缝：居民侧平均影响被写成小，公共讨论却按大故事在走。",
+      "sources": [
+        {
+          "label": "Washington Post · 数据中心或并未那么大地推高居民电价（2026-11-06）",
+          "url": "https://www.washingtonpost.com/climate-environment/2026/11/06/data-centers-may-not-be-raising-americans-electricity-bills-that-much/"
+        },
+        {
+          "label": "韩联社 · 转述华邮报道并提醒预印本与利益关系（2026-11-07）",
+          "url": "https://www.yna.co.kr/view/AKR20261107028400009"
+        },
+        {
+          "label": "SSRN · The Cost of Intelligence 预印本",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7580459"
+        }
+      ]
+    },
+    {
+      "id": "1108晚-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-08",
+      "summary": "这段时间没有达「立刻影响开盘／普通人」门槛的新独立主条。本窗已扫新华社 11/8 两篇新电（IRGC 称两艘「违规」油轮在霍尔木兹触雷起火，并称美军飞机向圣基茨籍货船 M/V Huda 船尾精确射击将其致残——此为周五同一触雷事件的周日复述／补船名，不是海峡开闭新事实；另一篇电头 11/7：周六夜 Qeshm／Sirik／Jask／Bandar Abbas 再传爆炸，说法不一）、ABC 转述 AP／Reuters 的 11/8 综述（同轴续写爆炸与触雷，并提到 IRGC 称取消自行设定的 2000 公里导弹射程上限、美方宣布 Task Force Iron Gate 阻断陆路／里海补给——对应早刊已引的「拟扩大阻断陆上补给」，文中同时写明伊朗尚无已知超此射程的导弹）、AP 中东综（沙特拦截来袭导弹，利雅得一座阿美大楼被坠落残骸损坏、无伤亡报告）、卫报世界版，以及早刊已引的新华社对照稿与卡塔尔 IAEA 视察换部分解冻资产／解除霍尔木兹封堵提案。均未升格——伊朗轴仍是同一战／斡旋续报，无协议签署、无霍尔木兹重开或格局级新硬事实；把再炸、再报触雷、射程上限声明或未签字框架读成停火或海峡已通不成立。另扫到波兰克拉科夫老城广场枪击（6 死 15 伤）等周末惨案，不达本栏门槛。早刊已标的 Qeshm minor strikes／悬赏／卡塔尔核提议线不重复。",
+      "relevance": "周末别把「再打一处／再报触雷／取消射程上限声明／未签字框架」读成停火或重开海峡；油价互动已在股市商品段，国际栏等硬增量再开。",
+      "sources": [
+        {
+          "label": "Xinhua · IRGC says 2 tankers hit mines; U.S. disables M/V Huda（2026-11-08）",
+          "url": "https://english.news.cn/20261108/35f56d5f87294f648f3223cea814e580/c.html"
+        },
+        {
+          "label": "Xinhua · Explosions heard in southern Iran（2026-11-08 刊，电头 Nov 7）",
+          "url": "https://english.news.cn/20261108/f39c2d4022aa443bbbfe219090babf62/c.html"
+        },
+        {
+          "label": "ABC · Hormuz explosions and de-escalation proposals（2026-11-08）",
+          "url": "https://www.abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730"
+        },
+        {
+          "label": "AP · Saudi intercept damages Aramco building in Riyadh（2026-11-08）",
+          "url": "https://apnews.com/article/mideast-news-november-8-2026-090d96e25872f5c63e105b9dd3e5dc60"
+        },
+        {
+          "label": "The Guardian · Qatar plan for Hormuz / IAEA visits（2026-11-07，早刊已引对照）",
+          "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections"
+        }
+      ]
+    },
+    {
+      "id": "1108晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "1.15 亿年前恐龙肢骨里，可能留下了经化学指认的红细胞／血红素痕迹（PNAS 11/2；同行仍有争议）",
+      "time": "2026-11-06",
+      "summary": "换赛道——古生物学／分子化石，不是早刊 LOFAR 射电深场、晚刊禽流感苗、中刊磺酰胺光化学、或水下胶、嗜碱粒细胞、STAR 微针、镍钛制冷。Curtin University 的 Kliti Grice 团队在 11/2《PNAS》报告：巴西东北 Mina Pedra Branca 出土、约 1.15 亿年前（白垩纪）的小型带羽毛兽脚类 Aratasaurus museunacionali 肢骨里，切片加扫描电镜看到血管管道中约 20 微米的椭圆微结构；元素成像显示富铁、碳、氮（血红素组分），拉曼散射提示卟啉；把骨提取物分离并排除叶绿素等污染后，信号仍指向 heme。作者称之为迄今最老的红细胞结构，也是首次得到化学证明。保存假说是：这些椭圆结构里有锰氧化物矿物 hausmannite（黑锰矿），可能把细胞结构「封存」起来，而不是事后简单替换掉生物组织。Science News 11/6 做了综述。必须写上的边界：同行并不都买账。北卡州立大学的 Mary Schweitzer（2005 年曾报道霸王龙软组织血管）认为 heme 信号来自整块骨头、并不只局限在那些圆结构里，而这些「红细胞」的尺寸和形状也与现生鸟类／爬行动物不一致；她说「I am not convinced」，并引那句老话——非凡主张需要非凡证据。1997 年就有研究把化石里的小球辨成黄铁矿而非血细胞。作者回应：没人知道恐龙红细胞原本什么形状、化石化又会怎样变形；他们的解释靠的是解剖、形态、矿物、元素和分子化学的会合，而不是单看外形。明确：这是一篇有化学证据、但仍在争议中的分子化石报告，不是已经定论的「恐龙血被保存下来了」。",
+      "relevance": "普通人会默认「血几天就烂光，一亿年不可能留下」；如果锰矿物真能把血红素封在骨头里，就等于给早已灭绝的动物打开一扇看新陈代谢的分子窗——但争议本身也说明，这种发现现在还不是定论。",
+      "sources": [
+        {
+          "label": "Science News · evidence dinosaur blood can fossilize（2026-11-06）",
+          "url": "https://www.sciencenews.org/article/evidence-dinosaur-blood-fossilize"
+        },
+        {
+          "label": "PNAS · Grice et al., heme signatures in a 115-million-year-old dinosaur bone（doi: 10.1073/pnas.2614248123）",
+          "url": "https://doi.org/10.1073/pnas.2614248123"
+        }
+      ]
+    }
+  ]
+}
