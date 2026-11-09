@@ -111,6 +111,10 @@ document.addEventListener('click', (event) => {
 });
 document.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') return;
+  if (!$('float-sheet').hidden) {
+    closeFloat();
+    return;
+  }
   if (!$('install-sheet').hidden) {
     closeInstall();
     return;
@@ -147,6 +151,7 @@ window.addEventListener('offline', updateNet);
 window.addEventListener('resize', () => {
   closeMenu();
   syncInstallButton();
+  syncFloatButton();
 });
 window.addEventListener('pagehide', saveReading);
 
@@ -444,6 +449,11 @@ function pickerLabel() {
 }
 
 function onBarClick(event) {
+  if (event.target.closest('[data-float]')) {
+    event.preventDefault();
+    openFloat();
+    return;
+  }
   if (event.target.closest('#picker')) {
     toggleMenu();
     return;
@@ -538,7 +548,7 @@ function menuHtml() {
       return head + rows;
     })
     .join('');
-  return `<div class="menu-scroll">${columnsMenuHtml()}${body || '<p class="menu-day">还没有期次</p>'}</div><a class="menu-foot" href="#/dates">全部往期${ICON.next}</a>`;
+  return `<div class="menu-scroll">${columnsMenuHtml()}${body || '<p class="menu-day">还没有期次</p>'}</div><a class="menu-foot" href="#/dates">全部往期${ICON.next}</a><button type="button" class="menu-foot" data-float>贴边悬浮</button>`;
 }
 
 function columnsMenuHtml() {
@@ -1875,14 +1885,25 @@ function syncInstallButton() {
   button.hidden = isStandalone() || !wide;
 }
 
+function syncFloatButton() {
+  const button = $('float');
+  if (!button) return;
+  button.hidden = !window.matchMedia('(min-width: 800px)').matches;
+}
+
 function watchInstall() {
   syncInstallButton();
+  syncFloatButton();
   const mode = window.matchMedia('(display-mode: standalone)');
   if (typeof mode.addEventListener === 'function') mode.addEventListener('change', syncInstallButton);
   $('install').addEventListener('click', openInstall);
   $('install-close').addEventListener('click', closeInstall);
   $('install-sheet').addEventListener('click', (event) => {
     if (event.target === $('install-sheet')) closeInstall();
+  });
+  $('float-close').addEventListener('click', closeFloat);
+  $('float-sheet').addEventListener('click', (event) => {
+    if (event.target === $('float-sheet')) closeFloat();
   });
   $('install-go').addEventListener('click', async () => {
     if (!installPrompt) return;
@@ -1911,12 +1932,24 @@ function watchInstall() {
 
 function openInstall() {
   closeMenu();
+  closeFloat();
   $('install-sheet').hidden = false;
   $('install-close').focus();
 }
 
 function closeInstall() {
   $('install-sheet').hidden = true;
+}
+
+function openFloat() {
+  closeMenu();
+  closeInstall();
+  $('float-sheet').hidden = false;
+  $('float-close').focus();
+}
+
+function closeFloat() {
+  $('float-sheet').hidden = true;
 }
 
 function issueHref(id) {
