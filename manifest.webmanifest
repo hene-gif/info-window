@@ -1,7 +1,10 @@
 {
   "name": "讯息窗",
   "short_name": "讯息窗",
-  "description": "个人新闻摘要",
+  "description": "个人新闻摘要。一天大约三期，窗口开着时会接上新发布的一期。",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
   "lang": "zh-Hans",
   "dir": "ltr",
   "id": "./",

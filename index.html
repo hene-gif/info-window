@@ -39,8 +39,8 @@
           <span class="picker-label" id="picker-label">讯息窗</span>
           <svg class="picker-chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.75 6 7.75l3-3"/></svg>
         </button>
-        <span class="offline" id="offline" hidden>离线</span>
         <nav class="tools" aria-label="研究、专栏、时间线、检索和收藏">
+          <button type="button" class="tool tool-label" id="install" hidden>安装</button>
           <a class="tool tool-label" href="research/">研究</a>
           <a class="tool tool-label" href="#/columns" data-tool="columns">专栏</a>
           <a class="tool tool-label" href="#/timeline" data-tool="timeline">时间线</a>
@@ -68,7 +68,11 @@
           <span>跳到日期</span>
           <input type="date" id="jump-date" aria-label="跳到日期">
         </label>
-        <p class="clock" aria-label="台北时间"><span>台北</span><time id="clock">--:--</time></p>
+        <div class="bar-meta">
+          <button type="button" class="fresh" id="fresh" hidden>核对中</button>
+          <span class="sr-only" id="fresh-live" aria-live="polite"></span>
+          <p class="clock" aria-label="台北时间"><span>台北</span><time id="clock">--:--</time></p>
+        </div>
       </div>
       <div class="blocks" id="blocks" role="group" aria-label="我关注的子块" hidden></div>
     </div>
@@ -79,6 +83,24 @@
     <p class="status">正在打开…</p>
   </main>
   <div id="toast" role="status" aria-live="polite"></div>
+  <div class="sheet" id="install-sheet" hidden>
+    <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="install-title">
+      <h2 id="install-title">单独开一扇窗口</h2>
+      <p>还是这个讯息窗。用 Chrome 或 Edge 装上之后，它会在自己的窗口里打开，拖边缘就能改大小。浏览器会先问你。不会开机自己启动，不会一直浮在别的窗口上面，也不会要通知权限。</p>
+      <ol>
+        <li>用 Chrome 或 Edge 打开现在这个页面。</li>
+        <li>Chrome 优先点地址栏右端的「安装应用」。英文界面写的是 Install。</li>
+        <li>没有图标时，Chrome 点右上角「更多」→「投放、保存和分享」→「安装“讯息窗”」。若写成「将网页作为应用安装」，也是这一项。英文是 More → Cast, save, and share → Install page as app。</li>
+        <li>Edge 点右上角「…」→「更多工具」→「应用」→「将此站点安装为应用」。英文是 Settings and more → More tools → Apps → Install this site as an app。</li>
+        <li>确认之后，开始菜单里搜「讯息窗」就能打开。想钉在任务栏，用装好时的询问，或以后到 chrome://apps、edge://apps 里固定。</li>
+      </ol>
+      <p class="sheet-note">窗口关着，或者电脑睡着，就不会核对。醒来后只要这扇窗口还开着，会接着看有没有新发布的一期。一天大约三期，不是一直在抓新闻。若看到「登录时启动」，那是浏览器自己的开关，不勾即可。</p>
+      <div class="sheet-acts">
+        <button type="button" class="sheet-go" id="install-go" hidden>安装讯息窗</button>
+        <button type="button" class="sheet-close" id="install-close">知道了</button>
+      </div>
+    </div>
+  </div>
   <noscript>
     <p class="status">讯息窗需要 JavaScript 才能阅读摘要。</p>
   </noscript>
