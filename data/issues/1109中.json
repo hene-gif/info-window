@@ -1,0 +1,272 @@
+{
+  "version": 1,
+  "id": "1109中",
+  "date": "2026-11-09",
+  "slot": "中",
+  "title": "11月9日 · 中",
+  "items": [
+    {
+      "id": "1109中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-09",
+      "summary": "这段时间没有相对早刊达「frontier 发版／权重／权威基准」门槛的新主条。本窗已扫 @elonmusk（严选 0：近窗一条引用 DogeDesigner／Qualcomm CEO 谈与 SpaceX 的 5G 基站合作并写道「Excited to be working with @Qualcomm on breakthrough technologies for 5G & beyond」，属 SpaceX 电信合作而非 xAI 新 frontier 权重；其余为 Starship 33 引擎回复、政治向短评、喜剧／名人引用与 RT）、@OpenAI @AnthropicAI @GoogleDeepMind @xai（账号帖接口未授权，简介现写 Now at @SpaceXAI；改扫 x.ai／news，最新仍 Nov 2 Grok Bot 数据科学家文）@MetaAI 及已迁的 @AIatMeta @deepseek_ai @Alibaba_Qwen，以及辅助 @sama @demishassabis @karpathy @dotey（sama／Demis 近窗原创主帖为 0；Karpathy 仅评论一幅 O'Neill 圆柱艺术构想；dotey 继续引用 OpenAIDevs「Tomorrow.」猜测 GPT-6.2，并转述英伟达 CEO 黄仁勋承认出轨、董事会成立独立委员会调查——均非七厂 frontier 发版，标 传闻／非产品条）。七厂官号自早刊后原创主帖为 0。并扫 openai.com/index（最新仍 Nov 6 Hacktron）、API changelog（最新仍 Nov 5 gpt-6-cyber）、ChatGPT release notes（仍 Nov 4 Images 2.6）、anthropic.com/news、engineering（仍 Nov 6 dreaming）、claude Help Center release notes（最新条目仍为 Nov 6 project tags）、Google AI blog／RSS（最新仍 Nov 5 Omni 1.2 Flash）、DeepMind blog（可见 Genie 4 与一篇 Antigravity 化学信息学开发者工具增量，不升格）、x.ai／news、ai.meta.com/blog（仍停在 7 月前后）、DeepSeek 站与 GitHub（仍 V4.1-Flash-1017；Harness 预发布不升格）、Qwen blog／GitHub（Qwen3 发行页无新 release；二手预测本周会出 Qwen 4，仍无官宣）。早刊后可见但不升格：X 二手继续传 GPT-6.2 Sol「已被部分用户路由到」、OpenAIDevs「Tomorrow.」预告仍无官网／changelog／ChatGPT notes 对应条目；Gemini 4 Carbon／所谓内部 Krypton 属旧发版或未证实传闻。GPT‑6 Cyber、Images 2.6、Gemini Omni 1.2 Flash、Claude Personal Finance、Anthropic Enterprise 安全栈、OpenAI×Hacktron、agent memory dreaming、project tags 等已报或不升格线不重复。七厂确无新 frontier 权重／权威榜单发版。",
+      "relevance": "本窗亦扫过七厂官号与官网／changelog，无其他补报。",
+      "sources": [
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "OpenAI API changelog",
+          "url": "https://platform.openai.com/docs/changelog"
+        },
+        {
+          "label": "ChatGPT release notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Claude Help · release notes",
+          "url": "https://support.claude.com/en/articles/12138966-release-notes"
+        },
+        {
+          "label": "Anthropic engineering",
+          "url": "https://www.anthropic.com/engineering"
+        },
+        {
+          "label": "Google AI Blog／RSS",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "label": "DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/"
+        },
+        {
+          "label": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/"
+        },
+        {
+          "label": "x.ai／news",
+          "url": "https://x.ai/news"
+        }
+      ]
+    },
+    {
+      "id": "1109中-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-09",
+      "summary": "这段时间没有相对早刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA advisories／KEV（最新仍 Nov 6 将 SonicWall SonicOS SSLVPN CVE-2026-19868 列入 KEV，早刊已标未升格普通人主条；未见 Nov 7／8／9 新 Alert 或新入目录项；另见 Nov 5 供厂商问答的后量子材料与工业冷链加固提示，非 AI、非家用立刻改密项）、Krebs（首页最新仍 Nov 4 白宫网络代理节点出租，属基础设施／代理面，非 AI 实害主条）、Wiz（最新仍 Nov 3 Green Agent 产品文，以及已报 Black October／LLMJacking）、CrowdStrike（仍停在 Nov 3 收购 Fiddler／Dreadnode 与 AI Kill Switch，窗口已过不重复）、Microsoft Security／Threat Intel（ARTEX／Storm-3358 打金融业与 Nov 5 密钥扫描两文晚刊／早刊已标未升格，未见更新主条）、Mandiant／GTIG（置顶 AI Threat Tracker 为旧文），以及 X AI security 线索并回厂商／执法页核实。另见但不升格：SANS Stormcast 11/9 与 X 热帖复述 11/7 The Hacker News／Apiiro 关于 Claude Code「Yes, and don't ask again」把含密码／密钥的完整命令写入 .claude/settings.local.json、公开 GitHub 上约 1,122 份文件含密（采集窗口约 11/1–3）——发表早于本期窗口，未见 Anthropic 新公告、CISA 新条目或确认这些密钥已被规模化利用，不按迟到主条补报；Microsoft 云端已修的 Entra Device Registration CVE-2026-109469 称当时无利用、客户无需操作；honeypot 上的 sshole（CVE-2026-123158）扫描属非 AI、非家用立刻改密项。Crafty Falcon、DeepMind RSA、Cyber／948、Wiz Black October／LLMJacking、WorkOS ARTEX 逃逸、SonicWall KEV、CrowdStrike VAPOR PANDA、VulnCheck／Langflow 与 Malbear Labs 未具名 DeepSeek 工作区长文等已报或不达标线不重复。",
+      "relevance": "家用读者本窗无立刻改密／急补丁项。若你用 Claude Code 并把项目推到公开 GitHub，值得自己搜一下仓库里有没有被提交的 .claude/settings.local.json，有的话先轮换文件里出现过的密钥——这是 11/7 已公开的开发者侧暴露，不是本期新利用。本窗亦扫过 CISA／Krebs／Wiz／CrowdStrike／Microsoft Security／Mandiant·GTIG 与 X 线索，无其他达门槛新主条。",
+      "sources": [
+        {
+          "label": "CISA · SonicWall KEV（已扫未升格；未见 Nov 7／8／9 新条）",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog"
+        },
+        {
+          "label": "CISA · cybersecurity advisories",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "CISA · KEV catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        },
+        {
+          "label": "The Hacker News · Claude Code settings.local.json（11/7；已扫不按迟到主条补报）",
+          "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+        }
+      ]
+    },
+    {
+      "id": "1109中-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周一午间：台股盘中国安基金护盘大反弹（一度逾+2600点），日经午前收+3.44%；韩综翻红上5100；港A上午小涨；美现金仍指周五，美期转强；欧股未开",
+      "time": "2026-11-09T12:25:00+08:00",
+      "summary": "相对早刊（约 08:18–08:21 Asia/Taipei：日经 Yahoo 盘中 58137.04／较周五 57434.77 约 +1.22%，金十开盘 57802.20；韩综开盘 5034.20／−0.50%，截稿 Naver 5026.65／−0.65%；台／港／A／欧未开，仍指周五：台≈39701.64、恒≈24481.86、上证≈3649.18、深成≈11175.78、STOXX50≈6170.49、FTSE≈10673.94、DAX≈25820.36；美现金仍周五：标普 7376.86／+0.31%、纳 24579.42／+1.09%、道 51285.73／−0.46%；美期夜盘 ES 7404.75 大致持平、NQ 27033.75／−0.19%、YM 51582／+0.38%；WTI 90.25、Brent 97.38、金 4080.7、10Y 4.859%）：本窗约 12:20–12:25 Asia/Taipei。亚股半日或盘中已可报。日经午前收（財経新聞 12:30 JST 午餐评论）：59411.34（+1976.57／+3.44%）；截稿 Yahoo 现货 59258.15（较周五 +3.17%，时间戳 12:05 台北／13:05 JST，约 15 分钟延迟）——后场已开、略低于午前收，不是全日收。韩综早刊时尚弱，随后翻红：韩联社 10:58 KST 报 5121.04（+1.21%），盘中低 4990.66、高 5151.84；韩经 11:00 KST 交叉 5118.14（+1.16%）；截稿 Yahoo ^KS11 5111.54（+1.02%，时间戳 12:00 台北／13:00 KST）——仍在交易（约 14:30 台北才收），正文不以单一延迟印当收盘。台股 13:30 才收，本窗是盘中不是收盘：中央社 11:14 更新称国安基金宣布执行史上第 10 次护盘后，盘中弹升逾 2600 点、一度突破 42300 点；台积电盘中至 2290 元（+155 元），贡献大盘约 1227 点。Yahoo ^TWII 12:00 台北 42011.56（较周五 39701.64 约 +5.82%）——较中央社所写盘中高点有所回落。港股午休：Yahoo 恒指 24531.15（+0.20%，时间戳 12:05，可视作午前收附近）。A 股午休：上证 Yahoo 3665.94（+0.46%，时间戳 11:30 恰为午前收）；深成 11206.25（+0.27%）。欧股现货未开（约台北 16:00 前后才开），仍指周五：STOXX50 6170.49、FTSE 10673.94、DAX 25820.36。美现金仍休市、仍是周五收，数字与早刊相同；美东此时仍是周日夜间，现金要到约台北 22:30 才开。美期已转强（约 12:10 台北）：ES 7446.5（较周五结算 7402 约 +0.60%）、NQ 27221（+0.50%）、YM 51785（+0.78%）——早刊时 NQ 还小幅为负。商品：WTI 91.30（较周五结算 90.83 约 +0.52%，也高于早刊 90.25）、Brent 98.31（与周五 98.32 大致持平，高于早刊 97.38）、金 4129.3（较周五 4074.9 约 +1.34%，早刊约 4080.7）；10Y 仍 4.859%（周五）。明确：美现金不是周一开盘；台股／韩综／日经后场都还没收全日；欧股尚未开。本窗亦扫过美日韩台／A·港／欧／油／金／美债／ES·NQ·YM 固定源。",
+      "relevance": "周一午别把周五美现金当新开盘，也别把台股／日经／韩综的盘中或午前收当成全日结算。真正相对早刊动了的是：台股在国安基金护盘叙事下大幅反弹、日经午前收大涨约 3.4%、韩综由弱转强，以及美期和黄金转强。",
+      "sources": [
+        {
+          "label": "Yahoo ES=F／NQ=F／YM=F（约 12:10 台北）",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        },
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI（美现金仍周五）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "財経新聞 · 日经午前收 59411.34（+3.44%）",
+          "url": "https://www.zaikei.co.jp/article/20261109/876660.html"
+        },
+        {
+          "label": "Yahoo ^N225（后场盘中；约 15 分钟延迟）",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "韩联社 · 韩综约 10:58 KST 报 5121.04（+1.21%）",
+          "url": "https://www.yna.co.kr/view/AKR20261109066300008"
+        },
+        {
+          "label": "韩国经济 · 11:00 KST 交叉 5118.14（+1.16%）",
+          "url": "https://www.hankyung.com/article/202611093880i"
+        },
+        {
+          "label": "中央社 · 国安基金护盘、台股盘中弹升逾 2600 点",
+          "url": "https://www.cna.com.tw/news/afe/202611090040.aspx"
+        },
+        {
+          "label": "Yahoo ^TWII／^HSI／000001.SS／399001.SZ",
+          "url": "https://finance.yahoo.com/quote/%5ETWII/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI（欧现货未开）",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        },
+        {
+          "label": "Yahoo CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/CL=F/"
+        }
+      ]
+    },
+    {
+      "id": "1109中-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "抢电先得有信用证：公用事业把「银行担保」当成分配电网容量的过滤器",
+      "time": "2026-11-09T09:30:00+08:00",
+      "summary": "前几刀写过选票、甩贷、账本外租约和高峰让电；今天撞到另一层钱——不是借来盖楼的贷款，而是给公用事业看的履约信用证。数据中心运营商 Switch 6 月 10 日通稿：公司循环信贷额度扩到逾 60 亿美元，辛迪加无承诺履约信用证额度（LCF）从 4 月的 26 亿美元加到 35 亿美元，两项合计近 100 亿美元流动性与信用支持能力。它自己写得很直：随着 AI 基建加速，公用事业越来越要求开发商提供 credit support，好确认大型项目会完工、电会被用掉；LCF 就是用来向公用事业和其他对手方出具履约信用证，支撑电力采购、发电与输电需求。Natixis CIB 的行业访谈把机制拆开：这类「电力信用证」多半是一年自动续期的 evergreen、表外、很少被支取，却能让电网运营商在分配巨量电力之前先看到信用背书——开发商付不了约定电量或接不上网时，受益人可以动用信用证；它甚至被形容成开发流程里的 selective filter，证明项目「够严肃」。欧洲目前多半还塞在原有公司授信里做双边担保，美国已经单独拆出几十亿美元级的辛迪加电力信用证。对普通人的影响是：你家附近能不能新来一座机房，不只看州长停不停批、空气许可过不过，还看开发商能不能从银行拿到足够厚的履约担保去「占」电网容量；信用额度不够的项目，可能在真正挖土之前就被这道过滤器挡在外面。",
+      "relevance": "基础设施承压与信贷传导：电网容量分配开始叠加贸易金融门槛——电力信用证把「谁先拿到电」写成银行可核的履约担保，而不是只看 PPA 纸面合同。证据边界：Switch 通稿与 Natixis 访谈可核结构与规模；「过滤器」是银行侧口述机制，不是监管条文；欧洲是否跟进仍属预期。",
+      "sources": [
+        {
+          "label": "Switch · 循环信贷与履约信用证扩至近 100 亿美元（2026-06-10）",
+          "url": "https://www.switch.com/switch-expands-corporate-revolving-credit-and-letter-of-credit-facilities-to-nearly-10-billion/"
+        },
+        {
+          "label": "Natixis CIB · Megawatts & Megabytes：电力信用证如何卡住电网容量",
+          "url": "https://home.cib.natixis.com/articles/megawatts-megabytes-how-trade-finance-fuels-the-ai-boom"
+        },
+        {
+          "label": "DCD · Switch 债务能力扩至约 95 亿美元",
+          "url": "https://www.datacenterdynamics.com/en/news/switch-increases-debt-facility-to-95bn-to-fund-ai-data-center-build-out/"
+        }
+      ]
+    },
+    {
+      "id": "1109中-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "谷歌给肯塔基机房项目做信贷背书：Anthropic 的 190 亿美元租约，靠 AA+ 才能便宜借到钱",
+      "time": "2026-11-09T09:30:00+08:00",
+      "summary": "11 月 4 日 TeraWulf 通稿：它与 Google LLC 签了信用支持协议，用来支撑 Justified Data Campus（肯塔基 Hawesville）约 190 亿美元、与 Anthropic 的长期租约相关的项目债融资；同一天还把 Fluor 的工程总包从早前有限开工推进到三栋楼的完整 EPC，分阶段就绪目标约从 2027 年末到 2028 年二季度。CFO 原话把刺点说死了：Cost of capital is fundamental——有投资级信用支持，才谈得上争取有竞争力的长期债务。通稿强调 Alphabet 高级无担保债评级为 S&P AA+、Moody’s Aa2。对照上午那刀「电力信用证」：一边是开发商拿银行担保去占电网；一边是租户侧不够硬（或市场觉得不够硬）时，由另一家 hyperscaler 出来做 backstop，把项目债的对手方风险抬到 AA+ 档。对普通人／市场判断的用处是：AI 机房能不能按计划借到钱，越来越不只看租约金额，而看租约后面站着谁的资产负债表；同样一座楼，租户信用一换，融资成本可以差出一整档。要注意边界：通稿写的是「预期债务融资」的合同信用支持，不是已经交割的债券发行；Google 具体在违约时付租金、接租还是付解约费，细节在 SEC 附件里，本文以公司公开摘要为准。",
+      "relevance": "信贷与资本开支：hyperscaler 从「自己借钱盖机房」扩到「给第三方校园的租约／项目债做投资级背书」，直接压低融资成本。证据边界：TeraWulf 11/4 通稿可核协议存在、租约规模口径与评级引用；背书触发条款与最终发债条件仍待项目融资落地后核对。",
+      "sources": [
+        {
+          "label": "TeraWulf · Google 信贷背书支撑约 190 亿美元 Anthropic 租约（2026-11-04）",
+          "url": "https://investors.terawulf.com/news-events/press-releases/detail/148/terawulf-secures-google-credit-backstop-for-project-financing-in-support-of-19-billion-anthropic-lease-executes-definitive-fluor-epc-agreement"
+        },
+        {
+          "label": "DCD · Google to serve as credit backstop for TeraWulf Kentucky campus",
+          "url": "https://www.datacenterdynamics.com/en/news/google-to-serve-as-credit-backstop-for-terawulf-data-center-in-kentucky/"
+        },
+        {
+          "label": "SEC · TeraWulf 8-K 索引（含 Google 信用支持附件入口）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026069810/wulf-20261104.htm"
+        }
+      ]
+    },
+    {
+      "id": "1109中-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "商业地产债协会刚出第二版数据中心借贷手册：不同债市其实都在赌同一小撮科技公司付钱",
+      "time": "2026-11-09T09:30:00+08:00",
+      "summary": "CRE Finance Council（商业地产金融协会）11 月 5 日发布《Data Center Primer》第二版，数据口径收到 2026 年 10 月 31 日。它不是又一篇热搜，而是给做 ABS／CMBS／项目债的人看的操作手册，新增几处刺点。一是融资渠道与「共享对手方」：银行贷款、私募信贷、担保项目债、ABS、CMBS、芯片融资被画到同一张图上，并加了新展板——不同市场往往依赖同一小撮科技公司的付款或担保。二是 ABS 与风险自留：专节讨论 2026 年 7 月 29 日 SEC 工作人员信函，结论是某些数据中心 ABS 落在美国风险自留要求之外，而 CMBS 要求不变——同一底层资产，进哪条管道，发行人要不要自己留一截风险，规则已经分叉。三是电力、许可与地方政策被明确写成影响「项目能不能完工、租金何时起算、贷款能不能按期还」的信用因素，而不只是工程花絮。对市场判断的用处是：你以为在买「机房债」「证券化债」「芯片融资」，信用手册却提醒你——现金流终点常常还是那几家 hyperscaler；电和许可一拖，租金起算日一挪，整条债的还款假设就松。边界：这是行业协会指南与监管信函的整理，不是某一笔债违约；具体哪些 ABS 结构适用那封 SEC 信，要以信函与交易文件为准。",
+      "relevance": "跨市场传导与信贷结构：同一科技对手方贯穿多条融资管道；ABS 风险自留例外与 CMBS 分叉、以及电力／许可对租金起算的约束，都是可核的制度落地。证据边界：CREFC 11/5 公告可核新增章节主题；Barclays／JLL 等发行存量数字若引用需另核原报告，本稿以协会自述为准。",
+      "sources": [
+        {
+          "label": "CREFC · Data Center Primer 第二版发布说明（2026-11-05）",
+          "url": "https://www.crefc.org/cre/cre/content/News/Items/Research_and_Data/2026/JUST_RELEASED_CREFC_Data_Center_Primer_Second%20Edition.aspx"
+        },
+        {
+          "label": "CREFC · Primer 文档库条目",
+          "url": "https://resources.crefc.org/crefc-data-center-primer-second-edition/"
+        },
+        {
+          "label": "J.P. Morgan AM · Financing the AI buildout（外部融资需求约 1.1 万亿美元，2026-11-06）",
+          "url": "https://am.jpmorgan.com/us/en/asset-management/adv/insights/portfolio-insights/fixed-income/financing-the-ai-buildout/"
+        }
+      ]
+    },
+    {
+      "id": "1109中-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-09",
+      "summary": "这段时间没有达「立刻影响开盘／普通人」门槛的新独立主条。本窗已扫 Reuters 11/8（特朗普称若谈判有进展「高度不可能」再下令打击伊朗——早刊已标未升格）、Axios 11/9（特朗普周一将会见卡塔尔首相讨论斡旋；各方讨论一份为期两天的草案：第一天美方解除海上封锁并释放部分被冻结资金、伊朗正式邀请 IAEA 视察被炸核设施，第二天再谈霍尔木兹重开与核谈判——来源明确这是调解草案，不是已签署协议；鲁比奥周日称谈得不多、伊朗要求「不现实」；伊朗外长称仍在等美方对提案的回应）、AP／Al Jazeera 与早刊已标的 Khor Mor 气田周日遇袭／库区停电续报，以及一条非主流通讯社称美伊已达成「重开霍尔木兹初步框架」——与 Axios／Reuters「尚未签字、语言点仍在谈」不符，不采信为已成交。均未升格——伊朗轴仍无协议签署、无霍尔木兹重开或格局级新硬事实；把「高度不可能再打」、卡塔尔首相会面安排或两天草案读成停火／海峡已通不成立。早刊已标的触雷／Qeshm／Iron Gate／卡塔尔提案／Khor Mor 线不重复。油价互动已在股市商品段（WTI 较早刊转强、Brent 接近周五结算）。",
+      "relevance": "周一午别把调解草案或元首会面安排读成海峡通了／停火了；国际栏等硬增量再开。",
+      "sources": [
+        {
+          "label": "Axios · Trump to meet Qatari prime minister about Iran mediation（2026-11-09）",
+          "url": "https://www.axios.com/2026/11/09/trump-qatar-prime-minister-iran-war-mediation"
+        },
+        {
+          "label": "Reuters · Trump says further Iran strikes highly unlikely if talks advance（2026-11-08）",
+          "url": "https://www.reuters.com/3fec1b0a85a0/world/middle-east/iran-suggests-blasts-are-not-us-attacks-both-sides-report-ships-hit-2026-11-08/"
+        },
+        {
+          "label": "Iran International live · Axios two-day proposal／Rubio comments（2026-11-09）",
+          "url": "https://www.iranintl.com/en/liveblog/202611077068"
+        },
+        {
+          "label": "Al Jazeera · Iran war live／Khor Mor（早刊已标未升格）",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq"
+        }
+      ]
+    },
+    {
+      "id": "1109中-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "给钙钛矿晶粒边界浇一层低熔点「助焊剂」，同一块薄膜既能做认证 25.9% 的太阳能电池，又能做 LED（Science）",
+      "time": "2026-11-08",
+      "summary": "换赛道——材料／能源里的光电薄膜，不是早刊基因治疗癫痫调光开关，也不是近刊禽流感苗、LOFAR、磺酰胺光化学、水下胶、嗜碱粒细胞、STAR 微针、镍钛制冷或恐龙肢骨血红素。成均馆大学申成植团队联合韩国化学研究院、加州大学圣迭戈分校与普林斯顿大学，在《科学》（Yoo et al., Science 394, 228–233, 2026；DOI: 10.1126/science.aeb4554）报告：钙钛矿从溶液凝固成膜时，晶界和表面容易留下缺陷，把光生载流子吃掉，电池和 LED 都做不久、做不好。他们利用低共熔现象——氯化甲胺（MACl）和卤化锌单独熔点都不低，混在一起却能在约 100°C 熔化——让这层混合物在晶界变成薄液膜；液态里原子扩散大约比固态快一万倍，小晶粒迅速合并成更大、更干净的晶体。随后 MACl 在退火中挥发，锌留在晶界继续压缺陷。得到的薄膜载流子寿命约 295 微秒，表面复合速度降到 0.3 cm/s，作者称为铅卤钙钛矿迄今最低、可与经过钝化的硅相比。用同一套器件结构做出的太阳能电池光电转换效率 26.5%（认证 25.9%），开路电压 1.208 V，作者称为同架构 n-i-p 电池的认证纪录；LED 外量子效率 26.1%。通讯作者说这是首次用挥发性低共熔混合物从根本上减少钙钛矿缺陷，而且不需要昂贵的专用设备。必须写清的边界：这是实验室器件结果，不是已经铺开的商用电站或消费级显示屏；溶液法做出「接近硅的表面质量」是材料进展，量产稳定性、大面积良率和含铅问题都还在下一步。",
+      "relevance": "不是新模型发版，而是便宜清洁电的材料底子：同一套低缺陷薄膜既能发电又能发光——和她关心的算力耗电是同一条物理线，但现在还停在论文器件，不能当成已经便宜下来的电。",
+      "sources": [
+        {
+          "label": "phys.org · Liquid-assisted crystal growth cuts perovskite defects（2026-11-08）",
+          "url": "https://phys.org/news/2026-11-liquid-crystal-growth-perovskite-defects.html"
+        },
+        {
+          "label": "Science · Volatile eutectics to tailor crystallization for perovskite optoelectronics（DOI: 10.1126/science.aeb4554）",
+          "url": "https://www.science.org/doi/10.1126/science.aeb4554"
+        }
+      ]
+    }
+  ]
+}
