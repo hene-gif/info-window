@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "id": "1109早",
+  "date": "2026-11-09",
+  "slot": "早",
+  "title": "11月9日 · 早",
+  "items": [
+    {
+      "id": "1109早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-09",
+      "summary": "这段时间没有相对晚刊达「frontier 发版／权重／权威基准」门槛的新主条。本窗已扫 @elonmusk（严选 0：近窗一条产品向帖写「Grok Bot fixes for improved token efficiency and smarter behavior are underway」，属已有产品的效率／行为修复进行中，非新 frontier 权重发版；其余为政治向 RT、Starlink 救援转帖、轨道算力评论与人事引用）、@OpenAI @AnthropicAI @GoogleDeepMind @xai（账号帖接口未授权，简介现写 Now at @SpaceXAI；改扫 x.ai／news，最新仍 Nov 2 Grok Bot 数据科学家文）@MetaAI 及已迁的 @AIatMeta @deepseek_ai @Alibaba_Qwen，以及辅助 @sama @demishassabis @karpathy @dotey（Demis 仅 RT 同事「未来数周会看到科学发现发布」预告；dotey 引用 OpenAIDevs「Tomorrow.」猜测 GPT-6.2，标 传闻）。七厂官号自晚刊后原创主帖为 0。并扫 openai.com/index（最新仍 Nov 6 Hacktron）、API changelog（最新仍 Nov 5 gpt-6-cyber）、ChatGPT release notes（仍 Nov 4 Images 2.6）、anthropic.com/news、engineering（仍 Nov 6 dreaming）、claude Help Center release notes（最新条目仍为 Nov 6 project tags）、alignment.anthropic.com（11 月可见 Welfare Regard 多主体研究笔记，非权重发版）、Google AI blog／RSS（最新仍 Nov 5 Omni 1.2 Flash）、DeepMind blog（可见 Genie 4 与一篇 Antigravity 化学信息学开发者工具增量，不升格）、x.ai／news、ai.meta.com/blog（仍停在 7 月前后）、DeepSeek 站与 GitHub（仍 V4.1-Flash-1017；DeepSeek-V3 releases 仍 2025-06 v1.0.0）、Qwen blog／Hugging Face／GitHub（近窗仍是既有旗舰的 FP8 量化包，时间戳停在 11/7，不是 Qwen 4）。晚刊后可见但不升格：OpenAIDevs 11/9 04:04 台北发「Tomorrow.」预告视频、X 二手继续传 6.2 Sol「已被路由到」——官网／changelog／ChatGPT notes 均无对应条目；私人预测本周会出 Qwen 4／Astra／Grok 4.8，仍无官宣。GPT‑6 Cyber、Images 2.6、Gemini Omni 1.2 Flash、Claude Personal Finance、Anthropic Enterprise 安全栈、OpenAI×Hacktron、agent memory dreaming、project tags 等已报或不升格线不重复。七厂确无新 frontier 权重／权威榜单发版。",
+      "relevance": "本窗亦扫过七厂官号与官网／changelog，无其他补报。",
+      "sources": [
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "OpenAI API changelog",
+          "url": "https://platform.openai.com/docs/changelog"
+        },
+        {
+          "label": "ChatGPT release notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Claude Help · release notes",
+          "url": "https://support.claude.com/en/articles/12138966-release-notes"
+        },
+        {
+          "label": "Anthropic engineering",
+          "url": "https://www.anthropic.com/engineering"
+        },
+        {
+          "label": "Google AI Blog／RSS",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "label": "DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/"
+        },
+        {
+          "label": "Meta AI Blog",
+          "url": "https://ai.meta.com/blog/"
+        },
+        {
+          "label": "x.ai／news",
+          "url": "https://x.ai/news"
+        }
+      ]
+    },
+    {
+      "id": "1109早-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-09",
+      "summary": "这段时间没有相对晚刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA advisories／KEV（最新仍 Nov 6 将 SonicWall SonicOS SSLVPN CVE-2026-19868 列入 KEV，晚刊已标未升格普通人主条；未见 Nov 7／8／9 新 Alert 或新入目录项；另见 Nov 5 供厂商问答的后量子材料与工业冷链加固提示，非 AI、非家用立刻改密项）、Krebs（首页最新仍 Nov 4 白宫网络代理节点出租，属基础设施／代理面，非 AI 实害主条）、Wiz（最新仍 Nov 3 Green Agent 产品文，以及已报 Black October／LLMJacking）、CrowdStrike（仍停在 Nov 3 收购 Fiddler／Dreadnode 与 AI Kill Switch，窗口已过不重复）、Microsoft Security／Threat Intel（ARTEX／Storm-3358 打金融业与 Nov 5 密钥扫描两文晚刊已标未升格，未见更新主条）、Mandiant／GTIG（置顶 AI Threat Tracker 为旧文），以及 X AI security 线索（近窗多为通识、复述已报 ARTEX／WorkOS，无一手新实害）并回厂商／执法页核实。另见但不升格：VulnCheck 11/8 称同一密钥扫描 IP 还在利用已入 KEV 的 Langflow 洞（小众开发者软件，与已报 ARTEX 线合并）；一篇非固定源的 Malbear Labs 11/8 长文描述所谓 DeepSeek 自主入侵工作区（无受害机构具名声明，普通人无立刻可执行动作）。Crafty Falcon、DeepMind RSA、Cyber／948、Wiz Black October／LLMJacking、WorkOS ARTEX 逃逸、SonicWall KEV、CrowdStrike VAPOR PANDA 等已报或不达标线不重复。",
+      "relevance": "家用读者本窗无立刻改密／急补丁项。本窗亦扫过 CISA／Krebs／Wiz／CrowdStrike／Microsoft Security／Mandiant·GTIG 与 X 线索，无其他达门槛新主条。",
+      "sources": [
+        {
+          "label": "CISA · SonicWall KEV（已扫未升格；未见 Nov 7／8／9 新条）",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog"
+        },
+        {
+          "label": "CISA · cybersecurity advisories",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "CISA · KEV catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        }
+      ]
+    },
+    {
+      "id": "1109早-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周一亚早：日经反弹约 1.2%，韩综低开仍弱；台港A股与欧股未开，美现金仍指周五，美期夜盘已动",
+      "time": "2026-11-09T08:21:00+08:00",
+      "summary": "相对晚刊（周日晚休市；美现金周五：标普≈7376.86／+0.3%、纳≈24579／+1.1%、道≈51286／−0.5%；亚欧周五收已齐；油 WTI≈90.83、Brent≈98.32、金≈4074.9、10Y≈4.859%；美期周五结算影子 ES≈7402／NQ≈27085.25／YM≈51385）：本窗约 08:18–08:21 Asia/Taipei，周一亚早已开。日经现货开盘金十报 57802.20（+0.64%），Yahoo 最新 58137.04（较周五收 57434.77 约 +1.22%；时间戳 08:06 台北，约 15 分钟延迟）。韩综开盘 5034.20（−0.50%，韩联社／首尔经济／Naver 一致）；截稿 Naver 实时 5026.65（−0.65%），盘中约 4990.66–5066.07——Yahoo ^KS11 同期延迟印约 5049.92，正文不以它为最新价。台股 09:00、港股与 A 股 09:30 截稿未开，仍指周五：台≈39701.64、恒≈24481.86、上证≈3649.18、深成≈11175.78。欧股现货未开（约台北下午才开），仍指周五：STOXX50≈6170.49、FTSE≈10673.94、DAX≈25820.36。美现金仍休市、仍是周五收：标普 7376.86（+0.31%）、纳 24579.42（+1.09%）、道 51285.73（−0.46%）。美期夜盘已开（约 08:11）：ES 7404.75（较周五影子大致持平）、NQ 27033.75（−0.19%）、YM 51582（+0.38%）。WTI 90.25、Brent 97.38、金 4080.7；10Y 仍 4.859%。明确：美现金不是周一开盘；台／港／A／欧尚未开；日经／韩综是开盘中现货，非半日收。本窗亦扫过美日韩台／A·港／欧／油／金／美债／ES·NQ·YM 固定源。",
+      "relevance": "周一早别把周五美现金当新开盘，也别用 Yahoo 延迟印当韩综最新；真正动了的是日经反弹、韩综偏弱，以及美期／油金夜盘。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI（美现金仍周五）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／YM=F（夜盘已开）",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        },
+        {
+          "label": "Yahoo ^N225（日经；约 15 分钟延迟）",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "金十 · 日经开盘 57802.20",
+          "url": "https://flash.jin10.com/detail/20261109080117814800"
+        },
+        {
+          "label": "韩联社 · 韩综开盘 5034.20（−0.50%）",
+          "url": "https://www.yna.co.kr/view/AKR20261109028700008"
+        },
+        {
+          "label": "首尔经济 · 韩综开盘交叉",
+          "url": "https://www.sedaily.com/article/20111754"
+        },
+        {
+          "label": "Yahoo ^TWII／^HSI／000001.SS／399001.SZ（截稿未开）",
+          "url": "https://finance.yahoo.com/quote/%5ETWII/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI（欧现货未开）",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        },
+        {
+          "label": "Yahoo CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/CL=F/"
+        }
+      ]
+    },
+    {
+      "id": "1109早-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "银行要你证明炒掉了助手，却不说什么算证明",
+      "time": "2026-11-08T15:16:00+08:00",
+      "summary": "今早那刀写的是富国银行 11 月 24 日生效的第 15 条：助手做的事视为你本人做的，你得自己留撤销证据，并按第 17(d) 条通知银行之前仍由你负责。今天下午往下翻，刺点不在那句话本身，而在银行不说证据长什么样。第 15(f) 条只写「必须保留撤销证据，并应要求提供」；第 17(d) 条并不是一张「我炒了助手」的专用表格，而是普通安全通知：怀疑密码丢了、用来登录的手机丢了或被他人控制，或有人未经允许看过、下载过账户记录，打 1-800-956-4442 或写信到波特兰邮箱。Captain Compliance 转述 American Banker 11 月 2 日的采访：发言人说客户可能在银行外面授权或撤销助手，银行不一定看得见，所以请你自己留记录——但银行没说接受何种形式的记录。前摩根士丹利人士 Douglas Borthwick 说，跟聊天机器人说「停」手里留不下别人能核对的东西，截图只证明你问过、不证明助手停了，而且截图容易伪造。联邦 Regulation E（12 CFR 1005.2(m)）本来给「未经授权」的电子转账设了责任上限：丢了登录工具后两个工作日内通知，责任不超过 50 美元或被转走的金额，以较低者为准。但它把一类情况排除在「未经授权」之外：消费者把登录工具交给某人，直到通知银行「那人不能再转」之前，那人发起的转账不算未经授权。CFPB 正式解释举例的是家人和同事越权，消费者在通知银行前要负全责。把网银密码交给助手，很像把登录工具交给「某人」；软件算不算这里的「人」，Captain Compliance 写到 11 月 3 日仍未见 CFPB 专门规则或法院判决。别家大行走的是另一条路：Chase 自 10 月 27 日起禁止 External AI、自动工具或数据聚合器用你的登录凭证进数字平台，只允许经批准的 API 读数据；你要是仍然把密码给了第三方，合同视同你明确授权对方交易，并把对方指令当作你本人的指令，包括对方做得不对、超出你授权的部分。Hunton 11 月 3 日综述引 Citi 的口径：不允许第三方 AI 助手登录客户账户或在数字银行里直接交易，只允许经批准的开放银行通道做有限只读。对普通人的影响是：你以为「跟助手说停了」或截一张聊天图就能卸责，银行要的其实是你通知它们，还要一份它们自己没定义、它们却可能向你要的证据；联邦那张「未经授权最多赔 50 美元」的安全网，也可能因为你是自己把密码交出去的而接不上。",
+      "relevance": "人机共管副作用；协作底线从登录合同写到联邦电子转账法的「交给别人的登录工具」例外，银行却不提供可核验的撤销入口。",
+      "sources": [
+        {
+          "label": "富国银行即将生效的网上服务协议（第15(f)、17(d)条）",
+          "url": "https://www.wellsfargo.com/online-banking/online-access-agreement/upcoming/"
+        },
+        {
+          "label": "Captain Compliance：撤销证据与 Regulation E 的缺口",
+          "url": "https://captaincompliance.com/news/wells-fargo-ai-agent-revocation-liability-regulation-e/"
+        },
+        {
+          "label": "eCFR 12 CFR 1005.2(m)「未经授权」的定义与例外",
+          "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/subpart-A/section-1005.2"
+        },
+        {
+          "label": "CFPB 对 1005.2(m) 的正式解释（家人／同事越权须先通知银行）",
+          "url": "https://www.consumerfinance.gov/rules-policy/regulations/1005/interp-2/"
+        },
+        {
+          "label": "eCFR 12 CFR 1005.6 未经授权转账的责任上限",
+          "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/subpart-A/section-1005.6"
+        },
+        {
+          "label": "Chase 网上服务协议（2026年10月：禁止 External AI 使用登录凭证）",
+          "url": "https://static.chasecdn.com/content/dam/legal-agreements/library/en/colsa1a_la/versions/colsa1a_la.pdf"
+        },
+        {
+          "label": "Chase 网站使用条款中的 AI Agent 责任句",
+          "url": "https://www.chase.com/digital/resources/terms-of-use"
+        },
+        {
+          "label": "Hunton：Chase／Citi／Schwab 硬拦 vs 富国改合同",
+          "url": "https://www.hunton.com/insights/legal/major-banks-move-to-block-or-limit-customer-directed-ai-agents"
+        }
+      ]
+    },
+    {
+      "id": "1109早-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "运通说自己给买错的助手买单，但你说「买最好的」可能不赔",
+      "time": "2026-11-08T15:16:00+08:00",
+      "summary": "付款轴上「谁为助手买错买单」不再完全是空白——美国运通把自己的名字写上去了，但细看条款，它接住的是很窄的一类错。官网 Agentic Commerce 页写着：将来，如果持卡人授权已登记的 AI 助手下单，且该助手向运通发送了持卡人已验证的购买意图，运通将保护符合条件的客户免于承担与助手错误相关的费用；登记助手名单和更详细说明「即将」公布。同一页底部的现行条款摘要更具体：助手必须在运通登记并接入 ACE 开发套件；运通必须收到持卡人验证过的购买意图；符合条件的错误是实际购买偏离了这份意图；持卡人须先在可能的情况下向商家发起退货，之后才覆盖符合条件的费用；覆盖范围包括全额交易款以及因此直接产生的其他合理费用；购买意图主观或无法核实（条款举例是 “best” 或 “really nice”）或索赔本身有欺诈时，可能不予保护；这是在普通争议流程之外的额外保护；完整条款「将在未来公布」，运通保留随时修改的权利。10 月 6 日的商家 Playbook 通稿把承诺写宽了一点：称这是业界首次宣布，打算保护符合条件的持卡人和商家免于承担已登记助手错误带来的费用，条款将适用。运通强调自己是闭环网络，同时连接持卡人和商家，所以能自己站出来说 backing，而不必等几千家发卡行先统一口径。同一份调研里，66% 的受访美国消费者未来 12 个月可能用助手比价，52% 能接受助手代买日用低价商品，但只有 15% 能接受助手代买电子产品、家电这类高价商品。对普通人的影响是：你用运通让已登记助手代买，运通说错了它来撑——但卡上这笔钱会先记在你头上，你得先找店家退货；保护对得上的是「你点过头的那句明确意图」和实际订单之间的偏差。你日常更可能说的「帮我买最好的」「好看一点的」，恰恰被条款点名可能不赔。店家也还不能把这当成已经上线的保险：登记名单未公布，完整条款仍写着以后再出。",
+      "relevance": "定价权与协作底线；第一家大型卡组织把自己写成出资方，但用「已登记＋已验证意图＋先退货」把日常口语购物挡在门外。",
+      "sources": [
+        {
+          "label": "运通 Agentic Commerce 页（含 Agent Purchase Protection 条款摘要）",
+          "url": "https://www.americanexpress.com/en-us/company/agentic-commerce/"
+        },
+        {
+          "label": "2026-10-06 Playbook 通稿（WebWire）：打算同时保护持卡人与商家",
+          "url": "https://www.webwire.com/ViewPressRel.asp?aId=361483"
+        },
+        {
+          "label": "Digital Transactions：2026-04-14 ACE 套件与闭环网络优势",
+          "url": "https://www.digitaltransactions.net/amexs-next-ai-step-is-a-developer-kit/"
+        },
+        {
+          "label": "Specoria：这是方向声明，条款未完整公布、没有生效日",
+          "url": "https://specoria.com/insights/who-pays-when-a-shopping-agent-gets-it-wrong/"
+        }
+      ]
+    },
+    {
+      "id": "1109早-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Haaland的暂停令挡的是新项目，已在建的Jupiter要看放大了三万七千倍的排放账本",
+      "time": "2026-11-08T15:16:00+08:00",
+      "summary": "候任州长 Deb Haaland 竞选时说，上任第一天会签行政令，暂停所有新的大型数据中心提案，直到州议会写出护栏。Source NM 当时追问：对那些在新州长就任前就完工的项目，这些护栏怎么用？她的回答不是「我去叫停工地」，而是这些要求会「写进州议会决定推进的任何规则制定」。Jupiter 在圣特雷莎工业园已经动工——KSFR 9 月写过，法院暂停空气许可程序期间施工仍在继续；KRWG 11 月 5 日的照片说明里，施工队 10 月 13 日还在冷却设施附近干活，盖起来的楼还没电。也就是说，选民听到的「暂停」主要挡住后来者；已经在建的这一座，不会因为一纸「新项目暂停令」自动停工。Daily Lobo 10 月 26 日引她的书面回应说，如果她当州长，Project Jupiter「不会存在」，新的许可将按社区受益、水、污染、能源和劳工的最高标准审——这和「只暂停新提案」之间有张力，真正还抓在州政府手里的杠杆，是尚未批完的空气许可。KRWG 11 月 5 日写：环境部和微电网开发商 Yucca Growth Infrastructure 申请取消原定 12 月 7 日在 Sunland Park 的公听，因为上个月改了燃料电池发电方案，部门需要额外时间做技术审查；发言人 Drew Goretzka 说以审查的「迭代性质」，目前无法估计还要多久。许可程序因此很可能拖进新年，那时 Haaland 已就任，并能决定谁来领导主管这份许可的环境部。技术审查本身也有刺：开发商称改方案大约减排 35%；反对方律师指出，Bloom Energy 的排放预测建立在一台 65 千瓦燃料电池的测试上，再按 37,800 倍放大——小数点后的一点误差会被放大近四万倍。新方案还称只会使用已分配的 2,462 兆瓦中的 1,600 兆瓦，现场为何仍要为多出的 862 兆瓦预留容量，也成了追问。对普通人的影响是：住在机房旁边的人，选完州长不等于推土机停转；停不停得看还没写完的空气许可，而这份许可用来判断「会不会弄脏你们的空气」的账本，是把一台小燃料电池的测试结果放大了将近四万倍。电费、空气、水这些日常感受，都还系在这场查不清时间表的技术审查上，而不是系在竞选口号里的「暂停」两个字上。",
+      "relevance": "基础设施承压；政治暂停令的边界（新项目 vs 已在建）和技术审查里的放大算法，比「停不停工」的口号更决定邻里日常。",
+      "sources": [
+        {
+          "label": "Source NM：Haaland 将暂停新的大型数据中心提案；对就任前完工项目走议会规则制定",
+          "url": "https://sourcenm.com/2026/09/17/new-mexico-dem-governor-nominee-haaland-announces-data-center-moratorium-executive-order-if-elected/"
+        },
+        {
+          "label": "KSFR：第一天行政令针对新的大型项目；施工在许可程序暂停期间仍继续",
+          "url": "https://www.ksfr.org/ksfr-daily-news-update/2026-09-18/haaland-defends-position-on-data-centers-project-jupiter-air-quality-permitting-process-resumes-more"
+        },
+        {
+          "label": "KRWG 11月5日：技术审查无时间表、自称减排约35%、65千瓦测试放大37,800倍、1600／2462兆瓦",
+          "url": "https://www.krwg.org/krwg-news/2026-11-05/state-developers-ask-to-delay-public-hearing-on-project-jupiter-air-quality-permit"
+        },
+        {
+          "label": "Daily Lobo：Haaland 书面称若她任州长，Jupiter「不会存在」",
+          "url": "https://www.dailylobo.com/article/2026/10/where-the-nm-gubernatorial-land-commissioner-candidates-stand-on-project-jupiter"
+        },
+        {
+          "label": "Searchlight：竞选期间被追问能否禁掉时，她说自己没有权力叫停 Jupiter",
+          "url": "https://searchlightnm.org/data-center-leaders-donate-to-haaland-even-as-she-supports-data-center-pause/"
+        }
+      ]
+    },
+    {
+      "id": "1109早-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-09",
+      "summary": "这段时间没有达「立刻影响开盘／普通人」门槛的新独立主条。本窗已扫 Reuters 11/8（特朗普称若谈判有进展「高度不可能」再下令打击伊朗；同文续写 Qeshm／触雷／Huda 船致残——属周末同一续报）、AP 中东综（沙特拦截来袭导弹、利雅得阿美大楼被坠落残骸损坏、无伤亡——晚刊已标未升格）、AP Rubio 为对伊战争辩护的政治表态、Al Jazeera 11/9 直播与 Reuters（经 Investing.com 转发）／阿纳多卢关于伊拉克库尔德斯坦 Khor Mor 气田周日遭无人机袭击（LPG 储罐起火、生产暂停；库区电力部称约 2.8 GW 发电掉线，北部库区大面积停电；总理称初步评估无伤亡、无人认领——相对晚刊是新事件，但对当地停电不等于立刻推高开盘；本窗油价夜盘反而略低于周五影子，按既有门槛不单开）、以及 X search_news 近 36 小时国际热帖。均未升格——伊朗轴仍无协议签署、无霍尔木兹重开或格局级新硬事实；把「高度不可能再打」、陆路封锁复述或地区气田袭击读成停火／海峡已通不成立。晚刊已标的触雷／Qeshm／Iron Gate／卡塔尔提案线不重复。",
+      "relevance": "周一早别把谈判口吻或地区气田停电读成海峡通了／停火了；油价互动已在股市商品段，国际栏等硬增量再开。",
+      "sources": [
+        {
+          "label": "Reuters · Trump says further Iran strikes highly unlikely if talks advance（2026-11-08）",
+          "url": "https://www.reuters.com/3fec1b0a85a0/world/middle-east/iran-suggests-blasts-are-not-us-attacks-both-sides-report-ships-hit-2026-11-08/"
+        },
+        {
+          "label": "AP · Mideast roundup（沙特拦截／阿美大楼残骸；晚刊已标）",
+          "url": "https://apnews.com/article/mideast-news-november-8-2026-090d96e25872f5c63e105b9dd3e5dc60"
+        },
+        {
+          "label": "AP · Rubio defends Iran war after midterms",
+          "url": "https://apnews.com/article/iran-war-rubio-vance-trump-midterm-election-f7b507b55634985d6013d36265b3fbc0"
+        },
+        {
+          "label": "Al Jazeera · Iran war live／Khor Mor power cuts（2026-11-09）",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq"
+        },
+        {
+          "label": "Reuters via Investing.com · Khor Mor gas field production suspended after drone attack",
+          "url": "https://www.investing.com/news/commodities-news/production-suspended-at-iraqs-khor-mor-gas-field-after-drone-attack-sources-say-5010313"
+        },
+        {
+          "label": "Anadolu · drone strike targets gas field, power disrupted in northern Iraq",
+          "url": "https://www.aa.com.tr/en/middle-east/drone-strike-targets-gas-field-disrupting-electricity-supplies-in-northern-iraq/4116376"
+        }
+      ]
+    },
+    {
+      "id": "1109早-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "基因治疗给大脑装上「调光开关」，3 名难治性癫痫患者发作少了约九成（NEJM；仅 3 例、无对照）",
+      "time": "2026-11-06",
+      "summary": "换赛道——人体神经调控／化学遗传学，不是晚刊恐龙肢骨血红素、也不是近刊禽流感苗、LOFAR、磺酰胺光化学、水下胶、嗜碱粒细胞、STAR 微针或镍钛制冷。首都医科大学宣武医院赵国光团队等在《新英格兰医学杂志》（Dai et al., N. Engl. J. Med. 395, 1867–1869, 2026）报告：3 名药物难治性癫痫、病灶在单侧海马硬化的成人，本来下一步往往是切除海马；研究在 MRI 引导下把携带基因的腺相关病毒注入致痫侧海马，让兴奋性神经元表达一种能被药物打开的抑制性受体，约两周后口服低剂量抗精神病药氯氮平当「开关」。院方通稿写：术后第 5–12 周，3 人平均每月发作分别从 4.5→0.5、4.0→0、4.5→0.5 次，较基线平均下降 92.6%；不良事件为 1–2 级，认知量表未见有临床意义的下降。Science（11/6）与 Nature 新闻稿同步报道，称之为化学遗传学首次人体结果。必须写清的边界：这是安全性为主的首次人体研究，只有 3 个人、没有对照组；Nature 引 UCL 的 Matthew Walker——效果戏剧性，但样本太小，且长期用氯氮平本身有心血管等风险，也无法确定好转来自基因＋药还是其中某一项。明确：这是极早期信号，不是已验证、可上市的疗法。",
+      "relevance": "不是切除脑子，而是给局部神经装上可用药拧的遥控器——思路反常识；但现在只有 3 例、无对照，还不能当成普通人能用的治疗。",
+      "sources": [
+        {
+          "label": "Science · Novel gene therapy lets drug dampen brain cell activity（2026-11-06）",
+          "url": "https://www.science.org/content/article/novel-gene-therapy-lets-drug-dampen-brain-cell-activity-reducing-seizures"
+        },
+        {
+          "label": "Nature · chemogenetics first-in-human news",
+          "url": "https://www.nature.com/articles/d41586-026-03566-2"
+        },
+        {
+          "label": "首都医科大学 · 宣武医院化学遗传学癫痫试验通稿",
+          "url": "https://news.ccmu.edu.cn/syyw_12977/20c9e5d849fa4e53b5d47ec24c6dfc7e.htm"
+        }
+      ]
+    }
+  ]
+}
