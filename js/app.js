@@ -45,6 +45,27 @@ const state = {
   restoreScroll: null,
 };
 
+// 一天大约三期。窗口开着时核对已发布的目录，不是持续采集。
+const FRESH_EVERY_MS = 10 * 60 * 1000;
+const FRESH_GAP_MS = 20 * 1000;
+const WAKE_WATCH_MS = 60 * 1000;
+const READING_KEY = 'info-window:reading';
+
+const fresh = {
+  phase: 'checking',
+  checkedAt: 0,
+  fails: 0,
+  pendingId: '',
+  pendingLabel: '',
+  announced: '',
+};
+
+let reloadsOnTakeover = false;
+let lastFreshStarted = 0;
+let freshFlight = null;
+let freshRetryTimer = 0;
+let installPrompt = null;
+
 if (state.route.name === 'search') state.query = state.route.query;
 else state.back = location.hash || '#/';
 if (state.route.item) {
@@ -89,7 +110,12 @@ document.addEventListener('click', (event) => {
   if (!menu.hidden && !menu.contains(event.target) && !picker.contains(event.target)) closeMenu();
 });
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && !menu.hidden) {
+  if (event.key !== 'Escape') return;
+  if (!$('install-sheet').hidden) {
+    closeInstall();
+    return;
+  }
+  if (!menu.hidden) {
     closeMenu();
     picker.focus();
   }
@@ -110,6 +136,7 @@ window.addEventListener('hashchange', () => {
     state.block = 'all';
   }
   if (state.route.name === 'timeline' && state.route.id) state.open.add(state.route.id);
+  settlePending();
   render({ resetScroll: true });
   if (state.restoreScroll != null && state.route.name !== 'search') window.scrollTo(0, state.restoreScroll);
   state.restoreScroll = null;
@@ -117,7 +144,11 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('online', updateNet);
 window.addEventListener('offline', updateNet);
-window.addEventListener('resize', closeMenu);
+window.addEventListener('resize', () => {
+  closeMenu();
+  syncInstallButton();
+});
+window.addEventListener('pagehide', saveReading);
 
 boot();
 
@@ -125,41 +156,55 @@ async function boot() {
   watchForUpdates();
   watchColorScheme();
   watchGiscus();
+  watchInstall();
   tickClock();
   setInterval(tickClock, 30000);
   updateNet();
   renderBar();
   try {
-    const index = await fetchJson('data/index.json');
-    if (!index || !Array.isArray(index.issues)) throw new Error('index');
-    state.index = index;
-    try {
-      const favorites = await fetchJson('data/favorites.json');
-      state.fileFavorites = Array.isArray(favorites.ids)
-        ? favorites.ids.filter((id) => typeof id === 'string')
-        : [];
-    } catch {
-      state.fileFavorites = [];
-    }
-    try {
-      const columns = await fetchJson('data/columns/index.json');
-      state.columnsIndex = columns && Array.isArray(columns.columns) ? columns : { columns: [] };
-    } catch {
-      state.columnsIndex = { columns: [] };
-    }
-    try {
-      const timeline = await fetchJson('data/timeline/index.json');
-      state.timelineIndex = timeline && Array.isArray(timeline.events) ? timeline : { events: [] };
-    } catch {
-      state.timelineIndex = { events: [] };
-    }
-    await Promise.all([loadIssues(), loadColumns(), loadTimeline()]);
+    await openCatalog();
     state.ready = true;
+    state.fatal = '';
   } catch {
     state.fatal = '这份目录没有打开。可以稍后再试。';
+    fresh.phase = navigator.onLine ? 'error' : 'offline';
+    scheduleFreshRetry();
   }
-  render({ resetScroll: true });
+  restoreReading();
+  render({ resetScroll: state.restoreScroll == null });
+  if (state.restoreScroll != null) window.scrollTo(0, state.restoreScroll);
+  state.restoreScroll = null;
+  paintFresh();
   registerServiceWorker();
+}
+
+async function openCatalog() {
+  const indexPack = await fetchLiveJson('data/index.json');
+  const index = indexPack.data;
+  if (!index || !Array.isArray(index.issues)) throw new Error('index');
+  state.index = index;
+  noteCatalogFreshness(indexPack.fromCache);
+  try {
+    const favorites = await fetchJson('data/favorites.json');
+    state.fileFavorites = Array.isArray(favorites.ids)
+      ? favorites.ids.filter((id) => typeof id === 'string')
+      : [];
+  } catch {
+    state.fileFavorites = [];
+  }
+  try {
+    const columns = await fetchJson('data/columns/index.json');
+    state.columnsIndex = columns && Array.isArray(columns.columns) ? columns : { columns: [] };
+  } catch {
+    state.columnsIndex = { columns: [] };
+  }
+  try {
+    const timeline = await fetchJson('data/timeline/index.json');
+    state.timelineIndex = timeline && Array.isArray(timeline.events) ? timeline : { events: [] };
+  } catch {
+    state.timelineIndex = { events: [] };
+  }
+  await Promise.all([loadIssues(), loadColumns(), loadTimeline()]);
 }
 
 function parseRoute() {
@@ -178,6 +223,15 @@ async function fetchJson(path) {
   const response = await fetch(new URL(path, document.baseURI), { cache: 'no-cache' });
   if (!response.ok) throw new Error(path);
   return response.json();
+}
+
+async function fetchLiveJson(path) {
+  const response = await fetch(new URL(path, document.baseURI), { cache: 'no-cache' });
+  if (!response.ok) throw new Error(path);
+  return {
+    data: await response.json(),
+    fromCache: response.headers.get('X-Info-Window-From-Cache') === '1',
+  };
 }
 
 async function loadIssues() {
@@ -1299,10 +1353,20 @@ function tickClock() {
   }).formatToParts(new Date());
   const pick = (type) => parts.find((part) => part.type === type)?.value || '';
   $('clock').textContent = `${pick('hour')}:${pick('minute')}`;
+  if (fresh.checkedAt) paintFresh();
 }
 
 function updateNet() {
-  $('offline').hidden = navigator.onLine;
+  if (!navigator.onLine) {
+    fresh.phase = 'offline';
+    paintFresh();
+    return;
+  }
+  if (fresh.phase === 'offline' || fresh.phase === 'stale' || fresh.phase === 'error') {
+    checkPublished('online').catch(() => {});
+    return;
+  }
+  paintFresh();
 }
 
 function registerServiceWorker() {
@@ -1313,43 +1377,546 @@ function registerServiceWorker() {
 }
 
 function watchForUpdates() {
-  // 第一次安装时页面还没有被接管，不必重载。
-  const reloadsOnTakeover = Boolean(navigator.serviceWorker?.controller);
+  // 第一次安装时页面还没有被接管，不必重载。之后页面代码更新仍整页重载一次。
+  reloadsOnTakeover = Boolean(navigator.serviceWorker?.controller);
   if (reloadsOnTakeover) {
-    navigator.serviceWorker.addEventListener('controllerchange', () => window.location.reload(), { once: true });
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      saveReading();
+      window.location.reload();
+    }, { once: true });
   }
-  // 主屏幕上的应用多半是从后台切回来，并不重新打开。
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible') checkForUpdates(reloadsOnTakeover).catch(() => {});
+    if (document.visibilityState === 'visible') checkPublished('visible').catch(() => {});
   });
+  window.addEventListener('focus', () => checkPublished('focus').catch(() => {}));
+  window.addEventListener('pageshow', () => checkPublished('pageshow').catch(() => {}));
+  // 电脑睡眠会把定时器冻住。醒来后由这个短检查发现“上次核对已经太久”。
+  setInterval(() => {
+    if (document.visibilityState !== 'visible') return;
+    if (Date.now() - lastFreshStarted >= FRESH_EVERY_MS) checkPublished('wake').catch(() => {});
+  }, WAKE_WATCH_MS);
+  setInterval(() => {
+    if (document.visibilityState === 'visible') checkPublished('interval').catch(() => {});
+  }, FRESH_EVERY_MS);
+  $('fresh').addEventListener('click', () => {
+    if (fresh.phase === 'pending' && fresh.pendingId) {
+      if ((location.hash || '#/') !== '#/') location.hash = '#/';
+      else window.scrollTo({ top: 0, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+      return;
+    }
+    checkPublished('manual').catch(() => {});
+  });
+  if (['localhost', '127.0.0.1'].includes(location.hostname)) {
+    window.__infoWindow = {
+      checkNow: () => checkPublished('manual'),
+      wake: () => {
+        lastFreshStarted = 0;
+        return checkPublished('wake');
+      },
+      snapshot: () => ({
+        ready: state.ready,
+        fatal: state.fatal,
+        phase: fresh.phase,
+        label: $('fresh').textContent,
+        hash: location.hash || '#/',
+        scroll: window.scrollY,
+        open: [...state.open],
+        discuss: [...state.discuss],
+        latest: state.index.issues[0]?.id || '',
+        older: state.index.issues[1]?.id || '',
+        picker: $('picker-label').textContent,
+        title: document.title,
+        overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+      }),
+    };
+  }
 }
 
-async function checkForUpdates(reloadsOnTakeover) {
+function checkPublished(reason) {
+  if (document.visibilityState === 'hidden' && reason !== 'manual') return Promise.resolve();
+  if (freshFlight) return freshFlight;
+  const forced = reason === 'manual' || reason === 'online' || reason === 'visible' || reason === 'pageshow' || reason === 'retry';
+  const elapsed = Date.now() - lastFreshStarted;
+  if (!forced && elapsed < FRESH_GAP_MS) return Promise.resolve();
+  if (forced && reason !== 'manual' && elapsed < 3000) return Promise.resolve();
+  lastFreshStarted = Date.now();
+  freshFlight = runFreshCheck().finally(() => {
+    freshFlight = null;
+  });
+  return freshFlight;
+}
+
+async function runFreshCheck() {
   const registration = await navigator.serviceWorker?.getRegistration().catch(() => undefined);
   const previous = registration?.active || null;
   await registration?.update().catch(() => {});
-  // 页面代码已经会换新 worker 并重载一次，目录检查让给那一次。
   if (
     reloadsOnTakeover &&
-    (registration?.installing || registration?.waiting || (registration?.active && registration.active !== previous))
+    registration &&
+    (registration.installing || registration.waiting || (registration.active && registration.active !== previous))
   ) {
     return;
   }
   if (!state.ready && !state.fatal) return;
-  const index = await fetchJson('data/index.json');
-  if (JSON.stringify(index) !== JSON.stringify(state.index)) window.location.reload();
+  if (!navigator.onLine) {
+    fresh.phase = 'offline';
+    paintFresh();
+    scheduleFreshRetry();
+    return;
+  }
+  if (!state.ready && state.fatal) {
+    try {
+      await openCatalog();
+      state.ready = true;
+      state.fatal = '';
+      fresh.fails = 0;
+      window.clearTimeout(freshRetryTimer);
+      render({ resetScroll: true });
+      paintFresh();
+    } catch {
+      fresh.fails += 1;
+      fresh.phase = 'error';
+      paintFresh();
+      scheduleFreshRetry();
+    }
+    return;
+  }
+
+  const quiet = fresh.phase === 'current' || fresh.phase === 'pending';
+  if (!quiet) {
+    fresh.phase = 'checking';
+    paintFresh();
+  }
+
+  let indexPack;
   try {
-    const columns = await fetchJson('data/columns/index.json');
-    if (JSON.stringify(columns) !== JSON.stringify(state.columnsIndex)) window.location.reload();
+    indexPack = await fetchLiveJson('data/index.json');
+  } catch {
+    fresh.fails += 1;
+    fresh.phase = navigator.onLine ? 'error' : 'offline';
+    paintFresh();
+    scheduleFreshRetry();
+    return;
+  }
+  if (indexPack.fromCache) {
+    fresh.fails += 1;
+    fresh.phase = navigator.onLine ? 'stale' : 'offline';
+    paintFresh();
+    scheduleFreshRetry();
+    return;
+  }
+  const index = indexPack.data;
+  if (!index || !Array.isArray(index.issues)) {
+    fresh.fails += 1;
+    fresh.phase = 'error';
+    paintFresh();
+    scheduleFreshRetry();
+    return;
+  }
+
+  const previousLatestId = state.index.issues[0]?.id || '';
+  const nextLatestId = index.issues[0]?.id || '';
+  const indexChanged = listSignature(state.index.issues, ['id', 'date', 'slot', 'title', 'itemCount'])
+    !== listSignature(index.issues, ['id', 'date', 'slot', 'title', 'itemCount']);
+  let columnsPack = null;
+  let timelinePack = null;
+  try {
+    const pack = await fetchLiveJson('data/columns/index.json');
+    if (!pack.fromCache && pack.data && Array.isArray(pack.data.columns)) columnsPack = pack.data;
   } catch {
     /* 专栏目录读不到时，仍以已经打开的页面为准。 */
   }
   try {
-    const timeline = await fetchJson('data/timeline/index.json');
-    if (JSON.stringify(timeline) !== JSON.stringify(state.timelineIndex)) window.location.reload();
+    const pack = await fetchLiveJson('data/timeline/index.json');
+    if (!pack.fromCache && pack.data && Array.isArray(pack.data.events)) timelinePack = pack.data;
   } catch {
     /* 时间线目录读不到时，仍以已经打开的页面为准。 */
   }
+  const columnsChanged = columnsPack
+    ? listSignature(state.columnsIndex.columns, ['id', 'date', 'title', 'summary'])
+      !== listSignature(columnsPack.columns, ['id', 'date', 'title', 'summary'])
+    : false;
+  const timelineChanged = timelinePack
+    ? listSignature(state.timelineIndex.events, ['id', 'date', 'title', 'summary'])
+      !== listSignature(timelinePack.events, ['id', 'date', 'title', 'summary'])
+    : false;
+
+  if (!indexChanged && !columnsChanged && !timelineChanged) {
+    fresh.checkedAt = Date.now();
+    fresh.fails = 0;
+    window.clearTimeout(freshRetryTimer);
+    fresh.phase = fresh.pendingId ? 'pending' : 'current';
+    paintFresh();
+    return;
+  }
+
+  const routeName = state.route.name;
+  const routeId = state.route.id;
+  const onLatest = routeName === 'home' || (routeName === 'issue' && routeId === previousLatestId);
+  const currentMeta = state.index.issues.find((item) => item.id === (routeName === 'issue' ? routeId : onLatest ? previousLatestId : ''));
+  const nextMeta = index.issues.find((item) => item.id === currentMeta?.id);
+  const issueContentChanged = Boolean(
+    currentMeta && nextMeta && (currentMeta.itemCount !== nextMeta.itemCount || currentMeta.title !== nextMeta.title)
+  );
+  let plan = editionPlan({
+    routeName,
+    onLatest,
+    latestMoved: Boolean(previousLatestId && nextLatestId && previousLatestId !== nextLatestId),
+    issueContentChanged,
+    listChanged: indexChanged,
+    columnsChanged,
+    timelineChanged,
+    parked: window.scrollY <= 72 && state.open.size === 0,
+    discussCount: state.discuss.size,
+    menuOpen: !menu.hidden,
+    openCount: state.open.size,
+  });
+
+  try {
+    if (indexChanged) await commitIssues(index);
+    if (columnsChanged) await commitColumns(columnsPack);
+    if (timelineChanged) await commitTimeline(timelinePack);
+  } catch {
+    fresh.fails += 1;
+    fresh.phase = 'error';
+    paintFresh();
+    scheduleFreshRetry();
+    return;
+  }
+
+  const latestMoved = previousLatestId !== state.index.issues[0]?.id;
+  if (plan === 'hold' && routeName === 'home' && previousLatestId) replaceHash(issueHref(previousLatestId));
+  if (plan === 'swap' && latestMoved && state.route.name === 'issue' && state.route.id === previousLatestId) {
+    replaceHash('#/');
+  }
+  const nowLatest = state.index.issues[0];
+  const routeNow = state.route;
+  const showingLatest = plan === 'swap' && nowLatest && (
+    routeNow.name === 'home'
+    || routeNow.name === 'dates'
+    || (routeNow.name === 'issue' && routeNow.id === nowLatest.id)
+    || (routeNow.name === 'date' && routeNow.id === nowLatest.date)
+  );
+  if (showingLatest) {
+    fresh.pendingId = '';
+    fresh.pendingLabel = '';
+    fresh.phase = 'current';
+  } else if (latestMoved && nowLatest) {
+    fresh.pendingId = nowLatest.id;
+    fresh.pendingLabel = issueLabel(nowLatest);
+    fresh.phase = 'pending';
+  } else {
+    fresh.phase = fresh.pendingId ? 'pending' : 'current';
+  }
+  fresh.checkedAt = Date.now();
+  fresh.fails = 0;
+  window.clearTimeout(freshRetryTimer);
+  if (plan === 'swap' || plan === 'anchor') paintView(plan);
+  else renderBar();
+  paintFresh();
+}
+
+function editionPlan(input) {
+  if (input.discussCount > 0 || input.menuOpen) return input.latestMoved ? 'hold' : 'none';
+  if (input.onLatest && input.latestMoved) return input.parked ? 'swap' : 'hold';
+  if (input.onLatest && input.issueContentChanged) return input.parked ? 'swap' : 'anchor';
+  if ((input.routeName === 'date' || input.routeName === 'dates') && input.listChanged) {
+    return input.parked ? 'swap' : 'anchor';
+  }
+  if (input.routeName === 'issue' && input.issueContentChanged) return input.parked ? 'swap' : 'anchor';
+  if (input.latestMoved) return 'hold';
+  if (input.routeName === 'columns' && input.columnsChanged && input.parked && input.openCount === 0) return 'swap';
+  if (input.routeName === 'timeline' && input.timelineChanged && input.parked && input.openCount === 0) return 'swap';
+  return 'none';
+}
+
+async function commitIssues(index) {
+  const prev = new Map(state.index.issues.map((meta) => [meta.id, meta]));
+  const drafts = new Map();
+  await Promise.all(index.issues.map(async (meta) => {
+    const old = prev.get(meta.id);
+    const changed = !old || old.itemCount !== meta.itemCount || old.title !== meta.title || old.date !== meta.date || old.slot !== meta.slot;
+    if (!changed && state.issues.has(meta.id) && !state.issues.get(meta.id).error) return;
+    drafts.set(meta.id, await fetchChanged(`data/issues/${encodeURIComponent(meta.id)}.json`));
+  }));
+  const keep = new Set(index.issues.map((meta) => meta.id));
+  for (const id of [...state.issues.keys()]) if (!keep.has(id)) state.issues.delete(id);
+  for (const [id, issue] of drafts) state.issues.set(id, issue);
+  state.index = index;
+}
+
+async function commitColumns(index) {
+  const prev = new Map((state.columnsIndex.columns || []).map((meta) => [meta.id, meta]));
+  const drafts = new Map();
+  await Promise.all((index.columns || []).map(async (meta) => {
+    const old = prev.get(meta.id);
+    const changed = !old || old.title !== meta.title || old.date !== meta.date || old.summary !== meta.summary;
+    if (!changed && state.columns.has(meta.id) && !state.columns.get(meta.id).error) return;
+    drafts.set(meta.id, await fetchChanged(`data/columns/${encodeURIComponent(meta.id)}.json`));
+  }));
+  const keep = new Set((index.columns || []).map((meta) => meta.id));
+  for (const id of [...state.columns.keys()]) if (!keep.has(id)) state.columns.delete(id);
+  for (const [id, column] of drafts) state.columns.set(id, column);
+  state.columnsIndex = index;
+}
+
+async function commitTimeline(index) {
+  const prev = new Map((state.timelineIndex.events || []).map((meta) => [meta.id, meta]));
+  const drafts = new Map();
+  await Promise.all((index.events || []).map(async (meta) => {
+    const old = prev.get(meta.id);
+    const changed = !old || old.title !== meta.title || old.date !== meta.date || old.summary !== meta.summary;
+    if (!changed && state.timeline.has(meta.id) && !state.timeline.get(meta.id).error) return;
+    drafts.set(meta.id, await fetchChanged(`data/timeline/${encodeURIComponent(meta.id)}.json`));
+  }));
+  const keep = new Set((index.events || []).map((meta) => meta.id));
+  for (const id of [...state.timeline.keys()]) if (!keep.has(id)) state.timeline.delete(id);
+  for (const [id, event] of drafts) state.timeline.set(id, event);
+  state.timelineIndex = index;
+}
+
+async function fetchChanged(path) {
+  const pack = await fetchLiveJson(path);
+  if (pack.fromCache) throw new Error(path);
+  return pack.data;
+}
+
+function listSignature(list, fields) {
+  return (Array.isArray(list) ? list : [])
+    .map((item) => fields.map((field) => (item?.[field] == null ? '' : String(item[field]))).join('\u0001'))
+    .join('\n');
+}
+
+function noteCatalogFreshness(fromCache) {
+  fresh.fails = 0;
+  window.clearTimeout(freshRetryTimer);
+  if (!navigator.onLine || fromCache) {
+    fresh.phase = navigator.onLine ? 'stale' : 'offline';
+    fresh.checkedAt = 0;
+    fresh.fails = 1;
+    scheduleFreshRetry();
+    return;
+  }
+  fresh.phase = 'current';
+  fresh.checkedAt = Date.now();
+}
+
+function scheduleFreshRetry() {
+  window.clearTimeout(freshRetryTimer);
+  const delay = fresh.fails <= 1 ? 4000 : fresh.fails === 2 ? 12000 : 30000;
+  freshRetryTimer = window.setTimeout(() => {
+    if (document.visibilityState === 'visible') checkPublished('retry').catch(() => {});
+  }, delay);
+}
+
+function settlePending() {
+  if (!fresh.pendingId) return;
+  const latest = state.index.issues[0]?.id || '';
+  const onLatest = state.route.name === 'home' || (state.route.name === 'issue' && state.route.id === latest);
+  if (!onLatest) return;
+  fresh.pendingId = '';
+  fresh.pendingLabel = '';
+  if (fresh.phase === 'pending') fresh.phase = fresh.checkedAt ? 'current' : fresh.phase;
+  paintFresh();
+}
+
+function replaceHash(hash) {
+  const next = hash.startsWith('#') ? hash : `#${hash}`;
+  if ((location.hash || '#/') === next) {
+    state.route = parseRoute();
+    return;
+  }
+  history.replaceState(null, '', next);
+  state.route = parseRoute();
+}
+
+function paintView(plan) {
+  const anchor = plan === 'anchor' ? readingAnchor() : null;
+  render();
+  if (plan === 'swap') {
+    window.scrollTo(0, 0);
+    if (!reduceMotion.matches) {
+      main.animate([{ opacity: 0.45 }, { opacity: 1 }], { duration: 220, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)' });
+    }
+    return;
+  }
+  if (anchor) restoreAnchor(anchor);
+}
+
+function readingAnchor() {
+  const mark = bar.getBoundingClientRect().bottom + 8;
+  let chosen = null;
+  for (const row of main.querySelectorAll('[data-row]')) {
+    if (row.getBoundingClientRect().top <= mark) chosen = row;
+  }
+  if (!chosen) return { scroll: window.scrollY };
+  return {
+    id: chosen.getAttribute('data-row'),
+    delta: chosen.getBoundingClientRect().top,
+    scroll: window.scrollY,
+  };
+}
+
+function restoreAnchor(anchor) {
+  if (anchor?.id) {
+    const row = main.querySelector(`[data-row="${CSS.escape(anchor.id)}"]`);
+    if (row) {
+      const top = window.scrollY + row.getBoundingClientRect().top - anchor.delta;
+      window.scrollTo(0, Math.max(0, top));
+      return;
+    }
+  }
+  window.scrollTo(0, anchor?.scroll || 0);
+}
+
+function paintFresh() {
+  const node = $('fresh');
+  if (!node) return;
+  const phase = fresh.phase === 'checking' && fresh.checkedAt
+    ? (fresh.pendingId ? 'pending' : 'current')
+    : fresh.phase;
+  let label = '核对中';
+  let detail = '正在核对已发布的期次。';
+  node.className = 'fresh';
+  if (!navigator.onLine || phase === 'offline') {
+    label = '离线';
+    detail = '网络断开。已打开的内容还在，连上后再核对已发布的期次。';
+    node.classList.add('is-offline');
+  } else if (phase === 'error') {
+    label = '没对上';
+    detail = '这次没有对上目录。正在看的内容先留着，稍后会再试。';
+    node.classList.add('is-error');
+  } else if (phase === 'stale') {
+    label = '没连上';
+    detail = '网络没有对上，先用已存的目录。稍后再试。';
+    node.classList.add('is-stale');
+  } else if (phase === 'pending') {
+    label = '新的一期';
+    detail = fresh.pendingLabel
+      ? `已发布${fresh.pendingLabel}。点此打开，不会自动换掉正在看的内容。`
+      : '已发布新的一期。点此打开。';
+    node.classList.add('is-pending');
+  } else if (phase === 'current' && fresh.checkedAt) {
+    label = freshAge(fresh.checkedAt);
+    detail = `${taipeiClock(fresh.checkedAt)} 核对过已发布的目录，已是最新。一天大约三期，不是持续采集。`;
+  } else {
+    node.classList.add('is-busy');
+  }
+  node.hidden = false;
+  node.textContent = label;
+  node.title = detail;
+  node.setAttribute('aria-label', detail);
+  const key = `${phase}:${fresh.pendingId}:${label}`;
+  if (key !== fresh.announced && phase !== 'checking') {
+    fresh.announced = key;
+    const live = $('fresh-live');
+    if (live && phase !== 'current') live.textContent = detail;
+  }
+}
+
+function freshAge(at) {
+  const delta = Date.now() - at;
+  if (delta < 45 * 1000) return '刚刚';
+  if (delta < 60 * 60 * 1000) return `${Math.max(1, Math.round(delta / 60000))} 分钟前`;
+  return taipeiClock(at);
+}
+
+function taipeiClock(at) {
+  const parts = new Intl.DateTimeFormat('zh-Hans-CN', {
+    timeZone: 'Asia/Taipei',
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
+  }).formatToParts(new Date(at));
+  const pick = (type) => parts.find((part) => part.type === type)?.value || '';
+  return `${pick('hour')}:${pick('minute')}`;
+}
+
+function saveReading() {
+  try {
+    sessionStorage.setItem(READING_KEY, JSON.stringify({
+      hash: location.hash || '#/',
+      scroll: window.scrollY,
+      open: [...state.open],
+      section: state.section,
+      block: state.block,
+      at: Date.now(),
+    }));
+  } catch {
+    /* 无痕模式拒绝存储时，刷新就从页首看起。 */
+  }
+}
+
+function restoreReading() {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem(READING_KEY) || 'null');
+    if (!saved || Date.now() - saved.at > 30 * 60 * 1000) return;
+    if ((saved.hash || '#/') !== (location.hash || '#/')) return;
+    if (Array.isArray(saved.open)) saved.open.forEach((id) => state.open.add(id));
+    if (saved.section === 'all' || SECTIONS.includes(saved.section)) state.section = saved.section;
+    if (typeof saved.block === 'string' && saved.block) state.block = saved.block;
+    state.restoreScroll = Number(saved.scroll) || 0;
+  } catch {
+    /* 旧记录坏了就忽略。 */
+  }
+}
+
+function isStandalone() {
+  return window.matchMedia('(display-mode: standalone)').matches
+    || window.matchMedia('(display-mode: window-controls-overlay)').matches
+    || window.navigator.standalone === true;
+}
+
+function syncInstallButton() {
+  const button = $('install');
+  if (!button) return;
+  // 宽窗口才放「安装」。窄窗口和已经单独打开的应用不再占这一格。
+  const wide = window.matchMedia('(min-width: 800px)').matches;
+  button.hidden = isStandalone() || !wide;
+}
+
+function watchInstall() {
+  syncInstallButton();
+  const mode = window.matchMedia('(display-mode: standalone)');
+  if (typeof mode.addEventListener === 'function') mode.addEventListener('change', syncInstallButton);
+  $('install').addEventListener('click', openInstall);
+  $('install-close').addEventListener('click', closeInstall);
+  $('install-sheet').addEventListener('click', (event) => {
+    if (event.target === $('install-sheet')) closeInstall();
+  });
+  $('install-go').addEventListener('click', async () => {
+    if (!installPrompt) return;
+    installPrompt.prompt();
+    try {
+      await installPrompt.userChoice;
+    } catch {
+      /* 人关掉了安装询问。 */
+    }
+    installPrompt = null;
+    $('install-go').hidden = true;
+  });
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    installPrompt = event;
+    $('install-go').hidden = false;
+    syncInstallButton();
+  });
+  window.addEventListener('appinstalled', () => {
+    installPrompt = null;
+    $('install-go').hidden = true;
+    closeInstall();
+    syncInstallButton();
+  });
+}
+
+function openInstall() {
+  closeMenu();
+  $('install-sheet').hidden = false;
+  $('install-close').focus();
+}
+
+function closeInstall() {
+  $('install-sheet').hidden = true;
 }
 
 function issueHref(id) {

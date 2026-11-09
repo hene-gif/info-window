@@ -113,14 +113,26 @@ function isResearch(request) {
 async function fromCache(request, navigate) {
   const cache = await caches.open(CACHE);
   const hit = await cache.match(request, { ignoreVary: true });
-  if (hit || !navigate) return hit;
+  if (hit) return markCached(hit);
+  if (!navigate) return undefined;
   // 研究看板是另一套页面，断网时不要退回讯息窗首页。
   if (isResearch(request)) return undefined;
   for (const path of ['./', './index.html']) {
     const page = await cache.match(new URL(path, self.location).href, { ignoreVary: true });
-    if (page) return page;
+    if (page) return markCached(page);
   }
   return undefined;
+}
+
+// 让页面分得清「刚从网络对上」和「断网时拿出来的旧副本」，避免把旧目录说成刚刚核对过。
+function markCached(response) {
+  const headers = new Headers(response.headers);
+  headers.set('X-Info-Window-From-Cache', '1');
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
 }
 
 function offline() {
