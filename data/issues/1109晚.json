@@ -1,0 +1,323 @@
+{
+  "version": 1,
+  "id": "1109晚",
+  "date": "2026-11-09",
+  "slot": "晚",
+  "title": "11月9日 · 晚",
+  "items": [
+    {
+      "id": "1109晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】黄仁勋致信员工承认对妻子不忠，英伟达董事会就「他成为外国情报目标」的报道启动独立调查",
+      "time": "2026-11-08",
+      "summary": "【补报】美国周日（官网日期 2026-11-08；公开广泛传播约在台北时间 11 月 9 日凌晨），英伟达新闻室公开了两份同日文件——这是公司声明与董事会立案，不是私人八卦帖。一份是创始人兼 CEO 黄仁勋发给全体员工的信《A Message to Our Company》：他写道「I was unfaithful to my wife. My actions hurt her and our children. There is no excuse for what I did. I am deeply sorry.」并向家人、同事、董事会、合作伙伴和全球股东道歉，称领导英伟达是他一生的荣幸，他未能达到应有的信任标准，但「I am fully committed to NVIDIA」，会努力赢回信心。关于新闻报道提出的国家安全关切，他写明「NVIDIA’s Board of Directors has initiated an independent investigation. I support the investigation and will cooperate fully」，并请外界给家人隐私。另一份是董事会声明：鉴于近期报道称黄仁勋「has been the target of a foreign intelligence effort」，董事会启动独立调查；由独立董事委员会监督，并聘请外部独立法律顾问。董事会写道，美国国家与经济安全对英伟达及其股东至关重要；「While the Board has no reason to believe that either national security or NVIDIA secrets were compromised, the Board's inquiry will examine all available information。」黄仁勋支持并承诺配合；董事会对黄仁勋及其领导团队有信心，适当时再更新。投资者关系站同日转发了董事会声明。CNBC 引述公司表态：「Today's news will not slow NVIDIA. Jensen is committed to continuing to lead NVIDIA as CEO without interruption。」已确认的是：本人认错、董事会立案、调查进行中、公司称 CEO 不停职、董事会目前说「没有理由相信」机密或国家安全已受损。仍在调查、且未被这两份英伟达文件写死的，是媒体报道里的具体指控——包括美方情报部门如何定性对方、女方身份与客户云公司 Megaspeed 的关系、以及是否涉及芯片出口管制规避——这些来自《纽约时报》、Financial Times、AP、CNBC 等报道，应标「报道称」，不能写成公司已确认的结论。本窗亦扫过七厂官号与官网／changelog：除本条与下条 Sol 路由补报外，无相对中刊的新 frontier 发版。",
+      "relevance": "全球最重要的 AI 芯片公司进入正式治理程序：CEO 本人公开认错，董事会就「外国情报针对」报道立案。供应链、出口管制叙事和资本市场都可能有后续，但本条先写清文件本身，不把尚未结束的调查写成已经坐实泄密。早刊／中刊把它当传闻或非产品条漏收，本晚刊按官网补报。",
+      "sources": [
+        {
+          "label": "NVIDIA Newsroom · A Message to Our Company（2026-11-08）",
+          "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company"
+        },
+        {
+          "label": "NVIDIA Newsroom · Statement From NVIDIA Board of Directors（2026-11-08）",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+        },
+        {
+          "label": "NVIDIA IR · 同一董事会声明（2026-11-08）",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/Statement-from-NVIDIA-Board-of-Directors/"
+        },
+        {
+          "label": "CNBC · 刊出内部信与董事会声明全文",
+          "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-email-board-of-directors-statement.html"
+        },
+        {
+          "label": "CNBC · 调查报道（媒体侧细节须与官网区分）",
+          "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html"
+        },
+        {
+          "label": "AP · Nvidia board investigation",
+          "url": "https://apnews.com/article/nvidia-jensen-huang-investigation-chinese-spy-68839e7ca6ba2b121529f7e475e501d6"
+        }
+      ]
+    },
+    {
+      "id": "1109晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】用户报告 ChatGPT／Codex 被路由到未官宣的 GPT-6.2 Sol：这是灰度观察，不是正式发版",
+      "time": "2026-11-08T18:07:00+08:00",
+      "summary": "【补报】11 月 8 日晚上 18:07（亚洲／台北，对应 10:07 UTC），X 账号 @TokenGremlin 发帖称：「GPT-6.2 Sol is already showing up for some ChatGPT users」，并配上号称由单个提示词生成、全部打进一个 HTML 文件的 Three.js 三维场景。本窗用 X 接口直接读到原帖（id 2119371334878744648）；截稿时该帖约 30 万次浏览、约 1280 赞。约 90 分钟后他再次发帖明确使用「路由」一词：「I'm being routed to GPT-6.2 Sol」，并称在一次性生成测试里 3D／设计表现超过 Claude Opus 5.5。这不是 OpenAI 官方发版，也不是新权重或 API 上架：本窗核过 openai.com/index（最新仍 Nov 6 Hacktron）、API changelog（最新仍 Nov 5 `gpt-6-cyber`）、ChatGPT release notes（最新仍 Nov 4 Images 2.6），以及 @OpenAI 主号（中刊后 0 帖），都没有 GPT-6.2 Sol。独立汇总页 CellCog 11 月 9 日同样写道：OpenAI 未宣布、API 目录与 OpenRouter 均无 6.2 ID，名称来自用户而非公司。交叉观察是分裂的：多名用户跟进类似的 3D／一次性 HTML 测试并自称「被路由到 6.2」；另一边，用户 @HarshithLucky3 在原帖后约 32 分钟引用反驳「this is not GPT 6.2 Sol … it's GPT 6.1 Sol」，并配上模型选择器仍写 GPT-6.1 Sol 的截图。路由论的要点是：如果产品入口背后在做 A／B，选择器显示 6.1 与「实际跑到更新 checkpoint」可以同时被主张。也有人提醒：在 Codex 配置里把模型名改成 `gpt-6.2-sol` 并不是证据——Codex 可能显示用户输入的任意名称。因此本条只记录「用户路由／灰度报告正在广泛传播」，不把它等同于 GPT-6.2 正式发布。OpenAI 开发者号 11 月 9 日 04:04 台北发出的「Tomorrow.」预告，到本晚刊截稿时仍无对应官宣。本窗亦扫过七厂官号与官网／changelog，除本条与黄仁勋补报外，无其他相对中刊的新 frontier 发版。",
+      "relevance": "妮可点名漏收的，正是这种「还没官宣、但已经在用户里传开的灰度实测」。价值是让读者知道业内在传什么、证据停在哪一层；不能把路由报告写成 OpenAI 已经交付 GPT-6.2。",
+      "sources": [
+        {
+          "label": "X · TokenGremlin 原帖（2026-11-08T10:07:56Z）",
+          "url": "https://x.com/TokenGremlin/status/2119371334878744648"
+        },
+        {
+          "label": "X · TokenGremlin「I'm being routed…」",
+          "url": "https://x.com/TokenGremlin/status/2119395930805879165"
+        },
+        {
+          "label": "X · Harshith 反驳：选择器仍是 GPT-6.1 Sol",
+          "url": "https://x.com/HarshithLucky3/status/2119379236826067411"
+        },
+        {
+          "label": "CellCog · Users Report It, OpenAI Has Not Released It（2026-11-09）",
+          "url": "https://cellcog.ai/blog/gpt-6-2-sol/"
+        },
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "OpenAI API changelog",
+          "url": "https://platform.openai.com/docs/changelog"
+        },
+        {
+          "label": "ChatGPT release notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "1109晚-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-09",
+      "summary": "这段时间没有相对中刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA advisories／KEV（最新仍 Nov 6 将 SonicWall SonicOS SSLVPN CVE-2026-19868 列入 KEV，早刊／中刊已标未升格普通人主条；未见 Nov 7／8／9 新 Alert 或新入目录项；另见 Nov 5 供厂商问答的后量子材料与工业冷链加固提示，非 AI、非家用立刻改密项）、Krebs（首页最新仍 Nov 4 白宫网络代理节点出租，属基础设施／代理面，非 AI 实害主条）、Wiz（最新仍 Nov 3 Green Agent 产品文，以及已报 Black October／LLMJacking）、CrowdStrike（仍停在 Nov 3 收购 Fiddler／Dreadnode 与 AI Kill Switch，窗口已过不重复）、Microsoft Security／Threat Intel（ARTEX／Storm-3358 打金融业与 Nov 5 密钥扫描两文中刊已标未升格，未见更新主条）、Mandiant／GTIG（置顶 AI Threat Tracker 为旧文），以及 X AI security 线索（近窗多为复述已报 ARTEX／「五分钟打到 Azure Key Vault」，回看仍指向 Microsoft 11/5–11/6 原文，无一手新实害）。Crafty Falcon、DeepMind RSA、Cyber／948、Wiz Black October／LLMJacking、WorkOS ARTEX 逃逸、SonicWall KEV、CrowdStrike VAPOR PANDA、白宫代理节点等已报或不达标线不重复。",
+      "relevance": "家用读者本窗无立刻改密／急补丁项。本窗亦扫过 CISA／Krebs／Wiz／CrowdStrike／Microsoft Security／Mandiant·GTIG 与 X 线索，无其他达门槛新主条。",
+      "sources": [
+        {
+          "label": "CISA · SonicWall KEV（已扫未升格；未见 Nov 7／8／9 新条）",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog"
+        },
+        {
+          "label": "CISA · cybersecurity advisories",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "CISA · KEV catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        }
+      ]
+    },
+    {
+      "id": "1109晚-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周一亚股收盘：台股涨4.94%收41661.70（低于午间高点），日经收+2.33%不及午前+3.44%，韩综由红翻绿收跌0.81%；欧股盘中偏强，美现金尚未开；油价回吐午间涨幅",
+      "time": "2026-11-09T19:21:00+08:00",
+      "summary": "相对中刊（约12:20–12:25台北：日经午前收59411.34／+3.44%，Yahoo后场约59258；韩综盘中约5111–5121／+约1%；台股盘中Yahoo约42011／+5.82%，中央社写国安基金护盘后一度突破42300；恒指约24531／+0.20%；A股午休上证3665.94／深成11206；欧股未开；美现金仍周五标普7376.86、纳指24579.42、道指51285.73；美期ES约7446.5、NQ约27221、YM约51785；WTI 91.30、Brent 98.31、黄金4129.3；10Y 4.859%）：亚洲已出全日收盘。日经收58775.50（+1340.73／+2.33%），官方高点59440.18出现在11:27 JST，全日涨幅低于午前收。韩综收5018.85（−40.84／−0.81%），盘中既见4990.66也见5172.94，韩联社称为2月2日以来收盘最低，科斯达克收638.97（−0.82%）。台股收41661.70（+1960.06／+4.94%），开盘40347.28即最低、最高42349.36，成交8379.29亿新台币；经济日报称台积电收2235元（+100／+4.68%）。恒指收24448.95（−32.91／−0.13%）。上证收3660.79（+11.61／+0.32%），深成收11145.49（−30.29／−0.27%）并收在当日最低；新华财经称创业板指跌0.27%收2458.56，沪深京成交1.49万亿元、缩量1771亿元。欧股约19:06台北仍在交易、不能写成收盘：STOXX 50约6231.96（+1.00%），FTSE 100约10748.98（+0.70%），DAX约26041.73（+0.86%），CAC 40约8181.59（+0.52%）。美股现金约22:30台北才开，仍是周五收。美期约19:11：ES 7440.5（较周五结算7402约+0.52%）、NQ 27144（+0.22%）、YM 51854（+0.91%）。WTI 89.38、Brent 96.34，均低于中刊也低于周五结算；黄金4107.8，低于中刊4129.3、仍高于周五4074.9。10Y的Yahoo印仍是周五4.859%。本窗亦扫过美日韩台／A·港／欧／油／金／美债／ES·NQ·YM固定源。",
+      "relevance": "周一晚上别把周五美现金当成新开盘，也别把欧股盘中写成收盘。真正相对中刊结算下来的是：台股和日经都还是涨的但低于午间，韩综由红翻绿，港股小跌，A股沪涨深跌，油价把午间涨幅吐掉。",
+      "sources": [
+        {
+          "label": "日经新闻 · 大引け 58775.50（+2.33%）",
+          "url": "https://www.nikkei.com/article/DGXZQOFL094LU0Z01C26A1000000/"
+        },
+        {
+          "label": "日经官方日次サマリー 2026-11-09",
+          "url": "https://indexes.nikkei.co.jp/nkave/archives/summary"
+        },
+        {
+          "label": "韩联社 · 韩综收 5018.85（−0.81%）",
+          "url": "https://www.yna.co.kr/view/AKR20261109117700008"
+        },
+        {
+          "label": "中央社 · 台股收 41661.70（+1960.06／+4.94%）",
+          "url": "https://www.cna.com.tw/news/afe/202611090096.aspx"
+        },
+        {
+          "label": "TWSE 11/9 指数表",
+          "url": "https://www.twse.com.tw/exchangeReport/MI_INDEX?date=20261109&response=html&type=ALLBUT0999"
+        },
+        {
+          "label": "经济日报 · 国安基金／台积电收 2235 元",
+          "url": "https://money.udn.com/money/story/5607/9866722"
+        },
+        {
+          "label": "RTHK · 恒指收约 24448（−0.1%）及亚股交叉",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1877136-20261109.htm"
+        },
+        {
+          "label": "新华财经 · A股收评 上证3660.79／深成11145.49",
+          "url": "https://www.cnfin.com/yw-lb/detail/20261109/4492864_1.html"
+        },
+        {
+          "label": "金十 · 上证／深成收盘点位",
+          "url": "https://flash.jin10.com/detail/20261109150308489800"
+        },
+        {
+          "label": "Sharecast · 伦敦开盘（欧股已开、油价回落）",
+          "url": "https://www.sharecast.com/news/market-report-opening/ftse-oil-prices-nvidia-jensen-huang-spying-kainos--24087558.html"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／^TWII／^HSI／000001.SS／399001.SZ",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI／^FCHI（欧股盘中）",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        },
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI（美现金仍周五）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／YM=F／CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        }
+      ]
+    },
+    {
+      "id": "1109晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "谷歌背书不是无限保函：Anthropic 违约时，它可以接租，也可以付解约费换项目公司股权",
+      "time": "2026-11-09T15:20:00+08:00",
+      "summary": "上午那刀写的是「谷歌 AA+ 帮 TeraWulf 借便宜债」；下午把 11 月 4 日 8-K 和 Credit Support Agreement 翻开，刺点在违约后的菜单，而不只在评级背书本身。三条 CSA（CB-1／CB-2／CB-3）各自要等对应租约最后一间机房开工日才生效；生效前若 Anthropic 已经破产或租金违约，房东仍有权把楼盖完，谷歌背书要等生效日才把那场违约当成 Default Trigger。一旦触发，Raylan 通知后，谷歌可选：（i）付清到期租金并自己接成租户；或（ii）在特定条件下付一笔解约费——付完后有权拿到 Raylan（项目子公司，不是上市公司 TeraWulf）的股权。解约费会按生效后约定年限摊销；CoinDesk 对附件的读法是：解约费占项目总成本（土地／基建／设备／融资）的比例，大致对应股权比例，例如付 30% 总成本就拿约 30% 股权；背书生效后前六年，谷歌一般须接租而不是解约，例外是机房里谷歌自家 TPU 的用电量用不满预留给租户的一半。背书还会在 Anthropic（或其担保方）拿到并维持投资级评级满三个月后结束。对市场判断的用处是：你以为「有谷歌兜底」等于债永远安全，合同写的其实是一套带时间窗的期权——盖楼期风险仍多半在开发商，运营期谷歌可以选「自己变成租户」或「付钱换项目片股权」；它不是无条件把 Anthropic 的 190 亿美元租金写成谷歌的表内债。边界：终止费金额、递延期长短、股权计算公式以 Exhibit 10.1 为准；媒体对「30%」的举例是读合同后的解释，不是 8-K 正文原句。",
+      "relevance": "信贷与资本开支：hyperscaler 背书的违约路径决定项目债在租户出事时到底变成「换租户」还是「债主／背书方拿项目股权」。证据边界：TeraWulf 8-K 与 CSA 可核生效日、Default Trigger、接租／解约费换股权、投资级退出；终止费比例举例与「前六年须接租」来自对附件的二次报道，细节以 SEC 附件为准。",
+      "sources": [
+        {
+          "label": "SEC · TeraWulf 8-K（2026-11-04）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026069810/wulf-20261104.htm"
+        },
+        {
+          "label": "TeraWulf · Exhibit 10.1 Credit Support Agreement 入口",
+          "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001628280-26-069810/exhibit101-googlexterawulf.htm"
+        },
+        {
+          "label": "CoinDesk · 解约费可换 Raylan 股权（2026-11-05）",
+          "url": "https://www.coindesk.com/tech/2026/11/05/google-could-take-ownership-stake-in-bitcoin-miner-terawulf-s-ai-project-if-anthropic-defaults"
+        }
+      ]
+    },
+    {
+      "id": "1109晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "电力信用证不只占银行额度：不续约能变成真提款，密歇根还在吵「担保不够谁买单」",
+      "time": "2026-11-09T15:20:00+08:00",
+      "summary": "上午那刀停在 Switch 把履约信用证额度加到 35 亿美元、公用事业拿它当占电过滤器。下午往下挖提款触发和公共侧：Halcyon 跟踪的 109 份含抵押品的州监管备案里，67 份点名信用证、另有 12 份写 standby letter；律师 Moses Singer 说多数是一年自动续期的 evergreen，提款条件通常挂在申请人破产或基础合同违约。融资顾问侧更刺的一句是：受益人常可在银行发出「不续约」通知、申请人又交不出合格替代担保时直接提款——续约风险会瞬间变成现金流动性事件，而不是继续待在表外。密歇根公开听证把这层吵到纳税人桌上：DTE 为 Oracle 约 1383 兆瓦机房配套储能时，州公用事业监管警告若 Oracle 抵押品不够，政府不会替公用事业扛成本；合同里多数抵押条款在公开版被涂黑，州检察长已对初步批准提出上诉。对普通人／市场判断的用处是：你家附近机房「有没有信用证」不只是银行和开发商的私事——额度不够会被挡在电网门外，银行不肯续约可能逼出真提款，而抵押品写得不够透明时，监管会先把「纳税人不兜底」写进记录。边界：Halcyon 计数与 GTR 访谈可核结构与备案频率；ISO-NE 的到期前提款话术是区域市场表格，不能直接套到所有州公用事业；密歇根个案的抵押品金额因红acted 仍未知。",
+      "relevance": "基础设施承压与信贷传导：电力信用证从「占电过滤器」落到「不续约→提款」的流动性机制，以及州监管把 hyperscaler 抵押品不足时的公共兜底明确关掉。证据边界：GTR／Halcyon 备案统计与 evergreen 提款口述可核；Financely 描述的是常见合同机制而非某笔已提款交易；DTE／Oracle 公开听证与检察长上诉可核政治边界，具体抵押面值仍被涂黑。",
+      "sources": [
+        {
+          "label": "GTR · 数据中心抢电推高信用证需求",
+          "url": "https://www.gtreview.com/news/americas/demand-for-letters-of-credit-surges-as-data-centres-scramble-for-power/"
+        },
+        {
+          "label": "Financely · 公用事业信用证融资与不续约提款",
+          "url": "https://blog.financely.io/financing-data-center-utility-letters-of-credit/"
+        },
+        {
+          "label": "Natixis CIB · Megawatts & Megabytes（电力信用证作过滤器）",
+          "url": "https://home.cib.natixis.com/articles/megawatts-megabytes-how-trade-finance-fuels-the-ai-boom"
+        }
+      ]
+    },
+    {
+      "id": "1109晚-7",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "CREFC 点名的四笔 2026 样例债：同一本手册里，ABS 可以不留风险自留，CMBS 仍要留",
+      "time": "2026-11-09T15:20:00+08:00",
+      "summary": "上午那刀写过 CREFC 第二版手册的共享对手方展板和 SEC 工作人员信。下午把 Exhibit 18 四笔样例摊开，才看见「管道分叉」怎么长在具体债上。Cloud Capital 2026-1：弗吉尼亚 Ashburn 一座 80 兆瓦楼、单一保密 AA－或更高 hyperscaler、5.20 亿美元 ABS、2031 年预期还款／2056 年法律到期；评级报告写水平风险自留，定价日碰巧挨着 7/29 工作人员信，手册提醒别推断是信改了合同。DATA 2026-800D：伊利诺伊 Elk Grove 一座 30 兆瓦楼、保密 BBB 租户加母公司担保、3.75 亿美元 CMBS、巴克莱与高盛留 5% 垂直片（1875 万美元）——工作人员信不改 CMBS。CONE 2026-ACD6：六座企业机房、160 多个客户、12.5 亿美元 CMBS，第三方买水平风险自留 HRR。Switch 2026-2／3：13 处物业约 557 客户、两系列 ABS 约 8.40 亿美元，DBRS 预售写将不设美国风险自留并引用工作人员信。同一本手册的 Exhibit 13A 还把跨市场敞口标成：Alphabet 关联融资合计约 1360 亿、Amazon 约 1130 亿、Meta 约 1080 亿、Oracle 约 740 亿、NVIDIA 约 460 亿（含对 OpenAI 的投资与最高约 1050 亿担保口径）——公司总额是「挂上名字的融资全口径」，不是它直接欠的债，不可简单相加。对市场判断的用处是：你买「机房 ABS」和「机房 CMBS」，底层都可以是同一类楼和同一小撮科技付钱人，但发行人要不要自己留一截风险、还款是预期再融资日还是气球到期，已经在这四笔样例里走成两套剧本。边界：四笔名称与结构来自 CREFC 手册与评级报告摘要；共享对手方美元是协会重绘 Ares／Bloomberg 公开源，重叠且含担保／租约／公司债，不能加总成「八家共欠」。",
+      "relevance": "跨市场传导与信贷结构：四笔可核样例把「ABS 风险自留例外 vs CMBS 仍留」和「共享对手方」从概念落成交易清单。证据边界：CREFC 11 月第二版 Exhibit 16／18／13A 可核；工作人员信仅覆盖信中所述 ABS 结构，非委员会规则；公司关联融资总额不可加总。",
+      "sources": [
+        {
+          "label": "CREFC · Data Center Primer 第二版 PDF",
+          "url": "https://www.crefc.org/common/uploaded%20files/Research/CREFC_Data_Center_Primer_Second%20Edition_Nov2026.pdf"
+        },
+        {
+          "label": "CREFC · 第二版发布说明（2026-11-05）",
+          "url": "https://www.crefc.org/cre/cre/content/News/Items/Research_and_Data/2026/JUST_RELEASED_CREFC_Data_Center_Primer_Second%20Edition.aspx"
+        },
+        {
+          "label": "CREFC · Primer 文档库条目",
+          "url": "https://resources.crefc.org/crefc-data-center-primer-second-edition/"
+        }
+      ]
+    },
+    {
+      "id": "1109晚-8",
+      "section": "国际重大影响",
+      "title": "中国把稀土等相关出口管制、对美加征关税和对美船舶特别港务费再暂停约两个月——不是新协议，是原暂停期到期前的延期",
+      "time": "2026-11-09T16:00:00+08:00",
+      "summary": "中刊（约12:25台北）之后，中国官方星期一下午密集发布一组「继续暂停」公告。商务部、海关总署2026年第58号公告（官网时间戳16:00）：自11月11日起至2027年1月10日，继续暂停实施2025年第55、56、57、58号及商务部2025年第61、62号出口管制公告；我的钢铁网指出其中多份涉及稀土设备、原辅料与中重稀土，路透／CNA则概括为稀土以及工业钻石、锂电池技术等去年扩大、后又暂停一年的措施。商务部新闻发言人同日答问：为落实中美第八轮经贸磋商共识，自11月10日起继续暂停2025年第21号公告（16家美国实体列入出口管制管控名单）相关措施2个月，对清单内实体出口仍须申请许可。国务院关税税则委员会公告2026年第6号：自11月10日13时01分起，在2个月内继续暂停实施24%的对美加征关税税率，保留10%；税委会自己的表述是落实中美两国元首华盛顿会晤成果共识。交通运输部公告2026年第90号：继续暂停对美船舶收取特别港务费，并继续暂停航运业、造船业及相关产业链供应链安全调查，至2027年1月10日。联合早报还转述不可靠实体清单（2025年4月4日列入的11家美国实体）也自11月10日起再停两个月——本窗亲自打开的官网答问页正文写的是出口管制管控名单。路透／CNA写，特朗普本月晚些时候计划去深圳出席APEC并预计与习近平会面。这是延期维持现状，不是取消管制，也不是已经签下的长期贸易协议。伊朗／霍尔木兹方面，本窗续扫Axios、Arab News、Iran International与阿纳多卢：特朗普与卡塔尔首相的会面安排和两天草案仍在，未见协议签署或海峡重开，不另开国际主条。",
+      "relevance": "中刊之后才落到纸面上的官方文本：稀土等相关物项的出口闸门、对美24%加征关税、对美船特别港务费，都再被按下约两个月。少一层「这个月就要恢复管制」的即期冲击，但不是局面已经谈妥。",
+      "sources": [
+        {
+          "label": "商务部、海关总署公告2026年第58号（11/11–2027/1/10继续暂停多份出口管制）",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_91466027f465467985942a639a9485f4.html"
+        },
+        {
+          "label": "商务部新闻发言人就出口管制管控名单答记者问",
+          "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_4bc4aaa99b4e41feb6030ec59018d212.html"
+        },
+        {
+          "label": "税委会公告2026年第6号（暂停24%对美加征关税、保留10%）",
+          "url": "https://gss.mof.gov.cn/gzdt/zhengcefabu/202611/t20261109_4004260.htm"
+        },
+        {
+          "label": "交通运输部公告2026年第90号（暂停对美船特别港务费及调查至2027-01-10）",
+          "url": "https://xxgk.mot.gov.cn/jigou/syj/202611/t20261109_4227425.html"
+        },
+        {
+          "label": "我的钢铁网 · 58号公告中的稀土相关文件编号",
+          "url": "https://news.mysteel.com/a/26110916/A55BF26D6AF39CA9.html"
+        },
+        {
+          "label": "CNA · 路透：稀土等出口管制暂停延至1月",
+          "url": "https://www.channelnewsasia.com/east-asia/china-extends-suspensions-new-rare-earths-controls-6535736"
+        },
+        {
+          "label": "Business Standard · 路透同稿",
+          "url": "https://www.business-standard.com/world-news/china-extends-suspension-of-new-rare-earth-controls-until-january-10-126110900599_1.html"
+        },
+        {
+          "label": "联合早报 · 综合不可靠实体清单／关税／港务费",
+          "url": "https://www.zaobao.com.sg/news/china/story20261109-9970508"
+        },
+        {
+          "label": "Axios · 特朗普将与卡塔尔首相谈伊朗斡旋（中刊已标，本窗续扫不升格）",
+          "url": "https://www.axios.com/2026/11/09/trump-qatar-prime-minister-iran-war-mediation"
+        }
+      ]
+    },
+    {
+      "id": "1109晚-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "安塔利亚气候大会开幕：联合国已写明1.5°C将被超过；下一步被摆上台面的是「把已经排出来的碳再抽回去」",
+      "time": "2026-11-09",
+      "summary": "换赛道——气候科学与能源政策，不是早刊的基因治疗癫痫，也不是中刊的钙钛矿薄膜电池／LED。Nature今天报道：第31届联合国气候大会在土耳其安塔利亚开幕，这是全球变暖将超过巴黎协定1.5°C上限被确认之后召开的第一届COP。联合国环境规划署上个月的Limiting Overshoot报告，是第一份明确写「在所有说得通的排放路径下世界都将越过1.5°C」的联合国报告；若要在本世纪内把温度拉回去，除了把排放降到接近零，还需要清除数千亿吨二氧化碳（技术手段或再造林等）。牛津大学的Steve Smith说，迄今还没有国家在提交给联合国的气候承诺里写下清晰量化的二氧化碳清除目标。德国研究者Oliver Geden说，多数政府终于不用再假装能守住1.5°C，但限制超标幅度的具体办法仍很少被拿出来谈。过去对碳清除持怀疑态度的NRDC在9月报告里转而呼吁像支持可再生能源一样支持这个产业。这是大会开幕时的科学框架，不是已经达成的COP31决议，也不是已经铺开的抽碳工业。",
+      "relevance": "不是模型发版，而是官方语言从「守住1.5°C」转到「先超标、再想办法拉回来」——和电、工业产能、谁出钱做清除是同一条物理线，现在还停在报告和谈判开场。",
+      "sources": [
+        {
+          "label": "Nature · COP31 kicks off as planet faces imminent overshoot of 1.5 °C（2026-11-09）",
+          "url": "https://www.nature.com/articles/d41586-026-03631-w"
+        }
+      ]
+    }
+  ]
+}
