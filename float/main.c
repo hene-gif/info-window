@@ -16,6 +16,12 @@
 static const wchar_t MARK[] = L"\x8BAF\x606F\x7A97"; /* 讯息窗 */
 static const wchar_t TIP[] = L"\x8BAF\x606F\x7A97\x60AC\x6D6E"; /* 讯息窗悬浮 */
 static const wchar_t QUIT[] = L"\x9000\x51FA"; /* 退出 */
+static const wchar_t FOUND_TEXT[] =
+    L"\x5DF2\x7ECF\x8FDE\x4E0A\x8BAF\x606F\x7A97\x3002\x5B83\x4F1A\x6D6E\x5728\x522B\x7684\x7A97\x53E3\x4E0A\x9762\x3002\n"
+    L"\x62D6\x5230\x5C4F\x5E55\x5DE6\x7F18\x6216\x53F3\x7F18\xFF0C\x677E\x624B\x540E\x4F1A\x7F29\x8FDB\x53BB\x3002";
+static const wchar_t MISSING_TEXT[] =
+    L"\x8FD8\x6CA1\x770B\x89C1\x8BAF\x606F\x7A97\x3002\n"
+    L"\x8BF7\x5148\x4ECE\x5F00\x59CB\x83DC\x5355\x6253\x5F00\x88C5\x597D\x7684\x8BAF\x606F\x7A97\xFF0C\x4E0D\x8981\x7528\x6D4F\x89C8\x5668\x6807\x7B7E\x9875\x3002";
 
 typedef struct Track {
     HWND hwnd;
@@ -28,6 +34,9 @@ typedef struct Track {
 
 static Track track;
 static HWND host;
+static HWND status_box;
+static HFONT ui_font;
+static int status_found = -1;
 static NOTIFYICONDATAW tray;
 
 static Box from_rect(RECT rect) {
@@ -228,16 +237,30 @@ static void quit(void) {
     DestroyWindow(host);
 }
 
+static void paint_status(int found) {
+    if (!status_box || found == status_found) return;
+    status_found = found;
+    SetWindowTextW(status_box, found ? FOUND_TEXT : MISSING_TEXT);
+}
+
 static LRESULT CALLBACK host_proc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) {
     switch (msg) {
     case WM_TRAY:
         if (lparam == WM_RBUTTONUP || lparam == WM_CONTEXTMENU) show_menu();
+        if (lparam == WM_LBUTTONUP) {
+            ShowWindow(host, SW_SHOWNORMAL);
+            SetForegroundWindow(host);
+        }
         return 0;
     case WM_COMMAND:
         if (LOWORD(wparam) == 1) quit();
         return 0;
+    case WM_CLOSE:
+        quit();
+        return 0;
     case WM_TIMER:
         tick();
+        paint_status(track.hwnd && IsWindow(track.hwnd));
         return 0;
     case WM_DESTROY:
         PostQuitMessage(0);
@@ -264,15 +287,41 @@ int WINAPI WinMain(HINSTANCE instance, HINSTANCE prev, LPSTR cmd, int show) {
     (void)cmd;
     (void)show;
     mutex = CreateMutexW(NULL, TRUE, L"Local\\InfoWindowFloat");
-    if (!mutex || GetLastError() == ERROR_ALREADY_EXISTS) return 0;
+    if (mutex && GetLastError() == ERROR_ALREADY_EXISTS) {
+        HWND existing = FindWindowW(L"InfoWindowFloatHost", NULL);
+        if (existing) {
+            ShowWindow(existing, SW_SHOWNORMAL);
+            SetForegroundWindow(existing);
+        }
+        return 0;
+    }
     enable_dpi();
     ZeroMemory(&klass, sizeof(klass));
     klass.lpfnWndProc = host_proc;
     klass.hInstance = instance;
     klass.lpszClassName = L"InfoWindowFloatHost";
+    klass.hCursor = LoadCursorW(NULL, (LPCWSTR)IDC_ARROW);
+    klass.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
     if (!RegisterClassW(&klass)) return 0;
-    host = CreateWindowExW(0, klass.lpszClassName, TIP, 0, 0, 0, 0, 0, HWND_MESSAGE, NULL, instance, NULL);
+    host = CreateWindowExW(WS_EX_APPWINDOW, klass.lpszClassName, TIP,
+                           WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
+                           CW_USEDEFAULT, CW_USEDEFAULT, 460, 230,
+                           NULL, NULL, instance, NULL);
     if (!host) return 0;
+    ui_font = CreateFontW(-18, 0, 0, 0, FW_NORMAL, FALSE, FALSE, FALSE, DEFAULT_CHARSET,
+                          OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, CLEARTYPE_QUALITY,
+                          DEFAULT_PITCH | FF_DONTCARE, L"Microsoft YaHei UI");
+    status_box = CreateWindowExW(0, L"STATIC", MISSING_TEXT, WS_CHILD | WS_VISIBLE | SS_LEFT,
+                                 20, 16, 404, 100, host, (HMENU)100, instance, NULL);
+    CreateWindowExW(0, L"BUTTON", QUIT, WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+                    170, 132, 100, 32, host, (HMENU)1, instance, NULL);
+    if (ui_font) {
+        SendMessageW(status_box, WM_SETFONT, (WPARAM)ui_font, TRUE);
+        SendMessageW(GetDlgItem(host, 1), WM_SETFONT, (WPARAM)ui_font, TRUE);
+    }
+    status_found = 0;
+    ShowWindow(host, SW_SHOWNORMAL);
+    UpdateWindow(host);
     ZeroMemory(&tray, sizeof(tray));
     tray.cbSize = sizeof(tray);
     tray.hWnd = host;
