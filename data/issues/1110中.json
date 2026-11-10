@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "id": "1110中",
+  "date": "2026-11-10",
+  "slot": "中",
+  "title": "11月10日 · 中",
+  "items": [
+    {
+      "id": "1110中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】NVIDIA 在 CoRL 发布 GR00T 2：用人类视频学精细操作，同期推出 Isaac Lab 3.0",
+      "time": "2026-11-09T23:32:00+08:00",
+      "summary": "【补报】这是 11 月 9 日已发布、早刊未收入的官方机器人模型，不是今天中午的新发版。2026 年 11 月 9 日，NVIDIA 在奥斯汀召开的 Conference on Robot Learning（CoRL）上发布 GR00T 2。公司研究页称之为新一代 foundation world-action model：同时预测未来视频与机器人动作，可在平行夹爪、灵巧手和人形机器人上运行。TNW（发布 15:32 UTC，台北时间 11 月 9 日 23:32）综述称：该模型部分用人类视频训练，英伟达正公开其中 10 万小时第一人称录像；英伟达测试中，50 项任务里有 40 项至少成功一次且无该任务训练，看一次演示平均成功率 71%，看五次为 95%，并写明英伟达自己的论文指出这些任务是从模型已经能学好的任务里挑出的。Foxconn、Siemens、Nexuni 在测试，三家均未宣称已投入生产。同期发布开源仿真训练工具 Isaac Lab 3.0，TNW 转述英伟达称在一项测试上训练最高约快 2.5 倍。本窗亦扫过七厂官号 OpenAI／AnthropicAI／claudeai／GoogleDeepMind／MetaAI／AIatMeta／deepseek_ai／Alibaba_Qwen 与 @elonmusk、@sama、@demishassabis、@karpathy、@dotey；@xai 时间线未授权，已用 from:xai 搜索回退、x.ai/news 与现用官号 @SpaceXSI，窗口内无新发版帖。官网已扫 OpenAI index／API changelog（最新仍 11 月 5 日 gpt-6-cyber）／ChatGPT release notes（最新仍 11 月 4 日 Images 2.6）、Anthropic news／alignment／engineering、DeepMind blog、x.ai/news、Meta 旧博客与 research.meta.ai、DeepSeek 官网新闻、Qwen Code 博客与 Qwen3 GitHub releases。除本条与下一条黄仁勋后续外，未见截稿后新的 frontier 发版；早刊已报的 Fable 5.2、Muse Ember、TPU 8tx／8i Max、Control Room 均无官方新进展。GPT-6.2 仍无官方确认：本窗新看到用户对照「显示名仍是 6.1、API 与网页答案不一致」，发帖者自行标明不能由此锁定 6.2；「本周四发布」继续是无来源传闻。blog.google/technology/ai 栏目页未渲染文章列表、qwen.ai 返回空正文，这两处不能写成已扫确无。",
+      "relevance": "补的是早刊漏掉的官方机器人基础模型，发在截稿前，不要读成今天中午才发布。测试数字来自英伟达自己的论文，合作方也还没说已经量产。",
+      "sources": [
+        {
+          "label": "NVIDIA Research · GR00T 2",
+          "url": "https://research.nvidia.com/labs/gear/gr00t-2/"
+        },
+        {
+          "label": "TNW · NVIDIA GR00T 2（2026-11-09 15:32 UTC）",
+          "url": "https://thenextweb.com/news/nvidia-gr00t-2-robots-human-video-corl"
+        },
+        {
+          "label": "NVIDIA Newsroom 列表（11/09 CoRL 仿真稿）",
+          "url": "https://nvidianews.nvidia.com/news"
+        }
+      ]
+    },
+    {
+      "id": "1110中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【后续】报道称商务部对 Megaspeed 的芯片调查在英伟达总法联系后暂停并移交司法部；新闻室仍无新声明",
+      "time": "2026-11-10T09:06:00+08:00",
+      "summary": "【后续】兼【补报】早刊已经写过特朗普称与黄仁勋通了电话，以及 NBC 消息源称司法部在查新加坡公司 Megaspeed 是否把受限英伟达芯片转运进中国。本窗要补的是调查权怎么转手的这一层。《纽约时报》报道（公开转述不晚于 11 月 9 日 19:59 UTC，约台北 11 月 10 日 03:59，早于早刊截稿，故标补报；中文版署 11 月 10 日）：2025 年 8 月，英伟达总法律顾问 Tim Teter 给商务部工业与安全局调查人员发邮件，称商务部高级官员 Jeff Kessler 已允许英伟达就 Megaspeed 一案联系；调查人员拒绝会面，把邮件转给 Kessler 后，Kessler 回复应继续严格按程序办理，一名商务部官员称他并未下令向英伟达披露信息，也未干预决定接受哪些会面或披露哪些信息。此后司法部要求商务部暂停其工作，商务部照办，案件转由司法部做刑事调查。司法部拒评；商务部发言人称该案及其他执法均严格依照程序；英伟达发言人 John Rizzo 对时报表示，公司与官员磋商是为了回答问题、提供一线信息、征求指导和指示，并询问是否还有要进一步了解的，同时称致力于协助阻止潜在走私、也服务合法客户。Megaspeed 代表称公司正在对转移流向指控做内部调查，并曾主动提出配合但未得到回应。Yahoo 转述时报时写明：报告中没有证据表明 Kessler 下令停止调查，或英伟达成功左右了结果；司法部的刑事调查仍在进行，案件并未撤销。NBC 第二篇（2026-11-10 01:06 UTC，台北 09:06，在早刊截稿之后）导语与这一转手过程相符：据一名知情人士，司法部要求商务部暂停其在一项调查中的工作——该调查涉及英伟达的一家云计算客户是否把 AI 芯片偷运进中国——此前有英伟达代表在调查期间联系了商务部调查人员。本次只读到这篇的导语。英伟达新闻室仍只有 11 月 8 日董事会声明，没有新的公司或本人书面表态。",
+      "relevance": "新的不是又一份公司声明，而是商务部调查为何暂停、案子如何交到司法部。刑事调查还在进行，不能写成已经撤销，也不能写成公司已经承认干预。",
+      "sources": [
+        {
+          "label": "NBC · Justice Department took over chip probe after Nvidia contacted investigators（2026-11-10 01:06 UTC）",
+          "url": "https://www.nbcnews.com/tech/tech-news/nvidia-investigation-justice-fbi-commerce-jensen-huang-alice-china-rcna608397"
+        },
+        {
+          "label": "纽约时报中文网 · 英伟达与 Megaspeed 调查（署 2026-11-10）",
+          "url": "https://cn.nytimes.com/usa/20261110/nvidia-megaspeed-investigation-huang/"
+        },
+        {
+          "label": "Yahoo Finance · 转述纽约时报（Mon 9 Nov 2026 11:49 am GMT-5）",
+          "url": "https://sg.finance.yahoo.com/news/nvidia-intervention-preceded-transfer-chip-164950508.html"
+        },
+        {
+          "label": "TNW · 转述纽约时报（2026-11-09 19:59 UTC）",
+          "url": "https://thenextweb.com/news/megaspeed-probe-commerce-nvidia-lawyer-justice-department-nyt"
+        },
+        {
+          "label": "NVIDIA Newsroom · 董事会声明仍为 2026-11-08 原文",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+        }
+      ]
+    },
+    {
+      "id": "1110中-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-10",
+      "summary": "这段时间没有相对早刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA advisories／KEV（列表页与目录 JSON 均成功打开：catalogVersion 仍为 2026.11.09，dateReleased 为 2026-11-09T19:54:37Z，约 11 月 10 日 03:54 台北时间，仍早于早刊截稿；最新添加日仍是 11 月 9 日那四条——CVE-2026-102895 GPUStack、CVE-2026-116779 FreeSwitch、CVE-2026-123158 OpenSSH、CVE-2026-123218 Aspera Faspex——早刊已把 GPUStack 列为确认在野利用主条，另三条已标明不单开；未见 11 月 10 日新的 Alert 或新入目录项）、Krebs（首页最新仍是 11 月 4 日白宫网络代理节点出租，属基础设施／代理面，非本窗新 AI 实害）、Wiz（最新仍是早刊已扫、未升格的 11 月 9 日 Qubole 跨账户滥用）、CrowdStrike（仍停在 11 月 3 日收购 Fiddler／Dreadnode 与 AI Kill Switch，窗口已过不重复）、Microsoft Security／Threat Intel（威胁情报最新仍是 11 月 6 日 ARTEX／Storm-3358；11 月 9 日 FORGE Lab 的 Rust 研究早刊已定性为防御研究，不是对用户的在野攻击通报）、Mandiant／GTIG（主题列表页可见条目仍是已点名的 AI Threat Tracker、LLMJacking、XCPE、ARTEX and Friends 等，未见 11 月 9–10 日新主文）。另见但不升格、不按迟到主条补：德国托管商 Mittwald 11 月 7 日公司声明称攻击者利用其用于连接 AI 助手的 MCP 服务器漏洞，56 个客户项目被标为已妥协，入门后是否用了 AI 仍是日志速度上的推测，面向代理商的小众托管、受影响客户已在通知范围内；一篇 11 月 8 日非固定源的 Malbear Labs 长文及 11 月 9 日二手复述，仍无受害机构具名声明。Claude Code 本地设置文件泄密等更早披露，不补报。GPUStack KEV 与 Qubole 不重复。BleepingComputer 本窗返回 403，中国监管／厂商一手列表页未形成可引用扫描，这两处不能写成已扫确无。",
+      "relevance": "家用读者本窗无立刻改密／急补丁项。早刊已提示自建 GPUStack 的管理员升级；本窗没有在那之上的新行动项。",
+      "sources": [
+        {
+          "label": "CISA · cybersecurity advisories",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "CISA · KEV catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CISA · KEV JSON feed（catalogVersion 2026.11.09）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        }
+      ]
+    },
+    {
+      "id": "1110中-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周二午间：日经午前收60475.78（+2.89%）后场缩涨，韩综自5300高位回落仍逾3%，台股冲上43135后收窄；美欧现货仍指周一收",
+      "time": "2026-11-10T12:30:00+08:00",
+      "summary": "相对早刊（约 08:27 台北：美股周一收标普 7549.94／+2.35%、纳指 25253.14／+2.74%、道指 52389.75／+2.15%，VIX 19.92／−22.31%，10Y 4.864%；欧股周一收 STOXX 50 6290.45／+1.94%、FTSE 100 10782.87／+1.02%、DAX 26267.19／+1.73%、CAC 40 8233.30／+1.16%；日经开 59372.28／+1.02% 后续走高，韩综开 5247.22／+4.55%，台港 A 股当时未开，指向周一台 41661.70、恒 24448.95、上证 3660.79、深成 11145.49；油早刊电子盘约 08:12 为 WTI 86.40、布伦特 92.35，周一结算为 86.85／92.57；黄金早刊电子盘 4146.8，周一 COMEX 结算 4105.00）：本窗约 12:26–12:30 Asia/Taipei。美股现货周二尚未开市，三大指数与 VIX、10 年期美债收益率仍指向周一已报收盘（道指 Yahoo 现报 52389.8，正文沿用早刊 52389.75）。欧股现货本窗仍未开（约 15:00–16:00 台北开），亦指向周一收。亚股是今天的新数，但都不是全日结算。日经官方午前收 60475.78（+1700.28／+2.89%），时事通信、路透／ニューズウィーク日本版与ザイFX 交叉一致，高见 60619.45（+3.14%）；后场开盘缩至 60208.81（ザイFX、財経新聞），随后 Yahoo 延迟盘中约 60032.86（+2.14%，源时间约 12:15 台北）——后场仍在交易，14:00 台北才收，延迟价不能替代午前收，也不能当成全日收。韩综开 5247.22（+4.55%）与早刊一致，高见 5300.92（+5.62%）并触发买盘 sidecar（韩联社）；首尔经济 13:00 韩国时间报 5206.53（+3.74%），Yahoo 更晚的延迟价约 5185.11（+3.31%），仍是盘中，14:30 台北才收。台股 13:30 才收，本窗是盘中：开 42130.33，高 43135.92（非凡新闻与 Yahoo 一致），其后剧烈回吐，三立截至 11:40 报 41999.02，Yahoo 见低 41930.03，午间延迟约 42281.87（+620.17／+1.49%，源时间约 12:10 台北）；台积电高 2280 后约 2245（+0.45%），没有一路领涨。港股午市收恒指 24518.87（+0.29%），与新浪午评、英文虎报交叉一致，下午 13:00 再开，不是全日收。A 股午前收上证 3662.81（+0.06%）、深成 11229.66（+0.76%），中国经济网与新华财经交叉一致，创业板指媒体报 2495.29（+1.49%），13:00 还要再开。美期电子盘约 12:20 台北：ES 7576.75（相对自身昨结 +0.03%）、NQ 27921.50（−0.33%）、YM 52667（+0.32%）。油价电子盘在周一结算之后继续软：Yahoo 约 12:19 报 WTI 85.94（相对周一收 −1.05%）、布伦特 91.75（−0.89%）。这是对冲突降温、市场交易霍尔木兹或重开的价格反应，不是协议已签。黄金电子盘约 4124.8，低于早刊所见 4146.8，仍高于周一 COMEX 结算 4105.00。",
+      "relevance": "美欧现货还没有新结算；真正相对早刊动了的是亚股半日节点——日经午前收复 6 万后场缩涨，韩台早盘大涨后高位回吐，港股和 A 股补上了午盘。不要把延迟盘中或午前／午市收当成全日收盘。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI（美现金仍周一收）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／YM=F（约 12:20 台北）",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        },
+        {
+          "label": "时事通信 · 日经午前收 60475.78（+1700.28）",
+          "url": "https://sp.m.jiji.com/article/show/3908191"
+        },
+        {
+          "label": "ニューズウィーク日本版／路透 · 午前收 +2.89%，高 60619.45",
+          "url": "https://www.newsweekjapan.jp/articles/-/339614"
+        },
+        {
+          "label": "ザイFX · 后场开盘 60208.81",
+          "url": "https://zai.diamond.jp/articles/-/498755"
+        },
+        {
+          "label": "財経新聞 · 后场开 60208.81",
+          "url": "https://www.zaikei.co.jp/article/20261110/876867.html"
+        },
+        {
+          "label": "韩联社 · 韩综开盘急涨、买盘 sidecar、高 5300.92",
+          "url": "https://www.yna.co.kr/view/AKR20261110077600008"
+        },
+        {
+          "label": "首尔经济 · 13:00 KST 韩综 5206.53（+3.74%）",
+          "url": "https://www.sedaily.com/article/20112388"
+        },
+        {
+          "label": "非凡新闻 · 台股开 42130.33、高 43135.92",
+          "url": "https://news.ustv.com.tw/newsdetail/20261110A001014"
+        },
+        {
+          "label": "三立新闻网 · 截至 11:40 报 41999.02，台积电 2245",
+          "url": "https://www.setn.com/news/1936459"
+        },
+        {
+          "label": "新浪港股午评 · 恒指午市收 24518.87（+0.29%）",
+          "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-10/doc-iniyfkmf2771531.shtml"
+        },
+        {
+          "label": "The Standard · 恒指午市 24518 点（+0.29%）",
+          "url": "https://www.thestandard.com.hk/finance/article/348027/HSI-rises-70-points-by-midday-as-SMIC-rallies-nearly-4-Alibaba-drops-3"
+        },
+        {
+          "label": "中国经济网 · 午前收 上证 3662.81、深成 11229.66",
+          "url": "http://finance.ce.cn/stock/gsgdbd/202611/t20261110_3289769.shtml"
+        },
+        {
+          "label": "新华财经 · 午前收交叉及创业板指 2495.29",
+          "url": "https://www.cnfin.com/yw-lb/detail/20261110/4493371_1.html"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／^TWII／^HSI／000001.SS／399001.SZ／CL=F／BZ=F／GC=F／^TNX（约 12:30 台北；亚股延迟盘中不当收盘）",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Economic Times · 油价续跌、口头降温而非协议已签",
+          "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-10-crude-oil-falls-below-92-as-trump-says-iran-war-is-effectively-over-what-lies-ahead/articleshow/135696913.cms"
+        }
+      ]
+    },
+    {
+      "id": "1110中-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "谷歌背书把「用谁的芯片」写进 CSA：前六年沉默默认接租，除非楼内 TPU 功耗能力＜一半",
+      "time": "2026-11-10T09:22:00+08:00",
+      "summary": "昨天下午停在违约菜单（接租还是付解约费换 Raylan 股权）；今天把 CSA Exhibit 10.1 翻到硅那一层。§2.k 写死：租期内加速器只能用 Google-approved TPU，义务在租户 Anthropic，不在房东。§4.e 的 Equipment Capacity Trigger 更刺——楼里已装的 TPU Pods「运行时」能吃掉的功耗能力若低于 Tenant Critical Power 的一半，才允许前六年走 Rejection；否则前六年一般不能拒，而且验证期一沉默就默认接租。§4.d 终止费按 Schedule C-1 摊销，期内逐日向下，只能随实际 Project Debt 下调、不可上调；美元上限和 Uses-of-Funds 百分比在脚注空白被涂红——公式看得见，金额看不见。付完终止费后可拿股权＝终止费／（土地＋楼＋设备基建＋融资成本）。Mosaic 对照 NVIDIA 8 月 17 日 residual value guaranty、Fermi／AMD 10 月 14 日事实表：同类「芯片商给租约／债背书」里，谷歌是把硅写进信用合同并挂上 50% 测试。对普通人／市场判断的用处是：你以为背书只是让债便宜一点，合同其实还在买「这座楼里得跑谁的芯片」；前六年谷歌不说话＝它变成租户，除非现场几乎没装它的 TPU。已证实是条款原文与三家对照结构；猜测是涂红后的具体美元，以及 Anthropic 最终会不会把功耗跑满。",
+      "relevance": "信贷与资本开支：hyperscaler／芯片商背书到底在保「债」还是在锁定「硅＋容量需求」？证据边界在 SEC Exhibit 10.1 与同日 8-K；金额表被省略／涂红，勿把媒体估的 190 亿美元租约当成终止费上限。",
+      "sources": [
+        {
+          "label": "TeraWulf · EX-10.1 Credit Support Agreement",
+          "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001628280-26-069810/exhibit101-googlexterawulf.htm"
+        },
+        {
+          "label": "SEC · TeraWulf 8-K（2026-11-04）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026069810/wulf-20261104.htm"
+        },
+        {
+          "label": "Mosaic · 硅写进信用合同的对照解读",
+          "url": "https://www.mosaicsingularity.com/insights/google-rent-backstop-picks-the-silicon"
+        }
+      ]
+    },
+    {
+      "id": "1110中-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "银行对 AI 债变冷：连「有谷歌／Anthropic 背书」的单子也开始犹豫",
+      "time": "2026-11-10T09:22:00+08:00",
+      "summary": "路透 11 月 9 日（Investing 转载）写：近几日信贷情绪翻转——几周前还抢着做 AI／机房债的银行，现在告诉市场参与者：即便有 Anthropic、Google 一类大厂背书，也不想再加敞口（未点名具体行）。机制上叠三层。一是书本已满，在做压力测试与合同细读：服务义务、工期、大客户能不能缩租／解约。二是 BofA 称 10 年期 hyperscaler 债利差今年以来大约走阔 50 个基点，对比非 AI 的高质量工业大约 20 个基点。三是摩根大通 CRE 里「other income-producing」（含数据中心）大约 290 亿美元，占其商业地产贷款的 12%，三年前大约 8%、还排第四。弱信用端更明显：Nebius 搁置高收益债探索，改走花旗大约 35 亿美元高级担保贷款（公司新闻室可核）。对普通人／市场判断的用处是：你以为「有谷歌／Anthropic 名字」就能便宜借到钱，一级市场开始连背书单也挑食；资金可能从公募债／高收益债往双边贷款挤，neocloud 和独立机房运营商最先疼。已证实是路透引述、BofA／摩根大通数字和 Nebius 设施公告；猜测是「几天内全面抽贷」有多广、背书单是不是真被大面积拒。",
+      "relevance": "流动性与信贷：背书溢价是否开始失效、资金从公募债／HY 挤向双边贷款？证据边界：情绪与「对背书单犹豫」靠匿名源；利差与摩根大通敞口有分析师／财报口径。勿写成 ING BWIC 复述。",
+      "sources": [
+        {
+          "label": "Reuters／Investing · Banks grow wary of AI debt（2026-11-09）",
+          "url": "https://www.investing.com/news/stock-market-news/banks-investors-grow-wary-of-ai-debt-spooked-by-marketselloff-5011246"
+        },
+        {
+          "label": "Nebius · Citi 35 亿美元融资设施",
+          "url": "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi"
+        }
+      ]
+    },
+    {
+      "id": "1110中-7",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Anthropic 招股书里的那一刀：已签未开工租约约 4512 亿美元，自己九个月 capex 不到十亿",
+      "time": "2026-11-10T09:22:00+08:00",
+      "summary": "Anthropic S-1/A（11 月 2 日）把算力账本摊开：合计承诺支出大约 8954 亿美元，几乎全是 compute／基建；其中大约 4475 亿预计 2030 年底前发生，大约 698 亿落在 2026 年 9 月 30 日后 12 个月内。严肃二次解读锚定同一份招股书拆出最大块：已签但尚未 commencement 的经营／数据中心类租约大约 4512 亿美元——容量多在 2026–2028 才起租，期限可长达约 20 年。对照自家资本开支：九个月 capex 大约 9.25 亿美元，也就是「租约承诺」数量级远大于自建开支——模式是把机房／算力沉到出租方与云厂商的表上／项目债上，自己付长期租金与 take-or-pay。大约 2138 亿带解约权或对方融资／许可等前提；另有无固定金额算力安排约 1500–1750 亿未计入 8954 亿。对普通人／市场判断的用处是：收入侧还在猛长时，承诺侧已经把未来多年租金钉死；若出租方／neocloud 融不到钱（接上一条信贷变冷），软承诺会掉，硬承诺仍压在承租方头上。已证实是 S-1 汇总句（8954／4475／698）与解读对 4512／925 的拆分；猜测是 4512 里有多少因对方融不到资而永不开工，以及 IPO 能补多少 2030 前缺口。",
+      "relevance": "AI 成本收入与融资结构：承租方招股书自己承认的表外租约墙 vs 极小自有 capex，与「信贷变冷」咬合。证据边界：8954／4475／698 可直接对 S-1 摘要；4512 与九个月 capex 依赖招股书附注与严肃二次解读交叉核，非 DBRS 五家 hyperscaler 或有负债总账。",
+      "sources": [
+        {
+          "label": "SEC · Anthropic S-1/A（2026-11-02）",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+        },
+        {
+          "label": "Cestrian · 锚定同一 S-1/A 的拆表",
+          "url": "https://www.cestriancapitalresearch.com/what-anthropics-q3-tells-us-about-its-upcoming-ipo/"
+        },
+        {
+          "label": "Tech Thought Leaders · 8954 亿承诺与未开工租约拆读",
+          "url": "https://techthoughtleaders.io/anthropic-895-billion-compute-commitments-revenue-growth/"
+        }
+      ]
+    },
+    {
+      "id": "1110中-8",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-10",
+      "summary": "这段时间没有达「签署协议、霍尔木兹实质性重开或更严重关闭、战事扩到新的大战场」门槛的国际硬新事实。本窗已扫 BBC 约 12:09 台北更新的伊朗稿：仍是总统周一在白宫简报室的口头定性——军事上「实际上已经结束」、维持封锁现状、再打「高度不可能」、同时仍「locked and loaded」——不是停火协议，霍尔木兹也还没重开；早刊已写过同一套表态，不重复升格。另见但不升格：美国、俄罗斯、乌克兰定于阿布扎比举行 2 月以来首次三方会谈，RTÉ 引基辅官员称开始时间约 14:30 台北，截稿时还没开谈，没有协议，公开的领土立场仍僵。中国把出口管制、对美加征关税和对美船舶特别港务费再暂停约两个月，以及安塔利亚气候大会／1.5°C，晚刊已报，本窗未见新变化，不重复。",
+      "relevance": "把「只有口头、没有海峡复通或签字文本」写清楚，避免被读成停火或和谈已经谈成。",
+      "sources": [
+        {
+          "label": "BBC · Trump says more US attacks on Iran 'highly unlikely'（约 2026-11-10 12:09 Asia/Taipei 更新）",
+          "url": "https://www.bbc.com/news/articles/cq5yny4nl2d3o"
+        },
+        {
+          "label": "BBC · Ukraine peace talks resume in Abu Dhabi",
+          "url": "https://www.bbc.com/news/articles/cqpvgvrpjvv8o"
+        },
+        {
+          "label": "RTÉ · Russia, Ukraine to meet for US-backed talks（Updated 2026-11-10 01:35 GMT = 09:35 Asia/Taipei）",
+          "url": "https://www.rte.ie/news/ukraine/2026/1110/1598616-ukraine-russia-world/"
+        }
+      ]
+    },
+    {
+      "id": "1110中-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "钱德拉望远镜找到一颗「假超新星」反复爆发的原因：旁边藏着黑洞或中子星，大约每 113 天来扯一把物质",
+      "time": "2026-11-09",
+      "summary": "换赛道——天文学，不是早刊的 DNA 活性物质，也不是近刊的气候大会或钙钛矿。钱德拉 X 射线中心 11 月 9 日发布说明，同日论文发表在《The Astrophysical Journal》。这颗星叫 AT 2016blu，是漩涡星系 NGC 4559 里的一颗亮蓝变星；新闻稿写它离地球约 3000 万光年，质量估计至少是太阳的 33 倍。大约 15 年来它会定期变亮再变暗：2012 至 2026 年间，光学波段至少记录到 27 次爆发，大约每 113 天一次。亮得像超新星，但星没被毁掉，所以被称为「超新星冒名者」。团队等它在 2026 年初光学爆发时，用钱德拉做了目标观测（2026 年 3 月）。3 月的 X 射线亮度，比爆发开始前的 2001–2002 年钱德拉数据至少亮 100 倍。最好的解释：它有一颗以前看不见的伴星——恒星质量黑洞，或中子星——走椭圆形轨道，在最近距离把这颗大星抛出的物质拉过去；物质以接近光速绕伴星转，热到发出 X 射线，再把周围的密气体加热，让人在可见光里看到一次次闪光。新闻稿写：这是此类爆发星的首次 X 射线探测，也是其中第一次发现带黑洞或中子星伴星的例子。它亮到可以被列为超亮 X 射线源候选体。观测还用了 Katzman 自动成像望远镜、Las Cumbres 全球超新星项目，以及美国变星观测者协会（含 30 多名业余天文爱好者）的光学监测。第一作者是弗吉尼亚大学的 Mojgan Aghakhanloo。这不是已经确认一定是黑洞，官稿始终写黑洞或中子星；也不表示这颗星即将炸毁。",
+      "relevance": "平常看的是模型和机房；这条是天上有颗星会反复装成超新星，原因不是它自己一次次炸开，而是旁边一直藏着的致密天体按轨道来收物质。",
+      "sources": [
+        {
+          "label": "Chandra X-ray Center 新闻稿（2026-11-09）",
+          "url": "https://chandra.si.edu/press/26_releases/press_110926.html"
+        },
+        {
+          "label": "Chandra 图片专辑 AT 2016blu（2026-11-09）",
+          "url": "https://chandra.harvard.edu/photo/2026/at2016blu/"
+        },
+        {
+          "label": "Aghakhanloo et al., The Astrophysical Journal（2026-11-09）",
+          "url": "https://iopscience.iop.org/article/10.3847/1538-4357/ae9a86"
+        }
+      ]
+    }
+  ]
+}
