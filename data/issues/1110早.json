@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "id": "1110早",
+  "date": "2026-11-10",
+  "slot": "早",
+  "title": "11月10日 · 早",
+  "items": [
+    {
+      "id": "1110早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2：同一底层模型，Fable 公开、Mythos 须核验",
+      "time": "2026-11-10T02:57:00+08:00",
+      "summary": "2026年11月9日（官网正文日期；@claudeai 主帖 18:57 UTC，台北时间 11月10日 02:57），Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2，定位「最棘手的技术工作」。二者是同一底层模型：Fable 带有更强的网络安全与生物学防护，向所有用户开放；Mythos 需通过生命科学或网络安全核验计划申请。官网列举的预发布成果包括：协助完成否则难以推进的软件迁移、从零设计三款能工作的电子设备、解决两个黑洞物理未决问题、带约 1000 个 agent 在 30 小时内把费马大定理形式化（对比同一套 1000-agent 设置下 Opus 5.5 在 18 小时只完成约 26%），以及机器人评测上的明显进步。价格降到每百万 token 输入 8 美元／输出 40 美元；可选 fast mode（最高约 2.5 倍出字速度）为 16／80 美元。官方称生成速度比 Fable／Mythos 5.1 最多快约 30%。厂商对照表（官方自测）里，Fable 5.2 在 FrontierCode 2.0 Xhigh 为 49.1%，高于 Opus 5.5 的 45.5%、GPT-6 Astra 的 42.8%、Gemini 4 Carbon 的 41.1%；RoboDojo Sim 从 5.1 的 27.6% 升到 64.9%。官方建议日常仍先用 Opus 5.5，再按任务难度上调到 Fable／Mythos 或下调到 Sonnet／Haiku。安全方面称高风险错位仍然偏低，并写有迄今最强的蒸馏防护；Fable 会拦高风险网络与多数生物学任务，拦截后改由 Opus 4.8（网络）或 Opus 5（生物学）作答。本周付费档按订阅时长赠 1–3 次 Fable reset，Pro／Team 标准席位本周也可用 Fable。API 标识 claude-fable-5-2，并上架 AWS、Google Cloud、Azure。本窗亦扫过七厂官号 OpenAI／AnthropicAI／GoogleDeepMind／xai／MetaAI／deepseek_ai／Alibaba_Qwen 与各厂官网／changelog（MetaAI 简介已迁 @AIatMeta，已补扫，Muse Ember 发在迁号后的该号与 research.meta.ai；GoogleDeepMind 官号窗口内 0 帖，TPU 新文以 Google 博文为准、Demis Hassabis 有转发）。xAI 时间线接口授权失败，不能写成已扫确无，已用检索回退并另抓 x.ai/news，官网窗口内无新文。DeepSeek、Qwen 官号窗口内无新帖，未见其他新 frontier 发版；Elon 时间线无达标的 AI 产品发版。",
+      "relevance": "七厂里本窗唯一的新高端模型官宣，而且出在晚刊截稿之后。同一套模型两道门：Fable 谁都能用，Mythos 要先过生命科学或网络安全核验。",
+      "sources": [
+        {
+          "label": "Anthropic · Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        },
+        {
+          "label": "Anthropic News",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "X · @claudeai 发版主帖",
+          "url": "https://x.com/claudeai/status/2119867114450268322"
+        },
+        {
+          "label": "X · @AnthropicAI",
+          "url": "https://x.com/AnthropicAI/status/2119867707546071125"
+        },
+        {
+          "label": "Claude Docs · Fable 5.2 overview",
+          "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+        },
+        {
+          "label": "CNBC · Anthropic Claude Fable 5.2 / Mythos 5.2",
+          "url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html"
+        }
+      ]
+    },
+    {
+      "id": "1110早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Meta 发布最小、最便宜的 Muse Ember：对标 Haiku 5.5／GPT-6 Luna，定位 agent 执行层",
+      "time": "2026-11-10T02:04:00+08:00",
+      "summary": "2026年11月9日（研究博客日期；现用官号 @AIatMeta 主帖 18:04 UTC，台北时间 11月10日 02:04），Meta Superintelligence Labs 发布迄今最小、最便宜的 Muse Ember（API：muse-ember-1.0）。任务指定的旧号 @MetaAI 本窗 0 帖，简介写已迁到 @AIatMeta；发版就在迁号后的这个官号和 research.meta.ai，不在 ai.meta.com/blog 那份停在今年六七月的旧列表里。定位是 agent 整天重复的执行层：工具调用、编程子任务、路由、抽取、长文档解析。官网称在 Artificial Analysis 智力指数上，它能以约三分之一成本追上 Haiku 5.5 的最好分，并在各档上优于 GPT-6 Luna；标价每百万 token 输入 0.10 美元、缓存输入 0.004 美元、输出 0.50 美元（超过 200K 输入后为 0.30／0.012／1.50）。上下文 1M、输出最长 512K，原生多模态（文本／图像／音频／视频）。官方表（厂商／AA）里 AutomationBench-AA 为 37.8%，高于 Haiku 5.5 的 13.9% 与 Luna 的 20.2%；FrontierCode 2.0-AA 则是 Haiku 更高（34.9% vs Ember 27.2%）。官网写 Ember 是首个用 Muse Wonder Full 训练出的专用模型，并与 Wonder（最难）、Spark（编程与 agent 工作流）组成组合；现已在 Muse Code、Meta Model API 以及 Google Cloud、Oracle Cloud 上提供。@AIatMeta 随后还发帖称 Ember 与 Wonder、Spark 1.3 一并上架 Google Cloud。",
+      "relevance": "不是又一个旗舰，是 Meta 把最小、最便宜的执行层模型单独拿出来卖——价格对上 Haiku 5.5，官方说跑同一套智力指数大约只花三分之一的钱。",
+      "sources": [
+        {
+          "label": "Meta Research · Introducing Muse Ember（2026-11-09）",
+          "url": "https://research.meta.ai/blog/muse-ember"
+        },
+        {
+          "label": "X · @AIatMeta 发版主帖",
+          "url": "https://x.com/AIatMeta/status/2119853591703998787"
+        },
+        {
+          "label": "X · @AIatMeta · Ember／Wonder／Spark 1.3 上架 Google Cloud",
+          "url": "https://x.com/AIatMeta/status/2119912647034642817"
+        },
+        {
+          "label": "X · Alexandr Wang",
+          "url": "https://x.com/alexandr_wang/status/2119857909098283406"
+        },
+        {
+          "label": "TechCrunch · Meta releases Muse Ember",
+          "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
+        }
+      ]
+    },
+    {
+      "id": "1110早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Google 推出 TPU 8tx（机密推理）与 TPU 8i Max（超大上下文）：第8代同年四套系统出齐",
+      "time": "2026-11-09T21:38:00+08:00",
+      "summary": "2026年11月9日，Google AI 与基础设施负责人 Amin Vahdat 发文（X 原帖 13:38 UTC，台北时间 21:38），随后被 Sundar Pichai、Demis Hassabis 转发。GoogleDeepMind 官号本窗 0 帖（接口成功返回），新硬件不在该号时间线，以 Google 博文为准。第 8 代 TPU 组合从训练用 8t、推理用 8i，再扩充出 TPU 8tx 与 TPU 8i Max，官方称这是首次在同一代、同一年内推出四套 TPU 系统。8tx 把安全做进硬件层，面向受监管企业与政府的机密推理和小规模训练，数据与模型权重在使用中也保持隔离，并称相对 8t 延迟可低至约一半。8i Max 把两颗 8i 打进同一封装，计算、SRAM 与 HBM 带宽各翻倍，强调百万 token 级上下文与机架密度。软件侧同期强调 TorchTPU 原生跑 PyTorch／Hugging Face、开源 TPU Sync（称 KV 传输延迟与 TTFT 可降 90% 以上）、Agent Compute Engine 暂停空闲 agent 会话，以及 GKE 上的 Cloud Pathways 与动态切片。文末提到当天上午 9 点（太平洋时间）有直播。这是芯片／系统发布，不是 Gemini 新权重。",
+      "relevance": "同年四套第 8 代系统出齐，一头做机密推理，一头做超大上下文——和谁能在监管环境里跑模型、agent 能不能吃下百万 token，是直接相关的硬件消息。",
+      "sources": [
+        {
+          "label": "Google Blog · TPU 8tx and TPU 8i Max（Amin Vahdat，2026-11-09）",
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+        },
+        {
+          "label": "X · Amin Vahdat 原帖",
+          "url": "https://x.com/AminVahdat/status/2119786758082900473"
+        },
+        {
+          "label": "X · Demis Hassabis 转发 Vahdat",
+          "url": "https://x.com/demishassabis/status/2119830093292068877"
+        },
+        {
+          "label": "X · Demis Hassabis 转发 Sundar Pichai",
+          "url": "https://x.com/demishassabis/status/2119890726675005913"
+        }
+      ]
+    },
+    {
+      "id": "1110早-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 公布 Control Room：研究侧约 35 秒内停掉模型作业，自身故障则 fail-closed；ChatGPT Enterprise 亦上架 AWS Marketplace",
+      "time": "2026-11-10T06:01:00+08:00",
+      "summary": "OpenAI 于 11 月 9 日在官网与主号发文介绍 Control Room（X 主帖 22:01 UTC，台北时间 11 月 10 日 06:01）：一套用来跟踪并快速停止研究基础设施上模型工作负载的中枢系统，覆盖训练与评测中的 agentic sampling、数据处理等。每次研究推理请求都要向 Control Room 要许可；任务被标记停止后，推理引擎拒绝继续出字，而不是指望研究者自己的作业代码去停。官网写明：从收到停止指令到无法继续推进，最长 35 秒（来自授权缓存），目标是降到零。系统按 fail-closed 设计——Control Room 本身宕机或被关掉时，推理请求一律拒绝；该模式已覆盖所有前沿模型研究负载，其余研究负载将在接下来几天滚动完成。外部模型服务栈本就更集中，已有快速下线能力。文中提到近期 DNS 相关事件就是被监控模型抓住的。这不是面向消费者的新模型，而是训练／安全运营基础设施。同日 OpenAI 还宣布 ChatGPT Enterprise 可在 AWS Marketplace 购买与管理，企业能走现有 AWS 采购／账单，并把符合条件的支出计入 AWS 承诺消费。官网称这与 Amazon Bedrock 上的 OpenAI 模型是互补关系：开发者可在 Bedrock 上构建，业务团队用 ChatGPT Enterprise。符合条件的客户还可通过 Marketplace 获得 ChatGPT for Healthcare 与 ChatGPT for Financial Services。GPT-6.2 续扫：相对晚刊已报的 TokenGremlin 路由帖，本窗又看到用户发「用了 30 小时」的体感，以及账号声称 Astra 与 Sol「本周四发布」——这些都不是官方。OpenAI 官网 index、API changelog（最新仍是 11 月 5 日 gpt-6-cyber）、ChatGPT release notes（最新仍是 11 月 4 日 Images 2.6）均无 GPT-6.2 条目，目录里也仍无 6.2 ID。继续记用户路由／灰度观察和发版日传闻，不是正式发版。",
+      "relevance": "Control Room 是 OpenAI 把自己研究集群的急停收成中枢，停不下来就直接拒绝出字；Enterprise 上架 Marketplace 是采购渠道。GPT-6.2 这边官网和 API 目录都还没动。",
+      "sources": [
+        {
+          "label": "OpenAI · Control Room",
+          "url": "https://openai.com/index/control-room/"
+        },
+        {
+          "label": "X · @OpenAI · Control Room",
+          "url": "https://x.com/OpenAI/status/2119913172039868579"
+        },
+        {
+          "label": "OpenAI · ChatGPT Enterprise now available in AWS Marketplace",
+          "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/"
+        },
+        {
+          "label": "X · @kdnbmb · 「用了 30 小时」体感",
+          "url": "https://x.com/kdnbmb/status/2119804941925499320"
+        },
+        {
+          "label": "X · @imjustnewatai · 「本周四发布」传闻",
+          "url": "https://x.com/imjustnewatai/status/2119937770416468144"
+        },
+        {
+          "label": "X · @hellojyh0506 · 目录仍无 GPT-6.2",
+          "url": "https://x.com/hellojyh0506/status/2119946629788979275"
+        },
+        {
+          "label": "OpenAI API changelog（最新仍 Nov 5 gpt-6-cyber）",
+          "url": "https://platform.openai.com/docs/changelog"
+        },
+        {
+          "label": "ChatGPT release notes（最新仍 Nov 4 Images 2.6）",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "OpenAI News index",
+          "url": "https://openai.com/index/"
+        }
+      ]
+    },
+    {
+      "id": "1110早-5",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【后续】特朗普称已与黄仁勋通话、相信他「当时不知道对方是间谍」，并说 FBI「在查另一件事」、他「会没事」；报道称司法部在查 Megaspeed",
+      "time": "2026-11-10T06:25:00+08:00",
+      "summary": "【后续】这是晚刊黄仁勋认错信／董事会立案之后的新进展，不是 11 月 8 日那两份文件的重发。美东 11 月 9 日傍晚（NBC 文发布 5:25 PM EST，台北时间 11 月 10 日 06:25；后又更新至 7:02 PM EST），NBC 等报道特朗普在临时简报中称当天早些时候给黄仁勋打过电话，看他感觉好不好。特朗普说：「He had absolutely no idea that the person in question was a spy」「I really believe him」；「We'll look into it. I know the FBI is looking into it, in terms of something else, and I think that he'll be in good shape。」并再次表示希望他继续领导英伟达。NBC 另引熟悉情况的消息源称，司法部正在对新加坡公司 Megaspeed 做刑事调查（焦点是是否把受限英伟达 AI 芯片运进中国），由国安司会同 FBI 与商务部 BIS 进行，并审视 Megaspeed 高管 Alice Huang（与黄仁勋无亲属关系）是否被招募协助。司法部拒评；英伟达发言人在特朗普讲话后未立即回复。英伟达新闻室仍只有 11 月 8 日董事会声明，没有新文件——本人和公司这一侧，没有新的书面确认。中国外交部发言人郭嘉昆称所谓间谍指控没有根据。NBC 写英伟达周一收跌 4.2%，为道指与纳指当日表现最差之一；阿纳多卢收评写约跌 4.3%。国会侧，众议院少数党领袖杰弗里斯要求全面简报；参议员 Warren 与 Banks 发联合声明，要求国会对 AI 相关公司加强监督。CNBC 分析稿指出董事会首席独立董事／治理负责人 Stephen Neal 可能主导调查。三层要分开：英伟达已确认的仍是董事会独立调查与本人认错（晚刊已报，官网无新声明）；特朗普的话是总统公开表态，不等于英伟达或司法部确认「FBI 在查黄仁勋本人」；Megaspeed 刑事调查来自 NBC 消息源，司法部未评论。",
+      "relevance": "晚刊之后出现的是总统公开站台、周一股价反应和国会要简报，不是公司又发了一份声明。公司侧没有新确认；司法部在查 Megaspeed 这一层，目前是报道引用的消息源，当事方拒评。",
+      "sources": [
+        {
+          "label": "NBC · Trump, FBI probe, Nvidia Jensen Huang（2026-11-09，5:25 PM EST／更新 7:02 PM EST）",
+          "url": "https://www.nbcnews.com/business/corporations/trump-fbi-probe-nvidia-jensen-huang-spy-rcna608439"
+        },
+        {
+          "label": "CNBC · Nvidia Jensen Huang investigation（2026-11-09）",
+          "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-investigation.html"
+        },
+        {
+          "label": "NVIDIA Newsroom · 董事会声明仍为 2026-11-08 原文",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+        },
+        {
+          "label": "阿纳多卢 · 美股收评（英伟达约跌 4.3%）",
+          "url": "https://www.aa.com.tr/en/americas/us-stocks-surge-at-close-as-tech-rebounds-oil-prices-tumble/4118084"
+        }
+      ]
+    },
+    {
+      "id": "1110早-6",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "CISA 把 GPUStack 认证绕过列入 KEV：未授权就能当管理员，已被用来在推理后端里种反向 shell",
+      "time": "2026-11-09",
+      "summary": "相对晚刊（当时 CISA advisories／KEV 最新仍是 11 月 6 日的 SonicWall，并写明未见 11 月 7／8／9 日新 Alert），CISA 在 11 月 9 日发布 Alert，一次把四个漏洞列入已知被利用漏洞目录（KEV），理由是有在野利用证据。其中与 AI 基建直接相关的是 CVE-2026-102895：开源 GPU／模型推理集群软件 GPUStack 存在不当认证。厂商 GitHub 安全咨询（影响低于 2.2.0 的版本，已在 2.2.0 修复）写明：默认 force_auth_localhost=false 时，来源被当成本机回环的请求会被提升成内置管理员，不必提供凭证——常见情况包括请求经反向代理转到 127.0.0.1，或请求头里带上伪造的本机地址（X-GPUStack-Real-IP）。拿到的是完整未授权管理权：改用户／模型／worker／配置，签发之后从任意 IP 都有效的持久管理员 API key，读取 worker 与云厂商密钥；再配合管理员接口提交自定义推理后端，可以在 worker 上执行代码。咨询明确写，这一漏洞已在野外针对 v2.1.1 部署被利用，攻击者创建的自定义后端在跑反向 shell；发现利用的是 Javier Sixto（ulex.fr）。CVSS 3.1 为 AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H。缓解：升级到 2.2.0 或更高；若暂时不能升级，设 force_auth_localhost=true，在边缘剥掉客户端提交的 X-GPUStack-Real-IP，并把 API 留在不可信网络之外。联邦民事机构按 BOD 26-04 的补丁期限是 2026-11-12，并要求做取证分诊。同日另外三条列入 KEV 的不是 AI 主条：CVE-2026-123158 OpenSSH（主要影响未开 PAM 的 musl／Alpine）、CVE-2026-116779 SignalWire FreeSwitch 代码注入、CVE-2026-123218 IBM Aspera Faspex 越权。Wiz 同日与 Sentra、Mandiant 发布的 Qubole 跨账户访问滥用报告是云供应链实害，不是 AI 产品漏洞，不升格。",
+      "relevance": "自己或公司在跑、并且把 GPUStack 暴露在网上、版本又低于 2.2.0 的，该升级了；这不是普通人去改邮箱密码的那种事。",
+      "sources": [
+        {
+          "label": "CISA · Adds Four Known Exploited Vulnerabilities（2026-11-09）",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CISA · KEV catalog（CVE-2026-102895 Date Added 2026-11-09）",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "GPUStack GitHub Security Advisory GHSA-gj9m-f8ph-pmhr",
+          "url": "https://github.com/gpustack/gpustack/security/advisories/GHSA-gj9m-f8ph-pmhr"
+        }
+      ]
+    },
+    {
+      "id": "1110早-7",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周一收涨：标普7549.94（+2.35%）、纳指25253.14（+2.74%）、道指52389.75（+2.15%）；欧股周一收高；亚股今早日经开59372.28后续走高、韩综开5247.22（+4.55%）；台港A股尚未开；油价周一结算大跌",
+      "time": "2026-11-10T08:27:00+08:00",
+      "summary": "相对晚刊（周一约 19:17–19:21 台北：亚洲已收——日经 58775.50／+2.33%，韩综 5018.85／−0.81%，台股 41661.70／+4.94%，恒指 24448.95／−0.13%，上证 3660.79／+0.32%，深成 11145.49／−0.27%；欧股盘中未收；美现金仍是周五 7376.86／24579.42／51285.73；美期约 19:11 为 ES 7440.5、NQ 27144、YM 51854；WTI 89.38、Brent 96.34、黄金 4107.8；10Y 仍周五 4.859%）：美股现金与欧股现货都已经有周一收盘，这是本窗相对晚刊最硬的新数。美股周一收：标普 7549.94（+173.08／+2.35%），纳斯达克综合 25253.14（+673.71／+2.74%），道指 52389.75（+1104.02／+2.15%）。Yahoo 日线收盘与阿纳多卢通讯社收评交叉到小数位。阿纳多卢写：芯片股带技术反弹，AMD 涨 13.2%、博通涨 8.8%，特斯拉涨 5.5%，亚马逊约 +3%，微软近 +3%，Alphabet +1%；英伟达逆势跌约 4.3%（董事会就「外国情报针对」报道启动独立调查，晚刊已报）。VIX 报 19.92（−22.31%）。欧洲周一已收，不宜再写成盘中：STOXX 50 收 6290.45（较周五 6170.49 +119.96／+1.94%），FTSE 100 收 10782.87（+108.97／+1.02%），DAX 收 26267.19（+446.83／+1.73%），CAC 40 收 8233.30（+94.30／+1.16%）；Yahoo 收盘价与阿纳多卢对 FTSE／DAX／CAC 的表述一致。油价周一结算明显低于晚刊盘中：阿纳多卢写布伦特收 92.57（−5.85%），WTI 收 86.85（−4.38%）；本窗 Yahoo 电子盘约 08:12 台北为 WTI 86.40、布伦特 92.35，略低于该结算。黄金：Morningstar／GoldSeek 写 COMEX 周一结算 4105.00（他们计算为 +40.50／+1.00%）；Yahoo GC=F 电子盘约 08:12 为 4146.8，相对本窗沿用的周五结算 4074.9 约 +71.9。10 年期美债收益率 Yahoo ^TNX 周一收 4.864%（时间戳 03:59 台北 11 月 10 日，即周一美东下午），较周五 4.859% 升约 0.5 个基点；阿纳多卢另报 4.878%（+1.9 个基点），两套印不要混用，正文沿用本窗一直用的 Yahoo ^TNX。亚洲方面，东京与首尔已开、截稿未收：日经开盘 59372.28（+596.78／+1.02%），ザイFX 与 Yahoo 开盘价一致；财经新闻 09:05 JST 写上涨 969 日元、归因美股（尤其纳指 +2.74%、费城半导体 +6.85%）和油价回落，Yahoo 同时印 59757.74（高 59798.69、低 59268.43）。韩联社 09:01 KST 电：韩综开盘 5247.22（+228.37／+4.55%）；Yahoo 约 08:02 台北见到 5253.8。台股 9:00 开、港股与 A 股 9:30 开，本窗截稿时均尚未开，数字仍指周一收盘：台股 41661.70、恒指 24448.95、上证 3660.79、深成 11145.49。美股期货电子盘约 08:12 台北：ES 7582.5、NQ 28079.25、YM 52533（均高于周五结算 7402／27085.25／51385，也高于晚刊周一傍晚的 7440.5／27144／51854），这是现金收盘之后的盘，不要写成又一次开盘。不要用 Yahoo 页面上相对更早 previousClose 的涨跌幅。本窗亦扫过美日韩台／A·港／欧／油／金／美债／ES·NQ·YM固定源。",
+      "relevance": "晚刊截稿时美股现金还没开、欧股还没收；现在两者都有正式收盘，而且是上周大跌之后的技术股反弹叠加油价回落。亚洲只报已开的日经／韩综开盘与早盘，台港A股写明尚未开、指向周一已报收盘。",
+      "sources": [
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI（周一收盘）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "阿纳多卢 · US stocks surge at close（2026-11-10）",
+          "url": "https://www.aa.com.tr/en/americas/us-stocks-surge-at-close-as-tech-rebounds-oil-prices-tumble/4118084"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI／^FCHI（周一收盘）",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        },
+        {
+          "label": "ザイFX · 日经开盘 59372.28（+596.78）",
+          "url": "https://zai.diamond.jp/articles/-/498748"
+        },
+        {
+          "label": "财经新闻 · 09:05 JST 日经涨 969 日元",
+          "url": "https://www.zaikei.co.jp/article/20261110/876780.html"
+        },
+        {
+          "label": "韩联社 · 韩综开盘 5247.22（+4.55%）",
+          "url": "https://www.yna.co.kr/view/AKR20261110035300008"
+        },
+        {
+          "label": "Yahoo ^N225／^KS11／ES=F／NQ=F／YM=F／CL=F／BZ=F／GC=F／^TNX",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "label": "Morningstar Data Talk · COMEX gold settles $4105.00",
+          "url": "https://www.morningstar.com/news/dow-jones/202611098746/comex-gold-settles-100-higher-at-410500-data-talk"
+        }
+      ]
+    },
+    {
+      "id": "1110早-8",
+      "section": "国际重大影响",
+      "title": "特朗普会见卡塔尔首相后称对伊朗军事行动「实际上已经结束」，同时要维持封锁——不是停火协议，霍尔木兹也还没重开",
+      "time": "2026-11-09",
+      "summary": "相对晚刊（当时特朗普与卡塔尔首相的会面还停留在「将会见／安排」，伊朗轴因未见签署协议、未见霍尔木兹实质性重开而不升格）：美国总统特朗普星期一在白宫闭门会见卡塔尔首相谢赫穆罕默德·本·阿卜杜勒拉赫曼。会后他在白宫简报室对记者说：「Iran militarily is effectively over」「We're just keeping it the status quo。」另说军事行动「doesn't seem to be a very necessary thing」，但若情况有变，美方「locked and loaded, ready to go」。Hindustan Times 引述这段简报室原话。The National 通稿写：他在 Truth Social 发帖称卡塔尔、沙特、阿联酋、巴林、科威特等倾向维持美国对伊朗的海上封锁；就「重启军事行动」他写道「At this point, however, that seems to be quite unlikely」；稍后在简报室又称冲突「有不错的机会」结束，同时说「I don't guarantee anything」。The National 并写：德黑兰方面实际上仍卡住霍尔木兹海峡交通，海峡内对船只的袭击仍在干扰原油流动。未见签署停火或复通协议，也未见封锁解除。「effectively over」是总统口头定性，不是已经签字的停火文本。伊朗最高国家安全委员会秘书穆赫森·礼萨伊随后在社交平台要求美方接受伊方七项条件，并指责美方散布假新闻——这是伊方口径，不是协议文本。市场侧，阿纳多卢等把周一油价大跌（布伦特结算 92.57／−5.85%，WTI 86.85／−4.38%）和美欧股市反弹，部分归因于油价回落带来的情绪缓解；这是价格反应，不能写成「战争已经结束所以海峡通了」。",
+      "relevance": "晚刊还只是「将会见」；现在会见已经结束，总统公开把军事行动说成实际上结束，同时又明确要维持海上封锁。对油价和开盘情绪有即时影响，但霍尔木兹并没有因此重开，也还没有签字的停火文本。",
+      "sources": [
+        {
+          "label": "The National · Trump meets Qatari PM, renewed action ‘quite unlikely’（2026-11-09）",
+          "url": "https://www.thenationalnews.com/news/us/2026/11/09/trump-meets-qatari-pm-and-calls-renewed-military-action-on-iran-quite-unlikely/"
+        },
+        {
+          "label": "Hindustan Times · ‘militarily effectively over’／status quo（引白宫简报室原话）",
+          "url": "https://www.hindustantimes.com/world-news/us-news/trump-says-us-war-in-iran-is-militarily-effectively-over-suggests-current-status-quo-to-continue-101794265507070.html"
+        },
+        {
+          "label": "阿纳多卢 · 美股收高、油价回落（结算数字）",
+          "url": "https://www.aa.com.tr/en/americas/us-stocks-surge-at-close-as-tech-rebounds-oil-prices-tumble/4118084"
+        }
+      ]
+    },
+    {
+      "id": "1110早-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "魏茨曼研究所让 DNA 给「活性物质」编排动作：一份遗传密码控制何时动，另一份 DNA 长链把涡流同步起来",
+      "time": "2026-11-09",
+      "summary": "换赛道——材料与生物物理，不是晚刊的气候大会，也不是近刊的癫痫基因治疗或钙钛矿。魏茨曼科学研究所 Alexandra Tayar 实验室 11 月 9 日发布说明：两组人工「活性物质」研究同一天露面。第一项发表在《Nature Materials》：他们把 DNA 和体外基因表达系统嵌进微管网络，让材料按写入的基因自己生产分子马达。马达浓度跨过弹性阈值后，原先静止的网络开始伸出突起，最后裂成可持续数小时打转的微管束；改变基因剂量就能调节何时启动、走得多快。他们还编过程序，让材料动一下就停，或按间隔一阵一阵地动。第二项发表在《Nature Physics》：把长链 DNA 当作分子弹簧加进活性物质后，本来杂乱的小涡流在大约一小时后变成毫米级、每隔几分钟就在顺时针和逆时针之间切换的同步振荡——DNA 网被朝一个方向拉大约 10 分钟，绷到头再回缩，把周围的物质一起带走。研究者说，这还不是能上岗的软体机器人或靶向药物，而是把基因表达速率、反馈回路和聚合物缠结，翻译成可以设计和预测的物理变量。",
+      "relevance": "实验室里的可编程材料：DNA 在这里既当软件（编码马达），又当弹簧（同步大尺度运动），离应用还早。",
+      "sources": [
+        {
+          "label": "Weizmann USA · DNA Teaches Matter Some New Moves（2026-11-09）",
+          "url": "https://www.weizmann-usa.org/news-media/news-releases/dna-teaches-matter-some-new-moves/"
+        }
+      ]
+    }
+  ]
+}
