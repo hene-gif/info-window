@@ -41,6 +41,7 @@
         </button>
         <nav class="tools" aria-label="研究、专栏、时间线、检索和收藏">
           <button type="button" class="tool tool-label" id="install" hidden>安装</button>
+          <button type="button" class="tool tool-label" id="float" data-float hidden>悬浮</button>
           <a class="tool tool-label" href="research/">研究</a>
           <a class="tool tool-label" href="#/columns" data-tool="columns">专栏</a>
           <a class="tool tool-label" href="#/timeline" data-tool="timeline">时间线</a>
@@ -86,7 +87,7 @@
   <div class="sheet" id="install-sheet" hidden>
     <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="install-title">
       <h2 id="install-title">单独开一扇窗口</h2>
-      <p>还是这个讯息窗。用 Chrome 或 Edge 装上之后，它会在自己的窗口里打开，拖边缘就能改大小。浏览器会先问你。不会开机自己启动，不会一直浮在别的窗口上面，也不会要通知权限。</p>
+      <p>还是这个讯息窗。用 Chrome 或 Edge 装上之后，它会在自己的窗口里打开，拖边缘就能改大小。浏览器会先问你。不会开机自己启动，也不会要通知权限。浏览器这扇窗口本身不能一直浮在别的程序上面。</p>
       <ol>
         <li>用 Chrome 或 Edge 打开现在这个页面。</li>
         <li>Chrome 优先点地址栏右端的「安装应用」。英文界面写的是 Install。</li>
@@ -98,6 +99,23 @@
       <div class="sheet-acts">
         <button type="button" class="sheet-go" id="install-go" hidden>安装讯息窗</button>
         <button type="button" class="sheet-close" id="install-close">知道了</button>
+      </div>
+    </div>
+  </div>
+  <div class="sheet" id="float-sheet" hidden>
+    <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="float-title">
+      <h2 id="float-title">贴边，并浮在最上面</h2>
+      <p>像微信那样靠到屏幕边上就缩进去，要一个很小的 Windows 程序来搬这扇窗口。网页自己做不到。它不读新闻，也不开机自己启动。</p>
+      <ol>
+        <li>先把讯息窗装成自己的窗口，并打开它。浏览器标签页不会被拿去悬浮。</li>
+        <li>下载悬浮程序，运行。时钟旁边会出现一个小图标。</li>
+        <li>Windows 若写出「未知发布者」，选「仍要运行」。没有另外买签名证书，所以会这样问一次。</li>
+        <li>这扇窗口此后浮在别的程序上面。拖到屏幕左缘或右缘，松手后它缩进去，只留一条边。鼠标靠过去会出来，移开又缩回去。</li>
+        <li>不想要了，在那个小图标上点右键，选「退出」。窗口会回到原来的位置，也不再一直浮着。</li>
+      </ol>
+      <div class="sheet-acts">
+        <a class="sheet-go" id="float-get" href="float/info-window-float.exe" download>下载悬浮程序</a>
+        <button type="button" class="sheet-close" id="float-close">知道了</button>
       </div>
     </div>
   </div>

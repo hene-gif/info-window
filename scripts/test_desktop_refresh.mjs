@@ -290,6 +290,11 @@ async function main() {
     assert(await evaluate("document.getElementById('install-sheet').hidden === false"), '安装说明没有打开');
     await shot('install_steps');
     await evaluate("document.getElementById('install-close').click()");
+    await evaluate("document.querySelector('[data-float]').click()");
+    assert(await evaluate("document.getElementById('float-sheet').hidden === false"), '悬浮说明没有打开');
+    assert(await evaluate("document.getElementById('float-get').getAttribute('href')") === 'float/info-window-float.exe', '下载地址不对');
+    await shot('float_edge_help');
+    await evaluate("document.getElementById('float-close').click()");
     const asked = await evaluate(`(() => {
       window.__askedNotification = false;
       if (typeof Notification !== 'undefined') {

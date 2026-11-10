@@ -48,6 +48,8 @@ self.addEventListener('fetch', (event) => {
   if (url.origin !== self.location.origin) return;
   if (!request.url.startsWith(self.registration.scope)) return;
   if (url.pathname.endsWith('/sw.js')) return;
+  // 悬浮程序是给人下载的，不要拦进页面缓存。
+  if (url.pathname.endsWith('.exe')) return;
 
   event.respondWith(networkFirst(event));
 });
