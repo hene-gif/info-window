@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "id": "1110晚",
+  "date": "2026-11-10",
+  "slot": "晚",
+  "title": "11月10日 · 晚",
+  "items": [
+    {
+      "id": "1110晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "马斯克称 Grok 4.8 预训练已完成、正做强化学习，计划本周晚些时候向 Bot 用户 soft rollout；训练与推理栈已改写为 C/C++",
+      "time": "2026-11-10T17:35:59+08:00",
+      "summary": "2026 年 11 月 10 日 17:35:59 Asia/Taipei（09:35:59 UTC），马斯克回复用户询问 Grok 4.8 进度的长帖（完整正文在长文里，不要只看被截断的短句）写：已经丢掉 JAX／SGLang，把整套强化学习和推理栈用 C／C++ 从零重写，因此多花了一些时间；预训练已经完成，监督微调数据做了大量清理；现在 4.8 在做强化学习，评测分数开始往上走；计划本周晚些时候先向 Bot 用户做 soft rollout，再看效果。他自评 4.8 会和 4.7「毫无相似之处」，「还谈不上 incredible」，但觉得这次基础打对了。随后他又补了几条：以 C 为主、掺一点 C++，甚至有汇编；并称 Starlink 用来管理大量数据在太空与地面之间流动的软件，也适合拿来训练超级智能。这是他本人的公开说明，不是 x.ai/news 或现用官号 @SpaceXSI 的发版文，也不是已经完成的正式上市——原文是「later this week」「see how it goes」。没有给出评测分数、确切日期，也没有说会覆盖 Grok 应用或 Tesla。",
+      "relevance": "写的是训练阶段和放量计划，不要读成 Grok 4.8 已经向全部用户发布，也不要把旧的零件异物检测数字并进这条。",
+      "sources": [
+        {
+          "label": "马斯克 · Grok 4.8 进度长帖（2026-11-10 17:35:59 Asia/Taipei）",
+          "url": "https://x.com/elonmusk/status/2120088070443655190"
+        },
+        {
+          "label": "马斯克 · Starlink 软件栈亦适于训练的补充（18:34:24 Asia/Taipei）",
+          "url": "https://x.com/elonmusk/status/2120102767624880364"
+        },
+        {
+          "label": "x.ai/news（本窗无对应 4.8 发版文）",
+          "url": "https://x.ai/news"
+        }
+      ]
+    },
+    {
+      "id": "1110晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】美团开源 LongCat-2.5：1.6 万亿参数、每 token 约激活 480 亿，MIT 协议可商用",
+      "time": "2026-11-10T07:04:00+08:00",
+      "summary": "【补报】这是今天早上就已经公开、早刊和中刊都未收入的官方开源，不要写成今晚才发布。美团技术团队文「美团 LongCat-2.5 正式开源：从看见，到抵达」页面署 2026-11-10；VentureBeat 英文稿标注 2026 年 11 月 9 日 15:04 PT（已是太平洋标准时，合 23:04 UTC，即台北时间 11 月 10 日 07:04），早于早刊约 08:30、中刊约 12:40 的截稿。官方博客写：该模型按 MIT 协议开源，可用于商用推理部署与二次训练，无需额外授权；面向长程智能体任务的原生多模态模型，总参数 1.6 万亿，每个 token 约激活 480 亿参数，支持一百万上下文，并针对显存与带宽受限的国产算力芯片做了架构与部署协同优化。文内还写了把专家权重与激活量化到 4 bit 的 W4A4 推理方案，以及在单卡显存不足 80GB 的国产加速器上做长序列训练／微调，称该 FSDP 配置在长序列 SFT 任务中的单卡吞吐量较 DDP 基线提升 86%。权重页在 Hugging Face。本窗亦扫过七厂官号 OpenAI／AnthropicAI／claudeai／GoogleDeepMind／MetaAI／AIatMeta／deepseek_ai／Alibaba_Qwen 与 @elonmusk、@sama、@demishassabis、@karpathy、@dotey；@xai 时间线未授权，已用 from:xai 搜索回退、x.ai/news 与现用官号 @SpaceXSI，官号与官网无 4.8 发版文。官网已扫 OpenAI index／blog（新增 11 月 10 日教育政策文，非模型发版）／API changelog（最新仍 11 月 5 日 gpt-6-cyber）／ChatGPT release notes（最新仍 11 月 4 日 Images 2.6）、Anthropic news／alignment／engineering、DeepMind blog、x.ai/news、Meta 旧博客与 research.meta.ai、DeepSeek 官网新闻与 API 更新日志、Qwen Code 博客与 Qwen3 GitHub releases。除上一条马斯克说明与本条补报外，七厂未见截稿后新的 frontier 发版；早刊已报的 Fable 5.2、Muse Ember、TPU 8tx／8i Max、Control Room，以及中刊已报的 GR00T 2、黄仁勋移交线，均无官方新进展。GPT-6.2 仍无官方确认，本窗未见比中刊更硬的新实测；「本周四发布」继续是无来源传闻。Gemini 4 Carbon 仍无官方放开。blog.google/technology/ai 栏目页未渲染文章列表、qwen.ai 返回空正文，这两处不能写成已扫确无。",
+      "relevance": "补的是今早已经公开的中文实验室开源，不是今晚才发生的事。参数与许可以美团官方博客为准，不要把未经官方页核对的第三方跑分写成已超过前沿闭源模型。",
+      "sources": [
+        {
+          "label": "美团技术团队 · LongCat-2.5 正式开源（署 2026-11-10）",
+          "url": "https://tech.meituan.com/2026/11/10/Meituan-LongCat-2.5-Open-Source.html"
+        },
+        {
+          "label": "Hugging Face · meituan-longcat/LongCat-2.5",
+          "url": "https://huggingface.co/meituan-longcat/LongCat-2.5"
+        },
+        {
+          "label": "VentureBeat · 开源时间交叉（2026-11-09 15:04 PT = 11-10 07:04 Asia/Taipei）",
+          "url": "https://venturebeat.com/technology/meituan-releases-the-open-weights-of-its-longcat-2-5-llm-with-vision-under-a-permissive-mit-license"
+        }
+      ]
+    },
+    {
+      "id": "1110晚-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-10",
+      "summary": "这段时间没有相对中刊达「实害／确认利用／普通人须立刻因新披露而行动」门槛的新 AI 安全主条。本窗已扫 CISA advisories／KEV（列表页与目录 JSON 均成功打开：catalogVersion 仍为 2026.11.09，dateReleased 为 2026-11-09T19:54:37Z，约 11 月 10 日 03:54 台北时间，仍早于早刊截稿；目录共 1773 条，最新添加日仍是 11 月 9 日那四条——CVE-2026-102895 GPUStack、CVE-2026-116779 FreeSwitch、CVE-2026-123158 OpenSSH、CVE-2026-123218 Aspera Faspex——早刊已把 GPUStack 列为确认在野利用主条，另三条已标明不单开；未见 11 月 10 日新的 Alert 或新入目录项）、Krebs（首页最新仍是 11 月 4 日白宫网络代理节点出租，属基础设施／代理面，非本窗新 AI 实害）、Wiz（最新仍是早刊已扫、中刊未升格的 11 月 9 日 Qubole 跨账户滥用）、CrowdStrike（仍停在 11 月 3 日收购 Fiddler／Dreadnode 与 AI Kill Switch，窗口已过不重复）、Microsoft Security／Threat Intel（威胁情报最新仍是 11 月 6 日 ARTEX／Storm-3358；11 月 9 日 FORGE Lab 的 Rust 研究早刊／中刊已定性为防御研究，不是对用户的在野攻击通报）、Mandiant／GTIG（主题列表页可见条目仍是已点名的 AI Threat Tracker、LLMJacking、XCPE、ARTEX and Friends 等，未见 11 月 10 日新主文）。本窗还打开了 CNCERT 门户：11 月 10 日有「银狐」木马「金钩（G03）」仿冒同花顺下载站的分析报告，监测区间 10 月 4 日至 11 月 2 日，不是 AI 系统被攻破或用 AI 实施的新实害主条，不升格。GPUStack KEV、Qubole、Mittwald MCP、Snowball 复述等不重复。BleepingComputer 本窗再次返回 403，CNVD 首页本窗为 521，这两处不能写成已扫确无。",
+      "relevance": "家用读者本窗无新的、因本窗才披露的改密／急补丁 AI 安全项。若还在用 Chrome 且尚未更新：谷歌在 11 月 9 日周一已推出含在野利用修复（CVE-2026-125350，XML 组件）的稳定版 157.0.8103.50／.51，这不是晚刊新披露，但补上更新并重启即可。若在国内搜索下载同花顺等证券软件，只走官方网站或应用商店，不要点搜索广告里的仿冒下载页——这是本窗见到的 CNCERT 提示，不是 AI 栏主条。",
+      "sources": [
+        {
+          "label": "CISA · cybersecurity advisories",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "CISA · KEV catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CISA · KEV JSON feed（catalogVersion 2026.11.09，本窗 19:17:50 台北再核未变）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        },
+        {
+          "label": "CNCERT 门户",
+          "url": "https://www.cert.org.cn/portal/index.htm"
+        },
+        {
+          "label": "CNCERT · 银狐「金钩（G03）」报告（2026-11-10，排除项备查）",
+          "url": "https://www.cert.org.cn/portal/yjtb/eydmtb/2026/11/27ae286da3f0454ead6047d81b8b8b90.htm"
+        },
+        {
+          "label": "Chrome Releases · Stable Channel Update（2026-11-09，排除项备查）",
+          "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_018223192.html"
+        }
+      ]
+    },
+    {
+      "id": "1110晚-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周二亚股收盘：日经收60459.58（+2.87%）后场先回再创新高，韩综收+4.39%从午间低位收回，台股收42711.92（+2.52%）低于盘中高点；欧股盘中偏强，美现金尚未开；黄金电子盘跌破周一结算",
+      "time": "2026-11-10T19:20:00+08:00",
+      "summary": "相对中刊（约 12:26–12:30 台北：日经官方午前收 60475.78／+2.89%，高见 60619.45，后场开 60208.81，Yahoo 延迟盘中约 60032.86／+2.14%；韩综开 5247.22／+4.55%，高见 5300.92／+5.62% 并触发买盘 sidecar，首尔经济 13:00 KST 报 5206.53／+3.74%，Yahoo 更晚延迟约 5185.11／+3.31%；台股盘中开 42130.33、高 43135.92、低 41930.03，Yahoo 午间延迟约 42281.87／+1.49%，台积电高 2280 后约 2245／+0.45%；恒指午市收 24518.87／+0.29%；A 股午前收上证 3662.81／+0.06%、深成 11229.66／+0.76%，创业板指媒体报 2495.29／+1.49%；欧股未开，指向周一 STOXX 50 6290.45、FTSE 100 10782.87、DAX 26267.19、CAC 40 8233.30；美现金尚未开，仍是周一标普 7549.94、纳指 25253.14、道指 52389.75，VIX 19.92，10Y 4.864%；美期约 12:20 为 ES 7576.75、NQ 27921.50、YM 52667；WTI 85.94、布伦特 91.75，黄金电子盘 4124.8）：亚洲已出全日收盘。日经收 60459.58（+1684.08／+2.87%），官方四本値开 59372.28、高 60743.97、低 59268.43；高点出现在后场（路透称一度 +3.35%／+1968.47），收盘只比午前收低 16.20 点，把中刊所见后场回吐基本收回，终值时隔 3 个交易日再上 6 万；TOPIX 收 3893.71（+1.98%）。韩综收 5239.13（+220.28／+4.39%），开 5247.22、高 5300.92 与中刊一致，收盘明显高于午间延迟约 5185，韩联社称为 4 个交易日来首次反弹；科斯达克收 667.61（+28.64／+4.48%）。台股收 42711.92（+1050.22／+2.52%），开、高、低与中刊已报一致，成交 1 兆 0340.12 亿新台币（证交所官方）；收盘高于午间延迟约 42282，仍低于盘中高 43135.92。证交所称台积电收 2285 元（+50／+2.23%），开 2265、低 2230，收在最高 2285。恒指收 24557.04（+108.09／+0.44%），略高于午市收 24518.87；港台称高见 24675，主板成交约 1782 亿港元，恒生科技指数收 4084.45（+1.08%）。上证收 3663.72（+2.93／+0.08%），深成收 11241.54（+96.05／+0.86%），创业板指收 2494.40（+1.46%）；中国经济网给出成交上证 6739.52 亿元、深成 8308.61 亿元，新华财经称沪深两市成交 1.49 万亿元、放量 222 亿元。欧股约 19:04 台北（Yahoo 源时间，抓取约 19:19、约 15 分钟延迟）仍在交易、不能写成收盘：STOXX 50 约 6366.85（+1.21%），FTSE 100 约 10822.67（+0.37%），DAX 约 26604.59（+1.28%），CAC 40 约 8329.67（+1.17%）。美股现金约 22:30 台北才开，仍是周一收（道指沿用 52389.75）。美期约 19:09：ES 7576.50（较自身周一结算 7574.25 约 +0.03%）、NQ 27912.75（−0.36%）、YM 52668（+0.32%），相对中刊几乎持平、NQ 略软。WTI 85.80、布伦特 91.15，略低于中刊，续低于周一结算 86.85／92.57，是电子盘不是新结算。黄金电子盘约 4077.4，低于中刊 4124.8，也低于周一 COMEX 结算 4105.00。10Y 的 Yahoo 印仍是周一 4.864%。本窗亦扫过美日韩台／A·港／欧／油／金／美债／ES·NQ·YM 固定源。",
+      "relevance": "晚刊真正相对中刊结算下来的是：日经后场先回再拉、收盘几乎回到午前收并留下更高的官方高点；韩综、台股都从午间低位／延迟价收回，但仍低于早盘高点；港股和 A 股小幅收涨；欧股已开、盘中偏强但未收；美现金仍是周一；油略软；黄金电子盘跌破周一结算。",
+      "sources": [
+        {
+          "label": "日经新闻 · 全日收 60459.58（+1684.08／+2.87%）",
+          "url": "https://www.nikkei.com/article/DGXZQOFL100ES0Q6A111C2000000/"
+        },
+        {
+          "label": "日经官方日次四本値（开 59372.28、高 60743.97、低 59268.43、收 60459.58）",
+          "url": "https://indexes.nikkei.co.jp/nkave/archives/data?list=daily"
+        },
+        {
+          "label": "ニューズウィーク日本版／路透 · 后场高 60743.97（+3.35%）",
+          "url": "https://www.newsweekjapan.jp/articles/-/339661"
+        },
+        {
+          "label": "韩联社 · 韩综收 5239.13（+4.39%）",
+          "url": "https://www.yna.co.kr/view/AKR20261110130400008"
+        },
+        {
+          "label": "韩联社 · 科斯达克收 667.61（+4.48%）",
+          "url": "https://www.yna.co.kr/view/AKR20261110130500008"
+        },
+        {
+          "label": "韩联社综合收评 · 4 个交易日来首次反弹",
+          "url": "https://www.yna.co.kr/view/AKR20261110131900008"
+        },
+        {
+          "label": "证交所价格指数 · 加权收 42711.92（+1050.22／+2.52%）",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20261110&type=IND&response=json"
+        },
+        {
+          "label": "证交所市场成交 FMTQIK · 成交 1,034,012,240,502 元",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20261110&response=json"
+        },
+        {
+          "label": "证交所台积电日成交 · 收 2285（+50），收在最高",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20261110&stockNo=2330&response=json"
+        },
+        {
+          "label": "经济日报 · 台股收盘与台积电 2285",
+          "url": "https://money.udn.com/money/story/12509/9869345"
+        },
+        {
+          "label": "中央社 Focus Taiwan · 台股收 42,711.92",
+          "url": "https://focustaiwan.tw/business/202611100008"
+        },
+        {
+          "label": "东方财富 · 恒指收 24557.04（+0.44%），恒生科技 4084.45",
+          "url": "https://finance.eastmoney.com/a/202611103927319025.html"
+        },
+        {
+          "label": "第一财经 · 恒指收盘交叉",
+          "url": "https://www.yicai.com/brief/103434443.html"
+        },
+        {
+          "label": "港台 · 恒指收市，高见 24675",
+          "url": "https://news.rthk.hk/rthk/ch/component/k2/1877261-20261110.htm"
+        },
+        {
+          "label": "新华财经 · A 股收评（上证 3663.72、深成 11241.54、创业板指 2494.40）",
+          "url": "https://www.cnfin.com/yw-lb/detail/20261110/4493456_1.html"
+        },
+        {
+          "label": "中国经济网 · A 股收盘与成交额",
+          "url": "https://finance.ce.cn/stock/gsgdbd/202611/t20261110_3289989.shtml"
+        },
+        {
+          "label": "新华社英文 · Shanghai 3663.72 / Shenzhen 11241.54",
+          "url": "https://english.news.cn/20261110/deb5dd2934df4f66b1c2e53318fdf77c/c.html"
+        },
+        {
+          "label": "Yahoo ^STOXX50E／^FTSE／^GDAXI／^FCHI（约 19:04 台北，盘中未收）",
+          "url": "https://finance.yahoo.com/quote/%5ESTOXX50E/"
+        },
+        {
+          "label": "Yahoo ^GSPC／^IXIC／^DJI（美现金仍周一收，道指 52389.75）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo ES=F／NQ=F／YM=F／CL=F／BZ=F／GC=F／^TNX（约 19:09 台北；期油金为电子盘）",
+          "url": "https://finance.yahoo.com/quote/ES=F/"
+        }
+      ]
+    },
+    {
+      "id": "1110晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "谷歌解约费表其实早就公开过：支票要先付十年地租，债主不一定能被填平",
+      "time": "2026-11-10T15:25:00+08:00",
+      "summary": "上午停在 11 月 Anthropic／Justified 那份 CSA 的 Schedule C-1：公式看得到，金额被涂红。下午翻到另一笔已经走完的交易——TeraWulf 与 Fluidstack 在得州 Abernathy 的合资公司 Flash Compute，2025 年 12 月 17 日路演材料里就把「FS Termination Fee」摊销表写出来了：起始 13 亿美元，此后逐年往下走到约 7.42 亿；同一套前六年默认接租、除非现场设备功耗能力低于 Baseline Capacity 一半的菜单，那时已经在了。更刺的是瀑布顺序：解约费和偿债准备金要先把土地租约起租日后十年的地租付掉，剩下来才拿去还优先抵押票据；材料自己写，这笔支票可能不够还完票面，债主还要靠造价约 13.6 亿美元的楼做抵押。这笔债后来在 12 月 18 日定价、29 日交割，规模上修到 13 亿美元、票息 7.250%，不是路演模型里 illustratively 写的 8%。对普通人／市场判断的用处是：你以为谷歌签了字就能把债兜住，可已经公开过的表说明，这张支票先有别的用途，未必能把债主填平。已证实是 2025 年路演材料和随后定价／交割公告；11 月那份 Anthropic 项目的金额表仍是涂红，不能拿得州这张表的数字去填。",
+      "relevance": "信贷与资本开支：hyperscaler 背书的终止费在瀑布里排第几、能不能把项目债填平。证据边界：摊销表来自 2025-12-17 Flash Compute 路演选页（假设 12.75 亿美元票据、8% 票息为示意），实际发行是 13 亿美元、7.250%、2025-12-29 交割；这是 Fluidstack／得州校园，不是 11 月 Justified／Anthropic CSA 的 Schedule C-1。",
+      "sources": [
+        {
+          "label": "TeraWulf · Flash Compute 路演选页（EX-99.1，2025-12-18）",
+          "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001104659-25-122293/tm2533501d1_ex99d1.htm"
+        },
+        {
+          "label": "TeraWulf · Flash Compute 定价 8-K（2025-12-18）",
+          "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001104659-25-122616/tm2533501d2_8k.htm"
+        },
+        {
+          "label": "TeraWulf · Flash Compute 交割 8-K（2025-12-29）",
+          "url": "https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001104659-25-124839/0001104659-25-124839.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1110晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "机房债在自己变贵，旁边的公寓和管道 CMBS 几乎没被带着走",
+      "time": "2026-11-10T15:25:00+08:00",
+      "summary": "商业地产债协会 11 月 9 日的周报把新发数字写死了：截至 11 月 6 日那一周，美国数据中心 ABS／CMBS 一单都没定价；今年迄今约 219 亿美元，领先 2025 年的幅度一周内从 7.0% 收窄到 1.2%（去年同期大单进入比较），近三个月约 41 亿美元比去年同期少 19.9%。近三个月五年期单 A 的数据中心 ABS 平均定价 T+257（5 笔），一季度还是 T+195（8 笔）；同一发行人也能对上——Switch 从 3 月的 T+225 走到 10 月的 T+290，DataBank 从 1 月的 T+205 走到 10 月的 T+220；10 月 20 日 EdgeCore 那笔五年期单 A 打到 T+325，是今年最宽的一笔。Trepp 用 10 月 23 日的估值价看二级：那一周数据中心 SASB 的优先 AAA，固息相对国债走阔 21 个基点到 182、浮息相对 SOFR 走阔 24 个基点到 199，其他 SASB 和管道 CMBS 的中位数几乎没动；今年以来固息数据中心 AAA 已走阔 60 个基点，其他 SASB 只 1 个、管道是 0，而且去年年底还在的每一只数据中心 AAA 现在都更宽。分叉出在投资级顶端：固息 AA 走阔 76、单 A 走阔 105，其他 SASB 同级几乎还在年初；这些贷款却都还没逾期、也没有进入特殊服务。对普通人／市场判断的用处是：不是整个商业地产债都在怕，是专门买「机房租金」的那一层自己在加价；资金变贵会先落到还在排队融资的新项目，而不是已经违约的旧楼。已证实是协会周报、手册里的 BofA 基准和 Trepp 估值价；三套口径日期和算法不同，不能混加。",
+      "relevance": "跨市场传导与信贷：数据中心证券化是否已经相对其他 SASB／管道 CMBS 单独重新定价，以及新发变贵、发行放缓会不会卡住后续机房融资。证据边界：新发与发行量以 CREFC 11/9 周报为准（截至 11/6）；BofA 基准（手册 Exhibit 17）是 10/8 到 10/29；Trepp 是 10/23 的估值价而非官方公布统计，数据中心用年末仍在的 13 只优先AAA等权平均，其他板块用中位数。贷款目前全部正常，不是违约事件。",
+      "sources": [
+        {
+          "label": "CREFC · CMBS/ACMBS and Data Center New Issue Weekly（2026-11-09）",
+          "url": "https://www.crefc.org/cre/cre/content/News/Items/Research_and_Data/2026/CREFC_CMBS_ACMBS_and_Data_Center_New_Issue_Weekly_11_9_26.aspx"
+        },
+        {
+          "label": "CREFC · Data Center Primer 第二版（Exhibit 17）",
+          "url": "https://www.crefc.org/common/uploaded%20files/Research/CREFC_Data_Center_Primer_Second%20Edition_Nov2026.pdf"
+        },
+        {
+          "label": "Trepp · Data Center CMBS Spreads Widen as the Rest of the Market Holds Steady",
+          "url": "https://www.trepp.com/trepptalk/data-center-cmbs-caught-in-the-ai-sell-off"
+        }
+      ]
+    },
+    {
+      "id": "1110晚-7",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "招股书自己写了：8954 亿里约 2138 亿还要等对方先借到钱或拿到批文",
+      "time": "2026-11-10T15:25:00+08:00",
+      "summary": "上午看到 Anthropic 已签未开工租约约 4512 亿美元、自己九个月 capex 不到十亿。下午把招股书里「对方须先融资」那一块对上了：合计约 8954 亿美元承诺里，约 2138 亿属于「开工前可行使终止权，或还挂着先决条件」——例子就是对方能不能融到资、拿到场地或监管批文，条件达不到，安排就可能被终止。点名的例子里，Lambda 2026 年 8 月那份约占 349 亿美元的协议写明：若不能及时拿到机房租约，任何一方都可以终止；Nscale 约至 446 亿美元的协议要求对方尽最大努力为 GPU 和机房基础设施取得合格融资，但这段没有把「融不到就自动散」写得像 Lambda 那么直。要注意时间远近：未来 12 个月应付的约 698 亿里，带这类开关的只有约 43 亿，近处大多还是要付钱的；4512 亿未开工租约也只是「其中一部分」带条件，不是整堵墙都能撤。对普通人／市场判断的用处是：早上那堵承租方承诺墙不全是铁板，大约四分之一还可能因为对方借不到钱而缩小；可眼前这一年，能缩小的只是薄薄一层。已证实是 S-1/A 原文口径；和上午「银行对 AI 债变冷」只是对得上的机制，不是已经有哪一笔被终止的公告。",
+      "relevance": "AI 成本收入与融资结构：承租方承诺墙有多少是「对方须先融资／拿批文」的软承诺，信贷变冷时哪些数字可能收缩、哪些近处仍是硬付款。证据边界：2138／43／698／8954／4512 均可对 S-1/A；2138 是合计承诺里带终止权或开工前先决条件的部分，不等于整块 4512 未开工租约。Lambda 的场地租约条款可直接终止；Nscale 只写了尽最大努力融资，勿写成自动解除。",
+      "sources": [
+        {
+          "label": "SEC · Anthropic S-1/A-1",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+        }
+      ]
+    },
+    {
+      "id": "1110晚-8",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-10",
+      "summary": "这段时间没有达「签署协议、霍尔木兹实质性重开或更严重关闭、战事扩到新的大战场」门槛的国际硬新事实。本窗已扫 BBC（约 17:15–17:20 台北的页面更新）、RFE/RL（11:24 CET = 18:24 台北）、Al-Monitor 转载的路透阿布扎比电、Kyiv Independent 与 DW 直播博客：美国、俄罗斯、乌克兰已于 11 月 10 日在阿布扎比开始 2 月以来首次三方会谈，会谈安排为两天，截稿时没有联合公报、停火或领土协议；美方官员会前即称不指望这两天谈成最终方案，公开的领土立场仍僵。伊朗线仍是总统周一在白宫简报室的口头定性——军事上「实际上已经结束」、维持封锁现状、再打「高度不可能」、同时仍「locked and loaded」——不是停火协议，霍尔木兹也还没重开；伊方周一重申的「两日复通方案」只是仍待接受的提议。中国把出口管制、对美加征关税和对美船舶特别港务费再暂停约两个月，以及安塔利亚气候大会／1.5°C，晚刊已报，本窗未见新变化，不重复。reuters.com 原稿本窗未能打开（401），AP 原稿超时，这两处不能写成已扫确无；会谈事实已用 BBC／RFE/RL／路透转载／DW 交叉。",
+      "relevance": "把「会谈已经开始，但还没有签字成果」和「只有口头、海峡并未复通」写清楚，避免被读成和谈已经谈成或战争已经结束。",
+      "sources": [
+        {
+          "label": "BBC · Ukraine peace talks resume in Abu Dhabi（约 2026-11-10 17:15–17:20 Asia/Taipei 页面更新）",
+          "url": "https://www.bbc.com/news/articles/cqpvgvrpjvv8o"
+        },
+        {
+          "label": "RFE/RL · Abu Dhabi talks begin（2026-11-10 11:24 CET = 18:24 Asia/Taipei）",
+          "url": "https://www.rferl.org/a/us-ukraine-peace-abu-dhabi-talks-russia-witkoff/33894497.html"
+        },
+        {
+          "label": "Al-Monitor 转载路透 · 2 月以来首次三方会谈（电头 ABU DHABI, Nov 10）",
+          "url": "https://www.al-monitor.com/originals/2026/11/russia-and-ukraine-hold-first-peace-talks-nine-months-trump-envoy-says-gaps-have"
+        },
+        {
+          "label": "Kyiv Independent · talks resume after 9-month pause（2026-11-10 10:40 am，时区未标明）",
+          "url": "https://kyivindependent.com/ukraine-russia-us-resume-trilateral-peace-talks-in-abu-dhabi-after-9-month-pause/"
+        },
+        {
+          "label": "DW 直播博客（预定开场 11:50 阿布扎比 = 15:50 台北）",
+          "url": "https://www.dw.com/en/us-russia-and-ukraine-start-talks-in-abu-dhabi/live-79906232"
+        },
+        {
+          "label": "BBC · Trump says more US attacks on Iran 'highly unlikely'（约 17:15–17:20 台北页面更新，内容仍是周一口头定性）",
+          "url": "https://www.bbc.com/news/articles/cq5yny4nl2d3o"
+        },
+        {
+          "label": "新华／中国经济网 · 两日复通霍尔木兹方案仍在桌上（电头 Tehran Nov 9；页面更新 11:41 台北，早于中刊截稿）",
+          "url": "http://en.ce.cn/main/latest/202611/t20261110_3289775.shtml"
+        }
+      ]
+    },
+    {
+      "id": "1110晚-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "名古屋大学把疟蚊细胞之间的「隧道」拍到了原子细节：蛋白质尾部先要手拉手围成内环，通道才会长圆",
+      "time": "2026-11-10",
+      "summary": "换赛道——细胞结构生物学，不是中刊的假超新星，也不是早刊的 DNA 活性物质或近刊的气候大会。名古屋大学 11 月 10 日发布英文通稿，论文发表在《美国国家科学院院刊》（PNAS）。细胞会用蛋白质围成的细小隧道（间隙连接通道）和邻居交换小分子，影响发育、神经活动和免疫；无脊椎动物里，这类通道由 innexin 蛋白构成，昆虫这一支此前还没有详细结构。大岛笃典团队用冷冻电镜研究传播疟疾的冈比亚按蚊的一种 innexin，发现 7 个相同的蛋白单元围成对称的环——与该团队以前报道的线虫 innexin 8 单元环不同。在环的中心，每条蛋白链的起始端（N 端）接到相邻单元上，形成内环，帮助整体变成圆形。他们把 N 端一次缩短一个氨基酸，并在蛙卵细胞对之间测电流：去掉 1 个氨基酸通道还能工作；去掉 2 个，活性几乎消失；去掉 3 或 4 个则完全关闭。去掉 2 个氨基酸的版本里，内环没有形成，通道被压得不圆，脂质占据了 N 端原来的位置。研究者提出：形成内环是把歪斜的组装变成成熟、对称通道的最后一步。论文标题是 N-terminal integrity governs heptamer assembly and maturation in a mosquito innexin hemichannel。合作单位包括东京科学大学、东京农工大学。通稿没有把这项结构工作写成已经能拿来灭蚊或治疟。本窗读的是大学通稿，没有打开 PNAS 原文。",
+      "relevance": "蚊子和疟疾是熟悉的公共卫生词，但这条说的不是新药，而是细胞之间那条「隧道」要先把蛋白质尾巴围成内环，才会长成能用的圆管——一种以前没被看见的装配步骤。",
+      "sources": [
+        {
+          "label": "名古屋大学英文通稿（2026-11-10）",
+          "url": "https://en.nagoya-u.ac.jp/news/articles/pr-protein-tails-help-shape-mosquito-cell-to-cell-channels/"
+        },
+        {
+          "label": "PNAS DOI（通稿给出；本窗未打开论文页）",
+          "url": "https://doi.org/10.1073/pnas.2627957123"
+        }
+      ]
+    }
+  ]
+}
