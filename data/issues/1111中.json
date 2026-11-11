@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "id": "1111中",
+  "date": "2026-11-11",
+  "slot": "中",
+  "title": "11月11日 · 中",
+  "items": [
+    {
+      "id": "1111中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Qwen 官宣 Qwen4 即将发布：Qwen4-Max 预览版已上线阿里 Token Plan，并接入千问办公、Qoder、千问 App、QwenStudio",
+      "time": "2026-11-11T10:01:09+08:00",
+      "summary": "阿里通义官号 @Alibaba_Qwen 于 2026 年 11 月 11 日 02:01:09 UTC（台北时间 10:01:09）发帖，标题就是「Qwen4 is coming」。官方写法是：更深的知识、更丰富的世界理解、更强的编程和智能体能力，面向复杂编程、知识工作、前端和专业软件流程；同时宣布 Qwen4-Max 已在阿里 Token Plan 进入预览，也可在 QwenWork、Qoder、Qwen APP 和 QwenStudio 上抢先用。这是官号明确把 Qwen4 写成即将发布、并把 Qwen4-Max 标成预览，不是整个 Qwen4 家族一次性正式发版。官帖没有给出参数量、基准分数、上下文长度或正式商用日期。官方 Token Plan 文档（中英页一致）已写入模型 ID 与预览期：预览从 2026 年 11 月 11 日 10:00 到 11 月 25 日 24:00（UTC+8），期间不做变更，预览结束后下线；模型 ID 为 qwen4-max-preview，别名 qwen4.0-max-preview，账单统一显示为 qwen4.0-max-preview；能力栏写「推理模型、视觉理解、文本生成」。文档里的折扣是套餐活动规则（限时 Credits 消耗可低至标准费率两折，夜间 22:00–次日 08:00 再叠加优惠），不要写成模型免费或永久定价。IT之家、新浪科技、每经网同日报道与官宣口径一致；日文 PC Watch 也写明：截至 11 月 11 日，参数量、基准分数和正式提供时期均未公布。同日稍晚，QwenLM/qwen-code 在 GitHub 发布预发布版本 v1.0.0-preview（2026-11-11T03:55:44Z，台北 11:55:44），说明是把 Qoder 与 Qwen Code 的智能体能力合到一起，用于代码理解、实现、调试和测试；这是工具预览，不是新权重。本窗亦扫过 OpenAI blog／index（本次成功打开，置顶仍是 11 月 10 日已报的 Businesses in ChatGPT 及三篇公司稿）、API changelog（最新仍是 11 月 5 日 gpt-6-cyber）、ChatGPT 更新说明、Anthropic news／对齐博客／Claude 产品更新、DeepMind 博客、x.ai 新闻页（最新产品稿仍停在 11 月 2 日）、Meta AI 博客与 research.meta.ai、DeepSeek GitHub releases，以及 @elonmusk、@OpenAI、@AnthropicAI、@GoogleDeepMind、@MetaAI、@deepseek_ai 自早刊截稿后的时间线（均无新帖）。@xai 官号本窗接口无权读取，不能写成已扫；回退检索 from:xai 与 @SpaceXSI 时间线为 0 帖。Google 技术博客 HTML 列表页未渲染出文章，该页覆盖不完整，同栏 RSS 已补扫、未见 11 月 11 日新文。灰度检索（中英）未见相对 1109晚 Sol 用户报告、1110晚 Grok 4.8 计划之外、可独立核对的新一轮官方确认；用户侧仍有 6.2 路由讨论，官方目录与 changelog 未写入。",
+      "relevance": "这是本窗唯一够格的头部实验室新模型官宣：Qwen4 还在「即将发布」，眼下能试的是有明确下线时间的 Max 预览，官方材料里还没有参数和跑分，不要把它读成全系列已经上市。",
+      "sources": [
+        {
+          "label": "阿里通义官号宣布 Qwen4 即将发布、Qwen4-Max 预览上线（2026-11-11 02:01:09 UTC）",
+          "url": "https://x.com/Alibaba_Qwen/status/2120335993643684315"
+        },
+        {
+          "label": "Qwen Token Plan 官方文档（中文）：预览期与模型 ID",
+          "url": "https://platform.qianwenai.com/docs/token-plan/personal/token-plan-personal-overview"
+        },
+        {
+          "label": "Qwen Token Plan 官方文档（英文）",
+          "url": "https://docs.qwencloud.com/token-plan/personal/token-plan-personal-overview"
+        },
+        {
+          "label": "IT之家 · Qwen4-Max 预览上线（2026-11-11）",
+          "url": "https://www.ithome.com/1/025/301.htm"
+        },
+        {
+          "label": "新浪科技 · 通义官宣 Qwen4（2026-11-11）",
+          "url": "https://finance.sina.com.cn/roll/2026-11-11/doc-iniyipkf2011399.shtml"
+        },
+        {
+          "label": "每经网 · Qwen4-Max 预览（2026-11-11）",
+          "url": "https://www.nbd.com.cn/articles/2026-11-11/4644575.html"
+        },
+        {
+          "label": "PC Watch · 参数、基准与正式提供时期尚未公布（2026-11-11）",
+          "url": "https://pc.watch.impress.co.jp/docs/news/2155430.html"
+        },
+        {
+          "label": "GitHub · Qwen Code v1.0.0-preview（2026-11-11T03:55:44Z）",
+          "url": "https://github.com/QwenLM/qwen-code/releases/tag/v1.0.0-preview"
+        }
+      ]
+    },
+    {
+      "id": "1111中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】英伟达独立董事 11 月 10 日声明：已聘请 Joon H. Kim 与 Wachtell, Lipton, Rosen & Katz，主持周日宣布的独立调查",
+      "time": "2026-11-11T03:07:00+08:00",
+      "summary": "【补报】这不是新的调查结论，而是 1109晚已报的董事会独立调查的后续人事安排。讯息窗 1109晚 已写入：黄仁勋致信员工承认对妻子不忠，英伟达董事会就「他成为外国情报目标」的报道启动独立调查。公司新闻室 2026 年 11 月 10 日另发《Statement From the Independent Members of the NVIDIA Board》，GlobeNewswire 标注时间为 11 月 10 日 14:07 ET（约 19:07 UTC，台北时间 11 月 11 日 03:07），早于早刊约 08:30 截稿，早刊未收，故按真实日期补报。独立董事声明原文只有一句：已聘请前纽约南区代理联邦检察官 Joon H. Kim 及其律所 Wachtell, Lipton, Rosen & Katz，对周日宣布的独立调查做彻底、独立的调查。11 月 8 日董事会原声明页仍在。CNBC 11 月 10 日下午稿与官方这一句一致，并补充 Kim 上月加入该律所、此前是曼哈顿首席联邦检察官（引 Law360）；股价与政界压力等属于报道层，不是公司新结论。这不是结案，也没有新的调查结果。",
+      "relevance": "1109晚已经报过「董事会立案」。现在能补上的是：谁来查、哪家律所接手。调查还在进行，不要把它读成已经有结论。",
+      "sources": [
+        {
+          "label": "NVIDIA 新闻室 · 独立董事声明（2026-11-10）",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board"
+        },
+        {
+          "label": "GlobeNewswire · 同文转发（2026-11-10 14:07 ET）",
+          "url": "https://www.globenewswire.com/news-release/2026/11/10/3400124/0/en/statement-from-the-independent-members-of-the-nvidia-board.html"
+        },
+        {
+          "label": "NVIDIA 新闻室 · 11 月 8 日董事会原声明",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+        },
+        {
+          "label": "CNBC · NVIDIA retains Wachtell Lipton（2026-11-10）",
+          "url": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
+        },
+        {
+          "label": "讯息窗 1109晚-1（董事会启动独立调查）",
+          "url": "https://hene-gif.github.io/info-window/"
+        }
+      ]
+    },
+    {
+      "id": "1111中-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-11",
+      "summary": "这段时间没有相对早刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA 警报列表和已知被利用漏洞目录 JSON（均成功打开：catalogVersion 仍为 2026.11.10，dateReleased 仍为 2026-11-10T19:03:29Z，约 11 月 11 日 03:03 台北时间，目录仍是 1779 条，与早刊所见完全相同，没有早刊之后的新入目录项；置顶警报仍是 11 月 10 日那六条，其中对普通人最直接的 Outlook 欺骗 CVE-2026-124194 和已在野的 Chrome CVE-2026-125350，早刊已经报过）、Krebs（首页最新仍是早刊已用作支持的 11 月 10 日补丁星期二综述，写微软此次修复 1,093 个漏洞、63 个严重漏洞，已在野的仍是那条 Outlook）、Wiz（最新仍是早刊已排除的 11 月 10 日进攻智能体评测教程和日本政府云合规文）、Mandiant／GTIG（主题列表页可见条目仍是已点名的 AI Threat Tracker、LLMJacking、XCPE、ARTEX 等，未见 11 月 10–11 日新主文）、Microsoft Security（11 月 10 日 23:00 UTC 刊出一篇关于在模型神经元里检测「潜伏智能体」的研究，文内写明微软尚未观察到有威胁行为者把该手法武器化，属于防御研究，不是对用户的在野攻击通报）、CrowdStrike（相对早刊新挂上 11 月 10 日补丁星期二分析，文内计数是 1,252 个漏洞、1 个已利用零日、68 个严重漏洞，已利用的仍是同一条 Outlook，不另开一条）。早刊已提示的 Outlook／Chrome 更新，本窗没有在那之上的新行动项。",
+      "relevance": "家用读者本窗无新的立刻改密或急补丁项。早刊已经提示把 Outlook 和 Chrome 更新装上；本窗目录没有再增加新条目。",
+      "sources": [
+        {
+          "label": "CISA · 网络安全通告列表",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "CISA · KEV JSON（catalogVersion 2026.11.10，dateReleased 2026-11-10T19:03:29.8375Z，1779 条）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "CISA · 11 月 10 日六条已知在野利用入目录",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "Krebs on Security · 微软修复约 1100 个漏洞（2026-11-10）",
+          "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "CrowdStrike · 2026 年 11 月补丁星期二分析",
+          "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/"
+        },
+        {
+          "label": "Microsoft Security Blog · Detecting sleeper agents（2026-11-10T23:00Z）",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        }
+      ]
+    },
+    {
+      "id": "1111中-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周三午间：日经午前收60942.48（+0.80%）后场盘中再升，台股盘中逾千点、韩综约+2.3%；港股午市收跌，A股午前分化；美欧现货仍指周二收",
+      "time": "2026-11-11T12:26:00+08:00",
+      "summary": "相对早刊（美股周二收标普 7520.93／−0.38%、纳指 25065.87／−0.74%、道指 52231.89／−0.30%，VIX 19.46，10 年期美债收益率 4.983%；欧股周二收 STOXX 50 6327.87／+0.59%、DAX 26347.45／+0.31%、富时 100 10751.59／−0.29%、CAC 40 8278.59／+0.55%；亚股当时日经官方 09:28 日本时间 60439.34／−0.03%，韩综 Yahoo 盘中约 5227.51，台港 A 股尚未开盘，指向周二收台股 42711.92、恒指 24557.04、上证 3663.72、深成 11241.54；油金为周二结算 WTI 86.04、布伦特 91.49、COMEX 11 月黄金 4020.70）：本窗约 12:24–12:28 Asia/Taipei。美股现货周三尚未开市（美西此时仍是周二晚上），三大指数、VIX 与 10 年期美债收益率仍指向早刊已报的周二收盘。欧股现货约 16:00 台北才开，亦指向周二收。亚洲是今天的新数。日经官方／时事通信午前收 60942.48（+482.90／+0.80%），相对周二收 60459.58；后场开 61366.25，日经官方档案页 13:25 日本时间（台北 12:25）报盘中 61192.38（+732.80／+1.21%），现金要到 15:00 日本时间才收，不是全日结算。韩综仍在交易：Naver 实时 13:27 韩国时间报 5358.72（+119.59／+2.28%），相对周二收 5239.13，开 5209.71、高 5363.66、低 5207.44，14:30 台北才收。韩国交易所 11:28 韩国时间对科斯达克程序化买单触发 5 分钟 sidecar，不是韩综本身。台股 13:30 才收，本窗是盘中：证交所 MIS 12:26 报 43742.27（+1030.35／+2.41%），开 43135.76、高 43891.70、低 42708.05，高点过后有回吐，盘后表仍空，不能写成收盘；台积电官方最近成交 12:24:45 报 2365（+80／+3.50%），高 2380。港股午市收恒指 24352.69（−204.35／−0.83%），与新浪午评、Yahoo 12:00 冻结价一致，下午 13:00 再开。A 股午前收上证 3654.95（−8.77／−0.24%）、深成 11253.67（+12.13／+0.11%）、创业板指 2519.14（+0.99%），东方财富、新浪与 Yahoo 交叉一致，两市半日成交 9283 亿元，下午 13:00 再开。美股期货电子盘约 12:14 台北为标普期货 7588.75–7589.00、纳指期货 28191.75–28192.25、道指期货 52450–52455，相对各自周二日线收约 +45、+357、+135–140，只是电子盘。英伟达现金仍收 168.89；Yahoo 延长交易末笔 19:59 ET 报 170.4829，不是新的官方收盘。原油和黄金亦是电子盘、不是新结算：WTI 约 86.72–86.73（相对周二结算 86.04），布伦特 92.50（相对 91.49）；Yahoo 黄金 12 月合约 4051.7，相对该合约周二日线收 4030.20 约 +21.5，不要拿去减早刊的 11 月合约结算 4020.70。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "中刊真正新结算下来的是日经午前收、港股午市收和 A 股午前收；台股、韩综和日经后场都还在交易，不要把盘中大涨写成已经收盘。美欧现货仍是周二那一套，油金反弹也只是电子盘。",
+      "sources": [
+        {
+          "label": "日本经济新闻 · 日经午前收 60942.48（+0.80%）",
+          "url": "https://www.nikkei.com/article/DGXZQOFL110IU0R11C26A1000000/"
+        },
+        {
+          "label": "时事通信 · 午前综述",
+          "url": "https://www.jiji.com/jc/article?k=2026111100483&g=eco"
+        },
+        {
+          "label": "日经官方指数站档案页 · 13:25 日本时间盘中 61192.38（+1.21%）",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225"
+        },
+        {
+          "label": "Naver · 韩综实时 13:27 韩国时间 5358.72（+2.28%）",
+          "url": "https://m.stock.naver.com/api/index/KOSPI/basic"
+        },
+        {
+          "label": "证交所 MIS · 台股 12:26 盘中 43742.27（+2.41%）",
+          "url": "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_t00.tw&json=1&delay=0"
+        },
+        {
+          "label": "证交所 MIS · 台积电 12:24:45 成交 2365（+3.50%）",
+          "url": "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_2330.tw&json=1&delay=0"
+        },
+        {
+          "label": "新浪 · 恒指午市收 24352.69（−0.83%）",
+          "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-11-11/doc-iniyitsc1912428.shtml"
+        },
+        {
+          "label": "东方财富 · A 股午盘（上证 3654.95、深成 11253.67、创业板 2519.14）",
+          "url": "https://finance.eastmoney.com/a/202611113928255732.html"
+        },
+        {
+          "label": "新浪 · A 股午评",
+          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-11-11/doc-iniyitsc1909313.shtml"
+        },
+        {
+          "label": "Money Today · 科斯达克买盘 sidecar（11:28 韩国时间）",
+          "url": "https://www.mt.co.kr/stock/2026/11/11/2026111111370475997"
+        },
+        {
+          "label": "Yahoo Finance · 美欧收盘对照及期货／油金电子盘",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        }
+      ]
+    },
+    {
+      "id": "1111中-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Lambda 那笔约 349 亿美元的协议，已经从「可能解约」变成「现在就能解」",
+      "time": "2026-11-11T09:17:00+08:00",
+      "summary": "昨天下午停在招股书里的软开关：8954 亿承诺里约 2138 亿还要等对方先借到钱或拿到批文，Lambda 8 月那份约 349 亿美元协议写的是「若不能及时拿到机房租约，任何一方都可以终止」。今天第二份补正（S-1/A-2，11 月 10 日递交）把句子改硬了——Lambda 没有在约定期限内拿到场地租约，这份协议现在双方都可终止。双方都还没递解约通知，Anthropic 写明「目前不打算终止」。合计承诺从约 8954 亿升到约 9009 亿，软承诺那一桶反而收到约 1862 亿；未来 12 个月应付约 707 亿（先前约 698 亿），其中带终止权或开工前先决条件的约 42 亿，和昨天看到的近处薄薄一层几乎一样。对普通人／市场判断的用处是：账本上那堵墙里，已经有一扇门处于打开状态，只是还没人推；可眼前这一年该付的大头仍是硬的，不能把 349 亿写成已经撤单。已证实是 A-2 原文；尚未发生的是任何一方真的解约，也还不知道 Lambda 会不会补上租约。Nscale 约 446 亿那份仍只写了尽最大努力融资，没有改成已可终止。",
+      "relevance": "AI 成本收入与融资结构：软承诺是否已有具体协议被触发、近处硬付款有没有一起松动。证据边界：349／413／1862／9009／707／42 均可对 S-1/A-2；2138／698 是 11 月 2 日 A-1／A 的旧口径，用来对照，不是 A-2 里的现行数字。未终止不等于租约问题已解决，也不是已有产能交付。",
+      "sources": [
+        {
+          "label": "SEC · Anthropic S-1/A-2（2026-11-10）",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+        },
+        {
+          "label": "SEC · Anthropic S-1/A（2026-11-02，对照旧口径）",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+        }
+      ]
+    },
+    {
+      "id": "1111中-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "联储银行监管副主席把「表内债只是一层」写进了正式演讲",
+      "time": "2026-11-11T09:17:00+08:00",
+      "summary": "鲍曼 11 月 10 日在对外关系委员会讲美国经济和货币政策，把我们这周在合同和协会周报里读到的结构，用监管者的口吻说了一遍。她的原话是：AI 相关债务在公司债、私募信贷和项目融资里上升很快，今年有望超过 8000 亿美元；租约、长期合同承诺和残值担保这类其他义务也在猛增，潜在付款估算超过这笔债务的三倍。接下来她点到机制——信用评级高的 hyperscaler 和大科技公司承担表外负债，好让更小、更险的公司拿这些承诺当抵押，去做机房建设和加速计算设备的资产融资；同时 hyperscaler 和芯片设计公司又入股购买自己产品的较小公司，造成循环融资的外观。最大的美国银行控股公司有一部分敞口，会进年度压力测试，寿险、养老金、私募信贷和共同基金也有；多数机构资本和负债还稳，但复杂结构让对手方风险不容易评估清楚。她还说 AI 收入涨得快，但还不够覆盖维持现有模型、机房和开发新模型的开支。对普通人／市场判断的用处是：这不是又一篇「银行开始犹豫」的匿名行情稿，是负责银行监管的副主席把「表内债下面还有更大一叠租约和担保」说进公开演讲。已证实是演讲原文；「三倍」是她给出的估算、没点名出处，不能当成联储自己普查出来的精确总账，也不能把「有望超过 8000 亿」写成已经达到。",
+      "relevance": "信贷、流动性与金融稳定：官方是否开始给 AI 融资网标规模，以及表外租约／担保／残值承诺是否被看成比表内债更大的一层。证据边界：8000 亿、「超过三倍」、表外抵押和循环融资外观均来自 11/10 演讲原文；估算未给来源或拆表，亦非对单一发行人的监管处罚或违约判断。近期股票下跌、信用利差走阔被她称为「可能已有一波回报预期的重新评估」，不是因果结论。",
+      "sources": [
+        {
+          "label": "美联储 · 鲍曼演讲全文（2026-11-10）",
+          "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm"
+        }
+      ]
+    },
+    {
+      "id": "1111中-7",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "已经发出去的机房垃圾债，在二级市场用真钱标出了更贵的价",
+      "time": "2026-11-11T09:17:00+08:00",
+      "summary": "昨天看的是数据中心 ABS／CMBS 新发变贵、有的一周一单都没定价。今天路透 11 月 10 日的分析把镜头转到已经在市场上交易的高收益机房债：单 B 级别利差走阔 35 个基点到 367，是今年 3 月以来最宽；举例 Galaxy Digital 旗下单位 7 月底发行的 Galaxy Helios 9.875% 优先抵押票据，11 月 5 日落到 89.25，收益率抬到约 13%。我去对了公开成交记录（CUSIP 36322DAA4，2031 年 8 月到期）：11 月 5 日确实有 89.25 的成交，当天还有更低的打印；到 11 月 10 日 17:17 美东末笔约 91.35，到期收益率约 12.34%，比最深的那天稍回一点，仍明显高于发行票息。对普通人／市场判断的用处是：不只是新项目借钱变贵，已经借出去的钱在二手市场也重新标了价；资金变贵会先体现在还要再融资或后续要发债的项目上。已证实是路透引用的指数／个券点和公开成交记录；路透把这波谨慎部分归因于民主党即将掌控国会、可能收紧机房和 AI 监管，那是受访经理的判断，不是已经落地的立法。单笔债券不能代表所有机房债。",
+      "relevance": "跨市场传导与信贷：数据中心融资成本的重定价是否已经从一级新发 ABS／CMBS，走到可交易的高收益项目债二级价格。证据边界：89.25／约 13% 以路透 11/5 举例为准；11/10 末笔 91.35／12.34% 来自公开成交汇总，高收益债成交量有报告上限，不能把最低报告量当成全市场总量。国会监管路径仍是预期，不是已通过的法案。",
+      "sources": [
+        {
+          "label": "Reuters／Investing · AI debt faces pressure（2026-11-10）",
+          "url": "https://www.investing.com/news/stock-market-news/analysisai-debt-faces-pressure-as-democrats-prepare-to-take-over-congress-5014734"
+        },
+        {
+          "label": "Kilambi · Galaxy Helios 9.875% 2031 成交与条款（CUSIP 36322DAA4）",
+          "url": "https://news.kilambi.com/leverage/bond/36322daa4/"
+        }
+      ]
+    },
+    {
+      "id": "1111中-8",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-11",
+      "summary": "这段时间没有达「签署全面和平或停火协议、霍尔木兹实质性重开或更严重关闭、战事扩到新的大战场」门槛的国际硬新事实。本窗打开了乌克兰通讯社 Ukrinform、TASS、BBC、英国《卫报》、澳大利亚 ABC、NHK、意大利 Rai News，以及 CNBC 和巴基斯坦《黎明报》的霍尔木兹报道（美联社相关电稿本窗遇到验证页、路透会谈稿本窗未能打开全文，这两处不能写成已扫确无）。阿布扎比三方会谈首日已在 11 月 10 日结束；Ukrinform 引乌克兰对外情报局称当时未公布首日结果，并将于 11 日上午续谈。TASS 11 月 10 日 21:28 UTC 引谈判团队消息源称，第二日定于莫斯科时间 11 点、也就是格林尼治时间 8 点（台北时间 16 点、阿布扎比中午 12 点）恢复。截稿约台北时间 12:29，第二日还没有开始，也还没有签字文本。泽连斯基 10 日晚对记者说，双方讨论了大规模交换战俘的可能性，形式可能是「一千换一千」或「一千五换一千五」，并称美方会把这一议程带到俄罗斯；这不是已经签署的全面和平，也不能把单一消息源所说的「已经达成换俘协议」当成官方确认。鲁比奥称首日有成效，但明确说不是未来 24 小时就能解决的事。霍尔木兹方面，CNBC 11 日凌晨稿写袭船仍未放缓，10 月为开战以来单月遇袭最多的一个月之一，11 月也还有新的袭击记录；《黎明报》写伊朗外长称「达成协议后两日内复通」的提案仍在桌上，同时仍有油轮起火和阿联酋 ADNOC 船只在领海遇袭的报道——海峡还没有正常复通。中国把出口管制等再暂停约两个月，以及安塔利亚气候大会／1.5°C，已在先前各刊报过，本窗未见新的期限或新协议，不重复。",
+      "relevance": "把「第二日还没开谈、没有签字、换俘仍是在谈的可能性、霍尔木兹还没复通」写清楚，避免被读成和谈已经谈成或海峡已经重开。",
+      "sources": [
+        {
+          "label": "Ukrinform · 会谈结束，11 日上午续谈（2026-11-10 15:38 +02:00）",
+          "url": "https://www.ukrinform.net/rubric-polytics/4183380-ukraineusrussia-talks-in-abu-dhabi-adjourn-until-tomorrow.html"
+        },
+        {
+          "label": "Ukrinform · 泽连斯基：讨论大规模换俘的可能性（2026-11-10 23:51 +02:00）",
+          "url": "https://www.ukrinform.net/rubric-society/4183555-zelensky-possibility-of-largescale-prisoner-exchange-discussed-in-abu-dhabi.html"
+        },
+        {
+          "label": "Ukrinform · 鲁比奥：会谈有成效，协议还需要时间（2026-11-10 18:37 +02:00）",
+          "url": "https://www.ukrinform.net/rubric-polytics/4183472-abu-dhabi-alks-are-productive-but-agreement-will-take-time-rubio-says.html"
+        },
+        {
+          "label": "TASS · 第二日定于 08:00 GMT 恢复（2026-11-10T21:28:49Z）",
+          "url": "https://tass.com/politics/2215783"
+        },
+        {
+          "label": "TASS · 俄代表团 11 日将举行记者会（2026-11-10T16:58:19Z）",
+          "url": "https://tass.com/politics/2215693"
+        },
+        {
+          "label": "BBC · 泽连斯基称首日建设性（修改于 2026-11-10T21:21:55Z）",
+          "url": "https://www.bbc.com/news/articles/cqpvgvrpjvv8o"
+        },
+        {
+          "label": "The Guardian · 会谈将进入第二天（修改于 2026-11-11T03:26:39Z）",
+          "url": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks"
+        },
+        {
+          "label": "NHK World · 谈判定于星期三再聚（2026-11-11T09:31:16 JST）",
+          "url": "https://www3.nhk.or.jp/nhkworld/news/20261111de73877/"
+        },
+        {
+          "label": "CNBC · 霍尔木兹袭船仍在抵消停火希望（2026-11-11T03:13:03Z）",
+          "url": "https://www.cnbc.com/2026/11/11/oil-rises-from-two-month-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes.html"
+        },
+        {
+          "label": "Dawn · 伊朗称复通提案仍在桌上（2026-11-11）",
+          "url": "https://www.dawn.com/news/2043645/iran-urges-us-to-meet-terms-for-hormuz-opening"
+        }
+      ]
+    },
+    {
+      "id": "1111中-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "《自然·代谢》：肠道菌把胆固醇变成 4-C-3，在临床前模型里抑制结直肠癌，并能把突变 KRAS 卡住在失活状态",
+      "time": "2026-11-10",
+      "summary": "换赛道——肠道微生物与癌症代谢，不是早刊的太空引力波找行星，也不是近刊的疟蚊细胞隧道、假超新星或气候大会。《自然·代谢》（Nature Metabolism）2026 年 11 月 10 日发表香港浸会大学黄凯亮（Hoi Leong Xavier Wong）等领衔的论文：结直肠癌里常常堆积过量胆固醇，助长肿瘤生长，但靠全身降脂往往效果有限、还有安全顾虑。研究写，肠道微生物可以把胆固醇转成一种叫 4-cholesten-3-one（4-C-3）的代谢物；这种东西在结直肠癌病人的粪便和肿瘤样本里是偏低的。实验室里，4-C-3 能抑制多种结直肠癌细胞系、病人来源类器官和移植瘤的生长。机制上，它一边抑制表皮生长因子受体（EGFR）活化，一边把致癌的突变 KRAS 稳住在失活状态，从而在临床前模型里克服「KRAS 突变导致抗 EGFR 治疗失效」这一常见阻力。作为概念验证，研究用两种办法把 4-C-3 补回去：一种是天然会产 4-C-3、在结直肠癌患者中减少的细菌 Oscillibacter ruminantium；另一种是改过的非致病大肠杆菌，专门在肠道里把胆固醇转成 4-C-3。两者都在临床前模型里降低了瘤内胆固醇并促使肿瘤消退，文内称未见明显毒性。通讯作者单位包括香港浸会大学、复旦大学附属肿瘤医院和广东医科大学等。这仍是临床前研究，不是已经上市的药，也还没有在人体试验里被证实。部分作者就相关工作申请了专利。",
+      "relevance": "这不是「已经有了一种新抗癌药」，而是把肠道菌、胆固醇和两条很常见的肿瘤驱动通路拧在一起：也许不必全身猛降胆固醇，而是在局部改代谢，甚至用微生物代谢物去卡住很难成药的突变 KRAS。真正能不能用到人身上，还要等后续试验。",
+      "sources": [
+        {
+          "label": "Nature Metabolism · Microbiota-based modulation of intratumoral cholesterol metabolism（Published 10 November 2026）",
+          "url": "https://www.nature.com/articles/s42255-026-01655-0"
+        }
+      ]
+    }
+  ]
+}
