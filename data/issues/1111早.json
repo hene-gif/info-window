@@ -1,0 +1,318 @@
+{
+  "version": 1,
+  "id": "1111早",
+  "date": "2026-11-11",
+  "slot": "早",
+  "title": "11月11日 · 早",
+  "items": [
+    {
+      "id": "1111早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【后续】Gemini 4 Carbon 正式向付费开发者、企业与 Google AI Ultra 用户开放；同期预览 Antigravity 的 /swarm",
+      "time": "2026-11-11T02:17:44+08:00",
+      "summary": "【后续】这不是新模型的第一次亮相。讯息窗 1029早 已报：谷歌 10 月 28 日宣布 Gemini 4 Carbon，当时先给 Fairwind 计划里的网络安全防御方，公众和开发者要稍后再说。今天这条是「已经开放」。谷歌官方博客署 2026 年 11 月 10 日，作者是 DeepMind 负责人和谷歌首席 AI 架构师 Koray Kavukcuoglu；DeepMind 官号发帖时间为 18:17:44 UTC（台北时间 11 月 11 日 02:17:44），晚于晚刊约 19:30 的截稿。官方写：Carbon 是他们目前最强的模型，主打网络安全能力，以及知识工作、软件工程和科学推理里需要较长时间、多步验证的任务；Argon 仍被写成「大多数软件工程和知识工作的合适选择」，Carbon 会多用一些 token，把问题想得更开、验证跑得更久。付费开发者和企业可在 Google AI Studio、Android Studio 以及 Gemini for business 的 API 里调用，导入价格与 Argon 相同，为每百万 token 输入 2 美元、输出 10 美元；11 月 30 日导介期结束后，公开访问版将改为输入 4 美元、输出 20 美元。Google AI Ultra 订阅用户则在 Google Antigravity、Gemini 应用和搜索里的 AI Mode 滚动上线。官方还预览了 Antigravity 里的 /swarm：一条提示可以拉起一组可跟踪的代理，把最费思考的角色交给 Carbon，较快较轻的模型做并行改动，并设对抗式验证。谷歌称 Carbon 在 CursorBench 4.0、Perplexity 的 WANDR、Zapier 的 AutomationBench 上排第一，且平均每项任务成本不到「次优外部模型」的一半；与 Artificial Analysis 合做的多模态知识代理基准（MKA）上排第二，平均任务成本约为第一名的六分之一。这些榜是官方转述的第三方或合作评测，不是本窗复测。同日博客还提到，研究团队用 Carbon 和其他模型、再配上名为 AlphaProof Code 的形式化验证框架，协助为 Signal 加密协议的实际代码写 Lean 证明；这是研究侧进展，不是单独面向用户的产品发版。本窗亦扫过 xAI 新闻页（最新产品稿仍停在 11 月 2 日）、DeepSeek-V3 与 Qwen3 的 GitHub releases（近窗无新版本）、Anthropic 对齐博客 11 月研究篇，以及 @MetaAI、@deepseek_ai、@Alibaba_Qwen 自晚刊截稿后的时间线（无新帖）。@xai 官号本窗接口无权读取，不能写成已扫；OpenAI 官网 index／blog 本窗返回 403，Meta AI 博客返回 400，这两处覆盖不完整。灰度检索未见相对 1109晚 Sol 用户报告、1110晚 Grok 4.8 计划之外、可独立核对的新一轮官方或用户实测主条。",
+      "relevance": "1029早已经报过「先给防御方、公众稍后」。现在稍后到了：有 Ultra 订阅或付费 API 的人可以从今天起选用 Carbon，但导介价只到 11 月 30 日，官方也仍把日常编程和知识工作首选写成 Argon。",
+      "sources": [
+        {
+          "label": "Google 官方博客 · Gemini 4 Carbon is now available（2026-11-10）",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+        },
+        {
+          "label": "Google DeepMind 官号宣布开放（2026-11-10 18:17:44 UTC）",
+          "url": "https://x.com/GoogleDeepMind/status/2120219371473617099"
+        },
+        {
+          "label": "Google 开发者向博客 · Carbon 已向开发者开放",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/"
+        },
+        {
+          "label": "Antigravity 博客 · Gemini 4 Carbon and /swarm",
+          "url": "https://antigravity.google/blog/gemini-4-carbon-in-google-antigravity/"
+        },
+        {
+          "label": "讯息窗 1029早-1（Carbon 首发、先给防御方）",
+          "url": "https://hene-gif.github.io/info-window/"
+        }
+      ]
+    },
+    {
+      "id": "1111早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 启动 IPO 路演：拟定价每股 70–78 美元，申请纳斯达克代码 ANT；报道称上沿对应充分摊薄估值约 1.40 万亿美元",
+      "time": "2026-11-10T19:33:49+08:00",
+      "summary": "这是招股流程里新的一步，不是第一次报 S-1。官方新闻稿署 2026 年 11 月 10 日，官号发帖时间为 11:33:49 UTC（台北时间 19:33:49），紧挨着晚刊约 19:30 的截稿，晚刊未收入。Anthropic 宣布启动拟议 IPO 路演：拟发行 8.25 亿股 A 类普通股，定价区间每股 70.00–78.00 美元；其中公司发行 801,351,354 股，现有股东出售 23,648,646 股，公司拿不到股东售股的钱；另拟授予承销商 30 天内最多再买 123,750,000 股的选择权。公司已申请在纳斯达克全球精选市场上市，代码 ANT。登记声明已向 SEC 递交但尚未生效，官方强调此时还不能卖、也不能接受买盘。按区间粗算，整笔公开发售（含股东售股）规模约 577.5 亿至 643.5 亿美元。CNBC 与 TechCrunch 根据更新后的申报材料报道：区间上沿对应充分摊薄估值分别写为约 1.405 万亿和 1.404 万亿美元，高于今年 5 月融资估值 9650 亿美元，但低于此前流传的约 2 万亿目标。两家还引述公司申报称，已与 AMD、博通、谷歌、美光、微软、英伟达和台积电达成协议，按 IPO 价格私募约 260 亿美元无投票权的 N 类股；TechCrunch 另写谷歌和英伟达各 100 亿美元，这是该刊对申报的转述，本窗未打开招股说明书逐条复核。CNBC 还引述申报：截至 10 月底年化营收约 810 亿美元，比 9 月底多约 100 亿美元。定价和开盘日官方稿没有写死；CNBC 援引不愿具名的知情人士称，计划 11 月 18 日定价、19 日开盘，并向零售投资者分配约 20%——这不是公司公告，先当计划而不是已敲定的时间表。",
+      "relevance": "路演启动意味着定价区间和代码已经摆到桌上，但登记声明还没生效，股票也还没开始卖。对妮可来说，这是把「要上市」推进到「按多少钱卖、估值大概落在哪」；1.40 万亿是报道根据充分摊薄算出来的上沿，不是已经成交的市值。",
+      "sources": [
+        {
+          "label": "Anthropic 官方 · 启动拟议 IPO 路演（2026-11-10）",
+          "url": "https://www.anthropic.com/news/roadshow-launch"
+        },
+        {
+          "label": "Anthropic 官号公布路演（2026-11-10 11:33:49 UTC）",
+          "url": "https://x.com/AnthropicAI/status/2120117722230968385"
+        },
+        {
+          "label": "CNBC · 定价区间 70–78 美元，充分摊薄估值上沿约 1.405 万亿美元",
+          "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+        },
+        {
+          "label": "TechCrunch · 定价区间与约 1.404 万亿估值、260 亿美元私募",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+        }
+      ]
+    },
+    {
+      "id": "1111早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 上线 Businesses in ChatGPT（测试版）：商家认领资料，符合条件的美国电商可做 Business Agent",
+      "time": "2026-11-11T02:06:42+08:00",
+      "summary": "OpenAI 官号于 2026 年 11 月 10 日 18:06:42 UTC（台北时间 11 月 11 日 02:06:42）宣布测试版「Businesses in ChatGPT」，官方产品页同步上线，晚于晚刊截稿。商家可以认领并核验自己的业务资料，在 Business Hub 里更新关键信息，零售商还可上传带价格和库存的产品目录；核验通过后，ChatGPT 回答顾客问题时可以使用这些材料。符合条件的美国电商和在线服务商家还可以发布 Business Agent：顾客在单独、带标注的对话里问产品或政策，用的是商家提供的信息，官方强调这与 ChatGPT 自己的独立回答分开，也不会向商家分享用户对话或 Agent 聊天内容。认领后资料页会出现蓝勾；官方写明，认领并不保证排序更靠前或带来更多销售，没有 Agent 时 ChatGPT 仍可能展示该商家的公开信息。谁能认领，取决于行业、地点以及核验和诚信审查，起步对象是有网站、且 ChatGPT 可用地区的符合条件商家。Shopify 商户可以把店铺接进来创建 Agent。OpenAI 官网 index／blog 列表页本窗返回 403，不能写成已扫标题列表；本条依据官号长帖和成功打开的产品页。",
+      "relevance": "这是把 ChatGPT 从「回答里偶尔提到某家店」推进到「店家可以自己维护资料、有条件还可以放一个带标注的店员」。若你在美国做电商，值得看要不要认领，以免资料过时；普通用户则要分清：带商家标签的对话是店家提供的信息，不是 ChatGPT 自己的独立判断。",
+      "sources": [
+        {
+          "label": "OpenAI 官方产品页 · Businesses in ChatGPT",
+          "url": "https://openai.com/business/businesses-in-chatgpt/"
+        },
+        {
+          "label": "OpenAI 官号宣布测试版（2026-11-10 18:06:42 UTC）",
+          "url": "https://x.com/OpenAI/status/2120216592395174382"
+        },
+        {
+          "label": "OpenAI 官号说明 Business Hub 与隐私边界",
+          "url": "https://x.com/OpenAI/status/2120216596753121411"
+        }
+      ]
+    },
+    {
+      "id": "1111早-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Anthropic 推出 Claude Sheets、Whiteboards（测试版），原 Dashboards 改名 Claude Data 并转正；报道称 Meetings 可进 Google Meet",
+      "time": "2026-11-11T01:30:00+08:00",
+      "summary": "官方产品更新页署 2026 年 11 月 10 日；TechCrunch 稿件时间 当天 9:30 AM PST（台北时间 11 月 11 日 01:30），晚于晚刊截稿。Anthropic 官方文章写：今天推出测试版 Claude Whiteboards 和 Claude Sheets，并把 10 月测试的 Claude Dashboards 转成正式版，改名为 Claude Data；这三样都面向所有付费方案，可在网页、桌面和手机上用。Whiteboards 是团队和 Claude 共用的白板，可以把讨论整理成带负责人和日期的时间线，再导出成文档或幻灯，或接到 Lucid、Miro 等合作工具。Sheets 能按一句提示生成带标签页、公式、格式和下拉菜单的表格，Claude 会在单元格里改、并标出每处改动；官方说目前功能还比较简单，需要完整 Excel 能力时可导出 xlsx／CSV，或用 Claude for Excel。Claude Data 可连接数据仓库或 CRM，新增认证指标、数据故事或旁白视频、实时分享和版本回滚；认证查询和实时分享仍是测试版。团队方案默认打开这三项；企业方案里 Whiteboards 和 Sheets 默认关闭，Claude Data 将于 11 月 19 日默认打开，管理员可在组织设置里改。同日还宣布交互式连接器可把合作方应用以完整界面开在对话旁边。Claude Meetings 不在上述官方 Sheets／Data 主文的标题里：TechCrunch、The Verge、Axios 和路透转述称，团队与企业方案的测试版可把 Claude 作为可见参与者加入 Google Meet，边听边做计划、时间线和聊天问答，并在聊天里自我标示；有外部客人时默认不加入，若中途进来会离开。Meetings 的细节目前以这些报道为准，本窗未单独打开一篇官方 Meetings 专页。",
+      "relevance": "这是 Anthropic 在路演启动同一天把 Claude 往办公套件推了一截：表格和白板已有官方说明，付费用户可以自己试；会议功能先按报道理解，且目前主要面向团队／企业、先接 Google Meet。",
+      "sources": [
+        {
+          "label": "Claude 官方 · Introducing Claude Whiteboards, Claude Sheets, and Claude Data（2026-11-10）",
+          "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
+        },
+        {
+          "label": "Claude 产品更新列表（11 月 10 日三条）",
+          "url": "https://claude.com/resources/product-updates"
+        },
+        {
+          "label": "TechCrunch · Claude Meetings／Sheets／Whiteboards（9:30 AM PST）",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+        },
+        {
+          "label": "The Verge · Anthropic 推出 AI 办公套件",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now"
+        }
+      ]
+    },
+    {
+      "id": "1111早-5",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "DeepMind 发布 Gemini Robotics 2.5：视觉—语言—动作模型，阿波罗 2 人形机器人在奔驰产线试验里分拣正确率约 96%",
+      "time": "2026-11-10T23:00:42+08:00",
+      "summary": "Google DeepMind 官方博客署 2026 年 11 月 10 日，官号发帖时间为 15:00:42 UTC（台北时间 23:00:42），晚于晚刊截稿。官方称 Gemini Robotics 2.5 是迄今最强的视觉—语言—动作模型，要同时提高机器人能学的技能面、学会的速度、灵活度、可靠性和安全；它会向 Robotics 合作伙伴滚动开放，不是面向普通消费者的应用上架。评测覆盖 200 多项任务，例如用夹子上菜、给礼物打蝴蝶结、用移液器取液体；官方称相对此前基线，成功率按任务类型提高约 30% 到 100%，完成时间快约 20% 到 30%，这些是公司自己的评测。现实场景方面，官方写与 Apptronik、梅赛德斯—奔驰合作，在匈牙利 Kecskemét 和德国辛德芬根仍在运转的汽车产线上，用 Apollo 2 人形机器人做汽车零件分拣配盘，正确率约 96%；Apptronik 联合创始人兼首席执行官 Jeff Cardenas 在通稿里说，后训练几周后迁到奔驰产线，表现下降很小。安全方面，官方称推理时的引导能让机器人绕开障碍和附近的人，内部评测里在障碍附近安全完成任务提高约 33%，在人附近提高约 43%；并开源机器人越狱基准 ASIMOV-Jailbreak。文中写 Gemini 4 Argon 在该基准上达到约 99.5% 的抵抗率，对比此前基线 Gemini Robotics ER 2 的约 82%——注意这组越狱数字写的是 Argon，不是 2.5 本身。官方还说 Argon 能从单张实景相机画面生成大量模拟练习，用来加快 2.5 的训练。",
+      "relevance": "这是机器人基础模型的官方新版本，不是聊天机器人发版。目前只给合作伙伴，普通用户还用不上；真正值得盯的是奔驰产线上的分拣试验能不能从概念验证变成更稳定的产线应用。",
+      "sources": [
+        {
+          "label": "Google DeepMind 官方 · Gemini Robotics 2.5（2026-11-10）",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+        },
+        {
+          "label": "DeepMind 官号宣布 Robotics 2.5（2026-11-10 15:00:42 UTC）",
+          "url": "https://x.com/GoogleDeepMind/status/2120169787896525104"
+        },
+        {
+          "label": "DeepMind 官号 · 奔驰产线 Apollo 2 分拣试验约 96%",
+          "url": "https://x.com/GoogleDeepMind/status/2120169796184478162"
+        }
+      ]
+    },
+    {
+      "id": "1111早-6",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "SINGULUS 宣布与 SpaceX 签订 HJT 太阳能电池产线合同：首条逾 6000 万欧元，规划设备规模超过 100 GW",
+      "time": "2026-11-11T07:47:57+08:00",
+      "summary": "德国设备商 SINGULUS TECHNOLOGIES 2026 年 11 月 10 日在卡尔发表官方通稿：已与 SpaceX 签订供应合同，交付一条用于制造异质结（HJT）太阳能电池的交钥匙产线；这是双方战略合作的一部分，SINGULUS 还计划再交付多条产线。官方写明：更广泛供应协议下的第一条产线订单金额超过 6000 万欧元，将于 2027 年上半年交付；产线将随着 SpaceX 在得州巴斯托普加快卫星制造而扩建，以支持超过 100 GW 的生产设备。通稿并回顾：双方 2026 年 3 月开始战略合作，SpaceX 曾在 3 月和 10 月向 SINGULUS 提供资金，10 月这笔是此前已宣布的次级担保贷款。马斯克 11 月 10 日 23:47:57 UTC（台北时间 11 月 11 日 07:47:57）发帖称，「SpaceX 已向德国 SINGULUS 订购每年 100 GW 的 HJT 太阳能制造设备」，并写这是为了 Starmind「创造一颗有感知的太阳」。100 GW 在公司通稿里是「生产设备将扩大到支持超过 100 GW」的规划口径，不是说这一单已经是 100 GW 的在手产能，也不是已经并网的发电量；「有感知的太阳」是马斯克自己的说法，不是 SINGULUS 通稿用语。本窗按公司合同写事实，把他的那句当作附加表述。",
+      "relevance": "若你关心 SpaceX 给太空算力／卫星供电，这是供应商自己确认的设备大单，但要把「首条逾 6000 万欧元、2027 年上半年交货」和「规划超过 100 GW 设备规模」分开看，不要把规划规模读成已经落地的发电能力。",
+      "sources": [
+        {
+          "label": "SINGULUS 官方通稿（2026-11-10，卡尔）",
+          "url": "https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/"
+        },
+        {
+          "label": "马斯克相关帖文（2026-11-10 23:47:57 UTC）",
+          "url": "https://x.com/elonmusk/status/2120302471210033426"
+        }
+      ]
+    },
+    {
+      "id": "1111早-7",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "CISA 把 Outlook 欺骗漏洞列入已知在野利用目录：补丁星期二同期修复；Chrome 那条在野漏洞也正式入目录",
+      "time": "2026-11-11T03:03:29+08:00",
+      "summary": "CISA 已知被利用漏洞（KEV）目录本窗成功打开：catalogVersion 更新为 2026.11.10，dateReleased 为 2026-11-10T19:03:29.8375Z（约台北时间 11 月 11 日 03:03），条目增至 1779 条，比晚刊所见 2026.11.09／1773 条新列入 6 条，添加日均为 11 月 10 日。对普通人最直接的是 CVE-2026-124194：CISA 写明这是 Microsoft Office Outlook「缺少对潜在不安全操作的用户交互」漏洞，未授权攻击者可在网络上实施欺骗（spoofing）；微软更新指南链接已写在目录备注里，联邦机构截止日期为 11 月 24 日。KEV 的含义是：CISA 认定该漏洞已被实际利用，不是普通的理论披露。Krebs on Security 11 月 10 日刊出补丁星期二综述，称微软此次修复约 1093 个漏洞、其中 63 个被标为严重；本窗将 Outlook 这一条作为须行动的主条，不把整份补丁清单升格。同一批新列入的还有 CVE-2026-125350（Chromium XML 组件释放后使用，可在沙箱内执行代码，波及 Chrome、Edge、Opera 等）：谷歌 11 月 9 日已推出稳定版修复，晚刊已提醒过更新，本窗只补一句——它现在正式进入 KEV，若还没更新，仍然应该更新并重启浏览器。其余四条为 Openwave 邮件转码组件、Cisco BroadWorks 以及 Barracuda 多款网关／负载均衡产品的认证绕过与命令注入链（后两条截止日期更紧，为 11 月 13 日），属于企业邮件和电信设备，不单开主条。本窗已扫 CISA 警报列表页与 KEV JSON、Krebs、Wiz（11 月 10 日为评测教程和日本公共部门合规文，不是新的在野实害主条；Qubole 跨账户滥用仍是 11 月 9 日、早刊已见，不重复）、CrowdStrike 博客（近窗仍停在 11 月 4–5 日）、Microsoft Security 博客列表页，以及 Mandiant／GTIG 主题列表（仍是此前已点名的 AI Threat Tracker、LLMJacking、XCPE、ARTEX 等，未见 11 月 10–11 日新主文）。",
+      "relevance": "若你用 Outlook 或微软 365，这几天把 Office 更新装上，不要只看「又是补丁星期二」就略过——CISA 已经把它标成已知在野利用，截止日期是 11 月 24 日。若还在用 Chrome／Edge 且上次没更新：11 月 9 日那个稳定版仍然该装，并重启浏览器。",
+      "sources": [
+        {
+          "label": "CISA · KEV JSON（catalogVersion 2026.11.10，dateReleased 19:03:29Z）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "CISA · 已知被利用漏洞目录",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CISA · 网络安全通告列表",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "Microsoft 安全更新指南 · CVE-2026-124194",
+          "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-124194"
+        },
+        {
+          "label": "Krebs on Security · 微软修复约 1100 个漏洞（2026-11-10）",
+          "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/"
+        },
+        {
+          "label": "Chrome 稳定版更新（2026-11-09，KEV 补记）",
+          "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_018223192.html"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        }
+      ]
+    },
+    {
+      "id": "1111早-8",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周二收跌：标普7520.93（−0.38%）、纳指25065.87（−0.74%）、道指52231.89（−0.30%），CPI 高于预期；欧股收盘涨跌互见；日经早盘回吐至60439.34（−0.03%）",
+      "time": "2026-11-11T08:28:00+08:00",
+      "summary": "相对晚刊（当时美股现金尚未开，仍指向周一收盘标普 7549.94、纳指 25253.14、道指 52389.75；欧股仍是盘中；亚股已报周二收盘）：美国劳工统计局 11 月 10 日 8:30 ET 公布 10 月 CPI：季调后整体比 9 月升 0.4%（9 月为 0.6%），扣除食品和能源的核心升 0.3%，与 8 月、9 月相同；住房升 0.3%，官方称占整体升幅三成以上；食品升 0.5%，能源升 0.7%，其中汽油季调后升 1.0%，电价升 0.9%，天然气降 0.8%。因 2025 年 10 月政府停摆导致当时多数指数缺失，这次不能公布 2026 年 10 月的同比。CNBC 称经济学家原先预期整体 0.3%、核心 0.2%。美联储理事沃勒在伦敦、于数据公布前发表讲话，CNBC 转述其口径是：若核心物价大约在 0.3%，12 月议息应把加息 50 个基点放到桌上。美股随即收低，本窗数字与美联社、Sharecast、新华社英文稿一致：标普 7520.93（−29.01／−0.38%），纳斯达克综合指数 25065.87（−187.26／−0.74%），道指 52231.89（−157.86／−0.30%）。英伟达收 168.89 美元，较周一收 178.67 下跌 9.78 美元（−5.47%）。Yahoo 日线显示 VIX 收 19.46，低于周一 19.92；10 年期美债收益率收 4.983%，较周一 4.864% 约升 12 个基点。欧股已收：道琼斯市场数据经晨星转载，STOXX 50 收 6327.87（+37.42／+0.59%）；Yahoo 收盘价与之相符的还有德国 DAX 26347.45（+0.31%）、英国富时 100 10751.59（−0.29%）、法国 CAC 40 8278.59（+0.55%），均低于晚刊所见盘中高点。原油结算方面，新华社纽约电：WTI 12 月合约收 86.04 美元（−0.81／−0.93%），布伦特 1 月合约收 91.49 美元（−1.08／−1.17%）。COMEX 黄金前月（11 月合约）据道琼斯市场数据经晨星转载，收 4020.70 美元／盎司（−84.30／−2.05%），相对晚刊所引周一结算 4105.00。亚洲方面：台股、港股和 A 股此刻尚未开盘（台北约 08:28），仍指向晚刊已报的周二收盘——台股 42711.92（+2.52%）、恒指 24557.04（+0.44%）、上证 3663.72（+0.08%）、深成 11241.54（+0.86%）。日经官方站点 11 月 11 日 09:28 日本时间（台北 08:28）报 60439.34（−20.24／−0.03%），略低于周二收 60459.58。韩国综合指数 Yahoo 约 08:04 台北为 5227.51（相对周二收 5239.13 约 −0.22%），开 5209.71、高 5246.14，属盘中延迟价，不是收盘。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "早刊真正新结算下来的是美股周二收跌、欧股收盘从晚刊盘中高点回落、油和金正式结算再跌、美债收益率上行；催化剂是官方 CPI 高于预期。日经此刻几乎平开略低，台港 A 股还没开，不要把昨晚亚股大涨直接外推到今天。",
+      "sources": [
+        {
+          "label": "美国劳工统计局 · 2026 年 10 月 CPI（USDL-26-1685，档案页）",
+          "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+        },
+        {
+          "label": "美国劳工统计局 · CPI 摘要当前页",
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+        },
+        {
+          "label": "CNBC · 10 月 CPI 高于预期，核心 0.3%",
+          "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+        },
+        {
+          "label": "美联储 · 沃勒 11 月 10 日讲话",
+          "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm"
+        },
+        {
+          "label": "Sharecast · 美股收盘：道指 52231.89、标普 7520.93、纳指 25065.87",
+          "url": "https://www.sharecast.com/news/market-report-us-close/wall-street-nyse-dow-jones-nasdaq-stocks-equities--24118290.html"
+        },
+        {
+          "label": "美联社 · How major US stock indexes fared Tuesday 11/10/2026",
+          "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a97eb31c415811065561f2c2ac552cd7"
+        },
+        {
+          "label": "新华社英文 · 美股收低（标普 7520.93 / 纳指 25065.87 / 道指 52231.89）",
+          "url": "https://www.thestar.com.my/news/world/2026/11/11/us-stocks-close-lower"
+        },
+        {
+          "label": "Investing.com · 收盘综述（含英伟达 168.89，−5.47%）",
+          "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-030-5016940"
+        },
+        {
+          "label": "道琼斯市场数据／晨星 · STOXX 50 收 6327.87（+0.59%）",
+          "url": "https://www.morningstar.com/news/dow-jones/202611108504/euro-stoxx-50-index-ends-059-higher-at-632787-data-talk"
+        },
+        {
+          "label": "Yahoo Finance · DAX／富时 100／CAC 40 收盘",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+        },
+        {
+          "label": "新华社 · WTI 收 86.04、布伦特收 91.49",
+          "url": "https://english.news.cn/20261111/5dcdb4c27d894a41a31000e49c960328/c.html"
+        },
+        {
+          "label": "道琼斯市场数据／晨星 · COMEX 黄金前月收 4020.70（−2.05%）",
+          "url": "https://www.morningstar.com/news/dow-jones/202611108909/comex-gold-settles-205-lower-at-402070-data-talk"
+        },
+        {
+          "label": "日经官方指数站 · 11 日 09:28 日本时间 60439.34（−0.03%）",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/"
+        },
+        {
+          "label": "Yahoo Finance · 韩综盘中、10 年期美债、VIX、英伟达日线",
+          "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        }
+      ]
+    },
+    {
+      "id": "1111早-9",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-11",
+      "summary": "这段时间没有达「签署全面和平或停火协议、霍尔木兹实质性重开或更严重关闭、战事扩到新的大战场」门槛的国际硬新事实。本窗打开了乌克兰通讯社 Ukrinform 和 Euromaidan Press 对阿布扎比首日会谈的报道（美联社相关电稿本窗抓取超时，Foreign Policy 与 The Guardian 直播页本窗未成功打开全文，这几处不能写成已扫确无）。Ukrinform 11 月 10 日 15:38 发稿，引述乌克兰对外情报局新闻处：当天三方会谈已经结束，将于 11 月 11 日上午继续；新闻处同时说，目前尚未公布首日结果。Euromaidan Press 转述《乌克兰真理报》接近乌克兰代表团的消息源称，双方就大规模交换战俘达成协议，并称会议主要讨论对乌克兰和欧洲的安全保证；美方官员仍预期这两天谈不成最终方案，俄方继续拒绝单纯停火、并要求拿到顿涅茨克州其余部分。交换战俘目前是单一消息源，与乌方官方「尚未公布首日结果」并存，本窗不把它写成已经签署的全面停火或和平协议。伊朗和霍尔木兹线仍是此前已报的口头定性——军事上「实际上已经结束」、维持封锁、海峡并未复通——本窗未见复通或更严重关闭的新事实，不重复。中国出口管制再暂停约两个月，晚刊已报，未见新变化。",
+      "relevance": "把「会谈还要继续、全面协议还没签」写清楚；战俘交换目前只有转述的消息源，不要把它读成和谈已经谈成，也不要把霍尔木兹现状读成已经复通。",
+      "sources": [
+        {
+          "label": "Ukrinform · 乌克兰对外情报局：会谈结束，11 日上午继续；尚未公布首日结果（2026-11-10 15:38）",
+          "url": "https://www.ukrinform.net/rubric-polytics/4183380-ukraineusrussia-talks-in-abu-dhabi-adjourn-until-tomorrow.html"
+        },
+        {
+          "label": "Euromaidan Press · 转述《乌克兰真理报》消息源称就大规模换俘达成协议",
+          "url": "https://euromaidanpress.com/2026/11/10/day-one-in-abu-dhabi-us-officials-real-chance-again-runs-into-russias-unchanged-demand-for-the-rest-of-donetsk-oblast-unacceptable-for-ukraine/"
+        },
+        {
+          "label": "BBC · 阿布扎比会谈（晚刊已用，作背景交叉）",
+          "url": "https://www.bbc.com/news/articles/cqpvgvrpjvv8o"
+        }
+      ]
+    },
+    {
+      "id": "1111早-10",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "NASA：未来的太空引力波望远镜，有望靠「信号旁边的小鼓包」发现绕双白矮星运行的新行星",
+      "time": "2026-11-10",
+      "summary": "换赛道——引力波与系外行星，不是晚刊的疟蚊细胞隧道，也不是近刊的假超新星、DNA 活性物质或气候大会。美国宇航局科学网站 11 月 10 日刊出弗朗西斯·雷迪的通稿：由欧洲空间局主导、NASA 参与的 LISA（激光干涉太空天线）仍在研制、计划 2030 年代中期发射；马里兰大学巴尔的摩县与戈达德航天中心的 Casey McGrath 领衔的两篇论文同日发表在《天体物理学杂志》上，细写了它可能怎样找到一类以前没被观测到的系外行星。LISA 最常见的目标预计是贴得很近、互相绕转的双白矮星。如果还有一颗行星绕着这对恒星转，它的引力会让双星产生轻微晃动，在原本几乎固定频率的引力波上叠出多普勒调制，表现为主信号两侧稍高和稍低频率上的「边带」——有点像广播里载波两边载着声音的边带。麦格拉斯一篇论文讨论这种方法最灵敏的行星质量和轨道周期；他与合作者的第二篇则讨论怎样用詹姆斯·韦伯太空望远镜的红外过量，在大约几百光年之内核实这些候选。通稿写：银河系里轨道周期短于一小时的双白矮星估计约有 1000 万对，LISA 有望分辨其中约 1 万对；韦伯在约 500 光年处可看到大约 5 倍木星质量的行星，LISA 在理想情况下有可能看到亚木星质量的行星。绕单独白矮星的行星已有少量发现，但还没有确认绕双白矮星运行的行星；若 LISA 探测成功，这将是一个新的行星族群。2008 年日本天文学家濑户直辉已提出过这一思路，此次是把探测方法和韦伯交叉验证写得更具体。LISA 由三艘飞船组成边长约 250 万公里的三角阵，测量比氦原子还小的距离变化。",
+      "relevance": "这不是「已经找到了一颗新行星」，而是把一套还在研制的太空引力波望远镜，写成也许能听见双白矮星身边的行星。对喜欢看宇宙怎么被测到的人来说，有意思的是：行星不一定要靠光，引力波的边带也可能把它抖出来，但要等到 2030 年代 LISA 升空后才能真正检验。",
+      "sources": [
+        {
+          "label": "NASA Science · Gravitational Waves Can Reveal New Worlds（2026-11-10）",
+          "url": "https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/"
+        },
+        {
+          "label": "NASA LISA 任务页",
+          "url": "https://science.nasa.gov/mission/lisa/"
+        }
+      ]
+    }
+  ]
+}
