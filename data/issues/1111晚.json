@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "id": "1111晚",
+  "date": "2026-11-11",
+  "slot": "晚",
+  "title": "11月11日 · 晚",
+  "items": [
+    {
+      "id": "1111晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】MiniMax 发布 H3-Image：官方称可在 10 秒内生成 4K 图，权重已放到 Hugging Face，并接入 API、MiniMax Code 与海螺",
+      "time": "2026-11-10T23:40:15+08:00",
+      "summary": "【补报】这不是今晚才发布的。MiniMax 官号 @MiniMax_AI 于 2026 年 11 月 10 日 15:40:15 UTC（台北时间 23:40:15）发帖宣布 MiniMax H3-Image；官方博客页可见日期是 2026-11-11，但页内 JSON-LD 的发布与修改时间都是 2026-11-10T16:23:20Z（台北时间 11 月 11 日 00:23:20）。这晚于 1110晚约 19:30 的截稿，但早于 1111早约 08:30 和 1111中的截稿，早刊和中刊都没有收入，故按真实日期补报。不要写成今晚才上线。官方博客标题是「Bringing 4K Image Generation into the 10-Second Era」。公司原文写：今天发布基于 H3 的开源权重图像生成模型，支持文生图、参考图生成和图像编辑；官方称可在 10 秒内生成 4K（4096×4096）图像，最多理解并使用 16 张参考图。博客还写 4K 生成「最高可达主流方案的 5 倍速度」、在开源权重模型中提示词遵循为 state-of-the-art，以及 Standard 模式比 mainstream alternatives 快 1.5–2 倍、Highspeed 模式 3–4 倍、定价为同类的 50–70%、上线周对 4K 及以上请求按标准价 5 折——这些都是公司自称，不是第三方评测。提供渠道是 MiniMax API、MiniMax Code 和 Hailuo AI（海螺），权重放在 Hugging Face（MiniMaxAI/MiniMax-H3-Image）。Hugging Face 模型卡补充：文生图和图像编辑做在同一个 checkpoint；约 1600 万像素，常见尺寸从 4096×4096（1:1）到 6272×2688（21:9），官方写无需上采样器；蒸馏为 6 步采样、无 classifier-free guidance；DiT 为 331 亿参数（50 层，hidden size 5376）；文本编码器沿用 MiniMax-H3 的 Qwen3-VL 文本编码器，需另下 MiniMaxAI/MiniMax-H3 的 text_encoder/。许可是 MiniMax-H3-Image Community License，不是可以任意商用的 MIT；模型卡写明许可第四节的书面授权要通过申请表。仓库 createdAt 为 2026-11-03T06:34:36Z，不能把这一天写成已经公开发布；lastModified 为 2026-11-11T07:10:27Z（台北 15:10:27），只能说明此后页面还有更新。TechNode 11 月 11 日 06:55:32 UTC（台北 14:55:32）短讯与官方口径一致：权重已放 Hugging Face，称可在 10 秒内生成 4096×4096，最多 16 张参考图，并经 API 提供。",
+      "relevance": "这是连续两刊漏收的官方开源权重图像模型补报：能试、也能下权重，但 10 秒 4K 和「快 5 倍」都是公司自己的说法，许可也不是 MIT。",
+      "sources": [
+        {
+          "label": "MiniMax 官方博客 · MiniMax H3-Image（JSON-LD 2026-11-10T16:23:20Z）",
+          "url": "https://www.minimax.io/blog/minimax-h3-image"
+        },
+        {
+          "label": "MiniMax 官号宣布 H3-Image（2026-11-10 15:40:15 UTC）",
+          "url": "https://x.com/MiniMax_AI/status/2120179737695826420"
+        },
+        {
+          "label": "Hugging Face · MiniMax-H3-Image 模型卡",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image"
+        },
+        {
+          "label": "MiniMax API · 图像生成文档",
+          "url": "https://platform.minimax.io/docs/guides/image-generation"
+        },
+        {
+          "label": "TechNode · MiniMax 发布 H3-Image 权重（2026-11-11T06:55:32Z）",
+          "url": "https://technode.com/2026/11/11/minimax-releases-h3-image-weights-says-model-can-generate-4k-images-in-under-10-seconds/"
+        }
+      ]
+    },
+    {
+      "id": "1111晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【后续】阿里云官方文档补上 Qwen4-Max-Preview 规格：上下文 100 万 Token，最大输出 393,216 Token；仍为预览，仅 Token Plan",
+      "time": "2026-11-11",
+      "summary": "【后续】这不是 Qwen4 的二次发布，也不是全系列正式上市。讯息窗 1111中-1 已报：通义官号宣布 Qwen4 即将发布，Qwen4-Max 预览上线 Token Plan，预览期为 11 月 11 日 10:00 到 11 月 25 日 24:00（UTC+8），模型 ID 为 qwen4-max-preview；当时依据官帖和 Token Plan 总览，写明官方材料没有给出参数量、基准分数和上下文长度。本次打开的阿里云帮助中心「最新模型：Qwen4-Max-Preview」中英页，已经出现规格表。英文页 Last Updated、国际中文页「更新时间」都写 Nov 11, 2026，文档没有精确到时分，不能断言一定晚于中刊约 12:30 的截稿；中刊当时核的是 Token Plan 总览和官帖，没有打开这页模型文档，所以这是当时未写入刊文的官方规格补记。中英规格一致：上下文长度 1M Token，最大输出 393,216 Token，思考与最终回答共享这一预算。能力栏写：默认开启思考，可用 reasoning_effort 调力度（low / medium / xhigh，默认 xhigh）；接受文本、图片和视频；支持 Function Calling、联网搜索、结构化输出；兼容 OpenAI Chat Completions、Responses 和 Anthropic Messages。仍写明：当前为预览，仅 Token Plan，不支持按量计费；预览期与中刊已报相同，期间不做变更，预览结束后下线。接入地址中英页不同，不要混写：国际页 Base URL 为 https://token-plan.ap-southeast-1.maas.aliyuncs.com，help.aliyun.com 中文页为 https://token-plan.cn-beijing.maas.aliyuncs.com。Token Plan 个人版总览中英页本次重开，仍不列 1M 和 393,216，只保留模型 ID、预览期和能力栏——也就是说，这两个数字目前能落到的官方出处是阿里云模型文档，不是套餐总览，也不是中刊已引的官帖。TechNode 英文短讯发布时间为 2026-11-11T06:54:42Z（台北 14:54:42，晚于中刊截稿），写阿里周三打开 Qwen4-Max 预览，支持图像和视频输入，并可处理最多一百万 token 上下文。本窗亦扫过 OpenAI blog／index 与 ChatGPT 更新说明（curl 遇 403，已用页面抓取补齐；置顶新出现 11 月 11 日退伍军人节纪念稿，是既有一年免费 Plus 的回顾，不是新模型或新订阅产品；API changelog 最新仍是 11 月 5 日 gpt-6-cyber）、Anthropic news／对齐博客／Claude 产品更新、Google AI 与全站 RSS（HTML 列表页未渲染出文章，该页覆盖不完整；RSS 已补扫，11 月 11 日仅见 Esther Mahlangu 艺术稿）、DeepMind 博客、x.ai 新闻页、Meta AI 博客与 research.meta.ai、DeepSeek GitHub releases 与官网新闻、Qwen GitHub releases，以及 @elonmusk、@OpenAI、@AnthropicAI、@GoogleDeepMind、@MetaAI、@AIatMeta、@deepseek_ai、@Alibaba_Qwen、@sama、@demishassabis、@karpathy、@dotey、@claudeai、@SpaceXSI 自中刊截稿后的时间线。@xai 官号时间线本窗接口仍无权读取，不能写成已扫；回退检索 from:xai 与 @SpaceXSI 时间线为 0 帖，x.ai/news 无本窗新文。灰度检索（中英）未见相对 1109晚 Sol 用户报告、1110晚 Grok 4.8 计划之外、可独立核对的新一轮官方确认；changelog 与更新说明仍未写入 6.2，也不能把 Grok 4.8 写成已经开始 soft rollout。英伟达新闻室无 11 月 11 日新声明。",
+      "relevance": "中刊时还不能写进正文的上下文和最大输出，现在可以落到阿里云模型文档上了；预览期、仅 Token Plan、以及还没有官方参数和跑分，这几条都没变。",
+      "sources": [
+        {
+          "label": "阿里云帮助中心 · Qwen4-Max-Preview 模型文档（英文，Last Updated: Nov 11, 2026）",
+          "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview"
+        },
+        {
+          "label": "阿里云帮助中心 · Qwen4-Max-Preview 模型文档（中文）",
+          "url": "https://help.aliyun.com/zh/model-studio/qwen4-max-preview"
+        },
+        {
+          "label": "Qwen Token Plan 官方文档（中文）：总览仍不列上下文与最大输出",
+          "url": "https://platform.qianwenai.com/docs/token-plan/personal/token-plan-personal-overview"
+        },
+        {
+          "label": "Qwen Token Plan 官方文档（英文）",
+          "url": "https://docs.qwencloud.com/token-plan/personal/token-plan-personal-overview"
+        },
+        {
+          "label": "TechNode · 阿里打开 Qwen4-Max 预览并写明百万 token 上下文（2026-11-11T06:54:42Z）",
+          "url": "https://technode.com/2026/11/11/alibaba-opens-qwen4-max-preview-with-a-million-token-context-window/"
+        }
+      ]
+    },
+    {
+      "id": "1111晚-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-11",
+      "summary": "这段时间没有相对中刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA 警报列表和已知被利用漏洞目录 JSON（均成功打开：catalogVersion 仍为 2026.11.10，dateReleased 仍为 2026-11-10T19:03:29Z，约 11 月 11 日 03:03 台北时间，目录仍是 1779 条，与早刊、中刊所见完全相同，没有中刊之后的新入目录项；置顶警报仍是 11 月 10 日那六条，其中对普通人最直接的 Outlook 欺骗 CVE-2026-124194 和已在野的 Chrome CVE-2026-125350，早刊已经报过，中刊也确认目录未再更新）、Krebs（首页最新仍是 11 月 10 日补丁星期二综述，写微软此次修复 1,093 个漏洞、63 个严重漏洞，已在野的仍是那条 Outlook）、Wiz（最新仍是 11 月 10 日进攻智能体评测教程和日本政府云合规文）、Mandiant／GTIG（主题列表页可见条目仍是已点名的 AI Threat Tracker、LLMJacking、XCPE、ARTEX 等，未见 11 月 11 日新主文）、Microsoft Security（最新威胁情报仍是 11 月 10 日关于在模型神经元里检测「潜伏智能体」的研究，文内写明微软尚未观察到有威胁行为者把该手法武器化，属于防御研究）、CrowdStrike（置顶仍是 11 月 10 日补丁星期二分析，文内计数是 1,252 个漏洞、1 个已利用零日、68 个严重漏洞，已利用的仍是同一条 Outlook，不另开一条）。早刊已提示的 Outlook／Chrome 更新，本窗没有在那之上的新行动项。",
+      "relevance": "对普通人眼下仍是同一件事：把 Outlook 和 Chrome 的补丁打上；本窗没有新的、必须立刻另做的行动项。",
+      "sources": [
+        {
+          "label": "CISA · 网络安全通告列表",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "CISA · KEV JSON（catalogVersion 2026.11.10，dateReleased 2026-11-10T19:03:29.8375Z，1779 条）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "CISA · 11 月 10 日六条已知在野利用入目录",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "Krebs on Security · 微软修复约 1100 个漏洞（2026-11-10）",
+          "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/"
+        },
+        {
+          "label": "Wiz Blog",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        },
+        {
+          "label": "Microsoft Security Blog · Detecting sleeper agents（2026-11-10T23:00Z）",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/"
+        },
+        {
+          "label": "CrowdStrike · 2026 年 11 月补丁星期二分析",
+          "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/"
+        }
+      ]
+    },
+    {
+      "id": "1111晚-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股收盘：日经 61248.59（+789）、韩综 5375.36（+2.60%）、台股 44257.15（+3.62%）收在最高；港股跌 0.98%，A 股午后翻红；欧股盘中小涨，美股现货未开",
+      "time": "2026-11-11T19:26:00+08:00",
+      "summary": "相对中刊（约 12:24–12:28 Asia/Taipei：美欧现货仍指向周二收，亚股还不是全日结算——日经官方午前收 60942.48／+0.80%、后场档案页 13:25 日本时间盘中 61192.38／+1.21%；韩综 Naver 13:27 韩国时间 5358.72／+2.28%；台股证交所 MIS 12:26 盘中 43742.27／+2.41%，不是收盘；港股午市收恒指 24352.69／−0.83%；A 股午前收上证 3654.95／−0.24%、深成 11253.67／+0.11%、创业板指 2519.14／+0.99%，半日成交 9283 亿元）：现在亚洲已经收完。日经官方全日收 61248.59，较周二收 60459.58 涨 789.01（约 +1.31%），高点 61390.79 出现在 14:43 日本时间，低点仍是早盘的 60318.08。韩综 Naver 收盘 5375.36（+136.23／+2.60%），高见 5377.99；科斯达克 705.10（+5.62%）收在最高——中刊那次科斯达克买盘 5 分钟 sidecar 没有把全日涨幅卡住，也不是韩综本身触发。台股证交所收 44257.15（+1545.23／+3.62%），收在最高；台积电官方收 2395（+110／+4.81%），同样收在最高，午间还只到 2365、高 2380。港股新华全日收恒指 24315.92（−241.12／−0.98%），主板成交 1807.49 亿港元，比午市收 24352.69 再弱一点。A 股午后翻红：新华上证 3680.64（+16.92／+0.46%），深成 11389.74（+1.32%），创业板 2572.07（+3.11%）；覆盖这两只指数的股票成交额约 1.68 万亿元（金十合计 16762.79 亿元，沪 7361.55、深 9401.24），午前还只有 9283 亿元。欧股现货仍在交易，Yahoo 约 19:11 台北源时间：STOXX 50 6367.32（+0.62%），DAX 26513.06（+0.63%），FTSE 100 10794.49（+0.40%），CAC 40 8304.62（+0.31%），这是盘中，不是收盘。今天是美国退伍军人节：纽约证交所和纳斯达克假期表都没有把 11 月 11 日列为休市，现金盘仍要到 22:30 台北才开，三大指数继续用周二收——标普 7520.93（−0.38%）、纳指 25065.87（−0.74%）、道指 52231.89（−0.30%）；VIX 官方仍 19.46。美元定息按 SIFMA 建议在美国、英国、日本全日休市，10 年期美债收益率没有新的官方定价，仍是周二的 4.983%。辉达现金仍是周二收 168.89；预盘约 177.39 不是官方收盘。油金仍是电子盘、不是新结算：WTI 12 月合约 86.80（相对周二结算 86.04），布伦特 92.95（相对 91.49），黄金 12 月合约 4061.4（相对该合约周二 4030.20 约 +31.2），不要拿 11 月合约结算 4020.70 来减。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "亚洲这一天已经收完，日韩台都在午间数字上又走高一截，台股和台积电收在最高；港股比午市更弱，A 股则是午前平淡、午后翻红。美股现金还没开，不要把预盘或期货当成收盘，也不要把退伍军人节写成美股休市——今天休的是美元债市。",
+      "sources": [
+        {
+          "label": "日经官方指数站 · 全日收 61248.59（+789.01），高点 61390.79 于 14:43 日本时间",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225"
+        },
+        {
+          "label": "时事通信 · 日经收盘短电（15:39）",
+          "url": "https://sp.m.jiji.com/article/show/3909127"
+        },
+        {
+          "label": "Naver · 韩综收盘 5375.36（+2.60%）",
+          "url": "https://m.stock.naver.com/api/index/KOSPI/basic"
+        },
+        {
+          "label": "Naver · 科斯达克收盘 705.10（+5.62%），收在最高",
+          "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic"
+        },
+        {
+          "label": "证交所 MIS · 台股收 44257.15（+3.62%），收在最高",
+          "url": "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_t00.tw&json=1&delay=0"
+        },
+        {
+          "label": "证交所 MIS · 台积电收 2395（+110／+4.81%）",
+          "url": "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_2330.tw&json=1&delay=0"
+        },
+        {
+          "label": "证交所盘后指数 · 2026-11-11",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20261111&type=IND&response=json"
+        },
+        {
+          "label": "新华／中证网 · 恒指全日收 24315.92（−0.98%），主板成交 1807.49 亿港元",
+          "url": "https://www.cs.com.cn/gppd/ggzx/2026/11/11/detail_2026111110051490.html"
+        },
+        {
+          "label": "新华 · A 股收盘（上证 3680.64、深成 11389.74、创业板 2572.07）",
+          "url": "https://english.news.cn/20261111/cd74c959c275441794fd5f334dd438e3/c.html"
+        },
+        {
+          "label": "金十 · A 股成交额拆分 16762.79 亿元",
+          "url": "https://flash.jin10.com/detail/20261111150111439800"
+        },
+        {
+          "label": "Yahoo Finance · 欧股盘中及美股／油金／期货对照",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "纽约证交所假期表（2026 年休市名单无退伍军人节）",
+          "url": "https://www.nyse.com/markets/hours-calendars"
+        },
+        {
+          "label": "纳斯达克 2026 年假期表",
+          "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
+        },
+        {
+          "label": "SIFMA · 建议 2026-11-11 美英日美元定息市场全日休市（2026-10-28）",
+          "url": "https://www.sifma.org/news/press-releases/sifma-fixed-income-market-close-recommendation-in-the-u-s-the-u-k-and-japan-for-the-u-s-veterans-day-holiday-2026"
+        }
+      ]
+    },
+    {
+      "id": "1111晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "机房贷款签了，钱还要等客户把第一批容量验收才放",
+      "time": "2026-11-11T15:28:00+08:00",
+      "summary": "WhiteFiber 11 月 10 日 8-K：子公司 Enovum NC-1 在 11 月 9 日与摩根士丹利等签了 3 亿美元定期贷款，其中首笔 2 亿、另 1 亿是延迟提取；截至报告日一分钱还没放到账上。放款条件写得很硬——要满足或豁免「第一批 40 兆瓦的就绪和客户验收」以及其他惯常条件，首笔预定在签约后 30 天内，还可再延两个 30 天。利率可选定期 SOFR（地板 2%）加 6 个点，或基准利率（地板 3%）加 5 个点，等于 SOFR 方案至少 8%；五年到期，从 2027 年一季度起按已放本金每季还 2.5%。母公司 WhiteFiber, Inc. 不担保，由中间层持股公司担保，并以北卡 Madison 的 NC-1 做抵押；运营合伙还要在放款前出一份完工和超支的无担保保证，净值和流动性门槛还没定死。同日业绩稿说，这 40 兆瓦已全部投运，剩余容量的起租通知已发出，并开始按全部合同容量计费，公司预期首笔可能在 11 月底或 12 月初到账，但仍取决于放款条件。对普通人／市场判断的用处是：你以为「贷到了 3 亿」就是钱已经在账上，合同其实还卡着客户验收这道门；信贷变冷之后，放款条件比签字本身更要紧。已证实是 8-K 与公司新闻稿；尚未发生的是钱真正到账，也不能把「已开始计费」写成放款条件已经满足。",
+      "relevance": "信贷与项目融资：一级市场在变冷之后，项目贷的真门槛是不是从「有没有签」改成了「客户验收／就绪后才放款」，以及签字未放款期间的利率、担保和母公司隔离怎么写。证据边界：条款与「截至 11/10 尚未放款」以 8-K 为准；40 兆瓦已投运并开始按全容量计费以 11/10 业绩稿为准，不等于放款条件已满足或豁免。利率下限由 SOFR 地板加利差推出，实际提取日的 SOFR 可能更高。",
+      "sources": [
+        {
+          "label": "SEC · WhiteFiber 8-K（2026-11-10）",
+          "url": "https://www.sec.gov/Archives/edgar/data/2042022/000121390026117723/ea0311622-8k_whitefiber.htm"
+        },
+        {
+          "label": "WhiteFiber · 2026 年三季度业绩稿（2026-11-10）",
+          "url": "https://www.prnewswire.com/news-releases/whitefiber-inc-reports-third-quarter-2026-results-302934441.html"
+        }
+      ]
+    },
+    {
+      "id": "1111晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "为美国机房预付的发电设备，计划一改，约 37 亿美元先变成了亏损",
+      "time": "2026-11-11T15:28:00+08:00",
+      "summary": "软银 11 月 10 日公布截至 2026 年 9 月 30 日的半年报：子公司 Silver Bands 7（公司与愿景基金 2 号一起投的）为了给美国 AI 机房锁住电力，签了一批产能预订和发电设备采购合同，从上一财年到今年 9 月底累计付款约 1.5009 万亿日元（约 94.8 亿美元）。项目需求变了，采购计划一改，这半年在「其他损益」里计提了 5972.48 亿日元（约 37.3 亿美元）亏损——其中 4570.30 亿日元（约 28.5 亿美元）是拿不回来的预付款，1402.18 亿日元（约 8.8 亿美元）是改合同和和解。投资者简报补了一刀拆分：累计 95 亿美元预付里，约 66 亿仍分配给俄亥俄 PORTS-Pike 发电项目及其他仍在计划内的采购，约 29 亿不再属于修订后的计划；并写明这 37 亿美元亏损与 PORTS-Pike 本身完全无关。公司还获得未来十年内、最多约 21 亿美元、须满足条件才可能在后续采购中兑现的返利，因为金额还确定不了，9 月 30 日没有把这项权利记成资产。对普通人／市场判断的用处是：抢着预付去锁电、锁产能，并不等于这些钱还在资产里；计划一改，预付款也可能先变成亏损。已证实是半年报与投资者简报原文；尚未证实的是修订计划里到底砍掉了哪些设备、返利最后能拿到多少，也不能把这笔亏损写成 PORTS-Pike 项目本身出了问题。",
+      "relevance": "产业供需与资本开支：为抢电力设备而预付的款项，在项目需求变化后有多少会变成不可回收亏损，以及这类「锁产能」合同对后续机房供电成本的影响。证据边界：94.8／37.3／28.5／8.8 亿美元及日元原数均可对半年报；66 亿美元仍分配给 PORTS-Pike 等、以及「亏损与 PORTS-Pike 完全无关」来自投资者简报。返利上限 21 亿美元未入账，不是已经锁定的回收。另有 Lordstown 厂房减值约 725 亿日元，是单独一项，不要加进这 37.3 亿。",
+      "sources": [
+        {
+          "label": "软银 · 2026 财年第二季度（截至 9 月 30 日）合并财务报告",
+          "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf"
+        },
+        {
+          "label": "软银 · 同期投资者简报",
+          "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/investor-accounting_q2fy2026_01_en.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1111晚-7",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "OpenAI 三季度营收大约 100 亿美元，经营亏损大约 109 亿：比例在收，绝对额还在加",
+      "time": "2026-11-11T15:28:00+08:00",
+      "summary": "华尔街日报 11 月 10 日根据其看到的投资人材料报道，OpenAI 三季度营收大约增长五成、到约 100 亿美元，经营亏损从 101 亿美元扩到 109 亿美元；公司告诉投资人，调整后经营利润率从上一季的 -150% 收到 -109%。路透向 OpenAI 求证时，公司没有立刻回应。这些数字对得上：若营收约 100 亿、利润率约 -109%，亏损大约就是 109 亿；上一季若按此前报道的约 67 亿营收和 -150% 估算，也接近 101 亿。对普通人／市场判断的用处是：它正好对上鲍曼 11 月 10 日那句「收入涨得快，但还不够覆盖维持现有模型和机房、开发新模型的开支」——增长很快是真的，可一个季度里亏掉的钱仍大致相当于这一季赚到的钱，只是亏的比例在收窄。已证实是日报援引的文件口径和路透转述；不是公司自己发布的经审计财报，也不能据此判断全年会不会转正，更不要把它写成 Anthropic 招股估值已经成立或破裂的原因。",
+      "relevance": "AI 成本与收入：前沿实验室的收入增长是否已经开始覆盖模型训练、推理和基建开支，以及亏损比例收窄是否只是规模效应。证据边界：约 100／109／101 亿和 -109%／-150% 均来自华尔街日报所见投资人材料，经路透转述；公司未即时置评。上一季约 67 亿营收是此前另一篇报道的口径，只用来核「比例与绝对额是否对得上」，不是本次文件新披露。非官方 10-Q，亦非对股价或 IPO 的因果判断。",
+      "sources": [
+        {
+          "label": "路透／CNA · OpenAI 三季度营收约 100 亿美元、亏损扩大（转述华尔街日报，2026-11-10）",
+          "url": "https://www.channelnewsasia.com/business/openai-posts-steep-losses-even-quarterly-revenue-rises-10-billion-wsj-reports-6541011"
+        },
+        {
+          "label": "路透／Investing · 同稿",
+          "url": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353"
+        },
+        {
+          "label": "Techmeme · 指向 Berber Jin／华尔街日报原文条目",
+          "url": "https://www.techmeme.com/261110/p56"
+        }
+      ]
+    },
+    {
+      "id": "1111晚-8",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-11T19:24:00+08:00",
+      "summary": "这段时间没有达「签署全面和平或停火协议、霍尔木兹实质性重开或更严重关闭、战事扩到新的大战场」门槛的国际硬新事实。本窗打开了塔斯社、自由欧洲电台、卫报欧洲直播、乌克兰国家通讯社首页与第二日开谈稿、半岛电视台 11 日霍尔木兹稿、hormuz.now 当日通行计数，以及英国海事贸易行动处相关的《海湾新闻》既有稿和中刊已用的 CNBC 袭船稿；英国广播公司欧洲页与首页也已打开（路透会谈页本窗遇到 401、美联社世界页 403、华盛顿邮报相关稿中断、NHK 新闻页几乎无正文，这几处不能写成已扫确无）。中刊截稿时，阿布扎比美、俄、乌三方会谈第二日还没有开始（定于 08:00 GMT，台北时间 16:00）。本窗可见第二日已经在大约两小时内结束：塔斯社 2026-11-11T10:26:54Z（台北 18:26）写「just under two hours」，并称稍后会有新闻声明；自由欧洲电台 10:52:23Z 同样写会谈在不到两小时后结束，当时还没有关于进展的即时评论。会谈结束后，俄方团长、总统助理梅金斯基对塔斯社说「就新一轮大规模交换战俘达成了原则性协议，细节很快公布」（TASS 2026-11-11T11:24:37Z，台北 19:24；俄新社亦引同一人）。这是俄方官员的公开表述，不是已公布的签字文本。本窗打开的乌克兰国家通讯社页面在约 13:23–13:24 基辅时间（19:23–19:24 台北）最新会谈稿仍停在 11:19 的「第二日开始」，未见乌方对等确认，不能写成双方官方已共同宣布换俘协议。泽连斯基 10 日晚说的「一千换一千」或「一千五换一千五」，仍是第一日关于可能性的讨论，不是第二日的结果。霍尔木兹方面，半岛电视台 11 日 08:21 UTC 稿引伊朗国家安全委员会秘书雷扎伊称海峡在美方满足七项条件前不会重开，外长阿拉格希仍说「条件谈妥后两日内可复通」的提案还在桌上；hormuz.now 截至 11:25 UTC 当天可见 AIS 商船只记到 4 艘通过（3 进 1 出，含 1 艘油轮），对照危机前基准约每天 84.8 艘、近七日滚动均值约 6.9 艘——仍是严重低于正常，不是复通。中国把出口管制等再暂停约两个月，以及安塔利亚气候大会／1.5°C，已在先前各刊报过，本窗未见新的期限或新协议，不重复。",
+      "relevance": "把「第二日已经结束、没有全面签字、换俘目前是俄方团长单方宣布、霍尔木兹仍未复通」写清楚，避免被读成和谈已经谈成或海峡已经重开。",
+      "sources": [
+        {
+          "label": "TASS · 阿布扎比第二日会谈结束（2026-11-11T10:26:54Z）",
+          "url": "https://tass.com/politics/2216047"
+        },
+        {
+          "label": "RFE/RL · 会谈在不到两小时后结束（2026-11-11T10:52:23Z）",
+          "url": "https://www.rferl.org/a/ukraine-russia-talks-resume-in-abu-dhabi-amid-drone-attacks/33895197.html"
+        },
+        {
+          "label": "TASS · 梅金斯基称就大规模换俘达成原则性协议（2026-11-11T11:24:37Z）",
+          "url": "https://tass.com/politics/2216133"
+        },
+        {
+          "label": "俄新社 · 引梅金斯基同一表述",
+          "url": "https://ria.ru/20261111/medinskiy-2130866223.html"
+        },
+        {
+          "label": "Ukrinform · 第二日会谈开始（2026-11-11 11:19 +02:00）",
+          "url": "https://www.ukrinform.net/rubric-polytics/4183675-second-day-of-trilateral-talks-begins-in-abu-dhabi.html"
+        },
+        {
+          "label": "The Guardian · 欧洲直播（抓取时仍按第二日进行中更新）",
+          "url": "https://www.theguardian.com/world/live/2026/nov/11/europe-ukraine-russia-us-talks-abu-dhabi-zelenskyy-latest-news-updates"
+        },
+        {
+          "label": "Al Jazeera · 伊朗称霍尔木兹在条件满足前不重开（2026-11-11T08:21:56Z）",
+          "url": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met"
+        },
+        {
+          "label": "hormuz.now · 11 月 11 日通行计数（更新 11:25 UTC，当天可见 4 艘）",
+          "url": "https://hormuz.now/traffic/2026-11-11"
+        }
+      ]
+    },
+    {
+      "id": "1111晚-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "耶鲁：杏仁核短暂的 beta 爆发或能标志主观情绪反应，仍是候选、不是疗法",
+      "time": "2026-11-10",
+      "summary": "换赛道——人类颅内记录与情绪神经科学，不是中刊的肠道菌代谢物抗癌，也不是早刊的太空引力波找行星，或近刊的疟蚊细胞隧道。耶鲁医学院 2026 年 11 月 10 日刊出新闻稿，介绍一项候选生物标志：杏仁核里 13–30 Hz 的短暂高功率 beta 爆发，与人的主观正负感受有关。必须先写清时间：论文本身 10 月 1 日已在《自然·通讯》发表，10 月 30 日出版正式版（Version of Record），11 月 10 日是院方新闻和访谈，不要写成今天才发表的新论文。第一作者是 Yajun Zhou，通讯作者是 Eyiyemisi C. Damisah。研究在 15 名因癫痫而植入电极的病人身上，同时记录杏仁核与海马的单细胞发放和局部场电位，让他们给情绪图片打分。两侧都有神经元发放能预测主观正负效价；常规频谱看不出效价特异性，但这些短暂的 beta 爆发会被任务特征调节。访谈里 Damisah 说，在这些短暂爆发期间是杏仁核带着海马，而且对海马细胞的影响取决于正在处理的情绪，这可能解释大脑为什么更优先处理负面信息。她提到未来或许可用深部或经颅刺激去调节这些爆发，以减轻情绪障碍里的负面偏向，但那是展望，不是已经验证的治疗。这是人体颅内记录，不是动物预实验，也还不是临床应用或已批准疗法；样本是 15 名癫痫手术病人，不能外推成普通人群的诊断工具。",
+      "relevance": "这不是新模型或新芯片，而是有人在病人脑子里直接记到「感到难过时，杏仁核会短暂地带着海马走」的电信号，以后也许会成为情绪障碍刺激治疗的靶点，但现在还只是候选标志，没有可上身的疗法。",
+      "sources": [
+        {
+          "label": "Yale School of Medicine · Candidate biomarker tied to subjective emotional response identified（2026-11-10）",
+          "url": "https://medicine.yale.edu/news-article/candidate-biomarker-tied-to-subjective-emotional-response-identified/"
+        },
+        {
+          "label": "Nature Communications · Amygdala beta bursts modulate hippocampal neuronal dynamics（Published 01 October 2026，VoR 30 October 2026）",
+          "url": "https://www.nature.com/articles/s41467-026-77952-9"
+        }
+      ]
+    }
+  ]
+}
