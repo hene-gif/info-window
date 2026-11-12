@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "id": "1112晚",
+  "date": "2026-11-12",
+  "slot": "晚",
+  "title": "11月12日 · 晚",
+  "items": [
+    {
+      "id": "1112晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "这段时间没有",
+      "time": "2026-11-12T19:35:00+08:00",
+      "summary": "这段时间没有相对中刊达「frontier 发版／新权重／权威基准／可确认的官方灰测开始声明」门槛的新主条。本窗已扫 @elonmusk（近窗 23 帖，产品向的几条都是转发或引用已刊过的 Grok Bot 1.0，其余为 Robotaxi、SpaceX 发射与回复，按严选 0 条）、@OpenAI @AnthropicAI @GoogleDeepMind @metaai @AIatMeta @deepseek_ai @Alibaba_Qwen @claudeai @bot（排除回复与转帖后原创产品帖为 0）以及辅助 @sama @demishassabis @karpathy @dotey（dotey 仅转发一条非硬新闻评论）。@xai 时间线接口仍未授权，改用 from:xai 检索，本窗为 0 帖。官号里唯一截稿后可见的产品向帖，是 @GoogleDeepMind 于 10:45 UTC 转发已报的 Gemini 4 Carbon 能力评价，不是新发版。并扫 OpenAI 博客／index（WebFetch；置顶仍是 11 月 11 日退伍军人 ChatGPT Plus，其下仍是 11 月 10 日及更早已见稿）、API changelog（最新仍是 11 月 5 日 gpt-6-cyber）、ChatGPT release notes（WebFetch，最新日期块仍是 11 月 10 日）、Anthropic news／alignment／Claude product updates（可见列表最新仍是 11 月 10 日路演与 11 月 9 日 Fable／Mythos 5.2；alignment 置顶仍是 11 月 11 日已见的 Worse Together）、Google AI RSS 与全站 RSS（lastBuildDate 仍是 11 月 11 日 18:00 UTC，置顶仍是 Gemini Decisions API）、DeepMind 博客列表、x.ai/news（置顶仍是 11 月 2 日 Grok Bot 1.0）、Meta AI 博客（WebFetch，可见日期仍停在 6–7 月）、DeepSeek 官网与 GitHub API releases（DeepSeek-V3 最新仍是 2025-06-27 的 v1.0.0）、阿里云通义模型文档（可见推荐仍以已报的 qwen4-max-preview 为首）与阿里云博客标题、英伟达新闻室、百度文心官网（最新仍是 11 月 11 日已补报的 ERNIE 5.5 Flash Preview）、MiniMax 官网与新闻页（仍是 11 月 11 日已报的 H3-Image）。GPT-6.2／Sol、Grok 4.8、所谓 Gemini 4 Hydrogen 本窗仍只有用户侧或二手说法，官网、changelog 与官号均无确认，不能把体验变化或聊天机器人答复写成已确认的模型 ID 或「soft rollout 已经开始」。英伟达新闻室看不到 11 月 11 日或 12 日的新声明，11 月 8 日董事会声明、黄仁勋内部信和 11 月 10 日独立董事声明都是旧稿，不在本栏重写同一则未证实的董事会去留传闻。中刊已报的 Grok Bot Tailscale、Runway Praxis-1，以及早刊已报的 Decisions API、AlphaGenome 2、文心 5.5 Flash Preview、台积电认购、纳斯达克 ANT 代码等，不重复。",
+      "relevance": "本窗亦扫过七厂官号与官网／changelog，无其他补报。",
+      "sources": [
+        {
+          "label": "OpenAI News index（WebFetch；curl 为 403）",
+          "url": "https://openai.com/index/"
+        },
+        {
+          "label": "OpenAI API changelog（最新仍是 11 月 5 日 gpt-6-cyber）",
+          "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+          "label": "ChatGPT release notes（WebFetch；最新日期块仍是 11 月 10 日）",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "label": "Anthropic News（页眉 November 12 是页面当日日期，不是新文发布日）",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Anthropic Alignment",
+          "url": "https://alignment.anthropic.com"
+        },
+        {
+          "label": "Claude product updates",
+          "url": "https://claude.com/resources/product-updates"
+        },
+        {
+          "label": "Google AI Blog／RSS（lastBuildDate 仍是 2026-11-11 18:00 UTC）",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "label": "DeepMind Blog",
+          "url": "https://deepmind.google/blog/"
+        },
+        {
+          "label": "xAI News（置顶仍是 11 月 2 日 Grok Bot 1.0）",
+          "url": "https://x.ai/news"
+        },
+        {
+          "label": "Meta AI Blog（WebFetch）",
+          "url": "https://ai.meta.com/blog"
+        },
+        {
+          "label": "英伟达新闻室（未见 11 月 11 日或 12 日新声明）",
+          "url": "https://nvidianews.nvidia.com/"
+        },
+        {
+          "label": "百度文心 Latest Updates（最新仍是 11 月 11 日 ERNIE 5.5 Flash Preview）",
+          "url": "https://ernie.baidu.com/"
+        }
+      ]
+    },
+    {
+      "id": "1112晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-12T19:28:00+08:00",
+      "summary": "这段时间没有相对中刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA 警报列表和已知被利用漏洞目录 JSON（均成功打开：catalogVersion 仍为 2026.11.10，dateReleased 仍为 2026-11-10T19:03:29Z，目录仍是 1779 条，与中刊所见完全相同，没有中刊之后的新入目录项；置顶警报仍是 11 月 10 日那六条，其中对普通人最直接的 Outlook 欺骗 CVE-2026-124194 和已在野的 Chrome CVE-2026-125350，早刊已经报过，目录之后也没有再更新）、Krebs（首页最新仍是 11 月 11 日关于 Qilin 勒索团伙管理员身份的调查，不是新的利用通报；其下仍是 11 月 10 日补丁星期二综述）、Wiz（最新仍是 11 月 11 日对 Apache HTTP Server 严重远程代码执行漏洞 CVE-2026-119618 的说明，文内仍写刊出时还没有可用的利用程序、也没有在野利用报告，本窗也没有在官方或厂商一手里核到这一判断发生变化）、Mandiant／GTIG（主题列表页未见 11 月 11 日或 12 日新头条）、Microsoft Security（仍是中刊已经看过的两篇 11 月 11 日研究：一篇讲威胁行为者在已打入的 Linux 服务器上用 GSocket 维持控制，一篇是实验室里用智能体扫出的 Linux 内核缺陷回顾，都不是对普通人的在野攻击通报）、CrowdStrike（置顶仍是 11 月 10 日补丁星期二分析，近期文章列表没有 11 月 11 日或 12 日的新主文）。早刊已提示的 Outlook／Chrome 更新，以及早刊已补报的 Grok Build 应用暴露，本窗都没有在那之上的新官方后续或新行动项。",
+      "relevance": "没有新的须立刻行动项；早刊已写过的 Outlook／Chrome 补丁，以及用过 Grok Build 并点过发布的人应检查分享设置、轮换口令，仍然有效。",
+      "sources": [
+        {
+          "label": "CISA · 已知被利用漏洞目录 JSON（catalogVersion 2026.11.10，dateReleased 2026-11-10T19:03:29.8375Z，1779 条）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "CISA · 网络安全通告列表（置顶仍是 11 月 10 日六条入目录警报）",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "Krebs on Security（11 月 11 日 Qilin 归因调查仍为最新）",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog（11 月 11 日 Apache CVE-2026-119618 说明，文内称当时未见在野利用，本窗未见改稿）",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence（列表页未见 11 月 11 日或 12 日新头条）",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        },
+        {
+          "label": "Microsoft Security Blog（11 月 11 日 GSocket 与内核缺陷研究仍为最新）",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike Blog（置顶仍是 11 月 10 日补丁星期二分析）",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        }
+      ]
+    },
+    {
+      "id": "1112晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "亚股全日收：台股跌 2.63% 收 43091.87，日经收 60819.36（−0.70%）；辉达预盘约 161.71，相对周三现金收约 −6.92%，不是收盘",
+      "time": "2026-11-12T19:26:49+08:00",
+      "summary": "相对中刊（约 12:30 Asia/Taipei：美欧还是周三官方收，日韩台是盘中或午前，港股是午市收、A 股是午前收，辉达盘后已经结束在 158.78，周四预盘还没开始）：现在亚洲有周四官方全日收了，美股现金仍然没有新的官方收，周四常规交易要到 22:30 台北才开，继续用已经报过的周三收：标普 7619.38（+1.31%），纳指 25466.19（+1.60%），道指 52486.49（+0.49%），官方 VIX 仍是 17.49。辉达现金官方收仍是 173.73（+2.87%）。盘后结束价仍是 158.78（−8.61%），没有变。周四预盘已在 17:00 台北开始，Yahoo 1 分钟截至 19:26:49 台北／06:26:49 美东最后报价 161.71，相对现金收 −12.02／−6.92%，相对盘后结束价 +2.93／+1.85%；预盘不是官方收。预盘开盘那一分钟最低见到 159.70，其后 1 分钟收最高见过 164.74。CNBC 写截至 6:00 a.m. ET 预盘跌 6.6%，与当时附近的 1 分钟价大致相符，但截稿用 Yahoo 末根，不改用他们的百分比。CNBC 周四稿写已确认董事会周三开会讨论是否换掉黄仁勋，同时写目前还没有公布结果；Euronews 仍把开会写成路透援引知情人士。英伟达新闻室首页和新闻稿列表看不到 11 月 11 日或 12 日的新声明，能看到的董事会相关新闻稿发布日仍是 11 月 8 日与 10 日，不要写成对这场会的新回应，也不要把开会写成已经做出的人事决定。本窗未打开《华尔街日报》《纽约时报》和路透原文。另有一条中刊之后的涉事公司表态，不要和英伟达官方稿混在一起：NBC 稿署 11 月 12 日 5:41 a.m. EST（更新 5:59 a.m. EST，台北 18:41–18:59）引述 Megaspeed 称，对遵守美国出口管制「extremely seriously」，已配合商务部工业与安全局检查，并「stands ready to cooperate fully with any other relevant U.S. government authority」，另已聘请一家美国律所对 GPU 做全面盘点并独立核验出口合规；NBC 写明这是相关报道出现后该公司的首次表态。这是客户／涉事公司声明，不是英伟达新闻室新稿。本窗尝试打开美联社同题稿超时，未把它写成已读。亚洲全日收与午间／午前比，普遍是冲高回落或跌幅扩大。日经官方收 60819.36（−429.23／−0.70%），相对周三收 61248.59，标注 Nov/12/2026(*Close)，与日经新闻、新华、Yahoo 一致；午前收还是 +0.76% 的 61714.16，高点 61788.44 仍是前场 11:19，收盘已翻跌。韩综官方收 5342.73（−32.63／−0.61%），Naver 状态是收盘，高点仍是盘中见到的 5458.84；科斯达克 696.53（−8.57／−1.22%）。韩联社英文页本窗 TLS 失败，点位改用 Naver、Yahoo 和 FN News 交叉，不写成已核韩联社正文。台股证交所收 43091.87（−1165.28／−2.63%），相对周三收 44257.15，午间 12:28 还只跌约 1.12%，午后低见 42943.50；台积电官方收 2340（−55／−2.29%），午间最后一笔还是 2370。官方成交金额 1.0568 兆新台币，较早的媒体「约 1.01 兆」不要当成交易所数字。恒指全日收 24008.55（−307.37／−1.26%），相对周三收 24315.92，比午市收 24092.89 再低约 84 点；国企指数 8056.76（−1.40%），恒生科技 3931.93（−2.36%）。A 股午前还小幅收红，全日收下证 3655.83（−24.81／−0.67%），深成 11197.98（−1.68%），创业板 2509.43（−2.44%），新华与新浪／腾讯／Yahoo 一致；两市成交约 1.93 万亿元。欧洲仍在盘中，不是收盘，Yahoo 源时间约 19:11 台北＝11:11 伦敦：STOXX 600 665.97（+0.44%），STOXX 50 6416.60（+0.36%），DAX 26880.48（+0.82%），FTSE 10874.55（+0.36%），CAC 8391.96（+0.71%）。美元定息仍没有 11 月 11 日的官方曲线，也还没有 11 月 12 日的曲线，10 年期美债收益率仍是周二的 4.983%；周三是退伍军人节，定息市场按惯例全日休市，缺 11 月 11 日曲线不是抓取失败。油金周三官方结算不变：WTI Dec 86.53，布伦特 Jan 92.76，黄金 Dec 4000.50；电子盘另报 WTI 85.96、布伦特 92.22、黄金 Dec 3953.0，那不是新结算。不要减 11 月黄金合约 3992.00。美股期货电子盘标普期约 7612.5，略低于周三现金收 7619.38，同样不是结算。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "这是第一份可以写亚洲周四官方全日收、以及辉达周四预盘的刊次；美欧现金还没有新的官方收，预盘和盘后都要跟现金收对齐，不要混用。董事会一事只写到「CNBC 称已确认开会、结果未公布、公司新闻室无新稿」，不要写成已经解职。",
+      "sources": [
+        {
+          "label": "日经官方指数站 · 周四全日收 60819.36（−429.23／−0.70%），标注 Nov/12/2026(*Close)",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225"
+        },
+        {
+          "label": "日经新闻 · 大引稿同一收盘（15:36 日本时间）",
+          "url": "https://www.nikkei.com/article/DGXZQOFL1209S0S6A111C2000000/"
+        },
+        {
+          "label": "新华英文 · 日经同一收盘",
+          "url": "https://english.news.cn/20261112/eab7bae6094d4e68b949657c396ba514/c.html"
+        },
+        {
+          "label": "Naver · 韩综周四收 5342.73（−0.61%），状态 CLOSE",
+          "url": "https://m.stock.naver.com/api/index/KOSPI/basic"
+        },
+        {
+          "label": "Naver · 科斯达克周四收 696.53（−1.22%）",
+          "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic"
+        },
+        {
+          "label": "FN News · 韩综／科斯达克收盘交叉",
+          "url": "https://en.fnnews.com/news/202611121539360346"
+        },
+        {
+          "label": "证交所 MI_INDEX · 台股周四收 43091.87（−1165.28／−2.63%）",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20261112&type=IND&response=json"
+        },
+        {
+          "label": "证交所 FMTQIK · 同一收盘，官方成交金额 1.0568 兆新台币",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20261112&response=json"
+        },
+        {
+          "label": "证交所 STOCK_DAY · 台积电周四收 2340（−55／−2.29%）",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20261112&stockNo=2330&response=json"
+        },
+        {
+          "label": "经济日报 · 台股／台积电收盘交叉",
+          "url": "https://money.udn.com/money/story/12509/9874319"
+        },
+        {
+          "label": "中证网转新华 · 恒指全日收 24008.55（−1.26%），国企指数 8056.76，恒生科技 3931.93",
+          "url": "https://www.cs.com.cn/gppd/ggzx/2026/11/12/detail_2026111210051826.html"
+        },
+        {
+          "label": "新华英文 · A 股全日收：上证 3655.83（−0.67%），深成 11197.98，创业板 2509.43",
+          "url": "https://english.news.cn/20261112/b6cfb1006f304e8d9abf1e75e5bdb970/c.html"
+        },
+        {
+          "label": "新华财经 · A 股收评同一点位",
+          "url": "https://www.cnfin.com/yw-lb/detail/20261112/4494622_1.html"
+        },
+        {
+          "label": "Yahoo Finance · 美欧周三官方收交叉、欧股盘中、辉达预盘末笔 161.71（19:26:49 台北）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "CNBC · 周四确认董事会周三开会讨论是否换掉黄仁勋，结果未公布；并写预盘跌幅",
+          "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html"
+        },
+        {
+          "label": "CNBC Morning Squawk · 仍写会谈尚无公布结果",
+          "url": "https://www.cnbc.com/2026/11/12/nvidia-boards-crisis-meeting.html"
+        },
+        {
+          "label": "NBC · Megaspeed 11 月 12 日 5:41 a.m. EST 首度就出口管制调查发声（客户／涉事公司声明，不是英伟达官方稿）",
+          "url": "https://www.nbcnews.com/tech/tech-news/megaspeed-statement-nvidia-jensen-huang-alice-us-exports-chips-china-rcna608939"
+        },
+        {
+          "label": "英伟达新闻室（首页与新闻稿列表未见 11/11 或 11/12 新声明）",
+          "url": "https://nvidianews.nvidia.com/"
+        },
+        {
+          "label": "英伟达新闻稿列表",
+          "url": "https://nvidianews.nvidia.com/news/press-releases"
+        },
+        {
+          "label": "美国财政部 · 日曲线 CSV（最新一行仍为 2026-11-10，无 11/11、无 11/12）",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+        },
+        {
+          "label": "Dow Jones Data Talk · WTI Dec 结算 86.53（沿用早刊已交叉数字，本窗未重抽 CME 页）",
+          "url": "https://www.morningstar.com/news/dow-jones/202611117176/front-month-nymex-crude-rose-057-to-settle-at-8653-data-talk"
+        },
+        {
+          "label": "Dow Jones Data Talk · 布伦特 Jan 结算 92.76（沿用早刊已交叉数字）",
+          "url": "https://www.morningstar.com/news/dow-jones/202611117186/front-month-ice-brent-crude-rose-139-to-settle-at-9276-data-talk"
+        },
+        {
+          "label": "美联社黄金期货表 · Dec 26 结算 4000.50（沿用早刊已交叉数字）",
+          "url": "https://www.reflector.com/news/national/bc-gold-futures/article_57282b24-024c-5df5-884d-8f7a8d92ee47.html"
+        }
+      ]
+    },
+    {
+      "id": "1112晚-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "银行把机房贷款的风险转给保险公司，好接着往下贷",
+      "time": "2026-11-12T15:21:00+08:00",
+      "summary": "金融时报 11 月 11 日援引知情人士的报道，经《银行家》和保险业媒体转述：巴克莱最近为人工智能机房贷款买了信用保险，汇丰在试这个产品，摩根大通考虑过后没有做。典型做法是把两成到五成的违约风险转给保险公司，好腾出内部额度，继续做更大的贷款包；保费大约相当于银行在被保险那一截上赚到的五成到七成。美国银行做这类保险多半拿不到监管资本减免，转向它，是因为信用违约互换已经变贵。对普通人／市场判断的用处是：贷款看起来还在出，但不一定还压在银行自己账上，风险往后搬到了保险和再保险；如果保险公司也开始满仓，后面要么更贵，要么更难做成大包。已证实是多家转述都指向同一篇金融时报报道，以及韦莱韬悦 2026 年 5 月调查里已有保险公司表示数据中心敞口接近或已经满了。还没能直接打开金融时报原文；二手报道对巴克莱是「已经买了」还是「还在询价」用词不完全一致，巴克莱询价规模「超过 100 亿美元」只出现在保险业转述里；具体保了哪几笔、哪家保险公司接下，都没有公开。不能把「银行还在放贷」写成风险已经消失，也不能把 5 月的满仓调查写成今天的成交结果。",
+      "relevance": "信贷与风险转移：银行用信用保险绕开单一客户／行业集中度上限，可能让机房贷款继续出清，同时把违约风险迁到保险和再保险簿。证据边界：核心事实来自金融时报 11/11 对知情人士的报道，本轮读到的是《银行家》和 Insurance Business 的转述，不是 FT 原文；巴克莱成交与否的用词存在出入；保费比例、转让比例是报道中的典型交易描述，不是某笔已公开保单；韦莱韬悦调查是 2026 年 5 月，只能说明当时已有供给约束，不能直接当成 11 月的承保结果。银行在这些转述里未见置评。",
+      "sources": [
+        {
+          "label": "Financial Times · Banks turn to credit insurance as they hit limits on lending to AI boom",
+          "url": "https://www.ft.com/content/599932b7-a548-4d45-8ba4-70bdb8d14565"
+        },
+        {
+          "label": "The Banker · 转述金融时报：巴克莱已购买、汇丰在试、摩根大通未做",
+          "url": "https://www.thebanker.com/content/020b0906-190f-4026-a27d-963caa8b8612"
+        },
+        {
+          "label": "Insurance Business · 2026-11-11 转述金融时报并补充韦莱韬悦满仓调查",
+          "url": "https://www.insurancebusinessmag.com/uk/news/breaking-news/ai-lending-surge-tests-credit-insurance-capacity-as-banks-seek-cover-596962.aspx"
+        }
+      ]
+    },
+    {
+      "id": "1112晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "机房把内存产能先占了，电脑已经卖不动，合约价却还在涨",
+      "time": "2026-11-12T15:21:00+08:00",
+      "summary": "集邦 11 月 11 日的官方稿说：笔记本出货在 2026 年第三季度环比下降 15.8%，品牌商和北美渠道的成品库存在增加，有的已经在调整今年四季度和明年一季度的内存采购，甚至考虑多出贴牌、改用更低规格的内存和更少核心的处理器。可个人电脑用的内存合约价，第四季度仍预计环比再涨 13% 到 18%（涨幅比上一季放缓）；消费级固态硬盘预计低于 5%。同一天另一篇集邦稿还转述国内渠道称，厂商已口头通知企业级内存和企业级固态硬盘还要涨，正式函还没发；深圳华强北 16GB DDR5 现货大约 1600 元人民币，低于同期消费级合约出厂价大约 2000 元。对普通人／市场判断的用处是：人工智能抢产能，不一定先表现为机房贷款出问题，而可能先表现为电脑更贵，或同样价钱配置变差。已证实是集邦对个人电脑内存／消费级固态硬盘的合约价预测和出货、库存判断；企业级口头涨价和华强北比价来自集邦转述的渠道消息，正式函尚未发出。不能把合约价预测写成终端零售已经同步大涨，也不能把渠道现货倒挂当成全国统一成交价。",
+      "relevance": "产业供需与通胀传导：存储器产能向高带宽内存、服务器内存和企业级固态硬盘倾斜，可能在个人电脑需求已经走弱时仍抬高合约价，并进入消费电子成本和核心通胀。证据边界：出货 -15.8%、个人电脑内存 13%–18%、消费级固态硬盘低于 5% 来自集邦 11/11 官方稿及其 10/30 企业级固态硬盘报告（企业级固态硬盘第四季度 15%–20%）；口头涨价和华强北价格来自 11/12 集邦对澜晶财经等渠道报道的转述，不是厂商正式函或集邦自有现货指数。日经 11/3 称 DRAM 价格大约已是去年底的两倍，只作背景，不是本轮新数据。",
+      "sources": [
+        {
+          "label": "TrendForce · 2026-11-11 官方稿：笔记本出货下滑，PC DRAM 合约价 4Q26 仍预测环比上涨 13%–18%",
+          "url": "https://www.trendforce.com/presscenter/news/20261111-13303.html"
+        },
+        {
+          "label": "TrendForce · 2026-11-12 转述渠道：企业级内存口头涨价，消费级出现现货倒挂",
+          "url": "https://www.trendforce.com/news/2026/11/12/news-memory-makers-reportedly-plan-new-price-hikes-while-ai-demand-widens-enterprise-consumer-divide/"
+        }
+      ]
+    },
+    {
+      "id": "1112晚-6",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "磁星投了 5 亿美元，赌的是把算力箱子搬到电已经通的地方",
+      "time": "2026-11-12T15:21:00+08:00",
+      "summary": "犹他州公司 Torus 11 月 11 日宣布，由磁星领投 5 亿美元成长轮（ICONIQ、Origin Ventures、Ridgeline Partners、Trinity Capital 参与），推出名为 Foundry 的模块化推理机柜：把电源、储能、制冷、网络和算力预制成 1 到 20 兆瓦的单元，装在已经有余电的工厂或商业楼现有并网点后面，公司称从签约到能跑只要 12 到 16 周。彭博当天核实了这笔融资，并确认首批客户包括 Hydra Host。对普通人／市场判断的用处是：在接电排队和地方投票把大型机房往后拖的时候，股权和另类信贷还在给另一种办法下注——不新建电厂和输电，把箱子搬到电已经在的地方。已证实是公司公告加彭博对融资和客户的核实。公司还说现在已部署数千块 GPU、2027 年底要做到超过 4.7 万块，产线规划能做到 500 兆瓦信息技术负载，这些都是自己的目标和产能规划，不是并网或客户验收清单。不能把「12 到 16 周上线」写成已经大规模替代吉瓦级校园，也不能把「用现有余电、不会推高电价」当成已经应验的系统结果，那是公司说法。",
+      "relevance": "资本开支与电力瓶颈：模块化、就地使用现有并网点余电，可能成为大型校园排队之外的一条推理算力供给路径，并吸引另类信贷资金；对吉瓦级项目融资和电价的影响仍取决于实际部署规模。证据边界：5 亿美元、磁星领投、产品规格和 12–16 周来自 11/11 公司及磁星通稿；彭博核实了融资额、领投方和客户 Hydra Host。GPU 部署数量、2027 年目标和 500 兆瓦产线能力均为公司陈述。电网「不是没电、是拥堵／有余电」是公司判断，不是系统运营商的统计。",
+      "sources": [
+        {
+          "label": "Torus · 2026-11-11 公司公告：Foundry 与 5 亿美元融资",
+          "url": "https://www.torus.co/news/introducing-torus-foundry-ai-compute-where-the-power-already-is"
+        },
+        {
+          "label": "Magnetar · 同日通稿，含产品规格、客户与产线规划",
+          "url": "https://www.magnetar.com/insights/torus-launches-modular-ai-infrastructure-secures-500m"
+        },
+        {
+          "label": "Bloomberg Law · 2026-11-11 核实 5 亿美元融资与客户 Hydra Host",
+          "url": "https://news.bloomberglaw.com/private-equity/utah-startup-raises-500-million-for-modular-ai-data-center"
+        }
+      ]
+    },
+    {
+      "id": "1112晚-7",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-12T19:27:00+08:00",
+      "summary": "这段时间成功打开了 TASS 英文首页、政治页与（11:22 UTC 那一次）英文 RSS、RIA 首页与政治页及多篇会晤现场稿、Interfax-Ukraine 英文、Kyiv Independent、泽连斯基官方 Telegram 公开预览、BBC、卫报（含 11 月 12 日欧洲直播）、Al Jazeera 新闻首页、RFE/RL、hormuz.now（首页、新闻页、11 日与 12 日通行记录、status.json 与日数据）以及 UKMTO 近期事件页。截至约 11:24–11:27 UTC（莫斯科时间约 14:24–14:27），还没有已签署的停火或和平协议，也没有官方公布的换俘最终人数；战争未见扩大到新的大战场。美特使维特科夫、库什纳已于 12 日早上在莫斯科伏努科沃落地，德米特里耶夫到场迎接，随后入住克里姆林宫附近酒店；RIA 称他们于 12:59 MSK 离开酒店，卫报直播 11:03 CET 写他们已前往克里姆林宫，但这是现场报道，不是正式读出。TASS 在更晚的 13:58 MSK 仍引乌沙科夫的话，称与普京的「主要会晤很快举行」「目前还没有谈妥任何东西」；同日俄方还报道普京在克里姆林宫会见了塔吉克斯坦总统拉赫蒙。白宫新闻页未见读出；国务院新闻稿列表本轮没能可靠打开，克里姆林宫英文站也没打开，所以不能把「没有读出」写成已经穷尽所有官方渠道。换俘仍是 11 月 11 日泽连斯基在都柏林说过的「一千换一千，也许一千二百」这一口头希望，不是本窗新宣布的协议。霍尔木兹方面，hormuz.now 把 11 月 11 日完整 UTC 日的可见商船从上次的 7 艘（5 进 2 出）进一步修订为 11 艘（6 进 5 出，3 艘油轮），属于站点回填，不是重新开放；12 日截至 11:24 UTC 已有 2 艘进湾（0 出，含 1 艘化学品船 XAVIA），但 UTC 日尚未结束，7 日均值约 7.3 艘、大约相当于危机前 84.8 艘的 9%，状态仍是「严重受限」。IRGC 海军称两艘共载逾 400 万桶油的超级油轮在「未授权」南航路爆炸起火，TASS、Mehr、Iran International 等有转述，但未公布船名；UKMTO 近期事件页此刻为 0 条，hormuz.now 新闻简报也未写入，独立通讯社（路透、美联社、华盛顿邮报）本轮打不开，因此这只能记为尚未独立确认的说法，不能写成已经核实的新关闭冲击。仍打不开的源包括：Ukrinform、Censor.net、乌克兰总统府英文最新、路透国际、美联社国际、华盛顿邮报、tass.ru 俄文正文（挑战页）、克里姆林宫英文站。",
+      "relevance": "莫斯科这场会还没有官方结果，霍尔木兹也还是严重受限的低通行，不必把「特使已经到了」或「又多计了几艘船」理解成停火或海峡重开。",
+      "sources": [
+        {
+          "label": "TASS · 乌沙科夫谈即将举行的会见：还没谈妥，正场很快举行（13:58 MSK）",
+          "url": "https://tass.com/politics/2216955"
+        },
+        {
+          "label": "TASS · 普京同日在克里姆林宫会见塔吉克斯坦总统拉赫蒙",
+          "url": "https://tass.com/politics/2216961"
+        },
+        {
+          "label": "TASS · 德米特里耶夫在伏努科沃迎接维特科夫与库什纳",
+          "url": "https://tass.com/politics/2216667"
+        },
+        {
+          "label": "俄新社 · 德米特里耶夫、维特科夫与库什纳离开莫斯科酒店（12:59 MSK）",
+          "url": "https://ria.ru/20261112/dmitriev-2131085056.html"
+        },
+        {
+          "label": "卫报直播 · 11:03 CET 写特使前往克里姆林宫（现场报道，不是正式读出）",
+          "url": "https://www.theguardian.com/world/live/2026/nov/12/us-envoys-in-moscow-meeting-putin-abu-dhabi-trilateral-ukraine-ceasefire-talks-latest-news-updates"
+        },
+        {
+          "label": "BBC · 特使抵达莫斯科，原定当地 12:00 见普京（were due to meet）",
+          "url": "https://www.bbc.com/news/articles/cwrkgmymk55zo"
+        },
+        {
+          "label": "RFE/RL · 特使抵达莫斯科",
+          "url": "https://www.rferl.org/a/russia-ukraine-war-us-talks/33896823.html"
+        },
+        {
+          "label": "泽连斯基官方电报公开预览 · 抽出的帖子最晚仍是 11 日，本窗未见 12 日新帖",
+          "url": "https://t.me/s/V_Zelenskiy_official"
+        },
+        {
+          "label": "乌克兰国际文传电讯社 · 泽连斯基称一千或也许一千二百（11 日晚，口头希望，不是本窗新协议）",
+          "url": "https://en.interfax.com.ua/news/general/1235081.html"
+        },
+        {
+          "label": "TASS · 转述 IRGC 海军称两艘超级油轮爆炸起火（未公布船名）",
+          "url": "https://tass.com/world/2216937"
+        },
+        {
+          "label": "Mehr News · 同一 IRGC 声明（未独立指认船名）",
+          "url": "https://en.mehrnews.com/news/249353/Two-supertankers-explode-in-Strait-of-Hormuz-IRGC"
+        },
+        {
+          "label": "hormuz.now · 11 月 11 日完整 UTC 日现修订为 11 艘（6 进 5 出，3 艘油轮），属回填",
+          "url": "https://hormuz.now/traffic/2026-11-11"
+        },
+        {
+          "label": "hormuz.now · 11 月 12 日截至 11:24 UTC 已有 2 艘进湾（日尚未结束）",
+          "url": "https://hormuz.now/traffic/2026-11-12"
+        },
+        {
+          "label": "UKMTO 近期事件页（本窗为 0 reports）",
+          "url": "https://www.ukmto.org/recent-incidents"
+        }
+      ]
+    },
+    {
+      "id": "1112晚-8",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "河北发现 39.5 亿年的岩石，作者认为最像一次短暂俯冲，仍是化学与模拟上的推论",
+      "time": "2026-11-11",
+      "summary": "换赛道——地球早期历史与地质学，不是中刊的黑洞照片再分析，也不是再去找材料或脑科学。《自然》于 2026 年 11 月 11 日在线发表谢杭强等人的论文（DOI 10.1038/s41586-026-11280-2），通讯与合作单位包括中国地质科学院地质研究所北京离子探针中心、吉林大学、南京大学和澳大利亚科廷大学等。大于 39 亿年、又能被明确记录的陆地岩石极为稀少，此前唯一被清楚记下的这类石头在加拿大 Acasta 片麻岩杂岩。作者报告河北东部、华北克拉通一件 39.5 亿年的奥长花岗岩质片麻岩；原生岩浆锆石记下偏高的氧同位素（平均 δ18O +6.77 ± 0.23‰）和正的 εHf(t)（加权平均 +1.45 ± 0.27），指向低温蚀变的玄武质源区，而且这个源区来自冥古宙已经亏损的地幔。与 Acasta 约 40 亿年 Idiwhaa 单元被推断为低压起源不同，这件岩石显示高压起源的地球化学特征。热力学与微量元素模拟认为，母岩浆由玄武质地壳在大于 1.6 GPa、740–820°C 的条件下低程度（8%–16%）部分熔融形成，意味着近地表蚀变的洋壳沿较冷的地温梯度被迅速埋到地幔深度。作者提出，这种快速埋藏最可能通过一次短暂的俯冲事件实现；同日《自然》研究简报把埋深概括为大于 50 公里，并写这套地壳来自一个早在约 43 亿年前就因壳幔分离而亏损的地幔储库。这是对一件太古宙岩石的地球化学与模拟解释，不是直接拍到板块构造开机的影像，「短暂俯冲」仍是作者根据埋深、温度梯度和源区蚀变做出的推论，可以被后续工作检验，不是已经闭合的定论。不要写成「板块构造的起始时间已经敲定」，也不要写成河北从此取代了加拿大那份记录之外的全部早期地壳证据。",
+      "relevance": "以前常被写成「地球上比 39 亿年更老的石头，只在加拿大有一份」，现在河北也有一块同岁数的石头，而且化学信号像是那时已经有过一次把洋壳快速压到很深处的过程——若站得住，等于把「板块是什么时候开始往下钻」的时间线，往地球更年幼的阶段又推了一截；但这还是岩石化学和模拟上的推论，不是已经拍到的现场，也不是已经结案的结论。",
+      "sources": [
+        {
+          "label": "Nature · Hadean mantle depletion and 3.95-Gyr subduction implied by North China rocks（在线 2026-11-11）",
+          "url": "https://www.nature.com/articles/s41586-026-11280-2"
+        },
+        {
+          "label": "Nature Research Briefing · Earth’s early history told by 3.9-billion-year-old rocks from northern China",
+          "url": "https://www.nature.com/articles/d41586-026-03499-w"
+        }
+      ]
+    }
+  ]
+}
