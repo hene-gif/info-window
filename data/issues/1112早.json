@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "id": "1112早",
+  "date": "2026-11-12",
+  "slot": "早",
+  "title": "11月12日 · 早",
+  "items": [
+    {
+      "id": "1112早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "Google 推出 Gemini Decisions API，配套新模型 Gemini Decision 1：一次最多评估 1000 个封闭式问题，标价输入每百万 Token 0.10 美元、输出不收费",
+      "time": "2026-11-12T02:00:00+08:00",
+      "summary": "Google 官方博客于 2026 年 11 月 11 日 18:00 UTC（台北时间 11 月 12 日 02:00）发布「Gemini Decisions API: Fast, calibrated multimodal decisions」。这是本窗相对晚刊的新稿，不是 Gemini 4 Carbon 或 Antigravity /swarm 的重复。公司原文写：今天推出 Gemini Decisions API，由新模型 Gemini Decision 1（模型 ID gemini-decision-1）驱动，可在 Google AI Studio 的 Gemini API 中使用。一次前向计算可对同一份多模态输入评估最多 1000 个互相独立的封闭式问题（是否、选择题、量表打分），「returning probabilities and confidence scores in 150-250 ms end-to-end latency at $0.10 per 1M input tokens with zero output tokens billed。」输入最多 256K tokens，支持文本、图片、音频、视频和 PDF。文中称 Google 内部已用于 Notebook 路由、Stitch、Labs 的表情选择、Search 的 MCP 工具安全层等——这些是公司自己的使用说明，不是第三方评测。文档与演示即日起可在 AI Studio 使用；生态集成正在 OpenRouter、LangChain 等推出，「with support coming soon to Gemini in Google Cloud」，云端支持还没有到。Demis Hassabis 于 2026-11-12T00:05:54Z 转发了介绍帖。",
+      "relevance": "这是一个专门做判断、不写长回答的新接口和新模型，定价按输入计、输出不收费；150–250 毫秒和内部用途都是公司自己的说法，Cloud 也还没接上。",
+      "sources": [
+        {
+          "label": "Google 官方博客 · Gemini Decisions API（RSS pubDate 2026-11-11 18:00 UTC）",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        },
+        {
+          "label": "Google AI 博客 RSS",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/rss/"
+        },
+        {
+          "label": "Demis Hassabis 转发介绍帖（2026-11-12T00:05:54Z）",
+          "url": "https://x.com/demishassabis/status/2120669377443905541"
+        }
+      ]
+    },
+    {
+      "id": "1112早-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "DeepMind 发布 AlphaGenome 2：按细胞类型预测同一段 DNA 如何被不同细胞读取；非商业研究可经 API 使用，尚未获批用于临床",
+      "time": "2026-11-11T23:00:00+08:00",
+      "summary": "DeepMind 官方博客 JSON-LD 的发布时间为 2026-11-11T15:00:00Z（台北时间 23:00），修改时间 16:22:24Z，晚于晚刊约 11:30Z 的截稿；官号线程始于 15:03:17Z。公司原文：「Today, we are announcing AlphaGenome 2」。训练数据写了「more than 100 million individual cell profiles across 68 tissues」，后文也出现「over 107 million individual cell profiles」，都是同一家的表述。官方称，与上一代最强模型相比，它能识别的、会改变细胞内基因表达的变异「nearly twice as many」——这是公司自己的比较，不是独立评测。官号后续帖写模型「available now for non-commercial research via our API」。博客写明：非商业研究即日起可通过 AlphaGenome API 使用，商业研究为 private preview；「soon, we will release AlphaGenome 2 Skills in Google Antigravity」，Skills 还没有发布。文末明确「intended for research use only and have not been validated or approved for clinical or diagnostic purposes。」Demis Hassabis 于 17:12:24Z 亲自宣布，并指向文档 alphagenomedocs.com。这不是 Gemini Robotics 2.5 的重复。",
+      "relevance": "这是看「同一段 DNA 在不同细胞里会怎么被读」的新模型，研究用 API 已经能申请；还不能拿去看病，Antigravity 的 Skills 也还没上。",
+      "sources": [
+        {
+          "label": "DeepMind 官方博客 · AlphaGenome 2（JSON-LD 2026-11-11T15:00:00Z）",
+          "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+        },
+        {
+          "label": "Google DeepMind 官号宣布线程（2026-11-11T15:03:17Z）",
+          "url": "https://x.com/GoogleDeepMind/status/2120532824465805749"
+        },
+        {
+          "label": "Demis Hassabis 宣布帖（2026-11-11T17:12:24Z）",
+          "url": "https://x.com/demishassabis/status/2120565316619284734"
+        },
+        {
+          "label": "AlphaGenome 文档",
+          "url": "https://www.alphagenomedocs.com/"
+        }
+      ]
+    },
+    {
+      "id": "1112早-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】百度发布文心 ERNIE 5.5 Flash Preview：总参数 2800 亿、每 Token 激活 140 亿，支持 100 万上下文；API 已上千帆，中文页称权重将于 11 月 25 日前开源",
+      "time": "2026-11-11T17:20:40+08:00",
+      "summary": "【补报】这不是今天才发布的。百度文心官网中英产品页都署 2026 年 11 月 11 日，HTTP Last-Modified 为 2026-11-11 09:20:40 GMT（台北时间 17:20:40）。这一时刻已经晚于 1111中约 12:30 的截稿，但早于 1111晚约 19:30 的截稿，中刊和晚刊都没有收入，故按真实日期补报，不要写成今早才上线。中文官方原文：「今天，我们发布 ERNIE 5.5 Flash Preview，这是基于此前发布的 Base 模型的首个后训练版本。总参数 280B，激活参数 14B，支持 1M 上下文……模型 API 已在千帆平台上线，权重将于11月25日前开源。」英文页同样写 280B total / 14B active / 1M-token context，以及 API 已在千帆上线，但开源那句是 “the weights will be open-sourced under Apache 2.0 soon”——英文写了 Apache 2.0 和 soon，中文写了 11 月 25 日前，不要把两句合成一句原文。官方还写这是后训练中的 intermediate checkpoint，「training is not finished」。本窗未登录千帆控制台核对上线时刻。这不是 Qwen4-Max-Preview 的重复。",
+      "relevance": "这是中国实验室 11 月 11 日的官方发版，晚刊漏收了；能调用，但还是预览中的中间检查点，开源日期和许可证要以中英页各自的原文为准，训练也还没结束。",
+      "sources": [
+        {
+          "label": "百度文心官网 · ERNIE 5.5 Flash Preview（中文，署 2026年11月11日）",
+          "url": "https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/"
+        },
+        {
+          "label": "百度文心官网 · ERNIE 5.5 Flash Preview（英文）",
+          "url": "https://ernie.baidu.com/release/ernie-5-5-flash-preview/"
+        }
+      ]
+    },
+    {
+      "id": "1112早-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】台积电董事会批准：至多 5 亿美元按 IPO 价认购 Anthropic 普通股，另至多 5 亿美元买 OpenAI 优先股",
+      "time": "2026-11-10T19:45:20+08:00",
+      "summary": "【补报】这不是今天的决议。台积电官方新闻稿 Issued on 2026/11/10，电头写董事会当天开会；JSON-LD dateModified 为 2026-11-10T19:45:20+08:00。讯息窗 1111早、1111中、1111晚只在股市条里出现过台积电股价，没有单独报过这笔投资，故按真实日期补报。决议第 5 项原文：“Approved the investments in (1) Anthropic, PBC at its per share initial public offering price in an amount not to exceed US$500 million to acquire Anthropic’s common shares; and (2) OpenAI Group PBC in an amount not to exceed US$500 million to acquire OpenAI’s preferred stock.” 同稿第 4 项另批「no more than US$500 million」设立一家半导体生态战略投资公司，与上述两笔是并列决议，不要把三笔加总成「投了 15 亿给两家实验室」。决议写的是上限，也还没有交割和持股比例。不要和 1111早 Anthropic 路演条混成同一条，这是台积电自己的决定。",
+      "relevance": "芯片代工厂自己决定，按上限最多各投 5 亿美元进 Anthropic 和 OpenAI；这是董事会批准的额度，不是已经交割的持股。",
+      "sources": [
+        {
+          "label": "台积电官方新闻稿 · 董事会决议（Issued on 2026/11/10）",
+          "url": "https://pr.tsmc.com/english/news/3352"
+        }
+      ]
+    },
+    {
+      "id": "1112早-5",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【后续】纳斯达克市场数据通知：Anthropic A 类股代码 ANT 预计 11 月 19 日在全球精选市场开始交易",
+      "time": "2026-11-11",
+      "summary": "【后续】这不是最终定价，也还没有开盘。纳斯达克 Data Technical News #2026-28 页面落款 Wednesday, November 11, 2026，并写 “UPDATE as of November 11, 2026”，没有精确到时分的发布时间，因此不能断言一定晚于晚刊约 11:30Z 的截稿；晚刊未报，早刊只把 11 月 19 日写成 CNBC 不愿具名消息里的「计划」。通告原文：「Anthropic, PBC - Class A common stock is expected to be listed and begin trading on the Nasdaq Global Select Market under the ticker symbol ANT on November 19, 2026。」更新句写「Anthropic, PBC (ANT) will begin publicly trading on November 19, 2026。」Listing Date 为 Thursday, November 19, 2026，CUSIP 03703U107。这是给行情分发商的技术通知。Anthropic 11 月 10 日路演官方稿仍只写已申请代码 ANT，没有交易日，也还没有最终定价；登记声明尚未生效。1111早已用知情人士口径写过「计划 11 月 18 日定价、19 日开盘」，本窗未见公司或纳斯达克把定价日写成官方确定，18 日定价仍不要升格。通知用语仍有 “expected to be listed”，不要写成已经开盘。本窗亦扫过 OpenAI 博客／index（curl 遇 403，已用页面抓取补齐）与 API changelog（最新仍是 11 月 5 日 gpt-6-cyber；页头 last-modified 变了，条目没有新发版）、ChatGPT 更新说明（最新仍是 11 月 10 日）、Anthropic news／对齐博客／Claude 产品更新、Google AI 与全站 RSS、DeepMind 已打开的 AlphaGenome 2 与 AlphaProof 单篇、x.ai 新闻页、Meta AI 博客与 research.meta.ai、DeepSeek 官网新闻与 GitHub releases、阿里云 Qwen4-Max-Preview 文档（仍为预览、仅 Token Plan，规格与晚刊已报一致）、NVIDIA 新闻室（无 11 月 11 日或 12 日新声明），以及 @elonmusk、@OpenAI、@AnthropicAI、@GoogleDeepMind、@MetaAI、@AIatMeta、@deepseek_ai、@Alibaba_Qwen、@sama、@demishassabis、@karpathy、@dotey、@claudeai、@SpaceXSI 自晚刊截稿后的时间线。@xai 官号时间线本窗接口仍无权读取，不能写成已扫；回退检索 from:xai 为 0 帖，x.ai/news 无本窗新文。灰度检索（中英）未见相对 1109晚 Sol 用户报告、1110晚 Grok 4.8 计划之外、可独立核对的新一轮官方确认；changelog 与更新说明仍未写入 6.2，也不能把 Grok 4.8 写成已经开始 soft rollout。Anthropic 地区政策官方页仍标 Effective Nov 12，本窗无「已开始执行」的官方证据，扫描时太平洋时间还是 11 月 11 日下午，不宜写成已经生效执行。",
+      "relevance": "交易所把 11 月 19 日写成了预期开盘日，比早刊那条不愿具名的「计划」更可核对；定价还没有，也还没开盘。",
+      "sources": [
+        {
+          "label": "纳斯达克 Data Technical News #2026-28（落款 2026-11-11）",
+          "url": "https://www.nasdaqtrader.com/TraderNews.aspx?id=DTN2026-28"
+        },
+        {
+          "label": "Anthropic 官方路演稿（仍只申请代码 ANT，无交易日）",
+          "url": "https://www.anthropic.com/news/roadshow-launch"
+        }
+      ]
+    },
+    {
+      "id": "1112早-6",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "【补报】研究人员称 3 万余个 Grok Build 应用免登录可打开，含明文口令和病患化验单；SpaceXSI 已下架自家员工的 24 个应用",
+      "time": "2026-11-10",
+      "summary": "【补报】这不是本窗新披露。Claroc 研究报告《GhostShares 2》页面署 2026 年 11 月 10 日；转述见于 11 月 10 日晚间的科技报道，早于 1111早约 08:31 的截稿。1111早、中、晚都没有收入，故按真实日期补报，不要写成今早才公开。作者 Asaf Aprozper 写：在其使用的付费账户里，给 Grok 做的应用点 Publish，建议的访问设置是「Anyone with the link」；他们试了 43,551 个 grok.me 地址，37,571 个当时仍在线，其中 35,578 个（94.7%）无需登录即可打开。开放应用里包括 SpaceXSI（报告称即原来的 xAI）和 X 员工做的 24 个应用（含标为 confidential 的入职计划、594 个客户的销售地盘图、给美国联邦机构的广告提案等），以及研究人员能识别出的 30 个其他组织的内部数据（其中 26 个员工过千、6 个在财富 500 强），还有一份重症监护病人的化验与影像资料、医院集团员工名单，以及一份承包商考勤表前端脚本里 18 个账户的明文口令。研究人员 11 月 8 日按 security.txt 向 SpaceXSI 报告；文内写 11 月 10 日公司回答了记者提问、当时尚未回复研究人员，随后下架了自家员工的 24 个应用，但没有同样处理其他用户和组织留下的开放应用，研究人员因此从 11 月 10 日起开始自行通知受影响组织。SpaceXSI 称其员工应用默认是私有的，发布需多步确认；研究人员同意必须点 Publish 才会公开，但指出普通付费账户的访问选项里「有链接即可打开」是预先选中的。文中关于「Continue with Google 可让任意谷歌账号读写删除」的测试，作者写明只在自己搭的应用上证实，没有登录或改写别人的应用。这是一家安全公司的报告，不是 SpaceXSI 自己发布的事故通报。本窗亦扫过 CISA 警报列表和已知被利用漏洞目录 JSON（均成功打开：catalogVersion 仍为 2026.11.10，dateReleased 仍为 2026-11-10T19:03:29Z，约 11 月 11 日 03:03 台北时间，目录仍是 1779 条，与早刊、中刊、晚刊所见完全相同，没有晚刊之后的新入目录项）、Krebs、Wiz、Mandiant／GTIG、Microsoft Security、CrowdStrike，确无达「实害／确认利用／普通人须立刻行动」门槛的本窗新主条。早刊已提示的 Outlook／Chrome 更新，本窗没有在那之上的新行动项。Apache HTTP Server CVE-2026-119618 是本窗新披露的严重漏洞，但 Wiz 写明刊出时尚无可用利用、未见在野利用，不另开一条。",
+      "relevance": "用过 Grok Build 并点过发布的人，应检查该应用是不是仍是「有链接即可打开」，把不该公开的改成仅自己可见或撤下，并轮换应用里出现过的口令、密钥；这与打 Outlook／Chrome 补丁是两件分开的事。",
+      "sources": [
+        {
+          "label": "Claroc · GhostShares 2：Grok Build 应用暴露（2026-11-10）",
+          "url": "https://blog.claroc.io/ghostshares-grok-build-apps/"
+        },
+        {
+          "label": "CISA · 已知被利用漏洞目录 JSON（catalogVersion 2026.11.10，dateReleased 2026-11-10T19:03:29.8375Z，1779 条）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "CISA · 网络安全通告列表",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog（含 11 月 11 日 Apache CVE-2026-119618 说明，文内称当时未见在野利用）",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        }
+      ]
+    },
+    {
+      "id": "1112早-7",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "美股周三收盘：标普 7619.38（+1.31%）、纳指 25466.19（+1.60%）；辉达现金收 173.73，盘后约 159.82 不是收盘；欧股已收，日韩早盘、台港 A 股未开",
+      "time": "2026-11-12T08:23:32+08:00",
+      "summary": "相对晚刊（约 19:26 Asia/Taipei：亚洲已收、欧洲还是盘中、美股现金还没开，10 年期美债无新官方定价，油金为电子盘）：现在美欧现货都已经有周三官方收盘。纽约证交所和纳斯达克假期表都没有把 11 月 11 日列为休市，退伍军人节当天现金照常交易，这是本系列第一次写下周三官方收：标普 7619.38（+98.45／+1.31%），纳指 25466.19（+400.32／+1.60%），道指 52486.49（+254.60／+0.49%），相对周二收 7520.93、25065.87、52231.89。VIX 官方收 17.49（−1.97／−10.12%），时间戳在 16:15 美东，不要用通讯社里出现过的 17.58。收盘稿把上涨与 CoreWeave 季报好于预期、半导体在常规交易里反弹放在一起，本窗未打开公司财报原文。辉达现金官方收 173.73（+4.84／+2.87%），相对周二官方收 168.89，高见 177.54；上一刊预盘约 177.39 不是收盘。盘后仍在交易，约 08:23 台北报 159.82，相对现金收约 −8.01%，盘后最低见到 156.46，这是延长交易，不是新的官方收。通讯社把盘后走低指向董事会去留相关报道；本窗未打开《纽约时报》《华尔街日报》原文，也未见公司声明，不要写成已经证实的人事决定。欧股已收，不再写盘中：STOXX 50 6393.39（+65.52／+1.04%），DAX 26662.77（+315.32／+1.20%）收在当日最高，FTSE 100 10835.47（+83.88／+0.78%），CAC 40 8332.87（+54.28／+0.66%），都相对周二收。亚洲这边，日本和韩国周四 08:00 台北已开，但只是早盘：日经官方 09:23 日本时间 61355.80（+107.21／+0.18%），相对周三收 61248.59；韩综 Naver 09:23 5382.79（+7.43／+0.14%），开盘后不久还曾见到 5356.68（−0.35%），不是收盘，还在变；科斯达克 703.44（−0.24%）。台湾 09:00 尚未开，证交所 MIS 仍停在 07:50，继续用周三官方收：台股 44257.15（+3.62%）、台积电 2395（+4.81%）。港股和 A 股 09:30 才开，继续用周三新华收：恒指 24315.92（−0.98%），上证 3680.64（+0.46%），深成 11389.74（+1.32%），创业板 2572.07（+3.11%）。美元定息按 SIFMA 建议在美国、英国、日本全日休市，财政部曲线没有 11 月 11 日一行，10 年期美债收益率没有新的官方定价，仍是周二的 4.983%。油金已经有周三官方结算，不要再用上一刊的电子盘：WTI Dec 结算 86.53（+0.49／+0.57%），布伦特 Jan 结算 92.76（+1.27／+1.39%），黄金 Dec 结算 4000.50（−29.70／−0.74%），相对各自周二结算 86.04、91.49、4030.20；不要拿 11 月黄金合约结算 3992.00 来减。周四凌晨电子盘另报 WTI 86.18、布伦特 92.40、黄金 Dec 3978.6，那不是新结算。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "美股现金在退伍军人节当天照常收了，不要把这一天写成休市，也不要把辉达盘后或油金电子盘当成收盘、结算；日韩只是早盘，台、港、A 股还没开，债市仍没有新的官方收益率。",
+      "sources": [
+        {
+          "label": "Yahoo Finance · 美股周三官方收及欧股收盘、辉达盘后对照",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Anadolu Agency · 美股收盘短电（标普 7619.38、纳指 25466.19、道指 52486.49）",
+          "url": "https://www.aa.com.tr/en/economy/us-stock-markets-close-midweek-higher/4121530"
+        },
+        {
+          "label": "Sharecast · 美股收盘稿（2026-11-11T23:29:01Z）",
+          "url": "https://www.sharecast.com/news/market-report-us-close/us-close-stocks-higher-as-coreweave-surges-nvidia-rebounds--24134670.html"
+        },
+        {
+          "label": "The Edge · 欧股收盘绕（STOXX 50 6393.39、DAX 26662.77、FTSE 10835.47、CAC 8332.87）",
+          "url": "https://edgeconsultancykw.com/europe-market-wrap-11-november-2026/"
+        },
+        {
+          "label": "CNN · 辉达盘后走低报道（更新 19:15 ET；本窗未打开其所引报纸原文）",
+          "url": "https://edition.cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang"
+        },
+        {
+          "label": "日经官方指数站 · 周四 09:23 日本时间早盘 61355.80（+107.21），非收盘",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225"
+        },
+        {
+          "label": "Naver · 韩综周四 09:23 早盘 5382.79（+0.14%），非收盘",
+          "url": "https://m.stock.naver.com/api/index/KOSPI/basic"
+        },
+        {
+          "label": "Naver · 科斯达克周四 09:22 早盘 703.44（−0.24%）",
+          "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic"
+        },
+        {
+          "label": "证交所 MIS · 台股周四 08:23 尚未开，昨收仍 44257.15",
+          "url": "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_t00.tw&json=1&delay=0"
+        },
+        {
+          "label": "证交所 MIS · 台积电尚未开，昨收仍 2395",
+          "url": "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_2330.tw&json=1&delay=0"
+        },
+        {
+          "label": "纽约证交所假期表（2026 年休市名单无退伍军人节）",
+          "url": "https://www.nyse.com/markets/hours-calendars"
+        },
+        {
+          "label": "纳斯达克 2026 年假期表",
+          "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
+        },
+        {
+          "label": "SIFMA · 建议 2026-11-11 美英日美元定息市场全日休市",
+          "url": "https://www.sifma.org/news/press-releases/sifma-fixed-income-market-close-recommendation-in-the-u-s-the-u-k-and-japan-for-the-u-s-veterans-day-holiday-2026"
+        },
+        {
+          "label": "美国财政部 · 日曲线 CSV（最新一行仍为 2026-11-10，无 11/11）",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+        },
+        {
+          "label": "Dow Jones Data Talk · WTI Dec 结算 86.53",
+          "url": "https://www.morningstar.com/news/dow-jones/202611117176/front-month-nymex-crude-rose-057-to-settle-at-8653-data-talk"
+        },
+        {
+          "label": "Dow Jones Data Talk · 布伦特 Jan 结算 92.76",
+          "url": "https://www.morningstar.com/news/dow-jones/202611117186/front-month-ice-brent-crude-rose-139-to-settle-at-9276-data-talk"
+        },
+        {
+          "label": "美联社黄金期货表 · Dec 26 结算 4000.50（−29.70）",
+          "url": "https://www.reflector.com/news/national/bc-gold-futures/article_57282b24-024c-5df5-884d-8f7a8d92ee47.html"
+        }
+      ]
+    },
+    {
+      "id": "1112早-8",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-12T08:21:00+08:00",
+      "summary": "本窗已打开塔斯社与俄新社（含梅金斯基之后的佐林谈话、克宫预告 12 日见普京）、乌克兰国际文传电讯社、基辅独立报、审查网与中国国际电视台所引泽连斯基电报原文、英国广播公司专稿、卫报欧洲直播（已改成「分别会见」的回顾页）、半岛电视台会谈稿、自由欧洲电台 11 日深夜分析稿，以及 hormuz.now 11 日完整日与 12 日即时计数、英国海事贸易行动处警告 202-26 原文。乌克兰国家通讯社本窗多次打开失败（503／TLS），路透社世界页 401、美联社 403、华盛顿邮报中断、日本放送协会几乎无正文，这些都不能算进已扫。确无已签署的全面和平或停火，霍尔木兹也没有实质性复通或比晚刊更严重的新关闭冲击，未见战争扩到新的主要战场。换俘方面，晚刊还只有俄方团长梅金斯基的单方表述；本窗已见到乌方团长乌梅罗夫、泽连斯基和美方特使库什纳的公开确认，说达成了大规模换俘协议或「准备新一轮交换」，但人数仍待商定（库什纳说周四再定），也不是已公布的签字文本。乌梅罗夫对基辅独立报说「主要结果是达成大规模换俘协议」，细节与执行仍在谈；泽连斯基电报的用语更软，是「就准备新一轮交换达成重要人道主义协议」，不要把两句合成更满的「已经签字成交」。俄军将领佐林估计可能在两至三周内进行，并说这将是最大规模之一，但塔斯社英文引他「尚未落到具体数字」，只是「从去年各 1000 人出发」，不要写成双方已敲定超过 1000 人。阿布扎比没有第三日三方会谈；美方特使预定 12 日上午在莫斯科见普京，随后到都柏林见泽连斯基——截至 00:21 UTC（莫斯科时间约 03:21）打开的塔斯社、俄新社稿仍写「将举行／预计在当天上半日」，不能写成会见已经结束。霍尔木兹 11 日完整 UTC 日仍是 4 艘可见商船通过（3 进 1 出，含 1 艘油轮，最后一艘在 10:56 UTC，与晚刊 11:25 UTC 的 4 艘一致），近七日均值约 6.6 艘／日，对照危机前约 84.8 艘／日（约合正常水平的 8%）；12 日截至 00:21 UTC 尚无可见商船通过，但 UTC 日才刚开始，仍是严重低于正常，不是复通。",
+      "relevance": "把「乌方已经确认换俘、但不是全面和平；下一场是莫斯科／都柏林、会见尚未见结束报道；霍尔木兹仍未复通」写清楚，避免被读成和谈已经谈成或海峡已经重开。",
+      "sources": [
+        {
+          "label": "乌克兰国际文传电讯社 · 乌梅罗夫与库什纳确认大规模换俘，人数周四再定（2026-11-11T14:22:10+02:00）",
+          "url": "https://en.interfax.com.ua/news/general/1234775.html"
+        },
+        {
+          "label": "基辅独立报 · 乌梅罗夫原话（2026-11-11T14:54:36Z）",
+          "url": "https://kyivindependent.com/large-scale-prisoner-exchange-agreed-as-2nd-day-of-abu-dhabi-talks-concludes-umerov-says/"
+        },
+        {
+          "label": "审查网 · 泽连斯基电报：准备新一轮交换（页眉 16:36）",
+          "url": "https://censor.net/en/news/4033206/zelenskyy-was-briefed-on-the-talks-in-the-uae-details"
+        },
+        {
+          "label": "CGTN · 同一段泽连斯基英文原文交叉",
+          "url": "https://news.cgtn.com/news/2026-11-11/news-1RZsFDOMmI0/p.html"
+        },
+        {
+          "label": "TASS · 佐林称换俘或在两至三周内（2026-11-11T12:06:52Z）",
+          "url": "https://tass.com/politics/2216219"
+        },
+        {
+          "label": "TASS · 佐林称尚未落到具体数字、从去年各 1000 人出发（2026-11-11T12:22:55Z）",
+          "url": "https://tass.com/politics/2216245"
+        },
+        {
+          "label": "TASS · 佩斯科夫：普京预计 12 日上半日会见美方特使（2026-11-11T21:45:26Z）",
+          "url": "https://tass.com/politics/2216623"
+        },
+        {
+          "label": "BBC · 会谈结束、无结束战争的突破（2026-11-11T15:05:11Z）",
+          "url": "https://www.bbc.com/news/articles/ck792we7zrz4o"
+        },
+        {
+          "label": "Al Jazeera · 换俘协议、人数周四再定（2026-11-11T13:16:30Z）",
+          "url": "https://www.aljazeera.com/news/2026/11/11/russia-ukraine-talks-in-abu-dhabi-end-with-prisoner-exchange-agreement"
+        },
+        {
+          "label": "RFE/RL · 外交有推进、和平没有更近（2026-11-11T23:08:29Z）",
+          "url": "https://www.rferl.org/a/33895568.html"
+        },
+        {
+          "label": "The Guardian · 欧洲直播回顾页（改成分别会见）",
+          "url": "https://www.theguardian.com/world/live/2026/nov/11/europe-ukraine-russia-us-talks-abu-dhabi-zelenskyy-latest-news-updates"
+        },
+        {
+          "label": "hormuz.now · 11 月 11 日完整 UTC 日仍是 4 艘",
+          "url": "https://hormuz.now/traffic/2026-11-11"
+        },
+        {
+          "label": "hormuz.now · 11 月 12 日截至 00:19 UTC 尚无可见商船（日尚未结束）",
+          "url": "https://hormuz.now/traffic/2026-11-12"
+        },
+        {
+          "label": "UKMTO 警告 202-26 原文（事件报道早于晚刊截稿，只作已核背景）",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/20261111-ukmto_warning_202_26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1112早-9",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "麻省理工把「像叶脉那样粗细不一的网」做成更抗冲击的材料，仍是实验室样品",
+      "time": "2026-11-12T00:00:00+08:00",
+      "summary": "换赛道——材料与工程，不是晚刊的杏仁核电信号，也不是中刊的肠道菌代谢物，或早刊的太空引力波找行星。麻省理工学院 2026 年 11 月 11 日 16:00 UTC（台北时间 12 日 00:00）刊出新闻稿，介绍一类受叶片叶脉、蜻蜓翅膀启发的「多尺度超材料」（scale-rich metamaterials）。必须先写清时间：论文同日在《自然》开放获取发表，11 月 11 日既是论文发表日，也是院方新闻稿日期。通讯作者之一是机械系副教授 Carlos Portela，合作者包括东北大学的 Albert-László Barabási 等。做法不是反复复制同一个「单元格」，而是用两个参数生成粗细、长短、连接数可以差上几个数量级的梁网。样品用 3D 打印聚合物，大约信用卡大小，内部梁从微米到厘米。压缩和落锤试验里，这类网络比规整的格子或蜂窝结构更不容易出现整层压溃，冲击时峰值力更低、单位质量吸收的能量更高。论文摘要还写到弹性各向异性可在很大范围内调节，以及可编程的弹性波调控。新闻稿和论文都把头盔、包装、护甲、声学透镜写成可能的用途，那是展望。这是实验室验证，聚合物样品，不是已经上市的头盔或包装材料，不要写成「已经可以买到更好的头盔」。",
+      "relevance": "这不是新模型或新芯片，而是有人把叶片叶脉那种「粗细长短差很多的网」做成了能把冲击散开的材料；以后也许会用在头盔、包装或护甲上，但现在还只是实验室里打印出来的样品，不是已经能买的产品。",
+      "sources": [
+        {
+          "label": "MIT News · Inspired by networks found in nature…（datetime 2026-11-11T16:00:00Z）",
+          "url": "https://news.mit.edu/2026/engineers-design-stronger-resilient-nature-inspired-metamaterials-1111"
+        },
+        {
+          "label": "Nature · Scale-rich network-based metamaterials（Published 11 November 2026）",
+          "url": "https://www.nature.com/articles/s41586-026-11191-2"
+        }
+      ]
+    }
+  ]
+}
