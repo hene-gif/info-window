@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "id": "1115晚",
+  "date": "2026-11-15",
+  "slot": "晚",
+  "title": "11月15日 · 晚",
+  "items": [
+    {
+      "id": "1115晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】英伟达：黄仁勋辞去总裁、首席执行官及董事，即时生效；财务长 Colette Kress 任临时首席执行官，Harvey Jones 出任公司史上首位董事会主席",
+      "time": "2026-11-12T22:10:00+08:00",
+      "summary": "1112晚截稿时，英伟达新闻室还没有 11 月 11 日或 12 日的新声明，当时只能写到董事会已开会、结果未公布，不能写成已经解职。公开稿出现在截稿之后：公司新闻稿落款 2026 年 11 月 12 日，TechCrunch 标注当天 6:10 a.m. PST（台北 22:10）。董事会宣布黄仁勋已辞去总裁、首席执行官及董事，即时生效；现任执行副总裁兼财务长 Colette Kress 同意出任临时首席执行官，在找到常任继任者之前继续兼任财务长。董事会已启动常任首席执行官寻访，将同时考虑内部和外部人选，并任命自 1993 年起担任董事的 Harvey C. Jones 为公司史上首位董事会主席。Jones 声明对 Kress 及现有领导层有充分信心，并称预期运营、客户承诺和产品路线图不会中断。公司仍按原定计划于 11 月 17 日约 13:20 太平洋时间发布 2027 财年第三季度业绩，随后 14:00 开电话会。8-K 写明：最早事项日为 11 月 11 日，董事会于当天接受辞呈并作出上述任命；所附 Exhibit 99.1 为 11 月 12 日新闻稿。11 月 13 日，董事会对 CNBC 说，正在挑选寻访公司，「尚未正式接触任何潜在候选人」，并称关于个别人选的猜测为时过早。NBC 当天援引消息源称，独立董事计划在其辞职后继续调查——这是消息源陈述，不是调查结论，也不是新闻室新稿。11 月 8 日董事会启动独立调查、11 月 10 日独立董事声明已在更早刊出现，本条写的是新的人事结果，不把旧调查再写一遍，也不扩写此前报道里的私人关系细节。",
+      "relevance": "这是主要人工智能算力企业的领导层交接，有公司新闻稿和 8-K 可核；寻访尚未选定公司、也尚未正式接触候选人，调查是否继续目前只见于消息源，不是已经结案。",
+      "sources": [
+        {
+          "label": "NVIDIA 官方新闻稿：Announces CEO Transition（2026-11-12）",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        },
+        {
+          "label": "SEC 8-K（最早事项日 2026-11-11，Exhibit 99.1 为 11 月 12 日新闻稿）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+        },
+        {
+          "label": "TechCrunch · 2026-11-12 6:10 a.m. PST",
+          "url": "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/"
+        },
+        {
+          "label": "CNBC · 2026-11-13：董事会称尚未选定寻访公司、尚未正式接触候选人",
+          "url": "https://www.cnbc.com/2026/11/13/nvidia-huang-ceo-replacement-search.html"
+        },
+        {
+          "label": "NBC News · 2026-11-13：消息源称调查在辞职后继续",
+          "url": "https://www.nbcnews.com/tech/tech-news/nvidia-investigation-jensen-huang-continue-departure-sources-say-rcna609136"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Google 正式发布 Gemini 4 Hydrogen：面向日常编程和智能体执行，全 100 万上下文统一定价为输入每百万 token 1.50 美元、输出 7.50 美元",
+      "time": "2026-11-13T02:00:00+08:00",
+      "summary": "Google 全站 RSS 将 Introducing Gemini 4 Hydrogen 记在 2026-11-12 18:00 UTC（台北 11 月 13 日 02:00），@GoogleDeepMind 官帖为 18:02:36Z。博文由 Koray Kavukcuoglu 署名，页眉日期是 Nov 12, 2026，另标 Last updated November 13, 2026，未见逐条勘误清单，不能写成第二次发版。公司把 Carbon／Argon 定位为处理最难、需长时间推理的前沿模型，Hydrogen 则用于日常编程和多样智能体工作流的快速执行。官方称，在 Artificial Analysis Intelligence Index 上，Hydrogen 默认 high thinking 为 51，高于 Argon 的 50，最高 xhigh 可到 54；全 100 万 token 上下文统一定价为输入每百万 token 1.50 美元、输出 7.50 美元。对照 Gemini 3.8 Flash，公司称在 high 默认设置下完成任务快 2.5 倍，Terminal-Bench 4.1 为 57% 对 18.2%，并称虚构主张减少 5 倍以上。Google Antigravity 同时引入 Orchestrator，可在同一会话里动态切换 Carbon 与 Hydrogen 等模型；公司称在 Terminal-Bench 4.0 上接近 Carbon 的任务成功率，平均少用 24% 配额、快 19%。可用性按官方原文：面向 Google AI Studio 的各档、Gemini API、Gemini for business、Gemini 应用、Google Search，以及付费 Google AI Pro／Ultra 订阅者在 Antigravity 中使用。这些基准和「快 2.5 倍」都是公司自报，不是本窗独立复现。1112晚空栏曾写，当时官网、RSS 与官号都还没有确认所谓 Gemini 4 Hydrogen，只有用户侧或二手说法；正式稿出现在当晚截稿之后，按台北 13 日凌晨补报，不要把截稿前的传闻事后改写成「其实当时已经发布」。",
+      "relevance": "这是 Google 在 1112晚之后的正式模型发版，也把晚刊还不能确认的 Hydrogen 从传闻推进到了官方稿。",
+      "sources": [
+        {
+          "label": "Google 官方博客：Introducing Gemini 4 Hydrogen（RSS 18:00 UTC 11/12）",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        },
+        {
+          "label": "配套开发者稿：everyday coding and agentic workflows",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
+        },
+        {
+          "label": "配套 Search 稿",
+          "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
+        },
+        {
+          "label": "@GoogleDeepMind 2026-11-12T18:02:36Z",
+          "url": "https://x.com/GoogleDeepMind/status/2120940338869055788"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-3",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 推出 ChatGPT Wallet：先向美国 ChatGPT Pro 用户在 dots 放量，每笔需生物识别批准，由支付网络发令牌、不向商家或代理共享真实卡号",
+      "time": "2026-11-13T23:00:00+08:00",
+      "summary": "OpenAI 官方介绍于 2026 年 11 月 13 日发布 ChatGPT Wallet，与 American Express、Mastercard、Visa 合作。公司称这是让代理付款但拿不到用户真实卡号、且每笔都要安全校验的钱包，并保留适用争议下的卡奖励与保护。流程是：用户添加一次卡；每次购买先核对商品、总额和所用卡，再用 Face ID 或指纹等批准；批准后由支付网络提供令牌（替代真实卡号、安全码和有效期），款项记到所选卡上，真实卡号不与商家或代理共享。官网写明初期通过 dots、面向美国的 ChatGPT Pro 订阅者放量，以便从真实使用中改进兼容性。ChatGPT release notes 同日也记下了 Wallet。本窗检索 @OpenAI 在窗口内为 0 帖，以官网为准，不能写成官号已经宣布。这不是新的基础模型发版。",
+      "relevance": "这是 OpenAI 把代理购物接到现有卡组织上的正式产品，目前只在美国 Pro 用户小范围放量，还不是全量支付能力。",
+      "sources": [
+        {
+          "label": "OpenAI 官方：Introducing ChatGPT Wallet（2026-11-13）",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+        },
+        {
+          "label": "ChatGPT release notes · November 13 Wallet",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-4",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "DeepSeek 开放全家桶应用 API：在 deepseek-flash 上提供联网搜索、文件输入和读链接等，不是新的基础模型",
+      "time": "2026-11-13T22:24:44+08:00",
+      "summary": "DeepSeek API 文档 11 月 13 日宣布，把 App（含网页端）里与推理配合的能力开放给开发者；@deepseek_ai 宣布帖时间为 14:24:44Z（台北 22:24）。在原有 API 打开对应参数后，工具调用和上下文拼接由服务端完成。目前这些对话功能在 V4.1-Flash（deepseek-flash）的 Messages、Responses 与 Chat Completions 接口下提供：非思考模式联网搜索、思考模式下的深度思考搜索、文件输入（PDF、Office、图片等）、阅读链接，以及可选的安全校验（命中风险时返回拒答标识；对外提供应用服务时，文档要求开启并自行承担内容审核等义务）。Search、Fetch、OCR、ASR、TTS 也可作为独立接口单独或组合调用。公司开源了一个可导入历史对话的演示客户端。文档写明，使用扩展能力时除 token 费用外还收取工具调用费用；本窗打开了新闻页，但价表在抓取文本里没有被抽出，这里不编具体单价。这不是新的基础模型发版，V4.1-Flash-1017 仍是 10 月 17 日的更新。",
+      "relevance": "这是本窗中国实验室在缺口里最明确的官方产品进展：把官方 App 能力做成可调用接口，而不是新权重。",
+      "sources": [
+        {
+          "label": "DeepSeek API Docs：发布全家桶应用 API（2026-11-13）",
+          "url": "https://api-docs.deepseek.com/zh-cn/news/news261113/"
+        },
+        {
+          "label": "DeepSeek API 更新日志，2026-11-13",
+          "url": "https://api-docs.deepseek.com/zh-cn/updates.md"
+        },
+        {
+          "label": "@deepseek_ai 2026-11-13T14:24:44Z",
+          "url": "https://x.com/deepseek_ai/status/2121247896918253875"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-5",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "【补报】Claude Meetings 开始在 Team／Enterprise 做 beta，目前支持 Google Meet",
+      "time": "2026-11-13T04:16:20+08:00",
+      "summary": "Anthropic 产品更新页将 Claude Meetings 记在 2026 年 11 月 12 日，@claudeai 官帖为 20:16:20Z（台北 13 日 04:16）。1112晚扫描同一产品更新页时，可见列表最新仍是 11 月 10 日，故按 13 日凌晨补报。官方称，Claude 可以作为可见参与者加入视频会议，跟上讨论，并在会议进行中开始做文档、白板或其他 artifacts；默认可写字回答，经允许可使用已连接工具，并写会议笔记和待办。开始在 Team 和 Enterprise 计划上做 beta 放量，目前支持 Google Meet，其他会议平台「即将推出」。Team 默认可邀请、管理员可关；Enterprise 需管理员为全部或部分组织打开。beta 期间不对零数据保留（ZDR）、HIPAA-ready 配置、客户管理加密密钥（CMEK）组织开放。默认设置是：邀请了组织外的人时 Claude 不进会；若中途有外部人士加入则离开。保存的是转写、摘要和屏幕描述，不是音频。beta 期间，Team／Enterprise 的笔记和转写免费；会上回答若调用了已连接工具则计入用量；会上做的文档、白板等 artifacts 免费至 2027 年 2 月 10 日。公司称正与 Gong、Attention、Granola、Fireflies.ai、Otter、Plaud 等合作以便随后把转写送到已有工具，这是计划，不是本窗已核到的全部上线。本窗亦扫过 OpenAI／Anthropic／Google／DeepMind／xAI／Meta／DeepSeek／通义等官网或 changelog、以及 @elonmusk 与七厂官号；x.ai/news 置顶仍是 11 月 2 日 Grok Bot 1.0，未见新的基础模型稿。@elonmusk 已读范围内没有达到严选门槛的产品或公司级新宣布（可见原创以星舰为主），但其 11 月 14 日 20:00 UTC 之前的原创时间线未全部翻完，这一段覆盖不完整。qwen.ai 不能当成完整标题清单，阿里云文档仍把 qwen4-max-preview 记在 11 月 11 日；Meta AI 博客可见日期排序异常；百度文心产品页本轮没有重新做完整标题复核。GPT-6.2／Sol 仍无官方博客、changelog 或官号确认，也没有与 11 月 8 日已报不同的可核新一波原始材料，不能写成正式发布。",
+      "relevance": "这是 Anthropic 在缺口里最清楚的官方产品放量。本窗亦扫过七厂官号与官网／changelog，无其他须再补的 frontier 发版。",
+      "sources": [
+        {
+          "label": "Claude 官方：Introducing Claude Meetings",
+          "url": "https://claude.com/resources/articles/claude-meetings"
+        },
+        {
+          "label": "Claude product updates，Nov 12, 2026",
+          "url": "https://claude.com/resources/product-updates"
+        },
+        {
+          "label": "@claudeai 2026-11-12T20:16:20Z",
+          "url": "https://x.com/claudeai/status/2120973994191094179"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-6",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "【补报】美国司法部与联邦调查局宣布打掉朝鲜 FaceStealer 云设施：过去 18 个月窃取超 4 亿美元加密货币，手法含假会议、偷拍摄像头视频和深度伪造",
+      "time": "2026-11-12",
+      "summary": "美国司法部 2026 年 11 月 12 日新闻稿（稿号 26-1356）宣布，扣押朝鲜黑客在 FaceStealer 计划中使用的云基础设施。该计划在过去 18 个月窃取超过 4 亿美元加密货币。同一新闻稿还写，法院授权扣押或冻结最近从币安窃取的超过 12 亿美元加密货币——这是并列的另一项行动，不要把 12 亿与 4 亿合成一个数字。FBI 专项页和 11 月 12 日 IC3 FLASH（编号 AC-111226-MS）把手法写为：假冒 Zoom／Teams／Google Meet，从被黑账户发邀请，播放先前受害者的摄像头录像，再制造「你这边没声音」一类故障，诱使目标点击更新或把命令贴进终端，从而植入恶意软件。FBI 称已识别并扣押 900 多段受害者摄像头视频。归因公开名称包括 Sapphire Sleet、UNC1069、APT38、BlueNoroff 等。IC3 举例的仿冒域名包括 uu01webzoom.us、teams.livemeet.us。司法部稿在预录视频之外，另外写这些黑客还用超级智能制作知名人士的深度伪造视频，用于取得信任；FBI 专项页正文检索未出现 deepfake 一词，所以「预录摄像头视频」和「深度伪造」分开写，都标来源。这份稿是 11 月 12 日发布，晚于 1112晚截稿，此前各刊未见 FaceStealer，按 12 日补报。",
+      "relevance": "不要从聊天软件里的「修复音视频」链接或提示去下载、运行脚本或把命令贴进终端；视频会议只从 Zoom、Teams、Google Meet 官方应用进入，不要点看起来像会议、域名却略有不同的网址。即便对方的账号看起来是熟人，也不要按「故障」里给出的修复步骤操作。",
+      "sources": [
+        {
+          "label": "美国司法部新闻稿 26-1356（2026-11-12）：打掉 FaceStealer 云设施",
+          "url": "https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency"
+        },
+        {
+          "label": "FBI · FaceStealer 专项页",
+          "url": "https://www.fbi.gov/investigate/cyber/facestealer-cryptocurrency-theft-scheme"
+        },
+        {
+          "label": "IC3 FLASH AC-111226-MS（2026-11-12）",
+          "url": "https://www.ic3.gov/CSA/2026/261112.pdf"
+        },
+        {
+          "label": "BBC · 交叉报道",
+          "url": "https://www.bbc.com/news/articles/cqdj1ellpd70o"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-7",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "Cursor 公布调查更新：10 月 29 日恶意扩展来自 Fireworks 侧暴露的访问密钥；最多约 5000 人可能拿到缓存中的 2.1.312／2.1.313",
+      "time": "2026-11-13",
+      "summary": "恶意 Claude Code 扩展本身已在 1030晚报过，本条只写 11 月 13 日官方调查更新里此前未写清的路径和范围。Cursor 称：攻击者获得了公司发给 Fireworks 的访问密钥，密钥是由 Fireworks 侧暴露的；攻击者从只读存储桶复制非 Privacy Mode 的编码代理轨迹（大多是 2025 年的历史数据），其中一小部分含未被脱敏的凭证，不到 0.01% 客户的 API 凭证暴露，不到 0.05% 用户的轨迹暴露。攻击者还进入部分 Cursor 使用的 SaaS，取到非生产代码库、有限客服与邮件、使用数据与联系方式、部分对话摘要，以及用户发给客服的凭证。10 月 29 日，攻击者用偷来的内部凭证，把恶意、未经授权的 Anthropic Claude Code 扩展副本放到 Cursor 市场的缓存上；Anthropic 未发布该副本，Open VSX 源站也没有这份恶意包。官方称，最多约 5000 名在当天请求特定缓存版本的用户可能拿到 2.1.312／2.1.313，上线约 11 小时后被撤下。Cursor 说，绝大多数客户未受影响，已直接联系受影响客户；最后一次看到的攻击活动是 11 月 1 日并已被阻断。Privacy Mode 下的提示词和代码，以及当前发往 Cursor 的实时流量，官方称不在暴露范围内。这是 Cursor 自家的调查结论。本窗打开了 Fireworks 博客列表，可见条目是产品或模型发布，没有看到对应事件的官方说明，不能写成「Fireworks 已公开承认」。本窗亦扫过 Wiz、Mandiant／Google Threat Intelligence、CrowdStrike、Microsoft Security、Krebs、CISA 通告列表与 11 月 13 日已知被利用漏洞告警，以及 X 上的安全线索；除本条与 FaceStealer 外，未见其他达到「实害／确认利用／普通人须立刻行动」门槛的新主条。CISA 的 /alerts 目录本窗打开为 404，已改用通告列表和具体告警页；美联社与部分 BleepingComputer 全文 curl 为 403，不计入已扫。",
+      "relevance": "若你在 10 月 29 日从 Cursor 市场安装或更新过 Anthropic.claude-code 2.1.312／2.1.313，仍按 10 月 29 日官方安全公告检查，只卸载扩展可能不够。若没有收到关于轨迹或密钥的单独通知，按官方说法，你的数据不在那批被复制的轨迹里。已按当时指引处理过的人，重点看有没有新的定向通知，以及是否按名单轮换过密钥。",
+      "sources": [
+        {
+          "label": "Cursor · An update on our recent security incident（2026-11-13）",
+          "url": "https://cursor.com/blog/security-incident-update"
+        },
+        {
+          "label": "Cursor · 2026-10-29 原安全公告（已在 1030晚报过，供对照）",
+          "url": "https://cursor.com/blog/claude-code-extension-security-notice"
+        },
+        {
+          "label": "The Hacker News · 2026-11-15 转述 Cursor 周五更新",
+          "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-8",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周日全球休市。补报美股周四收：标普 7592.40（−0.35%），辉达现金收 166.19（−4.34%）；周五全球：标普 7561.67（−0.40%），纳指 25136.27（−0.91%），台股收 43675.12（+1.35%），日经收 61142.35（+0.53%）",
+      "time": "2026-11-15T20:20:00+08:00",
+      "summary": "1112晚截稿时亚洲已有周四全日收，美股现金还没开盘，当时辉达预盘约 161.71 被明确写成不是收盘；欧股也还是盘中。本刊补上周四美股现金收和周五全球收，并写明本周日亚股、美股现金、欧股现金均为周末休市，没有新的官方收盘。美股期货常规周日晚盘要到 18:00 ET（周一 07:00 台北）才开，截稿时电子盘也尚未重开，不要把网页上仍显示的周五结算写成周日盘。美股周四现金收：标普 7592.40（−26.98／−0.35%），纳指 25366.09（−100.10／−0.39%），道指 52297.09（−189.40／−0.36%），辉达 166.19（−7.54／−4.34%）。相对 1112晚已报预盘 161.71，现金收更高，但不能用预盘代替这笔官方收。周五再收：标普 7561.67（−30.73／−0.40%），纳指 25136.27（−229.82／−0.91%），道指 52347.55（+50.46／+0.10%），辉达 162.85（−3.34／−2.01%）。点位与涨跌来自 Yahoo 日线和 CNBC 11 月 13 日收评、腾讯美股报价交叉；美联社收盘稿本窗 curl 为 403，未打开正文。亚洲周五全日收，分母用 1112晚已报的周四官方收：日经 61142.35（+322.99／+0.53%），官方页标注 Nov/13(*Close）；韩综 5290.53（−52.20／−0.98%），科斯达克 699.66（+3.13／+0.45%）；台股证交所收 43675.12（+583.25／+1.35%），开 43719.75、高 44489.48、低 43534.12，成交金额 9515.80 亿新台币；台积电收 2350（+10／+0.43%）。恒指 23637.60（−370.95／−1.55%），国企指数 7937.53（−1.48%），恒生科技 3813.19（−3.02%），港股成交约 1958.6 亿港元。上证 3634.35（−21.48／−0.59%），深成 10968.79（−2.05%），创业板 2426.08（−3.32%），两市成交约 1.67 万亿元，低于周四约 1.93 万亿元。欧股补上周四收和周五收：欧元 STOXX 50 周四 6398.98（+0.09%）、周五 6386.86（−0.19%）；DAX 周四 26771.88（+0.41%）、周五 26749.95（−0.08%）；CAC 40 周四 8361.36（+0.34%）、周五 8368.91（+0.09%）；FTSE 100 周四 10863.10（+0.26%）、周五 10902.56（+0.36%）。STOXX 600 本窗没有独立的周四收盘交叉，只记下 Sharecast 周五写的 664.14「几乎持平」，不对 1112晚盘中价乱算涨跌。路透欧洲页本窗为 401，欧股部分交叉不完整。美国财政部日曲线：周二 10 年期 4.98%，周三退伍军人节无曲线，周四 5.10%，周五 5.15%；周末无新曲线。油金未打开 CME 官方结算 PDF（403），周四、周五结算改用 The Edge 表与通讯社转载交叉：WTI 12 月合约周四 88.74（+2.55%）、周五 88.56（−0.20%）；布伦特 1 月周四 95.82（+3.30%）、周五 95.84（+0.02%）；黄金 12 月合约周四 3885.30（−115.20／−2.88%）、周五 3886.30（+1.00／+0.03%）。不要用 11 月黄金合约。周四油价大涨的报道背景，是特朗普当天社交帖称美国不再需要与伊朗达成协议；金价则在国债收益率上行时大跌。闲逛栏另有 Nscale、QTS、CoreWeave 融资结构三条，不在本条重复数字。本窗亦扫过美日韩台／A·港／欧／油／金／美债固定源。",
+      "relevance": "先把 1112晚还没有的周四美股现金收补上，再看周五全球收；周日全部休市，不要把预盘、电子盘或网页上的周五价写成今天收盘。辉达这两天的跌幅要跟现金收对齐，也要跟领导层交接同一条时间线，但人事细节在产品栏。",
+      "sources": [
+        {
+          "label": "Yahoo Finance · Equities close lower as Nvidia drop outweighs energy gains（周四收：标普 7592.40、纳指 25366.09、道指 52297.09）",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-fall-nvidia-turmoil-093910045.html"
+        },
+        {
+          "label": "CNBC · Stock market news for Nov. 13, 2026（周五收：标普 7561.67、纳指 25136.27、道指 52347.55）",
+          "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html"
+        },
+        {
+          "label": "Yahoo Finance · 标普 500 报价页（日线交叉辉达等现金收）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "日经官方 Daily Summary · 周五全日收 61142.35（+322.99／+0.53%），标注 Nov/13(*Close）",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/archives/summary?dt=11132026&idx=nk225"
+        },
+        {
+          "label": "证交所 MI_INDEX · 台股周五收 43675.12（+583.25／+1.35%）",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20261113&type=IND&response=json"
+        },
+        {
+          "label": "证交所 FMTQIK · 同一收盘，官方成交金额 9515.80 亿新台币",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20261113&response=json"
+        },
+        {
+          "label": "证交所 STOCK_DAY · 台积电周五收 2350（+10／+0.43%）",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20261113&stockNo=2330&response=json"
+        },
+        {
+          "label": "新华英文 · A 股周五收：上证 3634.35（−0.59%），深成 10968.79，创业板 2426.08",
+          "url": "https://english.news.cn/20261113/d9d8b561b8df445a8f70c45fa99a77cb/c.html"
+        },
+        {
+          "label": "RTHK · 恒指周五收约 23637，成交 1958.6 亿港元（精确点位用交叉后的 23637.60／−1.55%）",
+          "url": "https://news.rthk.hk/rthk/en/component/k2/1877702-20261113.htm"
+        },
+        {
+          "label": "美国财政部 · 日曲线 CSV（周二 10 年期 4.98%，周四 5.10%，周五 5.15%；无 11/11、无周末）",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+        },
+        {
+          "label": "The Edge · Commodities Wrap 13 November（WTI Dec 88.56，布伦特 Jan 95.84，黄金 Dec 3886.30）",
+          "url": "https://edgeconsultancykw.com/commodities-wrap-13-november-2026/"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-9",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "跟 Anthropic 那笔最多约 446 亿美元的合同对上了：芯片订单有的已不能退，配套融资还没锁定",
+      "time": "2026-11-15T15:24:00+08:00",
+      "summary": "Nscale 11 月 12 日向美国证交会提交的招股书修订稿自己写了两件连着的事。一是 8 月 25 日与 Anthropic 签的一系列 GPU 服务协议，约定在西弗吉尼亚 Monarch 园区提供专用算力，合计收款上限约 446 亿美元，但要先满足交付和可用率等条件；公司须尽最大努力，在约定时间内为所需芯片和机房配套融资。截至这份招股书日期，这些配套融资还没有任何有约束力的承诺，公司只说已向市场试探、凭过往记录相信能借到，同时也写明不保证能按可接受条件借到。二是为了防涨价、抢配额，并避开合同里的延误罚则，公司已经下了大批 GPU、网络和相关设备采购单。年报里原先还能靠推迟、缩减或取消资本开支来缓解资金压力；这些新订单下来以后，短期资本开支承诺明显增加，其中一部分已不能按合同推迟、缩减或取消，因此 2027 年的预定付款还需要再融资。招股书同时给出截至 9 月 30 日、尚未完成结账、会计师也尚未审阅的前九个月预估：营收 3.075 亿美元（上年同期 2130 万美元），净亏 16.919 亿美元（上年同期 4.333 亿美元），其中公允价值调整亏损约 6.299 亿美元。对普通人／市场判断的用处是：大额合同签下来，不等于履行合同所需的钱已经锁定；有的采购单可能在融资承诺还没跟上的时候，就已经不能退了。已证实的是 11 月 12 日 S-1/A 自己写下的上限、无约束力融资承诺、部分新资本承诺不可取消，以及须为 2027 年预定付款再融资。预估尚未完成结账，KPMG 未审阅，文件写明实际数字可能有重大差异。部分媒体把 3.075 亿营收和约 16.9 亿净亏写成第三季度数字，与招股书「截至 9 月 30 日的前九个月预估」不符，以原文为准。",
+      "relevance": "融资结构与软承诺对账：承租方／算力供应商的大额合同，可能在采购单已经不能取消时，仍未获得履行合同所需的有约束力融资。证据边界：446 亿美元上限、无约束力融资承诺、部分新资本承诺不可取消、须为 2027 年预定付款再融资，以及前九个月预估，均来自 2026-11-12 S-1/A。二号楼 60 天谈判窗口从 9 月 29 日起算，是否延期或谈成，文件未更新。",
+      "sources": [
+        {
+          "label": "SEC · Nscale plc S-1/A（2026-11-12）：Anthropic 协议、无约束力融资承诺、不可取消采购与前九个月预估",
+          "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526458722/ck0002110365-20261112.htm"
+        },
+        {
+          "label": "Quartz · 2026-11-13：核对招股书中「部分承诺不能取消、2027 年须再融资」的表述，并转述《华尔街日报》接近公司人士的说法",
+          "url": "https://qz.com/nscale-needs-more-financing-planned-ipo-111326"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-10",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "黑石旗下的机房公司把私募债砍掉六成，宁可少借，也不肯把利息再抬上去",
+      "time": "2026-11-15T15:24:00+08:00",
+      "summary": "彭博 11 月 13 日至 14 日援引知情人士报道，黑石旗下数据中心运营商 QTS 原计划发行大约 8 亿美元私募债，实际缩到大约 3 亿美元，少了约六成。知情人士说，有的投资人嫌发行利率不够高，有的则因为 QTS 近一年多次做私募，对单一借款人的额度已经不够用。黑石不愿明显加价，是因为自己经常在多个市场融资，这一单如果把利差抬高，可能变成评估其他黑石相关债务的新参照。缩水后的方案里，1 亿美元七年期美国私募已在周五定价，收益率比基准高出 2.45 个百分点；另外 2 亿美元五年期银行贷款还要等未来几周再定价。原先大约 8 亿美元是打算用来置换已有的五年期银行贷款，规模缩小后，这笔银行贷款可以留着不还。黑石拒绝置评。对普通人／市场判断的用处是：这不是报纸上的情绪，而是借款人真的少拿了钱，并且选择保住自己的定价，而不是为了借满去加息。已证实的是彭博对知情人士的转述，以及周五那 1 亿美元的定价；银行贷款部分尚未定价，也还没有看到公司自己的公告。不能把「砍到 3 亿」写成整笔已经交割，也不能把这一单的缩量，直接写成整个人工智能机房债市场都借不到钱。本轮未能打开彭博原文，数字和定价以《商业时报》转载稿为准，该稿文末标明 BLOOMBERG。",
+      "relevance": "信贷与市场预期背离：在投资人不接受原定利率、且对同一发行人私募额度已经偏紧时，借款人可能选择缩小规模、维持利差，以免把更高成本传到同一赞助人的其他债务上。证据边界来自彭博知情人士报道（经《商业时报》11 月 14 日转载）。黑石未置评。",
+      "sources": [
+        {
+          "label": "The Business Times · 2026-11-14 转载彭博：QTS 将私募债规模从约 8 亿美元降至约 3 亿美元，七年期部分周五定价为基准加 2.45 个百分点",
+          "url": "https://www.businesstimes.com.sg/property/blackstones-qts-cutting-ai-debt-sale-more-half"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-11",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "无抵押债大约 16% 以后，CoreWeave 又拿 Meta 的合同去做抵押，想再借至少 40 亿美元",
+      "time": "2026-11-15T15:24:00+08:00",
+      "summary": "CoreWeave 三季度刚说过，按现在的利率不会去借无抵押债，转而让客户先付预付款和保证金，这一判断已在 1112中收录。接着彭博和 Semafor 在 11 月 11 日至 13 日报道，它正在由摩根士丹利和三菱日联安排至少 40 亿美元、按投资级结构来卖的贷款，计划用芯片及相关合同、以及与 Meta 的合同做抵押。Semafor 11 月 13 日引述知情人士称，早期推销反应不错，公司目标全成本利率大约 7.5%，远低于其无抵押债一度接近 16% 的收益率。Quartz 转述彭博称，方案可能最早在 11 月 16 日当周分批推向投资人，但计划尚未敲定；CoreWeave 自身信用评级仍低于投资级。今年 3 月它已经做过一笔 85 亿美元、同样由 Meta 客户合同支撑的投资级结构融资。CoreWeave 与摩根士丹利发言人对彭博不予置评，三菱日联当时未回复。对普通人／市场判断的用处是：同一家公司，无抵押的债可以很贵，靠大客户合同和设备抵押的债，仍可能按低得多的利率去试。已证实的是媒体对筹备中交易的报道，不是已经定价或已经到账的贷款。不能把「投资级贷款」写成公司本身已被评为投资级，也不能把大约 7.5% 的目标写成已经借到的成本。本条只收录新的有抵押贷款筹备，不把预付款指引再写一遍。",
+      "relevance": "利率与融资结构：在无抵押债收益率升至约 16% 后，借款人可能继续用客户合同和设备抵押，尝试以接近投资级的成本融资；能否发出、最终利率是多少，仍取决于认购。7%–7.5% 的区间，Quartz 写明彭博援引的是公司周二财报电话会，不一定等于本轮已经谈定的发行利率。两家主要当事方未置评。",
+      "sources": [
+        {
+          "label": "Semafor · 2026-11-13：CoreWeave 拟借 40 亿美元、以 Meta 合同抵押，目标全成本约 7.5%",
+          "url": "https://www.semafor.com/article/11/13/2026/coreweave-tunes-out-nvidia-noise-looks-to-raise-4b"
+        },
+        {
+          "label": "Quartz · 转述彭博：至少 40 亿美元投资级结构贷款，可能最早下周发行，计划尚未敲定",
+          "url": "https://qz.com/coreweave-investment-grade-loan-4-billion-morgan-stanley-111226"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-12",
+      "section": "国际重大影响",
+      "title": "【补报】克宫公布与维特科夫、库什纳会晤记录，随后都柏林见泽连斯基：同意续谈、大规模换俘、下一轮拟让欧洲直接上桌；没有全面停火协议",
+      "time": "2026-11-12T21:15:00+08:00",
+      "summary": "1112晚截稿时，TASS 仍引乌沙科夫的话，称与普京的主要会晤还没有谈妥。克宫英文稿标注 Publication date: November 12, 2026, 16:15；按该站惯用的莫斯科时间理解，是 21:15 台北，晚于当晚截稿。稿中俄方出席还有乌沙科夫、梅金斯基和俄罗斯直接投资基金的德米特里耶夫。普京感谢美方促成人道渠道，提到换俘，以及赫尔松州阿廖什基的人道安排；提出在顿巴斯的科斯佳蒂尼夫卡做类似的五日排雷／撤离安排，并强调「只有一条分界线——国界」，反对谈「灰色地带」。稿件在「To be continued.」处结束，不是一份条约文本。BBC 写，两人随后到都柏林见泽连斯基；维特科夫称普京已同意欧洲谈判代表加入下一轮，领土问题仍是关键分歧。乌克兰国家通讯社 Ukrinform 引泽连斯基在都柏林会见后说，三方会晤重新打通；阿布扎比会谈的主要成果是决定进行「最大规模」战俘交换；「欧洲应在下一场会谈中直接出现在谈判团队里，而不是另外一组」。NPR 11 月 13 日也写，美方希望让欧洲加入，但美欧在安全安排上仍有分歧。没有全面停火，也没有签署结束战争的协议，不要写成和谈已经成交；科斯佳蒂尼夫卡的提议是局部人道安排，不是全线停火。霍尔木兹仍严重受限，不作通行质变另条：UKMTO 11 月 13 日第 15 期周报称，过去 7 日合计出港 139、入港 169，约低于冲突前水平 65%；JMIC 更新仍把区域威胁级别列为 SEVERE。美联社莫斯科稿本窗 curl 为 403，未打开正文；克宫页后来再次抓取失败，组版以先前已打开的 WebFetch 文本为准。",
+      "relevance": "莫斯科这场会已经有了官方记录，方向是续谈、换俘和把欧洲拉上桌，但还没有停火协议；霍尔木兹也还是低通行、威胁级别仍高，不必把「会已经开完了」理解成战争或海峡出现转折。",
+      "sources": [
+        {
+          "label": "克宫英文稿 81246（标注 2026-11-12 16:15）：与维特科夫、库什纳会晤记录",
+          "url": "https://en.kremlin.ru/events/president/news/81246"
+        },
+        {
+          "label": "BBC · 特使随后到都柏林见泽连斯基，称普京同意欧洲加入下一轮",
+          "url": "https://www.bbc.com/news/articles/cwrkgmymk55zo"
+        },
+        {
+          "label": "Ukrinform · 泽连斯基谈都柏林会见与大规模换俘",
+          "url": "https://www.ukrinform.net/rubric-polytics/4184145-zelensky-meets-with-witkoff-and-kushner-outlines-key-outcomes-of-abu-dhabi-talks.html"
+        },
+        {
+          "label": "NPR · 2026-11-13：希望让欧洲加入俄乌和谈",
+          "url": "https://www.npr.org/2026/11/13/nx-s1-6039172/trumps-envoys-hope-to-get-europe-involved-in-russia-ukraine-peace-talks"
+        },
+        {
+          "label": "UKMTO 第 15 期 VRA 周报（2026-11-13）：7 日出港 139、入港 169，约低于冲突前 65%",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/20261113-ukmto_vra_overview_u.pdf"
+        },
+        {
+          "label": "JMIC Advisory Update 113：区域威胁级别 SEVERE",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_113_12-nov.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1115晚-13",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "耶鲁研究把伤寒最致命的小肠穿孔，追到一种在血液里循环的细菌毒素先破坏了小肠血管",
+      "time": "2026-11-13",
+      "summary": "换赛道——传染病机制与医学，不是中刊或晚刊已经用过的地质、黑洞照片再分析或抗冲击材料。耶鲁新闻 2026 年 11 月 13 日介绍，耶鲁医学院 Jorge E. Galán 实验室在 *Nature Microbiology* 报告：伤寒最致命的并发症小肠穿孔，出现在病程后期，即使已经使用抗生素仍可致命；作者认为，是在血液中循环的伤寒毒素先损伤小肠血管，使其无法承受随后细菌在局部造成的压力。研究指向在抗生素之外、针对毒素和血管的治疗思路，并称在小鼠中建立了可出现这种肠道病变的模型。DOI 为 10.1038/s41564-026-02521-1。一手是机构新闻稿加上期刊论文号；本窗打开了耶鲁新闻页，没有另打开论文全文，方法学细节以论文为准。作者把「这是一个已解决的问题」写在新闻稿里，这是研究者自己的判断，不是已经进入临床的新药。",
+      "relevance": "伤寒不是新病，教科书写穿孔写了一百多年，却一直没讲清楚肠子为什么会破；现在给出的不是「细菌把肠壁咬穿」这么简单，而是一种毒素先把供血的管子弄坏。这还是实验室和动物模型上的机制结果，不是已经可买到的新疗法。",
+      "sources": [
+        {
+          "label": "Yale News · 2026-11-13：Yale scientists identify the cause of typhoid fever’s deadliest complication",
+          "url": "https://news.yale.edu/2026/11/13/yale-scientists-identify-cause-typhoid-fevers-deadliest-complication"
+        },
+        {
+          "label": "Nature Microbiology 论文 DOI 10.1038/s41564-026-02521-1（本窗未打开全文）",
+          "url": "https://doi.org/10.1038/s41564-026-02521-1"
+        }
+      ]
+    }
+  ]
+}
