@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "id": "1116早",
+  "date": "2026-11-16",
+  "slot": "早",
+  "title": "11月16日 · 早",
+  "items": [
+    {
+      "id": "1116早-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "OpenAI 开设科学博客，首篇客座文章讲 GPT-6 Astra 辅助给出标准模型的格点定义候选",
+      "time": "2026-11-16T06:00:00+08:00",
+      "summary": "OpenAI News RSS 将《Our new blog for science》记在 2026-11-15 22:00:00 GMT，紧随其后的首篇客座文《A step toward defining the Standard Model on a lattice》为 22:00:01 GMT，已是台北 11 月 16 日 06:00；页眉日期是 November 15, 2026，不要写成台北 11 月 15 日。介绍稿写明：开设 OpenAI science blog，给科学家和学术研究者分享他们用 AI 做出的发现、以及如何做这些工作，计划覆盖研究成果、方法指引和科学共同体的第一手看法。文中回顾的九月 Navier–Stokes 证明、十月数学结果、以及与 PerturbAI／Scripps 等的生物学合作，是已有工作的背景，不是本窗新发表的结果。首篇客座文作者是加州大学圣塔芭芭拉分校粒子理论组负责人、KITP 常任成员 Nathaniel Craig（文中写明他是 OpenAI visiting scientist）。他描述自己与 GPT-6 Astra 合作，在 10 月的预印本里提出一个标准模型的格点非微扰定义候选：自己原先有策略，但没能在所有需要覆盖的情形下完成证明；Astra 帮助把策略做成构造，并在详细证明中起主导作用。格点场论专家 Maarten Golterman、Andreas Kronfeld、Yigal Shamir 审看过证明并提问。作者写明，这更多是 principle 上的答案，而不是实践上已经能用的方法，要做成可做真实模拟的工具还有大量工作；有限格距上的反射正定性（reflection positivity），以及连续时空中相互作用理论的定义，都还开放。文中把 GPT-6 Astra 当作已有模型使用，不是宣布新模型，也不是 GPT-6.2。@OpenAI 在本窗 2026-11-15 12:00 UTC 之后的用户时间线检索为 0 帖，本条以官网和 RSS 时戳为准。本窗亦扫过 Anthropic News 与 Claude 产品更新、Alignment、Google／DeepMind 博客与 RSS、xAI 公开 News、DeepSeek 更新日志、Qwen 公开博客与 GitHub releases，以及 @elonmusk 和各厂官号（@xai 主接口未授权，改用搜索为 0 帖；Meta 官方博客列表本窗抓取不完整，不能写成已确认无新稿），无其他须补报的官方发版。GPT-6.2 与所谓 Gemini 4 Oxygen 仍停在传闻或单条用户对比，没有官宣。",
+      "relevance": "这是截稿之后 OpenAI 官网上唯一的新官方稿，但不是新模型发版，也不要把「格点定义候选」写成标准模型的定义问题已经解决。",
+      "sources": [
+        {
+          "label": "OpenAI 官方：Our new blog for science（RSS 22:00:00 GMT）",
+          "url": "https://openai.com/index/our-new-blog-for-science/"
+        },
+        {
+          "label": "OpenAI 官方：A step toward defining the Standard Model on a lattice（RSS 22:00:01 GMT）",
+          "url": "https://openai.com/index/step-toward-defining-the-standard-model"
+        },
+        {
+          "label": "OpenAI News RSS pubDate（核时戳）",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "1116早-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-16T08:30:00+08:00",
+      "summary": "这段时间没有相对晚刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已扫 CISA 警报列表和已知被利用漏洞目录 JSON（均成功打开：catalogVersion 仍为 2026.11.13，dateReleased 仍为 2026-11-13T20:24:18Z，约 11 月 14 日 04:24 台北时间，目录仍是 1781 条，最新仍是晚刊已经看过、未升格的 11 月 13 日两条——UnrealIRCd 和 Check Point 多产品，都不是普通人常用软件；置顶警报仍是这同一条，没有 11 月 14 日到 16 日的新 Alert）、Krebs（首页最新仍是 11 月 11 日关于 Qilin 勒索团伙管理员身份的调查，不是新的利用通报）、Wiz（最新仍是 11 月 13 日 Green Agent 产品案例，其下仍是已看过的 Apache 漏洞说明，本窗没有在官方或厂商一手里核到利用状态变化）、Mandiant／GTIG（主题列表页可见条目仍是已点名的 AI Threat Tracker、LLMJacking、XCPE、ARTEX 等，未见 11 月 14 日到 16 日新主文）、Microsoft Security（最新仍是晚刊已经排除的 11 月 13 日 ScreenConnect／SCKit 企业远程管理报告，以及 11 月 12 日关于编码智能体训练后供应链的研究文，文内写明一种后门手法未见在野证据，不是对普通人的在野攻击通报）、CrowdStrike（最新仍是 11 月 13 日 Falcon AI Gateway 产品文和 11 月 12 日评奖文，不是实害事件）。晚刊已报的 FaceStealer 和 Cursor 调查更新，本窗都没有在那之上的新行动项。",
+      "relevance": "家用读者本窗无新的立刻改密或急补丁项。晚刊已报的 FaceStealer 与 Cursor 调查更新，本窗没有在那之上的新行动项。",
+      "sources": [
+        {
+          "label": "CISA · KEV JSON feed（catalogVersion 2026.11.13，dateReleased 2026-11-13T20:24:18.3008Z，1781 条）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "CISA · Cybersecurity Alerts & Advisories（置顶仍是 11 月 13 日两条入目录警报）",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "Krebs on Security（11 月 11 日 Qilin 归因调查仍为最新）",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog（11 月 13 日 Green Agent 产品案例仍为最新）",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        },
+        {
+          "label": "Microsoft Security Blog（11 月 13 日 SCKit／ScreenConnect、11 月 12 日编码智能体研究仍为最新）",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike Blog（11 月 13 日 Falcon AI Gateway 产品文仍为最新）",
+          "url": "https://www.crowdstrike.com/en-us/blog/"
+        }
+      ]
+    },
+    {
+      "id": "1116早-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周一亚盘：日经高开 0.34% 后回落到 60773.42（−0.60%），韩综开高后转跌；台股、A 股、港股尚未开盘，美欧现金仍指向周五收盘",
+      "time": "2026-11-16T08:27:00+08:00",
+      "summary": "东京周一已开盘。日经官方 09:27 日本时间（08:27 台北）报 60,773.42，跌 368.93 点或 0.60%，相对周五已报收 61,142.35。开盘 61,348.21（09:00，+0.34%），最高也在开盘附近 61,389.35，随后下探至 60,681.78（09:21）。这是盘中，不是收盘。首尔同步开盘。联合新闻写韩综开在 5,305.4（+14.87／+0.28%）；随后转跌，Naver 实时 09:26 韩国时间报 5,276.17（−14.36／−0.27%）。科斯达克同一接口 09:27 报 694.54（−5.12／−0.73%）。同样是盘中。台股 09:00 尚未开盘，指向周五已报：指数 43,675.12（+1.35%），台积电 2,350（+0.43%），成交 9,515.80 亿新台币；证交所 FMTQIK 最新一行仍是 115/11/13，没有 11/16。A 股、港股 09:30 尚未开盘，指向周五：上证 3,634.35（−0.59%），深成 10,968.79，创业板 2,426.08，恒指 23,637.60（−1.55%）。美股、欧股现金此时未开，指向周五已报：标普 7,561.67（−0.40%），纳指 25,136.27（−0.91%），道指 52,347.55；欧股 STOXX 50 6,386.86、DAX 26,749.95、CAC 8,368.91、FTSE 10,902.56。美股迷你期货电子盘约 08:14 台北：标普迷你 7,602.75（相对周五电子盘收 7,583.0 约 +0.26%），纳指迷你 28,187.5（约 +0.54%），不是现金开盘；周一开盘约 21:30 台北。油、金、美债：官方结算和财政部曲线都还没有新值，仍指向周五 WTI 88.56、布伦特 95.84、黄金 3,886.30、10 年期 5.15%。电子盘约 08:14 台北：WTI 88.68（+0.14%）、布伦特 95.68（−0.17%）、黄金 3,895.4（+0.23%），十年期美债期货 105.2656，变动都不大，不是新结算。联合新闻把韩股开盘写在本周将迎来 Anthropic IPO 与辉达财报、以及上周五黄仁勋去职后的波动之后；这是开盘报道里的背景，不要改写成新的人事或财报条。本窗亦扫过美欧现金日线与财政部日曲线，无其他新的官方收盘。",
+      "relevance": "今天真正的新数字是日韩早盘：两边都是高开后转跌，而且都还在交易。台股、A 股、港股这会儿还没开，美欧现金更要等到晚上，不要把电子盘或周五收盘看成今天的收市结果。",
+      "sources": [
+        {
+          "label": "日经官方 get_real_data（09:27 日本时间：60,773.42，−368.93／−0.60%）",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/get_real_data?idx=nk225"
+        },
+        {
+          "label": "日经官方 profile 页（同一实时接口的页面）",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225"
+        },
+        {
+          "label": "联合新闻英文稿 09:03：韩综开盘 5,305.4（+0.28%）",
+          "url": "https://en.yna.co.kr/view/AEN20261116001600320"
+        },
+        {
+          "label": "Naver 指数 basic：KOSPI 09:26 韩国时间 5,276.17（−0.27%），状态 OPEN",
+          "url": "https://m.stock.naver.com/api/index/KOSPI/basic"
+        },
+        {
+          "label": "Naver 指数 basic：KOSDAQ 09:27 韩国时间 694.54（−0.73%），状态 OPEN",
+          "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic"
+        },
+        {
+          "label": "证交所 FMTQIK：最新一行仍是 115/11/13，指数 43,675.12",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20261116&response=json"
+        },
+        {
+          "label": "美国财政部 · 日曲线 CSV（最新一行仍是 11/13/2026，10 年期 5.15%）",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+        },
+        {
+          "label": "Yahoo Finance · 标普 500 报价页（周五现金收交叉）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
+          "label": "Yahoo Finance · WTI 原油期货 CL=F（电子盘，非官方结算）",
+          "url": "https://finance.yahoo.com/quote/CL=F/"
+        },
+        {
+          "label": "Yahoo Finance · 黄金期货 GC=F（电子盘，非官方结算）",
+          "url": "https://finance.yahoo.com/quote/GC=F/"
+        }
+      ]
+    },
+    {
+      "id": "1116早-4",
+      "section": "国际重大影响",
+      "title": "【补报】伊朗周日再以无人机袭击巴林美军基地，巴林称已拦截；霍尔木兹口外再有油轮遇袭，船员安全。通航威胁级别仍是 SEVERE，不是海峡被宣布关闭",
+      "time": "2026-11-15T21:42:00+08:00",
+      "summary": "1115晚国际栏写了都柏林会晤和当时仍严重受限的霍尔木兹通航，但没有写入周日巴林遇袭。事件本身不是周一才发生：CNA 稿 datePublished 为 2026-11-15T14:05:00+08:00，早于晚刊截稿，当时写巴林自 9 月以来首次发出两次威胁警报，内政部呼吁民众前往最近的安全地点，美方或巴林当局尚未立即确认。BBC 稿 datePublished 为 2026-11-15T13:42:58Z（21:42 台北），晚于截稿，补上了巴林军方口径：防空系统在袭击达成目标前将其拦截并摧毁。BBC 写，这是三天内第二次尝试袭击该国；伊斯兰革命卫队称用六架无人机打击巴林 al-Riffa 空军基地的美方防空雷达；巴林外交部强烈谴责。革命卫队经国家电视在 Telegram 上的声明还写「霍尔木兹海峡已经关闭」。BBC 同时写：周五已有一次无人机袭击，美方当时否认革命卫队「打中雷达」的说法，称两架单向攻击无人机被美军击落，没有人员伤亡或损失。UKMTO Warning 205-26 事件日为 15 Nov 2026，时刻 TBC、来源 Verified：称获印度航运当局报告，一艘油轮在阿拉伯湾向东、进入霍尔木兹海峡之前遇袭；船员均已清点、安全；毁伤与环境影响在报告时未知，建议航行谨慎。Dawn 转述稿更新时间 11 月 15 日 18:04（页上为当地时间，对应约 21:04 台北）也晚于截稿。JMIC Update 114 的 ICOD 为 151300 UTC（周日 21:00 台北），把 205-26 列为上期报告以来的已确认海事事件之一；过去 72 小时阿拉伯湾有 1 起袭击，霍尔木兹海峡本期内没有新的已确认袭击或中断；区域威胁级别仍是 SEVERE，不是升到 Critical，也不是降级。商业通航仍低于 2025 年基线，独立追踪写每天个位数到低两位数，美方 NCAGS 数据称过去 72 小时大约平均每天 28 艘美方协助通航。革命卫队「海峡已经关闭」的声明，不要直接当成通航制度已经改变——JMIC／UKMTO 仍在记录有通航、有协助过峡。截稿后未见俄乌新的停火或和平协议，不重写都柏林会晤。本条是对晚刊未收事件的补报，加上截稿后才交叉到的巴林军方确认和 114 期通航更新，不要写成「周一新爆发的战争」。",
+      "relevance": "巴林这轮袭击有军方「已拦截」的口径，霍尔木兹口外又添了一艘船员安全、毁伤未明的油轮遇袭；威胁级别还是 SEVERE，不是海峡被正式关掉或重开，也还没有新的停火协议。",
+      "sources": [
+        {
+          "label": "BBC · 2026-11-15T13:42:58Z：伊朗无人机再袭巴林美军基地，巴林称已拦截",
+          "url": "https://www.bbc.com/news/articles/cqn4e2py48kwo"
+        },
+        {
+          "label": "CNA · 2026-11-15 14:05 台北：巴林发出 9 月以来首次威胁警报（早于晚刊截稿）",
+          "url": "https://www.channelnewsasia.com/world/bahrain-alert-threat-iran-attacks-us-base-6552596"
+        },
+        {
+          "label": "UKMTO Warning 205-26（事件日 15 Nov 2026）：阿拉伯湾向东、进入霍尔木兹前油轮遇袭，船员安全",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/20261115-ukmto_warning-205-26.pdf"
+        },
+        {
+          "label": "JMIC Update 114（ICOD 151300 UTC）：区域威胁级别仍为 SEVERE，收录 205-26",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/update-114_jmic_advisory_15-nov.pdf"
+        },
+        {
+          "label": "Dawn · 转述 UKMTO：油轮遇袭，船员安全，毁伤未知",
+          "url": "https://www.dawn.com/news/2044720"
+        }
+      ]
+    },
+    {
+      "id": "1116早-5",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "沙特现在是沙漠的地方，12.5 万年前湖边的人已经在用带毒的石矛打猎",
+      "time": "2026-11-12",
+      "summary": "换赛道——考古与古人类，不是上期的伤寒医学机制。论文 2026 年 11 月 12 日发表于 *Science* 第 394 卷第 6825 期（页 746–751），题目是 *Poisoned hunting weapons, megafauna, and plant use at a 125,000-year-old Arabian paleolakeshore*，DOI 10.1126/science.aef9342。列日大学 ORBi 收载的摘要写：遗址在沙特阿拉伯 Mundafan 古湖岸边的 'Uruq Aljelibah（KAUST 新闻稿拼作 Uruq al-Julaybah），年代约 12.5 万年前（末次间冰期／海洋同位素阶段 5e）。勒瓦娄哇石器组合、可拼合石片和巨动物遗存，表明这是原地制作工具和加工兽体的地点；若干石尖有撞击损伤，并检出箭毒木（Acokanthera schimperi）的毒物残留，被解释为装柄的复合猎具尖部；动物遗存包括河马、水牛、羚羊、鸵鸟和骆驼，说明当时有淡水和草原。KAUST 与沙特遗产委员会、格里菲斯大学等 11 月 13 日的机构新闻稿写：主研究区收集到 5,511 件大于 2 厘米的石器，98% 以上是燧石，并使用勒瓦娄哇技术；还记录了 500 多件动植物化石标本。本窗打开了 ORBi 摘要和 KAUST 新闻稿，没有打开 *Science* 论文全文（science.org 返回 403），方法学细节以论文为准。",
+      "relevance": "这和 AI、漏洞、当天股价都不是一条赛道，但它把「今天是沙漠的地方，曾经有湖、有河马，湖边的人已经会做带毒的复合猎具」讲成了可核的新发掘；也能让人看见气候由湿变干时，一条人类路线是怎么被关掉的。",
+      "sources": [
+        {
+          "label": "KAUST 新闻稿 · 2026-11-13：When the Saudi desert was green",
+          "url": "https://www.kaust.edu.sa/en/news/when-the-saudi-desert-was-green-a-125000-year-old-lakeside-reveals-how-early-humans-lived"
+        },
+        {
+          "label": "列日大学 ORBi 书目／摘要（DOI 10.1126/science.aef9342，发表日 12 November 2026）",
+          "url": "https://orbi.uliege.be/handle/2268/350564"
+        },
+        {
+          "label": "Science 论文页（本窗 HTTP 403，未打开全文）",
+          "url": "https://www.science.org/doi/10.1126/science.aef9342"
+        }
+      ]
+    }
+  ]
+}
