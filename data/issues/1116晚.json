@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "id": "1116晚",
+  "date": "2026-11-16",
+  "slot": "晚",
+  "title": "11月16日 · 晚",
+  "items": [
+    {
+      "id": "1116晚-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "LVMH 传媒集团与 OpenAI 达成战略合作：新闻室将部署 ChatGPT Enterprise，旗下报道进入 ChatGPT 时标明来源并附原文链接",
+      "time": "2026-11-16T17:00:00+08:00",
+      "summary": "OpenAI 官方稿页标 November 16, 2026，RSS pubDate 是 09:00 GMT，合 17:00 台北，晚于中刊截稿。文头 dateline 写 Paris, 16 November 2026。协议双方是 LVMH 集团传媒部门（Groupe Les Echos-Le Parisien）和 OpenAI。官方稿写，合作是为了支持该部门全部出版物的新 AI 用法，并让它们的新闻在 ChatGPT 里更容易被读到。一边是向该部门团队部署 OpenAI 工具和 ChatGPT Enterprise，用来开发贴合日常工作的应用；文内举的例子是文档研究、文档对比和初步翻译，目标是让记者把更多时间放在调查、分析和一线报道。另一边是增强这些媒体在 ChatGPT 里的存在：对相关用户问题提供摘要和摘录，标明来源，并附上原文链接，覆盖该部门全部出版物，并辅以培训。传媒部门 CEO Michèle Benbunan 的引言点名了 Les Echos、Le Parisien、Challenges、Paris Match、L’Opinion、Investir、L’Agefi 等。OpenAI EMEA 董事总经理 Emmanuel Marill 的引言强调编辑独立，并称这也会让 ChatGPT 用户接触到跟上新闻节奏的高质量报道。关于栏可核的数字是：17 个媒体品牌，1,800 名员工，其中将近 700 名记者，在法国每月触达超过 2,700 万人。OpenAI 页写消息原发自 LVMH 传媒集团，本窗未能打开 LVMH 或 Les Echos 的原通稿，所以金额、独家期限和技术实现等未出现在这篇官方稿里的内容一律不写入。这是新闻室工具加内容接入，不是新模型发布。本窗亦扫过 OpenAI API changelog（11 月最新仍是 11 月 5 日 gpt-6-cyber，模型目录无 gpt-6.2）、Anthropic 新闻室（无 11 月 16 日新稿；其 RSS 仍为 404）、Alignment 索引、Google AI 与 DeepMind 的 RSS（最新仍是 11 月 12 日 Gemini 4 Hydrogen）、xAI News（最新仍是 11 月 2 日 Grok Bot 1.0）、DeepSeek 更新日志（最新仍是 11 月 13 日全家桶 API）和 Meta 官方博客（无 11 月新帖）；@elonmusk 与各厂官号窗口内没有新的产品或公司级硬新闻。@xai 主接口仍未授权，已改用官网；@MetaAI 是迁出空号，已改扫 @AIatMeta（窗口内 0 帖）和博客。GPT-6.2 与所谓 Gemini 4 Oxygen 仍无官宣。Qwen4-Max 正式版已在中刊见报，窗口内官号只是渠道上架，不另写。",
+      "relevance": "这是中刊之后 OpenAI 官网上唯一的新官方稿，边界也写清楚了：新闻室用企业版工具，内容进 ChatGPT 时要标明来源、接到原文。不是发版，商务条款和 LVMH 原通稿本窗都还没核到。",
+      "sources": [
+        {
+          "label": "OpenAI 官方稿 · November 16, 2026：LVMH’s Media Division announces strategic partnership with OpenAI（RSS pubDate 09:00 GMT = 17:00 台北）",
+          "url": "https://openai.com/index/lvmh-media-division-partnership"
+        },
+        {
+          "label": "OpenAI News RSS（lastBuildDate 16 Nov 2026 10:54:50 GMT；置顶即为该合作稿）",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "1116晚-2",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-16T19:30:00+08:00",
+      "summary": "这段时间没有相对中刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已再扫 CISA 警报列表和已知被利用漏洞目录 JSON（均成功打开：catalogVersion 仍为 2026.11.13，dateReleased 仍为 2026-11-13T20:24:18.3008Z，目录仍是 1781 条，最新仍是早刊已经看过、未升格的 11 月 13 日两条——UnrealIRCd 和 Check Point 多产品，都不是普通人常用软件；置顶警报仍是同一条，没有 11 月 14 日到 16 日的新 Alert）、Krebs（首页最新仍是 11 月 11 日关于 Qilin 勒索团伙管理员身份的调查）、Wiz（最新仍是 11 月 13 日 Green Agent 产品案例）、Microsoft Security（最新仍是 11 月 13 日 ScreenConnect／SCKit 和 11 月 12 日编码智能体研究，文内写明一种后门手法未见在野证据）、CrowdStrike（recent-articles 最新仍是 11 月 13 日 Falcon AI Gateway 产品文）。Mandiant／GTIG 主题列表可见条目仍是已点名的 AI Threat Tracker、LLMJacking、ARTEX 等，未见 11 月 14 日到 16 日新主文标题；其 RSS 路径返回的是博客 HTML 而不是 feed，本窗未逐篇重开正文核日期，不把这一项写成已经逐篇确认无新稿。晚刊已报的 FaceStealer 和 Cursor 调查更新，本窗仍没有在那之上的新行动项。",
+      "relevance": "家用读者本窗无新的立刻改密或急补丁项。晚刊已报的 FaceStealer 与 Cursor 调查更新，本窗没有在那之上的新行动项。",
+      "sources": [
+        {
+          "label": "CISA · KEV JSON feed（catalogVersion 2026.11.13，dateReleased 2026-11-13T20:24:18.3008Z，1781 条）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "CISA · Cybersecurity Alerts & Advisories（置顶仍是 11 月 13 日两条入目录警报）",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "Krebs on Security（11 月 11 日 Qilin 归因调查仍为最新）",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog（11 月 13 日 Green Agent 产品案例仍为最新）",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence（列表未见 11 月 14–16 日新主文标题；RSS 路径返回 HTML，未逐篇重开正文）",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        },
+        {
+          "label": "Microsoft Security Blog（11 月 13 日 SCKit／ScreenConnect、11 月 12 日编码智能体研究仍为最新）",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike recent-articles（11 月 13 日 Falcon AI Gateway 产品文仍为最新）",
+          "url": "https://www.crowdstrike.com/en-us/blog/recent-articles/"
+        }
+      ]
+    },
+    {
+      "id": "1116晚-3",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周一亚盘收：台股 41040.08（−6.03%），韩综 5100.50（−3.59%），日经 59662.02（−2.42%）；A 股收低、恒指收涨 0.49%，欧股盘中近乎持平，美股现金仍指向周五",
+      "time": "2026-11-16T19:08:00+08:00",
+      "summary": "亚洲这边已经收盘，而且比中刊那一轮盘中或午休的数字更弱，下面都是官方或可交叉的全日收市结果，不再用中午的盘中数。台湾证交所 FMTQIK 已经出现 115/11/16 一行：发行量加权收 41,040.08，较周五收 43,675.12 跌 2,635.04 点或 6.03%，成交股数 14,120,171,417、成交金额 903,115,129,889 元、成交笔数 6,662,374。证交所 MIS 与这一行完全一致，时戳 13:33:00，开盘和最高都是 43,512.42，最低就是收盘 41,040.08。柜买同一接口收 319.12（−23.29／−6.80%），前收 342.41，开盘和最高 341.40，最低 319.12。台积电现金收 2,215，较周五收 2,350 跌 135 或 5.74%，开 2,340、高 2,350、低 2,215，最近成交时戳 13:30:00；14:30 盘后价是 2,220，那不是现金收盘。中刊 12:30 还只是加权 41,795.94（−4.30%）、柜买 323.57、台积电 2,270。韩国 Naver 状态已是 CLOSE：韩综收 5,100.50（−190.03／−3.59%），开 5,305.4、高 5,327.99、低 5,069.83；科斯达克收 665.65（−34.01／−4.86%），开 705.88、高 708.34、低 664.98。接口上的 localTradedAt 是韩国 20:15，对应收盘价发送时间之后的更新时戳，不是把 20:15 写成收盘钟点。中刊 13:30 韩国时间还是 OPEN，韩综 5,145.75（−2.74%）、科斯达克 675.34。东京日经官方接口字段 datedtime 为 Nov/16/2026(*Close)，收 59,662.02，跌 1,480.33 点或 2.42%，相对周五已报收 61,142.35；开 61,348.21（09:00 日本时间），高 61,389.35（09:00），低 59,630.51（14:51）。中刊 13:30 日本时间还是盘中 60,093.08（−1.72%）。A 股是全日收，不是中刊午前的 3,620.00：腾讯、新浪和 Yahoo 点位一致，上证收 3,602.57（−31.78／−0.87%），开 3,611.54、高 3,623.12、低 3,586.57，前收 3,634.35；深成收 10,690.78（−278.01／−2.53%），开和高 10,881.91、低 10,642.37，前收 10,968.79；创业板收 2,320.02（−106.06／−4.37%），开 2,395.52、高 2,398.19、低 2,308.90，前收 2,426.08。新浪时戳为上证 15:35:57、深成和创业板 15:00:03。本窗未打开上交所或深交所官方行情页。港股恒指收 23,753.84（+116.24／+0.49%），开 23,708.60，高 23,894.01，低 23,649.10，前收 23,637.60。数字来自阿斯达克（Last Update 2026/11/16 16:08）与 Yahoo 交叉，高、低与中刊恒生指数公司 12:05 午前行情一致，下午涨幅从午前 +0.84% 收窄到 +0.49%。恒生指数公司官方页本窗打开了，但是前端渲染，没有读到官方收盘表。欧洲此时还在交易，下面是 Yahoo 约 19:03 台北（12:03 伦敦／柏林）的盘中数字，不是收盘：STOXX 50 6,379.80（−7.06／−0.11%），DAX 26,726.37（−23.58／−0.09%），CAC 8,378.36（+9.45／+0.11%），FTSE 10,937.42（+34.86／+0.32%）；周五现金仍是中刊已报的 STOXX 50 6,386.86、DAX 26,749.95、CAC 8,368.91、FTSE 10,902.56（Yahoo 日线 10,902.60）。美股现金未开，周一开盘约 21:30 台北，仍指向周五已报：标普 7,561.67（−0.40%），纳指 25,136.27（−0.91%），道指 52,347.55。股指期货电子盘约 19:08 台北，不是现金开盘：标普迷你 7,560.25（前结 7,583.00），纳指迷你 27,796.50（前结 28,034.75），道指迷你 52,453（前结 52,418）。油、金、美债官方结算和财政部曲线都还没有 11 月 16 日新值，仍指向周五 WTI 88.56、布伦特 95.84、黄金 3,886.30、10 年期 5.15%（财政部日曲线最新一行仍是 11/13/2026；2 年 4.88%、30 年 5.47%）。电子盘约 19:08 台北：WTI 88.42、布伦特 95.42、黄金 3,875.9，不是新结算。本窗亦扫过财政部日曲线和美股周五日线，无其他新的官方收盘。",
+      "relevance": "今天晚上真正的新数字是亚洲收盘：台股加权跌 6.03%，比中午盘中的 4.30% 更深，韩、日和创业板也都比午前更弱；港股还是收红，只是涨幅收窄。欧股仍是盘中、美股现金还没开，不要把电子盘或周五收盘看成今天的收市结果。",
+      "sources": [
+        {
+          "label": "证交所 FMTQIK：115/11/16 行，加权收 41,040.08（−2,635.04），成交金额 903,115,129,889 元",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20261116&response=json"
+        },
+        {
+          "label": "证交所 MIS：加权／柜买 13:33:00 收 41,040.08／319.12；台积电现金收 2,215（13:30:00）",
+          "url": "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_t00.tw|otc_o00.tw|tse_2330.tw&json=1&delay=0"
+        },
+        {
+          "label": "Naver 指数 basic：KOSPI 收 5,100.50（−3.59%），状态 CLOSE",
+          "url": "https://m.stock.naver.com/api/index/KOSPI/basic"
+        },
+        {
+          "label": "Naver 指数 basic：KOSDAQ 收 665.65（−4.86%），状态 CLOSE",
+          "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic"
+        },
+        {
+          "label": "日经官方 get_real_data（Nov/16/2026 *Close：59,662.02，−1,480.33／−2.42%）",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/get_real_data?idx=nk225"
+        },
+        {
+          "label": "新浪行情：上证 3,602.57、深成 10,690.78、创业板 2,320.02（全日收）",
+          "url": "https://hq.sinajs.cn/list=s_sh000001,s_sz399001,s_sz399006,sh000001,sz399001,sz399006"
+        },
+        {
+          "label": "腾讯行情：上证／深成／创业板全日收盘，与新浪点位一致",
+          "url": "https://qt.gtimg.cn/q=sh000001,sz399001,sz399006"
+        },
+        {
+          "label": "阿斯达克：16 Nov 2026 16:08，恒指 23,753.84（+0.49%）；官方恒生页本窗未读到收盘表",
+          "url": "https://www.aastocks.com/en/stocks/market/index/hk-index-con.aspx"
+        },
+        {
+          "label": "美国财政部 · 日曲线（最新一行仍是 11/13/2026，10 年期 5.15%）",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Yahoo Finance · 欧股盘中与美股周五收盘、原油／黄金／股指期货电子盘（约 19:03–19:08 台北，欧股与期货均非收盘／非现金开盘）",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        }
+      ]
+    },
+    {
+      "id": "1116晚-4",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Uniper 接近首笔将闲置电厂场地出售或出租给机房开发商",
+      "time": "2026-11-16T13:05:00+08:00",
+      "summary": "德国能源公司 Uniper 接近达成首笔将闲置电厂场地出售或出租给数据中心开发商的交易。本窗打开的是 Investing.com 路透转述，页上注明 © Reuters；金融时报原文本窗没有打开，路透社官网返回 401。稿件写，协议尚未签署，价格未披露。Uniper CEO 称，闲置场地约有 700 兆瓦已经获得并网容量。UBS 大约 100 万欧元/兆瓦只是分析尺，不是成交价。Uniper 官网机房业务页已经把选址逻辑写直了：瓶颈往往是电，不是地，并称在欧洲有十处以上自有场地，做 Powered Land 和 Bridge-to-Grid。新浪财经 7x24 在 13:05 台北转述金融时报同一主题。对普通人／市场判断的用处是：电网接入容量本身开始被单独拿出来交易或出租，发电公司的闲置厂址可以变成机房的入场券；但这笔还没签，不能从一条未完成的协议推出欧洲电网或 AI 资本开支已经转向的结论。",
+      "relevance": "产业选址和并网容量：电比地更紧的时候，拥有现成并网容量的闲置厂址会先被盯上。证据边界是路透转述加官网业务页，协议未签、价格未披露，UBS 的每兆瓦尺不是成交价。",
+      "sources": [
+        {
+          "label": "Investing.com · 2026-11-16：Uniper nears first data centre deal on idle power plant site（注明路透供稿，© Reuters）",
+          "url": "https://www.investing.com/news/stock-market-news/uniper-nears-first-data-centre-deal-on-idle-power-plant-site--report-93CH-5028487"
+        },
+        {
+          "label": "Uniper 官方机房业务页（Powered Land / Bridge-to-Grid；欧洲十处以上自有场地）",
+          "url": "https://www.uniper.energy/data-center"
+        },
+        {
+          "label": "新浪财经 7x24 · 2026-11-16 13:05：转述金融时报称 Uniper 即将达成首项废弃电厂改机房协议",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-16/doc-iniyxcia5707114.shtml"
+        },
+        {
+          "label": "Financial Juice · 16 Nov 2026 05:04：同题标题（正文延迟，下午闲逛只核到标题与日期）",
+          "url": "https://www.financialjuice.com/News/9853279/Uniper-approaches-initial-agreement-to-convert-idle-power-plants-into-data-centers---ft.aspx?xy=rss"
+        }
+      ]
+    },
+    {
+      "id": "1116晚-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "Anthropic 还没上市，Deribit 已把影子盘改成每股报价，标记价约 102 美元",
+      "time": "2026-11-16T18:00:00+08:00",
+      "summary": "Anthropic 官方 11 月 10 日宣布路演：拟发行 8.25 亿股 A 类股，定价区间每股 70 到 78 美元，申请在纳斯达克挂牌，代码 ANT。Fidelity 提供的 11 月 10 日初步招股说明书写，发行和同时进行的 260 亿美元 N 类私募做完后，A 类约 74.28 亿股、N 类约 56.59 亿股，合计约 130.87 亿股。按这个已发行股本，区间上沿 78 美元大约对应 1.02 万亿美元。今天下午闲逛打开 perpequities 汇总页时，多数市场还在用「公司估值 ÷ 10 亿股」那种报价，集中在大约 1,330 美元，也就是大约 1.33 万亿美元；按大约 130.87 亿到 131.16 亿股去换，大约是每股 101 美元，比官方上沿 78 美元高大约三成。TechCrunch 根据更新招股书写过：按摊薄后、区间上沿 78 美元，大约 1.404 万亿美元。两种尺子不能混用。各交易所也不一致，同一汇总页上 Hyperliquid 当时大约 1,759（约 1.76 万亿美元），明显高于主簇。Deribit 11 月 11 日公告、按预定在 11 月 16 日 10:00 UTC（台北 18:00）把合约从估值报价改成按每股报价，采用招股书里的 131.16 亿股基本股本。本窗在 19:21 台北打开 Deribit 官方接口，可以确认已经执行：新合约 ANT_USDC-PERPETUAL 状态是 open，标记价 102.3121 美元/股，指数 102.4692，买卖一 101.51 / 103.12；旧合约 ANTH_USDC-PERPETUAL 状态是 locked，仍显示估值口径约 1,372.77。不要拿锁定合约上的估值价和每股价直接比，也不要单报明显高于标记价的最新成交。同一时刻 perpequities 页顶仍有约 1,331 到 1,373 的估值口径，与 Deribit 官方接口不一致，不能当成「Deribit 还在按估值报价」。Coinbase 是否已在同一时点改价，本窗没有打开其官方接口，覆盖不完整。这些是用稳定币结算的永续合约，不是 Anthropic 的股票，也没有新股配额、没有投票权。定价大约在 11 月 18 日，上市交易大约在 11 月 19 日。已证实的是官方区间和招股书里的已发行股本，以及 Deribit 在公告时点之后已经按每股报价；尚未证实的是上市后会按哪个价格开盘。",
+      "relevance": "上市前已经有一个可核的影子价格，而且 Deribit 今晚已经改成每股口径，大约 102 美元，仍高于官方上沿 78 美元。但各交易所口径并不统一，已发行股本与摊薄后估值也不能直接换算成同一个溢价，合约本身也不是股票。",
+      "sources": [
+        {
+          "label": "Anthropic 官方 · 2026-11-10：路演启动，区间 $70–$78，拟发行 8.25 亿股，代码 ANT",
+          "url": "https://www.anthropic.com/news/roadshow-launch"
+        },
+        {
+          "label": "Fidelity 提供的 Anthropic 初步招股说明书（Subject to Completion, Dated November 10, 2026；发行后 A+N 等合计 13,086,672,593 股）",
+          "url": "https://www.fidelity.com/bin-public/600_Fidelity_Institutional/fidelityinstitutional/Application/AP154833/documents/clients/ANTLLV/ANTLLVred.pdf"
+        },
+        {
+          "label": "Deribit · 11 Nov 2026：11 月 16 日 10:00 UTC 把 ANTH 估值合约迁到按每股计价的 ANT，采用 131.16 亿股",
+          "url": "https://insights.deribit.com/exchange-updates/deribit-to-migrate-anthropic-perpetual-to-per-share-pricing/"
+        },
+        {
+          "label": "Deribit 官方接口 · 2026-11-16 11:21:37 UTC（19:21 台北）：ANT_USDC-PERPETUAL 为 open，mark 102.3121、index 102.4692 美元/股",
+          "url": "https://www.deribit.com/api/v2/public/ticker?instrument_name=ANT_USDC-PERPETUAL"
+        },
+        {
+          "label": "perpequities · Anthropic 上市前永续合约汇总（下午主簇约 $1,330；改价后页顶仍见估值口径，不能覆盖 Deribit 官方接口）",
+          "url": "https://perpequities.com/stocks/anthropic-perp"
+        },
+        {
+          "label": "TechCrunch · 2026-11-10：按摊薄后、区间上沿 $78，隐含估值约 1.404 万亿美元",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+        }
+      ]
+    },
+    {
+      "id": "1116晚-6",
+      "section": "国际重大影响",
+      "title": "UKMTO：周一霍尔木兹出境油轮被不明投射物击中，机舱起火，船员安全；同日索科特拉以东另有可疑接近",
+      "time": "2026-11-16T13:58:00+08:00",
+      "summary": "英国海事贸易行动（UKMTO）Warning 207-26 把这次事件写成 ATTACK。官方 PDF 写，事发日期 16 Nov 2026，时间 0558 UTC，合 13:58 台北，晚于中刊截稿；来源是油轮的公司保安负责人。报告称，该船在霍尔木兹海峡出境途中被不明投射物击中，机舱起火；当时没有人员伤亡报告，船员均已清点；损坏和环境评估未知。建议船舶谨慎通行，并向 UKMTO 报告可疑活动，当局正在调查。PDF 没有写船名、船旗或投射物类型，也没有写沉没，没有宣布海峡关闭。ABC News 直播页在 3:46 AM EST（16:46 台北）更新时，按这份警告转述了同一组事实；《The National》和 Iran International 也作了转述。同日还有一份 Warning 206-26，类型是 SUSPICIOUS ACTIVITY，不是袭击：事发 0330 UTC（11:30 台北），在也门索科特拉岛以东约 430 海里（位置 1202N 06147E），一艘油轮船长报告被可能的母船和快艇接近，快艇上见到四名武装人员和梯子。206 的事件时间早于中刊截稿，但中刊当时按连字符文件名去猜，得到 404；本窗用下划线文件名打开了原文，第一次写入。它在地理上是阿拉伯海，不是霍尔木兹又多了一起袭击。周日那份 Warning 205-26 仍是油轮在进入霍尔木兹前于阿拉伯湾东行遇袭、船员安全，不是新警告。JMIC 最新仍能打开的是 Update 114（ICOD 151300 UTC，15 Nov），区域威胁级别仍为 SEVERE；这份截止时间覆盖不了 16 日的 207-26，猜测的 Update 115 文件名为 404，只能说明这些文件名不存在，不能写成已经核完全部分发库。伊朗方面关于多艘船起火沉没的说法，《The National》仍写未能独立核实；本窗打开的 205、206、207 都没有确认沉没。BBC 中东索引和 CNA 世界首页在本窗打开时，仍更醒目的是周日巴林袭击，索引页上未见周一 207 的标题，这两处索引覆盖不完整，主证据以 UKMTO 官方 PDF 为准。",
+      "relevance": "这是中刊之后第一份可独立打开的霍尔木兹新袭击警告：出境油轮被击中、机舱起火，但船员安全，海峡也没有被这份文件宣布关闭。不要把同日索科特拉以东的可疑接近，或尚未独立确认的沉没说法，写成同一件事。",
+      "sources": [
+        {
+          "label": "UKMTO Warning 207-26 · 16 Nov 2026 0558 UTC：霍尔木兹出境油轮被不明投射物击中，机舱起火，船员安全",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/20261116-ukmto_warning_207-26.pdf"
+        },
+        {
+          "label": "UKMTO Warning 206-26 · 16 Nov 2026 0330 UTC：索科特拉以东约 430 海里可疑接近（中刊因文件名连字符未打开）",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/20261116-ukmto_warning_206-26.pdf"
+        },
+        {
+          "label": "JMIC Update 114（ICOD 151300 UTC，威胁级别仍为 SEVERE；截止于 15 Nov，覆盖不了 207-26）",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/update-114_jmic_advisory_15-nov.pdf"
+        },
+        {
+          "label": "ABC News 直播 · Last Updated November 16, 2026, 3:46 AM EST：转述 UKMTO 称霍尔木兹油轮遇袭",
+          "url": "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071"
+        },
+        {
+          "label": "The National · 16 Nov 2026：转述周一投射物击中；写明伊朗沉没说法未能独立核实",
+          "url": "https://www.thenationalnews.com/news/gulf/2026/11/16/iran-escalates-threats-against-us-forces-and-gulf-states-as-third-american-carrier-arrives/"
+        }
+      ]
+    },
+    {
+      "id": "1116晚-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "牛津等团队写「一次能源谬误」：高度电气化后系统浪费少 61%，传统记账下一次能源会少将近一半——这是情景，不是已经减半",
+      "time": "2026-11-12",
+      "summary": "换赛道——能源与政策口径，不是上期的 Euclid 巡天，也不是再上一期的考古毒猎具。牛津大学环境变化研究所的 Jan Rosenow、Nick Eyre 与能源创新、劳伦斯利弗莫尔实验室、Ember 的合作者，在 2026 年 11 月 12 日的开放获取期刊 npj Clean Energy 发表论文《The primary energy fallacy in energy transitions》。页面日期 12 November 2026，JSON-LD 为 2026-11-12T00:00:00Z，合 12 日 08:00 台北。作者针对的是一种常见论证：看到全球能源仍由化石燃料占主导，就直接说可再生能源替换不现实。他们认为，这往往建立在对能源系统规模的系统性误读上，并称之为一次能源谬误。方法是用劳伦斯利弗莫尔国家实验室的世界能源流框架和国际能源署的能源平衡，把今天的化石燃料系统，和一个提供同等有用能服务的高度电气化情景做比较。摘要里有三个必须连同限定一起看的数字：全系统被丢掉的能量少了 61%；热泵从环境捕获的热大约增加到二十倍；若仍按传统能源平衡记账，一次能源投入会少掉将近一半。作者的建议是，分析和政策应先看系统损失和有用能，一次能源仍可保留，但只作为对照，不要再当主尺。这是把有用能服务固定在今天水平的风格化情景，用来隔离电气化的结构效应，不是对明年需求或排放的预测，更不是「全球一次能源已经减半」。正文还写了未在该情景里展开的现实约束，例如高比例波动性电源所需的电网和储能，以及难以电气化的重工业、航运和航空。本窗打开的是论文 HTML 正文，没有另核补充材料里的附图细节。",
+      "relevance": "以后再看到「化石能源还占大头，所以转型换不下来」这种句子，至少可以先问一句：比的是烧进去的一次能源，还是最后真正用上的那部分。这篇把尺子本身的问题写清楚了，但那 61% 和「将近一半」都还只是情景，不是已经发生的账。",
+      "sources": [
+        {
+          "label": "npj Clean Energy · 12 November 2026：The primary energy fallacy in energy transitions（开放获取）",
+          "url": "https://www.nature.com/articles/s44406-026-00055-3"
+        },
+        {
+          "label": "DOI 10.1038/s44406-026-00055-3",
+          "url": "https://doi.org/10.1038/s44406-026-00055-3"
+        }
+      ]
+    }
+  ]
+}
