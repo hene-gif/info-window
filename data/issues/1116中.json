@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "id": "1116中",
+  "date": "2026-11-16",
+  "slot": "中",
+  "title": "11月16日 · 中",
+  "items": [
+    {
+      "id": "1116中-1",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "通义千问 Qwen4-Max 正式发布：新 MoE、原生视觉、100 万上下文；官方称内部评测单任务平均成本降逾 60%，较小尺寸权重后续开源",
+      "time": "2026-11-16T10:01:00+08:00",
+      "summary": "阿里通义官号 @Alibaba_Qwen 在 2026-11-16 02:01:55 UTC（10:01 台北）发帖，宣布 Qwen4-Max 正式上线。官方原文写：它基于新的 MoE 架构，带原生视觉和 100 万 token 上下文。内部评测里，它用最多约少 50% 的 token 超过 Qwen3.8-Max，单任务平均成本下降超过 60%。定价是输入每百万 token 1.5 美元、输出 4.5 美元、隐式缓存 0.075 美元，官方写均低于 Qwen3.8-Max，其中隐式缓存降了 70%。API 已在 QwenCloud 上线，也可在 Qwen Studio、QwenWork 和 Qoder 使用；较小尺寸的 Qwen4 权重会随后开源，眼下还没有给出日期。这不是从零突然出现的模型：QwenCloud changelog 在 11 月 11 日先上了 qwen4-max-preview，当时写明仍在预览、只通过 Token Plan 提供；11 月 16 日正式条目改成 qwen4-max。阿里云 Model Studio 文档同一天更新，调用名为 qwen4-max，输入可以是文本、图像和视频，输出是文本，支持思考模式、工具调用和结构化输出，部署点包括北京、新加坡、法兰克福、弗吉尼亚、东京和香港。官方帖里给了博客链接 https://qwen.ai/blog?id=qwen4-max，本窗未能抽出这篇正文，所以二手里出现的参数规模、架构细表和人民币报价，一律不写入本条。本窗亦扫过 OpenAI 博客与 News RSS（仍是早刊已报的科学博客两条；RSS 在 11:54 台北有过重建，最新条目没变）、API changelog（11 月最新仍是 11 月 5 日 gpt-6-cyber）、Anthropic News（无 11 月 16 日新稿；其 RSS 为 404，已改用新闻室页面）、Alignment 索引、Google AI 与 DeepMind 的 RSS（最新仍是 11 月 12 日 Gemini 4 Hydrogen）、xAI 公开 News（最新仍是 11 月 2 日 Grok Bot 1.0）、DeepSeek 更新日志（最新仍是 11 月 13 日全家桶 API）和 Meta 官方博客列表；@elonmusk 与各厂官号里，这是早刊之后唯一的官方旗舰发版。@xai 主接口未授权，已改用官网 News 和搜索（窗口内 0 帖）；Meta 官方 X 解析异常，不能写成已确认无新帖。GPT-6.2 与所谓 Gemini 4 Oxygen 仍无官宣。",
+      "relevance": "这是早刊之后唯一的官方旗舰发版，而且把 11 月 11 日的预览和今天的正式版划开了。成本下降来自官方自己的内部评测，不是第三方复测。",
+      "sources": [
+        {
+          "label": "@Alibaba_Qwen · 2026-11-16 02:01:55 UTC：Qwen4-Max 正式发布（完整说明在 note_tweet）",
+          "url": "https://x.com/Alibaba_Qwen/status/2122148127520289151"
+        },
+        {
+          "label": "QwenCloud changelog · 2026-11-16：qwen4-max；其下 11 月 11 日仍是 qwen4-max-preview（仅 Token Plan）",
+          "url": "https://docs.qwencloud.com/changelog/models"
+        },
+        {
+          "label": "阿里云 Model Studio 文档 · Last Updated: Nov 16, 2026：qwen4-max",
+          "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max"
+        },
+        {
+          "label": "官方博客（本窗未能抽出正文，仅作官方指向）",
+          "url": "https://qwen.ai/blog?id=qwen4-max"
+        }
+      ]
+    },
+    {
+      "id": "1116中-2",
+      "section": "我关注的",
+      "block": "AI 模型和产品动态",
+      "title": "请愿和股东要董事会考虑请黄仁勋回来；英伟达称还在选猎头、尚未正式接触候选人，周二将公布第三季财报",
+      "time": "2026-11-16T09:50:00+08:00",
+      "summary": "这是 1115 晚已报黄仁勋辞职之后的后续，不是把周五那份官方交接公告再写一遍。CNBC 综合稿的 Published 时间是 2026-11-15 8:50 PM EST，合 16 日 09:50 台北，晚于早刊截稿；本窗打开时页上仍写 Updated 约 53 分钟前。稿件写，“Stand with Jensen” 请愿已有超过 16 万个签名；请愿网站上出现马斯克、蒂姆·斯维尼、Garry Tan 等人，但页上注明身份是自己填的、未经核实。CNBC 转述马斯克在 X 上的原话是：“A petition is underway to reinstate Jensen and I'm signing it too.” 周五，Altimeter 的 Brad Gerstner 和 Atreides 的 Gavin Baker 发表公开信，要求董事会把包括请他回来在内的全部方案都纳入考虑。黄仁勋是否在和亲信讨论回归，来自《金融时报》对知情人士的报道，本窗是经 CNBC 转述看到的，不是公司自己确认他要回来。英伟达发言人回复 CNBC 说：“We are in the process of selecting a search firm for the NVIDIA CEO role. We have not formally engaged any potential candidates.” 并称对具体人选的猜测还早。同一篇稿写，英伟达定于周二公布本财年第三季财报。私人指控和调查细节不在本条展开，仍以晚刊已报的辞职与公司安排为准。",
+      "relevance": "现在能核对的新事实，是请愿、股东公开信，以及公司对 CNBC 说还在选猎头、还没正式接触候选人；回归本身仍是媒体转述，不是已经决定的人事。",
+      "sources": [
+        {
+          "label": "CNBC · Published 2026-11-15 8:50 PM EST（16 日 09:50 台北）：请愿、股东来信与公司回应",
+          "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html"
+        },
+        {
+          "label": "英伟达官方新闻稿 · 2026-11-12：CEO 交接（晚刊已报，供对照）",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        }
+      ]
+    },
+    {
+      "id": "1116中-3",
+      "section": "我关注的",
+      "block": "AI 网络安全跟踪",
+      "title": "这段时间没有",
+      "time": "2026-11-16T12:35:00+08:00",
+      "summary": "这段时间没有相对早刊达「实害／确认利用／普通人须立刻行动」门槛的新 AI 安全主条。本窗已再扫 CISA 警报列表和已知被利用漏洞目录 JSON（均成功打开：catalogVersion 仍为 2026.11.13，dateReleased 仍为 2026-11-13T20:24:18.3008Z，目录仍是 1781 条，最新仍是早刊已经看过、未升格的 11 月 13 日两条——UnrealIRCd 和 Check Point 多产品，都不是普通人常用软件；置顶警报仍是同一条，没有 11 月 14 日到 16 日的新 Alert）、Krebs（首页最新仍是 11 月 11 日关于 Qilin 勒索团伙管理员身份的调查）、Wiz（最新仍是 11 月 13 日 Green Agent 产品案例）、Mandiant／GTIG（主题列表可见条目仍是已点名的 AI Threat Tracker、LLMJacking、ARTEX 等，未见 11 月 14 日到 16 日新主文）、Microsoft Security（最新仍是 11 月 13 日 ScreenConnect／SCKit 和 11 月 12 日编码智能体研究，文内写明一种后门手法未见在野证据）、CrowdStrike（主博客列表页抓取不完整，已用 recent-articles 补核，最新仍是 11 月 13 日 Falcon AI Gateway 产品文）。晚刊已报的 FaceStealer 和 Cursor 调查更新，本窗仍没有在那之上的新行动项。",
+      "relevance": "家用读者本窗无新的立刻改密或急补丁项。晚刊已报的 FaceStealer 与 Cursor 调查更新，本窗没有在那之上的新行动项。",
+      "sources": [
+        {
+          "label": "CISA · KEV JSON feed（catalogVersion 2026.11.13，dateReleased 2026-11-13T20:24:18.3008Z，1781 条）",
+          "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+        },
+        {
+          "label": "CISA · Cybersecurity Alerts & Advisories（置顶仍是 11 月 13 日两条入目录警报）",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+        },
+        {
+          "label": "Krebs on Security（11 月 11 日 Qilin 归因调查仍为最新）",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "label": "Wiz Blog（11 月 13 日 Green Agent 产品案例仍为最新）",
+          "url": "https://www.wiz.io/blog"
+        },
+        {
+          "label": "Mandiant／GTIG Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+        },
+        {
+          "label": "Microsoft Security Blog（11 月 13 日 SCKit／ScreenConnect、11 月 12 日编码智能体研究仍为最新）",
+          "url": "https://www.microsoft.com/en-us/security/blog/"
+        },
+        {
+          "label": "CrowdStrike recent-articles（11 月 13 日 Falcon AI Gateway 产品文仍为最新）",
+          "url": "https://www.crowdstrike.com/en-us/blog/recent-articles/"
+        }
+      ]
+    },
+    {
+      "id": "1116中-4",
+      "section": "我关注的",
+      "block": "全球股市",
+      "title": "周一午间：台股盘中 41795.94（−4.30%），韩综 5145.75（−2.74%），日经 60093.08（−1.72%）；港股午前反而涨 0.84%，A 股午休小跌，美欧现金仍指向周五收盘",
+      "time": "2026-11-16T12:30:00+08:00",
+      "summary": "亚洲这边已经开起来，而且比早刊那一轮掉得更深，但除了 A 股和港股正在午休，日韩台都还没收盘，下面都是盘中或午前数字，不是今天的收市结果。东京日经官方 13:30 日本时间（12:30 台北）报 60,093.08，跌 1,049.27 点或 1.72%，相对周五已报收 61,142.35；开盘仍是 61,348.21，最高也在开盘附近 61,389.35，最低 59,825.91（12:49 日本时间）。早刊 09:27 日本时间还只是 60,773.42（−0.60%）。首尔同步还在交易。Naver 实时 13:30 韩国时间报韩综 5,145.75（−144.78／−2.74%），科斯达克 675.34（−24.32／−3.48%），状态都是 OPEN；早刊 09:26 韩国时间韩综还只是 5,276.17（−0.27%）。韩国收盘要到 15:30 韩国时间（14:30 台北）。台股证交所 MIS 12:30:00 报发行量加权 41,795.94，较周五收 43,675.12 跌 1,879.18 点或 4.30%，开盘和最高都是 43,512.42，最低 41,444.51；柜买同一接口 12:30:10 报 323.57（−5.50%）。台积电 12:30 这一秒没有成交价，最近一笔是 12:29:50 的 2,270，较周五收 2,350 跌 80 或 3.40%，开 2,340、高 2,350、低 2,245。台股 13:30 才收，FMTQIK 最新一行仍是 115/11/13，本窗不报今天的成交额。A 股此时在午休（约 11:30–13:00），新华财经午评与腾讯行情接口点位一致：上证 3,620.00（−0.39%），深成 10,825.37（−1.31%），创业板 2,369.33（−2.34%），这是午前收，不是全日收盘。港股同样在午休（约 12:00–13:00）。恒生指数公司 12:05 香港时间报恒指 23,835.44（+197.84／+0.84%），今高 23,894.01，今低 23,649.10，前收 23,637.60。美股、欧股现金此时未开，仍指向周五已报：标普 7,561.67（−0.40%），纳指 25,136.27（−0.91%），道指 52,347.55；欧股 STOXX 50 6,386.86、DAX 26,749.95、CAC 8,368.91、FTSE 10,902.56。美股迷你期货电子盘约 12:15 台北：标普迷你 7,563.75（前结 7,583.00），纳指迷你 27,886.25（前结 28,034.75），不是现金开盘；周一开盘约 21:30 台北。油、金、美债官方结算和财政部曲线都还没有 11 月 16 日新值，仍指向周五 WTI 88.56、布伦特 95.84、黄金 3,886.30、10 年期 5.15%（财政部日曲线最新一行仍是 11/13/2026）。电子盘约 12:15 台北：WTI 88.44、布伦特 95.35、黄金 3,874.50，不是新结算。本窗亦扫过财政部日曲线和美欧现金日线，无其他新的官方收盘。",
+      "relevance": "今天中午真正的新数字是亚盘：台、韩、日跌幅都比早盘更深，而且日韩台都还在交易；港股午前是涨的，A 股只是小跌后进入午休。美欧现金要等到晚上，不要把电子盘或周五收盘看成今天的收市结果。",
+      "sources": [
+        {
+          "label": "日经官方 get_real_data（13:30 日本时间：60,093.08，−1,049.27／−1.72%）",
+          "url": "https://indexes.nikkei.co.jp/en/nkave/get_real_data?idx=nk225"
+        },
+        {
+          "label": "Naver 指数 basic：KOSPI 13:30 韩国时间 5,145.75（−2.74%），状态 OPEN",
+          "url": "https://m.stock.naver.com/api/index/KOSPI/basic"
+        },
+        {
+          "label": "Naver 指数 basic：KOSDAQ 13:30 韩国时间 675.34（−3.48%），状态 OPEN",
+          "url": "https://m.stock.naver.com/api/index/KOSDAQ/basic"
+        },
+        {
+          "label": "证交所 MIS：加权 12:30:00 报 41,795.94，台积电最近成交 12:29:50 报 2,270",
+          "url": "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_t00.tw|otc_o00.tw|tse_2330.tw&json=1&delay=0"
+        },
+        {
+          "label": "证交所 FMTQIK：最新一行仍是 115/11/13，尚无 11/16 成交统计",
+          "url": "https://www.twse.com.tw/rwd/zh/afterTrading/FMTQIK?date=20261116&response=json"
+        },
+        {
+          "label": "新华财经午评：上证 3,620.00、深成 10,825.37、创业板 2,369.33（午前／午休）",
+          "url": "https://www.cnfin.com/yw-lb/detail/20261116/4495990_1.html"
+        },
+        {
+          "label": "恒生指数公司：16 Nov 2026 12:05 HKT，恒指 23,835.44（+0.84%）",
+          "url": "https://www.hsi.com.hk/eng/indexes/all-indexes/hsi"
+        },
+        {
+          "label": "美国财政部 · 日曲线（最新一行仍是 11/13/2026，10 年期 5.15%）",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+        },
+        {
+          "label": "Yahoo Finance · WTI 原油期货 CL=F（电子盘约 12:15 台北，非官方结算）",
+          "url": "https://finance.yahoo.com/quote/CL=F/"
+        },
+        {
+          "label": "Yahoo Finance · 黄金期货 GC=F（电子盘约 12:15 台北，非官方结算）",
+          "url": "https://finance.yahoo.com/quote/GC=F/"
+        }
+      ]
+    },
+    {
+      "id": "1116中-5",
+      "section": "我关注的",
+      "block": "云龙闲逛",
+      "title": "【补报】联储稳定报告把机房账摊开了：未起租的租约超过 1 万亿美元，包销和残值担保再加超过 2 万亿",
+      "time": "2026-11-13",
+      "summary": "【补报】联储 11 月 13 日公布 11 月《金融稳定报告》，数据一般截至 10 月 28 日。1113 到 1115 早／中那几期空着，15 日晚刊补了黄仁勋离职等缺口，这份报告当时没进窗；上轮闲逛还在找鲍曼「三倍」的出处，其实账已经写在 Box 2.2「数据中心扩建中的杠杆」里。报告把几本账分开写：到 10 月，先进计算相关债务发行超过 6800 亿美元，约是 2023 年全年 1300 亿美元的五倍，占非金融投资级公司债发行的份额从不到 6% 升到大约 31%；公开市场上尚未偿还的这类债务估计超过 1.1 万亿美元。口径包括公开发行和可追踪的 144A 私募，不包括 4(a)(2) 私募，私募信贷里还有相当规模，完整存量更难量。对亚马逊、谷歌、博通、Meta、微软、英伟达、甲骨文这七家公司，尚未起租的租约未折现金额超过 1 万亿美元，包销合同和残值担保等其他义务未折现金额再加超过 2 万亿美元。联储自己在脚注里写：这些是公司申报里通常未经折现的数字，不能跟已经记在负债表、已经折现过的债务直接加减，或拿来算出一个精确倍数。机制也写直了：信用评级高的公司签长期租约、提供残值担保，让信用评级较弱的机房开发商能借到钱盖楼，大公司的资产负债表却不必马上留下同等债务；芯片设计公司再入股这些较小公司，报告称之为「循环融资」。联储的判断是：若日后下行，最大的科技公司可能先把损失接下来，从而减轻金融系统其余部分受到的冲击，但它们真正的经济敞口也可能比账上负债大得多。美国最大的一批银行控股公司对大科技、机房开发商、相关特殊目的实体、私募信贷和公用事业的敞口接近 1 万亿美元，这些已纳入年度压力测试。另外，纽约联储在 9 至 10 月向 23 位交易商、银行、投资基金和咨询机构联系人做的调查里，87% 的人把人工智能列为美国金融稳定风险，春天是 50%，是提及最多的一项；联系人还谈到估值偏高、复杂融资和人工智能相关网络攻击。报告写明，这是联系人的看法，不代表联储理事会或纽约联储的官方观点。对普通人／市场判断的用处是：官方稳定报告已经把「表内债只是一层」写成可核对的公开账本——大公司账上的债，未必等于它们给这轮机房扩建真正背上的钩子。若扩建不及预期，损失可能先砸在这些大公司头上，这未必等于系统崩溃，但也不能只看它们债少、现金多就当成完全隔离。外面有的转述把 6800 亿、1.1 万亿和那两个「超过 1 万亿／2 万亿」揉成一笔「AI 债 3 万亿」，那不是报告的写法。已证实的是 11 月 13 日正式文本和其中的分项口径；鲍曼 11 月 10 日演讲里的「三倍」与这份专节高度吻合，但演讲本身没有点名引用即将发布的报告。",
+      "relevance": "政策与监管落地、信贷与或有义务、循环融资与银行敞口：要把「先进计算相关发行额／公开存量」和「七家公司未折现的未起租租约、包销与残值担保」以及「银行控股公司接近 1 万亿美元的相关敞口」分成几本账看，而不能合成一笔 AI 债。证据边界以 11 月 13 日正式 PDF 为准，数据一般截至 10 月 28 日；问卷调查是 23 名市场联系人的看法，不是联储官方风险排序。未折现的租约和担保不能与已折现的表内债直接相比。",
+      "sources": [
+        {
+          "label": "Federal Reserve · Financial Stability Report, November 2026（PDF，Box 2.2 / Box 5.1）",
+          "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf"
+        },
+        {
+          "label": "Federal Reserve · Financial Stability Report 发布页",
+          "url": "https://www.federalreserve.gov/publications/financial-stability-report.htm"
+        },
+        {
+          "label": "Federal Reserve · Recent Postings（2026-11-13 挂出该期报告）",
+          "url": "https://www.federalreserve.gov/newsevents/recentpostings.htm"
+        }
+      ]
+    },
+    {
+      "id": "1116中-6",
+      "section": "国际重大影响",
+      "title": "这段时间没有",
+      "time": "2026-11-16T12:30:00+08:00",
+      "summary": "这段时间没有相对早刊可独立确认的新袭击、新的官方威胁级别，或正式的通航制度变化，也没有新的停火或和平协议。本窗已重开 UKMTO Warning 205-26（仍是 15 Nov 2026 那份，油轮在进入霍尔木兹前遇袭、船员安全）和 JMIC Update 114（ICOD 仍是 151300 UTC，区域威胁级别仍为 SEVERE），并打开 BBC 周日巴林袭击稿、CNA 世界首页、Dawn／法新社和 Seatrade Maritime 的后续转述：内容仍是周日巴林拦截，以及伊朗声称超级油轮沉没——后一项各稿都写明尚未得到独立确认，不是周一新爆发的袭击。猜测的 Warning 206-26、Update 115 文件名为 404，这只说明这两个文件名不存在；UKMTO 警报目录页虽然打开了，产品列表不在 HTML 里，不能写成已经核完全部最新编号。路透社世界页本窗返回 401，美联社世界页抓取超时，这两处不能算进已扫。截稿后未见俄乌新的停火或和平协议，不重写都柏林会晤，也不把早刊已报的巴林袭击和 205-26 再写一遍。",
+      "relevance": "威胁级别还是 SEVERE，海峡没有被正式关掉或重开，也还没有新的停火协议；伊朗称油轮沉没一事，目前仍没有独立确认。",
+      "sources": [
+        {
+          "label": "UKMTO Warning 205-26（仍为 15 Nov 2026 文本）",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/20261115-ukmto_warning-205-26.pdf"
+        },
+        {
+          "label": "JMIC Update 114（ICOD 151300 UTC，威胁级别仍为 SEVERE）",
+          "url": "https://www.ukmto.org/-/media/ukmto/products/update-114_jmic_advisory_15-nov.pdf"
+        },
+        {
+          "label": "BBC · 2026-11-15：伊朗无人机再袭巴林，军方称已拦截（未见周一新袭击）",
+          "url": "https://www.bbc.com/news/articles/cqn4e2py48kwo"
+        },
+        {
+          "label": "Dawn／法新社 · Updated 16 Nov 2026：巴林拦截；伊朗称超级油轮沉没，写明无独立确认",
+          "url": "https://www.dawn.com/news/2044789"
+        },
+        {
+          "label": "Seatrade Maritime · 16 Nov 2026：确认 205-26 遇袭报告；VLCC 沉没说法未经独立核实",
+          "url": "https://www.seatrade-maritime.com/security/tanker-confirmed-struck-in-the-gulf-iran-claims-vlcc-sinking"
+        },
+        {
+          "label": "CNA World 首页（未见 16/11 新的霍尔木兹／巴林袭击主条）",
+          "url": "https://www.channelnewsasia.com/world"
+        }
+      ]
+    },
+    {
+      "id": "1116中-7",
+      "section": "我关注的",
+      "block": "你可能没想到",
+      "title": "欧空局 Euclid 放出第一批正式巡天数据，给出迄今最大的强引力透镜候选目录，大约 1.5 万个",
+      "time": "2026-11-12",
+      "summary": "换赛道——天文与暗宇宙，不是上期的考古毒猎具，也不是再上一期的伤寒医学机制。欧空局 2026 年 11 月 12 日宣布，Euclid 放出首批主要数据 DR1-Foundation：大约 13 个月的观测，覆盖约 1,900 平方度（官方说相当于约 9,500 个满月那么大的天区），数据量约 170 万 GB，大约占六年巡天计划面积的 14%。官方稿列出的包括：超过 9 亿个星系、约 15,000 个强引力透镜候选、超过 6,000 万个类星体候选，以及超过 1.6 亿个源的光谱。欧空局写明，这份释放包含迄今最大的强引力透镜目录，比以往所有目录加起来还大；这些透镜是同一台空间望远镜、用同一种方法找到的。发现过程结合了机器学习和 Zooniverse 上的「Space Warps」公民科学。完整的 Data Release 1 要到 2027 年中，还会补上弱引力透镜等部分。本窗打开了欧空局 11 月 12 日的两篇官方稿和 cosmos.esa.int 的 DR1 介绍页，没有打开配套投稿至《Astronomy & Astrophysics》的论文全文。约 15,000 是候选，不是已经全部确认的透镜。11 月 15 日 phys.org 和不列颠哥伦比亚大学的稿是同一发布的后续报道，不要把首发日写成 11 月 15 或 16 日。",
+      "relevance": "以前能拿来认真比较的强引力透镜，大多来自不同望远镜，数量也有限。现在同一台巡天望远镜一次给出大约 1.5 万个候选，科学家可以成批去「称」星系——包括看不见的暗物质——并借这些透镜当天然放大镜看更远的星系。但这还是候选目录，不是已经把暗物质量完了。",
+      "sources": [
+        {
+          "label": "ESA 官方稿 · 12 NOV. 2026：Euclid lays the foundation for its best-ever 3D map of the Universe",
+          "url": "https://www.esa.int/articles/about-us/directorates/science/euclid/euclid-lays-the-foundation-for-its-best-ever-3d-map-of-the-universe"
+        },
+        {
+          "label": "ESA 官方稿 · 12 NOV. 2026：Euclid reveals the largest-ever catalogue of strong cosmic lenses",
+          "url": "https://www.esa.int/media/about-us/directorates/science/euclid/euclid-reveals-the-largest-ever-catalogue-of-strong-cosmic-lenses"
+        },
+        {
+          "label": "Euclid DR1-Foundation 介绍页",
+          "url": "https://www.cosmos.esa.int/web/euclid/euclid-dr1"
+        }
+      ]
+    }
+  ]
+}
